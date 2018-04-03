@@ -1,0 +1,148 @@
+@import './palette.scss';
+
+@mixin fortum-typography() {
+  $link-color: $water-blue;
+
+  * {
+    font-family: 'GT Eesti Pro Display', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  h1, h2, h3, h4, h5, p, b, strong, i, em, mark, small, del, ins, sub, sup {
+    color: $dark-grey;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 4.25rem;
+    margin-bottom: 3.5rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2.875rem;
+    line-height: 3.625rem;
+    margin-bottom: 2.625rem;
+  }
+
+  h3 {
+    font-size: 2.25rem;
+    line-height: 3rem;
+    margin-bottom: 2.1875rem;
+  }
+
+  h4 {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.75rem;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1.75rem;
+  }
+
+  p, b, strong, i, em, mark, del, ins {
+    font-size: 1.25rem;
+    line-height: 2.375rem;
+    margin-bottom: 0.8rem;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  a {
+    font-size: 1.25rem;
+    line-height: 2.375rem;
+    color: $link-color;
+    cursor: pointer;
+    text-decoration: underline;
+
+    &:hover, &:focus {
+      outline: none;
+      color: $link-color;
+    }
+  }
+
+  .medium-typography {
+    h1 {
+      font-size: 2.625rem;
+      line-height: 3.125rem;
+      margin-bottom: 2.1875rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      line-height: 3.25rem;
+      margin-bottom: 1.75rem;
+    }
+
+    h3 {
+      font-size: 1.875rem;
+      line-height: 2.5rem;
+      margin-bottom: 1.75rem;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      margin-bottom: 1.75rem;
+    }
+
+    h5 {
+      font-size: 1.2rem;
+      line-height: 2rem;
+      margin-bottom: 1.75rem;
+    }
+
+    p, b, strong, i, em, mark, del, ins {
+      font-size: 1.25rem;
+      line-height: 2.375rem;
+      margin-bottom: 0.6rem;
+    }
+  }
+
+  .mobile-typography {
+    h1 {
+      font-size: 3.125rem;
+      line-height: 2.625rem;
+      margin-bottom: 2.1875rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      line-height: 2.75rem;
+      margin-bottom: 1.75rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      line-height: 2.125rem;
+      font-weight: bold;
+      margin-bottom: 1.75rem;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      line-height: 2rem;
+      margin-bottom: 1.75rem;
+    }
+
+    h5 {
+      font-size: 1.15rem;
+      line-height: 2rem;
+      margin-bottom: 1.75rem;
+    }
+
+    p, b, strong, i, em, mark, del, ins {
+      font-size: 1rem;
+      line-height: 2rem;
+      margin-bottom: 0.6rem;
+    }
+  }
+}

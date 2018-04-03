@@ -1,0 +1,52 @@
+// Colors
+$optimistic-green: #5AC37D;
+$optimistic-green-75: transparentize($optimistic-green, .25);
+$optimistic-green-50: transparentize($optimistic-green, .5);
+
+$green: #377A6C;
+$green-75: transparentize($green, .25);
+$green-50: transparentize($green, .5);
+
+$water-blue: #78A0D4;
+$water-blue-dark: #6080A9;
+$water-blue-75: transparentize($water-blue, .25);
+$water-blue-50: transparentize($water-blue, .5);
+
+$energetic-orange: #EB6437;
+$energetic-orange-75: transparentize($energetic-orange, .25);
+$energetic-orange-50: transparentize($energetic-orange, .5);
+
+$solar-yellow: #F5E150;
+$solar-yellow-75: transparentize($solar-yellow, .25);
+$solar-yellow-50: transparentize($solar-yellow, .5);
+
+$power-red: #D25564;
+$power-red-75: transparentize($power-red, .25);
+$power-red-50: transparentize($power-red, .5);
+
+$sustainable-grey: #B9B4AA;
+$sustainable-grey-75: transparentize($sustainable-grey, .25);
+$sustainable-grey-50: transparentize($sustainable-grey, .5);
+
+$electric-grey: #78DEC8;
+$electric-grey-75: transparentize($electric-grey, .25);
+$electric-grey-50: transparentize($electric-grey, .5);
+
+// Black, white and greys
+$white: #ffffff;
+
+$black: #000000;
+$black-75: transparentize($black, .25);
+$black-50: transparentize($black, .50);
+
+$dark-grey: #4a4a4a;
+$dary-grey-75: transparentize($dark-grey, .25);
+$dark-grey-50: transparentize($dark-grey, .5);
+
+$grey: #9b9b9b;
+$grey-75: transparentize($grey, .25);
+$grey-50: transparentize($grey, .5);
+
+$light-grey: #d5d5d5;
+$light-grey-75: rgba($light-grey, .75);
+$light-grey-50: #f9f8f8;

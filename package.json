@@ -1,0 +1,16 @@
+{
+  "name": "@fortum/angular-design",
+  "version": "1.0.0-beta.9",
+  "description": "Provides the Fortum palette through the Material Design color format.",
+  "repository": "https://hafslundtfs.visualstudio.com/DefaultCollection/Varme/_git/AngularDesign",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "theme.scss"
+  ],
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-scss-combine": "^1.0.0"
+  }
+}
