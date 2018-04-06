@@ -1,52 +1,122 @@
-// Colors
-$optimistic-green: #5AC37D;
-$optimistic-green-75: transparentize($optimistic-green, .25);
-$optimistic-green-50: transparentize($optimistic-green, .5);
+// Primary colors
+$hafslund-blue: #1164A4;
+$hafslund-blue-dark: #00446F;
+$hafslund-blue-light1: #50A9D8;
+$hafslund-blue-light2: #A2DBFF;
+$hafslund-blue-light3: #D2EFFE;
+$hafslund-blue-light4: #EFF9FF;
 
-$green: #377A6C;
-$green-75: transparentize($green, .25);
-$green-50: transparentize($green, .5);
+.hafslund-blue {
+    background: $hafslund-blue;
+}
+.hafslund-blue-dark {
+    background: $hafslund-blue-dark;
+}
+.hafslund-blue-light1 {
+    background: $hafslund-blue-light1;
+}
+.hafslund-blue-light2 {
+    background: $hafslund-blue-light2;
+}
+.hafslund-blue-light3 {
+    background: $hafslund-blue-light3;
+}
+.hafslund-blue-light4 {
+    background: $hafslund-blue-light4;
+}
 
-$water-blue: #78A0D4;
-$water-blue-dark: #6080A9;
-$water-blue-75: transparentize($water-blue, .25);
-$water-blue-50: transparentize($water-blue, .5);
+// Gradient
+.hafslund-twilight {
+    background: linear-gradient(#279DD0, $hafslund-blue);
+}
 
-$energetic-orange: #EB6437;
-$energetic-orange-75: transparentize($energetic-orange, .25);
-$energetic-orange-50: transparentize($energetic-orange, .5);
+// Greys
+$grey-text: #444444;
+$grey-dark: #57585A;
+$grey: #ADB0B6;
+$grey-light: #EEF0F4;
 
-$solar-yellow: #F5E150;
-$solar-yellow-75: transparentize($solar-yellow, .25);
-$solar-yellow-50: transparentize($solar-yellow, .5);
+.grey-text {
+    background: $grey-text;
+}
+.grey-dark {
+    background: $grey-dark;
+}
+.grey {
+    background: $grey;
+}
+.grey-light {
+    background: $grey-light;
+}
 
-$power-red: #D25564;
-$power-red-75: transparentize($power-red, .25);
-$power-red-50: transparentize($power-red, .5);
-
-$sustainable-grey: #B9B4AA;
-$sustainable-grey-75: transparentize($sustainable-grey, .25);
-$sustainable-grey-50: transparentize($sustainable-grey, .5);
-
-$electric-grey: #78DEC8;
-$electric-grey-75: transparentize($electric-grey, .25);
-$electric-grey-50: transparentize($electric-grey, .5);
-
-// Black, white and greys
+// Black and white
 $white: #ffffff;
-
 $black: #000000;
-$black-75: transparentize($black, .25);
-$black-50: transparentize($black, .50);
 
-$dark-grey: #4a4a4a;
-$dary-grey-75: transparentize($dark-grey, .25);
-$dark-grey-50: transparentize($dark-grey, .5);
+.white {
+    background: $white;
+}
+.black {
+    background: $black;
+}
 
-$grey: #9b9b9b;
-$grey-75: transparentize($grey, .25);
-$grey-50: transparentize($grey, .5);
+// Signal colors
+$signal-green: #6AAB2F;
+$signal-yellow: #F0DA00;
+$signal-red: #E15559;
 
-$light-grey: #d5d5d5;
-$light-grey-75: rgba($light-grey, .75);
-$light-grey-50: #f9f8f8;
+.signal-green {
+    background: $signal-green;
+}
+.signal-yellow {
+    background: $signal-yellow;
+}
+.signal-red {
+    background: $signal-red;
+}
+
+// Data visualization
+$data-navy: #23588C;
+$data-marine: #0F6ECA;
+$data-blue: #4BA8FF;
+$data-turquoise: #24D2EF;
+$data-seagreen: #46B5AB;
+$data-green: #6FE9AA;
+$data-orange: #F1842B;
+$data-yellow: #FFD209;
+
+.data-navy {
+    background: $data-navy;
+}
+.data-marine {
+    background: $data-marine;
+}
+.data-blue {
+    background: $data-blue;
+}
+.data-turquoise {
+    background: $data-turquoise;
+}
+.data-seagreen {
+    background: $data-seagreen;
+}
+.data-green {
+    background: $data-green;
+}
+.data-orange {
+    background: $data-orange;
+}
+.data-yellow {
+    background: $data-yellow;
+}
+
+// Shades
+.shade-normal {
+    box-shadow: 0px 2px 6px $grey-light;
+}
+.shade-dark1 {
+    box-shadow: 0px 2px 6px $grey;
+}
+.shade-dark2 {
+    box-shadow: 0px 2px 6px $grey-dark;
+}
