@@ -1,20 +1,20 @@
 @import 'palette.scss';
 
-$hafslund-primary: (
-  50: $hafslund-blue,
-  100: $hafslund-blue,
-  200: $hafslund-blue,
-  300: $hafslund-blue,
-  400: $hafslund-blue,
-  500: $hafslund-blue,
-  600: $hafslund-blue,
-  700: $hafslund-blue,
-  800: $hafslund-blue-dark,
-  900: $hafslund-blue-dark,
-  A100: $hafslund-blue,
-  A200: $hafslund-blue,
-  A400: $hafslund-blue,
-  A700: $hafslund-blue-dark,
+$hdd-primary: (
+  50: $blue-light4,
+  100: $blue-light3,
+  200: $blue-light2,
+  300: $blue-light1,
+  400: $blue,
+  500: $blue,
+  600: $blue,
+  700: $blue,
+  800: $blue-dark,
+  900: $blue-dark,
+  A100: $blue-light3,
+  A200: $blue-light1,
+  A400: $blue,
+  A700: $blue-dark,
   contrast: (
     50: $black,
     100: $black,
@@ -33,7 +33,7 @@ $hafslund-primary: (
   )
 );
 
-$hafslund-accent: (
+$hdd-accent: (
   50: $signal-green,
   100: $signal-green,
   200: $signal-green,
@@ -66,7 +66,7 @@ $hafslund-accent: (
   )
 );
 
-$hafslund-warn: (
+$hdd-warn: (
   50: $signal-red,
   100: $signal-red,
   200: $signal-red,
