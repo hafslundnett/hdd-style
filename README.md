@@ -1,4 +1,4 @@
-# Hafslund digital designsystem (hdd)
+# Hafslund digital designsystem (Hdd)
 
 > 🚧 WARNING: This project is under construction and should not be used in production! 🚧
 

@@ -1,6 +1,6 @@
 # Contributing to hdd-theme
 
-Looking to contribute something to 'HDD'? **Here's how you can help.**
+Looking to contribute something to 'Hdd'? **Here's how you can help.**
 
 ## Key branches
 
