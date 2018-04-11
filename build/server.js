@@ -27,4 +27,4 @@ const server = http.createServer(function (req, res) {
 
 server.listen(8080)
 console.info('Server running at http://127.0.0.1:8080/')
-opn('http://127.0.0.1:8080/showoff');
+opn('http://127.0.0.1:8080/docs/');

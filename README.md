@@ -12,11 +12,11 @@ For every front-end framework a separate 'components' library should be created.
 
 ## Documentation
 
-This project has a 'showoff' website of what is currently available. To start this demo environment do you need to have `node` and `npm` installed.
+This project has a 'docs' website of what is currently available. To start this demo environment do you need to have `node` and `npm` installed.
 
-You can spin up the 'showoff' website by running:
+You can spin up the 'docs' website by running:
 
-`npm run showoff`
+`npm run docs`
 
 ## Code of conduct
 
