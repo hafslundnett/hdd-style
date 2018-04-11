@@ -1,4 +1,4 @@
-# Hafslund digital designsystem
+# Hafslund digital designsystem (hdd)
 
 > 🚧 WARNING: This project is under construction and should not be used in production! 🚧
 
@@ -12,7 +12,7 @@ For every front-end framework a separate 'components' library should be created.
 
 ## Documentation
 
-This project has a 'docs' website of what is currently available. To start this demo environment do you need to have `node` and `npm` installed.
+This project has a 'docs' website of what is currently available. To start this website do you need to have `node` and `npm` installed.
 
 You can spin up the 'docs' website by running:
 
@@ -25,8 +25,7 @@ We will behave ourselves if you behave yourselves. For more details see our
 
 ## Contributing
 
-Please read through our [contributing guidelines](./CONTRIBUTING.md).  Included
-are directions for opening issues.
+Please read through our [contributing guidelines](./CONTRIBUTING.md).
 
 ## Versioning
 
