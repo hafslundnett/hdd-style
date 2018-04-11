@@ -8,7 +8,7 @@
   "scripts": {
     "showoff": "npm run build; node build/server.js;",
     "build": "node build/build.js;",
-    "commit": "git-cz"
+    "commit": "git cz"
   },
   "files": [],
   "devDependencies": {
