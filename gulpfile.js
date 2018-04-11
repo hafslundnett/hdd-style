@@ -12,3 +12,7 @@ function mergeSass(done) {
   .pipe(sass())
   .pipe(gulp.dest('./'));
 }
+
+gulp.task('watch', function() {
+  gulp.watch('src/**/*.scss', ['default']);
+});
