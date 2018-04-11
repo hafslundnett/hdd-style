@@ -1,5 +1,4 @@
-// TODO: gzip the rendered bundle
-// TODO: gzip the rendered bundle
+// IDEA: gzip the rendered bundle
 
 const fs = require('fs')
 const path = require('path')
