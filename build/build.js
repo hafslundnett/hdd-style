@@ -10,7 +10,7 @@ const mapOut = path.join(__dirname, '../dist/bundle.min.css.map')
 
 console.info('Compiling... 😤')
 
-var result = sass.renderSync({
+const result = sass.renderSync({
   file: fileIn,
   outFile: fileOut,
   sourceMap: true,
