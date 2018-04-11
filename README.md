@@ -8,7 +8,7 @@ For every front-end framework a separate 'components' library should be created.
 
 | Framework     | Version       | Repo          |
 | ------------- | ------------- | ------------- |
-| Angular | 🚧 Alpha | [Github](https://github.com/hafslundnett/hdd-ng-components) |
+| Angular 5.x | 🚧 Alpha | [Github](https://github.com/hafslundnett/hdd-ng-components) |
 
 ## Documentation
 
