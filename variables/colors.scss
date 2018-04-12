@@ -42,69 +42,112 @@ $gradient-twilight: 90, #279DD0, $blue;
 // This class can be used as a variable with @extend
 .background-colors {
   &.is-white {
-    border-color: $white;
     background: $white;
     color: $font-color;
+
+    &.invert-text {
+      color: $font-color;
+    }
   }
 
   &.is-black {
     border-color: $black;
     background: $black;
     color: $white;
+
+    &.invert-text {
+      color: $font-color;
+    }
   }
 
   &.is-blue {
     border-color: $blue;
     background: $blue;
     color: $white;
+
+    &.invert-text {
+      color: $blue;
+    }
   }
 
   &.is-blue-dark {
     border-color: $blue-dark;
     background: $blue-dark;
     color: $white;
+
+    &.invert-text {
+      color: $blue-dark;
+    }
   }
 
   &.is-blue-light1 {
     border-color: $blue-light1;
     background: $blue-light1;
     color: $font-color;
+
+    &.invert-text {
+      color: $blue-light1;
+    }
   }
 
   &.is-blue-light2 {
-    border-color: $blue-light1;
-    background: $blue-light1;
+    border-color: $blue-light2;
+    background: $blue-light2;
     color: $font-color;
+
+    &.invert-text {
+      color: $blue-light2;
+    }
   }
 
   &.is-blue-light3 {
-    border-color: $blue-light1;
-    background: $blue-light1;
+    border-color: $blue-light3;
+    background: $blue-light3;
     color: $font-color;
+
+    &.invert-text {
+      color: $blue-light3;
+    }
   }
 
   &.is-blue-light4 {
-    border-color: $blue-light1;
-    background: $blue-light1;
+    border-color: $blue-light4;
+    background: $blue-light4;
     color: $font-color;
+
+    &.invert-text {
+      color: $blue-light4;
+    }
   }
 
   &.is-grey {
     border-color: $grey;
     background: $grey;
     color: $font-color;
+
+    &.invert-text {
+      color: $grey;
+    }
   }
 
   &.is-grey-dark {
     border-color: $grey-dark;
     background: $grey-dark;
     color: $white;
+
+    &.invert-text {
+      color: $grey-dark;
+    }
   }
 
   &.is-grey-light {
     border-color: $grey-light;
     background: $grey-light;
     color: $font-color;
+
+    &.invert-text {
+      color: $grey-light;
+    }
   }
 
   &.is-signal-green,
@@ -112,6 +155,10 @@ $gradient-twilight: 90, #279DD0, $blue;
     border-color: $signal-green;
     background: $signal-green;
     color: $white;
+
+    &.invert-text {
+      color: $signal-green;
+    }
   }
 
   &.is-signal-yellow,
@@ -119,6 +166,10 @@ $gradient-twilight: 90, #279DD0, $blue;
     border-color: $signal-yellow;
     background: $signal-yellow;
     color: $white;
+
+    &.invert-text {
+      color: $signal-yellow;
+    }
   }
 
   &.is-signal-red,
@@ -126,54 +177,90 @@ $gradient-twilight: 90, #279DD0, $blue;
     border-color: $signal-red;
     background: $signal-red;
     color: $white;
+
+    &.invert-text {
+      color: $signal-red;
+    }
   }
 
   &.is-data-navy {
     border-color: $data-navy;
     background: $data-navy;
     color: $white;
+
+    &.invert-text {
+      color: $data-navy;
+    }
   }
 
   &.is-data-marine {
     border-color: $data-marine;
     background: $data-marine;
     color: $white;
+
+    &.invert-text {
+      color: $data-marine;
+    }
   }
 
   &.is-data-blue {
     border-color: $data-blue;
     background: $data-blue;
     color: $white;
+
+    &.invert-text {
+      color: $data-blue;
+    }
   }
 
   &.is-data-turquoise {
     border-color: $data-turquoise;
     background: $data-turquoise;
     color: $white;
+
+    &.invert-text {
+      color: $data-turquoise;
+    }
   }
 
   &.is-data-seagreen {
     border-color: $data-seagreen;
     background: $data-seagreen;
     color: $white;
+
+    &.invert-text {
+      color: $data-seagreen;
+    }
   }
 
   &.is-data-green {
     border-color: $data-green;
     background: $data-green;
     color: $white;
+
+    &.invert-text {
+      color: $data-green;
+    }
   }
 
   &.is-data-orange {
     border-color: $data-orange;
     background: $data-orange;
     color: $white;
+
+    &.invert-text {
+      color: $data-orange;
+    }
   }
 
   &.is-data-yellow {
     border-color: $data-yellow;
     background: $data-yellow;
     color: $white;
+
+    &.invert-text {
+      color: $data-yellow;
+    }
   }
 
   &.is-gradient-twilight {
