@@ -1,125 +1,109 @@
-// Primary colors
-$blue: #1164A4;
-$blue-dark: #00446F;
-$blue-light1: #50A9D8;
-$blue-light2: #A2DBFF;
-$blue-light3: #D2EFFE;
-$blue-light4: #EFF9FF;
+@import '../variables/colors';
 
 .blue {
   background: $blue;
 }
+
 .blue-dark {
   background: $blue-dark;
 }
+
 .blue-light1 {
   background: $blue-light1;
 }
+
 .blue-light2 {
   background: $blue-light2;
 }
+
 .blue-light3 {
   background: $blue-light3;
 }
+
 .blue-light4 {
   background: $blue-light4;
 }
 
-// Gradient
 .blue-twilight {
-  background: linear-gradient(#279DD0, $blue);
+  background: $gradient-twilight;
 }
-
-// Greys
-$grey-dark: #57585A;
-$grey: #ADB0B6;
-$grey-light: #EEF0F4;
 
 .grey-dark {
   background: $grey-dark;
 }
+
 .grey {
   background: $grey;
 }
+
 .grey-light {
   background: $grey-light;
 }
-
-// Text color
-$font-color: #444444;
 
 .font-color {
   background: $font-color;
 }
 
-// Black and white
-$white: #ffffff;
-$black: #000000;
-
 .white {
   background: $white;
 }
+
 .black {
   background: $black;
 }
 
-// Signal colors
-$signal-green: #6AAB2F;
-$signal-yellow: #F0DA00;
-$signal-red: #E15559;
-
 .signal-green {
   background: $signal-green;
 }
+
 .signal-yellow {
   background: $signal-yellow;
 }
+
 .signal-red {
   background: $signal-red;
 }
 
-// Data visualization
-$data-navy: #23588C;
-$data-marine: #0F6ECA;
-$data-blue: #4BA8FF;
-$data-turquoise: #24D2EF;
-$data-seagreen: #46B5AB;
-$data-green: #6FE9AA;
-$data-orange: #F1842B;
-$data-yellow: #FFD209;
-
 .data-navy {
   background: $data-navy;
 }
+
 .data-marine {
   background: $data-marine;
 }
+
 .data-blue {
   background: $data-blue;
 }
+
 .data-turquoise {
   background: $data-turquoise;
 }
+
 .data-seagreen {
   background: $data-seagreen;
 }
+
 .data-green {
   background: $data-green;
 }
+
 .data-orange {
   background: $data-orange;
 }
+
 .data-yellow {
   background: $data-yellow;
 }
 
-// Shades
 .shade-normal {
-  box-shadow: 0px 2px 6px $grey-light;
+  box-shadow: 0 2px 6px $grey-light;
 }
+
 .shade-dark1 {
-  box-shadow: 0px 2px 6px $grey;
+  box-shadow: 0 2px 6px $grey;
 }
+
 .shade-dark2 {
-  box-shadow: 0px 2px 6px $grey-dark;
+  box-shadow: 0 2px 6px $grey-dark;
 }

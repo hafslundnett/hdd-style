@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "material-colors.min.css",
+	"sources": [
+		"../../frameworks/material-colors.scss",
+		"../../variables/colors.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

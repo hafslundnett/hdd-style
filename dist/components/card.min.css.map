@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "card.min.css",
+	"sources": [
+		"../../components/card.scss"
+	],
+	"names": [],
+	"mappings": ""
+}
