@@ -60,7 +60,8 @@ $gradient-twilight: 90, #279DD0, $blue;
     }
   }
 
-  &.is-blue {
+  &.is-blue,
+  &.is-primary {
     border-color: $blue;
     background: $blue;
     color: $white;
