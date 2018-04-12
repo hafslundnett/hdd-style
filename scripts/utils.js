@@ -28,7 +28,7 @@ exports.compile = function() {
     const isDir = fs.lstatSync(p).isDirectory()
 
     if (!isDir) {
-      project.push([p, path.basename(p)])
+      project.push([p, path.basename(p).replace(/\.\w+$/, '')])
       continue
     }
 
