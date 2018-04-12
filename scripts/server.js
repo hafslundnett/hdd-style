@@ -4,6 +4,8 @@ const path = require('path')
 const mime = require('mime')
 const opn = require('opn')
 
+require('./watch')
+
 const server = http.createServer(function (req, res) {
   let filePath = path.join(__dirname, '../', req.url)
   let extname = path.extname(filePath)
