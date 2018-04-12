@@ -42,114 +42,136 @@ $gradient-twilight: 90, #279DD0, $blue;
 // This class can be used as a variable with @extend
 .background-colors {
   &.is-white {
+    border-color: $white;
     background: $white;
     color: $font-color;
   }
 
   &.is-black {
+    border-color: $black;
     background: $black;
     color: $white;
   }
 
   &.is-blue {
+    border-color: $blue;
     background: $blue;
     color: $white;
   }
 
   &.is-blue-dark {
+    border-color: $blue-dark;
     background: $blue-dark;
     color: $white;
   }
 
   &.is-blue-light1 {
+    border-color: $blue-light1;
     background: $blue-light1;
     color: $font-color;
   }
 
   &.is-blue-light2 {
+    border-color: $blue-light1;
     background: $blue-light1;
     color: $font-color;
   }
 
   &.is-blue-light3 {
+    border-color: $blue-light1;
     background: $blue-light1;
     color: $font-color;
   }
 
   &.is-blue-light4 {
+    border-color: $blue-light1;
     background: $blue-light1;
     color: $font-color;
   }
 
   &.is-grey {
+    border-color: $grey;
     background: $grey;
     color: $font-color;
   }
 
   &.is-grey-dark {
+    border-color: $grey-dark;
     background: $grey-dark;
     color: $white;
   }
 
   &.is-grey-light {
+    border-color: $grey-light;
     background: $grey-light;
     color: $font-color;
   }
 
   &.is-signal-green,
   &.is-safe {
+    border-color: $signal-green;
     background: $signal-green;
     color: $white;
   }
 
   &.is-signal-yellow,
   &.is-warning {
+    border-color: $signal-yellow;
     background: $signal-yellow;
     color: $white;
   }
 
   &.is-signal-red,
   &.is-danger {
+    border-color: $signal-red;
     background: $signal-red;
     color: $white;
   }
 
   &.is-data-navy {
+    border-color: $data-navy;
     background: $data-navy;
     color: $white;
   }
 
   &.is-data-marine {
+    border-color: $data-marine;
     background: $data-marine;
     color: $white;
   }
 
   &.is-data-blue {
+    border-color: $data-blue;
     background: $data-blue;
     color: $white;
   }
 
   &.is-data-turquoise {
+    border-color: $data-turquoise;
     background: $data-turquoise;
     color: $white;
   }
 
   &.is-data-seagreen {
+    border-color: $data-seagreen;
     background: $data-seagreen;
     color: $white;
   }
 
   &.is-data-green {
+    border-color: $data-green;
     background: $data-green;
     color: $white;
   }
 
   &.is-data-orange {
+    border-color: $data-orange;
     background: $data-orange;
     color: $white;
   }
 
   &.is-data-yellow {
+    border-color: $data-yellow;
     background: $data-yellow;
     color: $white;
   }
