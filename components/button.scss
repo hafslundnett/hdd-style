@@ -2,7 +2,7 @@
 @import '../variables/naming';
 @import '../frameworks/helpers';
 
-.#{$shortname}-button {
+.hdd-button {
   @extend .background-colors;
   background: $white;
 }
