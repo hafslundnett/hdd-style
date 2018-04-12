@@ -3,5 +3,6 @@
 @import '../frameworks/helpers';
 
 .#{$shortname}-button {
+  @extend .background-colors;
   background: $white;
 }

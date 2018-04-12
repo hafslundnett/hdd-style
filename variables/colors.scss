@@ -1,4 +1,5 @@
 @import '../frameworks/helpers';
+@import 'naming';
 
 $white: #ffffff;
 $black: #000000;
@@ -36,3 +37,125 @@ $data-yellow: #FFD209;
 
 // Gradients
 $gradient-twilight: 90, #279DD0, $blue;
+
+// All colors as backgrounds and the corresponding font color
+// This class can be used as a variable with @extend
+.background-colors {
+  &.is-white {
+    background: $white;
+    color: $font-color;
+  }
+
+  &.is-black {
+    background: $black;
+    color: $white;
+  }
+
+  &.is-blue {
+    background: $blue;
+    color: $white;
+  }
+
+  &.is-blue-dark {
+    background: $blue-dark;
+    color: $white;
+  }
+
+  &.is-blue-light1 {
+    background: $blue-light1;
+    color: $font-color;
+  }
+
+  &.is-blue-light2 {
+    background: $blue-light1;
+    color: $font-color;
+  }
+
+  &.is-blue-light3 {
+    background: $blue-light1;
+    color: $font-color;
+  }
+
+  &.is-blue-light4 {
+    background: $blue-light1;
+    color: $font-color;
+  }
+
+  &.is-grey {
+    background: $grey;
+    color: $font-color;
+  }
+
+  &.is-grey-dark {
+    background: $grey-dark;
+    color: $white;
+  }
+
+  &.is-grey-light {
+    background: $grey-light;
+    color: $font-color;
+  }
+
+  &.is-signal-green,
+  &.is-safe {
+    background: $signal-green;
+    color: $white;
+  }
+
+  &.is-signal-yellow,
+  &.is-warning {
+    background: $signal-yellow;
+    color: $white;
+  }
+
+  &.is-signal-red,
+  &.is-danger {
+    background: $signal-red;
+    color: $white;
+  }
+
+  &.is-data-navy {
+    background: $data-navy;
+    color: $white;
+  }
+
+  &.is-data-marine {
+    background: $data-marine;
+    color: $white;
+  }
+
+  &.is-data-blue {
+    background: $data-blue;
+    color: $white;
+  }
+
+  &.is-data-turquoise {
+    background: $data-turquoise;
+    color: $white;
+  }
+
+  &.is-data-seagreen {
+    background: $data-seagreen;
+    color: $white;
+  }
+
+  &.is-data-green {
+    background: $data-green;
+    color: $white;
+  }
+
+  &.is-data-orange {
+    background: $data-orange;
+    color: $white;
+  }
+
+  &.is-data-yellow {
+    background: $data-yellow;
+    color: $white;
+  }
+
+  &.is-gradient-twilight {
+    @include linear-gradient($gradient-twilight...);
+    color: $white;
+  }
+}
