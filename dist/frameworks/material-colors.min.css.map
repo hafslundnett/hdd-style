@@ -3,7 +3,8 @@
 	"file": "material-colors.min.css",
 	"sources": [
 		"../../frameworks/material-colors.scss",
-		"../../variables/colors.scss"
+		"../../variables/colors.scss",
+		"../../frameworks/helpers.scss"
 	],
 	"names": [],
 	"mappings": ""
