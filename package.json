@@ -7,6 +7,7 @@
   "private": true,
   "scripts": {
     "docs": "npm run build; node scripts/server.js",
+    "watch": "node scripts/watch.js",
     "build": "node scripts/build.js",
     "commit": "git cz"
   },
