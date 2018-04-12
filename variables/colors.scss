@@ -1,3 +1,5 @@
+@import '../frameworks/helpers';
+
 $white: #ffffff;
 $black: #000000;
 
@@ -33,4 +35,4 @@ $data-orange: #F1842B;
 $data-yellow: #FFD209;
 
 // Gradients
-$gradient-twilight: linear-gradient(#279DD0, $blue);
+$gradient-twilight: 90, #279DD0, $blue;

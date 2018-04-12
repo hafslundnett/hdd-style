@@ -1,5 +1,7 @@
-@import '../frameworks/colors';
+@import '../variables/colors';
+@import '../variables/naming';
+@import '../frameworks/helpers';
 
-.hdd-button {
+.#{$shortname}-button {
   background: $white;
 }
