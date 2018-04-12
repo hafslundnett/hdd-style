@@ -56,9 +56,9 @@ exports.compile = function() {
       outputStyle: 'compressed'
     }
 
+    console.info(`🚧 ${options.outFile} 🚧`)
     const result = sass.renderSync(options)
 
-    console.info(`🚧 ${options.outFile} 🚧`)
     for (let file of result.stats.includedFiles) {
       console.info(`- ${file}`)
     }
