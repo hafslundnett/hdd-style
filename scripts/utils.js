@@ -57,15 +57,20 @@ exports.compile = function() {
     }
 
     console.info(`🚧 ${options.outFile} 🚧`)
-    const result = sass.renderSync(options)
 
-    for (let file of result.stats.includedFiles) {
-      console.info(`- ${file}`)
+    try {
+      const result = sass.renderSync(options)
+
+      for (let file of result.stats.includedFiles) {
+        console.info(`- ${file}`)
+      }
+
+      fs.writeFileSync(options.outFile, result.css);
+      fs.writeFileSync(options.outMap, result.map);
+    } catch(err) {
+      console.error('\x1b[31m%s\x1b[0m', '💥 Something went wrong!')
+      console.error('\x1b[31m%s\x1b[0m', `At: ${err.file}`)
+      console.error('\x1b[31m%s\x1b[0m', `Message: ${err.message}`)
     }
-
-    fs.writeFileSync(options.outFile, result.css);
-    fs.writeFileSync(options.outMap, result.map);
   }
-
-  console.info('Compilation was a success! 😎 🍺')
 }
