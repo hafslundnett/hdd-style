@@ -2,9 +2,9 @@
 
 > 🚧 WARNING: This project is under construction and should not be used in production! 🚧
 
-'Hafslund digital designsystem' is a design system that can be used across projects while maintaining consistancy. The project follows the [BEM naming](http://getbem.com/naming) guide and consists out of components. Every component should be able to run in a isolated environment.
+'Hafslund digital designsystem' is a design system that can be used across projects while maintaining consistancy. The project follows a interpretation of the [BEM naming](http://getbem.com/naming) guide and consists out of components. Every component should be able to run in a isolated environment without depending on parent classes/elements.
 
-For every front-end framework a separate 'components' library should be created. Listed below are the already existing libraries. If you want to add your library to this list, please create a pull request.
+For every used front-end framework a separate 'components' library should be created. Listed below are the already existing libraries. If you want to add your library to this list, please create a pull request.
 
 | Framework     | Version       | Repo          |
 | ------------- | ------------- | ------------- |
@@ -12,11 +12,11 @@ For every front-end framework a separate 'components' library should be created.
 
 ## Documentation
 
-This project has a 'docs' website of what is currently available. To start this website do you need to have `node` and `npm` installed.
+The documentation of this project can be found on [Github](https://github.com/hafslundnett/hdd-theme/wiki). This project also contains a showoff website that shows examples of most components. The showoff website can be generated/started by running:
 
-You can spin up the 'docs' website by running:
+`npm run serve`
 
-`npm run docs`
+You need to have `node` and `npm` installed in order to start the showoff website.
 
 ## Code of conduct
 
@@ -26,7 +26,7 @@ We will behave ourselves if you behave yourselves. For more details see our
 ## Contributing
 
 Please read through our [contributing guidelines](./CONTRIBUTING.md).
-
+asdfasdf
 ## Versioning
 
 Font Awesome will be maintained under the Semantic Versioning guidelines as much as possible. Releases will be numbered
