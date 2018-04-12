@@ -6,8 +6,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "docs": "npm run build; node build/server.js",
-    "build": "node build/build.js",
+    "docs": "npm run build; node scripts/server.js",
+    "build": "node scripts/build.js",
     "commit": "git cz"
   },
   "files": [],
