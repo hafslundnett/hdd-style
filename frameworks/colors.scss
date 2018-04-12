@@ -1,4 +1,25 @@
 @import '../variables/colors';
+@import 'helpers'
+
+.white {
+  background: $white;
+}
+
+.black {
+  background: $black;
+}
+
+/****************************
+ * Font colors
+ ****************************/
+
+.font-color {
+  background: $font-color;
+}
+
+/****************************
+ * Primary colors
+ ****************************/
 
 .blue {
   background: $blue;
@@ -24,9 +45,9 @@
   background: $blue-light4;
 }
 
-.blue-twilight {
-  background: $gradient-twilight;
-}
+/****************************
+ * Grey colors
+ ****************************/
 
 .grey-dark {
   background: $grey-dark;
@@ -40,17 +61,9 @@
   background: $grey-light;
 }
 
-.font-color {
-  background: $font-color;
-}
-
-.white {
-  background: $white;
-}
-
-.black {
-  background: $black;
-}
+/****************************
+ * Signal colors
+ ****************************/
 
 .signal-green {
   background: $signal-green;
@@ -63,6 +76,10 @@
 .signal-red {
   background: $signal-red;
 }
+
+/****************************
+ * Data colors
+ ****************************/
 
 .data-navy {
   background: $data-navy;
@@ -96,14 +113,26 @@
   background: $data-yellow;
 }
 
+/****************************
+ * Shade colors
+ ****************************/
+
 .shade-normal {
-  box-shadow: 0 2px 6px $grey-light;
+  @mixin box-shadow(0 2px 6px $grey-light);
 }
 
 .shade-dark1 {
-  box-shadow: 0 2px 6px $grey;
+  @mixin box-shadow(0 2px 6px $grey);
 }
 
 .shade-dark2 {
-  box-shadow: 0 2px 6px $grey-dark;
+  @mixin box-shadow(0 2px 6px $grey-dark);
+}
+
+/****************************
+ * Gradient colors
+ ****************************/
+
+.gradient-twilight {
+  background: $gradient-twilight;
 }
