@@ -1,8 +1,18 @@
-@import '../variables/colors';
-@import '../variables/naming';
+@import '../variables/main';
 @import '../frameworks/helpers';
 
 .hdd-button {
   @extend .background-colors;
-  background: $white;
+  @extend .background-colors.is-primary;
+
+  padding: $button-padding;
+  border-radius: $button-radius;
+
+  &.has-border {
+    @extend .background-colors.set-text;
+
+    background: none;
+    border-style: solid;
+    border-width: 1px;
+  }
 }
