@@ -1,6 +1,6 @@
 @import '../variables/colors';
 
-$hdd-primary: (
+$hdd-material_primary: (
   50: $blue-light4,
   100: $blue-light3,
   200: $blue-light2,
@@ -33,7 +33,7 @@ $hdd-primary: (
   )
 );
 
-$hdd-accent: (
+$hdd-material_accent: (
   50: $signal-green,
   100: $signal-green,
   200: $signal-green,
@@ -66,7 +66,7 @@ $hdd-accent: (
   )
 );
 
-$hdd-warn: (
+$hdd-material_warn: (
   50: $signal-red,
   100: $signal-red,
   200: $signal-red,
