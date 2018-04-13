@@ -18,6 +18,22 @@
   }
 
   &.has-shadow {
-    // $include box-shadow()
+    // @include box-shadow()
+  }
+
+  &.no-background {
+  }
+
+  &.has-icon-right {
+  }
+
+  &.has-icon-left {
+  }
+
+  &.is-full-width {
+  }
+
+  &.is-hover,
+  &:hover {
   }
 }
