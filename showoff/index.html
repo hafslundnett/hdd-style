@@ -3,26 +3,61 @@
 <head>
   <meta charset="utf-8">
   <title>Hafslund digital designsystem</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../dist/main.min.css">
 </head>
 <body>
   <div class="wrapper">
     <div class="row">
-      <div class="col-xs">
-        <div class="hdd-button is-primary">Hello world</div>
-      </div>
-    </div>
+    <div class="col-xs">
+      <h1>Buttons</h1>
+      <p>Knappene skal brukes på tvers av de ulike interne systemer. Dersom det kun er en knapp på det aktuelle skjermildet
+        skal alltid dette være en primary-button. Secondary-button skal ikke brukes alene på et skjermbilde. Action-buttons
+        er spesielt tilegnet at brukeren skal foreta en handling som vil påvirke noe annet.
+      </p>
 
-    <div class="row">
-      <div class="col-xs">
-        <h1>Hafslund</h1>
-        <h2>Hafslund</h2>
-        <h2>Hafslund</h2>
-      </div>
-      <div class="col-xs">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
+      <h2>Primary-button</h2>
+      <button class="hdd-button">Button-txt</button>
+      <button class="hdd-button is-primary" disabled>Button-txt disabled</button>
+
+      <h2>Secondary-button</h2>
+      <button class="hdd-button no-background">Button-txt</button>
+      <button class="hdd-button no-background" disabled>Button-txt disabled</button>
+
+      <h2>Warn-button</h2>
+      <button class="hdd-button is-danger">Button-txt</button>
+      <button class="hdd-button is-danger no-background">Button-txt disabled</button>
+
+      <h2>Primary-button small</h2>
+      <button class="hdd-button-small is-primary">Søk</button>
+      <button class="hdd-button-small is-primary" disabled>Søk</button>
+
+      <h2>Secondary-button small</h2>
+      <button class="hdd-button-small no-background">Søk</button>
+      <button class="hdd-button-small no-background" disabled>Søk</button>
+
+      <h2>Action-button</h2>
+      <button class="hdd-button has-icon-right">
+        has-icon-right
+        <i class="fas fa-arrow-right"></i>
+      </button>
+      <button class="hdd-button has-icon-left">
+        <i class="fas fa-arrow-left"></i>
+        has-icon-left
+      </button>
+
+      <h2>Primary button with shadow</h2>
+      <button class="hdd-button has-shadow">Søk</button>
+
+      <h2>Full width button</h2>
+      <button class="hdd-button is-full-width">Søk</button>
+
+      <h2>Icon-button</h2>
+      <button class="hdd-button-icon">
+        <i class="fas fa-arrow-right"></i>
+      </button>
     </div>
+  </div>
   </div>
 </body>
 </html>
