@@ -20,6 +20,12 @@ exports.watch = function(path, recursive = false) {
 }
 
 exports.compile = function() {
+  const required = ['../dist', '../dist/frameworks', '../dist/components']
+  for (let dir of required) {
+    const fullPath = path.join(__dirname, dir)
+    if (!fs.existsSync(fullPath)) fs.mkdirSync(fullPath)
+  }
+
   console.info('Compiling... 😤')
 
   let project = []
