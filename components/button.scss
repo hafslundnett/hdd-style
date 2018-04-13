@@ -10,7 +10,7 @@
   border-radius: $button-radius;
 
   &.has-border {
-    @extend .background-colors.set-text;
+    @extend .background-colors.remove-text-contrast;
 
     background: none;
     border-style: solid;
