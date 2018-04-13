@@ -46,7 +46,7 @@ exports.compile = function() {
       const file = path.join(p, name)
       const isDir = fs.lstatSync(file).isDirectory()
 
-      if (isDir || name.startsWith('_')) {
+      if (isDir || name.startsWith('_') ||  name.startsWith('.')) {
         continue
       }
 
