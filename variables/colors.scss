@@ -1,276 +1,127 @@
 @import '../frameworks/helpers';
 
-$white: #ffffff;
-$black: #000000;
+@function color($name) {
+  $color-map: null;
 
-// Text color
+  @if map-has-key($colors, $name) {
+    $color-map: map-get($colors, $name);
+  } @else {
+    @each $label, $map in $colors {
+      @if map-has-key($colors, alt-labels) {
+        @if contains(map-get($map, alt-labels), $name) {
+          $color-map: $map;
+        }
+      }
+    }
+  }
+
+  @if not $color-map {
+    @warn 'the color "#{$name}" was not found';
+    @return null;
+  }
+
+  @return map-get($color-map, color);
+}
+
 $font-color: #444444;
 
-// Primary colors
-$blue: #1164A4;
-$blue-dark: #00446F;
-$blue-light1: #50A9D8;
-$blue-light2: #A2DBFF;
-$blue-light3: #D2EFFE;
-$blue-light4: #EFF9FF;
+// All colors as a list ready for iterations
+$colors: (
+  white: (
+    color: #FFF,
+    text: #444444
+  ),
+  black: (
+    color: #000000,
+    text: #FFFFFF
+  ),
+  blue: (
+    color: #1164A4,
+    text: #FFFFFF,
+    alt: (primary)
+  ),
+  blue-dark: (
+    color: #00446F,
+    text: #FFFFFF
+  ),
+  blue-light1: (
+    color: #50A9D8,
+    text: #444444
+  ),
+  blue-light2: (
+    color: #A2DBFF,
+    text: #444444
+  ),
+  blue-light3: (
+    color: #D2EFFE,
+    text: #444444
+  ),
+  blue-light4: (
+    color: #EFF9FF,
+    text: #444444
+  ),
+  grey: (
+    color: #ADB0B6,
+    text: #444444
+  ),
+  grey-dark: (
+    color: #57585A,
+    text: #FFFFFF
+  ),
+  grey-light: (
+    color: #EEF0F4,
+    text: #444444
+  ),
+  signal-green: (
+    color: #6AAB2F,
+    text: #FFFFFF
+  ),
+  signal-yellow: (
+    color: #F0DA00,
+    text: #FFFFFF
+  ),
+  signal-red: (
+    color: #E15559,
+    text: #FFFFFF
+  ),
+  data-navy: (
+    color: #23588C,
+    text: #FFFFFF
+  ),
+  data-marine: (
+    color: #0F6ECA,
+    text: #FFFFFF
+  ),
+  data-blue: (
+    color: #4BA8FF,
+    text: #FFFFFF
+  ),
+  data-turquoise: (
+    color: #24D2EF,
+    text: #FFFFFF
+  ),
+  data-seagreen: (
+    color: #46B5AB,
+    text: #FFFFFF
+  ),
+  data-green: (
+    color: #6FE9AA,
+    text: #FFFFFF
+  ),
+  data-orange: (
+    color: #F1842B,
+    text: #FFFFFF
+  ),
+  data-yellow: (
+    color: #FFD209,
+    text: #FFFFFF
+  )
+);
 
-// Greys
-$grey-dark: #57585A;
-$grey: #ADB0B6;
-$grey-light: #EEF0F4;
-
-// Signal colors
-$signal-green: #6AAB2F;
-$signal-yellow: #F0DA00;
-$signal-red: #E15559;
-
-// Data visualization
-$data-navy: #23588C;
-$data-marine: #0F6ECA;
-$data-blue: #4BA8FF;
-$data-turquoise: #24D2EF;
-$data-seagreen: #46B5AB;
-$data-green: #6FE9AA;
-$data-orange: #F1842B;
-$data-yellow: #FFD209;
-
-// Gradients
-$gradient-twilight: 90, #279DD0, $blue;
-
-// All colors as backgrounds and the corresponding font color
-// This class can be used as a variable with @extend
-.background-colors {
-  &.set-text {
-    &.is-white {
-      color: $white;
-    }
-
-    &.is-black {
-      color: $black;
-    }
-
-    &.is-blue,
-    &.is-primary {
-      color: $blue;
-    }
-
-    &.is-blue-dark {
-      color: $blue-dark;
-    }
-
-    &.is-blue-light1 {
-      color: $blue-light1;
-    }
-
-    &.is-blue-light2 {
-      color: $blue-light2;
-    }
-
-    &.is-blue-light3 {
-      color: $blue-light3;
-    }
-
-    &.is-blue-light4 {
-      color: $blue-light4;
-    }
-
-    &.is-grey {
-      color: $grey;
-    }
-
-    &.is-grey-dark {
-      color: $grey-dark;
-    }
-
-    &.is-grey-light {
-      color: $grey-light;
-    }
-
-    &.is-signal-green,
-    &.is-safe {
-      color: $signal-green;
-    }
-
-    &.is-signal-yellow,
-    &.is-warning {
-      color: $signal-yellow;
-    }
-
-    &.is-signal-red,
-    &.is-danger {
-      color: $signal-red;
-    }
-
-    &.is-data-navy {
-      color: $data-navy;
-    }
-
-    &.is-data-marine {
-      color: $data-marine;
-    }
-
-    &.is-data-blue {
-      color: $data-blue;
-    }
-
-    &.is-data-turquoise {
-      color: $data-turquoise;
-    }
-
-    &.is-data-seagreen {
-      color: $data-seagreen;
-    }
-
-    &.is-data-green {
-      color: $data-green;
-    }
-
-    &.is-data-orange {
-      color: $data-orange;
-    }
-
-    &.is-data-yellow {
-      color: $data-yellow;
-    }
-  }
-
-  &.is-white {
-    background: $white;
-    color: $font-color;
-  }
-
-  &.is-black {
-    border-color: $black;
-    background: $black;
-    color: $white;
-  }
-
-  &.is-blue,
-  &.is-primary {
-    border-color: $blue;
-    background: $blue;
-    color: $white;
-  }
-
-  &.is-blue-dark {
-    border-color: $blue-dark;
-    background: $blue-dark;
-    color: $white;
-  }
-
-  &.is-blue-light1 {
-    border-color: $blue-light1;
-    background: $blue-light1;
-    color: $font-color;
-  }
-
-  &.is-blue-light2 {
-    border-color: $blue-light2;
-    background: $blue-light2;
-    color: $font-color;
-  }
-
-  &.is-blue-light3 {
-    border-color: $blue-light3;
-    background: $blue-light3;
-    color: $font-color;
-  }
-
-  &.is-blue-light4 {
-    border-color: $blue-light4;
-    background: $blue-light4;
-    color: $font-color;
-  }
-
-  &.is-grey {
-    border-color: $grey;
-    background: $grey;
-    color: $font-color;
-  }
-
-  &.is-grey-dark {
-    border-color: $grey-dark;
-    background: $grey-dark;
-    color: $white;
-  }
-
-  &.is-grey-light {
-    border-color: $grey-light;
-    background: $grey-light;
-    color: $font-color;
-  }
-
-  &.is-signal-green,
-  &.is-safe {
-    border-color: $signal-green;
-    background: $signal-green;
-    color: $white;
-  }
-
-  &.is-signal-yellow,
-  &.is-warning {
-    border-color: $signal-yellow;
-    background: $signal-yellow;
-    color: $white;
-  }
-
-  &.is-signal-red,
-  &.is-danger {
-    border-color: $signal-red;
-    background: $signal-red;
-    color: $white;
-  }
-
-  &.is-data-navy {
-    border-color: $data-navy;
-    background: $data-navy;
-    color: $white;
-  }
-
-  &.is-data-marine {
-    border-color: $data-marine;
-    background: $data-marine;
-    color: $white;
-  }
-
-  &.is-data-blue {
-    border-color: $data-blue;
-    background: $data-blue;
-    color: $white;
-  }
-
-  &.is-data-turquoise {
-    border-color: $data-turquoise;
-    background: $data-turquoise;
-    color: $white;
-  }
-
-  &.is-data-seagreen {
-    border-color: $data-seagreen;
-    background: $data-seagreen;
-    color: $white;
-  }
-
-  &.is-data-green {
-    border-color: $data-green;
-    background: $data-green;
-    color: $white;
-  }
-
-  &.is-data-orange {
-    border-color: $data-orange;
-    background: $data-orange;
-    color: $white;
-  }
-
-  &.is-data-yellow {
-    border-color: $data-yellow;
-    background: $data-yellow;
-    color: $white;
-  }
-
-  &.is-gradient-twilight {
-    @include linear-gradient($gradient-twilight...);
-    color: $white;
-  }
-}
+$gradients: (
+  twilight: (
+    angle: 90,
+    from: #279DD0,
+    to: color(blue)
+  )
+);
