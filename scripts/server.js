@@ -4,6 +4,10 @@ const path = require('path')
 const mime = require('mime')
 const opn = require('opn')
 
+const port = 8070 || process.env.PORT
+
+require('./watch')
+
 const server = http.createServer(function (req, res) {
   let filePath = path.join(__dirname, '../', req.url)
   let extname = path.extname(filePath)
@@ -25,6 +29,6 @@ const server = http.createServer(function (req, res) {
   })
 })
 
-server.listen(8080)
-console.info('Server running at http://127.0.0.1:8080/')
-opn('http://127.0.0.1:8080/showoff/');
+server.listen(port)
+console.info(`Server running at http://127.0.0.1:${port}/`)
+opn(`http://127.0.0.1:${port}/showoff/`);
