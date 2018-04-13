@@ -13,11 +13,11 @@
       }
     }
 
-    &.set-text {
-      color: $color;
-    }
-
     @each $label in $labels {
+      &.set-text.is-#{$label} {
+        color: $color;
+      }
+
       &.is-#{$label} {
         border-color: $color;
         background: $color;
