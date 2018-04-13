@@ -6,8 +6,8 @@
     $text: map-get($map, text);
     $labels: ($label);
 
-    @if map-has-key($map, alt) {
-      $alt-labels: map-get($map, alt);
+    @if map-has-key($map, alt-labels) {
+      $alt-labels: map-get($map, alt-labels);
       @each $label in $alt-labels {
         $labels: append($labels, $label)
       }
