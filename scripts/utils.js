@@ -56,20 +56,18 @@ exports.compile = function() {
       outputStyle: 'compressed'
     }
 
-    console.info(`🚧 ${options.outFile} 🚧`)
+    console.info('\x1b[33m%s\x1b[0m', `🚧 ${nameOut} 🚧`)
 
     try {
       const result = sass.renderSync(options)
 
-      for (let file of result.stats.includedFiles) {
-        console.info(`- ${file}`)
-      }
+      console.info('\x1b[36m%s\x1b[0m', `Successfully compiled: ${result.stats.includedFiles.length} files`)
 
       fs.writeFileSync(options.outFile, result.css);
       fs.writeFileSync(options.outMap, result.map);
     } catch(err) {
       console.error('\x1b[31m%s\x1b[0m', '💥 Something went wrong!')
-      console.error('\x1b[31m%s\x1b[0m', `At: ${err.file}`)
+      console.error('\x1b[31m%s\x1b[0m', `At line(${err.line}:${err.column}): ${err.file}`)
       console.error('\x1b[31m%s\x1b[0m', `Message: ${err.message}`)
     }
   }
