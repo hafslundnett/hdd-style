@@ -5,32 +5,61 @@
 .hdd-button {
   @extend .background-colors;
   @extend .background-colors.is-primary;
+  @include transition((background-color $short-animation-duration, color $short-animation-duration));
 
+  font-size: $button-font-size;
   padding: $button-padding;
   border-radius: $button-radius;
+  border-width: $button-border-width;
+  display: inline-block;
+  cursor: pointer;
+
+  &:focus, &:hover {
+    outline: none;
+  }
+
+  &:hover, &:focus, &:active:focus, &.is-hover {
+    background: color(blue-dark);
+  }
+
+  &[disabled] {
+    cursor: default;
+    background: color(grey);
+    color: color(grey-dark)
+  }
+
+  &-small {
+    @extend .hdd-button;
+    font-size: .9rem;
+    padding: 0 16px;
+    height: 34px;
+  }
 
   &.no-background {
     @extend .background-colors.remove-text-contrast;
-
+    color: color(grey);
     background: none;
     border-style: solid;
     border-width: 1px;
   }
 
   &.has-shadow {
-    // @include box-shadow()
+    @include box-shadow($shadow-strong);
   }
 
   &.has-icon-right {
+    svg {
+      margin-left: $button-icon-spacing;
+    }
   }
 
   &.has-icon-left {
+    svg {
+      margin-right: $button-icon-spacing;
+    }
   }
 
   &.is-full-width {
-  }
-
-  &.is-hover,
-  &:hover {
+    width: 100%;
   }
 }

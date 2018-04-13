@@ -26,7 +26,6 @@ We will behave ourselves if you behave yourselves. For more details see our
 ## Contributing
 
 Please read through our [contributing guidelines](./CONTRIBUTING.md).
-asdfasdf
 ## Versioning
 
 This project will be maintained under the Semantic Versioning guidelines as much as possible. Releases will be numbered
