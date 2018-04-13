@@ -9,7 +9,7 @@
   padding: $button-padding;
   border-radius: $button-radius;
 
-  &.has-border {
+  &.no-background {
     @extend .background-colors.remove-text-contrast;
 
     background: none;
@@ -19,9 +19,6 @@
 
   &.has-shadow {
     // @include box-shadow()
-  }
-
-  &.no-background {
   }
 
   &.has-icon-right {
