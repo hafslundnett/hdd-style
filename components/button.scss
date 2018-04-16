@@ -32,7 +32,7 @@
 
   &-small {
     @extend .hdd-button;
-    @extend .is-p-small;
+    @extend .is-p;
 
     padding: 0 16px;
     height: 34px;
@@ -40,6 +40,7 @@
 
   &.no-background {
     @extend .background-colors.remove-text-contrast;
+
     color: color(grey);
     background: none;
     border-style: solid;
