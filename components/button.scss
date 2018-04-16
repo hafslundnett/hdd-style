@@ -22,18 +22,35 @@
     height: 34px;
   }
 
+  &-icon {
+    background-color: color(white);
+    border: 1px solid color(grey);
+    border-radius: 2px;
+    padding: .4rem .9rem;
+    cursor: pointer;
+
+    i, svg {
+      color: color(grey-dark);
+    }
+
+    &:focus, &:hover {
+      background-color: color(grey);
+      outline: none;
+    }
+
+    &:active {
+      background-color: color(grey-dark);
+    }
+  }
+
   &.no-background {
-    @extend .background-colors.remove-text-contrast.is-primary;
+    @extend .background-colors.remove-text-contrast;
     background: none;
     border-width: $button-outlined-border-width;
 
     &:focus, &:hover {
       background-color: color(blue);
       color: color(white);
-    }
-
-    &[disabled] {
-      color: color(grey-dark);
     }
   }
 
