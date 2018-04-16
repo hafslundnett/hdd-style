@@ -3,27 +3,31 @@
 $typography: (
   h1: (
     family: 'Helvetica Neue LT Std',
-    size: 20px,
+    size: 1.25rem,
     spacing: 0.21px,
-    color: $font-color
+    color: $font-color,
+    elements: (h1)
   ),
   h2: (
     family: 'Helvetica Neue LT Std',
-    size: 16px,
+    size: 1rem,
     spacing: 0.21px,
-    color: $font-color
+    color: $font-color,
+    elements: (h2)
   ),
   h3: (
     family: 'Helvetica Neue LT Std',
-    size: 14px,
+    size: .875rem,
     spacing: 0.21px,
-    color: $font-color
+    color: $font-color,
+    elements: (h3)
   ),
   p: (
     family: 'Helvetica Neue LT Std',
-    size: 14px,
+    size: .875rem,
     spacing: 0.21px,
-    color: $font-color
+    color: $font-color,
+    elements: (p)
   )
 );
 

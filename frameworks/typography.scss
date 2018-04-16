@@ -11,6 +11,8 @@
   $spacing: map-get($map, spacing);
   $line-height: map-get($map, line-height);
 
+  $elements: map-get($map, elements);
+  $alt-labels: map-get($map, alt-labels);
   $labels: ($label);
 
   %fontblock {
@@ -22,10 +24,17 @@
     color: $color;
   }
 
-  @if map-has-key($map, alt-labels) {
-    $alt-labels: map-get($map, alt-labels);
+  @if $alt-labels {
     @each $label in $alt-labels {
       $labels: append($labels, $label)
+    }
+  }
+
+  @if $elements {
+    @each $element in $elements {
+      #{$element} {
+        @extend %fontblock;
+      }
     }
   }
 
@@ -34,4 +43,8 @@
       @extend %fontblock;
     }
   }
+}
+
+* {
+  @extend .is-p;
 }
