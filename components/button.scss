@@ -19,7 +19,7 @@
 
   &-small {
     @extend .hdd-button;
-    @extend .is-p;
+    @extend .is-p-small;
 
     padding: 0 16px;
     height: 34px;
@@ -48,11 +48,6 @@
 
   &.no-background {
     @extend .background-colors.remove-text-contrast;
-<<<<<<< HEAD
-
-    color: color(grey);
-=======
->>>>>>> 2f12baac367f63bf13ca966a1d27d0411b26befd
     background: none;
     border-width: $button-outlined-border-width;
 
@@ -93,7 +88,7 @@
   &.is-hover {
     background: color(blue-dark);
   }
-  
+
   &[disabled] {
     cursor: default;
     background: color(grey);
