@@ -1,13 +1,15 @@
 @import '../variables/main';
 @import '../frameworks/helpers';
 @import '../frameworks/colors';
+@import '../frameworks/typography';
 
 .hdd-button {
   @extend .background-colors;
   @extend .background-colors.is-primary;
+  @extend .is-p;
+
   @include transition((background-color $short-animation-duration, color $short-animation-duration));
 
-  font-size: $button-font-size;
   padding: $button-padding;
   border: $button-solid-border-width solid;
   border-radius: $button-radius;
@@ -17,7 +19,8 @@
 
   &-small {
     @extend .hdd-button;
-    font-size: 0.9rem;
+    @extend .is-p;
+
     padding: 0 16px;
     height: 34px;
   }

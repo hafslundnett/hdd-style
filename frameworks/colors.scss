@@ -4,10 +4,11 @@
   @each $label, $map in $colors {
     $color: map-get($map, color);
     $contrast: map-get($map, contrast);
+
+    $alt-labels: map-get($map, alt-labels);
     $labels: ($label);
 
-    @if map-has-key($map, alt-labels) {
-      $alt-labels: map-get($map, alt-labels);
+    @if $alt-labels {
       @each $label in $alt-labels {
         $labels: append($labels, $label)
       }
