@@ -5,9 +5,10 @@
 .hdd-button {
   @extend .background-colors;
   @extend .background-colors.is-primary;
+  @extend .is-p;
+
   @include transition((background-color $short-animation-duration, color $short-animation-duration));
 
-  font-size: $button-font-size;
   padding: $button-padding;
   border-radius: $button-radius;
   border-width: $button-border-width;
