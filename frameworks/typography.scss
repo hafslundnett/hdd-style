@@ -15,7 +15,7 @@
   $alt-labels: map-get($map, alt-labels);
   $labels: ($label);
 
-  %fontblock {
+  %fontblock-#{$label} {
     font-family: $family;
     font-size: $size;
     font-weight: $weight;
@@ -33,14 +33,14 @@
   @if $elements {
     @each $element in $elements {
       #{$element} {
-        @extend %fontblock;
+        @extend %fontblock-#{$label};
       }
     }
   }
 
   @each $label in $labels {
     .is-#{$label} {
-      @extend %fontblock;
+      @extend %fontblock-#{$label};
     }
   }
 }
