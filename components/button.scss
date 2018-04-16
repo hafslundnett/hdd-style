@@ -11,24 +11,11 @@
   @include transition((background-color $short-animation-duration, color $short-animation-duration));
 
   padding: $button-padding;
+  border: $button-solid-border-width solid;
   border-radius: $button-radius;
-  border-width: $button-border-width;
   display: inline-block;
   cursor: pointer;
 
-  &:focus, &:hover {
-    outline: none;
-  }
-
-  &:hover, &:focus, &:active:focus, &.is-hover {
-    background: color(blue-dark);
-  }
-
-  &[disabled] {
-    cursor: default;
-    background: color(grey);
-    color: color(grey-dark)
-  }
 
   &-small {
     @extend .hdd-button;
@@ -38,13 +25,41 @@
     height: 34px;
   }
 
+  &-icon {
+    background-color: color(white);
+    border: 1px solid color(grey);
+    border-radius: 2px;
+    padding: .4rem .9rem;
+    cursor: pointer;
+
+    i, svg {
+      color: color(grey-dark);
+    }
+
+    &:focus, &:hover {
+      background-color: color(grey);
+      outline: none;
+    }
+
+    &:active {
+      background-color: color(grey-dark);
+    }
+  }
+
   &.no-background {
     @extend .background-colors.remove-text-contrast;
+<<<<<<< HEAD
 
     color: color(grey);
+=======
+>>>>>>> 2f12baac367f63bf13ca966a1d27d0411b26befd
     background: none;
-    border-style: solid;
-    border-width: 1px;
+    border-width: $button-outlined-border-width;
+
+    &:focus, &:hover {
+      background-color: color(blue);
+      color: color(white);
+    }
   }
 
   &.has-shadow {
@@ -52,18 +67,37 @@
   }
 
   &.has-icon-right {
-    svg {
+    svg, i {
       margin-left: $button-icon-spacing;
     }
   }
 
   &.has-icon-left {
-    svg {
+    svg, i {
       margin-right: $button-icon-spacing;
     }
   }
 
   &.is-full-width {
     width: 100%;
+  }
+
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+
+  &:hover,
+  &:focus,
+  &:active:focus,
+  &.is-hover {
+    background: color(blue-dark);
+  }
+  
+  &[disabled] {
+    cursor: default;
+    background: color(grey);
+    color: color(grey-dark);
+    border-width: 0;
   }
 }

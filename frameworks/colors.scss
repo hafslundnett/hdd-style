@@ -23,6 +23,10 @@
         border-color: $color;
         background: $color;
         color: $contrast;
+
+        i, svg {
+          color: $contrast;
+        }
       }
     }
   }
