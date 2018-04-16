@@ -78,11 +78,13 @@ $colors: (
   ),
   signal-yellow: (
     color: #F0DA00,
-    contrast: #FFFFFF
+    contrast: #444444,
+    alt-labels: (warn)
   ),
   signal-red: (
     color: #E15559,
-    contrast: #FFFFFF
+    contrast: #FFFFFF,
+    alt-labels: (danger)
   ),
   data-navy: (
     color: #23588C,
