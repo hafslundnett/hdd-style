@@ -5,6 +5,7 @@ $typography: (
     family: 'Helvetica Neue LT Std',
     size: 1.25rem,
     spacing: 0.21px,
+    weight: 500,
     color: $font-color,
     elements: (h1)
   ),
@@ -12,6 +13,7 @@ $typography: (
     family: 'Helvetica Neue LT Std',
     size: 1rem,
     spacing: 0.21px,
+    weight: 400,
     color: $font-color,
     elements: (h2)
   ),
@@ -19,6 +21,7 @@ $typography: (
     family: 'Helvetica Neue LT Std',
     size: .875rem,
     spacing: 0.21px,
+    weight: 400,
     color: $font-color,
     elements: (h3)
   ),
@@ -26,6 +29,7 @@ $typography: (
     family: 'Helvetica Neue LT Std',
     size: .875rem,
     spacing: 0.21px,
+    weight: 300,
     color: $font-color,
     elements: (p)
   )
