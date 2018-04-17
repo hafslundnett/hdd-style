@@ -15,10 +15,6 @@
     }
 
     @each $label in $labels {
-      &.remove-text-contrast.is-#{$label} {
-        color: $color;
-      }
-
       &.is-#{$label} {
         border-color: $color;
         background: $color;
@@ -27,6 +23,14 @@
         i, svg {
           color: $contrast;
         }
+      }
+
+      &.remove-text-contrast.is-#{$label} {
+        color: $color;
+      }
+
+      &.set-text-contrast.is-#{$label} {
+        color: $contrast;
       }
     }
   }
