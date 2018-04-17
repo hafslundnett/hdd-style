@@ -45,6 +45,14 @@
   }
 }
 
+.is-title {
+  margin-bottom: 15px;
+}
+
+.is-subtitle {
+  margin-bottom: 7.5px;
+}
+
 body {
   @extend .is-p;
 }
