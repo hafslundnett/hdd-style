@@ -1,7 +1,4 @@
 @import '../variables/main';
-@import '../frameworks/helpers';
-@import '../frameworks/colors';
-@import '../frameworks/typography';
 
 .hdd-button {
   @extend .background-colors;
@@ -11,10 +8,26 @@
   @include transition((background-color $short-animation-duration, color $short-animation-duration));
 
   padding: $button-padding;
-  border: $button-solid-border-width solid;
+  border-width: $button-solid-border-width;
   border-radius: $button-radius;
   display: inline-block;
   cursor: pointer;
+  outline: none;
+
+  &:focus,
+  &:hover {
+    // Set the default text contrast color to is-primary
+    @extend .background-colors.set-text-contrast.is-primary;
+    @extend .background-colors.set-text-contrast;
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    background: color(grey);
+    border-color: color(grey);
+    color: color(grey-dark);
+    border-width: 0;
+  }
 
 
   &-small {
@@ -36,24 +49,25 @@
       color: color(grey-dark);
     }
 
-    &:focus, &:hover {
-      background-color: color(grey);
-      outline: none;
-    }
-
     &:active {
       background-color: color(grey-dark);
     }
   }
 
   &.no-background {
+    // Set the default text contrast color to is-primary
+    @extend .background-colors.remove-text-contrast.is-primary;
     @extend .background-colors.remove-text-contrast;
-    background: none;
+
     border-width: $button-outlined-border-width;
 
-    &:focus, &:hover {
-      background-color: color(blue);
-      color: color(white);
+    // If not hovering remove background (otherwise can we not set the active color as background)
+    &:not(:hover) {
+      background: none;
+    }
+
+    &:hover {
+      @extend .background-colors.set-text-contrast;
     }
   }
 
@@ -75,24 +89,5 @@
 
   &.is-full-width {
     width: 100%;
-  }
-
-  &:focus,
-  &:hover {
-    outline: none;
-  }
-
-  &:hover,
-  &:focus,
-  &:active:focus,
-  &.is-hover {
-    background: color(blue-dark);
-  }
-
-  &[disabled] {
-    cursor: default;
-    background: color(grey);
-    color: color(grey-dark);
-    border-width: 0;
   }
 }
