@@ -11,7 +11,6 @@ const outDir = path.join(__dirname, '../dist')
 
 const paths = [
   path.join(__dirname, '../main.scss'),
-  path.join(__dirname, '../components'),
   path.join(__dirname, '../frameworks')
 ]
 
@@ -21,7 +20,7 @@ exports.watch = function(path, recursive = false) {
 }
 
 exports.compile = function() {
-  const required = ['../dist', '../dist/frameworks', '../dist/components']
+  const required = ['../dist', '../dist/frameworks']
   for (let dir of required) {
     const fullPath = path.join(__dirname, dir)
     if (!fs.existsSync(fullPath)) fs.mkdirSync(fullPath)
