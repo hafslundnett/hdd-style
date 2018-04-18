@@ -13,8 +13,9 @@
     margin-bottom: $card-header-margin;
 
     &_icon {
+      @extend .is-icon-small;
+
       color: color(blue);
-      font-size: $card-icon-size;
       margin-right: $card-header-icon-margin;
       display: inline-block;
       vertical-align: top;
@@ -25,10 +26,11 @@
     }
 
     &_action {
+      @extend .is-icon-small;
+      
       position: absolute;
       right: 0;
       top: 0;
-      font-size: $card-icon-size;
     }
 
     .is-center {

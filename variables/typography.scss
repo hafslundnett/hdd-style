@@ -39,6 +39,24 @@ $typography: (
     spacing: 0.21px,
     weight: 300,
     color: $font-color
+  ),
+  icon-small: (
+    family: 'Font Awesome 5 Pro',
+    size: 20px,
+    weight: 300,
+    color: $font-color
+  ),
+  icon-medium: (
+    family: 'Font Awesome 5 Pro',
+    size: 40px,
+    weight: 300,
+    color: $font-color
+  ),
+  icon-large: (
+    family: 'Font Awesome 5 Pro',
+    size: 80px,
+    weight: 300,
+    color: $font-color
   )
 );
 
