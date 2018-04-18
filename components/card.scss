@@ -1,0 +1,60 @@
+@import '../variables/main';
+@import '../frameworks/main';
+
+.hdd-card {
+  @include box-sizing(border-box);
+  @include box-shadow($shadow-light);
+  
+  background: color(white);
+  padding: $card-padding;
+
+  &_header {
+    position: relative;
+    margin-bottom: $card-header-margin;
+
+    &_icon {
+      color: color(blue);
+      font-size: $card-icon-size;
+      margin-right: $card-header-icon-margin;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    &_text {
+      display: inline-block;
+    }
+
+    &_action {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: $card-icon-size;
+    }
+
+    .is-center {
+      text-align: center;
+    }
+  }
+
+  &_title {
+    font-weight: bold;
+  }
+
+  &_subtitle {
+    color: $font-color;
+  }
+
+  &_content {
+    margin-bottom: $card-content-margin;
+  }
+
+  &_actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    button:not(:last-child) {
+      margin-right: $card-action-button-spacing;
+    }
+  }
+}
