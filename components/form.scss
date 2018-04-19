@@ -1,20 +1,42 @@
 @import '../variables/main';
 
 .hdd-form {
-  max-width: 400px;
-
   &_input {
+    $c: #{&};
+
     &_wrapper {
       padding: 7px 10px;
       border-radius: 3px;
-      border: 1px solid color(grey-light);
+      border: 1px solid color(grey);
       box-sizing: border-box;
+      background: color(white);
+      display: flex;
+      align-items: center;
+    }
+
+    svg, i {
+      font-size: font-size(p);
+      color: color(grey);
+
+      &:first-child {
+        margin-right: $form-input-icon-margin;
+      }
+
+      &:last-child {
+        margin-left: $form-input-icon-margin;
+      }
     }
 
     input {
+      @extend .is-p;
       border: none;
       width: 100%;
       font-size: 1rem;
+      color: $font-color;
+
+      @include placeholder() {
+        color: color(grey);
+      }
     }
 
     &-label {
@@ -32,10 +54,31 @@
     }
 
     &.is-invalid {
+      #{$c}_wrapper {
+        border-color: color(signal-red);
+
+        input {
+          color: color(signal-red);
+        }
+      }
+
+      i {
+        color: color(signal-red);
+      }
     }
 
-    &.is-active,
-    &:focus {
+    &.is-active {
+      #{$c}_wrapper {
+        border-color: color(blue);
+      }
+
+      i {
+        color: color(blue);
+      }
+    }
+
+    &.has-shadow {
+      @include box-shadow($shadow-strong);
     }
   }
 }
