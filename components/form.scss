@@ -46,13 +46,6 @@
       font-size: 1rem;
     }
 
-    &-error {
-      display: block;
-      color: color(signal-red);
-      font-size: .8rem;
-      margin-top: 10px;
-    }
-
     &.is-invalid {
       #{$c}_wrapper {
         border-color: color(signal-red);
