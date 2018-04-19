@@ -56,10 +56,10 @@
     &.is-invalid {
       #{$c}_wrapper {
         border-color: color(signal-red);
+      }
 
-        input {
-          color: color(signal-red);
-        }
+      input {
+        color: color(signal-red);
       }
 
       i {
