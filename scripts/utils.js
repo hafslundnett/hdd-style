@@ -1,5 +1,3 @@
-// IDEA: gzip the rendered bundle
-
 const zlib = require('zlib')
 const fs = require('fs')
 const path = require('path')
