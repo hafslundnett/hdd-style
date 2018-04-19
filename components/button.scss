@@ -62,7 +62,7 @@
     border-width: $button-outlined-border-width;
 
     // If not hovering remove background (otherwise can we not set the active color as background)
-    &:not(:hover) {
+    &:not(:hover):not(:focus) {
       background: none;
     }
 
