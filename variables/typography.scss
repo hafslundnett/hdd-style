@@ -1,5 +1,28 @@
 @import './colors';
 
+@function font-size($name) {
+  $typography-map: null;
+
+  @if map-has-key($typography, $name) {
+    $typography-map: map-get($typography, $name);
+  } @else {
+    @each $label, $map in $typography {
+      @if map-has-key($typography, alt-labels) {
+        @if contains(map-get($map, alt-labels), $name) {
+          $typography-map: $map;
+        }
+      }
+    }
+  }
+
+  @if not $typography-map {
+    @warn 'the typography variable "#{$name}" was not found';
+    @return null;
+  }
+
+  @return map-get($typography-map, size);
+}
+
 $typography: (
   h1: (
     family: 'Helvetica Neue LT Std',
