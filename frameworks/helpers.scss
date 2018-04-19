@@ -109,3 +109,31 @@
   -ms-user-select: $value;
   user-select: $value;
 }
+
+@mixin placeholder() {
+  &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    @content;
+  }
+
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    @content;
+    opacity:  1;
+  }
+
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+    @content;
+    opacity:  1;
+  }
+
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    @content;
+  }
+  
+  &::-ms-input-placeholder { /* Microsoft Edge */
+    @content;
+  }
+
+  &::placeholder { /* Most modern browsers support this now. */
+    @content;
+  }
+}
