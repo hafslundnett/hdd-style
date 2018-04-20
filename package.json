@@ -4,7 +4,7 @@
   "description": "A universal design system used across Hafslund nett",
   "repository": "https://github.com/hafslundnett/hdd-theme",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "node scripts/server.js",
     "watch": "node scripts/watch.js",
