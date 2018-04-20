@@ -1,5 +1,5 @@
 {
-  "name": "hdd-theme",
+  "name": "@hafslundnett/hdd-style",
   "version": "0.0.1",
   "description": "A universal design system used across Hafslund nett",
   "repository": "https://github.com/hafslundnett/hdd-theme",
@@ -23,5 +23,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "dependencies": {}
 }
