@@ -23,6 +23,32 @@
   @return map-get($color-map, color);
 }
 
+@mixin gradient-color($name) {
+  $gradient-map: null;
+
+  @if map-has-key($gradients, $name) {
+    $gradient-map: map-get($gradients, $name);
+  } @else {
+    @each $label, $map in $gradients {
+      @if map-has-key($gradients, alt-labels) {
+        @if contains(map-get($map, alt-labels), $name) {
+          $gradient-map: $map;
+        }
+      }
+    }
+  }
+
+  @if not $gradient-map {
+    @warn 'the gradient color "#{$name}" was not found';
+  }
+
+  $angle: map-get($gradient-map, angle);
+  $from: map-get($gradient-map, from);
+  $to: map-get($gradient-map, to);
+
+  @include linear-gradient($angle, $from, $to);
+}
+
 $font-color: #444444;
 
 // All colors as a list ready for iterations
