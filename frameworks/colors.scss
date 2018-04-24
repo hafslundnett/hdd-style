@@ -17,6 +17,7 @@
     @each $label in $labels {
       &.is-#{$label} {
         border-color: $color;
+        border-style: solid;
         background: $color;
         color: $contrast;
 
