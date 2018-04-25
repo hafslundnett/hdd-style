@@ -11,14 +11,14 @@
     margin-bottom: $card-header-margin;
     display: flex;
 
-    .hdd-card_header_icon {
+    &_icon {
       @extend .is-icon-small;
 
       color: color(blue);
       margin-right: $card-header-icon-margin;
       display: inline-block;
       vertical-align: top;
-      line-height: 28px;
+      line-height: $card-header-icon-height;
     }
 
     &_text {
@@ -27,9 +27,10 @@
 
     &_action {
       @extend .is-icon-small;
-      @extend .hdd-button-transparent;
-      width: 24px;
-      height: 24px;
+      @extend .hdd-button-icon.is-transparent;
+      @extend .hdd-button-icon;
+      width: $card-header-action-icon-size;
+      height: $card-header-action-icon-size;
     }
 
     .is-center {
