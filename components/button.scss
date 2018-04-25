@@ -40,30 +40,6 @@
     height: 34px;
   }
 
-  &-icon {
-    background-color: color(white);
-    border: 1px solid color(grey);
-    border-radius: 2px;
-    padding: .4rem .9rem;
-    cursor: pointer;
-
-    i, svg {
-      color: color(grey-dark);
-    }
-
-    &:active {
-      background-color: color(grey-dark);
-    }
-  }
-
-  &-transparent {
-    background: none;
-    border: none;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-  }
-
   &.no-background {
     &:not([disabled]) {
       // Set the default text contrast color to is-primary
@@ -105,5 +81,50 @@
 
   &.is-full-width {
     width: 100%;
+  }
+}
+
+
+.hdd-button-icon {
+  background-color: color(white);
+  border: 1px solid color(grey);
+  border-radius: 2px;
+  padding: .4rem .9rem;
+  cursor: pointer;
+
+  i, svg {
+    color: color(grey-dark);
+  }
+
+  &:focus, &:hover {
+    background-color: color(grey-light);
+  }
+
+  &:active {
+    background-color: color(grey);
+  }
+
+  
+  &.is-transparent {
+    background-color: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+
+    &:focus, &:hover {
+      background-color: none;
+
+      i {
+        color: color(blue);
+      }
+    }
+
+    &:active {
+      background-color: none;
+
+      i {
+        color: color(blue-dark);
+      }
+    }
   }
 }
