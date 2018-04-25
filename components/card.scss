@@ -8,28 +8,28 @@
   padding: $card-padding;
 
   &_header {
-    position: relative;
     margin-bottom: $card-header-margin;
+    display: flex;
 
-    &_icon {
+    .hdd-card_header_icon {
       @extend .is-icon-small;
 
       color: color(blue);
       margin-right: $card-header-icon-margin;
       display: inline-block;
       vertical-align: top;
+      line-height: 28px;
     }
 
     &_text {
-      display: inline-block;
+      flex: 1;
     }
 
     &_action {
       @extend .is-icon-small;
-
-      position: absolute;
-      right: 0;
-      top: 0;
+      @extend .hdd-button-transparent;
+      width: 24px;
+      height: 24px;
     }
 
     .is-center {
