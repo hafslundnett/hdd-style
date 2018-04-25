@@ -56,6 +56,14 @@
     }
   }
 
+  &-transparent {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+
   &.no-background {
     &:not([disabled]) {
       // Set the default text contrast color to is-primary
