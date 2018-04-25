@@ -52,10 +52,16 @@
   &_actions {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
 
     button:not(:last-child) {
       margin-right: $card-action-button-spacing;
+    }
+
+    &.is-filling {
+      > * {
+        flex-grow: 1;
+      }
     }
   }
 }

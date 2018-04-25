@@ -16,9 +16,11 @@
 
   &:focus,
   &:hover {
-    // Set the default text contrast color to is-primary
-    @extend .background-colors.set-text-contrast.is-primary;
-    @extend .background-colors.set-text-contrast;
+    &:not([disabled]) {
+      // Set the default text contrast color to is-primary
+      @extend .background-colors.set-text-contrast.is-primary;
+      @extend .background-colors.set-text-contrast;
+    }
   }
 
   &[disabled] {
@@ -55,9 +57,11 @@
   }
 
   &.no-background {
-    // Set the default text contrast color to is-primary
-    @extend .background-colors.remove-text-contrast.is-primary;
-    @extend .background-colors.remove-text-contrast;
+    &:not([disabled]) {
+      // Set the default text contrast color to is-primary
+      @extend .background-colors.remove-text-contrast.is-primary;
+      @extend .background-colors.remove-text-contrast;
+    }
 
     border-width: $button-outlined-border-width;
 
@@ -68,6 +72,10 @@
 
     &:hover {
       @extend .background-colors.set-text-contrast;
+
+      &[disabled] {
+        color: color(white);
+      }
     }
   }
 
