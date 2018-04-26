@@ -67,16 +67,11 @@
     @include box-shadow($shadow-strong);
   }
 
-  &.has-icon-right {
-    svg, i {
-      margin-left: $button-icon-spacing;
-    }
-  }
-
-  &.has-icon-left {
-    svg, i {
-      margin-right: $button-icon-spacing;
-    }
+  &.has-icon {
+    padding-left: $button-padding-icon;
+    padding-right: $button-padding-icon;
+    display: flex;
+    justify-content: space-between;
   }
 
   &.is-full-width {
@@ -106,13 +101,13 @@
 
   
   &.is-transparent {
-    background-color: none;
+    background: none;
     border: none;
     margin: 0;
     padding: 0;
 
     &:focus, &:hover {
-      background-color: none;
+      background: none;
 
       i {
         color: color(blue);
@@ -120,7 +115,7 @@
     }
 
     &:active {
-      background-color: none;
+      background: none;
 
       i {
         color: color(blue-dark);
