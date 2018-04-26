@@ -20,10 +20,6 @@
         border-style: solid;
         background: $color;
         color: $contrast;
-
-        i, svg {
-          color: $contrast;
-        }
       }
 
       &.remove-text-contrast.is-#{$label} {

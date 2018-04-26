@@ -7,10 +7,8 @@
     $color-map: map-get($colors, $name);
   } @else {
     @each $label, $map in $colors {
-      @if map-has-key($colors, alt-labels) {
-        @if contains(map-get($map, alt-labels), $name) {
-          $color-map: $map;
-        }
+      @if index(map-get($map, alt-labels), $name) {
+        $color-map: $map;
       }
     }
   }
@@ -30,10 +28,8 @@
     $gradient-map: map-get($gradients, $name);
   } @else {
     @each $label, $map in $gradients {
-      @if map-has-key($gradients, alt-labels) {
-        @if contains(map-get($map, alt-labels), $name) {
-          $gradient-map: $map;
-        }
+      @if index(map-get($map, alt-labels), $name) {
+        $gradient-map: $map;
       }
     }
   }

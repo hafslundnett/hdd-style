@@ -8,8 +8,8 @@
   padding: $card-padding;
 
   &_header {
-    position: relative;
     margin-bottom: $card-header-margin;
+    display: flex;
 
     &_icon {
       @extend .is-icon-small;
@@ -18,18 +18,18 @@
       margin-right: $card-header-icon-margin;
       display: inline-block;
       vertical-align: top;
+      line-height: $card-header-icon-height;
     }
 
     &_text {
-      display: inline-block;
+      flex: 1;
     }
 
     &_action {
       @extend .is-icon-small;
-
-      position: absolute;
-      right: 0;
-      top: 0;
+      @extend .hdd-button-icon.is-transparent;
+      width: $card-header-action-icon-size;
+      height: $card-header-action-icon-size;
     }
 
     .is-center {

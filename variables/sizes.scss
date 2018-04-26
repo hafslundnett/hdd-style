@@ -5,7 +5,8 @@
 $button-radius: 4px;
 $button-solid-border-width: 0px;
 $button-outlined-border-width: 1px;
-$button-padding: .5rem 1.8rem;
+$button-padding: .7rem 1.8rem;
+$button-padding-icon: 1.25rem;
 $button-icon-spacing: .5rem;
 
 /************************
@@ -14,7 +15,9 @@ $button-icon-spacing: .5rem;
 
 $card-padding: 24px 28px;
 $card-header-margin: 24px;
+$card-header-icon-height: 28px;
 $card-header-icon-margin: 8px;
+$card-header-action-icon-size: 24px;
 $card-content-margin: 24px;
 $card-action-button-spacing: 8px;
 
@@ -22,4 +25,4 @@ $card-action-button-spacing: 8px;
   * Form Input
   ************************/
 
-$form-input-icon-margin: 8px;
+$form-input-icon-margin: .7rem;

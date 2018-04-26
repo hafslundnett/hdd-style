@@ -5,7 +5,7 @@
     $c: #{&};
 
     &_wrapper {
-      padding: 7px 10px;
+      padding: 0.6rem .9rem;
       border-radius: 3px;
       border: 1px solid color(grey);
       box-sizing: border-box;
@@ -15,7 +15,7 @@
     }
 
     svg, i {
-      font-size: font-size(p);
+      font-size: font-size(h2);
       color: color(grey);
 
       &:first-child {
