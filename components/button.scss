@@ -101,13 +101,15 @@
 
   
   &.is-transparent {
-    background: none;
+    background-color: transparent;
     border: none;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 
     &:focus, &:hover {
-      background: none;
+      background-color: transparent;
+      outline: none;
 
       i {
         color: color(blue);
@@ -115,7 +117,7 @@
     }
 
     &:active {
-      background: none;
+      background-color: transparent;
 
       i {
         color: color(blue-dark);

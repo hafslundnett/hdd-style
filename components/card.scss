@@ -28,7 +28,6 @@
     &_action {
       @extend .is-icon-small;
       @extend .hdd-button-icon.is-transparent;
-      @extend .hdd-button-icon;
       width: $card-header-action-icon-size;
       height: $card-header-action-icon-size;
     }
