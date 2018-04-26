@@ -6,6 +6,7 @@
 
   background: color(white);
   padding: $card-padding;
+  display: block;
 
   &_header {
     margin-bottom: $card-header-margin;
@@ -23,6 +24,7 @@
 
     &_text {
       flex: 1;
+      display: block;
     }
 
     &_action {
@@ -38,14 +40,17 @@
   }
 
   &_title {
+    display: block;
     font-weight: bold;
   }
 
   &_subtitle {
+    display: block;
     color: $font-color;
   }
 
   &_content {
+    display: block;
     margin-bottom: $card-content-margin;
   }
 
