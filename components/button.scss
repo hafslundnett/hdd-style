@@ -1,8 +1,8 @@
 @import '../variables/main';
 
 .hdd-button {
-  @extend .background-colors;
   @extend .background-colors.is-primary;
+  @extend .background-colors;
   @extend .is-p;
 
   @include transition((background-color $short-animation-duration, color $short-animation-duration));
@@ -38,6 +38,39 @@
 
     padding: 0 16px;
     height: 34px;
+  }
+
+  &-icon {
+    @extend .background-colors.is-grey;
+    @extend .background-colors;
+
+    background: color(white);
+    border-width: 1px;
+
+    border-radius: 2px;
+    padding: .4rem .9rem;
+    cursor: pointer;
+
+    &:focus, &:hover, &:active {
+      @extend .background-colors.remove-text-contrast;
+      background: color(grey-light);
+    }
+
+    &.is-transparent {
+      @extend .background-colors.remove-text-contrast;
+
+      background: none;
+      border: none;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+
+      &:focus, &:hover, &:active {
+        @extend .background-colors.remove-text-contrast.is-primary; // default color
+        @extend .background-colors.remove-text-contrast;
+        outline: none;
+      }
+    }
   }
 
   &.no-background {
@@ -76,52 +109,5 @@
 
   &.is-full-width {
     width: 100%;
-  }
-}
-
-
-.hdd-button-icon {
-  background-color: color(white);
-  border: 1px solid color(grey);
-  border-radius: 2px;
-  padding: .4rem .9rem;
-  cursor: pointer;
-
-  i, svg {
-    color: color(grey-dark);
-  }
-
-  &:focus, &:hover {
-    background-color: color(grey-light);
-  }
-
-  &:active {
-    background-color: color(grey);
-  }
-
-  
-  &.is-transparent {
-    background-color: transparent;
-    border: none;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-
-    &:focus, &:hover {
-      background-color: transparent;
-      outline: none;
-
-      i {
-        color: color(blue);
-      }
-    }
-
-    &:active {
-      background-color: transparent;
-
-      i {
-        color: color(blue-dark);
-      }
-    }
   }
 }
