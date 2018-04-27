@@ -1,6 +1,4 @@
 @import '../variables/typography';
-
-@import '../variables/fontawesome/fontawesome';
 @import '../variables/fontawesome/fa-light';
 
 @each $label, $map in $typography {

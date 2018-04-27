@@ -1,4 +1,5 @@
-@import './colors';
+@import 'fontawesome/fontawesome';
+@import 'colors';
 
 @function font-size($name) {
   $typography-map: null;
