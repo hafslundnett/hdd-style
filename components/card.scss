@@ -51,10 +51,10 @@
 
   &_content {
     display: block;
-    margin-bottom: $card-content-margin;
   }
-
+  
   &_actions {
+    margin-top: $card-content-margin;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
