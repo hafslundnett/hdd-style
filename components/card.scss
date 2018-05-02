@@ -3,6 +3,7 @@
 .hdd-card {
   @include box-sizing(border-box);
   @include box-shadow($shadow-light);
+  @include border-radius($card-radius);
 
   background: color(white);
   padding: $card-padding;
