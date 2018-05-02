@@ -1,7 +1,7 @@
 @import '../variables/main';
 
 .hdd-form {
-  &_input {
+  &_field {
     $c: #{&};
 
     &_wrapper {
@@ -24,18 +24,6 @@
 
       &:last-child {
         margin-left: $form-input-icon-margin;
-      }
-    }
-
-    input {
-      @extend .is-p;
-      border: none;
-      width: 100%;
-      font-size: 1rem;
-      color: $font-color;
-
-      @include placeholder() {
-        color: color(grey);
       }
     }
 
@@ -80,6 +68,20 @@
 
     &.has-shadow {
       @include box-shadow($shadow-strong);
+    }
+  }
+
+  
+  &_input,
+  &_select {
+    @extend .is-p;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    color: $font-color;
+
+    @include placeholder() {
+      color: color(grey);
     }
   }
 }
