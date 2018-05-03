@@ -103,8 +103,18 @@
   &.has-icon {
     padding-left: $button-padding-icon;
     padding-right: $button-padding-icon;
-    display: flex;
-    justify-content: space-between;
+
+    &.is-left {
+      i {
+        margin-right: .5rem;
+      }
+    }
+
+    &.is-right {
+      i {
+        margin-left: .5rem;
+      }
+    }
   }
 
   &.is-full-width {
