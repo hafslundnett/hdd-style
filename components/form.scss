@@ -1,11 +1,13 @@
 @import '../variables/main';
 
 .hdd-form {
-  &_input {
+  &_field {
     $c: #{&};
+    margin-bottom: 2.5rem;
+    position: relative;
 
     &_wrapper {
-      padding: 0.6rem .9rem;
+      padding: 0.7rem .9rem;
       border-radius: 3px;
       border: 1px solid color(grey);
       box-sizing: border-box;
@@ -27,22 +29,10 @@
       }
     }
 
-    input {
-      @extend .is-p;
-      border: none;
-      width: 100%;
-      font-size: 1rem;
-      color: $font-color;
-
-      @include placeholder() {
-        color: color(grey);
-      }
-    }
-
     &_label {
       display: inline-block;
       font-weight: bold;
-      margin-bottom: 10px;
+      margin-bottom: 4px;
       font-size: 1rem;
     }
 
@@ -50,8 +40,8 @@
       display: block;
       color: color(signal-red);
       font-size: .8rem;
-      margin-top: 10px;
-      min-height: 15px;
+      margin-top: 4px;
+      position: absolute;
     }
 
     &.is-invalid {
@@ -80,6 +70,21 @@
 
     &.has-shadow {
       @include box-shadow($shadow-strong);
+    }
+  }
+
+  
+  &_input,
+  &_select {
+    @extend .is-p;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    color: $font-color;
+    padding: 0;
+
+    @include placeholder() {
+      color: color(grey);
     }
   }
 }

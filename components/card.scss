@@ -3,6 +3,7 @@
 .hdd-card {
   @include box-sizing(border-box);
   @include box-shadow($shadow-light);
+  @include border-radius($card-radius);
 
   background: color(white);
   padding: $card-padding;
@@ -51,10 +52,10 @@
 
   &_content {
     display: block;
-    margin-bottom: $card-content-margin;
   }
-
+  
   &_actions {
+    margin-top: $card-content-margin;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
