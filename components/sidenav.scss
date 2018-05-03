@@ -2,6 +2,7 @@
 
 .hdd-sidenav {
   @include box-shadow($shadow-medium);
+  @include transition(width $medium-transition $transition-cubic);
 
   position: fixed;
   width: $sidenav-collapsed-width;
@@ -31,7 +32,9 @@
   &_list {
     &_item {
       $c: #{&};
+      @include transition(all $short-transition $transition-cubic);
 
+      background: color(white);
       width: $sidenav-extended-width;
       display: flex;
       align-items: center;

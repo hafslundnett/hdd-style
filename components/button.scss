@@ -5,7 +5,7 @@
   @extend .background-colors;
   @extend .is-p;
 
-  @include transition((background-color $short-animation-duration, color $short-animation-duration));
+  @include transition((background-color $short-transition $transition-cubic, color $short-transition $transition-cubic));
 
   padding: $button-padding;
   border-width: $button-solid-border-width;
