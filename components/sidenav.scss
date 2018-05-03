@@ -1,0 +1,75 @@
+@import '../variables/main';
+
+.hdd-sidenav {
+  @include box-shadow($shadow-medium);
+
+  position: fixed;
+  width: $sidenav-collapsed-width;
+  height: 100%;
+  z-index: $sidenav-z-index;
+  overflow: hidden;
+  background: color(white);
+
+  &:hover,
+  &.is-active {
+    width: $sidenav-extended-width;
+  }
+
+  @at-root {
+    .hdd-page_sidenav {
+      min-width: $sidenav-collapsed-width;
+    }
+  }
+
+  &_logo {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    display: block;
+  }
+
+  &_list {
+    &_item {
+      $c: #{&};
+
+      width: $sidenav-extended-width;
+      display: flex;
+      align-items: center;
+
+      &:hover,
+      &.is-active {
+        background: color(blue-light1);
+
+        #{$c}_icon,
+        #{$c}_label {
+          color: color(white);
+        }
+      }
+
+      &_icon {
+        width: $sidenav-collapsed-width;
+        height: $sidenav-collapsed-width;
+
+        color: color(grey);
+        font-size: font-size(icon-small);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &_label {
+        @extend .is-h2;
+
+        color: color(grey);
+        flex-grow: 1;
+        padding-right: 1.5rem;
+      }
+
+      .hdd-badge {
+        float: right;
+      }
+    }
+  }
+}

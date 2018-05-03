@@ -5,11 +5,43 @@
   <title>Hafslund digital designsystem</title>
   <link rel="stylesheet" href="../dist/main.min.css">
 </head>
-<body style="background-color: #E1E4E8">
+<body>
   <div class="hdd-page">
-    <div class="hdd-page_sidebar-navigation">
-      <div class="hdd-sidebar-navigation">
-        Hello world
+    <div class="hdd-page_sidenav">
+      <div class="hdd-sidenav">
+        <a class="hdd-sidenav_logo" href="#">
+          <img src="/showoff/assets/logo.svg" alt="Hafslund logo">
+        </a>
+
+        <div class="hdd-sidenav_list">
+          <a class="hdd-sidenav_list_item" href="#">
+            <span class="hdd-sidenav_list_item_icon">
+              <i class="fal fa-chart-pie"><span class="hdd-badge-icon"></span></i>
+            </span>
+            <span class="hdd-sidenav_list_item_label">
+              <span>Oversikt</span>
+              <span class="hdd-badge">2</span>
+            </span>
+          </a>
+
+          <a class="hdd-sidenav_list_item" href="#">
+            <span class="hdd-sidenav_list_item_icon">
+              <i class="fal fa-clipboard-list"></i>
+            </span>
+            <span class="hdd-sidenav_list_item_label">
+              <span>Mine åpne saker</span>
+            </span>
+          </a>
+
+          <a class="hdd-sidenav_list_item" href="#">
+            <span class="hdd-sidenav_list_item_icon">
+              <i class="fal fa-map-pin"></i>
+            </span>
+            <span class="hdd-sidenav_list_item_label">
+              <span>Kart</span>
+            </span>
+          </a>
+        </div>
       </div>
     </div>
     <div class="hdd-page_content">
@@ -101,13 +133,13 @@
 
       <div class="row box-row">
         <div class="col-xs">
-          <div class="hdd-form_input">
-            <label class="hdd-form_input_label" for="first-name">First name</label>
+          <div class="hdd-form_item">
+            <label class="hdd-form_item_label" for="first-name">First name</label>
             <div class="hdd-form_input_wrapper">
               <i class="fal fa-wrench"></i>
-              <input id="first-name">
+              <input id="first-name" class="hdd-form_input">
             </div>
-            <span class="hdd-form_input_error">OOPSIE WOOPSIE!! Uwu We made a fucky wucky!! A wittle fucko boingo! The code monkeys at our headquarters are working VEWY HAWD to fix this!</span>
+            <span class="hdd-form_item_error"><i class="fal fa-cog"></i>OOPSIE WOOPSIE!! Uwu We made a fucky wucky!! A wittle fucko boingo! The code monkeys at our headquarters are working VEWY HAWD to fix this!</span>
           </div>
         </div>
 
