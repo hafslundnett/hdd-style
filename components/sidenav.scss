@@ -15,13 +15,15 @@
 
   &:hover,
   &.is-active {
-    width: $sidenav-extended-width;
+    &:not(.no-expand) {
+      width: $sidenav-extended-width;
 
-    #{$c}_list {
-      &_item {
-        &_label {
-          opacity: 1;
-          margin-left: 0px;
+      #{$c}_list {
+        &_item {
+          &_label {
+            opacity: 1;
+            margin-left: 0px;
+          }
         }
       }
     }
