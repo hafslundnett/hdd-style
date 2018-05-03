@@ -22,8 +22,26 @@ $card-header-action-icon-size: 24px;
 $card-content-margin: 24px;
 $card-action-button-spacing: 8px;
 
- /************************
-  * Form Input
-  ************************/
+/************************
+ * Form Input
+ ************************/
 
 $form-input-icon-margin: .7rem;
+
+/************************
+ * Sidebar navigation
+ ************************/
+
+$sidenav-collapsed-width: 65px;
+$sidenav-extended-width: 300px;
+$sidenav-z-index: 99;
+
+/************************
+ * Badge
+ ************************/
+
+$badge-padding: .2rem .6rem;
+$badge-radius: 2rem;
+
+$badge-icon-size: 6px;
+$badge-icon-border: 2px solid color(white);
