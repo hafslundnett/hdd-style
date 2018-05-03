@@ -1,6 +1,8 @@
 @import '../variables/main';
 
 .hdd-sidenav {
+  $c: #{&};
+
   @include box-shadow($shadow-medium);
   @include transition(width $medium-transition $transition-cubic);
 
@@ -14,6 +16,15 @@
   &:hover,
   &.is-active {
     width: $sidenav-extended-width;
+
+    #{$c}_list {
+      &_item {
+        &_label {
+          opacity: 1;
+          margin-left: 0px;
+        }
+      }
+    }
   }
 
   @at-root {
@@ -63,11 +74,15 @@
       }
 
       &_label {
+        @include transition(all $short-transition $transition-cubic);
         @extend .is-h2;
 
         color: color(grey);
         flex-grow: 1;
         padding-right: 1.5rem;
+
+        opacity: 0;
+        margin-left: -10px;
       }
 
       .hdd-badge {
