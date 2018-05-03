@@ -4,6 +4,7 @@
   &_field {
     $c: #{&};
     margin-bottom: 1.25rem;
+    display: inline-block;
     position: relative;
 
     &_wrapper {
@@ -70,6 +71,10 @@
 
     &.has-shadow {
       @include box-shadow($shadow-strong);
+    }
+
+    &.is-full-width {
+      width: 100%;
     }
   }
 
