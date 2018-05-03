@@ -104,6 +104,9 @@
     padding-left: $button-padding-icon;
     padding-right: $button-padding-icon;
 
+    display: inline-flex;
+    justify-content: space-between;
+
     &.is-left {
       i {
         margin-right: .5rem;
