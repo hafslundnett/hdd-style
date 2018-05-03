@@ -7,7 +7,12 @@
 
   background: color(white);
   padding: $card-padding;
-  display: block;
+  display: flex;
+  flex-direction: column;
+
+  &.is-full-height {
+    height: 100%;
+  }
 
   &_header {
     margin-bottom: $card-header-margin;
@@ -53,12 +58,11 @@
   &_content {
     display: block;
   }
-  
+
   &_actions {
-    margin-top: $card-content-margin;
+    margin-top: auto; /* Align buttons always to the bottom of the card */
+    padding-top: $card-content-padding;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
 
     button:not(:last-child) {
       margin-right: $card-action-button-spacing;
