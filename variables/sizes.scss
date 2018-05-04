@@ -6,6 +6,7 @@ $button-radius: 4px;
 $button-solid-border-width: 1px;
 $button-outlined-border-width: 1px;
 $button-padding: .7rem 1.8rem;
+$button-padding-small: .5rem 1rem;
 $button-padding-icon: 1.25rem;
 $button-icon-spacing: .5rem;
 
@@ -45,3 +46,10 @@ $badge-radius: 2rem;
 
 $badge-icon-size: 6px;
 $badge-icon-border: 2px solid color(white);
+
+/************************
+ * Table
+ ************************/
+
+$table-header-padding: 1.2rem 1rem;
+$table-row-padding: .7rem 1rem;
