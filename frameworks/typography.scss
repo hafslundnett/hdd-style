@@ -1,5 +1,6 @@
 @import '../variables/typography';
 @import '../variables/fontawesome/fa-light';
+@import '../variables/fontawesome/fa-regular';
 
 @each $label, $map in $typography {
   $family: map-get($map, family);

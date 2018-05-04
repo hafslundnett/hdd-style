@@ -36,8 +36,7 @@
     @extend .hdd-button;
     @extend .is-p-small;
 
-    padding: 0 16px;
-    height: 34px;
+    padding: $button-padding-small;
   }
 
   &-icon {
