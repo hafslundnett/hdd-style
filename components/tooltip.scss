@@ -93,6 +93,10 @@
       box-sizing: border-box;
       cursor: pointer;
 
+      > i {
+        margin-right: .5rem;
+      }
+
       &:not(.no-hover):hover {
         background: color(blue-light3);
       }
