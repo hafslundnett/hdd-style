@@ -16,7 +16,7 @@
 
   &:focus,
   &:hover {
-    &:not([disabled]) {
+    &:not(.no-hover):not([disabled]) {
       // Set the default text contrast color to is-primary
       @extend .background-colors.set-text-contrast.is-primary;
       @extend .background-colors.set-text-contrast;
@@ -51,8 +51,10 @@
     cursor: pointer;
 
     &:focus, &:hover, &:active {
-      @extend .background-colors.remove-text-contrast;
-      background: color(grey-light);
+      &:not(.no-hover) {
+        @extend .background-colors.remove-text-contrast;
+        background: color(grey-light);
+      }
     }
 
     &.is-transparent {
@@ -65,9 +67,11 @@
       cursor: pointer;
 
       &:focus, &:hover, &:active {
-        @extend .background-colors.remove-text-contrast.is-primary; // default color
-        @extend .background-colors.remove-text-contrast;
-        outline: none;
+        &:not(.no-hover) {
+          @extend .background-colors.remove-text-contrast.is-primary; // default color
+          @extend .background-colors.remove-text-contrast;
+          outline: none;
+        }
       }
     }
   }
@@ -87,10 +91,12 @@
     }
 
     &:hover {
-      @extend .background-colors.set-text-contrast;
+      &:not(.no-hover) {
+        @extend .background-colors.set-text-contrast;
 
-      &[disabled] {
-        color: color(white);
+        &[disabled] {
+          color: color(white);
+        }
       }
     }
   }
