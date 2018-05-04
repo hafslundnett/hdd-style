@@ -1,0 +1,112 @@
+.hdd-tooltip {
+  $b: #{&};
+
+  position: relative;
+
+  &:not(.no-hover):hover {
+    #{$b}_content {
+      @extend #{$b}_content.is-active;
+    }
+  }
+
+  &_content {
+    @extend .is-p;
+    @include filter(drop-shadow($shadow-medium));
+    @include box-shadow($shadow-medium); // IE fallback?
+
+    border-radius: $tooltip-border-radius;
+    background: color(white);
+    position: absolute;
+    display: none;
+    z-index: 100;
+    color: color(primary);
+
+    left: 0;
+    right: 0;
+    top: calc(100% + #{$tooltip-tip-size} + #{$tooltip-offset});
+    margin: auto;
+    padding: $tooltip-padding;
+    box-sizing: border-box;
+
+    max-width: $tooltip-width;
+    width: $tooltip-width;
+    transform: translateX(-50%);
+    left: 50%;
+    text-align: left;
+
+    &:before {
+      content:'';
+      width:0;
+      height:0;
+
+      display:block;
+      position:absolute;
+
+      border-left: $tooltip-tip-size solid transparent;
+      border-right: $tooltip-tip-size solid transparent;
+
+      border-bottom: $tooltip-tip-size solid color(white);
+
+      top: -$tooltip-tip-size;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    &.is-active {
+      display: block;
+    }
+
+    &.is-center {
+      text-align: center;
+    }
+
+    &.has-arrow-right {
+      transform: translateX(-100%);
+      left: calc(50% + #{$tooltip-tip-left-offset} + #{$tooltip-tip-size});
+
+      &:before {
+        right: $tooltip-tip-right-offset;
+        left: auto;
+      }
+    }
+
+    &.has-arrow-left {
+      transform: translateX(0);
+      left: calc(50% - #{$tooltip-tip-left-offset} - #{$tooltip-tip-size});
+
+      &:before {
+        left: $tooltip-tip-left-offset;
+        right: auto;
+      }
+    }
+  }
+
+  &_menu {
+    @extend #{$b}_content;
+    padding: 0;
+
+    &_item {
+      display: block;
+      width: 100%;
+      padding: $tooltip-menu-padding;
+      box-sizing: border-box;
+      cursor: pointer;
+
+      &:not(.no-hover):hover {
+        background: color(blue-light3);
+      }
+
+      // Overflow fix since we cannot use overflow hidden
+      &:first-child {
+        padding-top: $tooltip-menu-side-padding;
+        border-radius: $tooltip-border-radius $tooltip-border-radius 0 0;
+      }
+
+      &:last-child {
+        padding-bottom: $tooltip-menu-side-padding;
+        border-radius: 0 0 $tooltip-border-radius $tooltip-border-radius;
+      }
+    }
+  }
+}
