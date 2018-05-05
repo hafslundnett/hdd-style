@@ -3,7 +3,7 @@
 .hdd-sidenav {
   $c: #{&};
 
-  @include box-shadow($shadow-medium);
+  @include box-shadow($shadow-light);
   @include transition(width $medium-transition $transition-cubic);
 
   position: fixed;

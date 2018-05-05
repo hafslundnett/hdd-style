@@ -1,0 +1,43 @@
+.hdd-navigation {
+  @include box-shadow($shadow-medium);
+
+  width: 100%;
+  height: $navigation-height;
+  background: color(white);
+  z-index: 90;
+  display: flex;
+  justify-content: flex-end;
+  padding: $navigation-padding;
+  box-sizing: border-box;
+
+  @at-root {
+    .hdd-layout_navigation {
+      height: $navigation-height;
+    }
+  }
+
+  &_title {
+    @extend .is-h1;
+
+    position: absolute;
+    text-align: center;
+    align-self: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  &_user {
+    display: flex;
+    align-items: center;
+  }
+
+  &_avatar {
+    width: #{$navigation-height*$navigation-avatar-size};
+    height: #{$navigation-height*$navigation-avatar-size};
+    border-radius: 100%;
+    background-position: center;
+    margin-left: .5rem;
+    background: color(grey-light);
+  }
+}
