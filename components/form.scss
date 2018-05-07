@@ -2,51 +2,41 @@
 
 .hdd-form {
   &_field {
-    $c: #{&};
+    $e: #{&};
     margin-bottom: 1.25rem;
-    display: inline-block;
     position: relative;
-
-    &_wrapper {
-      padding: 0.7rem .9rem;
-      border-radius: 3px;
-      border: 1px solid color(grey);
-      box-sizing: border-box;
-      background: color(white);
-      display: flex;
-      align-items: center;
-    }
-
-    svg, i {
-      font-size: font-size(h2);
-      color: color(grey);
-
-      &:first-child {
-        margin-right: $form-input-icon-margin;
-      }
-
-      &:last-child {
-        margin-left: $form-input-icon-margin;
-      }
-    }
+    display: block;
 
     &_label {
       display: inline-block;
       font-weight: bold;
-      margin-bottom: 4px;
+      margin-bottom: .5rem;
       font-size: 1rem;
+      cursor: pointer;
     }
 
     &_error {
       display: block;
       color: color(signal-red);
       font-size: .8rem;
-      margin-top: 4px;
+      margin-top: .2rem;
       position: absolute;
     }
 
+    &.is-inline {
+      display: inline-block;
+    }
+
+    &.is-list {
+      @extend #{$e}.is-inline;
+
+      > * {
+        margin-right: 1rem;
+      }
+    }
+
     &.is-invalid {
-      #{$c}_wrapper {
+      #{$e}_wrapper {
         border-color: color(signal-red);
       }
 
@@ -58,38 +48,118 @@
         color: color(signal-red);
       }
     }
+  }
 
-    &.is-active {
-      #{$c}_wrapper {
-        border-color: color(blue);
-      }
+  &_input,
+  &_select {
+    $e: #{&};
 
-      i {
-        color: color(blue);
-      }
+    padding: 0.7rem .9rem;
+    border-radius: 3px;
+    border: 1px solid color(grey);
+    box-sizing: border-box;
+    background: color(white);
+    display: flex;
+    align-items: center;
+
+    // Disable focus state if
+    &:focus-within:not(.no-focus) {
+      @extend #{$e}.is-focus;
     }
 
     &.has-shadow {
       @include box-shadow($shadow-strong);
     }
 
-    &.is-full-width {
+    &.is-focus {
+      border-color: color(blue);
+
+      #{$e}_icon, svg, i {
+        color: color(blue);
+      }
+    }
+
+    &_field, input {
+      @extend .is-p;
+      border: none;
       width: 100%;
+      font-size: 1rem;
+      color: $font-color;
+      padding: 0;
+
+      @include placeholder() {
+        color: color(grey);
+      }
+    }
+
+    &_icon, svg, i {
+      font-size: font-size(h2);
+      color: color(grey);
+
+      &:first-child {
+        margin-right: $form-input-icon-margin;
+      }
+
+      &:last-child {
+        margin-left: $form-input-icon-margin;
+      }
     }
   }
 
-  
-  &_input,
-  &_select {
-    @extend .is-p;
-    border: none;
-    width: 100%;
-    font-size: 1rem;
-    color: $font-color;
-    padding: 0;
+  &_checkbox {
+    $c: #{&};
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 
-    @include placeholder() {
-      color: color(grey);
+    // We have to seperate the checkbox marked styling because of the checked state
+    %checkbox_mark.is-checked {
+      position: relative;
+
+      &:after {
+        @include transform(rotate(45deg));
+
+        content: "";
+        position: absolute;
+        left: 0; right: 0;
+        top: -2px; bottom: 0;
+        margin: auto;
+
+        width: 4px;
+        height: 10px;
+
+        border: solid color(primary);
+        border-width: 0 2px 2px 0;
+      }
+    }
+
+    &.is-checked {
+      #{$c}_mark {
+        @extend %checkbox_mark.is-checked;
+      }
+    }
+
+    // Need to hide the original checkbox
+    input {
+      position: absolute;
+      opacity: 0;
+
+      &:checked ~ #{$c}_mark {
+        @extend %checkbox_mark.is-checked;
+      }
+    }
+
+    &_mark {
+      height: $form-checkbox_mark-size;
+      width: $form-checkbox_mark-size;
+      background: color(white);
+      border-radius: $form-checkbox_mark-border-radius;
+      border: $form-checkbox_mark-border;
+      display: inline-block;
+    }
+
+    &_label {
+      margin-left: 1rem;
     }
   }
 }
