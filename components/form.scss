@@ -141,8 +141,7 @@
 
     // Need to hide the original checkbox
     input {
-      position: absolute;
-      opacity: 0;
+      display: none;
 
       &:checked ~ #{$c}_mark {
         @extend %checkbox_mark.is-checked;
