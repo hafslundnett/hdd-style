@@ -27,7 +27,7 @@
       display: inline-block;
     }
 
-    &.is-list {
+    &.is-line {
       @extend #{$e}.is-inline;
 
       > * {
