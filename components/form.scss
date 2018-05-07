@@ -72,10 +72,10 @@
     }
 
     &.is-focus {
-      border-color: color(blue);
+      border-color: color(primary);
 
       #{$e}_icon, svg, i {
-        color: color(blue);
+        color: color(primary);
       }
     }
 
