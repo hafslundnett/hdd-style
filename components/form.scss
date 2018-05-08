@@ -52,10 +52,6 @@
         color: color(signal-red);
       }
     }
-
-    &_tags {
-      @extend .hdd-tags;
-    }
   }
 
   &_input,
