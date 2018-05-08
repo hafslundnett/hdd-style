@@ -148,6 +148,11 @@
       }
     }
 
+    .hdd-badge {
+      margin-left: .5rem;
+      float: right;
+    }
+
     &_mark {
       height: $form-checkbox_mark-size;
       width: $form-checkbox_mark-size;
@@ -159,6 +164,7 @@
 
     &_label {
       margin-left: 1rem;
+      flex-grow: 1;
     }
   }
 }
