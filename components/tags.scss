@@ -1,0 +1,16 @@
+.hdd-tag {
+  @extend .is-p-small;
+  background: color(blue-light3);
+  padding: $tag-padding;
+  border-radius: $tag-border-radius;
+  margin-left: $tag-spacing;
+  display: inline-block;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &_icon, svg, i {
+    margin-left: $tag-icon-spacing;
+  }
+}
