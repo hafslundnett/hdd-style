@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Hafslund digital designsystem</title>
-  <link rel="stylesheet" href="../dist/main.min.css">
+  <link rel="stylesheet" href="../dist/bundle.min.css">
 </head>
 <body>
   <div class="hdd-layout">
@@ -56,7 +56,13 @@
           <span class="hdd-navigation_title">Overview</span>
 
           <div class="hdd-navigation_user">
-            <span>Jeroen Rinzema</span>
+            <span class="hdd-tooltip">
+              Jeroen Rinzema
+              <span class="hdd-tooltip_menu is-active has-arrow-right">
+                <span class="hdd-tooltip_menu_item"><i class="fal fa-pencil"></i>Edit</span>
+                <span class="hdd-tooltip_menu_item"><i class="fal fa-check"></i>Submit</span>
+              </span>
+            </span>
             <img class="hdd-navigation_avatar" src="http://via.placeholder.com/150x150">
           </div>
         </div>
@@ -281,7 +287,7 @@
                 <label class="hdd-form_checkbox">
                   <input type="checkbox" checked>
                   <span class="hdd-form_checkbox_mark"></span>
-                  <span class="hdd-form_checkbox_label">Approved</span>
+                  <span class="hdd-form_checkbox_label">Approved<span class="hdd-badge">12</span></span>
                 </label>
               </div>
               <div class="hdd-form_field is-line">
@@ -305,7 +311,7 @@
                 <label class="hdd-form_checkbox">
                   <input type="checkbox" checked>
                   <span class="hdd-form_checkbox_mark"></span>
-                  <span class="hdd-form_checkbox_label">Approved</span>
+                  <span class="hdd-form_checkbox_label">Approved<span class="hdd-badge">20</span></span>
                 </label>
               </div>
               <div class="hdd-form_field">
@@ -328,30 +334,93 @@
           <div class="row">
             <div class="col-xs">
               <table class="hdd-table is-striped has-shadow">
-                <tr class="hdd-table_header">
-                  <th>Kundenr.</th>
-                  <th>Personnr.</th>
-                  <th>Fakturanr.</th>
-                  <th></th>
-                </tr>
-                <tr>
-                  <td>124221</td>
-                  <td>123419384</td>
-                  <td>31</td>
-                  <td class="hdd-table_action"><i class="far fa-angle-right"></i></td>
-                </tr>
-                <tr>
-                  <td>124221</td>
-                  <td>123419384</td>
-                  <td>31</td>
-                  <td class="hdd-table_action"><span class="hdd-button-small">Submit</span></td>
-                </tr>
-                <tr>
-                  <td>124221</td>
-                  <td>123419384</td>
-                  <td>31</td>
-                  <td class="hdd-table_action"><i class="far fa-angle-right"></i></td>
-                </tr>
+                <thead class="hdd-table_header">
+                  <tr>
+                    <th>Kundenr.</th>
+                    <th>Personnr.</th>
+                    <th>Fakturanr.</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>124221</td>
+                    <td>123419384</td>
+                    <td>31</td>
+                    <td class="hdd-table_action"><i class="far fa-angle-right"></i></td>
+                  </tr>
+                  <tr>
+                    <td>124221</td>
+                    <td>123419384</td>
+                    <td>31</td>
+                    <td class="hdd-table_action"><span class="hdd-button-small">Submit</span></td>
+                  </tr>
+                  <tr>
+                    <td>124221</td>
+                    <td>123419384</td>
+                    <td>31</td>
+                    <td class="hdd-table_action"><i class="far fa-angle-right"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs">
+              <table class="hdd-table has-shadow">
+                <thead class="hdd-table_header">
+                  <tr>
+                    <th>Kundenr.</th>
+                    <th>Personnr.</th>
+                    <th>Fakturanr.</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="is-primary is-stripe">
+                    <td>124221</td>
+                    <td>123419384</td>
+                    <td>31</td>
+                    <td class="hdd-table_action"><i class="far fa-angle-right"></i></td>
+                  </tr>
+                  <tr class="hdd-table_details is-primary">
+                    <td colspan="4">
+                      <table class="hdd-table is-aligned-top">
+                        <tr class="hdd-table_header">
+                          <th>Målepunkt</th>
+                          <th>Anleggsraning</th>
+                          <th>Klassifiseringer</th>
+                          <th>Adresse</th>
+                          <th>Siste aksjon utført</th>
+                          <th>Innsamling siste 7 dagen</th>
+                          <th>Snitt RSSI siste 7 dagen</th>
+                        </tr>
+                        <tr>
+                          <td>M: 101231</td>
+                          <td>100</td>
+                          <td>CL-01 Død måler<br>CL-04 Dårlig Rssi<br>CL-12 Dårlig innsamling</td>
+                          <td>Drammensveien 114</td>
+                          <td>05.04.18</td>
+                          <td>89%</td>
+                          <td>-91dB</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>124221</td>
+                    <td>123419384</td>
+                    <td>31</td>
+                    <td class="hdd-table_action"><i class="far fa-angle-right"></i></td>
+                  </tr>
+                  <tr class="is-stripe">
+                    <td>124221</td>
+                    <td>123419384</td>
+                    <td>31</td>
+                    <td class="hdd-table_action"><i class="far fa-angle-right"></i></td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>

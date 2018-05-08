@@ -8,7 +8,7 @@ const sass = require('node-sass')
 const outDir = path.join(__dirname, '../dist')
 
 const paths = [
-  path.join(__dirname, '../main.scss'),
+  [path.join(__dirname, '../main.scss'), 'bundle'],
   path.join(__dirname, '../frameworks')
 ]
 
@@ -29,10 +29,15 @@ exports.compile = function() {
   let project = []
 
   for (let p of paths) {
+    let output
+    if (Array.isArray(p)) {
+      [p, output] = p
+    }
+
     const isDir = fs.lstatSync(p).isDirectory()
 
     if (!isDir) {
-      project.push([p, path.basename(p).replace(/\.\w+$/, '')])
+      project.push([p, output || path.basename(p).replace(/\.\w+$/, '')])
       continue
     }
 
@@ -47,7 +52,8 @@ exports.compile = function() {
         continue
       }
 
-      project.push([file, path.join(dirName, name.replace(/\.\w+$/, ''))])
+      output = path.join(dirName, name.replace(/\.\w+$/, ''))
+      project.push([file, output])
     }
   }
 
