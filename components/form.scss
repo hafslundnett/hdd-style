@@ -195,6 +195,7 @@
   &_select {
     $e: #{&};
 
+    position: relative;
     display: flex;
     align-items: center;
 
@@ -246,10 +247,24 @@
       }
     }
 
+    &.has-icon {
+      select {
+        padding-left: calc(#{$form-input_icon-margin} + #{font-size(h2)} + #{$form-input_padding-left});
+      }
+    }
+
     &_icon, svg, i {
       font-size: font-size(h2);
       color: color(grey);
-      padding: $form-select_icon_padding;
+      position: absolute;
+
+      &:first-child {
+        left: $form-select_icon-margin;
+      }
+
+      &:last-child {
+        right: $form-select_icon-margin;
+      }
     }
   }
 }

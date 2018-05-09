@@ -27,8 +27,9 @@ $card-action-button-spacing: 8px;
  * Form Input
  ************************/
 
-$form-input_icon-margin: .7rem;
-$form-input_padding: 0.7rem .9rem;
+$form-input_icon-margin: .9rem;
+$form-input_padding-left: .7rem;
+$form-input_padding: $form-input_padding-left .9rem;
 $form-input_border-radius: 4px;
 $form-input_border: 1px solid color(grey);
 
@@ -46,7 +47,7 @@ $form-checkbox_mark-border: 1px solid color(grey);
 $form-select_padding: $form-input_padding;
 $form-select_border-radius: $form-input_border-radius;
 $form-select_border: $form-input_border;
-$form-select_icon_padding: 0 .9rem 0 0;
+$form-select_icon-margin: .9rem;
 
 /************************
  * Sidebar navigation
