@@ -78,7 +78,7 @@
   }
 
   &_details {
-    // background: color(blue-light4);
+    display: none;
 
     > td {
       column-span: all;
@@ -98,6 +98,10 @@
           padding-left: 0;
         }
       }
+    }
+
+    &.is-active {
+      display: table-row;
     }
   }
 
