@@ -219,7 +219,7 @@
     }
 
     // Disable focus state if
-    &:not(.is-invalid):focus-within:not(.no-focus) {
+    &:focus-within:not(.no-focus) {
       @extend #{$e}.is-focus;
     }
 
@@ -229,6 +229,10 @@
 
     &.is-focus {
       border-color: color(primary);
+
+      select {
+        color: color(primary);
+      }
 
       #{$e}_icon, svg, i {
         color: color(primary);
