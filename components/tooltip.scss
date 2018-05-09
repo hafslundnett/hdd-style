@@ -28,8 +28,7 @@
     padding: $tooltip-padding;
     box-sizing: border-box;
 
-    max-width: $tooltip-width;
-    width: $tooltip-width;
+    min-width: $tooltip-width;
     transform: translateX(-50%);
     left: 50%;
     text-align: left;
@@ -54,7 +53,7 @@
     }
 
     &.is-active {
-      display: block;
+      display: inline-table;
     }
 
     &.is-center {
@@ -87,14 +86,16 @@
     padding: 0;
 
     &_item {
-      display: block;
+      display: flex;
       width: 100%;
       padding: $tooltip-menu-padding;
       box-sizing: border-box;
       cursor: pointer;
+      white-space: nowrap;
 
       > i {
         margin-right: .5rem;
+        width: 1rem;
       }
 
       &:not(.no-hover):hover {
