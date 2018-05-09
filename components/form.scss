@@ -9,6 +9,7 @@
     margin-bottom: 1.25rem;
     position: relative;
     display: block;
+    text-align: left;
 
     &_label {
       @extend .is-p;
@@ -41,10 +42,11 @@
     }
 
     &.is-line {
-      @extend #{$e}.is-inline;
-
       > * {
-        margin-right: 1rem;
+        &:not(#{$e}_title):not(#{$e}_error), {
+          margin-right: 1rem;
+          float: left;
+        }
       }
     }
   }
@@ -133,21 +135,13 @@
     %checkbox_mark.is-checked {
       position: relative;
 
-      &:after {
-        @include transform(rotate(45deg));
+      &:before {
+        @extend .fal, .fa-check:before;
+        color: color(primary);
+        font-size: .85rem;
 
-        content: "";
-        position: absolute;
-        left: 0; right: 0;
-        top: -2px; bottom: 0;
-        margin: auto;
-
-        width: 4px;
-        height: 10px;
-
-        border-style: solid;
-        border-color: color(primary);
-        border-width: 0 2px 2px 0;
+        transform: translateX(-50%);
+        left: 50%;
       }
     }
 
@@ -162,8 +156,8 @@
       #{$e}_mark {
         border-color: color(signal-red);
 
-        &:after {
-          border-color: color(signal-red);
+        &:before {
+          color: color(signal-red);
         }
       }
     }
