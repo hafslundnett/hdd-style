@@ -128,7 +128,7 @@
   &:-ms-input-placeholder { /* Internet Explorer 10-11 */
     @content;
   }
-  
+
   &::-ms-input-placeholder { /* Microsoft Edge */
     @content;
   }
@@ -136,4 +136,44 @@
   &::placeholder { /* Most modern browsers support this now. */
     @content;
   }
+}
+
+.flush-margin {
+  margin: 0;
+}
+
+.flush-margin-top {
+  margin-top: 0;
+}
+
+.flush-margin-right {
+  margin-right: 0;
+}
+
+.flush-margin-bottom {
+  margin-bottom: 0;
+}
+
+.flush-margin-left {
+  margin-left: 0;
+}
+
+.flush-padding {
+  padding: 0;
+}
+
+.flush-padding-top {
+  padding-top: 0;
+}
+
+.flush-padding-right {
+  padding-right: 0;
+}
+
+.flush-padding-bottom {
+  padding-bottom: 0;
+}
+
+.flush-padding-left {
+  padding-left: 0;
 }

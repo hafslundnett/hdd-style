@@ -1,6 +1,9 @@
 @import '../variables/main';
 
 .hdd-form {
+  /************************
+   *  Field
+   ************************/
   &_field {
     $e: #{&};
     margin-bottom: 1.25rem;
@@ -12,15 +15,18 @@
       font-weight: bold;
       margin-bottom: .5rem;
       font-size: 1rem;
-      cursor: pointer;
     }
 
     &_error {
-      display: block;
+      display: none;
       color: color(signal-red);
       font-size: .8rem;
       margin-top: .2rem;
       position: absolute;
+
+      &.is-active {
+        display: block;
+      }
     }
 
     &.is-inline {
@@ -34,36 +40,24 @@
         margin-right: 1rem;
       }
     }
-
-    &.is-invalid {
-      #{$e}_wrapper {
-        border-color: color(signal-red);
-      }
-
-      input {
-        color: color(signal-red);
-      }
-
-      i {
-        color: color(signal-red);
-      }
-    }
   }
 
-  &_input,
-  &_select {
+  /************************
+   *  Input
+   ************************/
+  &_input {
     $e: #{&};
 
-    padding: 0.7rem .9rem;
-    border-radius: 3px;
-    border: 1px solid color(grey);
+    padding: $form-input_padding;
+    border-radius: $form-input_border-radius;
+    border: $form-input_border;
     box-sizing: border-box;
     background: color(white);
     display: flex;
     align-items: center;
 
     // Disable focus state if
-    &:focus-within:not(.no-focus) {
+    &:not(.is-invalid):focus-within:not(.no-focus) {
       @extend #{$e}.is-focus;
     }
 
@@ -76,6 +70,18 @@
 
       #{$e}_icon, svg, i {
         color: color(primary);
+      }
+    }
+
+    &.is-invalid {
+      border-color: color(signal-red);
+
+      input {
+        color: color(signal-red);
+      }
+
+      i {
+        color: color(signal-red);
       }
     }
 
@@ -97,17 +103,20 @@
       color: color(grey);
 
       &:first-child {
-        margin-right: $form-input-icon-margin;
+        margin-right: $form-input_icon-margin;
       }
 
       &:last-child {
-        margin-left: $form-input-icon-margin;
+        margin-left: $form-input_icon-margin;
       }
     }
   }
 
+  /************************
+   *  Checkbox
+   ************************/
   &_checkbox {
-    $c: #{&};
+    $e: #{&};
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -128,14 +137,26 @@
         width: 4px;
         height: 10px;
 
-        border: solid color(primary);
+        border-style: solid;
+        border-color: color(primary);
         border-width: 0 2px 2px 0;
       }
     }
 
     &.is-checked {
-      #{$c}_mark {
+      #{$e}_mark {
         @extend %checkbox_mark.is-checked;
+      }
+    }
+
+    &.is-invalid {
+      input:checked ~ #{$e}_mark,
+      #{$e}_mark {
+        border-color: color(signal-red);
+
+        &:after {
+          border-color: color(signal-red);
+        }
       }
     }
 
@@ -143,7 +164,7 @@
     input {
       display: none;
 
-      &:checked ~ #{$c}_mark {
+      &:checked ~ #{$e}_mark {
         @extend %checkbox_mark.is-checked;
       }
     }
@@ -165,6 +186,89 @@
     &_label {
       margin-left: 1rem;
       flex-grow: 1;
+    }
+  }
+
+  /************************
+   *  Select
+   ************************/
+  &_select {
+    $e: #{&};
+
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    background: color(white);
+    border-radius: $form-select_border-radius;
+    border: $form-select_border;
+    width: 100%;
+
+    select {
+      padding: $form-select_padding;
+
+      background: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      flex-grow: 1;
+      border: 0;
+
+      &::-ms-expand {
+        display: none;
+      }
+    }
+
+    // Disable focus state if
+    &:focus-within:not(.no-focus) {
+      @extend #{$e}.is-focus;
+    }
+
+    &.has-shadow {
+      @include box-shadow($shadow-strong);
+    }
+
+    &.is-focus {
+      border-color: color(primary);
+
+      select {
+        color: color(primary);
+      }
+
+      #{$e}_icon, svg, i {
+        color: color(primary);
+      }
+    }
+
+    &.is-invalid {
+      border-color: color(signal-red);
+
+      select {
+        color: color(signal-red);
+      }
+
+      i {
+        color: color(signal-red);
+      }
+    }
+
+    &.has-icon {
+      select {
+        padding-left: calc(#{$form-input_icon-margin} + #{font-size(h2)} + #{$form-input_padding-left});
+      }
+    }
+
+    &_icon, svg, i {
+      font-size: font-size(h2);
+      color: color(grey);
+      position: absolute;
+
+      &:first-child {
+        left: $form-select_icon-margin;
+      }
+
+      &:last-child {
+        right: $form-select_icon-margin;
+      }
     }
   }
 }

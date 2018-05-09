@@ -1,0 +1,21 @@
+.hdd-tags {
+  position: relative;
+  margin-top: .5rem;
+
+  &_icon, svg, i {
+    margin-left: $tag-icon-spacing;
+  }
+
+  &_item {
+    @extend .is-p-small;
+    background: color(blue-light3);
+    padding: $tag-padding;
+    border-radius: $tag-border-radius;
+    margin-left: $tag-spacing;
+    display: inline-block;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

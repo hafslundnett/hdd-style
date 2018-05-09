@@ -244,7 +244,7 @@
                   <i class="fal fa-address-book"></i>
                   <input id="first-name" placeholder="John">
                 </div>
-                <span class="hdd-form_field_error">First name already exists</span>
+                <span class="hdd-form_field_error is-active">First name already exists</span>
               </div>
             </div>
 
@@ -254,6 +254,41 @@
                 <div class="hdd-form_input">
                   <input id="last-name" placeholder="Doe">
                   <i class="fal fa-wrench"></i>
+                </div>
+                <div class="hdd-tags">
+                  <span class="hdd-tags_item">2018<i class="fal fa-times"></i></span>
+                  <span class="hdd-tags_item">2017<i class="fal fa-times"></i></span>
+                  <span class="hdd-tags_item">2016<i class="fal fa-times"></i></span>
+                  <span class="hdd-tags_item">2015<i class="fal fa-times"></i></span>
+                  <span class="hdd-tags_item">2014<i class="fal fa-times"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs">
+              <div class="hdd-form_field">
+                <label class="hdd-form_field_label">City</label>
+                <div class="hdd-form_select">
+                  <select id="select-city">
+                    <option>Oslo</option>
+                    <option>Lillehammer</option>
+                  </select>
+                  <i class="fal fa-angle-down"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs">
+              <div class="hdd-form_field">
+                <label class="hdd-form_field_label">Invalid</label>
+                <div class="hdd-form_select is-invalid has-icon">
+                  <i class="fal fa-globe"></i>
+                  <select id="select-city">
+                    <option>Oslo</option>
+                    <option>Lillehammer</option>
+                  </select>
+                  <i class="fal fa-angle-down"></i>
                 </div>
               </div>
             </div>
@@ -270,8 +305,8 @@
               </div>
             </div>
             <div class="col-xs">
-              <div class="hdd-form_field is-invalid">
-                <div class="hdd-form_input has-shadow">
+              <div class="hdd-form_field">
+                <div class="hdd-form_input has-shadow is-invalid">
                   <i class="fal fa-search"></i>
                   <input id="search" value="search for something">
                   <i class="fal fa-times"></i>
@@ -284,24 +319,24 @@
             <div class="col-xs">
               <div class="hdd-form_field is-line">
                 <span class="hdd-form_field_label">User rights</span>
-                <label class="hdd-form_checkbox">
+                <label class="hdd-form_checkbox is-invalid">
                   <input type="checkbox" checked>
                   <span class="hdd-form_checkbox_mark"></span>
-                  <span class="hdd-form_checkbox_label">Approved<span class="hdd-badge">12</span></span>
+                  <span class="hdd-form_checkbox_label">Read<span class="hdd-badge">12</span></span>
                 </label>
               </div>
               <div class="hdd-form_field is-line">
                 <label class="hdd-form_checkbox">
                   <input type="checkbox" checked>
                   <span class="hdd-form_checkbox_mark"></span>
-                  <span class="hdd-form_checkbox_label">Denied</span>
+                  <span class="hdd-form_checkbox_label">Write</span>
                 </label>
               </div>
               <div class="hdd-form_field is-line">
                 <label class="hdd-form_checkbox">
                   <input type="checkbox">
                   <span class="hdd-form_checkbox_mark"></span>
-                  <span class="hdd-form_checkbox_label">Awaiting</span>
+                  <span class="hdd-form_checkbox_label">Execute</span>
                 </label>
               </div>
             </div>
@@ -327,6 +362,18 @@
                   <span class="hdd-form_checkbox_mark"></span>
                   <span class="hdd-form_checkbox_label">Awaiting</span>
                 </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs">
+              <div class="hdd-tags flush-margin-top">
+                <span class="hdd-tags_item">2018<i class="fal fa-times"></i></span>
+                <span class="hdd-tags_item">2017<i class="fal fa-times"></i></span>
+                <span class="hdd-tags_item">2016<i class="fal fa-times"></i></span>
+                <span class="hdd-tags_item">2015<i class="fal fa-times"></i></span>
+                <span class="hdd-tags_item">2014<i class="fal fa-times"></i></span>
               </div>
             </div>
           </div>
@@ -384,7 +431,7 @@
                     <td>31</td>
                     <td class="hdd-table_action"><i class="far fa-angle-right"></i></td>
                   </tr>
-                  <tr class="hdd-table_details is-primary">
+                  <tr class="hdd-table_details is-primary is-active">
                     <td colspan="4">
                       <table class="hdd-table is-aligned-top">
                         <tr class="hdd-table_header">
