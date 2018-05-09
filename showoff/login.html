@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hafslund digital designsystem</title>
+  <link rel="stylesheet" href="../dist/bundle.min.css">
+
+  <style media="screen">
+    .hdd-layout_login {
+      flex-grow: 1;
+      min-height: 100vh;
+    }
+
+    .hdd-layout_login_container {
+      width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div class="hdd-layout">
+    <div class="hdd-layout_login row center-xs middle-xs">
+      <div class="hdd-layout_login_container">
+        <div class="hdd-card has-shadow">
+          <div class="hdd-card_header">
+            <div class="hdd-card_header_text">
+              <h1 class="hdd-card_title is-h1 is-primary">Login</h1>
+            </div>
+            <i class="hdd-card_header_action fal fa-cog hdd-tooltip is-active">
+              <span class="hdd-tooltip_menu is-active has-arrow-right">
+                <span class="hdd-tooltip_menu_item"><i class="fal fa-exclamation-triangle"></i>Reset password</span>
+                <span class="hdd-tooltip_menu_item"><i class="fal fa-plus"></i>New user</span>
+              </span>
+            </i>
+          </div>
+
+          <div class="hdd-form">
+            <div class="hdd-form_field">
+              <div class="hdd-form_input">
+                <i class="fal fa-male"></i>
+                <input id="username" placeholder="Username">
+              </div>
+            </div>
+            <div class="hdd-form_field flush-margin-bottom">
+              <div class="hdd-form_input">
+                <i class="fal fa-lock"></i>
+                <input type="password" id="password" placeholder="Password">
+              </div>
+            </div>
+          </div>
+
+          <div class="hdd-card_actions is-filling">
+            <button class="hdd-button is-safe has-icon"><i class="fal fa-lock"></i>Login</button>
+            <button class="hdd-button is-danger has-icon"><i class="fal fa-exclamation-triangle"></i>Reset Password</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

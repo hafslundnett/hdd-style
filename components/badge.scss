@@ -1,8 +1,9 @@
 .hdd-badge {
+  @extend .background-colors.is-signal-red; // <- default color
+  @extend .background-colors;
   @extend .is-p-small;
 
-  background: color(signal-red);
-  color: color(white);
+  border-width: 0;
   padding: $badge-padding;
   border-radius: $badge-radius;
 

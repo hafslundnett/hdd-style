@@ -1,6 +1,8 @@
 @import '../variables/main';
 
 .hdd-button {
+  $b: #{&};
+
   @extend .background-colors.is-primary;
   @extend .background-colors;
   @extend .is-p;
@@ -40,6 +42,8 @@
   }
 
   &-icon {
+    $e: #{&};
+
     @extend .background-colors.is-grey;
     @extend .background-colors;
 
@@ -55,6 +59,10 @@
         @extend .background-colors.remove-text-contrast;
         background: color(grey-light);
       }
+    }
+
+    &.is-active {
+      @extend #{$e}:hover;
     }
 
     &.is-transparent {
@@ -99,6 +107,10 @@
         }
       }
     }
+  }
+
+  &.is-active {
+    @extend #{$b}:hover;
   }
 
   &.has-shadow {

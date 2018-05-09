@@ -99,7 +99,18 @@ $navigation-avatar-size: .7;
 /************************
  * Tags
  ************************/
+
 $tag-padding: .3rem .4rem .3rem .8rem;
 $tag-icon-spacing: .4rem;
 $tag-border-radius: 4px;
 $tag-spacing: .5rem;
+
+/************************
+ * Dropdown
+ ************************/
+
+$dropdown-border-radius: 4px;
+$dropdown-border: 1px solid color(grey);
+$dropdown_spacing-element: 4px;
+$dropdown_content-padding: .5rem 0;
+$dropdown_item-padding: .5rem 0 .5rem 1rem;

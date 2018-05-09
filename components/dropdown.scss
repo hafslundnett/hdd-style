@@ -1,0 +1,48 @@
+.hdd-dropdown {
+  position: relative;
+
+  &_content {
+    @extend #{&}.is-aligned-bottom;
+
+    background: color(white);
+    position: absolute;
+    left: 0;
+    display: none;
+    min-width: 100%;
+    z-index: 90;
+
+    padding: $dropdown_content-padding;
+    border-radius: $dropdown-border-radius;
+    border: $dropdown-border;
+
+    &.is-aligned-top {
+      // Still needs work
+      top: -100%;
+      bottom: 100%;
+    }
+
+    &.is-aligned-bottom {
+      top: calc(100% + #{$dropdown_spacing-element});
+      bottom: 0;
+    }
+
+    &.is-active {
+      display: inline-table;
+    }
+
+    &_item {
+      $e: #{&};
+
+      padding: $dropdown_item-padding;
+      cursor: pointer;
+
+      &:hover:not(.no-hover) {
+        @extend #{$e}.is-active;
+      }
+
+      &.is-active {
+        background: color(grey-light);
+      }
+    }
+  }
+}
