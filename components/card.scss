@@ -36,8 +36,6 @@
     &_action {
       @extend .is-icon-small;
       @extend .hdd-button-icon.is-transparent;
-      width: $card-header-action-icon-size;
-      height: $card-header-action-icon-size;
     }
 
     .is-center {
@@ -48,6 +46,7 @@
   &_title {
     display: block;
     font-weight: bold;
+    text-align: left;
   }
 
   &_subtitle {
