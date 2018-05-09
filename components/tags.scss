@@ -4,6 +4,7 @@
 
   &_icon, svg, i {
     margin-left: $tag-icon-spacing;
+    cursor: pointer;
   }
 
   &_item {
