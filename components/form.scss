@@ -11,10 +11,17 @@
     display: block;
 
     &_label {
+      @extend .is-p;
+
       display: inline-block;
       font-weight: bold;
       margin-bottom: .5rem;
-      font-size: 1rem;
+    }
+
+    &_title {
+      @extend .is-p;
+      display: block;
+      margin-bottom: 1rem;
     }
 
     &_error {
@@ -120,6 +127,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    margin-bottom: .75rem;
 
     // We have to seperate the checkbox marked styling because of the checked state
     %checkbox_mark.is-checked {
