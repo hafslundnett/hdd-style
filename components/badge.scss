@@ -1,6 +1,6 @@
 .hdd-badge {
+  @extend .background-colors.is-signal-red; // <- default color
   @extend .background-colors;
-  @extend .background-colors.signal-red;
   @extend .is-p-small;
 
   border-width: 0;
