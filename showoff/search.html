@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hafslund digital designsystem</title>
+  <link rel="stylesheet" href="../dist/bundle.min.css">
+
+  <style media="screen">
+    .hdd-layout_content {
+      max-width: 1100px;
+      margin: 5rem auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="hdd-layout">
+    <div class="hdd-layout_sidenav">
+      <div class="hdd-sidenav">
+        <a class="hdd-sidenav_logo" href="#">
+          <img src="/showoff/assets/logo.svg" alt="Hafslund logo">
+        </a>
+
+        <div class="hdd-sidenav_list">
+          <a href="#">
+            <li class="hdd-sidenav_list_item">
+              <span class="hdd-sidenav_list_item_icon">
+                <i class="fal fa-chart-pie"><span class="hdd-badge-icon"></span></i>
+              </span>
+              <span class="hdd-sidenav_list_item_label">
+                <span>Oversikt</span>
+              <span class="hdd-badge">2</span>
+              </span>
+            </li>
+          </a>
+
+          <a href="#">
+            <li class="hdd-sidenav_list_item" href="#">
+              <span class="hdd-sidenav_list_item_icon">
+                <i class="fal fa-clipboard-list"></i>
+              </span>
+              <span class="hdd-sidenav_list_item_label">
+                <span>Mine åpne saker</span>
+              </span>
+            </li>
+          </a>
+
+          <a href="#">
+            <li class="hdd-sidenav_list_item">
+              <span class="hdd-sidenav_list_item_icon">
+                <i class="fal fa-map-pin"></i>
+              </span>
+              <span class="hdd-sidenav_list_item_label">
+                <span>Kart</span>
+              </span>
+            </li>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="hdd-layout_content">
+      <h1 class="is-h1">Search</h1>
+      <hr class="gap is-20">
+
+      <div class="row center-xs">
+        <div class="col-xs">
+          <div class="hdd-form_field">
+            <div class="hdd-form_input">
+              <i class="fal fa-search"></i>
+              <input id="last-name" placeholder="Search">
+            </div>
+            <div class="hdd-tags">
+              <span class="hdd-tags_item">Drammensve*<i class="fal fa-times"></i></span>
+              <span class="hdd-tags_item">124221<i class="fal fa-times"></i></span>
+              <span class="hdd-tags_item">31<i class="fal fa-times"></i></span>
+            </div>
+          </div>
+          <div class="row flush-margin-bottom">
+            <div class="col-xs">
+              <div class="hdd-form_field">
+                <span class="hdd-form_field_title">Categories</span>
+                <label class="hdd-form_checkbox">
+                  <input type="checkbox">
+                  <span class="hdd-form_checkbox_mark"></span>
+                  <span class="hdd-form_checkbox_label">Rural</span>
+                </label>
+                <label class="hdd-form_checkbox">
+                  <input type="checkbox" checked>
+                  <span class="hdd-form_checkbox_mark"></span>
+                  <span class="hdd-form_checkbox_label">City</span>
+                </label>
+                <label class="hdd-form_checkbox">
+                  <input type="checkbox">
+                  <span class="hdd-form_checkbox_mark"></span>
+                  <span class="hdd-form_checkbox_label">Offshore</span>
+                </label>
+              </div>
+            </div>
+            <div class="col-xs">
+              <div class="hdd-form_field">
+                <span class="hdd-form_field_title">Types</span>
+                <label class="hdd-form_checkbox">
+                  <input type="checkbox" checked>
+                  <span class="hdd-form_checkbox_mark"></span>
+                  <span class="hdd-form_checkbox_label">Private</span>
+                </label>
+                <label class="hdd-form_checkbox">
+                  <input type="checkbox">
+                  <span class="hdd-form_checkbox_mark"></span>
+                  <span class="hdd-form_checkbox_label">Buisness</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <button class="hdd-button is-primary is-block">Submit</button>
+        </div>
+        <div class="col-xs">
+          <div class="hdd-datepicker_container is-inline">
+            <div class="hdd-datepicker_container_header">
+              <span class="hdd-button-icon"><i class="fal fa-arrow-left"></i></span>
+              <span class="hdd-datepicker_container_header_title">mars 2018</span>
+              <span class="hdd-button-icon"><i class="fal fa-arrow-right"></i></span>
+            </div>
+            <div class="hdd-datepicker_container_week">
+              <span>ma</span>
+              <span>ti</span>
+              <span>on</span>
+              <span>to</span>
+              <span>fr</span>
+              <span>lø</span>
+              <span>sø</span>
+            </div>
+            <div class="hdd-datepicker_container_days">
+              <span></span>
+              <span><span>1</span></span>
+              <span><span>2</span></span>
+              <span><span>3</span></span>
+              <span><span>4</span></span>
+              <span><span>5</span></span>
+              <span><span>6</span></span>
+              <span><span>7</span></span>
+              <span><span>8</span></span>
+              <span><span>9</span></span>
+              <span><span>10</span></span>
+              <span><span>11</span></span>
+              <span><span>12</span></span>
+              <span><span>13</span></span>
+              <span><span>14</span></span>
+              <span><span>15</span></span>
+              <span><span>16</span></span>
+              <span><span>17</span></span>
+              <span><span>18</span></span>
+              <span class="is-selected"><span>19</span></span>
+              <span class="is-in-range"><span>20</span></span>
+              <span class="is-in-range"><span>21</span></span>
+              <span class="is-in-range"><span>22</span></span>
+              <span class="is-in-range"><span>23</span></span>
+              <span class="is-selected"><span>24</span></span>
+              <span><span>25</span></span>
+              <span><span>26</span></span>
+              <span><span>27</span></span>
+              <span><span>28</span></span>
+              <span><span>29</span></span>
+              <span><span>30</span></span>
+              <span><span>31</span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="gap is-30">
+
+      <div class="row">
+        <div class="col-xs">
+          <table class="hdd-table has-shadow">
+            <thead class="hdd-table_header">
+              <tr>
+                <th>Kundenr.</th>
+                <th>Personnr.</th>
+                <th>Fakturanr.</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="is-primary is-stripe">
+                <td>124221</td>
+                <td>123419384</td>
+                <td>31</td>
+                <td class="hdd-table_action"><i class="far fa-angle-right"></i></td>
+              </tr>
+              <tr class="hdd-table_details is-primary is-active">
+                <td colspan="4">
+                  <table class="hdd-table is-aligned-top">
+                    <tr class="hdd-table_header">
+                      <th>Målepunkt</th>
+                      <th>Anleggsraning</th>
+                      <th>Klassifiseringer</th>
+                      <th>Adresse</th>
+                      <th>Siste aksjon utført</th>
+                      <th>Innsamling siste 7 dagen</th>
+                      <th>Snitt RSSI siste 7 dagen</th>
+                    </tr>
+                    <tr>
+                      <td>M: 101231</td>
+                      <td>100</td>
+                      <td>CL-01 Død måler<br>CL-04 Dårlig Rssi<br>CL-12 Dårlig innsamling</td>
+                      <td>Drammensveien 114</td>
+                      <td>05.04.18</td>
+                      <td>89%</td>
+                      <td>-91dB</td>
+                    </tr>
+                    <tr>
+                      <td>M: 101232</td>
+                      <td>80</td>
+                      <td>CL-01 Død måler</td>
+                      <td>Drammensveien 114</td>
+                      <td>05.03.18</td>
+                      <td>70%</td>
+                      <td>-93dB</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>124221</td>
+                <td>123419384</td>
+                <td>31</td>
+                <td class="hdd-table_action"><i class="far fa-angle-right"></i></td>
+              </tr>
+              <tr class="is-stripe">
+                <td>124221</td>
+                <td>123419384</td>
+                <td>31</td>
+                <td class="hdd-table_action"><i class="far fa-angle-right"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
