@@ -16,6 +16,10 @@
   cursor: pointer;
   outline: none;
 
+  &.is-block {
+    display: block;
+  }
+
   &:focus,
   &:hover {
     &:not(.no-hover):not([disabled]) {
