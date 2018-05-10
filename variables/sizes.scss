@@ -78,7 +78,7 @@ $table-row-padding: .7rem 1rem;
  * Tooltip
  ************************/
 
-$tooltip-tip-size: 8px;
+$tooltip-tip-size: 10px;
 $tooltip-offset: 3px;
 $tooltip-padding: .5rem 1rem;
 $tooltip-width: 150px;
@@ -87,6 +87,23 @@ $tooltip-menu-padding: .5rem 1rem;
 $tooltip-tip-right-offset: 1rem;
 $tooltip-tip-left-offset: 1rem;
 $tooltip-border-radius: 4px;
+
+/************************
+ * Datepicker
+ ************************/
+
+$datepicker-tip-size: $tooltip-tip-size;
+$datepicker-offset: $tooltip-offset;
+$datepicker-padding: .75rem;
+$datepicker-border-width: 1px;
+$datepicker-max-width: 250px;
+$datepicker-border-color: color(grey);
+$datepicker-border: $datepicker-border-width solid $datepicker-border-color;
+$datepicker-tip-right-offset: 1rem;
+$datepicker-tip-left-offset: 1rem;
+$datepicker-border-radius: $tooltip-border-radius;
+$datepicker_days-border-width: 1px;
+$datepicker_days-per-week: 7;
 
 /************************
  * Navigation
