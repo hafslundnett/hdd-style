@@ -10,14 +10,14 @@
 
     @if $alt-labels {
       @each $label in $alt-labels {
-        $labels: append($labels, $label)
+        $labels: append($labels, $label);
       }
     }
 
     @each $label in $labels {
       &.is-#{$label} {
-        border-color: $color;
         border-style: solid;
+        border-color: $color;
         background: $color;
         color: $contrast;
       }
