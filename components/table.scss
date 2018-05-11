@@ -7,15 +7,15 @@
 
   th,
   td {
-    text-align: left;
-    padding: $table-row-padding;
     margin: 0;
+    padding: $table-row-padding;
+    text-align: left;
 
     &#{$b}_action {
-      font-size: font-size(icon-small);
-      text-align: right;
       display: flex;
       float: right;
+      font-size: font-size(icon-small);
+      text-align: right;
 
       > * {
         margin: 0 .5rem;
@@ -31,17 +31,19 @@
     }
   }
 
-  &_row, tr {
+  &_row,
+  tr {
     position: relative;
 
-    &:before {
+    &::before {
       @extend .background-colors;
 
       content: '';
+      display: table-cell;
+
       width: .3rem;
       height: 100%;
       border-width: 0;
-      display: table-cell;
     }
 
     > *:first-child {
@@ -53,7 +55,7 @@
     }
 
     &.is-stripe {
-      background: color(blue-light4);
+      background: color('blue-light4');
     }
   }
 
@@ -64,7 +66,7 @@
   &_header {
     @extend .is-h3;
 
-    border-bottom: 2px solid color(grey-light);
+    border-bottom: 2px solid color('grey-light');
     text-align: left;
 
     th,
@@ -89,7 +91,7 @@
     }
 
     tr {
-      &:before {
+      &::before {
         width: 0;
       }
 
@@ -127,7 +129,8 @@
 
   &.has-shadow {
     @include box-shadow($shadow-medium);
-    border-radius: 5px;
+
     overflow: hidden;
+    border-radius: 5px;
   }
 }
