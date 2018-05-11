@@ -6,17 +6,18 @@
    ************************/
   &_field {
     $e: #{&};
-    margin-bottom: 1.25rem;
-    position: relative;
+
     display: block;
+    position: relative;
+    margin-bottom: 1.25rem;
     text-align: left;
 
     &_label {
       @extend .is-p;
 
       display: inline-block;
-      font-weight: bold;
       margin-bottom: .5rem;
+      font-weight: bold;
     }
 
     &_title {
@@ -27,10 +28,10 @@
 
     &_error {
       display: none;
-      color: color(signal-red);
-      font-size: .8rem;
-      margin-top: .2rem;
       position: absolute;
+      margin-top: .2rem;
+      color: color('signal-red');
+      font-size: .8rem;
 
       &.is-active {
         display: block;
@@ -57,13 +58,15 @@
   &_input {
     $e: #{&};
 
-    padding: $form-input_padding;
-    border-radius: $form-input_border-radius;
-    border: $form-input_border;
-    box-sizing: border-box;
-    background: color(white);
     display: flex;
+    box-sizing: border-box;
+
     align-items: center;
+    padding: $form-input-padding;
+    border: $form-input-border;
+    border-radius: $form-input-border-radius;
+
+    background: color('white');
 
     // Disable focus state if
     &:not(.is-invalid):focus-within:not(.no-focus) {
@@ -75,48 +78,52 @@
     }
 
     &.is-focus {
-      border-color: color(primary);
+      border-color: color('primary');
 
       #{$e}_icon, svg, i {
-        color: color(primary);
+        color: color('primary');
       }
     }
 
     &.is-invalid {
-      border-color: color(signal-red);
+      border-color: color('signal-red');
 
       input {
-        color: color(signal-red);
+        color: color('signal-red');
       }
 
       i {
-        color: color(signal-red);
+        color: color('signal-red');
       }
     }
 
-    &_field, > input {
+    &_field,
+    > input {
       @extend .is-p;
-      border: none;
+
       width: 100%;
-      font-size: 1rem;
-      color: $font-color;
       padding: 0;
+      border: none;
+      color: $font-color;
+      font-size: 1rem;
 
       @include placeholder() {
-        color: color(grey);
+        color: color('grey');
       }
     }
 
-    &_icon, > svg, > i {
+    &_icon,
+    > svg,
+    > i {
+      color: color('grey');
       font-size: font-size(h2);
-      color: color(grey);
 
       &:first-child {
-        margin-right: $form-input_icon-margin;
+        margin-right: $form-input-icon-margin;
       }
 
       &:last-child {
-        margin-left: $form-input_icon-margin;
+        margin-left: $form-input-icon-margin;
       }
     }
   }
@@ -126,38 +133,40 @@
    ************************/
   &_checkbox {
     $e: #{&};
-    cursor: pointer;
+
     display: flex;
     align-items: center;
     margin-bottom: .75rem;
+    cursor: pointer;
 
     // We have to seperate the checkbox marked styling because of the checked state
-    %checkbox_mark.is-checked {
+    %checkbox-mark.is-checked {
       position: relative;
 
-      &:before {
+      &::before {
         @extend .fal, .fa-check:before;
-        color: color(primary);
-        font-size: .85rem;
 
-        transform: translateX(-50%);
         left: 50%;
+        transform: translateX(-50%);
+
+        color: color('primary');
+        font-size: .85rem;
       }
     }
 
     &.is-checked {
       #{$e}_mark {
-        @extend %checkbox_mark.is-checked;
+        @extend %checkbox-mark.is-checked;
       }
     }
 
     &.is-invalid {
       input:checked ~ #{$e}_mark,
       #{$e}_mark {
-        border-color: color(signal-red);
+        border-color: color('signal-red');
 
-        &:before {
-          color: color(signal-red);
+        &::before {
+          color: color('signal-red');
         }
       }
     }
@@ -167,7 +176,7 @@
       display: none;
 
       &:checked ~ #{$e}_mark {
-        @extend %checkbox_mark.is-checked;
+        @extend %checkbox-mark.is-checked;
       }
     }
 
@@ -177,17 +186,18 @@
     }
 
     &_mark {
-      height: $form-checkbox_mark-size;
-      width: $form-checkbox_mark-size;
-      background: color(white);
-      border-radius: $form-checkbox_mark-border-radius;
-      border: $form-checkbox_mark-border;
       display: inline-block;
+
+      width: $form-checkbox-mark-size;
+      height: $form-checkbox-mark-size;
+      border: $form-checkbox-mark-border;
+      border-radius: $form-checkbox-mark-border-radius;
+      background: color('white');
     }
 
     &_label {
-      margin-left: 1rem;
       flex-grow: 1;
+      margin-left: 1rem;
     }
   }
 
@@ -197,23 +207,26 @@
   &_select {
     $e: #{&};
 
-    position: relative;
     display: flex;
+    position: relative;
     align-items: center;
 
-    background: color(white);
-    border-radius: $form-select_border-radius;
-    border: $form-select_border;
     width: 100%;
 
-    select {
-      padding: $form-select_padding;
+    border: $form-select-border;
+    border-radius: $form-select-border-radius;
 
-      background: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
+    background: color('white');
+
+    select {
       flex-grow: 1;
+      padding: $form-select-padding;
+
       border: 0;
+      background: none;
+
+      -moz-appearance: none;
+      -webkit-appearance: none;
 
       &::-ms-expand {
         display: none;
@@ -230,46 +243,48 @@
     }
 
     &.is-focus {
-      border-color: color(primary);
+      border-color: color('primary');
 
       select {
-        color: color(primary);
+        color: color('primary');
       }
 
       #{$e}_icon, > svg, > i {
-        color: color(primary);
+        color: color('primary');
       }
     }
 
     &.is-invalid {
-      border-color: color(signal-red);
+      border-color: color('signal-red');
 
       select {
-        color: color(signal-red);
+        color: color('signal-red');
       }
 
       i {
-        color: color(signal-red);
+        color: color('signal-red');
       }
     }
 
     &.has-icon {
       select {
-        padding-left: calc(#{$form-input_icon-margin} + #{font-size(h2)} + #{$form-input_padding-left});
+        padding-left: calc(#{$form-input-icon-margin} + #{font-size(h2)} + #{$form-input-padding-left});
       }
     }
 
-    &_icon, > svg, > i {
-      font-size: font-size(h2);
-      color: color(grey);
+    &_icon,
+    > svg,
+    > i {
       position: absolute;
+      color: color('grey');
+      font-size: font-size(h2);
 
       &:first-child {
-        left: $form-select_icon-margin;
+        left: $form-select-icon-margin;
       }
 
       &:last-child {
-        right: $form-select_icon-margin;
+        right: $form-select-icon-margin;
       }
     }
   }
