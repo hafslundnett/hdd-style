@@ -9,6 +9,7 @@ Looking to contribute something to 'Hdd'? **Here's how you can help.**
 
 ## Pull requests
 
+-   Make sure your code passes the SCSS linter
 -   Try not to pollute your pull request with unintended changes–keep them simple and small
 -   Try to share which browsers your code has been tested in before submitting a pull request
 
@@ -25,4 +26,4 @@ The project follows strict naming guidelines. You can read more about them on th
 
 ## SCSS linter
 
-We make use of a [SCSS linter](https://github.com/brigade/scss-lint).
+We make use of a [SCSS linter](https://github.com/brigade/scss-lint) please make sure that your code passes the SCSS linter before submitting a pull request.
