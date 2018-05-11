@@ -2,7 +2,9 @@
   position: relative;
   margin-top: .5rem;
 
-  &_icon, svg, i {
+  &_icon,
+  svg,
+  i {
     margin-left: $tag-icon-spacing;
     cursor: pointer;
   }
@@ -10,11 +12,11 @@
   &_item {
     @extend .is-p-small;
 
-    background: color(blue-light3);
+    display: inline-block;
+    margin-left: $tag-spacing;
     padding: $tag-padding;
     border-radius: $tag-border-radius;
-    margin-left: $tag-spacing;
-    display: inline-block;
+    background: color('blue-light3');
 
     &:first-child {
       margin-left: 0;
