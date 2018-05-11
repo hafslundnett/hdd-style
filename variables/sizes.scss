@@ -99,11 +99,11 @@ $datepicker-border-width: 1px;
 $datepicker-max-width: 250px;
 $datepicker-border-color: color(grey);
 $datepicker-border: $datepicker-border-width solid $datepicker-border-color;
-$datepicker-tip-right-offset: 1rem;
-$datepicker-tip-left-offset: 1rem;
 $datepicker-border-radius: $tooltip-border-radius;
 $datepicker_days-border-width: 1px;
 $datepicker_days-per-week: 7;
+$datepicker-tip-right-offset: 1.5rem;
+$datepicker-tip-left-offset: 1.5rem;
 
 /************************
  * Navigation

@@ -56,6 +56,28 @@
       &.is-active {
         display: inline-table;
       }
+
+      &.has-arrow-right {
+        transform: translateX(-100%);
+        left: calc(50% + #{$datepicker-tip-left-offset} + #{$datepicker-tip-size});
+
+        &:before,
+        &:after {
+          right: $datepicker-tip-right-offset;
+          left: auto;
+        }
+      }
+
+      &.has-arrow-left {
+        transform: translateX(0);
+        left: calc(50% - #{$datepicker-tip-left-offset} - #{$datepicker-tip-size});
+
+        &:before,
+        &:after {
+          left: $datepicker-tip-left-offset;
+          right: auto;
+        }
+      }
     }
 
     &_header {
