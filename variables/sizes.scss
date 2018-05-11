@@ -27,27 +27,27 @@ $card-action-button-spacing: 8px;
  * Form Input
  ************************/
 
-$form-input_icon-margin: .9rem;
-$form-input_padding-left: .7rem;
-$form-input_padding: $form-input_padding-left .9rem;
-$form-input_border-radius: 4px;
-$form-input_border: 1px solid color(grey);
+$form-input-icon-margin: .9rem;
+$form-input-padding-left: .7rem;
+$form-input-padding: $form-input-padding-left .9rem;
+$form-input-border-radius: 4px;
+$form-input-border: 1px solid color('grey');
 
 /************************
  * Form Checkbox
  ************************/
 
-$form-checkbox_mark-size: 18px;
-$form-checkbox_mark-border-radius: 2px;
-$form-checkbox_mark-border: 1px solid color(grey);
+$form-checkbox-mark-size: 18px;
+$form-checkbox-mark-border-radius: 2px;
+$form-checkbox-mark-border: 1px solid color('grey');
 
 /************************
  * Form Select
  ************************/
-$form-select_padding: $form-input_padding;
-$form-select_border-radius: $form-input_border-radius;
-$form-select_border: $form-input_border;
-$form-select_icon-margin: .9rem;
+$form-select-padding: $form-input-padding;
+$form-select-border-radius: $form-input-border-radius;
+$form-select-border: $form-input-border;
+$form-select-icon-margin: .9rem;
 
 /************************
  * Sidebar navigation
@@ -65,7 +65,7 @@ $badge-padding: .2rem .6rem;
 $badge-radius: 2rem;
 
 $badge-icon-size: 6px;
-$badge-icon-border: 2px solid color(white);
+$badge-icon-border: 2px solid color('white');
 
 /************************
  * Table
@@ -97,11 +97,11 @@ $datepicker-offset: $tooltip-offset;
 $datepicker-padding: .75rem;
 $datepicker-border-width: 1px;
 $datepicker-max-width: 250px;
-$datepicker-border-color: color(grey);
+$datepicker-border-color: color('grey');
 $datepicker-border: $datepicker-border-width solid $datepicker-border-color;
 $datepicker-border-radius: $tooltip-border-radius;
-$datepicker_days-border-width: 1px;
-$datepicker_days-per-week: 7;
+$datepicker-days-border-width: 1px;
+$datepicker-days-per-week: 7;
 $datepicker-tip-right-offset: 1.5rem;
 $datepicker-tip-left-offset: 1.5rem;
 
@@ -127,7 +127,7 @@ $tag-spacing: .5rem;
  ************************/
 
 $dropdown-border-radius: 4px;
-$dropdown-border: 1px solid color(grey);
-$dropdown_spacing-element: 4px;
-$dropdown_content-padding: .5rem 0;
-$dropdown_item-padding: .5rem 0 .5rem 1rem;
+$dropdown-border: 1px solid color('grey');
+$dropdown-spacing-element: 4px;
+$dropdown-content-padding: .5rem 0;
+$dropdown-item-padding: .5rem 0 .5rem 1rem;
