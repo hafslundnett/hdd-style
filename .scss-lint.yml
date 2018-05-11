@@ -2,6 +2,8 @@ scss_files: '**/*.scss'
 exclude:
   - 'dist/**'
   - 'showoff/**'
+  - 'node_modules/**'
+  - 'variables/fontawesome/**'
 
 linters:
   BorderZero:
