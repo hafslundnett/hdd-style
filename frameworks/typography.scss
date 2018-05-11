@@ -15,17 +15,17 @@
   $labels: ($label);
 
   %fontblock-#{$label} {
+    color: $color;
     font-family: $family;
     font-size: $size;
     font-weight: $weight;
     letter-spacing: $spacing;
     line-height: $line-height;
-    color: $color;
   }
 
   @if $alt-labels {
     @each $label in $alt-labels {
-      $labels: append($labels, $label)
+      $labels: append($labels, $label);
     }
   }
 
