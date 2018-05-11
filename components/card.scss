@@ -5,32 +5,32 @@
   @include box-shadow($shadow-light);
   @include border-radius($card-radius);
 
-  background: color(white);
-  padding: $card-padding;
   display: flex;
   flex-direction: column;
+  padding: $card-padding;
+  background: color('white');
 
   &.is-full-height {
     height: 100%;
   }
 
   &_header {
-    margin-bottom: $card-header-margin;
     display: flex;
+    margin-bottom: $card-header-margin;
 
     &_icon {
       @extend .is-icon-small;
 
-      color: color(blue);
-      margin-right: $card-header-icon-margin;
       display: inline-block;
-      vertical-align: top;
+      margin-right: $card-header-icon-margin;
+      color: color('blue');
       line-height: $card-header-icon-height;
+      vertical-align: top;
     }
 
     &_text {
-      flex: 1;
       display: block;
+      flex: 1;
     }
 
     &_action {
@@ -59,9 +59,9 @@
   }
 
   &_actions {
+    display: flex;
     margin-top: auto; /* Align buttons always to the bottom of the card */
     padding-top: $card-content-padding;
-    display: flex;
 
     button:not(:last-child) {
       margin-right: $card-action-button-spacing;
