@@ -4,10 +4,12 @@
 
   &_icon, svg, i {
     margin-left: $tag-icon-spacing;
+    cursor: pointer;
   }
 
   &_item {
     @extend .is-p-small;
+
     background: color(blue-light3);
     padding: $tag-padding;
     border-radius: $tag-border-radius;

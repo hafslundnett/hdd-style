@@ -94,7 +94,7 @@
       }
     }
 
-    &_field, input {
+    &_field, > input {
       @extend .is-p;
       border: none;
       width: 100%;
@@ -107,7 +107,7 @@
       }
     }
 
-    &_icon, svg, i {
+    &_icon, > svg, > i {
       font-size: font-size(h2);
       color: color(grey);
 
@@ -236,7 +236,7 @@
         color: color(primary);
       }
 
-      #{$e}_icon, svg, i {
+      #{$e}_icon, > svg, > i {
         color: color(primary);
       }
     }
@@ -259,7 +259,7 @@
       }
     }
 
-    &_icon, svg, i {
+    &_icon, > svg, > i {
       font-size: font-size(h2);
       color: color(grey);
       position: absolute;

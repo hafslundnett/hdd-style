@@ -93,7 +93,7 @@
       cursor: pointer;
       white-space: nowrap;
 
-      > i {
+      &_icon, > i, > svg {
         margin-right: .5rem;
         width: 1rem;
       }

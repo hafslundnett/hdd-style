@@ -1,0 +1,171 @@
+.hdd-datepicker {
+  position: relative;
+
+  &_container {
+    @extend .is-p;
+
+    border: $datepicker-border;
+    border-radius: $datepicker-border-radius;
+    background: color(white);
+    display: inline-table;
+    color: color(primary);
+    z-index: 90;
+
+    max-width: $datepicker-max-width;
+    text-align: left;
+    padding: $datepicker-padding;
+    box-sizing: border-box;
+
+    &:not(.is-inline) {
+      display: none;
+
+      position: absolute;
+      left: 0; right: 0;
+      top: calc(100% + #{$datepicker-tip-size} + #{$datepicker-offset});
+      margin: auto;
+      transform: translateX(-50%);
+      left: 50%;
+      z-index: 90;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -#{$datepicker-tip-size * 2};
+        left: 0; right: 0;
+        margin: auto;
+
+        width: 0; height: 0;
+        border: $datepicker-tip-size solid transparent;
+        border-bottom-color: $datepicker-border-color;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -#{$datepicker-tip-size * 2 - $datepicker-border-width};
+        left: 0; right: 0;
+        margin: auto;
+
+        width: 0; height: 0;
+        border: #{$datepicker-tip-size} solid transparent;
+        border-bottom-color: color(white);
+      }
+
+      &.is-active {
+        display: inline-table;
+      }
+    }
+
+    &_header {
+      display: flex;
+      align-items: center;
+
+      &_title {
+        flex-grow: 1;
+        text-align: center;
+        color: $font-color;
+      }
+    }
+
+    &_week {
+      display: flex;
+      flex-wrap: wrap;
+      padding: .5rem 0;
+      color: $font-color;
+
+      > span {
+        flex: 1 0 percentage(1/$datepicker_days-per-week);
+        text-align: center;
+      }
+    }
+
+    &_days {
+      $e: #{&};
+
+      display: flex;
+      flex-wrap: wrap;
+
+      // TODO: fix corner issue (top left)
+      &_day,
+      > span {
+        position: relative;
+        flex: 1 0 percentage(1/$datepicker_days-per-week);
+        padding: .5rem;
+        display: block;
+        box-sizing: border-box;
+
+        border-style: solid;
+        border-color: $datepicker-border-color;
+        border-width: 0;
+        color: $font-color;
+
+        &:not(:empty) {
+          &:hover {
+            @extend #{$e}_day.is-selected;
+          }
+
+          border-right-width: $datepicker_days-border-width;
+          border-top-width: $datepicker_days-border-width;
+
+          &:after {
+            content: '';
+            position: absolute;
+            width: $datepicker_days-border-width;
+            height: calc(100% + #{$datepicker_days-border-width * 2});
+            left: -$datepicker_days-border-width;
+            top: -$datepicker_days-border-width;
+            background: $datepicker-border-color;
+          }
+
+          // All elements except first element after .is-blank
+          ~ :not(:empty) {
+            &:after {
+              content: none;
+            }
+          }
+
+          // Every first element + 7 elements gap
+          &:nth-child(#{$datepicker_days-per-week}n+1) {
+            border-left-width: $datepicker_days-border-width;
+          }
+
+          // Last 7 elements
+          &:nth-last-child(-n+#{$datepicker_days-per-week}) {
+            border-bottom-width: $datepicker_days-border-width;
+          }
+        }
+
+        &:empty {
+          &:nth-last-child(-n+7) {
+            border-top-width: $datepicker_days-border-width;
+          }
+        }
+
+        &:before {
+          content: "";
+          display: block;
+          padding-top: 100%;
+          float: left;
+        }
+
+        &.is-selected {
+          background: color(blue-light1);
+          color: color(white);
+          cursor: pointer;
+        }
+
+        &.is-in-range {
+          background: color(blue-light4);
+        }
+
+        > span {
+          position: absolute;
+          left: 50%; top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
