@@ -1,5 +1,7 @@
 scss_files: '**/*.scss'
-exclude: 'dist/**'
+exclude:
+  - 'dist/**'
+  - 'showoff/**'
 
 linters:
   BorderZero:
@@ -10,10 +12,27 @@ linters:
     enabled: false
   ColorKeyword:
     enabled: false
+  SelectorDepth:
+    enabled: false
+  UrlFormat:
+    enabled: false
+  VendorPrefix: # TODO: add a auto prefixer
+    enabled: false
 
   Indentation:
     severity: warning
     width: 2
+
+  Comment:
+    enabled: false
+
+  SelectorFormat:
+    enabled: true
+    convention: classic_BEM
+
+  HexNotation:
+    enabled: true
+    style: uppercase
 
   PropertySortOrder:
     order:
