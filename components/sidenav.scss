@@ -7,11 +7,11 @@
   @include transition(width $medium-transition $transition-cubic);
 
   position: fixed;
+  z-index: $sidenav-z-index;
   width: $sidenav-collapsed-width;
   height: 100%;
-  z-index: $sidenav-z-index;
   overflow: hidden;
-  background: color(white);
+  background: color('white');
 
   &.is-active {
     width: $sidenav-extended-width;
@@ -19,8 +19,8 @@
     #{$c}_list {
       &_item {
         &_label {
+          margin-left: 0;
           opacity: 1;
-          margin-left: 0px;
         }
       }
     }
@@ -39,10 +39,10 @@
   }
 
   &_logo {
+    display: block;
     width: 45px;
     height: 45px;
     padding: 10px;
-    display: block;
   }
 
   &_list {
@@ -50,44 +50,44 @@
       $c: #{&};
       @include transition(all $short-transition $transition-cubic);
 
-      background: color(white);
-      width: $sidenav-extended-width;
       display: flex;
       align-items: center;
+      width: $sidenav-extended-width;
+      background: color('white');
 
       &:hover,
       &.is-active {
-        background: color(blue-light1);
+        background: color('blue-light1');
 
         #{$c}_icon,
         #{$c}_label {
-          color: color(white);
+          color: color('white');
         }
       }
 
       &_icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
         width: $sidenav-collapsed-width;
         height: $sidenav-collapsed-width;
 
-        color: color(grey);
+        color: color('grey');
         font-size: font-size(icon-small);
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
       }
 
       &_label {
-        @include transition(all $short-transition $transition-cubic);
         @extend .is-h2;
+        @include transition(all $short-transition $transition-cubic);
 
-        color: color(grey);
         flex-grow: 1;
-        padding-right: 1.5rem;
-
-        opacity: 0;
         margin-left: -10px;
+        padding-right: 1.5rem;
+        opacity: 0;
+
+        color: color('grey');
       }
 
       .hdd-badge {
