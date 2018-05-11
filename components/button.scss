@@ -9,12 +9,12 @@
 
   @include transition((background-color $short-transition $transition-cubic, color $short-transition $transition-cubic));
 
+  display: inline-block;
   padding: $button-padding;
   border-width: $button-solid-border-width;
   border-radius: $button-radius;
-  display: inline-block;
-  cursor: pointer;
   outline: none;
+  cursor: pointer;
 
   &.is-block {
     display: block;
@@ -30,11 +30,11 @@
   }
 
   &[disabled] {
-    cursor: not-allowed;
-    background: color(grey);
-    border-color: color(grey);
-    color: color(grey-dark);
     border-width: 0;
+    border-color: color('grey');
+    background: color('grey');
+    color: color('grey-dark');
+    cursor: not-allowed;
   }
 
 
@@ -51,17 +51,19 @@
     @extend .background-colors.is-grey;
     @extend .background-colors;
 
-    background: color(white);
-    border-width: 1px;
-
-    border-radius: 2px;
     padding: .4rem .9rem;
+    border-width: 1px;
+    border-radius: 2px;
+
+    background: color('white');
     cursor: pointer;
 
-    &:focus, &:hover, &:active {
+    &:focus,
+    &:hover,
+    &:active {
       &:not(.no-hover) {
         @extend .background-colors.remove-text-contrast;
-        background: color(grey-light);
+        background: color('grey-light');
       }
     }
 
@@ -72,13 +74,16 @@
     &.is-transparent {
       @extend .background-colors.remove-text-contrast;
 
-      background: none;
-      border: none;
       margin: 0;
       padding: 0;
+
+      border: none;
+      background: none;
       cursor: pointer;
 
-      &:focus, &:hover, &:active {
+      &:focus,
+      &:hover,
+      &:active {
         &:not(.no-hover) {
           @extend .background-colors.remove-text-contrast.is-primary; // default color
           @extend .background-colors.remove-text-contrast;
@@ -89,13 +94,13 @@
   }
 
   &.no-background {
+    border-width: $button-outlined-border-width;
+
     &:not([disabled]) {
       // Set the default text contrast color to is-primary
       @extend .background-colors.remove-text-contrast.is-primary;
       @extend .background-colors.remove-text-contrast;
     }
-
-    border-width: $button-outlined-border-width;
 
     // If not hovering remove background (otherwise can we not set the active color as background)
     &:not(:hover):not(:focus) {
@@ -107,7 +112,7 @@
         @extend .background-colors.set-text-contrast;
 
         &[disabled] {
-          color: color(white);
+          color: color('white');
         }
       }
     }
@@ -122,11 +127,11 @@
   }
 
   &.has-icon {
-    padding-left: $button-padding-icon;
-    padding-right: $button-padding-icon;
-
     display: inline-flex;
     justify-content: space-between;
+
+    padding-right: $button-padding-icon;
+    padding-left: $button-padding-icon;
 
     &.is-left {
       i {
@@ -142,7 +147,7 @@
   }
 
   &.is-full-width {
-    width: 100%;
     flex-grow: 1;
+    width: 100%;
   }
 }
