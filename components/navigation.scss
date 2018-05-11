@@ -1,14 +1,14 @@
 .hdd-navigation {
   @include box-shadow($shadow-medium);
 
+  display: flex;
+  z-index: 90;
+  box-sizing: border-box;
+  justify-content: flex-end;
   width: 100%;
   height: $navigation-height;
-  background: color(white);
-  z-index: 90;
-  display: flex;
-  justify-content: flex-end;
   padding: $navigation-padding;
-  box-sizing: border-box;
+  background: color('white');
 
   @at-root {
     .hdd-layout_navigation {
@@ -20,11 +20,12 @@
     @extend .is-h1;
 
     position: absolute;
-    text-align: center;
-    align-self: center;
-    left: 0;
     right: 0;
+    left: 0;
+
+    align-self: center;
     margin: auto;
+    text-align: center;
   }
 
   &_user {
@@ -33,11 +34,13 @@
   }
 
   &_avatar {
-    width: #{$navigation-height*$navigation-avatar-size};
-    height: #{$navigation-height*$navigation-avatar-size};
-    border-radius: 100%;
-    background-position: center;
+    width: #{$navigation-height * $navigation-avatar-size};
+    height: #{$navigation-height * $navigation-avatar-size};
+
     margin-left: .5rem;
-    background: color(grey-light);
+    border-radius: 100%;
+
+    background: color('grey-light');
+    background-position: center;
   }
 }
