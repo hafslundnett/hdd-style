@@ -23,7 +23,7 @@
   background-size: $value;
 }
 
-@mixin linear-gradient($angle,$gradient1, $gradient2) {
+@mixin linear-gradient($angle, $gradient1, $gradient2) {
   background-color: $gradient2;
   /* Fallback Color */
   background-image: -webkit-gradient(linear, $angle, from($gradient1), to($gradient2));
@@ -115,21 +115,21 @@
     @content;
   }
 
-  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  &::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     @content;
-    opacity:  1;
+    opacity: 1;
   }
 
   &::-moz-placeholder { /* Mozilla Firefox 19+ */
     @content;
-    opacity:  1;
+    opacity: 1;
   }
 
   &:-ms-input-placeholder { /* Internet Explorer 10-11 */
     @content;
   }
 
-  &::-ms-input-placeholder { /* Microsoft Edge */
+  &:-ms-input-placeholder { /* Microsoft Edge */
     @content;
   }
 
