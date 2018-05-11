@@ -49,101 +49,101 @@ $font-color: #444;
 
 // All colors as a list ready for iterations
 $colors: (
-  white: (
+  'white': (
     color: #FFF,
     contrast: #444
   ),
-  black: (
+  'black': (
     color: #000,
     contrast: #FFF
   ),
-  blue: (
+  'blue': (
     color: #1164A4,
     contrast: #FFF,
     alt-labels: (primary)
   ),
-  blue-dark: (
+  'blue-dark': (
     color: #00446F,
     contrast: #FFF
   ),
-  blue-light1: (
+  'blue-light1': (
     color: #50A9D8,
     contrast: #444
   ),
-  blue-light2: (
+  'blue-light2': (
     color: #A2DBFF,
     contrast: #444
   ),
-  blue-light3: (
+  'blue-light3': (
     color: #D2EFFE,
     contrast: #444
   ),
-  blue-light4: (
+  'blue-light4': (
     color: #EFF9FF,
     contrast: #444
   ),
-  grey: (
+  'grey': (
     color: #ADB0B6,
     contrast: #444
   ),
-  grey-dark: (
+  'grey-dark': (
     color: #57585A,
     contrast: #FFF
   ),
-  grey-light: (
+  'grey-light': (
     color: #EEF0F4,
     contrast: #444
   ),
-  signal-green: (
+  'signal-green': (
     color: #6AAB2F,
     contrast: #FFF
   ),
-  signal-yellow: (
+  'signal-yellow': (
     color: #F0DA00,
     contrast: #444,
     alt-labels: (warn)
   ),
-  signal-red: (
+  'signal-red': (
     color: #E15559,
     contrast: #FFF,
     alt-labels: (danger)
   ),
-  data-navy: (
+  'data-navy': (
     color: #23588C,
     contrast: #FFF
   ),
-  data-marine: (
+  'data-marine': (
     color: #0F6ECA,
     contrast: #FFF
   ),
-  data-blue: (
+  'data-blue': (
     color: #4BA8FF,
     contrast: #FFF
   ),
-  data-turquoise: (
+  'data-turquoise': (
     color: #24D2EF,
     contrast: #FFF
   ),
-  data-seagreen: (
+  'data-seagreen': (
     color: #46B5AB,
     contrast: #FFF
   ),
-  data-green: (
+  'data-green': (
     color: #6FE9AA,
     contrast: #FFF
   ),
-  data-orange: (
+  'data-orange': (
     color: #F1842B,
     contrast: #FFF
   ),
-  data-yellow: (
+  'data-yellow': (
     color: #FFD209,
     contrast: #FFF
   )
 );
 
 $gradients: (
-  twilight: (
+  'twilight': (
     angle: 180deg,
     from: #279DD0,
     to: color('blue')
