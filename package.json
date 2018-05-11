@@ -9,6 +9,7 @@
     "serve": "node scripts/server.js",
     "watch": "node scripts/watch.js",
     "build": "node scripts/build.js",
+    "lint": "scss-lint .",
     "commit": "git cz"
   },
   "devDependencies": {
