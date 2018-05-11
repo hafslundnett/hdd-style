@@ -45,100 +45,100 @@
   @include linear-gradient($angle, $from, $to);
 }
 
-$font-color: #444444;
+$font-color: #444;
 
 // All colors as a list ready for iterations
 $colors: (
   white: (
     color: #FFF,
-    contrast: #444444
+    contrast: #444
   ),
   black: (
-    color: #000000,
-    contrast: #FFFFFF
+    color: #000,
+    contrast: #FFF
   ),
   blue: (
     color: #1164A4,
-    contrast: #FFFFFF,
+    contrast: #FFF,
     alt-labels: (primary)
   ),
   blue-dark: (
     color: #00446F,
-    contrast: #FFFFFF
+    contrast: #FFF
   ),
   blue-light1: (
     color: #50A9D8,
-    contrast: #444444
+    contrast: #444
   ),
   blue-light2: (
     color: #A2DBFF,
-    contrast: #444444
+    contrast: #444
   ),
   blue-light3: (
     color: #D2EFFE,
-    contrast: #444444
+    contrast: #444
   ),
   blue-light4: (
     color: #EFF9FF,
-    contrast: #444444
+    contrast: #444
   ),
   grey: (
     color: #ADB0B6,
-    contrast: #444444
+    contrast: #444
   ),
   grey-dark: (
     color: #57585A,
-    contrast: #FFFFFF
+    contrast: #FFF
   ),
   grey-light: (
     color: #EEF0F4,
-    contrast: #444444
+    contrast: #444
   ),
   signal-green: (
     color: #6AAB2F,
-    contrast: #FFFFFF
+    contrast: #FFF
   ),
   signal-yellow: (
     color: #F0DA00,
-    contrast: #444444,
+    contrast: #444,
     alt-labels: (warn)
   ),
   signal-red: (
     color: #E15559,
-    contrast: #FFFFFF,
+    contrast: #FFF,
     alt-labels: (danger)
   ),
   data-navy: (
     color: #23588C,
-    contrast: #FFFFFF
+    contrast: #FFF
   ),
   data-marine: (
     color: #0F6ECA,
-    contrast: #FFFFFF
+    contrast: #FFF
   ),
   data-blue: (
     color: #4BA8FF,
-    contrast: #FFFFFF
+    contrast: #FFF
   ),
   data-turquoise: (
     color: #24D2EF,
-    contrast: #FFFFFF
+    contrast: #FFF
   ),
   data-seagreen: (
     color: #46B5AB,
-    contrast: #FFFFFF
+    contrast: #FFF
   ),
   data-green: (
     color: #6FE9AA,
-    contrast: #FFFFFF
+    contrast: #FFF
   ),
   data-orange: (
     color: #F1842B,
-    contrast: #FFFFFF
+    contrast: #FFF
   ),
   data-yellow: (
     color: #FFD209,
-    contrast: #FFFFFF
+    contrast: #FFF
   )
 );
 
@@ -146,6 +146,6 @@ $gradients: (
   twilight: (
     angle: 180deg,
     from: #279DD0,
-    to: color(blue)
+    to: color('blue')
   )
 );
