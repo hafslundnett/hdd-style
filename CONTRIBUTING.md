@@ -22,3 +22,7 @@ You can find [here](https://github.com/bcoe/conventional-changelog-standard/blob
 ## Naming guidlines
 
 The project follows strict naming guidelines. You can read more about them on the [wiki](https://github.com/hafslundnett/hdd-theme/wiki/Naming-guidelines).
+
+## SCSS linter
+
+We make use of a [SCSS linter](https://github.com/brigade/scss-lint).
