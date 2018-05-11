@@ -4,7 +4,7 @@
   &_content {
     @extend #{&}.is-aligned-bottom;
 
-    background: color(white);
+    background: color('white');
     position: absolute;
     left: 0;
     display: none;
@@ -41,7 +41,7 @@
       }
 
       &.is-active {
-        background: color(blue-light4);
+        background: color('blue-light4');
       }
     }
   }
