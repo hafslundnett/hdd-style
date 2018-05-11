@@ -148,6 +148,10 @@ $breakpoints: (
       max-width: percentage((100 / $cols) * ($col * .01));
       -ms-flex-preferred-size: percentage((100 / $cols) * ($col * .01));
     }
+
+    .col-#{$breakpoint}-offset-#{$col} {
+      margin-left: percentage((100 / $cols) * ($col * .01));
+    }
   }
 }
 
