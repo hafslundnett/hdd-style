@@ -44,17 +44,23 @@
   }
 
   &_title {
+    @extend .is-h2;
+
     display: block;
     font-weight: bold;
     text-align: left;
   }
 
   &_subtitle {
+    @extend .is-p;
+
     display: block;
     color: $font-color;
   }
 
   &_content {
+    @extend .is-p;
+
     display: block;
   }
 
