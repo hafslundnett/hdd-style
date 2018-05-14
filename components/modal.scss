@@ -1,0 +1,34 @@
+.hdd-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(color('black'), .2);
+
+  @at-root {
+    .hdd-layout_modal {
+      position: relative;
+    }
+  }
+
+  &_container {
+    @include box-shadow($shadow-strong);
+
+    display: table;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: $modal-width;
+    max-width: $modal-max-width;
+    max-height: $modal-max-height;
+    margin: auto;
+    overflow: scroll;
+    border-radius: $modal-border-radius;
+
+    background: color('white');
+  }
+}

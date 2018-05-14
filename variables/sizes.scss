@@ -120,7 +120,7 @@ $navigation-avatar-size: .7;
 $tag-padding: .3rem .4rem .3rem .8rem;
 $tag-icon-spacing: .4rem;
 $tag-border-radius: 4px;
-$tag-spacing: .5rem;
+$tag-spacing: .25rem;
 
 /************************
  * Dropdown
@@ -131,3 +131,12 @@ $dropdown-border: 1px solid color('grey');
 $dropdown-spacing-element: 4px;
 $dropdown-content-padding: .5rem 0;
 $dropdown-item-padding: .5rem 0 .5rem 1rem;
+
+/************************
+ * Modal
+ ************************/
+
+$modal-border-radius: 4px;
+$modal-max-width: 90%;
+$modal-max-height: 90%;
+$modal-width: 500px;
