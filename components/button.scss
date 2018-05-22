@@ -22,10 +22,12 @@
 
   &:focus,
   &:hover {
-    &:not(.no-hover):not([disabled]) {
+    &:not(.no-hover):not([disabled]):not(.no-background) {
       // Set the default text contrast color to is-primary
-      @extend .background-colors.set-text-contrast.is-primary;
-      @extend .background-colors.set-text-contrast;
+      @extend .background-colors.remove-text-contrast.is-primary;
+      @extend .background-colors.remove-text-contrast;
+
+      background: none;
     }
   }
 
@@ -107,8 +109,9 @@
       background: none;
     }
 
+    &:focus,
     &:hover {
-      &:not(.no-hover) {
+      &:not(.no-hover):not([disabled]) {
         @extend .background-colors.set-text-contrast;
 
         &[disabled] {
