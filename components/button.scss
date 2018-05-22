@@ -95,6 +95,24 @@
     }
   }
 
+  &.is-loading {
+    @extend .fal;
+    color: transparent;
+
+    &::after {
+      @extend .fa-spinner-third:before;
+      @extend .background-colors.set-text-contrast.is-primary; // default color
+      @extend .background-colors.set-text-contrast;
+
+      @include animation(spinner, .5s, infinite, linear);
+
+      position: absolute;
+      top: calc(50% - (1em / 2));
+      left: calc(50% - (1em / 2));
+      font-size: 1em;
+    }
+  }
+
   &.no-background {
     border-width: $button-outlined-border-width;
 
