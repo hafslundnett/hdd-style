@@ -3,6 +3,12 @@
 
   position: relative;
 
+  &:hover {
+    #{$b}_content:not(.no-hover) {
+      @extend #{$b}_content.is-active;
+    }
+  }
+
   &:focus {
     #{$b}_content:not(.no-focus) {
       @extend #{$b}_content.is-active;
