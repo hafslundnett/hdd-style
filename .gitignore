@@ -3,6 +3,4 @@ node_modules/
 
 # build
 dist/
-
-# CLI tool output
-yarn-error.log
+*.log
