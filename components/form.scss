@@ -26,16 +26,24 @@
       margin-bottom: 1rem;
     }
 
-    &_error {
+    &_error,
+    &_info {
       display: none;
       position: absolute;
       margin-top: .2rem;
-      color: color('signal-red');
       font-size: .8rem;
 
       &.is-active {
         display: block;
       }
+    }
+
+    &_error {
+      color: color('signal-red');
+    }
+
+    &_info {
+      color: $font-color;
     }
 
     &.is-inline {
