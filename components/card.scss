@@ -7,7 +7,6 @@
 
   display: flex;
   flex-direction: column;
-  padding: $card-padding;
   background: color('white');
 
   &.is-full-height {
@@ -17,6 +16,7 @@
   &_header {
     display: flex;
     margin-bottom: $card-header-margin;
+    padding: $card-padding-y $card-padding-x;
 
     &_icon {
       @extend .is-icon-small;
@@ -62,12 +62,13 @@
     @extend .is-p;
 
     display: block;
+    padding: 0 $card-padding-x $card-padding-y;
   }
 
   &_actions {
     display: flex;
     margin-top: auto; /* Align buttons always to the bottom of the card */
-    padding-top: $card-content-padding;
+    padding: 0 $card-padding-x $card-padding-y;
 
     button:not(:last-child) {
       margin-right: $card-action-button-spacing;
