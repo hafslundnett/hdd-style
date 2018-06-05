@@ -46,10 +46,6 @@
       color: $font-color;
     }
 
-    &.is-inline {
-      display: inline-block;
-    }
-
     &.is-line {
       > * {
         &:not(#{$e}_title):not(#{$e}_error), {
