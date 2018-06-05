@@ -64,6 +64,10 @@
     &.is-stripe {
       background: color('blue-light4');
     }
+
+    &.is-selected {
+      background: color('blue-light3');
+    }
   }
 
   td {
