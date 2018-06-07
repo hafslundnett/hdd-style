@@ -3,7 +3,7 @@ const utils = require('./utils')
 
 const dirs = [
   path.join(__dirname, '../components'),
-  path.join(__dirname, '../frameworks'),
+  path.join(__dirname, '../utilities'),
   path.join(__dirname, '../variables')
 ]
 
