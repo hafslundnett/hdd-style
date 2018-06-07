@@ -33,6 +33,13 @@
     }
   }
 
+  &.no-wrap {
+    th,
+    td {
+      white-space: nowrap;
+    }
+  }
+
   &:not(.no-row-padding) {
     &#{$b}_row,
     tr {
