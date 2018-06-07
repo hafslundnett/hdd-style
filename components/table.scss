@@ -37,11 +37,11 @@
     &#{$b}_row,
     tr {
       > *:first-child {
-        padding-left: 3rem;
+        padding-left: $table-first-column-padding;
       }
 
       > *:last-child {
-        padding-right: 2rem;
+        padding-right: $table-last-column-padding;
       }
     }
   }
