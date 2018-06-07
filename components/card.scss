@@ -63,6 +63,7 @@
 
     display: block;
     padding: 0 $card-padding-x $card-padding-y;
+    overflow-x: scroll;
   }
 
   &_actions {

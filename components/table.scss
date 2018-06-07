@@ -1,8 +1,7 @@
 .hdd-table {
   $b: #{&};
 
-  display: block;
-  width: 100%;
+  min-width: 100%;
   overflow: scroll;
   border-spacing: 0;
   border-collapse: collapse;
