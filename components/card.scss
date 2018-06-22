@@ -58,13 +58,15 @@
     color: $font-color;
   }
 
+  &_scroll-wrapper {
+    overflow-x: scroll;
+  }
+
   &_content {
     @extend .is-p;
 
     display: block;
     padding: 0 $card-padding-x $card-padding-y;
-    overflow: visible;
-    overflow-x: scroll;
   }
 
   &_actions {
