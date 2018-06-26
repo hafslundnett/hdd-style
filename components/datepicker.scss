@@ -23,7 +23,7 @@
       position: absolute;
       z-index: 90;
 
-      top: calc(100% + #{$datepicker-tip-size} + #{$datepicker-offset});
+      top: calc(100% + #{$datepicker-tip-size});
       right: 0;
       left: 50%;
 
