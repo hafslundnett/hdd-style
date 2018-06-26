@@ -25,7 +25,7 @@
     position: absolute;
     z-index: 90;
 
-    top: calc(100% + #{$tooltip-tip-size} + #{$tooltip-offset});
+    top: calc(100% + #{$tooltip-tip-size});
     right: 0;
     left: 50%;
 
