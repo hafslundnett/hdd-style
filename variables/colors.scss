@@ -11,6 +11,18 @@
     }
   }
 
+  @if global-variable-exists(override-colors) {
+    @if map-has-key($override-colors, $name) {
+      $color-map: map-get($override-colors, $name);
+    } @else {
+      @each $label, $map in $override-colors {
+        @if index(map-get($map, alt-labels), $name) {
+          $color-map: $map;
+        }
+      }
+    }
+  }
+
   @if not $color-map {
     @warn 'the color "#{$name}" was not found';
     @return null;
