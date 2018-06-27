@@ -32,7 +32,7 @@
   }
 
   &[disabled] {
-    border-width: 0;
+    border-width: $button-solid-border-width;
     border-color: color('grey');
     background: color('grey');
     color: color('grey-dark');
