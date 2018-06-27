@@ -1,0 +1,16 @@
+.hdd-breadcrumbs {
+  padding: $breadcrumbs-padding;
+
+  &_item {
+    font-size: font-size('p-small');
+
+    &.is-active {
+      color: color('primary');
+      text-decoration: underline;
+    }
+  }
+
+  &_icon {
+    margin: $breadcrumb-icon-spacing;
+  }
+}
