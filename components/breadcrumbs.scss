@@ -1,9 +1,11 @@
 .hdd-breadcrumbs {
   padding: $breadcrumbs-padding;
 
-  &_item {
-    font-size: font-size('p-small');
+  > * {
+    font-size: font-size('p');
+  }
 
+  &_item {
     &.is-active {
       color: color('primary');
       text-decoration: underline;
