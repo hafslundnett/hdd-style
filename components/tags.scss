@@ -5,18 +5,30 @@
   &_icon,
   svg,
   i {
+    font-size: $tag-font-size;
+    background: none;
+    border: none;
+    color: $font-color;
+    margin: 0;
+    padding: 0;
     margin-left: $tag-icon-spacing;
     cursor: pointer;
+    display: inline-block;
   }
 
   &_item {
-    @extend .is-p-small;
-
-    display: inline-block;
+    background: color('blue-light3');
+    font-size: $tag-font-size;
+    color: $font-color;
+    letter-spacing: 0.1px;
+    font-weight: 400;
+    min-width: 45px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
     margin-left: $tag-spacing;
     padding: $tag-padding;
     border-radius: $tag-border-radius;
-    background: color('blue-light3');
 
     &:first-child {
       margin-left: 0;
