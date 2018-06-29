@@ -8,7 +8,7 @@ For every used front-end framework a separate 'components' library should be cre
 
 | Framework     | Version       | Repo          |
 | ------------- | ------------- | ------------- |
-| Angular 5.x | 🚧 Alpha | [Github](https://github.com/hafslundnett/hdd-ng-components) |
+| Angular 6.x | 🚧 Alpha | [Github](https://github.com/hafslundnett/hdd-ng-components) |
 | Vue 2.x | 🚧 Alpha | [Github](https://github.com/hafslundnett/hdd-vue) | 
 
 ## Documentation
