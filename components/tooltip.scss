@@ -95,6 +95,8 @@
     padding: 0;
 
     &_item {
+      $e: #{&};
+
       display: flex;
       box-sizing: border-box;
       width: 100%;
@@ -110,6 +112,10 @@
       }
 
       &:not(.no-hover):hover {
+        @extend #{$e}.is-active;
+      }
+
+      &.is-active {
         background: color('blue-light3');
       }
 
