@@ -1,6 +1,6 @@
 {
   "name": "@hafslundnett/hdd-style",
-  "version": "0.3.20",
+  "version": "0.3.21",
   "description": "A universal design system used across Hafslund nett",
   "repository": "https://github.com/hafslundnett/hdd-theme",
   "license": "MIT",
@@ -10,7 +10,8 @@
     "watch": "node scripts/watch.js",
     "build": "node scripts/build.js",
     "lint": "scss-lint .",
-    "commit": "git cz"
+    "commit": "git cz",
+    "push": "npm run build; npm publish --access=public"
   },
   "devDependencies": {
     "cz-conventional-changelog": "^2.1.0",
