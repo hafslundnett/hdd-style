@@ -26,4 +26,4 @@ The project follows strict naming guidelines. You can read more about them on th
 
 ## SCSS linter
 
-We make use of a [SCSS linter](https://github.com/brigade/scss-lint) please make sure that your code passes the SCSS linter before submitting a pull request.
+We make use of a [SASS linter](https://github.com/sasstools/sass-lint) please make sure that your code passes the SASS linter before submitting a pull request.
