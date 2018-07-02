@@ -1,0 +1,12 @@
+body {
+  background-color: #f3f4f6;
+}
+
+*::selection {
+  background-color: color('blue-light1');
+  color: color('white');
+}
+
+*:focus {
+  outline-color: color('blue-light1');
+}
