@@ -3,8 +3,8 @@ body {
 }
 
 *::selection {
-  color: color('white');
   background-color: color('blue-light1');
+  color: color('white');
 }
 
 *:focus {
