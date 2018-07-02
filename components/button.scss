@@ -7,8 +7,6 @@
   @extend .background-colors;
   @extend .is-p;
 
-  @include transition((background-color $short-transition $transition-cubic, color $short-transition $transition-cubic));
-
   display: inline-block;
   padding: $button-padding;
   border-width: $button-solid-border-width;
