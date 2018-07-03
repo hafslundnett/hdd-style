@@ -77,6 +77,10 @@
 
     background: color('white');
 
+    &:not(.is-invalid):focus-within {
+      @extend #{$e}.is-focus;
+    }
+
     &.is-focus {
       border-color: color('primary');
 
@@ -246,6 +250,10 @@
       &::-ms-expand {
         display: none;
       }
+    }
+
+    &:focus-within {
+      @extend #{$e}.is-focus;
     }
 
     &.is-focus {
