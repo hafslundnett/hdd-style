@@ -1,26 +1,26 @@
 @mixin box-sizing($value...) {
+  box-sizing: $value;
   -webkit-box-sizing: $value;
   -moz-box-sizing: $value;
-  box-sizing: $value;
 }
 
 @mixin box-shadow($value) {
+  box-shadow: $value;
   -webkit-box-shadow: $value;
   -moz-box-shadow: $value;
-  box-shadow: $value;
 }
 
 @mixin border-radius($value) {
+  border-radius: $value;
   -moz-border-radius: $value;
   -webkit-radius: $value;
-  border-radius: $value;
 }
 
 @mixin background-size($value) {
+  background-size: $value;
   -o-background-size: $value;
   -webkit-background-size: $value;
   -moz-background-size: $value;
-  background-size: $value;
 }
 
 @mixin linear-gradient($angle, $gradient1, $gradient2) {
@@ -40,36 +40,36 @@
 }
 
 @mixin transition($value) {
-  -webkit-transition: $value;
   transition: $value;
+  -webkit-transition: $value;
 }
 
 @mixin transform($value) {
+  transform: $value;
   -o-transform: $value;
   -ms-transform: $value;
   -webkit-transform: $value;
-  transform: $value;
 }
 
 @mixin transform-origin ($value) {
+  transform-origin: $value;
   -o-transform-origin: $value;
   -ms-transform-origin: $value;
   -webkit-transform-origin: $value;
-  transform-origin: $value;
 }
 
 @mixin animation($name, $duration, $timing, $type) {
+  animation: $name $duration $timing $type;
   -o-animation: $name $duration $timing $type;
   -moz-animation: $name $duration $timing $type;
   -webkit-animation: $name $duration $timing $type;
-  animation: $name $duration $timing $type;
 }
 
 @mixin animation-delay($value) {
+  animation: $value;
   -o-animation: $value;
   -moz-animation: $value;
   -webkit-animation: $value;
-  animation: $value;
 }
 
 @mixin keyframes($value) {
@@ -102,12 +102,12 @@
 }
 
 @mixin user-select($value) {
+  user-select: $value;
   -webkit-touch-callout: $value;
   -webkit-user-select: $value;
   -khtml-user-select: $value;
   -moz-user-select: $value;
   -ms-user-select: $value;
-  user-select: $value;
 }
 
 @mixin placeholder() {
