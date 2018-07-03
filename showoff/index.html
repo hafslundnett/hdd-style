@@ -72,7 +72,13 @@
 
       <div class="row around-xs">
         <div class="col-md-10 col-xs">
-          <h1 class="is-h1 is-title">Cards</h1>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <h1 class="is-h1 is-title">Cards</h1>
+              <p>I komponent-baserte løsninger (da spesielt interne systemer) kan innhold struktureres i “Cards” (på godt norsk: kort).</p>
+            </div>
+          </div>
           <div class="row">
             <div class="col-xs">
               <div class="hdd-card is-full-height">
@@ -127,10 +133,45 @@
             </div>
           </div>
 
+          <div class="row">
+            <div class="col-xs">
+              <div class="hdd-card is-full-height">
+                <div class="hdd-card_header">
+                  <div class="hdd-card_header_icon">
+                    <i class="fal fa-info"></i>
+                  </div>
+                  <div class="hdd-card_header_text">
+                    <div class="hdd-card_title">Behandle</div>
+                    <div class="hdd-card_subtitle">Subtitle</div>
+                  </div>
+                </div>
+                <div class="hdd-card_actions">
+                  <button class="hdd-button is-full-width">Test</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs">
+              <div class="hdd-card is-full-height">
+                <div class="hdd-card_header">
+                  <div class="hdd-card_header_icon">
+                    <i class="fal fa-info"></i>
+                  </div>
+                  <div class="hdd-card_header_text">
+                    <div class="hdd-card_title">Behandle</div>
+                    <div class="hdd-card_subtitle">Subtitle</div>
+                  </div>
+                </div>
+                <div class="hdd-card_content">
+                  <p>This is the card body</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <hr class="gap is-50">
 
           <div class="row">
-            <div class="col-xs-6">
+            <div class="col-xs-12">
               <h1 class="is-h1 is-title">Buttons</h1>
               <p>Knappene skal brukes på tvers av de ulike interne systemer. Dersom det kun er en knapp på det aktuelle skjermildet skal alltid dette være en primary-button. Secondary-button skal ikke brukes alene på et skjermbilde. Action-buttons er spesielt tilegnet at brukeren skal foreta en handling som vil påvirke noe annet.</p>
             </div>
@@ -250,6 +291,13 @@
           <hr class="gap is-100">
 
           <div class="row">
+            <div class="col-xs-12">
+              <h1 class="is-h1 is-title">Inputs</h1>
+              <p>En input skal oppfordre til handling fra brukeren. Dersom teksten/innholdet ikke kan endres skal det ikke opptre i et input-felt av noe slag (vises som statisk tekst).</p>
+            </div>
+          </div>
+
+          <div class="row">
             <div class="col-xs">
               <div class="hdd-form_field">
                 <label class="hdd-form_field_label" for="first-name">First name</label>
@@ -259,7 +307,6 @@
                 </div>
               </div>
             </div>
-
             <div class="col-xs">
               <div class="hdd-form_field">
                 <label class="hdd-form_field_label" for="last-name">Last name</label>
@@ -275,6 +322,32 @@
                   <span class="hdd-tags_item">2014<button class="fal fa-times hdd-tags_icon"></button></span>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs">
+              <div class="hdd-form_field is-active">
+                <div class="hdd-form_input is-disabled">
+                  <i class="fal fa-search"></i>
+                  <input placeholder="Disabled input" disabled>
+                  <i class="fal fa-times"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs">
+              <div class="hdd-form_field is-active">
+                <div class="hdd-form_input">
+                  <textarea placeholder="Textarea"></textarea>
+                  <i class="fal fa-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <h1 class="is-h1 is-title">Dropdown</h1>
             </div>
           </div>
 
@@ -311,26 +384,6 @@
           <div class="row">
             <div class="col-xs">
               <div class="hdd-form_field is-active">
-                <div class="hdd-form_input is-disabled">
-                  <i class="fal fa-search"></i>
-                  <input placeholder="Disabled input" disabled>
-                  <i class="fal fa-times"></i>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs">
-              <div class="hdd-form_field is-active">
-                <div class="hdd-form_input">
-                  <textarea placeholder="search for something"></textarea>
-                  <i class="fal fa-search"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs">
-              <div class="hdd-form_field is-active">
                 <div class="hdd-form_select is-disabled">
                   <select id="disabled-select" disabled>
                     <option>Disabled select</option>
@@ -341,6 +394,12 @@
             </div>
           </div>
 
+          <div class="row">
+            <div class="col-xs-12">
+              <h1 class="is-h1 is-title">Checkbox</h1>
+            </div>
+          </div>
+          
           <div class="row">
             <div class="col-xs">
               <div class="hdd-form_field is-line">
@@ -393,6 +452,12 @@
           </div>
 
           <div class="row">
+            <div class="col-xs-12">
+              <h1 class="is-h1 is-title">Tags</h1>
+            </div>
+          </div>
+
+          <div class="row">
             <div class="col-xs">
               <div class="hdd-tags flush-margin-top">
                 <span class="hdd-tags_item">2018<i class="fal fa-times"></i></span>
@@ -401,6 +466,12 @@
                 <span class="hdd-tags_item">2015<i class="fal fa-times"></i></span>
                 <span class="hdd-tags_item">2014<i class="fal fa-times"></i></span>
               </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <h1 class="is-h1 is-title">Datepicker</h1>
             </div>
           </div>
 
@@ -583,6 +654,12 @@
           <hr class="gap is-80">
 
           <div class="row">
+            <div class="col-xs-12">
+              <h1 class="is-h1 is-title">Autocomplete</h1>
+            </div>
+          </div>
+
+          <div class="row">
             <div class="col-xs">
               <div class="hdd-form_field">
                 <label class="hdd-form_field_label" for="dropdown">Dropdown</label>
@@ -615,6 +692,12 @@
           </div>
 
           <hr class="gap is-120">
+
+          <div class="row">
+            <div class="col-xs-12">
+              <h1 class="is-h1 is-title">Data table</h1>
+            </div>
+          </div>
 
           <div class="row">
             <div class="col-xs">
