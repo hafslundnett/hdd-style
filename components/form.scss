@@ -16,7 +16,7 @@
       @extend .is-p;
 
       display: inline-block;
-      margin-bottom: .5rem;
+      margin-bottom: .2rem;
       font-weight: bold;
     }
 
@@ -54,6 +54,10 @@
         }
       }
     }
+
+    &.is-inline {
+      display: inline-block;
+    }
   }
 
   /************************
@@ -67,24 +71,21 @@
 
     align-items: center;
     padding: $form-input-padding;
+    transition: border-color $medium-transition $transition-cubic;
     border: $form-input-border;
     border-radius: $form-input-border-radius;
 
     background: color('white');
 
-    // Disable focus state if
-    &:not(.is-invalid):focus-within:not(.no-focus) {
+    &:not(.is-invalid):focus-within {
       @extend #{$e}.is-focus;
-    }
-
-    &.has-shadow {
-      @include box-shadow($shadow-strong);
     }
 
     &.is-focus {
       border-color: color('primary');
 
       #{$e}_icon, svg, i {
+        opacity: 1;
         color: color('primary');
       }
     }
@@ -101,23 +102,38 @@
       }
     }
 
+    &.is-disabled {
+      background: color('grey-light');
+      cursor: default;
+    }
+
     &_field,
-    > input {
+    > input,
+    > textarea {
       @extend .is-p;
 
       width: 100%;
       padding: 0;
       border: none;
+      background: transparent;
 
       @include placeholder() {
         color: color('grey');
       }
     }
 
+    > textarea {
+      height: 16px;
+      min-height: 16px;
+      resize: vertical;
+    }
+
     &_icon,
     > svg,
     > i {
-      color: color('grey');
+      transition: color $medium-transition $transition-cubic, opacity $medium-transition $transition-cubic;
+      opacity: .44;
+      color: color('black');
       font-size: font-size(h2);
 
       &:first-child {
@@ -215,6 +231,7 @@
 
     width: 100%;
 
+    transition: border-color $medium-transition $transition-cubic;
     border: $form-select-border;
     border-radius: $form-select-border-radius;
 
@@ -235,13 +252,8 @@
       }
     }
 
-    // Disable focus state if
-    &:focus-within:not(.no-focus) {
+    &:focus-within {
       @extend #{$e}.is-focus;
-    }
-
-    &.has-shadow {
-      @include box-shadow($shadow-strong);
     }
 
     &.is-focus {
@@ -252,6 +264,7 @@
       }
 
       #{$e}_icon, > svg, > i {
+        opacity: 1;
         color: color('primary');
       }
     }
@@ -264,8 +277,14 @@
       }
 
       i {
+        opacity: 1;
         color: color('signal-red');
       }
+    }
+
+    &.is-disabled {
+      background: color('grey-light');
+      cursor: default;
     }
 
     &.has-icon {
@@ -278,7 +297,9 @@
     > svg,
     > i {
       position: absolute;
-      color: color('grey');
+      transition: color $medium-transition $transition-cubic, opacity $medium-transition $transition-cubic;
+      opacity: .44;
+      color: color('black');
       font-size: font-size(h2);
 
       &:first-child {
