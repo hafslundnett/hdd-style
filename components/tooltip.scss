@@ -4,7 +4,7 @@
   position: relative;
 
   &:hover {
-    #{$b}_content:not(.no-hover) {
+    #{$b}_content:not(.no-hover):not(:hover) {
       @extend #{$b}_content.is-active;
     }
   }
