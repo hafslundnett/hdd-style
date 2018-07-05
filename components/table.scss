@@ -62,10 +62,8 @@
 
       content: '';
       display: table-cell;
-
-      width: .3rem;
-      height: 100%;
-      border-width: 0;
+      box-sizing: border-box;
+      border-width: 0 .3rem 0 0;
     }
 
     &.is-stripe {
