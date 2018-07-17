@@ -31,17 +31,17 @@
   cursor: grab;
 }
 
-/* 
-  For when you want to hide something from the page visually, but still want 
-  screen readers to pick it up (such as form labels, or headers) 
+/*
+  For when you want to hide something from the page visually, but still want
+  screen readers to pick it up (such as form labels, or headers)
 */
 .is-visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
   position: absolute;
   width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;  
 }
