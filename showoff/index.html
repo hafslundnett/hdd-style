@@ -4,6 +4,11 @@
   <meta charset="utf-8">
   <title>Hafslund digital designsystem</title>
   <link rel="stylesheet" href="../dist/bundle.min.css">
+  <style>
+    .doc-toc-item { height: 30px;}
+    .doc-toc-item .hdd-sidenav_list_item_label { font-size: 0.8rem; }
+    .doc-toc-item .hdd-sidenav_list_item_icon { height: 30px; font-size: 0.5rem; }
+  </style>
 </head>
 <body>
   <div class="hdd-layout">
@@ -13,9 +18,9 @@
           <img src="/showoff/assets/logo.svg" alt="Hafslund logo">
         </a>
 
-        <div class="hdd-sidenav_list">
-          <a href="#">
-            <li class="hdd-sidenav_list_item">
+        <ul class="hdd-sidenav_list">
+          <li>
+            <a href="#" class="hdd-sidenav_list_item">
               <span class="hdd-sidenav_list_item_icon">
                 <i class="fal fa-chart-pie"><span class="hdd-badge-icon"></span></i>
               </span>
@@ -23,37 +28,49 @@
                 <span>Oversikt</span>
                 <span class="hdd-badge">2</span>
               </span>
-            </li>
-          </a>
+            </a>
+          </li>
 
-          <a href="#">
-            <li class="hdd-sidenav_list_item" href="#">
+          <li>
+            <a class="hdd-sidenav_list_item" href="#">
               <span class="hdd-sidenav_list_item_icon">
                 <i class="fal fa-clipboard-list"></i>
               </span>
               <span class="hdd-sidenav_list_item_label">
                 <span>Mine åpne saker</span>
               </span>
-            </li>
-          </a>
+            </a>
+          </li>
 
-          <a href="#">
-            <li class="hdd-sidenav_list_item">
+          <li>
+            <a class="hdd-sidenav_list_item" href="#">
               <span class="hdd-sidenav_list_item_icon">
                 <i class="fal fa-map-pin"></i>
               </span>
               <span class="hdd-sidenav_list_item_label">
                 <span>Kart</span>
               </span>
-            </li>
-          </a>
-        </div>
+            </a>
+          </li>
+
+          <li><hr/></li>
+          <li class="doc-toc-title">
+            <a href="#" class="hdd-sidenav_list_item">
+            <span class="hdd-sidenav_list_item_icon">
+              <i class="fal fa-list-ul"></i>
+            </span>
+            <span class="hdd-sidenav_list_item_label">
+                <span>Table of content</span>
+            </span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="hdd-layout_content">
       <div class="hdd-layout_navigation">
         <div class="hdd-navigation">
-          <span class="hdd-navigation_title">Overview</span>
+          <h1 class="hdd-navigation_title">Overview</h1>
 
           <div class="hdd-navigation_user">
             <span class="hdd-tooltip">
@@ -75,7 +92,7 @@
 
           <div class="row">
             <div class="col-xs-12">
-              <h1 class="is-h1 is-title">Cards</h1>
+              <h2 id="Cards" class="is-h2 is-title">Cards</h2>
               <p>I komponent-baserte løsninger (da spesielt interne systemer) kan innhold struktureres i “Cards” (på godt norsk: kort).</p>
             </div>
           </div>
@@ -172,7 +189,7 @@
 
           <div class="row">
             <div class="col-xs-12">
-              <h1 class="is-h1 is-title">Buttons</h1>
+              <h2 id="Buttons" class="is-h2 is-title">Buttons</h2>
               <p>Knappene skal brukes på tvers av de ulike interne systemer. Dersom det kun er en knapp på det aktuelle skjermildet skal alltid dette være en primary-button. Secondary-button skal ikke brukes alene på et skjermbilde. Action-buttons er spesielt tilegnet at brukeren skal foreta en handling som vil påvirke noe annet.</p>
             </div>
           </div>
@@ -181,7 +198,7 @@
             <div class="col-xs">
               <div class="row">
                 <div class="col-xs">
-                  <h2 class="is-subtitle">Colors</h2>
+                  <h3 class="is-subtitle">Colors</h3>
                   <button class="hdd-button is-blue">Blue</button>
                   <button class="hdd-button is-black">White</button>
                   <button class="hdd-button is-signal-red">Signal red</button>
@@ -191,7 +208,7 @@
 
               <div class="row">
                 <div class="col-xs">
-                  <h2 class="is-subtitle">Outline</h2>
+                  <h3 class="is-subtitle">Outline</h3>
                   <button class="hdd-button no-background is-blue">Blue</button>
                   <button class="hdd-button no-background is-black">White</button>
                   <button class="hdd-button no-background is-signal-red">Signal red</button>
@@ -201,7 +218,7 @@
 
               <div class="row">
                 <div class="col-xs">
-                  <h2 class="is-subtitle">Disabled</h2>
+                  <h3 class="is-subtitle">Disabled</h3>
                   <button class="hdd-button" disabled>Submit</button>
                   <button class="hdd-button no-background" disabled>Submit</button>
                 </div>
@@ -209,7 +226,7 @@
 
               <div class="row">
                 <div class="col-xs">
-                  <h2 class="is-subtitle">Sizes</h2>
+                  <h3 class="is-subtitle">Sizes</h3>
                   <button class="hdd-button-small">Small</button>
                   <button class="hdd-button">Regular</button>
                 </div>
@@ -217,7 +234,7 @@
 
               <div class="row">
                 <div class="col-xs">
-                  <h2 class="is-subtitle">Shadow</h2>
+                  <h3 class="is-subtitle">Shadow</h3>
                   <button class="hdd-button-small has-shadow">Small</button>
                   <button class="hdd-button has-shadow">Regular</button>
                 </div>
@@ -226,7 +243,7 @@
             <div class="col-xs">
               <div class="row">
                 <div class="col-xs">
-                  <h2 class="is-subtitle">Button with icon</h2>
+                  <h3 class="is-subtitle">Button with icon</h3>
                   <button class="hdd-button has-icon is-left"><i class="fal fa-arrow-left"></i> Back</button>
                   <button class="hdd-button has-icon is-right">Foward <i class="fal fa-arrow-right"></i></button>
                 </div>
@@ -234,7 +251,7 @@
 
               <div class="row bottom-xs">
                 <div class="col-xs">
-                  <h2 class="is-subtitle">Icon</h2>
+                  <h3 class="is-subtitle">Icon</h3>
                   <button class="hdd-button-icon"><i class="fal fa-arrow-right"></i></button>
                 </div>
                 <div class="col-xs">
@@ -247,14 +264,14 @@
 
               <div class="row">
                 <div class="col-xs">
-                  <h2 class="is-subtitle">Full width button</h2>
+                  <h3 class="is-subtitle">Full width button</h3>
                   <button class="hdd-button is-full-width">Søk</button>
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-xs">
-                  <h2 class="is-subtitle">Loading</h2>
+                  <h3 class="is-subtitle">Loading</h3>
                   <button class="hdd-button is-loading is-primary">Primary</button>
                   <button class="hdd-button is-loading is-danger">Danger</button>
                   <button class="hdd-button is-loading is-data-green">Data green</button>
@@ -292,7 +309,7 @@
 
           <div class="row">
             <div class="col-xs-12">
-              <h1 class="is-h1 is-title">Inputs</h1>
+              <h2 id="Inputs" class="is-h2 is-title">Inputs</h2>
               <p>En input skal oppfordre til handling fra brukeren. Dersom teksten/innholdet ikke kan endres skal det ikke opptre i et input-felt av noe slag (vises som statisk tekst).</p>
             </div>
           </div>
@@ -347,7 +364,7 @@
 
           <div class="row">
             <div class="col-xs-6">
-              <h1 class="is-h1 is-title">Dropdown</h1>
+              <h2 id="Dropdown" class="is-h2 is-title">Dropdown</h2>
             </div>
           </div>
 
@@ -396,7 +413,7 @@
 
           <div class="row">
             <div class="col-xs-12">
-              <h1 class="is-h1 is-title">Checkbox</h1>
+              <h2 id="Checkbox" class="is-h2 is-title">Checkbox</h2>
             </div>
           </div>
           
@@ -453,7 +470,7 @@
 
           <div class="row">
             <div class="col-xs-12">
-              <h1 class="is-h1 is-title">Tags</h1>
+              <h2 id="Tags" class="is-h2 is-title">Tags</h2>
             </div>
           </div>
 
@@ -471,7 +488,7 @@
 
           <div class="row">
             <div class="col-xs-12">
-              <h1 class="is-h1 is-title">Datepicker</h1>
+              <h2 id="Datepicker" class="is-h2 is-title">Datepicker</h2>
             </div>
           </div>
 
@@ -655,7 +672,7 @@
 
           <div class="row">
             <div class="col-xs-12">
-              <h1 class="is-h1 is-title">Autocomplete</h1>
+              <h2 id="Autocomplete" class="is-h2 is-title">Autocomplete</h2>
             </div>
           </div>
 
@@ -695,7 +712,7 @@
 
           <div class="row">
             <div class="col-xs-12">
-              <h1 class="is-h1 is-title">Data table</h1>
+              <h2 id="Data table" class="is-h2 is-title">Data table</h2>
             </div>
           </div>
 
@@ -844,5 +861,29 @@
       </div>
     </div>
   </div>
+  <script defer>
+  (function() {
+    var nav = document.querySelector(".hdd-sidenav_list")
+    var toc = [].slice.call(document.querySelectorAll("h2"))
+
+    function menuItemMarkup(h2){
+      var title = h2.innerText
+      return `<a href="#${title}" class="hdd-sidenav_list_item doc-toc-item">
+              <span class="hdd-sidenav_list_item_icon">
+                <i class="fal fa-circle"></i>
+              </span>
+              <span class="hdd-sidenav_list_item_label">
+                <span>${title}</span>
+              </span>
+            </a>`
+    }
+
+    function render() {
+      nav.insertAdjacentHTML('beforeend', '<li>' + toc.map(menuItemMarkup).join('</li><li>') + '</li>')
+    }
+
+    render()
+  })()
+  </script>
 </body>
 </html>
