@@ -4,18 +4,21 @@
   $c: &;
 
   @extend .is-p;
+  @extend #{$c}.is-primary;
 
-  display: inline-block;
-  padding: $button-padding;
-  border-width: $button-solid-border-width;
-  border-style: solid;
-  border-radius: $button-radius;
+  &.is-primary {
+    display: inline-block;
+    padding: $button-padding;
+    border-width: $button-solid-border-width;
+    border-style: solid;
+    border-radius: $button-radius;
 
-  border-color: color('primary');
-  outline: none;
-  background: color('primary');
-  color: color('white');
-  cursor: pointer;
+    border-color: color('primary');
+    outline: none;
+    background: color('primary');
+    color: color('white');
+    cursor: pointer;
+  }
 
   &.is-secondary {
     border-color: color('primary');
