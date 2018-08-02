@@ -1,4 +1,5 @@
 @import '../variables/main';
+@import 'button';
 
 .hdd-card {
   @include box-sizing(border-box);
@@ -73,15 +74,23 @@
   &_actions {
     display: flex;
     margin-top: auto; /* Align buttons always to the bottom of the card */
-    padding: 0 $card-padding-x $card-padding-y;
+    border-top: 1px solid color('grey');
 
-    button:not(:last-child) {
-      margin-right: $card-action-button-spacing;
-    }
+    &_action {
+      @extend .is-p;
 
-    &.is-filling {
-      > * {
-        flex-grow: 1;
+      flex-grow: 1;
+      padding: $card-actions-action-padding;
+      border-radius: 0;
+      background: transparent;
+
+      color: $font-color;
+      font-weight: 500;
+      text-align: center;
+      text-decoration: underline;
+
+      &:nth-child(1n+2) {
+        border-left: 1px solid color('grey');
       }
     }
   }
