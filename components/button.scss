@@ -1,31 +1,60 @@
 @import '../variables/main';
 
 .hdd-button {
-  $b: #{&};
+  $c: &;
 
-  @extend .background-colors.is-primary;
-  @extend .background-colors;
   @extend .is-p;
+  @extend #{$c}.is-primary;
 
-  display: inline-block;
-  padding: $button-padding;
-  border-width: $button-solid-border-width;
-  border-radius: $button-radius;
-  outline: none;
-  cursor: pointer;
+  &.is-primary {
+    display: inline-block;
+    padding: $button-padding;
+    border-width: $button-solid-border-width;
+    border-style: solid;
+    border-radius: $button-radius;
 
-  &.is-block {
-    display: block;
+    border-color: color('primary');
+    outline: none;
+    background: color('primary');
+    color: color('white');
+    cursor: pointer;
   }
 
-  &:focus,
-  &:hover {
-    &:not(.no-hover):not([disabled]):not(.no-background) {
-      // Set the default text contrast color to is-primary
-      @extend .background-colors.remove-text-contrast.is-primary;
-      @extend .background-colors.remove-text-contrast;
+  &.is-secondary {
+    border-color: color('primary');
+    background: transparent;
+    color: color('primary');
+  }
 
-      background: none;
+  &:focus:not(.no-focus),
+  &.is-focusing {
+    background: color('blue-dark');
+  }
+
+  &:hover:not(.no-hover),
+  &.is-hovering {
+    background: color('blue-dark');
+  }
+
+  &:active:not(.no-active),
+  &.is-active {
+    background: color('blue-dark');
+  }
+
+  &.is-loading {
+    @extend .fal;
+    color: transparent;
+
+    &::after {
+      @extend .fa-spinner-third:before;
+      @include animation(spinner, .5s, infinite, linear);
+
+      position: absolute;
+      top: calc(50% - (1em / 2));
+      left: calc(50% - (1em / 2));
+
+      color: color('white');
+      font-size: 1em;
     }
   }
 
@@ -33,10 +62,65 @@
     border-width: $button-solid-border-width;
     border-color: color('grey');
     background: color('grey');
-    color: color('grey-dark');
+    color: color('white');
     cursor: not-allowed;
   }
 
+  &.has-icon {
+    %icon-base {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding-right: $button-padding-icon;
+      padding-left: $button-padding-icon;
+    }
+
+    &-left {
+      @extend %icon-base;
+
+      i {
+        margin-right: .5rem;
+      }
+    }
+
+    &-right {
+      @extend %icon-base;
+
+      i {
+        margin-left: .5rem;
+      }
+    }
+  }
+
+  &-secondary {
+    @extend .hdd-button;
+    @extend #{$c}.is-secondary;
+
+    background: transparent;
+
+    &.is-loading::after {
+      color: color('primary');
+    }
+
+    &[disabled] {
+      background: transparent;
+      color: color('grey');
+    }
+
+    &:hover:not(.no-hover),
+    &.is-hovering {
+      background: color('primary');
+      color: color('white');
+    }
+
+    &:focus:not(.no-focus),
+    &.is-focusing,
+    &:active:not(.no-active),
+    &.is-active {
+      color: color('white');
+    }
+  }
 
   &-small {
     @extend .hdd-button;
@@ -48,32 +132,29 @@
   &-icon {
     $e: #{&};
 
-    @extend .background-colors.is-grey;
-    @extend .background-colors;
-
-    padding: .4rem .9rem;
+    padding: $button-icon-padding;
     border-width: 1px;
     border-radius: 2px;
 
     background: color('white');
     cursor: pointer;
 
-    &:focus,
-    &:hover,
-    &:active {
-      &:not(.no-hover) {
-        @extend .background-colors.remove-text-contrast;
-        background: color('grey-light');
-      }
+    &:focus:not(.no-focus),
+    .is-focusing {
+      background: color('grey-light');
     }
 
-    &.is-active {
-      @extend #{$e}:hover;
+    &:hover:not(.no-hover),
+    .is-hovering {
+      background: color('grey-light');
+    }
+
+    &:active:not(.no-active),
+    .is-active {
+      background: color('grey-light');
     }
 
     &.is-transparent {
-      @extend .background-colors.remove-text-contrast;
-
       margin: 0;
       padding: 0;
 
@@ -81,92 +162,23 @@
       background: none;
       cursor: pointer;
 
-      &:focus,
-      &:hover,
-      &:active {
-        &:not(.no-hover) {
-          @extend .background-colors.remove-text-contrast.is-primary; // default color
-          @extend .background-colors.remove-text-contrast;
-          outline: none;
-        }
+      &:focus:not(.no-focus),
+      .is-focusing {
+        outline: none;
+        color: color('primary');
+      }
+
+      &:hover:not(.no-hover),
+      .is-hovering {
+        outline: none;
+        color: color('primary');
+      }
+
+      &:active:not(.no-active),
+      .is-active {
+        outline: none;
+        color: color('primary');
       }
     }
-  }
-
-  &.is-loading {
-    @extend .fal;
-    color: transparent;
-
-    &::after {
-      @extend .fa-spinner-third:before;
-      @extend .background-colors.set-text-contrast.is-primary; // default color
-      @extend .background-colors.set-text-contrast;
-
-      @include animation(spinner, .5s, infinite, linear);
-
-      position: absolute;
-      top: calc(50% - (1em / 2));
-      left: calc(50% - (1em / 2));
-      font-size: 1em;
-    }
-  }
-
-  &.no-background {
-    border-width: $button-outlined-border-width;
-
-    &:not([disabled]) {
-      // Set the default text contrast color to is-primary
-      @extend .background-colors.remove-text-contrast.is-primary;
-      @extend .background-colors.remove-text-contrast;
-    }
-
-    // If not hovering remove background (otherwise can we not set the active color as background)
-    &:not(:hover):not(:focus) {
-      background: none;
-    }
-
-    &:focus,
-    &:hover {
-      &:not(.no-hover):not([disabled]) {
-        @extend .background-colors.set-text-contrast;
-
-        &[disabled] {
-          color: color('white');
-        }
-      }
-    }
-  }
-
-  &.is-active {
-    @extend #{$b}:hover;
-  }
-
-  &.has-shadow {
-    @include box-shadow($shadow-strong);
-  }
-
-  &.has-icon {
-    display: inline-flex;
-    justify-content: space-between;
-
-    padding-right: $button-padding-icon;
-    padding-left: $button-padding-icon;
-
-    &.is-left {
-      i {
-        margin-right: .5rem;
-      }
-    }
-
-    &.is-right {
-      i {
-        margin-left: .5rem;
-      }
-    }
-  }
-
-  &.is-full-width {
-    flex-grow: 1;
-    width: 100%;
   }
 }
