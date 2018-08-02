@@ -30,37 +30,46 @@
     }
 
     &[disabled] {
+      border-color: color('grey');
       background: transparent;
       color: color('grey');
     }
 
-    &:hover:not(.no-hover),
-    &.is-hovering {
-      background: color('primary');
-      color: color('white');
-    }
+    &:not([disabled]) {
+      &:hover:not(.no-hover),
+      &.is-hovering {
+        border-color: color('primary');
+        background: color('primary');
+        color: color('white');
+      }
 
-    &:focus:not(.no-focus),
-    &.is-focusing,
-    &:active:not(.no-active),
-    &.is-active {
-      color: color('white');
+      &:focus:not(.no-focus),
+      &.is-focusing,
+      &:active:not(.no-active),
+      &.is-active {
+        border-color: color('blue-dark');
+        background: color('blue-dark');
+        color: color('white');
+      }
     }
   }
 
   &:not([disabled]) {
     &:focus:not(.no-focus),
     &.is-focusing {
+      border-color: color('blue-dark');
       background: color('blue-dark');
     }
 
     &:hover:not(.no-hover),
     &.is-hovering {
+      border-color: color('blue-dark');
       background: color('blue-dark');
     }
 
     &:active:not(.no-active),
     &.is-active {
+      border-color: color('blue-dark');
       background: color('blue-dark');
     }
   }
