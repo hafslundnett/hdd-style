@@ -24,6 +24,28 @@
     border-color: color('primary');
     background: transparent;
     color: color('primary');
+
+    &.is-loading::after {
+      color: color('primary');
+    }
+
+    &[disabled] {
+      background: transparent;
+      color: color('grey');
+    }
+
+    &:hover:not(.no-hover),
+    &.is-hovering {
+      background: color('primary');
+      color: color('white');
+    }
+
+    &:focus:not(.no-focus),
+    &.is-focusing,
+    &:active:not(.no-active),
+    &.is-active {
+      color: color('white');
+    }
   }
 
   &:not([disabled]) {
@@ -92,35 +114,6 @@
       i {
         margin-left: .5rem;
       }
-    }
-  }
-
-  &-secondary {
-    @extend .hdd-button;
-    @extend #{$c}.is-secondary;
-
-    background: transparent;
-
-    &.is-loading::after {
-      color: color('primary');
-    }
-
-    &[disabled] {
-      background: transparent;
-      color: color('grey');
-    }
-
-    &:hover:not(.no-hover),
-    &.is-hovering {
-      background: color('primary');
-      color: color('white');
-    }
-
-    &:focus:not(.no-focus),
-    &.is-focusing,
-    &:active:not(.no-active),
-    &.is-active {
-      color: color('white');
     }
   }
 
