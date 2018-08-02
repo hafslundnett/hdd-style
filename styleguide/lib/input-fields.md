@@ -1,0 +1,22 @@
+---
+name: Input fields TODO: Fix error text
+category: Input
+---
+En input skal oppfordre til handling fra brukeren. Dersom teksten/innholdet ikke kan endres skal det ikke opptre i et input-felt av noe slag (vises som statisk tekst).
+
+```input-fields.html
+<div class="hdd-form_field">
+  <label class="hdd-form_field_label" for="title">Tittel</label>
+  <div class="hdd-form_input">
+    <input id="title" placeholder="Placeholdertext">
+  </div>
+</div>
+
+<div class="hdd-form_field">
+  <label class="hdd-form_field_label" for="title">Tittel</label>
+  <div class="hdd-form_input is-invalid">
+    <input id="title" value="ola.hafslund.no">
+  </div>
+  <span class="hdd-form_field_error is-active"><i class="fal fa-info-circle"></i>E-mailen må inneholde @</span>
+</div>
+```
