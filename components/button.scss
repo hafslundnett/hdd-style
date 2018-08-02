@@ -26,19 +26,21 @@
     color: color('primary');
   }
 
-  &:focus:not(.no-focus),
-  &.is-focusing {
-    background: color('blue-dark');
-  }
+  &:not([disabled]) {
+    &:focus:not(.no-focus),
+    &.is-focusing {
+      background: color('blue-dark');
+    }
 
-  &:hover:not(.no-hover),
-  &.is-hovering {
-    background: color('blue-dark');
-  }
+    &:hover:not(.no-hover),
+    &.is-hovering {
+      background: color('blue-dark');
+    }
 
-  &:active:not(.no-active),
-  &.is-active {
-    background: color('blue-dark');
+    &:active:not(.no-active),
+    &.is-active {
+      background: color('blue-dark');
+    }
   }
 
   &.is-loading {
