@@ -1,6 +1,6 @@
 ---
-name: "Dropdown TODO: does not match spec"
-category: Input
+name: Dropdown TODO
+category: Components
 ---
 
 ```dropdown.html

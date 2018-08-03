@@ -1,7 +1,9 @@
 ---
 name: Input fields TODO: Fix error text
-category: Input
+category: Components
 ---
+An input field should be a call to action. If the text/content can't be changed, it should not be in an input field, but shown as static text.
+
 En input skal oppfordre til handling fra brukeren. Dersom teksten/innholdet ikke kan endres skal det ikke opptre i et input-felt av noe slag (vises som statisk tekst).
 
 ```input-fields.html

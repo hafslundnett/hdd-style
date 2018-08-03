@@ -1,9 +1,9 @@
 ---
-name: Buttons
-category: Buttons
+name: Button
+category: Components
 ---
 
-Knappene skal brukes på tvers av de ulike interne systemer. Dersom det kun er en knapp på det aktuelle skjermbildet skal alltid dette være en primary-button. Secondary-button skal ikke brukes alene på et skjermbilde. Action-buttons er spesielt tilegnet at brukeren skal foreta en handling som vil påvirke noe annet. Fargeendringer av knapper for å forsøke og forklare en handling (f.eks. rød for avbryt) skal i utgangspunktet ikke gjøres siden det ikke tar høyde for personer med synshemninger. Bruk av andre farger skal avklares og konteksten rundt skal være kraftig nok.
+Buttons should be used across the different internal services. If only one button exists on a page, it should always be a primary button. The secondary button should never be used alone in a page. Action buttons are for prompting a user action that will affect another part. Changing the color of a button to convey purpose is not ideal as people with vision impairments will not be able to pick this up. Usage of other colors should be well discussed and the context around it clear enough.
 
 ## Primary button
 

@@ -1,6 +1,6 @@
 ---
 name: Search fields
-category: Input
+category: Components
 ---
 
 

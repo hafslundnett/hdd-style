@@ -3,13 +3,13 @@ name: Cards
 category: Components
 ---
 
-I komponent-baserte løsninger (da spesielt interne systemer) kan innhold struktureres i “Cards” (på godt norsk: kort).
+In component based services (especially internal systems), content can be structured using Cards.
 
 ```cards.html
 <div class="hdd-card is-full-height">
   <div class="hdd-card_header">
     <div class="hdd-card_header_text">
-      <div class="hdd-card_title is-center">Tittel</div>
+      <div class="hdd-card_title is-center">Title</div>
     </div>
     <button class="hdd-card_header_action hdd-tooltip">
       <i class="fal fa-cog"></i>
@@ -29,8 +29,8 @@ I komponent-baserte løsninger (da spesielt interne systemer) kan innhold strukt
       <i class="fal fa-info"></i>
     </div>
     <div class="hdd-card_header_text">
-      <div class="hdd-card_title">Tittel</div>
-      <div class="hdd-card_subtitle">Undertittel</div>
+      <div class="hdd-card_title">Title</div>
+      <div class="hdd-card_subtitle">Subtitle</div>
     </div>
     <button class="hdd-card_header_action hdd-tooltip">
       <i class="fal fa-cog"></i>
@@ -44,7 +44,7 @@ I komponent-baserte løsninger (da spesielt interne systemer) kan innhold strukt
     <p>Example-content</p>
   </div>
   <div class="hdd-card_actions">
-    <button class="hdd-button is-full-width">Gjennomfør handling</button>
+    <button class="hdd-button is-full-width">Complete action</button>
   </div>
 </div>
 ```

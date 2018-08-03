@@ -1,24 +1,29 @@
 ---
-name: Hafslunds digitale designsystem
-category: Introduksjon
+name: Hafslunds digital design system
+category: Introduction
 ---
 
-> Hafslund digitale designsystem (**HDD**) er et felles grunnlag for å holde den grafiske profilen konsistent på tvers av prosjekter. Klassene og navngivingen i prosjektet følger BECM standarden. Du finner mer informasjon om dette på 
+> Hafslunds digital design system (**HDD**) is a common framework to keep the design consistent with the brand across project. The classes and naming follows the BECM convention. You can find more information about this in the [wiki](https://github.com/hafslundnett/hdd-style/wiki/Naming-guidelines)
 
-## Komme i gang
+## Getting started
 
-Det er flere måter å ta i bruk HDD på:
-* Klone HDD sitt git repository: `git clone git@github.com:hafslundnett/hdd-style.git`
-* Laste inn som npm-pakke: `npm install @hafslundnett/hdd-style`
-  * Importere main.sass via npm i ditt stylesheet: `@import '~@hafslundnett/hdd-style/main';`
-  * Bruke ferdig bundlet css fra `dist/bundle.min.css`
-* **TBD**: Hente det inn via CDN `<link rel="stylesheet" href="https://cdn.com/hdd/latest/bundle.min.css">`
+There are multiple ways of using HDD:
+* Cloning the git repository: `git clone git@github.com:hafslundnett/hdd-style.git`
+* Add it as an npm dependency: `npm install @hafslundnett/hdd-style`
+  * Import main.sass in your stylesheet: `@import '~@hafslundnett/hdd-style/main';`
+  * Use the bundled and minified file: `dist/bundle.min.css`
+* **TBD**: Add a link tag in your `<head>` tag and refer to our CDN: `<link rel="stylesheet" href="https://cdn.com/hdd/latest/bundle.min.css">`
 
 
-## Bidra
 
-Ønsker du å endre, fjerne eller legge til noe? Vennligst les igjennom vår [bidragsguide](./CONTRIBUTING.md) og [adferdskodeks](./CODE_OF_CONDUCT.md). Om det ikke finnes en sak på det allerede kan du legge det inn under [Github Issues](https://github.com/hafslundnett/hdd-style/issues/new).
+## Contribute
+Do you wish to change, remove or add something? Please read our [contribution guide](./CONTRIBUTING.md) and [code of conduct](./CODE_OF_CONDUCT.md). Check for related open issues, and if none exist please open a new one: [Github Issues](https://github.com/hafslundnett/hdd-style/issues/new).
 
-## Sette opp lokalt miljø
+## Open the styleguide locally
 
-For å kjøre prosjektet trenger du å ha `node` og `npm` installert. Kjør `npm install` fra kommandolinja for å laste ned alle avhengigheter. Bruk så `npm start` for å få opp dokumentasjonen i nettleseren og se endringer på de aktuelle komponentene.
+In order to get started you will need to have `node` and `npm` installed. You can get it at https://nodejs.org. When those are installed run:
+
+* `npm install`
+* `npm start`
+
+This will open the styleguide in your browser and refresh on changes.

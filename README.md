@@ -1,6 +1,5 @@
 # Hafslund digital designsystem (Hdd)
 
-[![Build status](https://hafslundtfs.visualstudio.com/Hafslund%20Nett/_apis/build/status/HDD/hdd-style/hdd-style.build)](https://hafslundtfs.visualstudio.com/Hafslund%20Nett/_build/latest?definitionId=632)
 [![npm version](https://img.shields.io/npm/v/@hafslundnett/hdd-style.svg)](https://www.npmjs.com/package/@hafslundnett/hdd-style)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
