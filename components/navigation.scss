@@ -1,0 +1,46 @@
+.hdd-navigation {
+  @include box-shadow($shadow-medium);
+
+  display: flex;
+  z-index: 90;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  width: 100%;
+  height: $navigation-height;
+  padding: $navigation-padding;
+  background: color('white');
+
+  @at-root {
+    .hdd-layout_navigation {
+      height: $navigation-height;
+    }
+  }
+
+  &_title {
+    @extend .is-h1;
+
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    align-self: center;
+    margin: auto;
+    text-align: center;
+  }
+
+  &_user {
+    display: flex;
+    align-items: center;
+  }
+
+  &_avatar {
+    width: #{$navigation-height * $navigation-avatar-size};
+    height: #{$navigation-height * $navigation-avatar-size};
+
+    margin-left: .5rem;
+    border-radius: 100%;
+
+    background: color('grey-light');
+    background-position: center;
+  }
+}

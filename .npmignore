@@ -1,2 +1,4 @@
-/src
-/README.md
+scripts/
+showoff/
+*.md
+*.log

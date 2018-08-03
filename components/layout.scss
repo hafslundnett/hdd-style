@@ -1,0 +1,12 @@
+.hdd-layout {
+  display: flex;
+
+  &_content {
+    flex-grow: 1;
+    overflow: hidden;
+  }
+
+  &_header {
+    margin-bottom: 1rem;
+  }
+}

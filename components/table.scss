@@ -1,0 +1,151 @@
+.hdd-table {
+  $b: #{&};
+
+  min-width: 100%;
+  overflow: scroll;
+  border-spacing: 0;
+  border-collapse: collapse;
+  background: color('white');
+
+  th,
+  td {
+    margin: 0;
+    padding: $table-row-padding;
+    text-align: left;
+
+    &#{$b}_action {
+      display: flex;
+      float: right;
+      font-size: font-size(icon-small);
+      text-align: right;
+
+      > * {
+        margin: 0 .5rem;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &.no-wrap {
+    th,
+    td {
+      white-space: nowrap;
+    }
+  }
+
+  &:not(.no-row-padding) {
+    &#{$b}_row,
+    tr {
+      > *:first-child {
+        padding-left: $table-first-column-padding;
+      }
+
+      > *:last-child {
+        padding-right: $table-last-column-padding;
+      }
+    }
+  }
+
+  &_row,
+  tr {
+    position: relative;
+
+    &::before {
+      @extend .background-colors;
+
+      content: '';
+      display: table-cell;
+      box-sizing: border-box;
+      border-width: 0 .3rem 0 0;
+    }
+
+    &.is-stripe {
+      background: color('blue-light4');
+    }
+
+    &.is-selected {
+      background: color('blue-light3');
+    }
+  }
+
+  td {
+    @extend .is-p;
+  }
+
+  &_header {
+    @extend .is-h3;
+
+    border-bottom: 2px solid color('grey-light');
+    text-align: left;
+
+    th,
+    td {
+      padding: $table-header-padding;
+
+      > i {
+        margin-left: .3rem;
+      }
+    }
+  }
+
+  &_details {
+    display: none;
+
+    > td {
+      column-span: all;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    tr {
+      &::before {
+        width: 0;
+      }
+
+      > * {
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+    }
+
+    &.is-active {
+      display: table-row;
+    }
+  }
+
+  &.is-striped {
+    > tbody {
+      > tr:nth-of-type(odd) {
+        @extend #{$b}_row.is-stripe;
+      }
+    }
+  }
+
+  &.is-aligned-top {
+    td {
+      vertical-align: top;
+    }
+  }
+
+  &.is-aligned-bottom {
+    td {
+      vertical-align: bottom;
+    }
+  }
+
+  &.has-shadow {
+    @include box-shadow($shadow-medium);
+
+    border-radius: 5px;
+  }
+}

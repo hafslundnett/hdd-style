@@ -1,0 +1,23 @@
+name: Hafslunds digitale designsystem
+
+assets:
+  - dist
+
+theme:
+     logo: styleguide/lib/logo.svg
+     css:
+      - styleguide/lib/docs.css
+     sidebar:
+         background: "#f2f2f2"
+         textColor: "#000"
+
+examples:
+  css:
+    - dist/bundle.min.css
+  bodyHtml: |
+        <div style="padding: 20px">
+            {html}
+        </div>
+
+order:
+  - +Introduction

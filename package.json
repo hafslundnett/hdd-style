@@ -1,16 +1,27 @@
 {
-  "name": "@fortum/angular-design",
-  "version": "1.0.0-beta.9",
-  "description": "Provides the Fortum palette through the Material Design color format.",
-  "repository": "https://hafslundtfs.visualstudio.com/DefaultCollection/Varme/_git/AngularDesign",
+  "name": "@hafslundnett/hdd-style",
+  "version": "0.3.29",
+  "description": "A universal design system used across Hafslund nett",
+  "repository": "https://github.com/hafslundnett/hdd-theme",
   "license": "MIT",
   "private": false,
-  "files": [
-    "theme.scss"
-  ],
+  "scripts": {
+    "build": "node scripts/build.js && stylemark -i styleguide/lib -o docs -c stylemark.yml",
+    "lint": "sass-lint",
+    "commit": "git cz",
+    "push": "npm run build; npm publish --access=public",
+    "start": "npm run build -- -w -b"
+  },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-scss-combine": "^1.0.0"
+    "cz-conventional-changelog": "^2.1.0",
+    "node-sass": "^4.9.2",
+    "node-watch": "^0.5.8",
+    "sass-lint": "^1.12.1",
+    "stylemark": "^3.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

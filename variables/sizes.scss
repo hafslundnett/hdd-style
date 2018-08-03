@@ -1,0 +1,155 @@
+/***********************
+* Shared
+*************************/
+$border-radius: 4px;
+
+/************************
+ * Buttons
+ ************************/
+
+$button-radius: $border-radius;
+$button-solid-border-width: 1px;
+$button-outlined-border-width: 1px;
+$button-padding: .7rem 1.8rem;
+$button-padding-small: .5rem 1rem;
+$button-padding-icon: 1.25rem;
+$button-icon-spacing: .5rem;
+$button-icon-padding: .5rem;
+
+/************************
+ * Cards
+ ************************/
+
+$card-radius: $border-radius;
+$card-padding-y: 1.5rem;
+$card-padding-x: 1.75rem;
+$card-header-icon-height: 28px;
+$card-header-icon-margin: 8px;
+$card-header-action-icon-size: 24px;
+$card-action-button-spacing: 8px;
+$card-margin-bottom: 1rem;
+
+/************************
+ * Form Input
+ ************************/
+
+$form-input-icon-margin: .9rem;
+$form-input-padding-left: .7rem;
+$form-input-padding: $form-input-padding-left .9rem;
+$form-input-border-radius: $border-radius;
+$form-input-border: 1px solid color('grey');
+
+/************************
+ * Form Checkbox
+ ************************/
+
+$form-checkbox-mark-size: 18px;
+$form-checkbox-mark-border-radius: $border-radius;
+$form-checkbox-mark-border: 1px solid color('grey');
+
+/************************
+ * Form Select
+ ************************/
+$form-select-padding: $form-input-padding;
+$form-select-border-radius: $border-radius;
+$form-select-border: $form-input-border;
+$form-select-icon-margin: .9rem;
+
+/************************
+ * Sidebar navigation
+ ************************/
+
+$sidenav-collapsed-width: 65px;
+$sidenav-extended-width: 300px;
+$sidenav-z-index: 99;
+
+/************************
+ * Badge
+ ************************/
+
+$badge-padding: .2rem .6rem;
+$badge-radius: 2rem;
+
+$badge-icon-size: 6px;
+$badge-icon-border: 2px solid color('white');
+
+/************************
+ * Table
+ ************************/
+
+$table-header-padding: 1.2rem 1rem;
+$table-row-padding: .7rem 1rem;
+$table-first-column-padding: 1.5rem;
+$table-last-column-padding: 1.5rem;
+
+/************************
+ * Tooltip
+ ************************/
+
+$tooltip-tip-size: 10px;
+$tooltip-padding: .5rem 1rem;
+$tooltip-width: 150px;
+$tooltip-menu-side-padding: .75rem;
+$tooltip-menu-padding: .5rem 1rem;
+$tooltip-tip-right-offset: 1rem;
+$tooltip-tip-left-offset: 1rem;
+$tooltip-border-radius: $border-radius;
+
+/************************
+ * Datepicker
+ ************************/
+
+$datepicker-tip-size: $tooltip-tip-size;
+$datepicker-padding: .75rem;
+$datepicker-border-width: 1px;
+$datepicker-max-width: 250px;
+$datepicker-border-color: color('grey');
+$datepicker-border: $datepicker-border-width solid $datepicker-border-color;
+$datepicker-border-radius: $border-radius;
+$datepicker-days-border-width: 1px;
+$datepicker-days-per-week: 7;
+$datepicker-tip-right-offset: 1.5rem;
+$datepicker-tip-left-offset: 1.5rem;
+
+/************************
+ * Navigation
+ ************************/
+
+$navigation-height: $sidenav-collapsed-width;
+$navigation-padding: 0 .5rem;
+$navigation-avatar-size: .7;
+
+/************************
+ * Tags
+ ************************/
+
+$tag-font-size: 0.6875rem;
+$tag-padding: .4375rem .75rem;
+$tag-icon-spacing: .625rem;
+$tag-border-radius: $border-radius;
+$tag-spacing: .25rem;
+
+/************************
+ * Dropdown
+ ************************/
+
+$dropdown-border-radius: $border-radius;
+$dropdown-border: 1px solid color('grey');
+$dropdown-spacing-element: 4px;
+$dropdown-content-padding: .5rem 0;
+$dropdown-item-padding: .5rem 0 .5rem 1rem;
+
+/************************
+ * Modal
+ ************************/
+
+$modal-border-radius: $border-radius;
+$modal-max-width: 90%;
+$modal-max-height: 90%;
+$modal-width: 500px;
+
+/************************
+ * Breadcrumbs
+ ************************/
+$breadcrumbs-padding: 0 0 1rem;
+$breadcrumb-icon-spacing: 0 .35rem;

@@ -1,0 +1,23 @@
+.hdd-badge {
+  @extend .background-colors.is-signal-red; // <- default color
+  @extend .background-colors;
+  @extend .is-p-small;
+
+  padding: $badge-padding;
+  border-width: 0;
+  border-radius: $badge-radius;
+
+  &-icon {
+    position: absolute;
+    top: calc(#{$badge-icon-size}/-2);
+    right: calc(#{$badge-icon-size}/-2);
+
+    width: $badge-icon-size;
+    height: $badge-icon-size;
+
+    border: $badge-icon-border;
+    border-radius: 100%;
+
+    background: color('signal-red');
+  }
+}

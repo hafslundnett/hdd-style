@@ -1,0 +1,81 @@
+@import '../variables/typography';
+@import '../variables/fontawesome/fa-light';
+@import '../variables/fontawesome/fa-regular';
+
+@each $label, $map in $typography {
+  $family: map-get($map, family);
+  $size: map-get($map, size);
+  $color: map-get($map, color);
+  $weight: map-get($map, weight);
+  $spacing: map-get($map, spacing);
+  $line-height: map-get($map, line-height);
+
+  $elements: map-get($map, elements);
+  $alt-labels: map-get($map, alt-labels);
+  $labels: ($label);
+
+  %fontblock-#{$label} {
+    color: $color;
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: $spacing;
+    line-height: $line-height;
+  }
+
+  @if $alt-labels {
+    @each $label in $alt-labels {
+      $labels: append($labels, $label);
+    }
+  }
+
+  @if $elements {
+    @each $element in $elements {
+      #{$element} {
+        @extend %fontblock-#{$label};
+      }
+    }
+  }
+
+  @each $label in $labels {
+    .is-#{$label} {
+      @extend %fontblock-#{$label};
+    }
+  }
+}
+
+.is-title {
+  margin-bottom: 15px;
+}
+
+.is-subtitle {
+  margin-bottom: 7.5px;
+}
+
+.is-text-left {
+  text-align: left;
+}
+
+.is-text-right {
+  text-align: right;
+}
+
+.is-text-center {
+  text-align: center;
+}
+
+.is-text-uppercase {
+  text-transform: uppercase;
+}
+
+.is-text-lowercase {
+  text-transform: lowercase;
+}
+
+.is-text-capitalize {
+  text-transform: capitalize;
+}
+
+body {
+  @extend .is-p;
+}

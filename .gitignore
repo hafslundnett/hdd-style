@@ -1,5 +1,6 @@
 # dependencies
-/node_modules
-
-# Compiled output
-/theme.scss
+node_modules/
+.DS_Store
+# build
+dist/
+*.log

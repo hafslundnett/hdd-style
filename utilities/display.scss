@@ -1,0 +1,47 @@
+.is-d-block {
+  display: block;
+}
+
+.is-d-inline {
+  display: inline;
+}
+
+.is-d-inline-block {
+  display: inline-block;
+}
+
+.is-d-flex {
+  display: flex;
+}
+
+.is-d-inline-flex {
+  display: inline-flex;
+}
+
+.is-d-none,
+.is-d-hide {
+  display: none;
+}
+
+.is-clickable {
+  cursor: pointer;
+}
+
+.is-grabbable {
+  cursor: grab;
+}
+
+/*
+  For when you want to hide something from the page visually, but still want
+  screen readers to pick it up (such as form labels, or headers)
+*/
+.is-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;  
+}

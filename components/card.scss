@@ -1,0 +1,88 @@
+@import '../variables/main';
+
+.hdd-card {
+  @include box-sizing(border-box);
+  @include box-shadow($shadow-light);
+  @include border-radius($card-radius);
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $card-margin-bottom;
+  background: color('white');
+
+  &.is-full-height {
+    height: 100%;
+  }
+
+  &_header {
+    display: flex;
+    padding: $card-padding-y $card-padding-x;
+
+    &_icon {
+      @extend .is-icon-small;
+
+      display: inline-block;
+      margin-right: $card-header-icon-margin;
+      color: color('blue');
+      line-height: $card-header-icon-height;
+      vertical-align: top;
+    }
+
+    &_text {
+      display: block;
+      flex: 1;
+    }
+
+    &_action {
+      @extend .is-icon-small;
+      @extend .hdd-button-icon.is-transparent;
+    }
+
+    .is-center {
+      text-align: center;
+    }
+  }
+
+  &_title {
+    @extend .is-h2;
+
+    display: block;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  &_subtitle {
+    @extend .is-p;
+
+    display: block;
+    color: $font-color;
+  }
+
+  &_scroll-wrapper {
+    overflow-x: scroll;
+  }
+
+  &_content {
+    @extend .is-p;
+
+    display: block;
+    margin-bottom: $card-padding-y;
+    padding: 0 $card-padding-x;
+  }
+
+  &_actions {
+    display: flex;
+    margin-top: auto; /* Align buttons always to the bottom of the card */
+    padding: 0 $card-padding-x $card-padding-y;
+
+    button:not(:last-child) {
+      margin-right: $card-action-button-spacing;
+    }
+
+    &.is-filling {
+      > * {
+        flex-grow: 1;
+      }
+    }
+  }
+}

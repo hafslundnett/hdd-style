@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+
+	<head>
+		
+
+		<style>
+		</style>
+
+		<style>
+			html, body {
+				min-height: 0 !important;
+				height: auto !important;
+			}
+		</style>
+
+		<script>
+			function findAndHandleStylemarkBlocks(languages, handler) {
+				var blocks = getStylemarkBlocks(languages);
+				handleStylemarkBlocks(blocks, handler);
+			}
+
+			function getStylemarkBlocks(languages) {
+				languages = typeof languages === 'string' ? [languages] : languages;
+
+				var selectors = [];
+
+				for (var i = 0; i < languages.length; i++) {
+					selectors.push('script[data-language="' + languages[i] + '"]');
+				}
+
+				var selector = selectors.join(',');
+				var scripts = document.querySelectorAll(selector);
+				var blocks = [];
+
+				for (var i = 0, length = scripts.length; i < length; i++) {
+					if (scripts[i].innerText) {
+						blocks.push(scripts[i].innerText);
+					}
+				}
+
+				return blocks;
+			}
+
+			function handleStylemarkBlocks(blocks, handler) {
+				for (var i = 0, length = blocks.length; i < length; i++) {
+					handler(blocks[i], i);
+				}
+			}
+		</script>
+
+			<link rel="stylesheet" href="dist/bundle.min.css">
+	</head>
+
+	<body>					<div style="padding: 20px">
+    <div class="hdd-datepicker_container is-inline">
+  <div class="hdd-datepicker_container_header">
+    <span class="hdd-button-icon"><i class="fal fa-arrow-left"></i></span>
+    <span class="hdd-datepicker_container_header_title">mars 2018</span>
+    <span class="hdd-button-icon"><i class="fal fa-arrow-right"></i></span>
+  </div>
+  <div class="hdd-datepicker_container_week">
+    <span>ma</span>
+    <span>ti</span>
+    <span>on</span>
+    <span>to</span>
+    <span>fr</span>
+    <span>lø</span>
+    <span>sø</span>
+  </div>
+  <div class="hdd-datepicker_container_days">
+    <span></span>
+    <span><span>1</span></span>
+    <span><span>2</span></span>
+    <span><span>3</span></span>
+    <span><span>4</span></span>
+    <span><span>5</span></span>
+    <span><span>6</span></span>
+    <span><span>7</span></span>
+    <span><span>8</span></span>
+    <span><span>9</span></span>
+    <span><span>10</span></span>
+    <span><span>11</span></span>
+    <span><span>12</span></span>
+    <span><span>13</span></span>
+    <span><span>14</span></span>
+    <span><span>15</span></span>
+    <span><span>16</span></span>
+    <span><span>17</span></span>
+    <span><span>18</span></span>
+    <span class="is-selected"><span>19</span></span>
+    <span class="is-in-range"><span>20</span></span>
+    <span class="is-in-range"><span>21</span></span>
+    <span class="is-in-range"><span>22</span></span>
+    <span class="is-in-range"><span>23</span></span>
+    <span class="is-selected"><span>24</span></span>
+    <span><span>25</span></span>
+    <span><span>26</span></span>
+    <span><span>27</span></span>
+    <span><span>28</span></span>
+    <span><span>29</span></span>
+    <span><span>30</span></span>
+    <span><span>31</span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+</div>
+
+			<script type="text/x-stylemark" data-language="html"><div class="hdd-datepicker_container is-inline">
+  <div class="hdd-datepicker_container_header">
+    <span class="hdd-button-icon"><i class="fal fa-arrow-left"></i></span>
+    <span class="hdd-datepicker_container_header_title">mars 2018</span>
+    <span class="hdd-button-icon"><i class="fal fa-arrow-right"></i></span>
+  </div>
+  <div class="hdd-datepicker_container_week">
+    <span>ma</span>
+    <span>ti</span>
+    <span>on</span>
+    <span>to</span>
+    <span>fr</span>
+    <span>lø</span>
+    <span>sø</span>
+  </div>
+  <div class="hdd-datepicker_container_days">
+    <span></span>
+    <span><span>1</span></span>
+    <span><span>2</span></span>
+    <span><span>3</span></span>
+    <span><span>4</span></span>
+    <span><span>5</span></span>
+    <span><span>6</span></span>
+    <span><span>7</span></span>
+    <span><span>8</span></span>
+    <span><span>9</span></span>
+    <span><span>10</span></span>
+    <span><span>11</span></span>
+    <span><span>12</span></span>
+    <span><span>13</span></span>
+    <span><span>14</span></span>
+    <span><span>15</span></span>
+    <span><span>16</span></span>
+    <span><span>17</span></span>
+    <span><span>18</span></span>
+    <span class="is-selected"><span>19</span></span>
+    <span class="is-in-range"><span>20</span></span>
+    <span class="is-in-range"><span>21</span></span>
+    <span class="is-in-range"><span>22</span></span>
+    <span class="is-in-range"><span>23</span></span>
+    <span class="is-selected"><span>24</span></span>
+    <span><span>25</span></span>
+    <span><span>26</span></span>
+    <span><span>27</span></span>
+    <span><span>28</span></span>
+    <span><span>29</span></span>
+    <span><span>30</span></span>
+    <span><span>31</span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div></script>
+
+		<!--
+			Vanilla JS
+		-->
+
+		<script>
+			findAndHandleStylemarkBlocks('js', function(block) {
+				eval(block);
+			});
+		</script>
+
+		<!--
+			AngularJS
+		-->
+
+		<script>
+			(function(angular) {
+
+				if (!angular) {
+					return;
+				}
+
+				findAndHandleStylemarkBlocks('angularjs', function(block, index) {
+					var moduleElem = document.querySelector('[ng-app]');
+					var module;
+
+					if (moduleElem) {
+						// Uses an existing module
+						module = angular.module(moduleElem.getAttribute('ng-app'));
+					}
+					else {
+						// Creates a new module
+						module = angular.module('stylemark-datepicker-datepicker', []);
+					}
+
+					module.controller('stylemark-datepicker-datepicker-' + index, function($scope) {
+						$scope.$eval(block);
+					});
+				});
+			})(window.angular);
+		</script>
+
+		<!--
+			React / JSX
+		-->
+
+		<script>
+			(function(ReactDOM) {
+
+				if (!ReactDOM) {
+					return;
+				}
+
+				findAndHandleStylemarkBlocks('jsx', function(block, index) {
+					var rootNode = document.querySelectorAll('.stylemark-react-root')[index];
+					var Component = eval(block);
+					ReactDOM.render(Component, rootNode);
+				});
+			})(window.ReactDOM);
+		</script>
+
+		<!--
+			Ember
+		-->
+
+		<script>
+			(function(Ember) {
+
+				if (!Ember) {
+					return;
+				}
+
+				findAndHandleStylemarkBlocks(['handlebars', 'hbs'], function(block, index) {
+					var render = function() {
+						var app = window.noop
+						var container = app.__container__;
+						var renderer = container.lookup('renderer:-dom');
+						var template = Ember.HTMLBars.compile(block);
+
+						var jsBlocks = getStylemarkBlocks('js');
+						var jsBlock = jsBlocks && jsBlocks[0] ? jsBlocks[0] : '{}';
+						var context;
+						eval('context = ' + jsBlock);
+
+						// Credit:
+						// http://stackoverflow.com/questions/27950413/render-ember-js-hbs-template-to-a-string#answer-35625858
+						var compile = function(container, template, context) {
+							return new Ember.RSVP.Promise(function(resolve) {
+								Ember.Component.extend(Ember.merge({
+									style: 'display:none;',
+									layout: template,
+									container: container,
+									renderer: renderer,
+
+									init: function() {
+										this._super.apply(this, arguments);
+										Ember.setOwner(this, container);
+									},
+
+									didRender: function() {
+										var elem = this.$();
+										resolve(elem);
+										this.destroy();
+									}
+								}, context))
+									.create()
+									.append();
+
+							});
+						};
+
+						compile(container, template, context).then(function(elem) {
+							var node = document.querySelectorAll('.stylemark-ember-root')[index];
+							jQuery(node).append(elem);
+						});
+					};
+
+					var isReady = function() {
+						return window.noop
+							&& window.noop.__container__;
+					};
+
+					var checkReady = function() {
+						if (isReady()) {
+							render();
+						}
+						else {
+							setTimeout(checkReady, 20);
+						}
+					};
+
+					checkReady();
+				});
+
+			})(window.Ember);
+		</script>
+
+		<script src="_stylemark/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,161 @@
+@function color($name) {
+  $color-map: null;
+
+  @if map-has-key($colors, $name) {
+    $color-map: map-get($colors, $name);
+  } @else {
+    @each $label, $map in $colors {
+      @if index(map-get($map, alt-labels), $name) {
+        $color-map: $map;
+      }
+    }
+  }
+
+  @if global-variable-exists(override-colors) {
+    @if map-has-key($override-colors, $name) {
+      $color-map: map-get($override-colors, $name);
+    } @else {
+      @each $label, $map in $override-colors {
+        @if index(map-get($map, alt-labels), $name) {
+          $color-map: $map;
+        }
+      }
+    }
+  }
+
+  @if not $color-map {
+    @warn 'the color "#{$name}" was not found';
+    @return null;
+  }
+
+  @return map-get($color-map, color);
+}
+
+@mixin gradient-color($name) {
+  $gradient-map: null;
+
+  @if map-has-key($gradients, $name) {
+    $gradient-map: map-get($gradients, $name);
+  } @else {
+    @each $label, $map in $gradients {
+      @if index(map-get($map, alt-labels), $name) {
+        $gradient-map: $map;
+      }
+    }
+  }
+
+  @if not $gradient-map {
+    @warn 'the gradient color "#{$name}" was not found';
+  }
+
+  $angle: map-get($gradient-map, angle);
+  $from: map-get($gradient-map, from);
+  $to: map-get($gradient-map, to);
+
+  @include linear-gradient($angle, $from, $to);
+}
+
+$font-color: #444;
+
+// All colors as a list ready for iterations
+$colors: (
+  'white': (
+    color: #FFF,
+    contrast: #444
+  ),
+  'black': (
+    color: #000,
+    contrast: #FFF
+  ),
+  'blue': (
+    color: #1164A4,
+    contrast: #FFF,
+    alt-labels: (primary)
+  ),
+  'blue-dark': (
+    color: #00446F,
+    contrast: #FFF
+  ),
+  'blue-light1': (
+    color: #50A9D8,
+    contrast: #444
+  ),
+  'blue-light2': (
+    color: #A2DBFF,
+    contrast: #444
+  ),
+  'blue-light3': (
+    color: #D2EFFE,
+    contrast: #444
+  ),
+  'blue-light4': (
+    color: #EFF9FF,
+    contrast: #444
+  ),
+  'grey': (
+    color: #ADB0B6,
+    contrast: #444
+  ),
+  'grey-dark': (
+    color: #57585A,
+    contrast: #FFF
+  ),
+  'grey-light': (
+    color: #EEF0F4,
+    contrast: #444
+  ),
+  'signal-green': (
+    color: #6AAB2F,
+    contrast: #FFF
+  ),
+  'signal-yellow': (
+    color: #F0DA00,
+    contrast: #444,
+    alt-labels: (warn)
+  ),
+  'signal-red': (
+    color: #E15559,
+    contrast: #FFF,
+    alt-labels: (danger)
+  ),
+  'data-navy': (
+    color: #23588C,
+    contrast: #FFF
+  ),
+  'data-marine': (
+    color: #0F6ECA,
+    contrast: #FFF
+  ),
+  'data-blue': (
+    color: #4BA8FF,
+    contrast: #FFF
+  ),
+  'data-turquoise': (
+    color: #24D2EF,
+    contrast: #FFF
+  ),
+  'data-seagreen': (
+    color: #46B5AB,
+    contrast: #FFF
+  ),
+  'data-green': (
+    color: #6FE9AA,
+    contrast: #FFF
+  ),
+  'data-orange': (
+    color: #F1842B,
+    contrast: #FFF
+  ),
+  'data-yellow': (
+    color: #FFD209,
+    contrast: #FFF
+  )
+);
+
+$gradients: (
+  'twilight': (
+    angle: 180deg,
+    from: #279DD0,
+    to: color('blue')
+  )
+);

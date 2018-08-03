@@ -1,0 +1,98 @@
+@import '../variables/main';
+
+.hdd-sidenav {
+  $c: #{&};
+
+  @include box-shadow($shadow-light);
+  @include transition(width $medium-transition $transition-cubic);
+
+  position: fixed;
+  z-index: $sidenav-z-index;
+  width: $sidenav-collapsed-width;
+  height: 100%;
+  overflow: hidden;
+  background: color('white');
+
+  &.is-active {
+    width: $sidenav-extended-width;
+
+    #{$c}_list {
+      &_item {
+        &_label {
+          margin-left: 0;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    &:not(.no-hover) {
+      @extend #{$c}.is-active;
+    }
+  }
+
+  @at-root {
+    .hdd-layout_sidenav {
+      min-width: $sidenav-collapsed-width;
+    }
+  }
+
+  &_logo {
+    display: block;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+  }
+
+  &_list {
+    &_item {
+      $c: #{&};
+      @include transition(all $short-transition $transition-cubic);
+
+      display: flex;
+      align-items: center;
+      width: $sidenav-extended-width;
+      background: color('white');
+
+      &:hover,
+      &.is-active {
+        background: color('blue-light1');
+
+        #{$c}_icon,
+        #{$c}_label {
+          color: color('white');
+        }
+      }
+
+      &_icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: $sidenav-collapsed-width;
+        height: $sidenav-collapsed-width;
+
+        color: color('grey');
+        font-size: font-size(icon-small);
+      }
+
+      &_label {
+        @extend .is-h2;
+        @include transition(all $short-transition $transition-cubic);
+
+        flex-grow: 1;
+        margin-left: -10px;
+        padding-right: 1.5rem;
+        opacity: 0;
+
+        color: color('grey');
+      }
+
+      .hdd-badge {
+        float: right;
+      }
+    }
+  }
+}

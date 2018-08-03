@@ -1,0 +1,15 @@
+.gap {
+  width: 100%;
+
+  @for $height from 1 through 150 {
+    @if ($height % 10 == 0) or ($height % 5 == 0) {
+      &.is-#{$height} { height: 1px * $height; }
+    }
+  }
+
+  @at-root hr#{&} {
+    margin: 0;
+    border: 0;
+    background: none;
+  }
+}

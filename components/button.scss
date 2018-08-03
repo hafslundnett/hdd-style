@@ -1,0 +1,188 @@
+@import '../variables/main';
+
+.hdd-button {
+  $c: &;
+
+  @extend .is-p;
+  @extend #{$c}.is-primary;
+
+  &.is-primary {
+    display: inline-block;
+    padding: $button-padding;
+    border-width: $button-solid-border-width;
+    border-style: solid;
+    border-radius: $button-radius;
+
+    border-color: color('primary');
+    outline: none;
+    background: color('primary');
+    color: color('white');
+    cursor: pointer;
+  }
+
+  &.is-secondary {
+    border-color: color('primary');
+    background: transparent;
+    color: color('primary');
+
+    &.is-loading::after {
+      color: color('primary');
+    }
+
+    &[disabled] {
+      border-color: color('grey');
+      background: transparent;
+      color: color('grey');
+    }
+
+    &:not([disabled]) {
+      &:hover:not(.no-hover),
+      &.is-hovering {
+        border-color: color('primary');
+        background: color('primary');
+        color: color('white');
+      }
+
+      &:focus:not(.no-focus),
+      &.is-focusing,
+      &:active:not(.no-active),
+      &.is-active {
+        border-color: color('blue-dark');
+        background: color('blue-dark');
+        color: color('white');
+      }
+    }
+  }
+
+  &:not([disabled]) {
+    &:focus:not(.no-focus),
+    &.is-focusing {
+      border-color: color('blue-dark');
+      background: color('blue-dark');
+    }
+
+    &:hover:not(.no-hover),
+    &.is-hovering {
+      border-color: color('blue-dark');
+      background: color('blue-dark');
+    }
+
+    &:active:not(.no-active),
+    &.is-active {
+      border-color: color('blue-dark');
+      background: color('blue-dark');
+    }
+  }
+
+  &.is-loading {
+    @extend .fal;
+    color: transparent;
+
+    &::after {
+      @extend .fa-spinner-third:before;
+      @include animation(spinner, .5s, infinite, linear);
+
+      position: absolute;
+      top: calc(50% - (1em / 2));
+      left: calc(50% - (1em / 2));
+
+      color: color('white');
+      font-size: 1em;
+    }
+  }
+
+  &[disabled] {
+    border-width: $button-solid-border-width;
+    border-color: color('grey');
+    background: color('grey');
+    color: color('white');
+    cursor: not-allowed;
+  }
+
+  &.has-icon {
+    %icon-base {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding-right: $button-padding-icon;
+      padding-left: $button-padding-icon;
+    }
+
+    &-left {
+      @extend %icon-base;
+
+      i {
+        margin-right: .5rem;
+      }
+    }
+
+    &-right {
+      @extend %icon-base;
+
+      i {
+        margin-left: .5rem;
+      }
+    }
+  }
+
+  &.is-small {
+    @extend .is-p-small;
+    @extend #{$c}.is-primary;
+
+    padding: $button-padding-small;
+  }
+
+  &-icon {
+    $e: #{&};
+
+    padding: $button-icon-padding;
+    border-width: 1px;
+    border-radius: 2px;
+
+    background: color('white');
+    cursor: pointer;
+
+    &:focus:not(.no-focus),
+    .is-focusing {
+      background: color('grey-light');
+    }
+
+    &:hover:not(.no-hover),
+    .is-hovering {
+      background: color('grey-light');
+    }
+
+    &:active:not(.no-active),
+    .is-active {
+      background: color('grey-light');
+    }
+
+    &.is-transparent {
+      margin: 0;
+      padding: 0;
+
+      border: none;
+      background: none;
+      cursor: pointer;
+
+      &:focus:not(.no-focus),
+      .is-focusing {
+        outline: none;
+        color: color('primary');
+      }
+
+      &:hover:not(.no-hover),
+      .is-hovering {
+        outline: none;
+        color: color('primary');
+      }
+
+      &:active:not(.no-active),
+      .is-active {
+        outline: none;
+        color: color('primary');
+      }
+    }
+  }
+}
