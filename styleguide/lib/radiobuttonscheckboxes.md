@@ -1,8 +1,7 @@
 ---
-name: Radio buttons & checkboxes
+name: Radio buttons & checkboxes TODO
 category: Input
 ---
-TODO: 
 
 ```radiocheckbox.html
 <div class="hdd-form_field">
