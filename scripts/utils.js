@@ -7,18 +7,15 @@ const sass = require('node-sass')
 
 const outDir = path.join(__dirname, '../dist')
 
-const paths = [
-  [path.join(__dirname, '../main.scss'), 'bundle'],
-  path.join(__dirname, '../utilities')
-]
+const paths = [ [ path.join(__dirname, '../main.scss'), 'bundle' ], path.join(__dirname, '../utilities') ]
 
-exports.watch = function(path, recursive = false) {
+exports.watch = function (path, recursive = false) {
   const watcher = watch(path, { recursive })
   return watcher
 }
 
-exports.compile = function() {
-  const required = ['../dist', '../dist/utilities']
+exports.compile = function () {
+  const required = [ '../dist', '../dist/utilities' ]
   for (let dir of required) {
     const fullPath = path.join(__dirname, dir)
     if (!fs.existsSync(fullPath)) fs.mkdirSync(fullPath)
@@ -31,13 +28,13 @@ exports.compile = function() {
   for (let p of paths) {
     let output
     if (Array.isArray(p)) {
-      [p, output] = p
+      ;[ p, output ] = p
     }
 
     const isDir = fs.lstatSync(p).isDirectory()
 
     if (!isDir) {
-      project.push([p, output || path.basename(p).replace(/\.\w+$/, '')])
+      project.push([ p, output || path.basename(p).replace(/\.\w+$/, '') ])
       continue
     }
 
@@ -48,18 +45,18 @@ exports.compile = function() {
       const file = path.join(p, name)
       const isDir = fs.lstatSync(file).isDirectory()
 
-      if (isDir || name.startsWith('_') ||  name.startsWith('.')) {
+      if (isDir || name.startsWith('_') || name.startsWith('.')) {
         continue
       }
 
       output = path.join(dirName, name.replace(/\.\w+$/, ''))
-      project.push([file, output])
+      project.push([ file, output ])
     }
   }
 
   console.time('compiled')
 
-  for (let [fileIn, nameOut] of project) {
+  for (let [ fileIn, nameOut ] of project) {
     const options = {
       file: fileIn,
       outFile: path.join(outDir, `${nameOut}.min.css`),
@@ -77,12 +74,12 @@ exports.compile = function() {
       console.info('\x1b[36m%s\x1b[0m', `Successfully compiled: ${result.stats.includedFiles.length} files`)
 
       const buffer = new Buffer(result.css, 'utf-8')
-      const gzip = zlib.gzipSync(buffer);
+      const gzip = zlib.gzipSync(buffer)
 
-      fs.writeFileSync(options.outFile, result.css);
-      fs.writeFileSync(options.outMap, result.map);
-      fs.writeFileSync(options.outGzip, gzip);
-    } catch(err) {
+      fs.writeFileSync(options.outFile, result.css)
+      fs.writeFileSync(options.outMap, result.map)
+      fs.writeFileSync(options.outGzip, gzip)
+    } catch (err) {
       console.error('\x1b[31m%s\x1b[0m', '💥 Something went wrong!')
       console.error('\x1b[31m%s\x1b[0m', `At line(${err.line}:${err.column}): ${err.file}`)
       console.error('\x1b[31m%s\x1b[0m', `Message: ${err.message}`)

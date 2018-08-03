@@ -1,6 +1,7 @@
 # Hafslund digital designsystem (Hdd)
 
-> 🚧 WARNING: This project is under construction and should not be used in production! 🚧
+[![npm version](https://img.shields.io/npm/v/@hafslundnett/hdd-style.svg)](https://www.npmjs.com/package/@hafslundnett/hdd-style)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 'Hafslund digital designsystem' is a design system that can be used across projects while maintaining consistancy. The project follows strict naming guidlines, your can read more about them in the [wiki](https://github.com/hafslundnett/hdd-theme/wiki/Naming-guidelines). Every component should be able to run in a isolated environment without depending on parent classes/elements.
 
@@ -15,9 +16,10 @@ For every used front-end framework a separate 'components' library should be cre
 
 The documentation of this project can be found on [Github](https://github.com/hafslundnett/hdd-theme/wiki). This project also contains a showoff website that shows examples of most components. The showoff website can be generated/started by running:
 
-`npm run serve`
+* `yarn`
+* `yarn start`
 
-You need to have `node` and `npm` installed in order to start the showoff website.
+You need to have `node` and `yarn` installed in order to start the showoff website.
 
 ## Code of conduct
 

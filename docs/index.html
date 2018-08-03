@@ -1,0 +1,1893 @@
+<!doctype html>
+<html lang="en-us" id="insta">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link href="_stylemark/css/all.css" rel="stylesheet">
+		<link rel="icon" href="" type="image/x-icon">
+
+		<!-- @todo Replace with custom icomoon/fontello bundle -->
+		<script src="https://use.fontawesome.com/6dd56ad32d.js"></script>
+
+		<title>Hafslunds digitale designsystem</title>
+
+			<link rel="stylesheet" href="styleguide/lib/docs.css">
+	</head>
+	<body class="overflow-x-off i-page theme-page">
+		<div class="i-page__content theme-content">
+
+			<div class="i-nav-select theme-mobile-nav">
+				<form class="form">
+					<select class="form-control form-control-lg theme-mobile-nav-select">
+						<option disabled selected>Go to…</option>
+							<optgroup label="Introduction">
+									<option value="hafslunds-digital-design-system">Hafslunds digital design system</option>
+							</optgroup>
+							<optgroup label="Components">
+									<option value="button">Button</option>
+									<option value="cards">Cards</option>
+									<option value="checkbox-todo">Checkbox TODO</option>
+									<option value="datepicker">Datepicker</option>
+									<option value="dropdown-todo">Dropdown TODO</option>
+									<option value="feedback-message-todo">Feedback message TODO</option>
+									<option value="header">Header</option>
+									<option value="navbar">Navbar</option>
+									<option value="radio-button-todo">Radio button TODO</option>
+									<option value="search-fields">Search fields</option>
+									<option value="table">Table</option>
+							</optgroup>
+							<optgroup label="Other">
+									<option value="colors">Colors</option>
+							</optgroup>
+							<optgroup label="Typography">
+									<option value="typeface-todo-qa">Typeface TODO QA</option>
+							</optgroup>
+							<optgroup label="Utilities">
+									<option value="accessibility">Accessibility</option>
+									<option value="flush">Flush</option>
+							</optgroup>
+					</select>
+				</form>
+			</div>
+
+				<div id="category-introduction" class="theme-content-category">
+						<div id="hafslunds-digital-design-system" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Hafslunds digital design system</h1>
+	<div class="theme-content-element-description"><blockquote>
+<p>Hafslunds digital design system (<strong>HDD</strong>) is a common framework to keep the design consistent with the brand across project. The classes and naming follows the BECM convention. You can find more information about this in the <a href="https://github.com/hafslundnett/hdd-style/wiki/Naming-guidelines">wiki</a>.</p>
+</blockquote>
+<p>For every used front-end framework a separate &#39;components&#39; library should be created. Listed below are the already existing libraries. If you want to add your library to this list, please create a pull request.</p>
+<table class="table"><thead><tr>
+<th>Framework</th>
+<th>Version</th>
+<th>Repo</th>
+</tr>
+</thead><tbody><tr>
+<td>Angular 5.x</td>
+<td><a href="https://www.npmjs.com/package/@hafslundnett/hdd-ng-components"><img src="https://img.shields.io/npm/v/@hafslundnett/hdd-ng-components.svg" alt="hdd-ng-components"></a></td>
+<td><a href="https://www.npmjs.com/package/@hafslundnett/hdd-ng-components">Github</a></td>
+</tr>
+<tr>
+<td>Vue 2.x</td>
+<td><a href="https://www.npmjs.com/package/@hafslundnett/hdd-vue"><img src="https://img.shields.io/npm/v/@hafslundnett/hdd-vue.svg" alt="hdd-vue"></a></td>
+<td><a href="https://www.npmjs.com/package/@hafslundnett/hdd-vue">Github</a></td>
+</tr>
+</tbody></table><p><a href="https://computas.invisionapp.com/share/NFISX8VGZ5Q#">Design document (Invision)</a></p>
+<div id="getting-started" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#getting-started" class="icon-link i-section__link -heading"></a>Getting started</h2></div><p>There are multiple ways of using HDD:</p>
+<ul>
+<li>Cloning the git repository: <code>git clone git@github.com:hafslundnett/hdd-style.git</code></li>
+<li>Add it as an npm dependency: <code>npm install @hafslundnett/hdd-style</code><ul>
+<li>Import main.sass in your stylesheet: <code>@import &#39;~@hafslundnett/hdd-style/main&#39;;</code></li>
+<li>Use the bundled and minified file: <code>dist/bundle.min.css</code></li>
+</ul>
+</li>
+<li><strong>TBD</strong>: Add a link tag in your <code>&lt;head&gt;</code> tag and refer to our CDN: <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.com/hdd/latest/bundle.min.css&quot;&gt;</code></li>
+</ul>
+<div id="contribute" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#contribute" class="icon-link i-section__link -heading"></a>Contribute</h2></div><p>Do you wish to change, remove or add something? Please read our <a href="./CONTRIBUTING.md">contribution guide</a> and <a href="./CODE_OF_CONDUCT.md">code of conduct</a>. Check for related open issues, and if none exist please open a new one: <a href="https://github.com/hafslundnett/hdd-style/issues/new">Github Issues</a>.</p>
+<div id="open-the-styleguide-locally" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#open-the-styleguide-locally" class="icon-link i-section__link -heading"></a>Open the styleguide locally</h2></div><p>In order to get started you will need to have <code>node</code> and <code>npm</code> installed. You can get it at <a href="https://nodejs.org">https://nodejs.org</a>. When those are installed run:</p>
+<ul>
+<li><code>npm install</code></li>
+<li><code>npm start</code></li>
+</ul>
+<p>This will open the styleguide in your browser and refresh on changes.</p>
+</div>
+</div>
+
+				</div>
+				<div id="category-components" class="theme-content-category">
+						<div id="button" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Button</h1>
+	<div class="theme-content-element-description"><p>Buttons should be used across the different internal services. If only one button exists on a page, it should always be a primary button. The secondary button should never be used alone in a page. Action buttons are for prompting a user action that will affect another part. Changing the color of a button to convey purpose is not ideal as people with vision impairments will not be able to pick this up. Usage of other colors should be well discussed and the context around it clear enough.</p>
+<div id="primary-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#primary-button" class="icon-link i-section__link -heading"></a>Primary button</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-primary-button.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-primary-button.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;hdd-button&quot; disabled&gt;Disabled&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-small&quot;&gt;Primary small&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-small&quot; disabled&gt;Disabled&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;hdd-button&quot; disabled&gt;Disabled&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-small&quot;&gt;Primary small&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-small&quot; disabled&gt;Disabled&lt;/button&gt;</code></pre>
+	</div>
+</div><div id="secondary-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#secondary-button" class="icon-link i-section__link -heading"></a>Secondary button</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-secondary-button.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-secondary-button.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button is-secondary&quot;&gt;Secondary&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-secondary&quot; disabled&gt;Secondary&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-small is-secondary&quot;&gt;Secondary small&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-small is-secondary&quot; disabled&gt;Secondary small&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button is-secondary&quot;&gt;Secondary&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-secondary&quot; disabled&gt;Secondary&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-small is-secondary&quot;&gt;Secondary small&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-small is-secondary&quot; disabled&gt;Secondary small&lt;/button&gt;</code></pre>
+	</div>
+</div><div id="action-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#action-button" class="icon-link i-section__link -heading"></a>Action button</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-action-button.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-action-button.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button has-icon is-right&quot;&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon is-right&quot; disabled&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button has-icon is-right&quot;&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon is-right&quot; disabled&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
+	</div>
+</div><div id="tags" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#tags" class="icon-link i-section__link -heading"></a>Tags</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-tags.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-tags.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;hdd-tags_item&quot;&gt;7070575000516247284&lt;button class=&quot;fal fa-times hdd-tags_icon&quot;&gt;&lt;/button&gt;&lt;/span&gt;
+&lt;span class=&quot;hdd-tags_item&quot;&gt;2014&lt;button class=&quot;fal fa-times hdd-tags_icon&quot;&gt;&lt;/button&gt;&lt;/span&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;hdd-tags_item&quot;&gt;7070575000516247284&lt;button class=&quot;fal fa-times hdd-tags_icon&quot;&gt;&lt;/button&gt;&lt;/span&gt;
+&lt;span class=&quot;hdd-tags_item&quot;&gt;2014&lt;button class=&quot;fal fa-times hdd-tags_icon&quot;&gt;&lt;/button&gt;&lt;/span&gt;</code></pre>
+	</div>
+</div><div id="next-button-todo" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#next-button-todo" class="icon-link i-section__link -heading"></a>Next-button TODO</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-next-button.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-next-button.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
+	</div>
+</div><div id="confirm-edit-todo" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#confirm-edit-todo" class="icon-link i-section__link -heading"></a>Confirm edit TODO</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-confirm-edit.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-confirm-edit.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="">Copy</button>
+		<pre class="mb-0"><code class="lang-"></code></pre>
+	</div>
+</div><div id="switch-todo" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#switch-todo" class="icon-link i-section__link -heading"></a>Switch TODO</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-switch.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-switch.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;a href=&quot;https://google.com&quot;&gt;Home&lt;/a&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot;&gt;Hafslund Nett&lt;/a&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;a href=&quot;https://google.com&quot;&gt;Home&lt;/a&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot;&gt;Hafslund Nett&lt;/a&gt;</code></pre>
+	</div>
+</div><div id="links-todo" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#links-todo" class="icon-link i-section__link -heading"></a>Links TODO</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-links.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-links.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;a href=&quot;https://google.com&quot;&gt;Home&lt;/a&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot;&gt;Hafslund Nett&lt;/a&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;a href=&quot;https://google.com&quot;&gt;Home&lt;/a&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot;&gt;Hafslund Nett&lt;/a&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="cards" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Cards</h1>
+	<div class="theme-content-element-description"><p>In component based services (especially internal systems), content can be structured using Cards.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="cards-cards.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="cards-cards.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-card is-full-height&quot;&gt;
+  &lt;div class=&quot;hdd-card_header&quot;&gt;
+    &lt;div class=&quot;hdd-card_header_text&quot;&gt;
+      &lt;div class=&quot;hdd-card_title is-center&quot;&gt;Title&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class=&quot;hdd-card_header_action hdd-tooltip&quot;&gt;
+      &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;
+      &lt;div class=&quot;hdd-tooltip_menu&quot;&gt;
+        &lt;span class=&quot;hdd-tooltip_menu_item&quot;&gt;Hello&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_content&quot;&gt;
+    &lt;p&gt;Example-content&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-card is-full-height&quot;&gt;
+  &lt;div class=&quot;hdd-card_header&quot;&gt;
+    &lt;div class=&quot;hdd-card_header_icon&quot;&gt;
+      &lt;i class=&quot;fal fa-info&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;hdd-card_header_text&quot;&gt;
+      &lt;div class=&quot;hdd-card_title&quot;&gt;Title&lt;/div&gt;
+      &lt;div class=&quot;hdd-card_subtitle&quot;&gt;Subtitle&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class=&quot;hdd-card_header_action hdd-tooltip&quot;&gt;
+      &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;
+
+      &lt;div class=&quot;hdd-tooltip_menu&quot;&gt;
+        &lt;span class=&quot;hdd-tooltip_menu_item&quot;&gt;Hello&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_content&quot;&gt;
+    &lt;p&gt;Example-content&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_actions&quot;&gt;
+    &lt;button class=&quot;hdd-button is-full-width&quot;&gt;Complete action&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-card is-full-height&quot;&gt;
+  &lt;div class=&quot;hdd-card_header&quot;&gt;
+    &lt;div class=&quot;hdd-card_header_text&quot;&gt;
+      &lt;div class=&quot;hdd-card_title is-center&quot;&gt;Title&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class=&quot;hdd-card_header_action hdd-tooltip&quot;&gt;
+      &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;
+      &lt;div class=&quot;hdd-tooltip_menu&quot;&gt;
+        &lt;span class=&quot;hdd-tooltip_menu_item&quot;&gt;Hello&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_content&quot;&gt;
+    &lt;p&gt;Example-content&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-card is-full-height&quot;&gt;
+  &lt;div class=&quot;hdd-card_header&quot;&gt;
+    &lt;div class=&quot;hdd-card_header_icon&quot;&gt;
+      &lt;i class=&quot;fal fa-info&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;hdd-card_header_text&quot;&gt;
+      &lt;div class=&quot;hdd-card_title&quot;&gt;Title&lt;/div&gt;
+      &lt;div class=&quot;hdd-card_subtitle&quot;&gt;Subtitle&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class=&quot;hdd-card_header_action hdd-tooltip&quot;&gt;
+      &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;
+
+      &lt;div class=&quot;hdd-tooltip_menu&quot;&gt;
+        &lt;span class=&quot;hdd-tooltip_menu_item&quot;&gt;Hello&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_content&quot;&gt;
+    &lt;p&gt;Example-content&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_actions&quot;&gt;
+    &lt;button class=&quot;hdd-button is-full-width&quot;&gt;Complete action&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="checkbox-todo" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Checkbox TODO</h1>
+	<div class="theme-content-element-description"><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="checkbox-todo-checkbox.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="checkbox-todo-checkbox.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;span class=&quot;hdd-form_field_title&quot;&gt;Checkboxes&lt;/span&gt;
+  &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot;&gt;
+    &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Picked&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot;&gt;
+    &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Picked&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot;&gt;
+    &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Unpicked&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;span class=&quot;hdd-form_field_title&quot;&gt;Checkboxes&lt;/span&gt;
+  &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot;&gt;
+    &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Picked&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot;&gt;
+    &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Picked&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot;&gt;
+    &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Unpicked&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="datepicker" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Datepicker</h1>
+	<div class="theme-content-element-description"><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="datepicker-datepicker.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="datepicker-datepicker.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-datepicker_container is-inline&quot;&gt;
+  &lt;div class=&quot;hdd-datepicker_container_header&quot;&gt;
+    &lt;span class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-left&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;span class=&quot;hdd-datepicker_container_header_title&quot;&gt;mars 2018&lt;/span&gt;
+    &lt;span class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-datepicker_container_week&quot;&gt;
+    &lt;span&gt;ma&lt;/span&gt;
+    &lt;span&gt;ti&lt;/span&gt;
+    &lt;span&gt;on&lt;/span&gt;
+    &lt;span&gt;to&lt;/span&gt;
+    &lt;span&gt;fr&lt;/span&gt;
+    &lt;span&gt;lø&lt;/span&gt;
+    &lt;span&gt;sø&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-datepicker_container_days&quot;&gt;
+    &lt;span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;1&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;2&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;3&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;4&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;5&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;6&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;7&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;8&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;9&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;10&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;11&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;12&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;13&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;14&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;15&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;16&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;17&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;18&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;is-selected&quot;&gt;&lt;span&gt;19&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;20&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;21&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;22&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;23&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;is-selected&quot;&gt;&lt;span&gt;24&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;25&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;26&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;27&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;28&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;29&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;30&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;31&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-datepicker_container is-inline&quot;&gt;
+  &lt;div class=&quot;hdd-datepicker_container_header&quot;&gt;
+    &lt;span class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-left&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;span class=&quot;hdd-datepicker_container_header_title&quot;&gt;mars 2018&lt;/span&gt;
+    &lt;span class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-datepicker_container_week&quot;&gt;
+    &lt;span&gt;ma&lt;/span&gt;
+    &lt;span&gt;ti&lt;/span&gt;
+    &lt;span&gt;on&lt;/span&gt;
+    &lt;span&gt;to&lt;/span&gt;
+    &lt;span&gt;fr&lt;/span&gt;
+    &lt;span&gt;lø&lt;/span&gt;
+    &lt;span&gt;sø&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-datepicker_container_days&quot;&gt;
+    &lt;span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;1&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;2&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;3&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;4&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;5&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;6&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;7&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;8&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;9&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;10&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;11&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;12&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;13&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;14&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;15&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;16&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;17&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;18&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;is-selected&quot;&gt;&lt;span&gt;19&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;20&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;21&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;22&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;23&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;is-selected&quot;&gt;&lt;span&gt;24&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;25&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;26&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;27&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;28&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;29&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;30&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;span&gt;31&lt;/span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><h3>Mutations</h3><p><strong><code>hdd-datepicker_container</code>:</strong></p>
+<table class="table"><thead><tr>
+<th style="text-align:left">class</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead><tbody><tr>
+<td style="text-align:left"><code>is-inline</code></td>
+<td style="text-align:left">Use the datepicker as a inline element</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-active</code></td>
+<td style="text-align:left">Show the datepicker</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>has-arrow-left</code></td>
+<td style="text-align:left">Places the arrow on the left side of the datepicker and aligns the datepicker tip as center point</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>has-arrow-right</code></td>
+<td style="text-align:left">Places the arrow on the right side of the datepicker and aligns the datepicker tip as center point</td>
+</tr>
+</tbody></table><p><strong><code>hdd-datepicker_container_days &gt; span</code></strong> | <strong><code>hdd-datepicker_container_days_day</code>:</strong></p>
+<table class="table"><thead><tr>
+<th style="text-align:left">class</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead><tbody><tr>
+<td style="text-align:left"><code>is-selected</code></td>
+<td style="text-align:left">Set the given day to the selected style</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-in-range</code></td>
+<td style="text-align:left">Set the given day to the in range style</td>
+</tr>
+</tbody></table></div>
+</div>
+
+						<div id="dropdown-todo" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Dropdown TODO</h1>
+	<div class="theme-content-element-description"><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="dropdown-todo-dropdown.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="dropdown-todo-dropdown.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Velg handling&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_select&quot;&gt;
+    &lt;select id=&quot;select-alt1&quot; placeholder=&quot;Placeholder text&quot;&gt;
+      &lt;option&gt;Alternative 1&lt;/option&gt;
+      &lt;option&gt;Alternative 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Velg handling&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_select is-disabled&quot;&gt;
+    &lt;select id=&quot;select-alt2&quot; placeholder=&quot;Placeholder text&quot; disabled&gt;
+      &lt;option&gt;Alternative 1&lt;/option&gt;
+      &lt;option&gt;Alternative 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Velg handling&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_select&quot;&gt;
+    &lt;select id=&quot;select-alt1&quot; placeholder=&quot;Placeholder text&quot;&gt;
+      &lt;option&gt;Alternative 1&lt;/option&gt;
+      &lt;option&gt;Alternative 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Velg handling&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_select is-disabled&quot;&gt;
+    &lt;select id=&quot;select-alt2&quot; placeholder=&quot;Placeholder text&quot; disabled&gt;
+      &lt;option&gt;Alternative 1&lt;/option&gt;
+      &lt;option&gt;Alternative 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="feedback-message-todo" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Feedback message TODO</h1>
+	<div class="theme-content-element-description"><p>A feedback message could be an error or success message. If possible usage of success messages should be kept to a minimum. A user should also be given the opportunity to fix/act on the error message.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="feedback-message-todo-feedbackmessage.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="feedback-message-todo-feedbackmessage.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
+Feedback message
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div&gt;
+Feedback message
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="header" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Header</h1>
+	<div class="theme-content-element-description"><div id="header-todo-set-menu-logo-styling-and-tooltip-menu-needs-rework" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#header-todo-set-menu-logo-styling-and-tooltip-menu-needs-rework" class="icon-link i-section__link -heading"></a>Header TODO set menu logo styling and tooltip menu needs rework</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="header-header.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="header-header.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-layout_navigation&quot;&gt;
+  &lt;div class=&quot;hdd-navigation&quot;&gt;
+    &lt;a class=&quot;hdd-menu_logo&quot; href=&quot;#&quot;&gt;
+      &lt;img src=&quot;/styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
+    &lt;/a&gt;
+    &lt;h1 class=&quot;hdd-navigation_title&quot;&gt;Overview&lt;/h1&gt;
+
+    &lt;div class=&quot;hdd-navigation_user&quot;&gt;
+      &lt;span class=&quot;hdd-tooltip&quot;&gt;
+        Kari Nordmann
+        &lt;span class=&quot;hdd-tooltip_menu is-active has-arrow-right&quot;&gt;
+          &lt;span class=&quot;hdd-tooltip_menu_item&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Logout&lt;/span&gt;
+        &lt;/span&gt;
+      &lt;/span&gt;
+      &lt;img class=&quot;hdd-navigation_avatar&quot; src=&quot;http://placekitten.com/150/150&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-layout_navigation&quot;&gt;
+  &lt;div class=&quot;hdd-navigation&quot;&gt;
+    &lt;a class=&quot;hdd-menu_logo&quot; href=&quot;#&quot;&gt;
+      &lt;img src=&quot;/styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
+    &lt;/a&gt;
+    &lt;h1 class=&quot;hdd-navigation_title&quot;&gt;Overview&lt;/h1&gt;
+
+    &lt;div class=&quot;hdd-navigation_user&quot;&gt;
+      &lt;span class=&quot;hdd-tooltip&quot;&gt;
+        Kari Nordmann
+        &lt;span class=&quot;hdd-tooltip_menu is-active has-arrow-right&quot;&gt;
+          &lt;span class=&quot;hdd-tooltip_menu_item&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Logout&lt;/span&gt;
+        &lt;/span&gt;
+      &lt;/span&gt;
+      &lt;img class=&quot;hdd-navigation_avatar&quot; src=&quot;http://placekitten.com/150/150&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="navbar" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Navbar</h1>
+	<div class="theme-content-element-description"><div id="sidebar" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#sidebar" class="icon-link i-section__link -heading"></a>Sidebar</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="navbar-nav.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="navbar-nav.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-layout_sidenav&quot;&gt;
+      &lt;div class=&quot;hdd-sidenav&quot;&gt;
+        &lt;a class=&quot;hdd-sidenav_logo&quot; href=&quot;#&quot;&gt;
+          &lt;img src=&quot;/styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
+        &lt;/a&gt;
+
+        &lt;ul class=&quot;hdd-sidenav_list&quot;&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;#&quot; class=&quot;hdd-sidenav_list_item&quot;&gt;
+              &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
+                &lt;i class=&quot;fal fa-chart-pie&quot;&gt;&lt;span class=&quot;hdd-badge-icon&quot;&gt;&lt;/span&gt;&lt;/i&gt;
+              &lt;/span&gt;
+              &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
+                &lt;span&gt;Oversikt&lt;/span&gt;
+                &lt;span class=&quot;hdd-badge&quot;&gt;2&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+
+          &lt;li&gt;
+            &lt;a class=&quot;hdd-sidenav_list_item&quot; href=&quot;#&quot;&gt;
+              &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
+                &lt;i class=&quot;fal fa-clipboard-list&quot;&gt;&lt;/i&gt;
+              &lt;/span&gt;
+              &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
+                &lt;span&gt;Mine åpne saker&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+
+          &lt;li&gt;
+            &lt;a class=&quot;hdd-sidenav_list_item&quot; href=&quot;#&quot;&gt;
+              &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
+                &lt;i class=&quot;fal fa-map-pin&quot;&gt;&lt;/i&gt;
+              &lt;/span&gt;
+              &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
+                &lt;span&gt;Kart&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-layout_sidenav&quot;&gt;
+      &lt;div class=&quot;hdd-sidenav&quot;&gt;
+        &lt;a class=&quot;hdd-sidenav_logo&quot; href=&quot;#&quot;&gt;
+          &lt;img src=&quot;/styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
+        &lt;/a&gt;
+
+        &lt;ul class=&quot;hdd-sidenav_list&quot;&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;#&quot; class=&quot;hdd-sidenav_list_item&quot;&gt;
+              &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
+                &lt;i class=&quot;fal fa-chart-pie&quot;&gt;&lt;span class=&quot;hdd-badge-icon&quot;&gt;&lt;/span&gt;&lt;/i&gt;
+              &lt;/span&gt;
+              &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
+                &lt;span&gt;Oversikt&lt;/span&gt;
+                &lt;span class=&quot;hdd-badge&quot;&gt;2&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+
+          &lt;li&gt;
+            &lt;a class=&quot;hdd-sidenav_list_item&quot; href=&quot;#&quot;&gt;
+              &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
+                &lt;i class=&quot;fal fa-clipboard-list&quot;&gt;&lt;/i&gt;
+              &lt;/span&gt;
+              &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
+                &lt;span&gt;Mine åpne saker&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+
+          &lt;li&gt;
+            &lt;a class=&quot;hdd-sidenav_list_item&quot; href=&quot;#&quot;&gt;
+              &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
+                &lt;i class=&quot;fal fa-map-pin&quot;&gt;&lt;/i&gt;
+              &lt;/span&gt;
+              &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
+                &lt;span&gt;Kart&lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="radio-button-todo" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Radio button TODO</h1>
+	<div class="theme-content-element-description"><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="radio-button-todo-radiobutton.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="radio-button-todo-radiobutton.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="
+&lt;form class=&quot;hdd-form_field&quot;&gt;
+    &lt;span class=&quot;hdd-form_field_title&quot;&gt;Radio buttons&lt;/span&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;first&quot; name=&quot;drone&quot; checked /&gt;
+        &lt;label for=&quot;first&quot;&gt;Picked&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;second&quot; name=&quot;drone&quot; /&gt;
+        &lt;label for=&quot;second&quot;&gt;Unpicked&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;third&quot; name=&quot;drone&quot; /&gt;
+        &lt;label for=&quot;third&quot;&gt;Unpicked&lt;/label&gt;
+    &lt;/div&gt;
+&lt;/form&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">
+&lt;form class=&quot;hdd-form_field&quot;&gt;
+    &lt;span class=&quot;hdd-form_field_title&quot;&gt;Radio buttons&lt;/span&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;first&quot; name=&quot;drone&quot; checked /&gt;
+        &lt;label for=&quot;first&quot;&gt;Picked&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;second&quot; name=&quot;drone&quot; /&gt;
+        &lt;label for=&quot;second&quot;&gt;Unpicked&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;third&quot; name=&quot;drone&quot; /&gt;
+        &lt;label for=&quot;third&quot;&gt;Unpicked&lt;/label&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="search-fields" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Search fields</h1>
+	<div class="theme-content-element-description"><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="search-fields-search-fields.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="search-fields-search-fields.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_input&quot;&gt;
+  &lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt;
+  &lt;input placeholder=&quot;Placeholder text&quot; /&gt;
+  &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_input&quot;&gt;
+  &lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt;
+  &lt;input placeholder=&quot;Placeholder text&quot; /&gt;
+  &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="table" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Table</h1>
+	<div class="theme-content-element-description"><p>Create a basic html table in the Hdd style. A table can consist out of data, buttons and icons. Take a look below at the example on how to use icons and buttons in a table.</p>
+<p>All color sub classes can be used on the form rows. These colors get added as a small bar at the beginning of the row.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="table-stripedtable.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="table-stripedtable.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;table class=&quot;hdd-table is-striped&quot;&gt;
+  &lt;tr class=&quot;hdd-table_header&quot;&gt;
+    &lt;th&gt;ID&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+    &lt;th&gt;Kundenr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+    &lt;th&gt;Personnr.&lt;/th&gt;
+    &lt;th&gt;Fakturanr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+    &lt;th&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr class=&quot;is-primary&quot;&gt;
+    &lt;th&gt;1&lt;/th&gt;
+    &lt;td&gt;124221&lt;/td&gt;
+    &lt;td&gt;123419384&lt;/td&gt;
+    &lt;td&gt;31&lt;/td&gt;
+    &lt;td class=&quot;hdd-table_action&quot;&gt;
+      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;table class=&quot;hdd-table is-striped&quot;&gt;
+  &lt;tr class=&quot;hdd-table_header&quot;&gt;
+    &lt;th&gt;ID&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+    &lt;th&gt;Kundenr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+    &lt;th&gt;Personnr.&lt;/th&gt;
+    &lt;th&gt;Fakturanr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+    &lt;th&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr class=&quot;is-primary&quot;&gt;
+    &lt;th&gt;1&lt;/th&gt;
+    &lt;td&gt;124221&lt;/td&gt;
+    &lt;td&gt;123419384&lt;/td&gt;
+    &lt;td&gt;31&lt;/td&gt;
+    &lt;td class=&quot;hdd-table_action&quot;&gt;
+      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+	</div>
+</div><div id="detail-row" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#detail-row" class="icon-link i-section__link -heading"></a>Detail row</h2></div><p>In the Hdd design specs is it plausible to have a expandable rows that show more information about the given row.</p>
+<blockquote>
+<p>⚠️ When using the <code>is-striped</code> mutation on the <code>hdd-table</code> does it include the detail rows. When wanting to create a striped form is it advised to stripe the odd rows use the <code>is-stripe</code> row mutation instead.</p>
+</blockquote>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="table-expandabletable.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="table-expandabletable.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;tr class=&quot;hdd-table_details is-primary&quot;&gt;
+  &lt;td colspan=&quot;4&quot;&gt;
+    &lt;table class=&quot;hdd-table is-aligned-top&quot;&gt;
+      &lt;tr class=&quot;hdd-table_header&quot;&gt;
+        &lt;th&gt;Målepunkt&lt;/th&gt;
+        &lt;th&gt;Anleggsraning&lt;/th&gt;
+        &lt;th&gt;Klassifiseringer&lt;/th&gt;
+        &lt;th&gt;Adresse&lt;/th&gt;
+        &lt;th&gt;Siste aksjon utført&lt;/th&gt;
+        &lt;th&gt;Innsamling siste 7 dagen&lt;/th&gt;
+        &lt;th&gt;Snitt RSSI siste 7 dagen&lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;M: 101231&lt;/td&gt;
+        &lt;td&gt;100&lt;/td&gt;
+        &lt;td&gt;CL-01 Død måler&lt;br&gt;CL-04 Dårlig Rssi&lt;br&gt;CL-12 Dårlig innsamling&lt;/td&gt;
+        &lt;td&gt;Drammensveien 114&lt;/td&gt;
+        &lt;td&gt;05.04.18&lt;/td&gt;
+        &lt;td&gt;89%&lt;/td&gt;
+        &lt;td&gt;-91dB&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;tr class=&quot;hdd-table_details is-primary&quot;&gt;
+  &lt;td colspan=&quot;4&quot;&gt;
+    &lt;table class=&quot;hdd-table is-aligned-top&quot;&gt;
+      &lt;tr class=&quot;hdd-table_header&quot;&gt;
+        &lt;th&gt;Målepunkt&lt;/th&gt;
+        &lt;th&gt;Anleggsraning&lt;/th&gt;
+        &lt;th&gt;Klassifiseringer&lt;/th&gt;
+        &lt;th&gt;Adresse&lt;/th&gt;
+        &lt;th&gt;Siste aksjon utført&lt;/th&gt;
+        &lt;th&gt;Innsamling siste 7 dagen&lt;/th&gt;
+        &lt;th&gt;Snitt RSSI siste 7 dagen&lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;M: 101231&lt;/td&gt;
+        &lt;td&gt;100&lt;/td&gt;
+        &lt;td&gt;CL-01 Død måler&lt;br&gt;CL-04 Dårlig Rssi&lt;br&gt;CL-12 Dårlig innsamling&lt;/td&gt;
+        &lt;td&gt;Drammensveien 114&lt;/td&gt;
+        &lt;td&gt;05.04.18&lt;/td&gt;
+        &lt;td&gt;89%&lt;/td&gt;
+        &lt;td&gt;-91dB&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;</code></pre>
+	</div>
+</div><h3>Mutations</h3><p><strong><code>hdd-table</code>:</strong></p>
+<table class="table"><thead><tr>
+<th style="text-align:left">class</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead><tbody><tr>
+<td style="text-align:left"><code>has-shadow</code></td>
+<td style="text-align:left">Add a light shadow to the table</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-striped</code></td>
+<td style="text-align:left">Adds zebra-stripes to the table</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-aligned-top</code></td>
+<td style="text-align:left">Sets the <code>vertical-align</code> of all cells to <code>top</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-aligned-bottom</code></td>
+<td style="text-align:left">Sets the <code>vertical-align</code> of all cells to <code>bottom</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>no-wrap</code></td>
+<td style="text-align:left">Sets the <code>white-space</code> property of all th/td elements to <code>nowrap</code></td>
+</tr>
+</tbody></table><p><strong><code>hdd-table tr</code> | <code>hdd-table_row</code>:</strong></p>
+<table class="table"><thead><tr>
+<th style="text-align:left">class</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead><tbody><tr>
+<td style="text-align:left"><code>is-stripe</code></td>
+<td style="text-align:left">Mark the given row as a stripe</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-selected</code></td>
+<td style="text-align:left">Mark the given row as selected</td>
+</tr>
+</tbody></table><p><strong><code>hdd-table_details</code>:</strong></p>
+<table class="table"><thead><tr>
+<th style="text-align:left">class</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead><tbody><tr>
+<td style="text-align:left"><code>is-active</code></td>
+<td style="text-align:left">Expand the details row</td>
+</tr>
+</tbody></table></div>
+</div>
+
+				</div>
+				<div id="category-other" class="theme-content-category">
+						<div id="colors" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Colors</h1>
+	<div class="theme-content-element-description"><p>All colors that are being used in this project are defined in the <a href="https://github.com/hafslundnett/hdd-theme/tree/develop/variables/colors.scss">colors map</a>. Every color can be used directly by using the <code>color($name)</code> function or by extended the <code>background-colors</code> class.</p>
+<p>If you want to override a color could you define a <code>$override-colors</code> map. The colors or labels defined in this map will override the default colors.</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> scss</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="$override-colors: (
+  &#39;blue&#39;: (
+    color: #2196F3,
+    contrast: #FFF,
+    alt-labels: (primary)
+  )
+);">Copy</button>
+		<pre class="mb-0"><code class="lang-">$override-colors: (
+  &#39;blue&#39;: (
+    color: #2196F3,
+    contrast: #FFF,
+    alt-labels: (primary)
+  )
+);</code></pre>
+	</div>
+</div><h4><code>color($name)</code> function</h4><p>This function returns the respected color value if found. When the given color is not found will a warning be thrown during building. A color can be selected by it&#39;s color name or label.</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> sass</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="@import &#39;../frameworks/colors&#39;;
+
+.hdd-element {
+  background: color(white);
+  color: color(primary); // primary is the color label of &#39;blue&#39;
+}">Copy</button>
+		<pre class="mb-0"><code class="lang-">@import &#39;../frameworks/colors&#39;;
+
+.hdd-element {
+  background: color(white);
+  color: color(primary); // primary is the color label of &#39;blue&#39;
+}</code></pre>
+	</div>
+</div><h4><code>background-colors</code> class</h4><p>The <code>background-colors</code> class contains all colors as chained classes.</p>
+<p><strong>A chained color class consists out of the following:</strong></p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> sass</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="border-color: $color;
+background: $color;
+color: $color; // This color should have enough contrast on to make text readable on the given background color">Copy</button>
+		<pre class="mb-0"><code class="lang-">border-color: $color;
+background: $color;
+color: $color; // This color should have enough contrast on to make text readable on the given background color</code></pre>
+	</div>
+</div><p><strong>Best practice of using the <code>.background-colors</code> class</strong></p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> sass</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".hdd-element {
+  @extend .background-colors;
+}">Copy</button>
+		<pre class="mb-0"><code class="lang-">.hdd-element {
+  @extend .background-colors;
+}</code></pre>
+	</div>
+</div>
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> html</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-element is-primary&quot;&gt;Submit&lt;/button&gt;
+&lt;button class=&quot;hdd-element is-data-seagreen&quot;&gt;Submit&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-element is-primary&quot;&gt;Submit&lt;/button&gt;
+&lt;button class=&quot;hdd-element is-data-seagreen&quot;&gt;Submit&lt;/button&gt;</code></pre>
+	</div>
+</div><p>The <code>color</code> property is set to a color that makes text readable on the given background. If you want to set the text color to the given background color add the <code>remove-text-contrast</code> class.</p>
+<p>This is usefull when trying to for example to remove the background color and set the text color to the given background color.</p>
+<p><strong>A usecase of the <code>.background-colors.remove-text-contrast</code> class</strong></p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> sass</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".hdd-element {
+  @extend .background-colors;
+
+  &amp;.no-background {
+    @extend .background-colors.remove-text-contrast;
+    background: none;
+    border-style: solid;
+    border-width: 1px;
+  }
+}">Copy</button>
+		<pre class="mb-0"><code class="lang-">.hdd-element {
+  @extend .background-colors;
+
+  &amp;.no-background {
+    @extend .background-colors.remove-text-contrast;
+    background: none;
+    border-style: solid;
+    border-width: 1px;
+  }
+}</code></pre>
+	</div>
+</div>
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> html</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-element is-primary no-background&quot;&gt;Submit&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-element is-primary no-background&quot;&gt;Submit&lt;/button&gt;</code></pre>
+	</div>
+</div><h4><code>$colors</code> variable</h4><p>The <code>$colors</code> variable is a big map containing all colors. Every color map has a couple of required properties.</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> sass</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="blue: ( // &lt;- label
+  color: #1164A4, // Required
+  contrast: #FFFFFF, // Required
+  alt-labels: (primary, superimportant) // Optional
+)">Copy</button>
+		<pre class="mb-0"><code class="lang-">blue: ( // &lt;- label
+  color: #1164A4, // Required
+  contrast: #FFFFFF, // Required
+  alt-labels: (primary, superimportant) // Optional
+)</code></pre>
+	</div>
+</div><table class="table"><thead><tr>
+<th style="text-align:left">property</th>
+<th style="text-align:left">required</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead><tbody><tr>
+<td style="text-align:left"><code>color</code></td>
+<td style="text-align:left"><code>true</code></td>
+<td style="text-align:left">is the hex color value of the label</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>contrast</code></td>
+<td style="text-align:left"><code>true</code></td>
+<td style="text-align:left">is the contrast of color</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>alt-labels</code></td>
+<td style="text-align:left"><code>false</code></td>
+<td style="text-align:left">is a list of alternative labels<br>that could be used to get this color</td>
+</tr>
+</tbody></table></div>
+</div>
+
+				</div>
+				<div id="category-typography" class="theme-content-category">
+						<div id="typeface-todo-qa" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Typeface TODO QA</h1>
+	<div class="theme-content-element-description"><p>The typeface should be kept consistent in all mediums, physical and digital.</p>
+<h3>Helvetica Neue LT Std</h3><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="typeface-todo-qa-search-fields.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="typeface-todo-qa-search-fields.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h1&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h1&gt;
+&lt;h1&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h1&gt;
+&lt;h1&gt;0123456789&lt;/h1&gt;
+&lt;br /&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h2&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h2&gt;
+&lt;h2&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h2&gt;
+&lt;h2&gt;0123456789&lt;/h2&gt;
+&lt;br /&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h3&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h3&gt;
+&lt;h3&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h3&gt;
+&lt;h3&gt;0123456789&lt;/h3&gt;
+&lt;br /&gt;
+&lt;p&gt;paragraph&lt;/p&gt;
+&lt;p&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/p&gt;
+&lt;p&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/p&gt;
+&lt;p&gt;0123456789&lt;/p&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h1&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h1&gt;
+&lt;h1&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h1&gt;
+&lt;h1&gt;0123456789&lt;/h1&gt;
+&lt;br /&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h2&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h2&gt;
+&lt;h2&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h2&gt;
+&lt;h2&gt;0123456789&lt;/h2&gt;
+&lt;br /&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h3&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h3&gt;
+&lt;h3&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h3&gt;
+&lt;h3&gt;0123456789&lt;/h3&gt;
+&lt;br /&gt;
+&lt;p&gt;paragraph&lt;/p&gt;
+&lt;p&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/p&gt;
+&lt;p&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/p&gt;
+&lt;p&gt;0123456789&lt;/p&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+				</div>
+				<div id="category-utilities" class="theme-content-category">
+						<div id="accessibility" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Accessibility</h1>
+	<div class="theme-content-element-description"><div id="visibility" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#visibility" class="icon-link i-section__link -heading"></a>Visibility</h2></div><p>Sometimes there is a need to hide content on a page for various reasons. It is importat that it still conveys the correct meaning to people who use screen readers. We should follow these principles regarding on the situation to keep everything accessible, wether you are visually impaired or not:</p>
+<h3>Hide from everyone</h3><p>Use the <a href="https://developer.mozilla.org/en/docs/Web/HTML/Global_attributes/hidden"><code>hidden</code> attribute</a> to hide content from everyone.</p>
+<h3>Hide from screen readers</h3><p>Use the attribute <code>aria-hidden=&quot;true&quot;</code> to hide content from screen readers. It will still appear visually on the page.</p>
+<h3>Hide visually only</h3><p>Use the class <code>.is-visually-hidden</code> to hide content visually only. This will still be read by screen readers.</p>
+</div>
+</div>
+
+						<div id="flush" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Flush</h1>
+	<div class="theme-content-element-description"><div id="flush" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#flush" class="icon-link i-section__link -heading"></a>Flush</h2></div><h3>Class</h3><p><code>flush-</code></p>
+<p>The flush class can be used to remove the margin or padding of the given element on the given side.</p>
+<ul>
+<li><code>flush-margin</code> Remove the margin on all sides</li>
+<li><code>flush-padding</code> Remove the padding on all sides</li>
+<li><code>flush-margin-(top, right, bottom, left)</code> Remove the margin on the given side</li>
+<li><code>flush-padding-(top, right, bottom, left)</code> Remove the padding on the given side</li>
+</ul>
+<h3>Example</h3>
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> html</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;flush-margin&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;flush-margin-left&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;flush-padding&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;flush-padding-left&quot;&gt;&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;flush-margin&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;flush-margin-left&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;flush-padding&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;flush-padding-left&quot;&gt;&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+				</div>
+		</div>
+		<div
+			class="i-page__sidebar theme-sidebar"
+			style="background: #f2f2f2;color: #000;"
+		>
+			<h1 class="i-sidebar-title h4 mt-4 theme-sidebar-header">
+					<img class="i-sidebar-logo mr-2 theme-sidebar-header-logo" src="styleguide/lib/logo.svg" height="40" alt="">
+				<span class="theme-sidebar-header-title">Hafslunds digitale designsystem</span>
+			</h1>
+			
+			<div class="relative mt-3 mb-2 px-0 theme-sidebar-search">
+				<div class="i-search-input">
+					<input id="search-filter" name="filter" type="search" placeholder="Search" class="form-control i-sidebar-item-filter">
+					<label for="search-filter" class="search-input-icon icon-search"></label>
+					<button type="button" class="i-search-input-reset" aria-label="Clear">
+						<i class="icon-cross"></i>
+					</button>
+				</div>
+			</div>
+			
+			<div class="theme-sidebar-categories">
+					<div class="i-sidebar-list-group theme-sidebar-category">
+			
+						<h5
+							class="pt-4 mb-1 theme-sidebar-category-title"
+							data-filter-value=" Hafslunds digital design system "
+						>
+							<a href="#category-introduction" class="i-sidebar-list-item">
+								<b>Introduction</b>
+							</a>
+						</h5>
+			
+						<div>
+								<a
+									href="#hafslunds-digital-design-system"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Hafslunds digital design system"
+								>
+									<span>Hafslunds digital design system</span>
+								</a>
+						</div>
+			
+					</div>
+					<div class="i-sidebar-list-group theme-sidebar-category">
+			
+						<h5
+							class="pt-4 mb-1 theme-sidebar-category-title"
+							data-filter-value=" Button  Cards  Checkbox TODO  Datepicker  Dropdown TODO  Feedback message TODO  Header  Navbar  Radio button TODO  Search fields  Table "
+						>
+							<a href="#category-components" class="i-sidebar-list-item">
+								<b>Components</b>
+							</a>
+						</h5>
+			
+						<div>
+								<a
+									href="#button"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Button"
+								>
+									<span>Button</span>
+								</a>
+								<a
+									href="#cards"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Cards"
+								>
+									<span>Cards</span>
+								</a>
+								<a
+									href="#checkbox-todo"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Checkbox TODO"
+								>
+									<span>Checkbox TODO</span>
+								</a>
+								<a
+									href="#datepicker"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Datepicker"
+								>
+									<span>Datepicker</span>
+								</a>
+								<a
+									href="#dropdown-todo"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Dropdown TODO"
+								>
+									<span>Dropdown TODO</span>
+								</a>
+								<a
+									href="#feedback-message-todo"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Feedback message TODO"
+								>
+									<span>Feedback message TODO</span>
+								</a>
+								<a
+									href="#header"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Header"
+								>
+									<span>Header</span>
+								</a>
+								<a
+									href="#navbar"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Navbar"
+								>
+									<span>Navbar</span>
+								</a>
+								<a
+									href="#radio-button-todo"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Radio button TODO"
+								>
+									<span>Radio button TODO</span>
+								</a>
+								<a
+									href="#search-fields"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Search fields"
+								>
+									<span>Search fields</span>
+								</a>
+								<a
+									href="#table"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Table"
+								>
+									<span>Table</span>
+								</a>
+						</div>
+			
+					</div>
+					<div class="i-sidebar-list-group theme-sidebar-category">
+			
+						<h5
+							class="pt-4 mb-1 theme-sidebar-category-title"
+							data-filter-value=" Colors "
+						>
+							<a href="#category-other" class="i-sidebar-list-item">
+								<b>Other</b>
+							</a>
+						</h5>
+			
+						<div>
+								<a
+									href="#colors"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Colors"
+								>
+									<span>Colors</span>
+								</a>
+						</div>
+			
+					</div>
+					<div class="i-sidebar-list-group theme-sidebar-category">
+			
+						<h5
+							class="pt-4 mb-1 theme-sidebar-category-title"
+							data-filter-value=" Typeface TODO QA "
+						>
+							<a href="#category-typography" class="i-sidebar-list-item">
+								<b>Typography</b>
+							</a>
+						</h5>
+			
+						<div>
+								<a
+									href="#typeface-todo-qa"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Typeface TODO QA"
+								>
+									<span>Typeface TODO QA</span>
+								</a>
+						</div>
+			
+					</div>
+					<div class="i-sidebar-list-group theme-sidebar-category">
+			
+						<h5
+							class="pt-4 mb-1 theme-sidebar-category-title"
+							data-filter-value=" Accessibility  Flush "
+						>
+							<a href="#category-utilities" class="i-sidebar-list-item">
+								<b>Utilities</b>
+							</a>
+						</h5>
+			
+						<div>
+								<a
+									href="#accessibility"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Accessibility"
+								>
+									<span>Accessibility</span>
+								</a>
+								<a
+									href="#flush"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Flush"
+								>
+									<span>Flush</span>
+								</a>
+						</div>
+			
+					</div>
+			</div>
+			
+			<div class="i-sidebar-filter-no-results i-muted i-pad-horiz-2 theme-sidebar-search-no-results">
+				No matches.
+			</div>
+			
+			<div class="row no-gutters mt-auto py-4 theme-sidebar-footer">
+				<span class="col">
+					Generated by <a href="https://github.com/nextbigsoundinc/stylemark">Stylemark</a>
+				</span>
+			</div>
+		</div>
+
+		<script src="_stylemark/js/vendor/jquery-3.2.1.slim.min.js"></script>
+		<script src="_stylemark/js/vendor/popper.min.js"></script>
+		<script src="_stylemark/js/vendor/tether.min.js"></script>
+		<script src="_stylemark/js/vendor/bootstrap.min.js"></script>
+		<script src="_stylemark/js/vendor/iframeResizer.min.js"></script>
+		<script src="_stylemark/js/vendor/lazyframe.min.js"></script>
+		<script src="_stylemark/js/vendor/highlight.min.js"></script>
+		<script src="_stylemark/js/vendor/clipboard.min.js"></script>
+		<script src="_stylemark/js/vendor/in-view.min.js"></script>
+		<script src="_stylemark/js/app.js"></script>
+
+	</body>
+</html>
