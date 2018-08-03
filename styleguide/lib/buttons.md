@@ -26,8 +26,8 @@ Knappene skal brukes på tvers av de ulike interne systemer. Dersom det kun er e
 ## Action button
 
 ```action-button.html
-<button class="hdd-button has-icon is-right">Foward <i class="fal fa-arrow-right"></i></button>
-<button class="hdd-button has-icon is-right" disabled>Foward <i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button has-icon is-right">Forward <i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button has-icon is-right" disabled>Forward <i class="fal fa-arrow-right"></i></button>
 ```
 
 ## Tags 
