@@ -1,0 +1,48 @@
+@import url('../../dist/bundle.min.css');
+
+@media (min-width: 992px) {
+  .i-library {
+    padding: 50px 150px;
+  }
+}
+
+.theme-content-element-description h2 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.theme-content-element-description h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.theme-content-element-description table {
+  width: auto;
+}
+
+.theme-content-element-description p {
+  margin-bottom: 10px;
+}
+
+.theme-sidebar-header-title {
+  font-weight: normal;
+}
+
+.theme-content-element-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.theme-sidebar-header-title {
+  display: none;
+}
+
+ul {
+  padding-left: 20px;
+}
+li > ul {
+  padding-left: 20px;
+}

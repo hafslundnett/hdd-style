@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "node scripts/build.js && stylemark -i styleguide/lib -o styleguide/docs -c stylemark.yml",
+    "build": "node scripts/build.js && stylemark -i styleguide/lib -o docs -c stylemark.yml",
     "lint": "sass-lint",
     "commit": "git cz",
     "push": "npm run build; npm publish --access=public",
