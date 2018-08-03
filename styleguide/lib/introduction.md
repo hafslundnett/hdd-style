@@ -12,6 +12,8 @@ For every used front-end framework a separate 'components' library should be cre
 | Angular 5.x | [![hdd-ng-components](https://img.shields.io/npm/v/@hafslundnett/hdd-ng-components.svg)](https://www.npmjs.com/package/@hafslundnett/hdd-ng-components)  | [Github](https://www.npmjs.com/package/@hafslundnett/hdd-ng-components) |
 | Vue 2.x | [![hdd-vue](https://img.shields.io/npm/v/@hafslundnett/hdd-vue.svg)](https://www.npmjs.com/package/@hafslundnett/hdd-vue) | [Github](https://www.npmjs.com/package/@hafslundnett/hdd-vue) | 
 
+[Design document (Invision)](https://computas.invisionapp.com/share/NFISX8VGZ5Q#)
+
 ## Getting started
 
 There are multiple ways of using HDD:

@@ -18,6 +18,10 @@
   margin-bottom: 10px;
 }
 
+.theme-content-element-description table {
+  width: auto;
+}
+
 .theme-content-element-description p {
   margin-bottom: 10px;
 }
