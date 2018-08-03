@@ -3,7 +3,14 @@ name: Hafslunds digital design system
 category: Introduction
 ---
 
-> Hafslunds digital design system (**HDD**) is a common framework to keep the design consistent with the brand across project. The classes and naming follows the BECM convention. You can find more information about this in the [wiki](https://github.com/hafslundnett/hdd-style/wiki/Naming-guidelines)
+> Hafslunds digital design system (**HDD**) is a common framework to keep the design consistent with the brand across project. The classes and naming follows the BECM convention. You can find more information about this in the [wiki](https://github.com/hafslundnett/hdd-style/wiki/Naming-guidelines).
+
+For every used front-end framework a separate 'components' library should be created. Listed below are the already existing libraries. If you want to add your library to this list, please create a pull request.
+
+| Framework     | Version       | Repo          |
+| ------------- | ------------- | ------------- |
+| Angular 5.x | [![hdd-ng-components](https://img.shields.io/npm/v/@hafslundnett/hdd-ng-components.svg)](https://www.npmjs.com/package/@hafslundnett/hdd-ng-components)  | [Github](https://www.npmjs.com/package/@hafslundnett/hdd-ng-components) |
+| Vue 2.x | [![hdd-vue](https://img.shields.io/npm/v/@hafslundnett/hdd-vue.svg)](https://www.npmjs.com/package/@hafslundnett/hdd-vue) | [Github](https://www.npmjs.com/package/@hafslundnett/hdd-vue) | 
 
 ## Getting started
 
