@@ -6,8 +6,6 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "serve": "node scripts/server.js",
-    "watch": "node scripts/watch.js",
     "build": "node scripts/build.js && stylemark -i styleguide/lib -o styleguide/docs -c stylemark.yml",
     "lint": "sass-lint",
     "commit": "git cz",
@@ -16,10 +14,8 @@
   },
   "devDependencies": {
     "cz-conventional-changelog": "^2.1.0",
-    "mime": "^2.3.1",
     "node-sass": "^4.9.2",
     "node-watch": "^0.5.8",
-    "opn": "^5.3.0",
     "sass-lint": "^1.12.1",
     "stylemark": "^3.0.2"
   },
