@@ -10,17 +10,17 @@ Knappene skal brukes på tvers av de ulike interne systemer. Dersom det kun er e
 ```primary-button.html
 <button class="hdd-button">Primary</button>
 <button class="hdd-button" disabled>Disabled</button>
-<button class="hdd-button hdd-button-small">Primary small</button>
-<button class="hdd-button hdd-button-small" disabled>Disabled</button>
+<button class="hdd-button is-small">Primary small</button>
+<button class="hdd-button is-small" disabled>Disabled</button>
 ```
 
 ## Secondary button
 
 ```secondary-button.html
-<button class="hdd-button no-background">Primary</button>
-<button class="hdd-button no-background" disabled>Primary</button>
-<button class="hdd-button hdd-button-small no-background">Primary small</button>
-<button class="hdd-button hdd-button-small no-background" disabled>Primary small</button>
+<button class="hdd-button is-secondary">Secondary</button>
+<button class="hdd-button is-secondary" disabled>Secondary</button>
+<button class="hdd-button is-small is-secondary">Secondary small</button>
+<button class="hdd-button is-small is-secondary" disabled>Secondary small</button>
 ```
 
 ## Action button
