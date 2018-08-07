@@ -28,7 +28,7 @@
 							<optgroup label="Components">
 									<option value="button">Button</option>
 									<option value="cards">Cards</option>
-									<option value="checkbox-todo">Checkbox TODO</option>
+									<option value="checkbox">Checkbox</option>
 									<option value="datepicker">Datepicker</option>
 									<option value="dropdown-todo">Dropdown TODO</option>
 									<option value="feedback-message-todo">Feedback message TODO</option>
@@ -243,10 +243,10 @@
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;hdd-tags_item&quot;&gt;7070575000516247284&lt;button class=&quot;fal fa-times hdd-tags_icon&quot;&gt;&lt;/button&gt;&lt;/span&gt;
-&lt;span class=&quot;hdd-tags_item&quot;&gt;2014&lt;button class=&quot;fal fa-times hdd-tags_icon&quot;&gt;&lt;/button&gt;&lt;/span&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;hdd-tags_item&quot;&gt;7070575000516247284&lt;button class=&quot;fal fa-times hdd-tags_icon&quot;&gt;&lt;/button&gt;&lt;/span&gt;
-&lt;span class=&quot;hdd-tags_item&quot;&gt;2014&lt;button class=&quot;fal fa-times hdd-tags_icon&quot;&gt;&lt;/button&gt;&lt;/span&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;hdd-tags_item&quot;&gt;7070575000516247284&lt;button class=&quot;fal fa-times hdd-tags_icon&quot; aria-label=&quot;Remove tag&quot;&gt;&lt;/button&gt;&lt;/span&gt;
+&lt;span class=&quot;hdd-tags_item&quot;&gt;2014&lt;button class=&quot;fal fa-times hdd-tags_icon&quot; aria-label=&quot;Remove tag&quot;&gt;&lt;/button&gt;&lt;/span&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;hdd-tags_item&quot;&gt;7070575000516247284&lt;button class=&quot;fal fa-times hdd-tags_icon&quot; aria-label=&quot;Remove tag&quot;&gt;&lt;/button&gt;&lt;/span&gt;
+&lt;span class=&quot;hdd-tags_item&quot;&gt;2014&lt;button class=&quot;fal fa-times hdd-tags_icon&quot; aria-label=&quot;Remove tag&quot;&gt;&lt;/button&gt;&lt;/span&gt;</code></pre>
 	</div>
 </div><div id="next-button-todo" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#next-button-todo" class="icon-link i-section__link -heading"></a>Next-button TODO</h2></div><div class="i-example">
                     <h5 class="i-example__heading">
@@ -506,12 +506,12 @@
 </div></div>
 </div>
 
-						<div id="checkbox-todo" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">Checkbox TODO</h1>
+						<div id="checkbox" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Checkbox</h1>
 	<div class="theme-content-element-description"><div class="i-example">
                     <h5 class="i-example__heading">
                         <a
-                            href="checkbox-todo-checkbox.html"
+                            href="checkbox-checkbox.html"
                             target="_blank"
                             class="plain-link"
                             data-toggle="tooltip"
@@ -526,7 +526,7 @@
                         <div
                             class="i-example__iframe"
                             lazyframe
-                            data-src="checkbox-todo-checkbox.html"
+                            data-src="checkbox-checkbox.html"
                             data-initinview="true"
                             data-title="Loading…"
 
@@ -1170,12 +1170,12 @@ Feedback message
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_input&quot;&gt;
   &lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt;
   &lt;input placeholder=&quot;Placeholder text&quot; /&gt;
-  &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
+  &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_input&quot;&gt;
   &lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt;
   &lt;input placeholder=&quot;Placeholder text&quot; /&gt;
-  &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
+  &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div></div>
@@ -1704,7 +1704,7 @@ color: $color; // This color should have enough contrast on to make text readabl
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Button  Cards  Checkbox TODO  Datepicker  Dropdown TODO  Feedback message TODO  Header  Navbar  Radio button TODO  Search fields  Table "
+							data-filter-value=" Button  Cards  Checkbox  Datepicker  Dropdown TODO  Feedback message TODO  Header  Navbar  Radio button TODO  Search fields  Table "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -1727,11 +1727,11 @@ color: $color; // This color should have enough contrast on to make text readabl
 									<span>Cards</span>
 								</a>
 								<a
-									href="#checkbox-todo"
+									href="#checkbox"
 									class="i-sidebar-list-item theme-sidebar-element"
-									data-filter-value="Checkbox TODO"
+									data-filter-value="Checkbox"
 								>
-									<span>Checkbox TODO</span>
+									<span>Checkbox</span>
 								</a>
 								<a
 									href="#datepicker"
