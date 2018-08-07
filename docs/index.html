@@ -34,7 +34,7 @@
 									<option value="feedback-message-todo">Feedback message TODO</option>
 									<option value="header">Header</option>
 									<option value="navbar">Navbar</option>
-									<option value="radio-button-todo">Radio button TODO</option>
+									<option value="radio-button">Radio button</option>
 									<option value="search-fields">Search fields</option>
 									<option value="table">Table</option>
 							</optgroup>
@@ -1067,12 +1067,12 @@ Feedback message
 </div></div>
 </div>
 
-						<div id="radio-button-todo" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">Radio button TODO</h1>
+						<div id="radio-button" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Radio button</h1>
 	<div class="theme-content-element-description"><div class="i-example">
                     <h5 class="i-example__heading">
                         <a
-                            href="radio-button-todo-radiobutton.html"
+                            href="radio-button-radiobutton.html"
                             target="_blank"
                             class="plain-link"
                             data-toggle="tooltip"
@@ -1087,7 +1087,7 @@ Feedback message
                         <div
                             class="i-example__iframe"
                             lazyframe
-                            data-src="radio-button-todo-radiobutton.html"
+                            data-src="radio-button-radiobutton.html"
                             data-initinview="true"
                             data-title="Loading…"
 
@@ -1102,34 +1102,40 @@ Feedback message
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="
 &lt;form class=&quot;hdd-form_field&quot;&gt;
     &lt;span class=&quot;hdd-form_field_title&quot;&gt;Radio buttons&lt;/span&gt;
-    &lt;div&gt;
-        &lt;input type=&quot;radio&quot; id=&quot;first&quot; name=&quot;drone&quot; checked /&gt;
-        &lt;label for=&quot;first&quot;&gt;Picked&lt;/label&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-        &lt;input type=&quot;radio&quot; id=&quot;second&quot; name=&quot;drone&quot; /&gt;
-        &lt;label for=&quot;second&quot;&gt;Unpicked&lt;/label&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-        &lt;input type=&quot;radio&quot; id=&quot;third&quot; name=&quot;drone&quot; /&gt;
-        &lt;label for=&quot;third&quot;&gt;Unpicked&lt;/label&gt;
-    &lt;/div&gt;
+    &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;formname&quot; checked /&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Picked&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;formname&quot; /&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Unpicked&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;formname&quot; /&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Unpicked&lt;/span&gt;
+    &lt;/label&gt;
 &lt;/form&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">
 &lt;form class=&quot;hdd-form_field&quot;&gt;
     &lt;span class=&quot;hdd-form_field_title&quot;&gt;Radio buttons&lt;/span&gt;
-    &lt;div&gt;
-        &lt;input type=&quot;radio&quot; id=&quot;first&quot; name=&quot;drone&quot; checked /&gt;
-        &lt;label for=&quot;first&quot;&gt;Picked&lt;/label&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-        &lt;input type=&quot;radio&quot; id=&quot;second&quot; name=&quot;drone&quot; /&gt;
-        &lt;label for=&quot;second&quot;&gt;Unpicked&lt;/label&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-        &lt;input type=&quot;radio&quot; id=&quot;third&quot; name=&quot;drone&quot; /&gt;
-        &lt;label for=&quot;third&quot;&gt;Unpicked&lt;/label&gt;
-    &lt;/div&gt;
+    &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;formname&quot; checked /&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Picked&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;formname&quot; /&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Unpicked&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;formname&quot; /&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Unpicked&lt;/span&gt;
+    &lt;/label&gt;
 &lt;/form&gt;</code></pre>
 	</div>
 </div></div>
@@ -1704,7 +1710,7 @@ color: $color; // This color should have enough contrast on to make text readabl
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Button  Cards  Checkbox  Datepicker  Dropdown TODO  Feedback message TODO  Header  Navbar  Radio button TODO  Search fields  Table "
+							data-filter-value=" Button  Cards  Checkbox  Datepicker  Dropdown TODO  Feedback message TODO  Header  Navbar  Radio button  Search fields  Table "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -1769,11 +1775,11 @@ color: $color; // This color should have enough contrast on to make text readabl
 									<span>Navbar</span>
 								</a>
 								<a
-									href="#radio-button-todo"
+									href="#radio-button"
 									class="i-sidebar-list-item theme-sidebar-element"
-									data-filter-value="Radio button TODO"
+									data-filter-value="Radio button"
 								>
-									<span>Radio button TODO</span>
+									<span>Radio button</span>
 								</a>
 								<a
 									href="#search-fields"
