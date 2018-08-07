@@ -58,7 +58,7 @@
     position: relative;
 
     &::before {
-      @extend .background-colors;
+      @include color-modifiers(('primary', 'warn', 'danger', 'safe'), 'background');
 
       content: '';
       display: table-cell;
