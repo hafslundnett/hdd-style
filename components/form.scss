@@ -166,8 +166,8 @@
       &::before {
         @extend .fal, .fa-check:before;
 
-        left: 50%;
         top: -2px;
+        left: 50%;
         transform: translateX(-50%);
 
         color: color('white');
@@ -211,10 +211,64 @@
 
       width: $form-checkbox-mark-size;
       height: $form-checkbox-mark-size;
+      transition: background .3s cubic-bezier(0, 1, .5, 1);
       border: $form-checkbox-mark-border;
       border-radius: $form-checkbox-mark-border-radius;
       background: color('white');
+    }
+
+    &_label {
+      flex-grow: 1;
+      margin-left: 1rem;
+    }
+  }
+
+  /************************
+   *  Radiobutton
+   ************************/
+  &_radiobutton {
+    $e: #{&};
+
+    display: flex;
+    align-items: center;
+    margin-bottom: .75rem;
+    cursor: pointer;
+
+    %radiobutton-mark.is-checked {
+      position: relative;
+      background-color: color('primary');
+      &:before {
+        content: '';
+        display: inline-block;
+        padding: 5px;
+        border: 2px solid color('white');
+        border-radius: 14px;
+      }
+    }
+
+    &.is-checked {
+      #{$e}_mark {
+        @extend %radiobutton-mark.is-checked;
+      }
+    }
+
+    input {
+      display: none;
+
+      &:checked ~ #{$e}_mark {
+        @extend %radiobutton-mark.is-checked;
+      }
+    }
+
+    &_mark {
+      display: inline-block;
+
+      width: $form-radiobutton-mark-size;
+      height: $form-radiobutton-mark-size;
       transition: background .3s cubic-bezier(0, 1, .5, 1);
+      border: $form-radiobutton-mark-border;
+      border-radius: $form-radiobutton-mark-border-radius;
+      background: color('white');
     }
 
     &_label {
