@@ -17,7 +17,7 @@ $override-colors: (
 );
 ```
 
-#### `color($name, $color-set: $colors)` function
+## `color($name, $color-set: $colors)` function
 
 This function returns the respected color value if found. A color set could optionally be given if no color set is given will the `$colors` map be used. When the given color is not found will a warning be thrown during building. A color can be selected by it's color name or label.
 
@@ -50,7 +50,7 @@ $custom-color-set: (
 );
 ```
 
-#### Color set
+## Color set
 
 A color set is a big map containing all available colors. Every color map has a couple of required and optional properties.
 
@@ -68,7 +68,7 @@ blue: ( // <- label
 | `contrast` | `true` | is the contrast of color |
 | `alt-labels` | `false` | is a list of alternative labels<br>that could be used to get this color |
 
-#### `background-colors` class
+## `background-colors` class
 
 The `background-colors` class contains all colors as chained classes.
 
