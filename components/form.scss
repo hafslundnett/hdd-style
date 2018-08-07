@@ -43,7 +43,7 @@
     }
 
     &_info {
-      color: $font-color;
+      color: color('font-color');
     }
 
     &.is-line {

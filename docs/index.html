@@ -31,7 +31,7 @@
 									<option value="checkbox">Checkbox</option>
 									<option value="datepicker">Datepicker</option>
 									<option value="dropdown-todo">Dropdown TODO</option>
-									<option value="feedback-message-todo">Feedback message TODO</option>
+									<option value="feedback-message">Feedback message</option>
 									<option value="header">Header</option>
 									<option value="navbar">Navbar</option>
 									<option value="radio-button">Radio button</option>
@@ -830,13 +830,14 @@
 </div></div>
 </div>
 
-						<div id="feedback-message-todo" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">Feedback message TODO</h1>
-	<div class="theme-content-element-description"><p>A feedback message could be an error or success message. If possible usage of success messages should be kept to a minimum. A user should also be given the opportunity to fix/act on the error message.</p>
+						<div id="feedback-message" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Feedback message</h1>
+	<div class="theme-content-element-description"><p>A feedback message could be an error or success message. If possible, usage of success messages should be kept to a minimum. A user should also be given the opportunity to fix/act on the error message. Feedback messages should be displayed in the lower right corner and act like a &quot;snackbar&quot; that pops up and dissapears after approximately 8 seconds.
+Usage of icons in feedback messages should be kept to an absolute minimum, since they usually don&#39;t serve any purpose and may be considered as visual &quot;noise&quot;.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
-                            href="feedback-message-todo-feedbackmessage.html"
+                            href="feedback-message-feedbackmessage.html"
                             target="_blank"
                             class="plain-link"
                             data-toggle="tooltip"
@@ -851,7 +852,7 @@
                         <div
                             class="i-example__iframe"
                             lazyframe
-                            data-src="feedback-message-todo-feedbackmessage.html"
+                            data-src="feedback-message-feedbackmessage.html"
                             data-initinview="true"
                             data-title="Loading…"
 
@@ -863,11 +864,57 @@
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
-Feedback message
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;feedback-container&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;This is just for &lt;em&gt;info&lt;/em&gt;&lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+    &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-info&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;Usage of icons should be kept to an absolute &lt;span class=&quot;is-strong&quot;&gt;minimum&lt;/span&gt;. Long messages is also supported, since the text will wrap to a new line. However, long feedbacks is not recommended.&lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+    &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-warn&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;There are some things you might want to check out.&lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+    &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-error&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;There is something seriously wrong going on!&lt;/p&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div&gt;
-Feedback message
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;feedback-container&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;This is just for &lt;em&gt;info&lt;/em&gt;&lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+    &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-info&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;Usage of icons should be kept to an absolute &lt;span class=&quot;is-strong&quot;&gt;minimum&lt;/span&gt;. Long messages is also supported, since the text will wrap to a new line. However, long feedbacks is not recommended.&lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+    &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-warn&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;There are some things you might want to check out.&lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+    &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-error&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;There is something seriously wrong going on!&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div></div>
@@ -1420,7 +1467,12 @@ Feedback message
   )
 );</code></pre>
 	</div>
-</div><h4><code>color($name)</code> function</h4><p>This function returns the respected color value if found. When the given color is not found will a warning be thrown during building. A color can be selected by it&#39;s color name or label.</p>
+</div><div id="code-color-name-color-set-colors-code-function" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#code-color-name-color-set-colors-code-function" class="icon-link i-section__link -heading"></a><code>color($name, $color-set: $colors)</code> function</h2></div><p>This function returns the respected color value if found. A color set could optionally be given if no color set is given will the <code>$colors</code> map be used. When the given color is not found will a warning be thrown during building. A color can be selected by it&#39;s color name or label.</p>
+<p>There are by default two data color sets available:</p>
+<ul>
+<li><code>$colors</code> - This is the default data set containing the hdd theme colors</li>
+<li><code>$data-colors</code> - This data set contains all colors that should be used when working on graphs</li>
+</ul>
 
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang "> sass</button>
@@ -1428,17 +1480,85 @@ Feedback message
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="@import &#39;../frameworks/colors&#39;;
 
 .hdd-element {
-  background: color(white);
-  color: color(primary); // primary is the color label of &#39;blue&#39;
-}">Copy</button>
+  background: color(&#39;white&#39;);
+  color: color(&#39;primary&#39;); // primary is the color label of &#39;blue&#39;
+}
+
+.hdd-data-color-set {
+  background: color(&#39;data-navy&#39;, $data-colors)
+}
+
+.hdd-custom-color-set {
+  background: color(&#39;AntiqueWhite&#39;, $custom-color-set)
+}
+
+$custom-color-set: (
+  AntiqueWhite: (
+    color: #FAEBD7,
+    contrast: #444,
+    alt-labels: (primary, superimportant) // Optional
+  )
+);">Copy</button>
 		<pre class="mb-0"><code class="lang-">@import &#39;../frameworks/colors&#39;;
 
 .hdd-element {
-  background: color(white);
-  color: color(primary); // primary is the color label of &#39;blue&#39;
-}</code></pre>
+  background: color(&#39;white&#39;);
+  color: color(&#39;primary&#39;); // primary is the color label of &#39;blue&#39;
+}
+
+.hdd-data-color-set {
+  background: color(&#39;data-navy&#39;, $data-colors)
+}
+
+.hdd-custom-color-set {
+  background: color(&#39;AntiqueWhite&#39;, $custom-color-set)
+}
+
+$custom-color-set: (
+  AntiqueWhite: (
+    color: #FAEBD7,
+    contrast: #444,
+    alt-labels: (primary, superimportant) // Optional
+  )
+);</code></pre>
 	</div>
-</div><h4><code>background-colors</code> class</h4><p>The <code>background-colors</code> class contains all colors as chained classes.</p>
+</div><div id="color-set" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#color-set" class="icon-link i-section__link -heading"></a>Color set</h2></div><p>A color set is a big map containing all available colors. Every color map has a couple of required and optional properties.</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> sass</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="blue: ( // &lt;- label
+  color: #1164A4, // Required
+  contrast: #FFFFFF, // Required
+  alt-labels: (primary, superimportant) // Optional
+)">Copy</button>
+		<pre class="mb-0"><code class="lang-">blue: ( // &lt;- label
+  color: #1164A4, // Required
+  contrast: #FFFFFF, // Required
+  alt-labels: (primary, superimportant) // Optional
+)</code></pre>
+	</div>
+</div><table class="table"><thead><tr>
+<th style="text-align:left">property</th>
+<th style="text-align:left">required</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead><tbody><tr>
+<td style="text-align:left"><code>color</code></td>
+<td style="text-align:left"><code>true</code></td>
+<td style="text-align:left">is the hex color value of the label</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>contrast</code></td>
+<td style="text-align:left"><code>true</code></td>
+<td style="text-align:left">is the contrast of color</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>alt-labels</code></td>
+<td style="text-align:left"><code>false</code></td>
+<td style="text-align:left">is a list of alternative labels<br>that could be used to get this color</td>
+</tr>
+</tbody></table><div id="code-background-colors-code-class" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#code-background-colors-code-class" class="icon-link i-section__link -heading"></a><code>background-colors</code> class</h2></div><p>The <code>background-colors</code> class contains all colors as chained classes.</p>
 <p><strong>A chained color class consists out of the following:</strong></p>
 
 <div class="i-code-block">
@@ -1507,43 +1627,7 @@ color: $color; // This color should have enough contrast on to make text readabl
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-element is-primary no-background&quot;&gt;Submit&lt;/button&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-element is-primary no-background&quot;&gt;Submit&lt;/button&gt;</code></pre>
 	</div>
-</div><h4><code>$colors</code> variable</h4><p>The <code>$colors</code> variable is a big map containing all colors. Every color map has a couple of required properties.</p>
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang "> sass</button>
-	<div class="i-code-block__content ">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="blue: ( // &lt;- label
-  color: #1164A4, // Required
-  contrast: #FFFFFF, // Required
-  alt-labels: (primary, superimportant) // Optional
-)">Copy</button>
-		<pre class="mb-0"><code class="lang-">blue: ( // &lt;- label
-  color: #1164A4, // Required
-  contrast: #FFFFFF, // Required
-  alt-labels: (primary, superimportant) // Optional
-)</code></pre>
-	</div>
-</div><table class="table"><thead><tr>
-<th style="text-align:left">property</th>
-<th style="text-align:left">required</th>
-<th style="text-align:left">description</th>
-</tr>
-</thead><tbody><tr>
-<td style="text-align:left"><code>color</code></td>
-<td style="text-align:left"><code>true</code></td>
-<td style="text-align:left">is the hex color value of the label</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>contrast</code></td>
-<td style="text-align:left"><code>true</code></td>
-<td style="text-align:left">is the contrast of color</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>alt-labels</code></td>
-<td style="text-align:left"><code>false</code></td>
-<td style="text-align:left">is a list of alternative labels<br>that could be used to get this color</td>
-</tr>
-</tbody></table></div>
+</div></div>
 </div>
 
 				</div>
@@ -1710,7 +1794,7 @@ color: $color; // This color should have enough contrast on to make text readabl
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Button  Cards  Checkbox  Datepicker  Dropdown TODO  Feedback message TODO  Header  Navbar  Radio button  Search fields  Table "
+							data-filter-value=" Button  Cards  Checkbox  Datepicker  Dropdown TODO  Feedback message  Header  Navbar  Radio button  Search fields  Table "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -1754,11 +1838,11 @@ color: $color; // This color should have enough contrast on to make text readabl
 									<span>Dropdown TODO</span>
 								</a>
 								<a
-									href="#feedback-message-todo"
+									href="#feedback-message"
 									class="i-sidebar-list-item theme-sidebar-element"
-									data-filter-value="Feedback message TODO"
+									data-filter-value="Feedback message"
 								>
-									<span>Feedback message TODO</span>
+									<span>Feedback message</span>
 								</a>
 								<a
 									href="#header"

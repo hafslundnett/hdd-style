@@ -148,6 +148,17 @@ $dropdown-content-padding: .5rem 0;
 $dropdown-item-padding: .5rem 0 .5rem 1rem;
 
 /************************
+ * Feedback message
+ ************************/
+$feedback-padding: 20px 30px;
+$feedback-border-radius: $border-radius;
+$feedback-min-width: 260px;
+$feedback-icon-size: 20px;
+$feedback-icon-gap: 20px;
+$feedback-close-button-size: 14px;
+$feedback-message-gap: 10px;
+
+/************************
  * Modal
  ************************/
 
