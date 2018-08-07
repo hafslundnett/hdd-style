@@ -211,7 +211,7 @@
 
       width: $form-checkbox-mark-size;
       height: $form-checkbox-mark-size;
-      transition: background .3s cubic-bezier(0, 1, .5, 1);
+      transition: background .3s $transition-cubic;
       border: $form-checkbox-mark-border;
       border-radius: $form-checkbox-mark-border-radius;
       background: color('white');
@@ -265,7 +265,7 @@
 
       width: $form-radiobutton-mark-size;
       height: $form-radiobutton-mark-size;
-      transition: background .3s cubic-bezier(0, 1, .5, 1);
+      transition: background .3s $transition-cubic;
       border: $form-radiobutton-mark-border;
       border-radius: $form-radiobutton-mark-border-radius;
       background: color('white');
