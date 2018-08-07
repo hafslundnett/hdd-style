@@ -48,7 +48,7 @@
 
     &.is-line {
       > * {
-        &:not(#{$e}_title):not(#{$e}_error), {
+        &:not(#{$e}_title):not(#{$e}_error) {
           margin-right: 1rem;
           float: left;
         }
@@ -84,7 +84,9 @@
     &.is-focus {
       border-color: color('primary');
 
-      #{$e}_icon, svg, i {
+      #{$e}_icon,
+      svg,
+      i {
         opacity: 1;
         color: color('primary');
       }
@@ -160,15 +162,16 @@
     // We have to seperate the checkbox marked styling because of the checked state
     %checkbox-mark.is-checked {
       position: relative;
-
+      background-color: color('primary');
       &::before {
         @extend .fal, .fa-check:before;
 
         left: 50%;
+        top: -2px;
         transform: translateX(-50%);
 
-        color: color('primary');
-        font-size: .85rem;
+        color: color('white');
+        font-size: .75rem;
       }
     }
 
@@ -211,6 +214,7 @@
       border: $form-checkbox-mark-border;
       border-radius: $form-checkbox-mark-border-radius;
       background: color('white');
+      transition: background .3s cubic-bezier(0, 1, .5, 1);
     }
 
     &_label {
@@ -263,7 +267,9 @@
         color: color('primary');
       }
 
-      #{$e}_icon, > svg, > i {
+      #{$e}_icon,
+      > svg,
+      > i {
         opacity: 1;
         color: color('primary');
       }
