@@ -1,4 +1,4 @@
-@function color($name, $color-set: $colors) {
+@function color-map($name, $color-set: $colors) {
   $color-map: null;
 
   @if map-has-key($color-set, $name) {
@@ -28,7 +28,17 @@
     @return null;
   }
 
-  @return map-get($color-map, color);
+  @return $color-map;
+}
+
+@function color($name, $color-set: $colors) {
+  $map: color-map($name, $color-set);
+  @return map-get($map, color);
+}
+
+@function color-contrast($name, $color-set: $colors) {
+  $map: color-map($name, $color-set);
+  @return map-get($map, contrast);
 }
 
 @mixin gradient-color($name, $color-set: $gradients) {
@@ -116,7 +126,8 @@ $colors: (
   ),
   'signal-green': (
     color: #6AAB2F,
-    contrast: #FFF
+    contrast: #FFF,
+    alt-labels: (safe)
   ),
   'signal-yellow': (
     color: #F0DA00,

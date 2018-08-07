@@ -1,6 +1,6 @@
 @import '../variables/colors';
 
-.background-colors {
+.hdd {
   @each $label, $map in $colors {
     $color: color($label);
     $contrast: map-get($map, contrast);
@@ -15,19 +15,34 @@
     }
 
     @each $label in $labels {
-      &.is-#{$label} {
-        border-style: solid;
-        border-color: $color;
-        background: $color;
-        color: $contrast;
-      }
-
-      &.remove-text-contrast.is-#{$label} {
+      &-color-#{$label} {
         color: $color;
       }
 
-      &.set-text-contrast.is-#{$label} {
+      &-contrast-color-#{$label} {
         color: $contrast;
+      }
+
+      &-background-#{$label} {
+        background: $color;
+      }
+
+      &-contrast-background-#{$label} {
+        background: $contrast;
+      }
+    }
+  }
+}
+
+@mixin color-modifiers($list: ('primary', 'warn', 'danger', 'safe'), $main-property: 'background', $contrast-property: '', $color-set: $colors) {
+  @each $label in $list {
+    $map: color-map($label, $color-set);
+
+    &.is-#{$label} {
+      #{$main-property}: map-get($map, color);
+
+      @if $contrast-property {
+        #{$contrast-property}: map-get($map, contrast);
       }
     }
   }
