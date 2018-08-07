@@ -1,11 +1,14 @@
 .hdd-badge {
-  @extend .background-colors.is-signal-red; // <- default color
-  @extend .background-colors;
   @extend .is-p-small;
+  @include color-modifiers(('primary', 'warn', 'danger', 'safe'), 'background', 'color');
 
   padding: $badge-padding;
   border-width: 0;
   border-radius: $badge-radius;
+
+  // Default colors
+  background: color('danger');
+  color: color-contrast('danger');
 
   &-icon {
     position: absolute;
@@ -18,6 +21,6 @@
     border: $badge-icon-border;
     border-radius: 100%;
 
-    background: color('signal-red');
+    background: color('danger');
   }
 }

@@ -100,7 +100,7 @@
 
       &_title {
         flex-grow: 1;
-        color: $font-color;
+        color: color('font-color');
         text-align: center;
       }
     }
@@ -109,7 +109,7 @@
       display: flex;
       flex-wrap: wrap;
       padding: .5rem 0;
-      color: $font-color;
+      color: color('font-color');
 
       > span {
         flex: 1 0 percentage(1 / $datepicker-days-per-week);
@@ -135,7 +135,7 @@
         border-width: 0;
         border-style: solid;
         border-color: $datepicker-border-color;
-        color: $font-color;
+        color: color('font-color');
 
         &:not(:empty) {
           border-top-width: $datepicker-days-border-width;

@@ -1,10 +1,10 @@
-@function color($name) {
+@function color-map($name, $color-set: $colors) {
   $color-map: null;
 
-  @if map-has-key($colors, $name) {
-    $color-map: map-get($colors, $name);
+  @if map-has-key($color-set, $name) {
+    $color-map: map-get($color-set, $name);
   } @else {
-    @each $label, $map in $colors {
+    @each $label, $map in $color-set {
       @if index(map-get($map, alt-labels), $name) {
         $color-map: $map;
       }
@@ -28,16 +28,26 @@
     @return null;
   }
 
-  @return map-get($color-map, color);
+  @return $color-map;
 }
 
-@mixin gradient-color($name) {
+@function color($name, $color-set: $colors) {
+  $map: color-map($name, $color-set);
+  @return map-get($map, color);
+}
+
+@function color-contrast($name, $color-set: $colors) {
+  $map: color-map($name, $color-set);
+  @return map-get($map, contrast);
+}
+
+@mixin gradient-color($name, $color-set: $gradients) {
   $gradient-map: null;
 
-  @if map-has-key($gradients, $name) {
-    $gradient-map: map-get($gradients, $name);
+  @if map-has-key($color-set, $name) {
+    $gradient-map: map-get($color-set, $name);
   } @else {
-    @each $label, $map in $gradients {
+    @each $label, $map in $color-set {
       @if index(map-get($map, alt-labels), $name) {
         $gradient-map: $map;
       }
@@ -54,8 +64,6 @@
 
   @include linear-gradient($angle, $from, $to);
 }
-
-$font-color: #444;
 
 // All colors as a list ready for iterations
 $colors: (
@@ -92,21 +100,35 @@ $colors: (
     color: #EFF9FF,
     contrast: #444
   ),
+  'font-color': (
+    color: #444444,
+    contrast: #FFF
+  ),
   'grey': (
     color: #ADB0B6,
-    contrast: #444
+    contrast: #444,
+    alt-labels: ('grey-lightest')
   ),
   'grey-dark': (
     color: #57585A,
     contrast: #FFF
   ),
+  'grey-medium': (
+    color: #8F9599,
+    contrast: #444
+  ),
   'grey-light': (
     color: #EEF0F4,
     contrast: #444
   ),
+  'grey-border': (
+    color: #D3DBE0,
+    contrast: #444
+  ),
   'signal-green': (
     color: #6AAB2F,
-    contrast: #FFF
+    contrast: #FFF,
+    alt-labels: (safe)
   ),
   'signal-yellow': (
     color: #F0DA00,
@@ -114,10 +136,13 @@ $colors: (
     alt-labels: (warn)
   ),
   'signal-red': (
-    color: #E15559,
+    color: #C94D51,
     contrast: #FFF,
     alt-labels: (danger)
-  ),
+  )
+);
+
+$data-colors: (
   'data-navy': (
     color: #23588C,
     contrast: #FFF
@@ -153,9 +178,9 @@ $colors: (
 );
 
 $gradients: (
-  'twilight': (
+  'dusk': (
     angle: 180deg,
-    from: #279DD0,
-    to: color('blue')
+    from: color('blue'),
+    to: #279DD0
   )
 );
