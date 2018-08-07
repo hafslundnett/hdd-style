@@ -1,10 +1,10 @@
-@function color($name) {
+@function color($name, $color-set: $colors) {
   $color-map: null;
 
-  @if map-has-key($colors, $name) {
-    $color-map: map-get($colors, $name);
+  @if map-has-key($color-set, $name) {
+    $color-map: map-get($color-set, $name);
   } @else {
-    @each $label, $map in $colors {
+    @each $label, $map in $color-set {
       @if index(map-get($map, alt-labels), $name) {
         $color-map: $map;
       }
@@ -55,6 +55,7 @@
   @include linear-gradient($angle, $from, $to);
 }
 
+// TODO: move to colors
 $font-color: #444;
 
 // All colors as a list ready for iterations
@@ -117,7 +118,10 @@ $colors: (
     color: #E15559,
     contrast: #FFF,
     alt-labels: (danger)
-  ),
+  )
+);
+
+$data-colors: (
   'data-navy': (
     color: #23588C,
     contrast: #FFF
