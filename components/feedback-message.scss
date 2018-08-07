@@ -1,0 +1,63 @@
+.feedback-container {
+  display: inline-flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-width: $feedback-min-width;
+  padding: $feedback-padding;
+  border: none;
+  border-radius: $feedback-border-radius;
+
+  &.info {
+    background-color: color('blue-light3');
+
+    .icon, .message, .close-button {
+      color: $font-color;
+    }
+  }
+
+  &.warn {
+    background-color: color('signal-yellow');
+
+    .icon, .message, .close-button {
+      color: $font-color;
+    }
+  }
+
+  &.error {
+    background-color: color('signal-red');
+  }
+
+  .icon {
+    flex: none;
+    margin-right: $feedback-icon-gap;
+    color: color('white');
+    font-size: $feedback-icon-size;
+  }
+
+  .message {
+    flex: auto;
+    margin-right: $feedback-message-gap;
+    color: color('white');
+    line-height: 1.125rem;
+
+    em, b {
+      font-style: normal;
+      font-weight: bold;
+    }
+  }
+
+  .close-button {
+    flex: none;
+    width: $feedback-icon-size;
+    height: $feedback-icon-size;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    color: color('white');
+    font-size: $feedback-close-button-size;
+    cursor: pointer;
+  }
+}
