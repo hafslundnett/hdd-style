@@ -31,7 +31,7 @@
 									<option value="checkbox-todo">Checkbox TODO</option>
 									<option value="datepicker">Datepicker</option>
 									<option value="dropdown-todo">Dropdown TODO</option>
-									<option value="feedback-message-todo">Feedback message TODO</option>
+									<option value="feedback-message">Feedback message</option>
 									<option value="header">Header</option>
 									<option value="navbar">Navbar</option>
 									<option value="radio-button-todo">Radio button TODO</option>
@@ -830,13 +830,14 @@
 </div></div>
 </div>
 
-						<div id="feedback-message-todo" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">Feedback message TODO</h1>
-	<div class="theme-content-element-description"><p>A feedback message could be an error or success message. If possible usage of success messages should be kept to a minimum. A user should also be given the opportunity to fix/act on the error message.</p>
+						<div id="feedback-message" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Feedback message</h1>
+	<div class="theme-content-element-description"><p>A feedback message could be an error or success message. If possible, usage of success messages should be kept to a minimum. A user should also be given the opportunity to fix/act on the error message. Feedback messages should be displayed in the lower right corner and act like a &quot;snackbar&quot; that pops up and dissapears after approximately 8 seconds.
+Usage of icons in feedback messages should be kept to an absolute minimum, since they usually don&#39;t serve any purpose and may be considered as visual &quot;noise&quot;.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
-                            href="feedback-message-todo-feedbackmessage.html"
+                            href="feedback-message-feedbackmessage.html"
                             target="_blank"
                             class="plain-link"
                             data-toggle="tooltip"
@@ -851,7 +852,7 @@
                         <div
                             class="i-example__iframe"
                             lazyframe
-                            data-src="feedback-message-todo-feedbackmessage.html"
+                            data-src="feedback-message-feedbackmessage.html"
                             data-initinview="true"
                             data-title="Loading…"
 
@@ -863,11 +864,57 @@
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
-Feedback message
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;feedback-container&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;This is just for &lt;em&gt;info&lt;/em&gt;&lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+    &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-info&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;Usage of icons should be kept to an absolute &lt;span class=&quot;is-strong&quot;&gt;minimum&lt;/span&gt;. Long messages is also supported, since the text will wrap to a new line. However, long feedbacks is not recommended.&lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+    &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-warn&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;There are some things you might want to check out.&lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+    &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-error&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;There is something seriously wrong going on!&lt;/p&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div&gt;
-Feedback message
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;feedback-container&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;This is just for &lt;em&gt;info&lt;/em&gt;&lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+    &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-info&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;Usage of icons should be kept to an absolute &lt;span class=&quot;is-strong&quot;&gt;minimum&lt;/span&gt;. Long messages is also supported, since the text will wrap to a new line. However, long feedbacks is not recommended.&lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+    &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-warn&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;There are some things you might want to check out.&lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+    &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-error&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;There is something seriously wrong going on!&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div></div>
@@ -1704,7 +1751,7 @@ color: $color; // This color should have enough contrast on to make text readabl
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Button  Cards  Checkbox TODO  Datepicker  Dropdown TODO  Feedback message TODO  Header  Navbar  Radio button TODO  Search fields  Table "
+							data-filter-value=" Button  Cards  Checkbox TODO  Datepicker  Dropdown TODO  Feedback message  Header  Navbar  Radio button TODO  Search fields  Table "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -1748,11 +1795,11 @@ color: $color; // This color should have enough contrast on to make text readabl
 									<span>Dropdown TODO</span>
 								</a>
 								<a
-									href="#feedback-message-todo"
+									href="#feedback-message"
 									class="i-sidebar-list-item theme-sidebar-element"
-									data-filter-value="Feedback message TODO"
+									data-filter-value="Feedback message"
 								>
-									<span>Feedback message TODO</span>
+									<span>Feedback message</span>
 								</a>
 								<a
 									href="#header"
