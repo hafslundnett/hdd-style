@@ -13,6 +13,7 @@
     "start": "npm run build -- -w -b"
   },
   "devDependencies": {
+    "commitizen": "^2.10.1",
     "cz-conventional-changelog": "^2.1.0",
     "node-sass": "^4.9.2",
     "node-watch": "^0.5.8",
