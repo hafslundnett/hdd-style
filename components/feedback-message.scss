@@ -1,54 +1,58 @@
 .feedback-container {
-  display: inline-flex;
+  $c: &;
+  display: flex;
   box-sizing: border-box;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   min-width: $feedback-min-width;
   padding: $feedback-padding;
   border: none;
   border-radius: $feedback-border-radius;
+  @extend #{$c}.is-info;
 
-  &.info {
+  &.is-info {
     background-color: color('blue-light3');
 
-    .icon, .message, .close-button {
+    #{$c}_icon, #{$c}_message, #{$c}_close-button {
       color: $font-color;
     }
   }
 
-  &.warn {
+  &.is-warn {
     background-color: color('signal-yellow');
 
-    .icon, .message, .close-button {
+    #{$c}_icon, #{$c}_message, #{$c}_close-button {
       color: $font-color;
     }
   }
 
-  &.error {
+  &.is-error {
     background-color: color('signal-red');
+
+    #{$c}_icon, #{$c}_message, #{$c}_close-button {
+      color: color('white');
+    }
   }
 
-  .icon {
+  &_icon {
     flex: none;
     margin-right: $feedback-icon-gap;
-    color: color('white');
     font-size: $feedback-icon-size;
   }
 
-  .message {
+  &_message {
     flex: auto;
     margin-right: $feedback-message-gap;
-    color: color('white');
+    font-size: font-size('p');
     line-height: 1.125rem;
 
-    em, b {
+    em, b, .is-strong {
       font-style: normal;
       font-weight: bold;
     }
   }
 
-  .close-button {
+  &_close-button {
     flex: none;
     width: $feedback-icon-size;
     height: $feedback-icon-size;
@@ -56,7 +60,6 @@
     padding: 0;
     border: none;
     background: none;
-    color: color('white');
     font-size: $feedback-close-button-size;
     cursor: pointer;
   }

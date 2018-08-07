@@ -864,57 +864,57 @@ Usage of icons in feedback messages should be kept to an absolute minimum, since
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;feedback-container info&quot; style=&quot;margin-bottom: 10px&quot;&gt;
-  &lt;i class=&quot;fal fa-info-circle icon&quot;&gt;&lt;/i&gt;
-  &lt;p class=&quot;message&quot;&gt;This is just for &lt;em&gt;info&lt;/em&gt;&lt;/p&gt;
-  &lt;button class=&quot;close-button&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;feedback-container&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;This is just for &lt;em&gt;info&lt;/em&gt;&lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
     &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
   &lt;/button&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;feedback-container warn&quot; style=&quot;margin-bottom: 10px&quot;&gt;
-  &lt;p class=&quot;message&quot;&gt;There are some things you might want to check out.&lt;/p&gt;
-  &lt;button class=&quot;close-button&quot;&gt;
+&lt;div class=&quot;feedback-container is-info&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;Usage of icons should be kept to an absolute &lt;span class=&quot;is-strong&quot;&gt;minimum&lt;/span&gt;. Long messages is also supported, since the text will wrap to a new line. However, long feedbacks is not recommended.&lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
     &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
   &lt;/button&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;feedback-container error&quot; style=&quot;margin-bottom: 10px&quot;&gt;
-  &lt;p class=&quot;message&quot;&gt;There is something seriously wrong going on!&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;feedback-container error&quot;&gt;
-  &lt;i class=&quot;fal fa-info-circle icon&quot;&gt;&lt;/i&gt;
-  &lt;p class=&quot;message&quot;&gt;Usage of icons should be kept to an absolute &lt;em&gt;minimum&lt;/em&gt;&lt;/p&gt;
-  &lt;button class=&quot;close-button&quot;&gt;
+&lt;div class=&quot;feedback-container is-warn&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;There are some things you might want to check out.&lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
     &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
   &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-error&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;There is something seriously wrong going on!&lt;/p&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;feedback-container info&quot; style=&quot;margin-bottom: 10px&quot;&gt;
-  &lt;i class=&quot;fal fa-info-circle icon&quot;&gt;&lt;/i&gt;
-  &lt;p class=&quot;message&quot;&gt;This is just for &lt;em&gt;info&lt;/em&gt;&lt;/p&gt;
-  &lt;button class=&quot;close-button&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;feedback-container&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;This is just for &lt;em&gt;info&lt;/em&gt;&lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
     &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
   &lt;/button&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;feedback-container warn&quot; style=&quot;margin-bottom: 10px&quot;&gt;
-  &lt;p class=&quot;message&quot;&gt;There are some things you might want to check out.&lt;/p&gt;
-  &lt;button class=&quot;close-button&quot;&gt;
+&lt;div class=&quot;feedback-container is-info&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;Usage of icons should be kept to an absolute &lt;span class=&quot;is-strong&quot;&gt;minimum&lt;/span&gt;. Long messages is also supported, since the text will wrap to a new line. However, long feedbacks is not recommended.&lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
     &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
   &lt;/button&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;feedback-container error&quot; style=&quot;margin-bottom: 10px&quot;&gt;
-  &lt;p class=&quot;message&quot;&gt;There is something seriously wrong going on!&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;feedback-container error&quot;&gt;
-  &lt;i class=&quot;fal fa-info-circle icon&quot;&gt;&lt;/i&gt;
-  &lt;p class=&quot;message&quot;&gt;Usage of icons should be kept to an absolute &lt;em&gt;minimum&lt;/em&gt;&lt;/p&gt;
-  &lt;button class=&quot;close-button&quot;&gt;
+&lt;div class=&quot;feedback-container is-warn&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;There are some things you might want to check out.&lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
     &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
   &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-error&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;There is something seriously wrong going on!&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div></div>
