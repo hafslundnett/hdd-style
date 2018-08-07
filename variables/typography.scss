@@ -57,6 +57,13 @@ $typography: (
     color: $font-color,
     elements: (p)
   ),
+  p-faded: (
+    family: 'Helvetica Neue LT Std',
+    size: .875rem,
+    spacing: .21px,
+    weight: 400,
+    color: color('grey-medium')
+  ),
   p-small: (
     family: 'Helvetica Neue LT Std',
     size: .675rem,
