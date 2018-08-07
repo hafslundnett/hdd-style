@@ -95,14 +95,23 @@ $colors: (
   ),
   'grey': (
     color: #ADB0B6,
-    contrast: #444
+    contrast: #444,
+    alt-labels: ('grey-lightest')
   ),
   'grey-dark': (
     color: #57585A,
     contrast: #FFF
   ),
+  'grey-medium': (
+    color: #8F9599,
+    contrast: #444
+  ),
   'grey-light': (
     color: #EEF0F4,
+    contrast: #444
+  ),
+  'grey-border': (
+    color: #D3DBE0,
     contrast: #444
   ),
   'signal-green': (
@@ -115,7 +124,7 @@ $colors: (
     alt-labels: (warn)
   ),
   'signal-red': (
-    color: #E15559,
+    color: #C94D51,
     contrast: #FFF,
     alt-labels: (danger)
   )
@@ -157,9 +166,9 @@ $data-colors: (
 );
 
 $gradients: (
-  'twilight': (
+  'dusk': (
     angle: 180deg,
-    from: #279DD0,
-    to: color('blue')
+    from: color('blue'),
+    to: #279DD0
   )
 );
