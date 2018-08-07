@@ -31,13 +31,13 @@
   @return map-get($color-map, color);
 }
 
-@mixin gradient-color($name) {
+@mixin gradient-color($name, $color-set: $gradients) {
   $gradient-map: null;
 
-  @if map-has-key($gradients, $name) {
-    $gradient-map: map-get($gradients, $name);
+  @if map-has-key($color-set, $name) {
+    $gradient-map: map-get($color-set, $name);
   } @else {
-    @each $label, $map in $gradients {
+    @each $label, $map in $color-set {
       @if index(map-get($map, alt-labels), $name) {
         $gradient-map: $map;
       }
