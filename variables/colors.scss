@@ -65,9 +65,6 @@
   @include linear-gradient($angle, $from, $to);
 }
 
-// TODO: move to colors
-$font-color: #444;
-
 // All colors as a list ready for iterations
 $colors: (
   'white': (
@@ -102,6 +99,10 @@ $colors: (
   'blue-light4': (
     color: #EFF9FF,
     contrast: #444
+  ),
+  'font-color': (
+    color: #444444,
+    contrast: #FFF
   ),
   'grey': (
     color: #ADB0B6,
