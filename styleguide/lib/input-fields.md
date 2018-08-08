@@ -1,6 +1,6 @@
 ---
-name: Input fields TODO: Fix error text
-category: Components
+name: Input fields
+category: Elements
 ---
 An input field should be a call to action. If the text/content can't be changed, it should not be in an input field, but shown as static text.
 

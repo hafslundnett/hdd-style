@@ -1,6 +1,6 @@
 ---
 name: Colors
-Category: Utilities
+category: Utilities
 ---
 
 All colors that are being used in this project are defined in the [colors map](https://github.com/hafslundnett/hdd-theme/tree/develop/variables/colors.scss). Every color can be used directly by using the `color($name)` function or by extended the `background-colors` class.
@@ -80,38 +80,28 @@ background: $color;
 color: $color; // This color should have enough contrast on to make text readable on the given background color
 ```
 
-**Best practice of using the `.background-colors` class**
+## Color modifiers
 
-```sass
-.hdd-element {
-  @extend .background-colors;
+A set of color modifiers could be applied/extended to a class in a couple of ways.
+Multiple classes are made of all colors that could be extended/included inside of your classes.
+The best way of including a set of color modifiers is by using the `color-modifiers` function.
+
+**`color-modifiers($list: ('primary', 'warn', 'danger', 'safe'), $main-property: 'background', $contrast-property: '', $color-set: $colors)` function**
+
+The `color-modifiers` function returns modifiers for the given colors (list).
+
+```scss
+&.is-primary {
+  background: #...; // <- Main property (2th argument)
+  color: #...; // <- Contrast property (3th argument)
 }
-```
 
-```html
-<button class="hdd-element is-primary">Submit</button>
-<button class="hdd-element is-data-seagreen">Submit</button>
-```
-
-The `color` property is set to a color that makes text readable on the given background. If you want to set the text color to the given background color add the `remove-text-contrast` class.
-
-This is usefull when trying to for example to remove the background color and set the text color to the given background color.
-
-**A usecase of the `.background-colors.remove-text-contrast` class**
-
-```sass
-.hdd-element {
-  @extend .background-colors;
-
-  &.no-background {
-    @extend .background-colors.remove-text-contrast;
-    background: none;
-    border-style: solid;
-    border-width: 1px;
-  }
+&.is-warn {
+  background: #...;
+  color: #...;
 }
+
+...
 ```
 
-```html
-<button class="hdd-element is-primary no-background">Submit</button>
-```
+A main property and optionally a contrast property could be given. By default is the `$colors` color set used but a custom color set could be passed as a argument.

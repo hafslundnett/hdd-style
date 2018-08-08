@@ -15,7 +15,7 @@ examples:
   css:
     - dist/bundle.min.css
   bodyHtml: |
-        <div style="padding: 20px">
+        <div style="padding: 20px;">
             {html}
         </div>
 
