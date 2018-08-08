@@ -7,7 +7,7 @@ category: Components
 ```header.html
 <div class="hdd-layout_navigation">
   <div class="hdd-navigation">
-    <a class="hdd-menu_logo" href="#">
+    <a class="hdd-navigation_logo" href="#">
       <img src="/styleguide/lib/logo.svg" alt="Hafslund logo">
     </a>
     <h1 class="hdd-navigation_title">Overview</h1>
