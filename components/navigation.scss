@@ -23,7 +23,11 @@
   }
 
   &_title {
+    position: absolute;	
+    right: 0;	
+    left: 0;
     align-self: center;
+    margin: auto;
     text-align: center;
   }
 

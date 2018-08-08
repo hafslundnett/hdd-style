@@ -62,15 +62,7 @@ $form-radiobutton-mark-border: 1px solid color('primary');
  $form-select-border-radius: $border-radius;
  $form-select-border: $form-input-border;
  $form-select-icon-margin: .9rem;
- 
- /************************
-  * Navigation
-  ************************/
- 
- $navigation-height: $sidenav-collapsed-width;
- $navigation-z-index: 99;
- $navigation-padding: 0 .5rem;
- $navigation-avatar-size: .7;
+
 
 /************************
  * Sidebar navigation
@@ -79,6 +71,15 @@ $form-radiobutton-mark-border: 1px solid color('primary');
 $sidenav-collapsed-width: 65px;
 $sidenav-extended-width: 300px;
 $sidenav-z-index: 90;
+ 
+/************************
+ * Navigation
+ ************************/
+
+$navigation-height: $sidenav-collapsed-width;
+$navigation-z-index: 99;
+$navigation-padding: 0 .5rem;
+$navigation-avatar-size: .7;
 
 /************************
  * Badge
