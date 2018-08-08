@@ -74,31 +74,35 @@
   &_actions {
     display: flex;
     margin-top: auto; /* Align buttons always to the bottom of the card */
-    border-top: 1px solid color('grey');
+    padding: $card-padding-y $card-padding-x;
 
+    .hdd-button {
+      flex: auto;
+      
+      &:not(:last-child) {
+        margin-right: $card-actions-button-spacing;
+      }
+    }
+    
     &_action {
       @extend .is-p;
-
+      
       flex-grow: 1;
+      margin: calc(#{$card-padding-y} * -1) calc(#{$card-padding-x} * -1);
       padding: $card-actions-action-padding;
       border: 0;
+      border-top: 1px solid color('grey-light');
       border-radius: 0;
       background: transparent;
 
-      color: color('font-color');
+      color: color('primary');
       font-weight: 500;
       text-align: center;
-      text-decoration: underline;
       cursor: pointer;
-
-      &:nth-child(1n+2) {
-        border-left: 1px solid color('grey');
-      }
 
       &:hover:not(.no-hover),
       &.is-hovering {
-        color: color('primary');
-        text-decoration: none;
+        background-color: color('blue-light3');
       }
     }
   }
