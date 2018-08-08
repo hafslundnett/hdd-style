@@ -58,10 +58,19 @@ $form-radiobutton-mark-border: 1px solid color('primary');
 /************************
  * Form Select
  ************************/
-$form-select-padding: $form-input-padding;
-$form-select-border-radius: $border-radius;
-$form-select-border: $form-input-border;
-$form-select-icon-margin: .9rem;
+ $form-select-padding: $form-input-padding;
+ $form-select-border-radius: $border-radius;
+ $form-select-border: $form-input-border;
+ $form-select-icon-margin: .9rem;
+ 
+ /************************
+  * Navigation
+  ************************/
+ 
+ $navigation-height: $sidenav-collapsed-width;
+ $navigation-z-index: 99;
+ $navigation-padding: 0 .5rem;
+ $navigation-avatar-size: .7;
 
 /************************
  * Sidebar navigation
@@ -69,7 +78,7 @@ $form-select-icon-margin: .9rem;
 
 $sidenav-collapsed-width: 65px;
 $sidenav-extended-width: 300px;
-$sidenav-z-index: 99;
+$sidenav-z-index: 90;
 
 /************************
  * Badge
@@ -118,14 +127,6 @@ $datepicker-days-border-width: 1px;
 $datepicker-days-per-week: 7;
 $datepicker-tip-right-offset: 1.5rem;
 $datepicker-tip-left-offset: 1.5rem;
-
-/************************
- * Navigation
- ************************/
-
-$navigation-height: $sidenav-collapsed-width;
-$navigation-padding: 0 .5rem;
-$navigation-avatar-size: .7;
 
 /************************
  * Tags

@@ -2,7 +2,7 @@
   @include box-shadow($shadow-medium);
 
   display: flex;
-  z-index: 90;
+  z-index: $navigation-z-index;
   box-sizing: border-box;
   justify-content: space-between;
   flex-wrap: nowrap;
