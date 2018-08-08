@@ -53,17 +53,43 @@
 	</head>
 
 	<body>					<div style="padding: 20px">
-    <div class="hdd-form_input">
-  <i class="fal fa-search"></i>
-  <input placeholder="Placeholder text" />
-  <i class="fal fa-times" aria-label="Clear text"></i>
+    <div class="hdd-form_field">
+  <span class="hdd-form_field_title">Checkboxes</span>
+  <label class="hdd-form_checkbox">
+    <input type="checkbox" checked="">
+    <span class="hdd-form_checkbox_mark"></span>
+    <span class="hdd-form_checkbox_label">Picked</span>
+  </label>
+  <label class="hdd-form_checkbox">
+    <input type="checkbox" checked="">
+    <span class="hdd-form_checkbox_mark"></span>
+    <span class="hdd-form_checkbox_label">Picked</span>
+  </label>
+  <label class="hdd-form_checkbox">
+    <input type="checkbox">
+    <span class="hdd-form_checkbox_mark"></span>
+    <span class="hdd-form_checkbox_label">Unpicked</span>
+  </label>
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="hdd-form_input">
-  <i class="fal fa-search"></i>
-  <input placeholder="Placeholder text" />
-  <i class="fal fa-times" aria-label="Clear text"></i>
+			<script type="text/x-stylemark" data-language="html"><div class="hdd-form_field">
+  <span class="hdd-form_field_title">Checkboxes</span>
+  <label class="hdd-form_checkbox">
+    <input type="checkbox" checked="">
+    <span class="hdd-form_checkbox_mark"></span>
+    <span class="hdd-form_checkbox_label">Picked</span>
+  </label>
+  <label class="hdd-form_checkbox">
+    <input type="checkbox" checked="">
+    <span class="hdd-form_checkbox_mark"></span>
+    <span class="hdd-form_checkbox_label">Picked</span>
+  </label>
+  <label class="hdd-form_checkbox">
+    <input type="checkbox">
+    <span class="hdd-form_checkbox_mark"></span>
+    <span class="hdd-form_checkbox_label">Unpicked</span>
+  </label>
 </div></script>
 
 		<!--
@@ -97,10 +123,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-search-fields-search-fields', []);
+						module = angular.module('stylemark-checkbox-checkbox', []);
 					}
 
-					module.controller('stylemark-search-fields-search-fields-' + index, function($scope) {
+					module.controller('stylemark-checkbox-checkbox-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

@@ -8,6 +8,6 @@ category: Components
 <div class="hdd-form_input">
   <i class="fal fa-search"></i>
   <input placeholder="Placeholder text" />
-  <i class="fal fa-times"></i>
+  <i class="fal fa-times" aria-label="Clear text"></i>
 </div>
 ```

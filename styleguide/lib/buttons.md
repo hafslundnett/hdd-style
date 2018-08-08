@@ -33,8 +33,8 @@ Buttons should be used across the different internal services. If only one butto
 ## Tags 
 
 ```tags.html
-<span class="hdd-tags_item">7070575000516247284<button class="fal fa-times hdd-tags_icon"></button></span>
-<span class="hdd-tags_item">2014<button class="fal fa-times hdd-tags_icon"></button></span>
+<span class="hdd-tags_item">7070575000516247284<button class="fal fa-times hdd-tags_icon" aria-label="Remove tag"></button></span>
+<span class="hdd-tags_item">2014<button class="fal fa-times hdd-tags_icon" aria-label="Remove tag"></button></span>
 ```
 
 ## Next-button TODO

@@ -53,18 +53,46 @@
 	</head>
 
 	<body>					<div style="padding: 20px">
-    <div class="hdd-form_input">
-  <i class="fal fa-search"></i>
-  <input placeholder="Placeholder text" />
-  <i class="fal fa-times" aria-label="Clear text"></i>
-</div>
+    
+<form class="hdd-form_field">
+    <span class="hdd-form_field_title">Radio buttons</span>
+    <label class="hdd-form_radiobutton">
+        <input type="radio" name="formname" checked />
+        <span class="hdd-form_radiobutton_mark"></span>
+        <span class="hdd-form_radiobutton_label">Picked</span>
+    </label>
+    <label class="hdd-form_radiobutton">
+        <input type="radio" name="formname" />
+        <span class="hdd-form_radiobutton_mark"></span>
+        <span class="hdd-form_radiobutton_label">Unpicked</span>
+    </label>
+    <label class="hdd-form_radiobutton">
+        <input type="radio" name="formname" />
+        <span class="hdd-form_radiobutton_mark"></span>
+        <span class="hdd-form_radiobutton_label">Unpicked</span>
+    </label>
+</form>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="hdd-form_input">
-  <i class="fal fa-search"></i>
-  <input placeholder="Placeholder text" />
-  <i class="fal fa-times" aria-label="Clear text"></i>
-</div></script>
+			<script type="text/x-stylemark" data-language="html">
+<form class="hdd-form_field">
+    <span class="hdd-form_field_title">Radio buttons</span>
+    <label class="hdd-form_radiobutton">
+        <input type="radio" name="formname" checked />
+        <span class="hdd-form_radiobutton_mark"></span>
+        <span class="hdd-form_radiobutton_label">Picked</span>
+    </label>
+    <label class="hdd-form_radiobutton">
+        <input type="radio" name="formname" />
+        <span class="hdd-form_radiobutton_mark"></span>
+        <span class="hdd-form_radiobutton_label">Unpicked</span>
+    </label>
+    <label class="hdd-form_radiobutton">
+        <input type="radio" name="formname" />
+        <span class="hdd-form_radiobutton_mark"></span>
+        <span class="hdd-form_radiobutton_label">Unpicked</span>
+    </label>
+</form></script>
 
 		<!--
 			Vanilla JS
@@ -97,10 +125,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-search-fields-search-fields', []);
+						module = angular.module('stylemark-radio-button-radiobutton', []);
 					}
 
-					module.controller('stylemark-search-fields-search-fields-' + index, function($scope) {
+					module.controller('stylemark-radio-button-radiobutton-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});
