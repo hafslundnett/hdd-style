@@ -14,7 +14,7 @@
     background-color: color('blue-light3');
 
     #{$c}_icon, #{$c}_message, #{$c}_close-button {
-      color: $font-color;
+      color: color('font-color');
     }
   }
 
@@ -22,7 +22,7 @@
     background-color: color('signal-yellow');
 
     #{$c}_icon, #{$c}_message, #{$c}_close-button {
-      color: $font-color;
+      color: color('font-color');
     }
   }
 

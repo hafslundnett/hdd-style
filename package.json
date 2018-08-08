@@ -7,7 +7,7 @@
   "private": false,
   "scripts": {
     "build": "node scripts/build.js && stylemark -i styleguide/lib -o docs -c stylemark.yml",
-    "lint": "sass-lint",
+    "lint": "sass-lint -v -q",
     "commit": "git cz",
     "push": "npm run build; npm publish --access=public",
     "start": "npm run build -- -w -b"
