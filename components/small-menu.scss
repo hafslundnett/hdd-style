@@ -25,18 +25,18 @@
     position: absolute;
     z-index: 90;
 
-    top: calc(100% + #{$tooltip-tip-size});
+    top: calc(100% + #{$small-menu-tip-size});
     right: 0;
     left: 50%;
 
     box-sizing: border-box;
-    min-width: $tooltip-width;
+    min-width: $small-menu-width;
 
     margin: auto;
-    padding: $tooltip-padding;
+    padding: $small-menu-padding;
 
     transform: translateX(-50%);
-    border-radius: $tooltip-border-radius;
+    border-radius: $small-menu-border-radius;
     background: color('white');
     color: color('primary');
     text-align: left;
@@ -47,7 +47,7 @@
       display: block;
       position: absolute;
 
-      top: -$tooltip-tip-size;
+      top: -$small-menu-tip-size;
       right: 0;
       left: 0;
 
@@ -56,9 +56,9 @@
 
       margin: auto;
 
-      border-right: $tooltip-tip-size solid transparent;
-      border-bottom: $tooltip-tip-size solid color('white');
-      border-left: $tooltip-tip-size solid transparent;
+      border-right: $small-menu-tip-size solid transparent;
+      border-bottom: $small-menu-tip-size solid color('white');
+      border-left: $small-menu-tip-size solid transparent;
     }
 
     &.is-active {
@@ -70,37 +70,41 @@
     }
 
     &.has-arrow-right {
-      left: calc(50% + #{$tooltip-tip-left-offset} + #{$tooltip-tip-size});
+      left: calc(50% + #{$small-menu-tip-left-offset} + #{$small-menu-tip-size});
       transform: translateX(-100%);
 
       &::before {
-        right: $tooltip-tip-right-offset;
+        right: $small-menu-tip-right-offset;
         left: auto;
       }
     }
 
     &.has-arrow-left {
-      left: calc(50% - #{$tooltip-tip-left-offset} - #{$tooltip-tip-size});
+      left: calc(50% - #{$small-menu-tip-left-offset} - #{$small-menu-tip-size});
       transform: translateX(0);
 
       &::before {
         right: auto;
-        left: $tooltip-tip-left-offset;
+        left: $small-menu-tip-left-offset;
       }
     }
   }
 
-  &_menu {
+  &_title {
+    cursor: pointer;
+  }
+
+  &_list {
     @extend #{$b}_content;
     padding: 0;
 
     &_item {
       $e: #{&};
-
+      list-style-type: none;
       display: flex;
       box-sizing: border-box;
       width: 100%;
-      padding: $tooltip-menu-padding;
+      padding: $small-menu-menu-padding;
       white-space: nowrap;
       cursor: pointer;
 
@@ -119,15 +123,19 @@
         background: color('blue-light3');
       }
 
+      &:nth-child(n+2) {
+        border-top: 1px solid color('grey-border')
+      }
+
       // Overflow fix since we cannot use overflow hidden
       &:first-child {
-        padding-top: $tooltip-menu-side-padding;
-        border-radius: $tooltip-border-radius $tooltip-border-radius 0 0;
+        padding-top: $small-menu-menu-side-padding;
+        border-radius: $small-menu-border-radius $small-menu-border-radius 0 0;
       }
 
       &:last-child {
-        padding-bottom: $tooltip-menu-side-padding;
-        border-radius: 0 0 $tooltip-border-radius $tooltip-border-radius;
+        padding-bottom: $small-menu-menu-side-padding;
+        border-radius: 0 0 $small-menu-border-radius $small-menu-border-radius;
       }
     }
   }

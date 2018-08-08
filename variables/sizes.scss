@@ -102,23 +102,23 @@ $table-first-column-padding: 1.5rem;
 $table-last-column-padding: 1.5rem;
 
 /************************
- * Tooltip
+ * Small menu
  ************************/
 
-$tooltip-tip-size: 10px;
-$tooltip-padding: .5rem 1rem;
-$tooltip-width: 150px;
-$tooltip-menu-side-padding: .75rem;
-$tooltip-menu-padding: .5rem 1rem;
-$tooltip-tip-right-offset: 1rem;
-$tooltip-tip-left-offset: 1rem;
-$tooltip-border-radius: $border-radius;
+$small-menu-tip-size: 5px;
+$small-menu-padding: .5rem 1rem;
+$small-menu-width: 150px;
+$small-menu-menu-side-padding: .75rem;
+$small-menu-menu-padding: .5rem 1rem;
+$small-menu-tip-right-offset: 1rem;
+$small-menu-tip-left-offset: 1rem;
+$small-menu-border-radius: $border-radius;
 
 /************************
  * Datepicker
  ************************/
 
-$datepicker-tip-size: $tooltip-tip-size;
+$datepicker-tip-size: $small-menu-tip-size;
 $datepicker-padding: .75rem;
 $datepicker-border-width: 1px;
 $datepicker-max-width: 250px;
