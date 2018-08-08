@@ -4,7 +4,9 @@
   display: flex;
   z-index: 90;
   box-sizing: border-box;
-  justify-content: flex-end;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
   width: 100%;
   height: $navigation-height;
   padding: $navigation-padding;
@@ -16,21 +18,19 @@
     }
   }
 
+  &_logo {
+    min-width: 45px;
+  }
+
   &_title {
-    @extend .is-h1;
-
-    position: absolute;
-    right: 0;
-    left: 0;
-
     align-self: center;
-    margin: auto;
     text-align: center;
   }
 
   &_user {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
   }
 
   &_avatar {
