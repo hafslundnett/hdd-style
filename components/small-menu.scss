@@ -41,26 +41,6 @@
     color: color('primary');
     text-align: left;
 
-    &::before {
-      content: '';
-
-      display: block;
-      position: absolute;
-
-      top: -$small-menu-tip-size;
-      right: 0;
-      left: 0;
-
-      width: 0;
-      height: 0;
-
-      margin: auto;
-
-      border-right: $small-menu-tip-size solid transparent;
-      border-bottom: $small-menu-tip-size solid color('white');
-      border-left: $small-menu-tip-size solid transparent;
-    }
-
     &.is-active {
       display: table;
     }
@@ -69,11 +49,21 @@
       text-align: center;
     }
 
+    &.has-arrow-center {
+      left:0;
+      right: 0;
+
+      &::before {
+        @include arrow();
+      }
+    }
+
     &.has-arrow-right {
       left: calc(50% + #{$small-menu-tip-left-offset} + #{$small-menu-tip-size});
       transform: translateX(-100%);
 
       &::before {
+        @include arrow();
         right: $small-menu-tip-right-offset;
         left: auto;
       }
@@ -84,6 +74,7 @@
       transform: translateX(0);
 
       &::before {
+        @include arrow();
         right: auto;
         left: $small-menu-tip-left-offset;
       }
@@ -102,6 +93,7 @@
       $e: #{&};
       list-style-type: none;
       display: flex;
+      align-items: center;
       box-sizing: border-box;
       width: 100%;
       padding: $small-menu-menu-padding;
@@ -121,10 +113,6 @@
 
       &.is-active {
         background: color('blue-light3');
-      }
-
-      &:nth-child(n+2) {
-        border-top: 1px solid color('grey-border')
       }
 
       // Overflow fix since we cannot use overflow hidden

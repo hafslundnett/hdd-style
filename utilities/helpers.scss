@@ -137,3 +137,40 @@
     @content;
   }
 }
+
+@mixin arrow($size: 5px, $direction: 'up') {
+  content: '';
+
+  display: block;
+  position: absolute;
+
+  top: -$size;
+  right: 0;
+  left: 0;
+
+  width: 0;
+  height: 0;
+
+  margin: auto;
+
+	@if $direction == 'up'{
+    border-right: $size solid transparent;
+    border-bottom: $size solid color('white');
+    border-left: $size solid transparent;
+  }
+  @if $direction == 'down'{
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-top: $size solid color('white');
+  }
+  @if $direction == 'left'{
+    border-top: $size solid transparent;
+    border-right: $size solid color('white');
+    border-bottom: $size solid transparent;
+  }
+  @if $direction == 'right'{
+    border-top: $size solid transparent;
+    border-left: $size solid color('white');
+    border-bottom: $size solid transparent;
+  }
+}
