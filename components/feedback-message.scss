@@ -1,0 +1,66 @@
+.feedback-container {
+  $c: &;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  min-width: $feedback-min-width;
+  padding: $feedback-padding;
+  border: none;
+  border-radius: $feedback-border-radius;
+  @extend #{$c}.is-info;
+
+  &.is-info {
+    background-color: color('blue-light3');
+
+    #{$c}_icon, #{$c}_message, #{$c}_close-button {
+      color: color('font-color');
+    }
+  }
+
+  &.is-warn {
+    background-color: color('signal-yellow');
+
+    #{$c}_icon, #{$c}_message, #{$c}_close-button {
+      color: color('font-color');
+    }
+  }
+
+  &.is-error {
+    background-color: color('signal-red');
+
+    #{$c}_icon, #{$c}_message, #{$c}_close-button {
+      color: color('white');
+    }
+  }
+
+  &_icon {
+    flex: none;
+    margin-right: $feedback-icon-gap;
+    font-size: $feedback-icon-size;
+  }
+
+  &_message {
+    flex: auto;
+    margin-right: $feedback-message-gap;
+    font-size: font-size('p');
+    line-height: 1.125rem;
+
+    em, b, .is-strong {
+      font-style: normal;
+      font-weight: bold;
+    }
+  }
+
+  &_close-button {
+    flex: none;
+    width: $feedback-icon-size;
+    height: $feedback-icon-size;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: $feedback-close-button-size;
+    cursor: pointer;
+  }
+}

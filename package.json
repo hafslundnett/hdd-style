@@ -7,12 +7,13 @@
   "private": false,
   "scripts": {
     "build": "node scripts/build.js && stylemark -i styleguide/lib -o docs -c stylemark.yml",
-    "lint": "sass-lint",
+    "lint": "sass-lint -v -q",
     "commit": "git cz",
     "push": "npm run build; npm publish --access=public",
     "start": "npm run build -- -w -b"
   },
   "devDependencies": {
+    "commitizen": "^2.10.1",
     "cz-conventional-changelog": "^2.1.0",
     "node-sass": "^4.9.2",
     "node-watch": "^0.5.8",
