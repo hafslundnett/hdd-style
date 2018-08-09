@@ -1,6 +1,6 @@
 ---
-name: Typeface TODO QA
-category: Typography
+name: Typeface
+category: Components
 ---
 The typeface should be kept consistent in all mediums, physical and digital.
 

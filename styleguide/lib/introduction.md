@@ -1,6 +1,6 @@
 ---
-name: Hafslunds digital design system
-category: Introduction
+name: Introduction
+category: Getting started
 ---
 
 > Hafslunds digital design system (**HDD**) is a common framework to keep the design consistent with the brand across project. The classes and naming follows the BECM convention. You can find more information about this in the [wiki](https://github.com/hafslundnett/hdd-style/wiki/Naming-guidelines).
