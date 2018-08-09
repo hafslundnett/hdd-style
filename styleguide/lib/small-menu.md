@@ -42,6 +42,3 @@ menu.addEventListener('click', function(e) {
 | class | description|
 | :--- | :--- |
 | `is-active` | Set the given small menu to it's active state |
-| `has-arrow-center` | Add arrow to the top center position |
-| `has-arrow-left` | Add arrow to the top left position |
-| `has-arrow-right` | Add arrow to the top right position |

@@ -6,83 +6,13 @@
 
   &:hover {
     #{$b}_content:not(.no-hover):not(:hover) {
-      @extend #{$b}_content.is-active;
+      @extend #{$b}_list.is-active;
     }
   }
 
   &:focus {
     #{$b}_content:not(.no-focus) {
-      @extend #{$b}_content.is-active;
-    }
-  }
-
-  &_content {
-    @extend .is-p;
-    @include filter(drop-shadow($shadow-medium));
-    @include box-shadow($shadow-medium); // IE fallback?
-    
-    display: table;
-    visibility: hidden;
-    
-    position: absolute;
-    z-index: 90;
-    
-    top: calc(100% + #{$small-menu-tip-size});
-    right: 0;
-    left: 50%;
-    
-    box-sizing: border-box;
-    min-width: $small-menu-width;
-    
-    margin: auto;
-    padding: $small-menu-padding;
-    
-    transform: translateX(-50%);
-    transition: opacity $medium-transition $transition-cubic, visibility $medium-transition $transition-cubic;
-    border-radius: $small-menu-border-radius;
-    opacity: 0;
-    background: color('white');
-    color: color('primary');
-    text-align: left;
-
-    &.is-active {
-      visibility: visible;
-      opacity: 1;
-    }
-
-    &.is-center {
-      text-align: center;
-    }
-
-    &.has-arrow-center {
-      right: 0;
-      left:0;
-
-      &::before {
-        @include top-arrow();
-      }
-    }
-
-    &.has-arrow-right {
-      left: calc(50% + #{$small-menu-tip-left-offset} + #{$small-menu-tip-size});
-      transform: translateX(-100%);
-
-      &::before {
-        @include top-arrow();
-        right: $small-menu-tip-right-offset;
-        left: auto;
-      }
-    }
-
-    &.has-arrow-left {
-      left: calc(50% - #{$small-menu-tip-left-offset} - #{$small-menu-tip-size});
-      transform: translateX(0);
-
-      &::before {
-        @include top-arrow();
-        right: auto;
-        left: $small-menu-tip-left-offset;
-      }
+      @extend #{$b}_list.is-active;
     }
   }
 
@@ -91,8 +21,35 @@
   }
 
   &_list {
-    @extend #{$b}_content;
-    padding: 0;
+    @extend .is-p;
+    @include filter(drop-shadow($shadow-light));
+    @include box-shadow($shadow-light); // IE fallback?
+    
+    display: table;
+    visibility: hidden;
+    
+    position: absolute;
+    z-index: 90;
+    
+    top: calc(100% + 5px);
+    right: 0;
+    left: 50%;
+    
+    box-sizing: border-box;
+    min-width: $small-menu-width;
+    
+    transform: translateX(-50%);
+    transition: opacity $medium-transition $transition-cubic, visibility $medium-transition $transition-cubic;
+    border-radius: $small-menu-border-radius;
+    
+    opacity: 0;
+    background: color('white');
+    color: color('primary');
+
+    &.is-active {
+      visibility: visible;
+      opacity: 1;
+    }
 
     &_item {
       $e: #{&};
