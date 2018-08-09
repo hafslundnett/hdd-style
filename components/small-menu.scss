@@ -1,6 +1,7 @@
 .hdd-small-menu {
   $b: #{&};
 
+  display: inline-block;
   position: relative;
 
   &:hover {
@@ -19,8 +20,9 @@
     @extend .is-p;
     @include filter(drop-shadow($shadow-medium));
     @include box-shadow($shadow-medium); // IE fallback?
-
-    display: none;
+    
+    display: table;
+    visibility: hidden;
     
     position: absolute;
     z-index: 90;
@@ -34,15 +36,18 @@
     
     margin: auto;
     padding: $small-menu-padding;
-
+    
     transform: translateX(-50%);
+    transition: opacity $medium-transition $transition-cubic, visibility $medium-transition $transition-cubic;
     border-radius: $small-menu-border-radius;
+    opacity: 0;
     background: color('white');
     color: color('primary');
     text-align: left;
 
     &.is-active {
-      display: table;
+      visibility: visible;
+      opacity: 1;
     }
 
     &.is-center {
@@ -97,6 +102,7 @@
       width: 100%;
       padding: $small-menu-menu-padding;
       list-style-type: none;
+      font-weight: 500;
       white-space: nowrap;
       cursor: pointer;
 
