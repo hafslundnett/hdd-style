@@ -21,7 +21,6 @@
   }
 
   &_list {
-    @extend .is-p;
     @include filter(drop-shadow($shadow-light));
     @include box-shadow($shadow-light); // IE fallback?
     
@@ -80,12 +79,10 @@
 
       // Overflow fix since we cannot use overflow hidden
       &:first-child {
-        padding-top: $small-menu-menu-side-padding;
         border-radius: $small-menu-border-radius $small-menu-border-radius 0 0;
       }
 
       &:last-child {
-        padding-bottom: $small-menu-menu-side-padding;
         border-radius: 0 0 $small-menu-border-radius $small-menu-border-radius;
       }
     }
