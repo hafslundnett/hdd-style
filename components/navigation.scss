@@ -4,9 +4,9 @@
   display: flex;
   z-index: $navigation-z-index;
   box-sizing: border-box;
-  justify-content: space-between;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: $navigation-height;
   padding: $navigation-padding;
