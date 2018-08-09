@@ -1,106 +1,64 @@
 .hdd-small-menu {
   $b: #{&};
 
+  display: inline-block;
   position: relative;
 
   &:hover {
     #{$b}_content:not(.no-hover):not(:hover) {
-      @extend #{$b}_content.is-active;
+      @extend #{$b}_list.is-active;
     }
   }
 
   &:focus {
     #{$b}_content:not(.no-focus) {
-      @extend #{$b}_content.is-active;
+      @extend #{$b}_list.is-active;
     }
   }
 
-  &_content {
-    @extend .is-p;
-    @include filter(drop-shadow($shadow-medium));
-    @include box-shadow($shadow-medium); // IE fallback?
+  &_title {
+    cursor: pointer;
+  }
 
-    display: none;
-
+  &_list {
+    @include filter(drop-shadow($shadow-light));
+    @include box-shadow($shadow-light); // IE fallback?
+    
+    display: table;
+    visibility: hidden;
+    
     position: absolute;
     z-index: 90;
-
-    top: calc(100% + #{$tooltip-tip-size});
+    
+    top: calc(100% + 5px);
     right: 0;
     left: 50%;
-
+    
     box-sizing: border-box;
-    min-width: $tooltip-width;
-
-    margin: auto;
-    padding: $tooltip-padding;
-
+    min-width: $small-menu-width;
+    
     transform: translateX(-50%);
-    border-radius: $tooltip-border-radius;
+    transition: opacity $medium-transition $transition-cubic, visibility $medium-transition $transition-cubic;
+    border-radius: $small-menu-border-radius;
+    
+    opacity: 0;
     background: color('white');
     color: color('primary');
-    text-align: left;
-
-    &::before {
-      content: '';
-
-      display: block;
-      position: absolute;
-
-      top: -$tooltip-tip-size;
-      right: 0;
-      left: 0;
-
-      width: 0;
-      height: 0;
-
-      margin: auto;
-
-      border-right: $tooltip-tip-size solid transparent;
-      border-bottom: $tooltip-tip-size solid color('white');
-      border-left: $tooltip-tip-size solid transparent;
-    }
 
     &.is-active {
-      display: table;
+      visibility: visible;
+      opacity: 1;
     }
-
-    &.is-center {
-      text-align: center;
-    }
-
-    &.has-arrow-right {
-      left: calc(50% + #{$tooltip-tip-left-offset} + #{$tooltip-tip-size});
-      transform: translateX(-100%);
-
-      &::before {
-        right: $tooltip-tip-right-offset;
-        left: auto;
-      }
-    }
-
-    &.has-arrow-left {
-      left: calc(50% - #{$tooltip-tip-left-offset} - #{$tooltip-tip-size});
-      transform: translateX(0);
-
-      &::before {
-        right: auto;
-        left: $tooltip-tip-left-offset;
-      }
-    }
-  }
-
-  &_menu {
-    @extend #{$b}_content;
-    padding: 0;
 
     &_item {
       $e: #{&};
-
       display: flex;
       box-sizing: border-box;
+      align-items: center;
       width: 100%;
-      padding: $tooltip-menu-padding;
+      padding: $small-menu-menu-padding;
+      list-style-type: none;
+      font-weight: 500;
       white-space: nowrap;
       cursor: pointer;
 
@@ -121,13 +79,11 @@
 
       // Overflow fix since we cannot use overflow hidden
       &:first-child {
-        padding-top: $tooltip-menu-side-padding;
-        border-radius: $tooltip-border-radius $tooltip-border-radius 0 0;
+        border-radius: $small-menu-border-radius $small-menu-border-radius 0 0;
       }
 
       &:last-child {
-        padding-bottom: $tooltip-menu-side-padding;
-        border-radius: 0 0 $tooltip-border-radius $tooltip-border-radius;
+        border-radius: 0 0 $small-menu-border-radius $small-menu-border-radius;
       }
     }
   }

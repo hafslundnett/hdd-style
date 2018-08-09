@@ -69,7 +69,16 @@ $form-select-icon-margin: .9rem;
 
 $sidenav-collapsed-width: 65px;
 $sidenav-extended-width: 300px;
-$sidenav-z-index: 99;
+$sidenav-z-index: 90;
+ 
+/************************
+ * Navigation
+ ************************/
+
+$navigation-height: $sidenav-collapsed-width;
+$navigation-z-index: 99;
+$navigation-padding: 0 .5rem;
+$navigation-avatar-size: .7;
 
 /************************
  * Badge
@@ -91,6 +100,18 @@ $table-first-column-padding: 1.5rem;
 $table-last-column-padding: 1.5rem;
 
 /************************
+ * Small menu
+ ************************/
+
+$small-menu-tip-size: 5px;
+$small-menu-padding: .5rem 1rem;
+$small-menu-width: 150px;
+$small-menu-menu-padding: .75rem;
+$small-menu-tip-right-offset: 1rem;
+$small-menu-tip-left-offset: 1rem;
+$small-menu-border-radius: $border-radius;
+
+/************************
  * Tooltip
  ************************/
 
@@ -102,11 +123,11 @@ $tooltip-menu-padding: .5rem 1rem;
 $tooltip-tip-right-offset: 1rem;
 $tooltip-tip-left-offset: 1rem;
 $tooltip-border-radius: $border-radius;
-
+ 
 /************************
- * Datepicker
- ************************/
-
+* Datepicker
+************************/
+ 
 $datepicker-tip-size: $tooltip-tip-size;
 $datepicker-padding: .75rem;
 $datepicker-border-width: 1px;
@@ -118,14 +139,6 @@ $datepicker-days-border-width: 1px;
 $datepicker-days-per-week: 7;
 $datepicker-tip-right-offset: 1.5rem;
 $datepicker-tip-left-offset: 1.5rem;
-
-/************************
- * Navigation
- ************************/
-
-$navigation-height: $sidenav-collapsed-width;
-$navigation-padding: 0 .5rem;
-$navigation-avatar-size: .7;
 
 /************************
  * Tags
