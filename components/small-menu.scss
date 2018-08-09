@@ -21,17 +21,17 @@
     @include box-shadow($shadow-medium); // IE fallback?
 
     display: none;
-
+    
     position: absolute;
     z-index: 90;
-
+    
     top: calc(100% + #{$small-menu-tip-size});
     right: 0;
     left: 50%;
-
+    
     box-sizing: border-box;
     min-width: $small-menu-width;
-
+    
     margin: auto;
     padding: $small-menu-padding;
 
@@ -50,11 +50,11 @@
     }
 
     &.has-arrow-center {
-      left:0;
       right: 0;
+      left:0;
 
       &::before {
-        @include arrow();
+        @include top-arrow();
       }
     }
 
@@ -63,7 +63,7 @@
       transform: translateX(-100%);
 
       &::before {
-        @include arrow();
+        @include top-arrow();
         right: $small-menu-tip-right-offset;
         left: auto;
       }
@@ -74,7 +74,7 @@
       transform: translateX(0);
 
       &::before {
-        @include arrow();
+        @include top-arrow();
         right: auto;
         left: $small-menu-tip-left-offset;
       }
@@ -91,12 +91,12 @@
 
     &_item {
       $e: #{&};
-      list-style-type: none;
       display: flex;
-      align-items: center;
       box-sizing: border-box;
+      align-items: center;
       width: 100%;
       padding: $small-menu-menu-padding;
+      list-style-type: none;
       white-space: nowrap;
       cursor: pointer;
 
