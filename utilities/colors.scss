@@ -34,11 +34,11 @@
   }
 }
 
-@mixin color-modifiers($list: ('primary', 'warn', 'danger', 'safe'), $main-property: 'background', $contrast-property: '', $color-set: $colors) {
+@mixin color-modifiers($list: ('primary', 'warn', 'danger', 'safe'), $main-property: 'background', $contrast-property: '', $selector: '', $color-set: $colors) {
   @each $label in $list {
     $map: color-map($label, $color-set);
 
-    &.is-#{$label} {
+    &.is-#{$label}#{$selector} {
       #{$main-property}: map-get($map, color);
 
       @if $contrast-property {
