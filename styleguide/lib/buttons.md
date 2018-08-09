@@ -59,6 +59,7 @@ Buttons should be used across the different internal services. If only one butto
 ## Links TODO
 
 ```links.html
-<a href="https://google.com">Home</a>
-<a href="https://hafslundnett.no">Hafslund Nett</a>
+<a href="https://google.com" class="hdd-link">Normal</a>
+<a href="https://hafslundnett.no" class="hdd-link is-hovering">Hovered</a>
+<a href="https://hafslundnett.no" class="hdd-link is-active">Active</a>
 ```
