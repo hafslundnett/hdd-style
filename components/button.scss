@@ -194,14 +194,14 @@
   font-weight: bold;
   text-decoration: underline rgba(color('primary'), .5);
 
-  &:hover,
+  &:hover:not(.no-hover),
   &.is-hovering,
-  &:focus,
+  &:focus:not(.no-focus),
   &.is-focusing {
     text-decoration: none;
   }
 
-  &:active,
+  &:active:not(.no-active),
   &.is-active {
     color: color('primary-dark');
     text-decoration: none;
