@@ -1,6 +1,6 @@
 ---
 name: Button
-category: Elements
+category: Components
 ---
 
 Buttons should be used across the different internal services. If only one button exists on a page, it should always be a primary button. The secondary button should never be used alone in a page. Action buttons are for prompting a user action that will affect another part. Changing the color of a button to convey purpose is not ideal as people with vision impairments will not be able to pick this up. Usage of other colors should be well discussed and the context around it clear enough.
@@ -59,6 +59,8 @@ Buttons should be used across the different internal services. If only one butto
 ## Links TODO
 
 ```links.html
-<a href="https://google.com">Home</a>
-<a href="https://hafslundnett.no">Hafslund Nett</a>
+<a href="https://google.com" class="hdd-link">Normal</a>
+<a href="https://hafslundnett.no" class="hdd-link is-hovering">Hovered</a>
+<a href="https://hafslundnett.no" class="hdd-link is-active">Active</a>
+<a href="https://hafslundnett.no" class="hdd-link no-hover">Disabled hover state</a>
 ```

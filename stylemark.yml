@@ -20,4 +20,7 @@ examples:
         </div>
 
 order:
-  - +Introduction
+  - +Getting started
+  - Components
+  - Utilities
+

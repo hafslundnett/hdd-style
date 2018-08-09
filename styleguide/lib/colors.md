@@ -86,7 +86,7 @@ A set of color modifiers could be applied/extended to a class in a couple of way
 Multiple classes are made of all colors that could be extended/included inside of your classes.
 The best way of including a set of color modifiers is by using the `color-modifiers` function.
 
-**`color-modifiers($list: ('primary', 'warn', 'danger', 'safe'), $main-property: 'background', $contrast-property: '', $color-set: $colors)` function**
+**`color-modifiers($list: ('primary', 'warn', 'danger', 'safe'), $main-property: 'background', $contrast-property: '', $selector: '', $color-set: $colors)` function**
 
 The `color-modifiers` function returns modifiers for the given colors (list).
 
