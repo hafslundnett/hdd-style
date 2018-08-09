@@ -144,8 +144,8 @@
     &.is-focusing,
     &:hover:not(.no-hover),
     &.is-hovering {
-      border-color: color('blue');
-      background: color('blue');
+      border-color: color('blue-dark');
+      background: color('blue-dark');
       color: color('white');
     }
 
