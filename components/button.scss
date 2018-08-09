@@ -186,3 +186,24 @@
     }
   }
 }
+
+.hdd-link {
+  @extend .is-p;
+
+  color: color('primary');
+  font-weight: bold;
+  text-decoration: underline rgba(color('primary'), .5);
+
+  &:hover,
+  &.is-hovering,
+  &:focus,
+  &.is-focusing {
+    text-decoration: none;
+  }
+
+  &:active,
+  &.is-active {
+    color: color('primary-dark');
+    text-decoration: none;
+  }
+}
