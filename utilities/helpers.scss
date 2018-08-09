@@ -137,3 +137,26 @@
     @content;
   }
 }
+
+@mixin top-arrow($size: 5px, $color: #FFFFFF) {
+  content: '';
+
+  display: block;
+  
+  position: absolute;
+  
+  top: -$size;
+  right: 0;
+  left: 0;
+  
+  width: 0;
+  height: 0;
+  
+  margin: auto;
+  
+  border-right: $size solid transparent;
+  border-bottom: $size solid color('white');
+  border-left: $size solid transparent;
+
+  color: $color;
+}
