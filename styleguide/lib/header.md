@@ -13,13 +13,14 @@ category: Components
     <h1 class="hdd-navigation_title">Overview</h1>
 
     <div class="hdd-navigation_user">
-      <span class="hdd-tooltip">
-        Kari Nordmann
-        <span class="hdd-tooltip_menu is-active has-arrow-right">
-          <span class="hdd-tooltip_menu_item"><i class="fal fa-sign-out"></i>Logout</span>
-        </span>
-      </span>
-      <img class="hdd-navigation_avatar" src="http://placekitten.com/150/150">
+      <div class="hdd-small-menu">
+        <span class="hdd-small-menu_title">Kari Nordmann</span>
+        <ul class="hdd-small-menu_list is-active has-arrow-right">
+          <li class="hdd-small-menu_list_item"><i class="fal fa-user"></i>Profile</li>
+          <li class="hdd-small-menu_list_item"><i class="fal fa-sign-out"></i>Logout</li>
+        </ul>
+      </div>
+      <img class="hdd-navigation_avatar" src="http://placekitten.com/150/150"/>
     </div>
   </div>
 </div>
