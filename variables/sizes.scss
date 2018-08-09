@@ -63,7 +63,6 @@ $form-select-border-radius: $border-radius;
 $form-select-border: $form-input-border;
 $form-select-icon-margin: .9rem;
 
-
 /************************
  * Sidebar navigation
  ************************/
@@ -114,10 +113,23 @@ $small-menu-tip-left-offset: 1rem;
 $small-menu-border-radius: $border-radius;
 
 /************************
- * Datepicker
+ * Tooltip
  ************************/
 
-$datepicker-tip-size: $small-menu-tip-size;
+$tooltip-tip-size: 10px;
+$tooltip-padding: .5rem 1rem;
+$tooltip-width: 150px;
+$tooltip-menu-side-padding: .75rem;
+$tooltip-menu-padding: .5rem 1rem;
+$tooltip-tip-right-offset: 1rem;
+$tooltip-tip-left-offset: 1rem;
+$tooltip-border-radius: $border-radius;
+ 
+/************************
+* Datepicker
+************************/
+ 
+$datepicker-tip-size: $tooltip-tip-size;
 $datepicker-padding: .75rem;
 $datepicker-border-width: 1px;
 $datepicker-max-width: 250px;
