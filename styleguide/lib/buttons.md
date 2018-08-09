@@ -37,10 +37,12 @@ Buttons should be used across the different internal services. If only one butto
 <span class="hdd-tags_item">2014<button class="fal fa-times hdd-tags_icon" aria-label="Remove tag"></button></span>
 ```
 
-## Next-button TODO
+## Next-button
 
 ```next-button.html
 <button class="hdd-button-icon"><i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button-icon is-hovering"><i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button-icon is-active"><i class="fal fa-arrow-right"></i></button>
 ```
 
 ## Confirm edit TODO
