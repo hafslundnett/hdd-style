@@ -21,12 +21,13 @@ $button-icon-padding: .5rem;
  ************************/
 
 $card-radius: $border-radius;
-$card-padding-y: 1.5rem;
-$card-padding-x: 1.75rem;
+$card-padding-y: 1.375rem;
+$card-padding-x: 2.375rem;
 $card-header-icon-height: 28px;
 $card-header-icon-margin: 8px;
 $card-header-action-icon-size: 24px;
 $card-actions-action-padding: 13px 0;
+$card-actions-button-spacing: 25px;
 $card-margin-bottom: 1rem;
 
 /************************
@@ -43,9 +44,17 @@ $form-input-border: 1px solid color('grey');
  * Form Checkbox
  ************************/
 
-$form-checkbox-mark-size: 18px;
+$form-checkbox-mark-size: 14px;
 $form-checkbox-mark-border-radius: $border-radius;
-$form-checkbox-mark-border: 1px solid color('grey');
+$form-checkbox-mark-border: 1px solid color('primary');
+
+/************************
+ * Form Radiobutton
+ ************************/
+
+$form-radiobutton-mark-size: 14px;
+$form-radiobutton-mark-border-radius: 14px;
+$form-radiobutton-mark-border: 1px solid color('primary');
 
 /************************
  * Form Select
@@ -138,6 +147,17 @@ $dropdown-border: 1px solid color('grey');
 $dropdown-spacing-element: 4px;
 $dropdown-content-padding: .5rem 0;
 $dropdown-item-padding: .5rem 0 .5rem 1rem;
+
+/************************
+ * Feedback message
+ ************************/
+$feedback-padding: 20px 30px;
+$feedback-border-radius: $border-radius;
+$feedback-min-width: 260px;
+$feedback-icon-size: 20px;
+$feedback-icon-gap: 20px;
+$feedback-close-button-size: 14px;
+$feedback-message-gap: 10px;
 
 /************************
  * Modal
