@@ -1,6 +1,6 @@
 ---
 name: Typeface
-category: Elements
+category: Components
 ---
 The typeface should be kept consistent in all mediums, physical and digital.
 

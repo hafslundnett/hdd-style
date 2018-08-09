@@ -1,6 +1,6 @@
 ---
 name: Table
-category: Elements
+category: Components
 ---
 
 Create a basic html table in the Hdd style. A table can consist out of data, buttons and icons. Take a look below at the example on how to use icons and buttons in a table.

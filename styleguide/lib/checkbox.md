@@ -1,6 +1,6 @@
 ---
 name: Checkbox
-category: Elements
+category: Components
 ---
 
 ```checkbox.html
