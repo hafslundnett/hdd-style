@@ -43,6 +43,7 @@ Buttons should be used across the different internal services. If only one butto
 <button class="hdd-button-icon"><i class="fal fa-arrow-right"></i></button>
 <button class="hdd-button-icon is-hovering"><i class="fal fa-arrow-right"></i></button>
 <button class="hdd-button-icon is-active"><i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button-icon is-transparent"><i class="fal fa-arrow-right"></i></button>
 ```
 
 ## Confirm edit TODO

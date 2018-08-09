@@ -37,14 +37,14 @@
 
     &:not([disabled]) {
       &:hover:not(.no-hover),
-      &.is-hovering {
+      &.is-hovering,
+      &:focus:not(.no-focus),
+      &.is-focusing {
         border-color: color('primary');
         background: color('primary');
         color: color('white');
       }
 
-      &:focus:not(.no-focus),
-      &.is-focusing,
       &:active:not(.no-active),
       &.is-active {
         border-color: color('blue-dark');
@@ -154,6 +154,29 @@
       border-color: color('blue-dark');
       background: color('blue-dark');
       color: color('white');
+    }
+
+    &.is-transparent {
+      margin: 0;
+      padding: 0;
+
+      border: none;
+      background: none;
+      cursor: pointer;
+
+      &:focus:not(.no-focus),
+      .is-focusing,
+      &:hover:not(.no-hover),
+      .is-hovering {
+        background: none;
+        color: color('primary');
+      }
+
+      &:active:not(.no-active),
+      .is-active {
+        background: none;
+        color: color('primary');
+      }
     }
   }
 }
