@@ -1,40 +1,39 @@
+const ora = require('ora')
 const zlib = require('zlib')
 const fs = require('fs')
 const path = require('path')
-const watch = require('node-watch')
-const Emitter = require('events')
 const sass = require('node-sass')
+const postcss = require('postcss')
 
 const outDir = path.join(__dirname, '../dist')
 
 const paths = [ [ path.join(__dirname, '../main.scss'), 'bundle' ], path.join(__dirname, '../utilities') ]
 
-exports.watch = function (path, recursive = false) {
-  const watcher = watch(path, { recursive })
-  return watcher
-}
-
-exports.compile = function () {
-  const required = [ '../dist', '../dist/utilities' ]
-  for (let dir of required) {
-    const fullPath = path.join(__dirname, dir)
-    if (!fs.existsSync(fullPath)) fs.mkdirSync(fullPath)
+const spinner = ora({
+  text: 'Compiling... 😤',
+  spinner: {
+    interval: 80,
+    frames: [ '⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏' ]
   }
+}).start()
 
-  console.info('Compiling... 😤')
-
-  let project = []
+/**
+ * Create list of files to process, with path and outputName
+ * @param {Array} paths Array that contains paths strings or an array with [path, outputName]
+ */
+const getFilesToProcess = (paths) => {
+  let projects = []
 
   for (let p of paths) {
-    let output
+    let outputName
     if (Array.isArray(p)) {
-      ;[ p, output ] = p
+      ;[ p, outputName ] = p
     }
 
     const isDir = fs.lstatSync(p).isDirectory()
 
     if (!isDir) {
-      project.push([ p, output || path.basename(p).replace(/\.\w+$/, '') ])
+      projects.push({ filepath: p, outputName: outputName || path.basename(p).replace(/\.\w+$/, '') })
       continue
     }
 
@@ -42,49 +41,98 @@ exports.compile = function () {
     const files = fs.readdirSync(p)
 
     for (let name of files) {
-      const file = path.join(p, name)
-      const isDir = fs.lstatSync(file).isDirectory()
+      const filepath = path.join(p, name)
+      const isDir = fs.lstatSync(filepath).isDirectory()
 
       if (isDir || name.startsWith('_') || name.startsWith('.')) {
         continue
       }
 
-      output = path.join(dirName, name.replace(/\.\w+$/, ''))
-      project.push([ file, output ])
+      outputName = path.join(dirName, name.replace(/\.\w+$/, ''))
+      projects.push({ filepath, outputName })
     }
   }
+  return projects
+}
 
-  console.time('compiled')
-
-  for (let [ fileIn, nameOut ] of project) {
-    const options = {
-      file: fileIn,
-      outFile: path.join(outDir, `${nameOut}.min.css`),
-      outGzip: path.join(outDir, `${nameOut}.min.css.gz`),
-      outMap: path.join(outDir, `${nameOut}.min.css.map`),
-      sourceMap: true,
-      outputStyle: 'compressed'
-    }
-
-    console.info('\x1b[33m%s\x1b[0m', `🚧 ${nameOut} 🚧`)
+/**
+ * Compile sass files into css
+ * @param {Object} options 
+ * @param {string} outputName
+ * @returns {Object}  */
+const compileSass = (options, outputName) => {
+  return new Promise((resolve, reject) => {
+    spinner.stopAndPersist(`🚧 ${outputName} 🚧`)
+    spinner.start()
 
     try {
-      const result = sass.renderSync(options)
+      const sassResult = sass.renderSync(options)
 
-      console.info('\x1b[36m%s\x1b[0m', `Successfully compiled: ${result.stats.includedFiles.length} files`)
+      spinner.text = `📦  node-sass successfully compiled ${outputName}: ${sassResult.stats.includedFiles.length} files`
 
-      const buffer = new Buffer(result.css, 'utf-8')
-      const gzip = zlib.gzipSync(buffer)
-
-      fs.writeFileSync(options.outFile, result.css)
-      fs.writeFileSync(options.outMap, result.map)
-      fs.writeFileSync(options.outGzip, gzip)
+      resolve({ sassResult, options })
     } catch (err) {
-      console.error('\x1b[31m%s\x1b[0m', '💥 Something went wrong!')
-      console.error('\x1b[31m%s\x1b[0m', `At line(${err.line}:${err.column}): ${err.file}`)
-      console.error('\x1b[31m%s\x1b[0m', `Message: ${err.message}`)
+      spinner.fail(`💥 ${'Something went wrong!'}
+      At line(${err.line}:${err.column}): ${err.file}
+      Message: ${err.message}`)
+
+      reject()
     }
+  })
+}
+
+/**
+ * Use postprocess to process output from sass
+ * @param {Object} result Sass output
+ */
+const postprocess = ({ sassResult, options }) => {
+  return postcss([ require('autoprefixer'), require('cssnano') ]).process(sassResult.css, {
+    from: options.file,
+    to: options.outFile
+  })
+}
+
+/**
+ * 
+ * @param {Object} result PostCSS output  
+ */
+const writePostCSSFiles = (result) => {
+  const buffer = new Buffer(result.css, 'utf-8')
+  const gzip = zlib.gzipSync(buffer)
+
+  fs.writeFileSync(result.opts.to, result.css)
+  fs.writeFileSync(`${result.opts.to}.map`, result.map)
+  fs.writeFileSync(`${result.opts.to}.gz`, gzip)
+}
+
+exports.compile = function () {
+  const stopwatch = process.hrtime()
+
+  // Create output directories if not exists
+  const required = [ '../dist', '../dist/utilities' ]
+  for (let dir of required) {
+    const fullPath = path.join(__dirname, dir)
+    if (!fs.existsSync(fullPath)) fs.mkdirSync(fullPath)
   }
 
-  console.timeEnd('compiled')
+  const projects = getFilesToProcess(paths)
+
+  // Start all file transformations and store promises to know when they are done.
+  const tasks = projects.map(({ filepath, outputName }) => {
+    const options = {
+      file: filepath,
+      outFile: path.join(outDir, `${outputName}.min.css`)
+    }
+
+    return compileSass(options, outputName).then(postprocess).then(writePostCSSFiles)
+  })
+
+  spinner.text = `Autoprefixing and minifying`
+  spinner.render()
+
+  Promise.all(tasks).then(() => {
+    const time = process.hrtime(stopwatch)
+    const ns = Math.round(time[1] / 10000000)
+    spinner.succeed(`Completed in ${time[0]}.${ns}s 🎉`)
+  })
 }
