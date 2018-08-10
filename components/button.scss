@@ -37,14 +37,14 @@
 
     &:not([disabled]) {
       &:hover:not(.no-hover),
-      &.is-hovering {
+      &.is-hovering,
+      &:focus:not(.no-focus),
+      &.is-focusing {
         border-color: color('primary');
         background: color('primary');
         color: color('white');
       }
 
-      &:focus:not(.no-focus),
-      &.is-focusing,
       &:active:not(.no-active),
       &.is-active {
         border-color: color('blue-dark');
@@ -134,28 +134,26 @@
   }
 
   &-icon {
-    $e: #{&};
-
     padding: $button-icon-padding;
-    border-width: 1px;
-    border-radius: 2px;
-
+    border: 1px solid color('grey-border');
+    border-radius: $button-radius;
     background: color('white');
     cursor: pointer;
 
     &:focus:not(.no-focus),
-    .is-focusing {
-      background: color('grey-light');
-    }
-
+    &.is-focusing,
     &:hover:not(.no-hover),
-    .is-hovering {
-      background: color('grey-light');
+    &.is-hovering {
+      border-color: color('blue-dark');
+      background: color('blue-dark');
+      color: color('white');
     }
 
     &:active:not(.no-active),
-    .is-active {
-      background: color('grey-light');
+    &.is-active {
+      border-color: color('blue-dark');
+      background: color('blue-dark');
+      color: color('white');
     }
 
     &.is-transparent {
@@ -167,20 +165,16 @@
       cursor: pointer;
 
       &:focus:not(.no-focus),
-      .is-focusing {
-        outline: none;
-        color: color('primary');
-      }
-
+      .is-focusing,
       &:hover:not(.no-hover),
       .is-hovering {
-        outline: none;
+        background: none;
         color: color('primary');
       }
 
       &:active:not(.no-active),
       .is-active {
-        outline: none;
+        background: none;
         color: color('primary');
       }
     }
