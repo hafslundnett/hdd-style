@@ -19,7 +19,7 @@ const spinner = ora({
 
 /**
  * Create list of files to process, with path and outputName
- * @param {Array} paths Array that contains paths strings or an array with [path, outputName]
+ * @param {Array} paths Array that contains directory paths strings or an array with [filepath, outputName]
  */
 const getFilesToProcess = (paths) => {
   let projects = []
