@@ -30,13 +30,6 @@ Buttons should be used across the different internal services. If only one butto
 <button class="hdd-button has-icon is-right" disabled>Forward <i class="fal fa-arrow-right"></i></button>
 ```
 
-## Tags 
-
-```tags.html
-<span class="hdd-tags_item">7070575000516247284<button class="fal fa-times hdd-tags_icon" aria-label="Remove tag"></button></span>
-<span class="hdd-tags_item">2014<button class="fal fa-times hdd-tags_icon" aria-label="Remove tag"></button></span>
-```
-
 ## Next-button
 
 ```next-button.html
