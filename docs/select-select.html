@@ -53,12 +53,48 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <a href="https://google.com">Home</a>
-<a href="https://hafslundnett.no">Hafslund Nett</a>
+    <div class="hdd-form_field">
+  <label class="hdd-form_field_label" for="select-alt1">Velg handling</label>
+  <div class="hdd-form_select">
+    <select id="select-alt1" placeholder="Placeholder text">
+      <option>Alternative 1</option>
+      <option>Alternative 2</option>
+    </select>
+    <i class="fal fa-angle-down"></i>
+  </div>
+</div>
+<div class="hdd-form_field">
+  <label class="hdd-form_field_label" for="select-alt2">Velg handling</label>
+  <div class="hdd-form_select is-disabled">
+    <select id="select-alt2" placeholder="Placeholder text" disabled>
+      <option>Alternative 1</option>
+      <option>Alternative 2</option>
+    </select>
+    <i class="fal fa-angle-down"></i>
+  </div>
+</div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><a href="https://google.com">Home</a>
-<a href="https://hafslundnett.no">Hafslund Nett</a></script>
+			<script type="text/x-stylemark" data-language="html"><div class="hdd-form_field">
+  <label class="hdd-form_field_label" for="select-alt1">Velg handling</label>
+  <div class="hdd-form_select">
+    <select id="select-alt1" placeholder="Placeholder text">
+      <option>Alternative 1</option>
+      <option>Alternative 2</option>
+    </select>
+    <i class="fal fa-angle-down"></i>
+  </div>
+</div>
+<div class="hdd-form_field">
+  <label class="hdd-form_field_label" for="select-alt2">Velg handling</label>
+  <div class="hdd-form_select is-disabled">
+    <select id="select-alt2" placeholder="Placeholder text" disabled>
+      <option>Alternative 1</option>
+      <option>Alternative 2</option>
+    </select>
+    <i class="fal fa-angle-down"></i>
+  </div>
+</div></script>
 
 		<!--
 			Vanilla JS
@@ -91,10 +127,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-button-switch', []);
+						module = angular.module('stylemark-select-select', []);
 					}
 
-					module.controller('stylemark-button-switch-' + index, function($scope) {
+					module.controller('stylemark-select-select-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

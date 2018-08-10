@@ -53,12 +53,20 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <a href="https://google.com">Home</a>
-<a href="https://hafslundnett.no">Hafslund Nett</a>
+    <div>
+  <span>List <span class="hdd-badge is-danger">10</span></span>
+</div>
+<div style="padding-top: 1rem;" class="is-p">
+  <i class="fal fa-cog"><span class="hdd-badge-icon"></span></i>
+</div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><a href="https://google.com">Home</a>
-<a href="https://hafslundnett.no">Hafslund Nett</a></script>
+			<script type="text/x-stylemark" data-language="html"><div>
+  <span>List <span class="hdd-badge is-danger">10</span></span>
+</div>
+<div style="padding-top: 1rem;" class="is-p">
+  <i class="fal fa-cog"><span class="hdd-badge-icon"></span></i>
+</div></script>
 
 		<!--
 			Vanilla JS
@@ -91,10 +99,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-button-switch', []);
+						module = angular.module('stylemark-badge-badge', []);
 					}
 
-					module.controller('stylemark-button-switch-' + index, function($scope) {
+					module.controller('stylemark-badge-badge-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});
