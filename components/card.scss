@@ -1,6 +1,3 @@
-@import '../variables/main';
-@import 'button';
-
 .hdd-card {
   @include box-sizing(border-box);
   @include box-shadow($shadow-light);
