@@ -53,12 +53,56 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <a href="https://google.com">Home</a>
-<a href="https://hafslundnett.no">Hafslund Nett</a>
+    <h1>Heading 1</h1>
+<h1>ABCDEFHILMNOPQRSTVXÆØÅ</h1>
+<h1>abcdefghijklmnopqrstuvwxyzæøå</h1>
+<h1>0123456789</h1>
+<br />
+<h2>Heading 2</h2>
+<h2>ABCDEFHILMNOPQRSTVXÆØÅ</h2>
+<h2>abcdefghijklmnopqrstuvwxyzæøå</h2>
+<h2>0123456789</h2>
+<br />
+<h3>Heading 3</h3>
+<h3>ABCDEFHILMNOPQRSTVXÆØÅ</h3>
+<h3>abcdefghijklmnopqrstuvwxyzæøå</h3>
+<h3>0123456789</h3>
+<br />
+<p>paragraph</p>
+<p>ABCDEFHILMNOPQRSTVXÆØÅ</p>
+<p>abcdefghijklmnopqrstuvwxyzæøå</p>
+<p>0123456789</p>
+<br />
+<p class="is-p-faded">paragraph faded</p>
+<p class="is-p-faded">ABCDEFHILMNOPQRSTVXÆØÅ</p>
+<p class="is-p-faded">abcdefghijklmnopqrstuvwxyzæøå</p>
+<p class="is-p-faded">0123456789</p>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><a href="https://google.com">Home</a>
-<a href="https://hafslundnett.no">Hafslund Nett</a></script>
+			<script type="text/x-stylemark" data-language="html"><h1>Heading 1</h1>
+<h1>ABCDEFHILMNOPQRSTVXÆØÅ</h1>
+<h1>abcdefghijklmnopqrstuvwxyzæøå</h1>
+<h1>0123456789</h1>
+<br />
+<h2>Heading 2</h2>
+<h2>ABCDEFHILMNOPQRSTVXÆØÅ</h2>
+<h2>abcdefghijklmnopqrstuvwxyzæøå</h2>
+<h2>0123456789</h2>
+<br />
+<h3>Heading 3</h3>
+<h3>ABCDEFHILMNOPQRSTVXÆØÅ</h3>
+<h3>abcdefghijklmnopqrstuvwxyzæøå</h3>
+<h3>0123456789</h3>
+<br />
+<p>paragraph</p>
+<p>ABCDEFHILMNOPQRSTVXÆØÅ</p>
+<p>abcdefghijklmnopqrstuvwxyzæøå</p>
+<p>0123456789</p>
+<br />
+<p class="is-p-faded">paragraph faded</p>
+<p class="is-p-faded">ABCDEFHILMNOPQRSTVXÆØÅ</p>
+<p class="is-p-faded">abcdefghijklmnopqrstuvwxyzæøå</p>
+<p class="is-p-faded">0123456789</p></script>
 
 		<!--
 			Vanilla JS
@@ -91,10 +135,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-button-switch', []);
+						module = angular.module('stylemark-typeface-search-fields', []);
 					}
 
-					module.controller('stylemark-button-switch-' + index, function($scope) {
+					module.controller('stylemark-typeface-search-fields-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

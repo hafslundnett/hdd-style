@@ -74,3 +74,9 @@ In component based services (especially internal systems), content can be struct
   </div>
 </div>
 ```
+
+```cards.css hidden
+.hdd-card {
+  margin-bottom: 20px!important;
+}
+```

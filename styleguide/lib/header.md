@@ -5,7 +5,7 @@ category: Components
 
 ## Header TODO set menu logo styling and tooltip menu needs rework
 ```header.html
-<div class="hdd-layout_navigation">
+<header class="hdd-layout_navigation">
   <div class="hdd-navigation">
     <a class="hdd-navigation_logo" href="#">
       <img src="/styleguide/lib/logo.svg" alt="Hafslund logo">
@@ -23,5 +23,5 @@ category: Components
       <img class="hdd-navigation_avatar" src="http://placekitten.com/150/150"/>
     </div>
   </div>
-</div>
+</header>
 ```

@@ -5,6 +5,10 @@
 		
 
 		<style>
+					div {
+  width: 20px;
+  margin: 0 auto;
+}
 		</style>
 
 		<style>
@@ -53,12 +57,31 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <a href="https://google.com">Home</a>
-<a href="https://hafslundnett.no">Hafslund Nett</a>
+    <div class="hdd-small-menu">
+  <span class="hdd-small-menu_title"><i class="fal fa-cog"></i></span>
+  <ul class="hdd-small-menu_list is-active no-hover">
+    <li class="hdd-small-menu_list_item">Profile</li>
+    <li class="hdd-small-menu_list_item"><i class="fal fa-sign-out"></i>Logout</li>
+  </ul>
+</div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><a href="https://google.com">Home</a>
-<a href="https://hafslundnett.no">Hafslund Nett</a></script>
+			<script type="text/x-stylemark" data-language="html"><div class="hdd-small-menu">
+  <span class="hdd-small-menu_title"><i class="fal fa-cog"></i></span>
+  <ul class="hdd-small-menu_list is-active no-hover">
+    <li class="hdd-small-menu_list_item">Profile</li>
+    <li class="hdd-small-menu_list_item"><i class="fal fa-sign-out"></i>Logout</li>
+  </ul>
+</div></script>
+			<script type="text/x-stylemark" data-language="css">div {
+  width: 20px;
+  margin: 0 auto;
+}</script>
+			<script type="text/x-stylemark" data-language="js">const menu = document.querySelector(".hdd-small-menu")
+menu.addEventListener('click', function(e) {
+	const menuList = document.querySelector('.hdd-small-menu_list')
+  menuList.classList.toggle('is-active')
+})</script>
 
 		<!--
 			Vanilla JS
@@ -91,10 +114,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-button-switch', []);
+						module = angular.module('stylemark-small-menu-small-menu', []);
 					}
 
-					module.controller('stylemark-button-switch-' + index, function($scope) {
+					module.controller('stylemark-small-menu-small-menu-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

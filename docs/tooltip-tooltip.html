@@ -53,12 +53,16 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <a href="https://google.com">Home</a>
-<a href="https://hafslundnett.no">Hafslund Nett</a>
+    <span class="parent hdd-tooltip">
+  Hover me
+  <span class="hdd-tooltip_content is-leaning-right">Hello world</span>
+</span>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><a href="https://google.com">Home</a>
-<a href="https://hafslundnett.no">Hafslund Nett</a></script>
+			<script type="text/x-stylemark" data-language="html"><span class="parent hdd-tooltip">
+  Hover me
+  <span class="hdd-tooltip_content is-leaning-right">Hello world</span>
+</span></script>
 
 		<!--
 			Vanilla JS
@@ -91,10 +95,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-button-switch', []);
+						module = angular.module('stylemark-tooltip-tooltip', []);
 					}
 
-					module.controller('stylemark-button-switch-' + index, function($scope) {
+					module.controller('stylemark-tooltip-tooltip-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});
