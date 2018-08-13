@@ -37,7 +37,10 @@
     }
 
     &_error {
-      color: color('signal-red');
+      > i {
+        margin-right: 5px;
+        color: color('signal-red');
+      }
     }
 
     &_info {
@@ -92,10 +95,6 @@
 
     &.is-invalid {
       border-color: color('signal-red');
-
-      input {
-        color: color('signal-red');
-      }
 
       i {
         color: color('signal-red');
