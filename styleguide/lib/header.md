@@ -3,12 +3,12 @@ name: Header
 category: Components
 ---
 
-## Header TODO set menu logo styling and tooltip menu needs rework
+## Header
 ```header.html
 <header class="hdd-layout_navigation">
   <div class="hdd-navigation">
     <a class="hdd-navigation_logo" href="#">
-      <img src="/styleguide/lib/logo.svg" alt="Hafslund logo">
+      <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
     </a>
     <h1 class="hdd-navigation_title">Overview</h1>
 
