@@ -1,6 +1,6 @@
 ---
 name: Colors
-Category: Utilities
+category: Utilities
 ---
 
 All colors that are being used in this project are defined in the [colors map](https://github.com/hafslundnett/hdd-theme/tree/develop/variables/colors.scss). Every color can be used directly by using the `color($name)` function or by extended the `background-colors` class.
@@ -17,70 +17,42 @@ $override-colors: (
 );
 ```
 
-#### `color($name)` function
+## `color($name, $color-set: $colors)` function
 
-This function returns the respected color value if found. When the given color is not found will a warning be thrown during building. A color can be selected by it's color name or label.
+This function returns the respected color value if found. A color set could optionally be given if no color set is given will the `$colors` map be used. When the given color is not found will a warning be thrown during building. A color can be selected by it's color name or label.
+
+There are by default two data color sets available:
+- `$colors` - This is the default data set containing the hdd theme colors
+- `$data-colors` - This data set contains all colors that should be used when working on graphs
 
 ```sass
 @import '../frameworks/colors';
 
 .hdd-element {
-  background: color(white);
-  color: color(primary); // primary is the color label of 'blue'
+  background: color('white');
+  color: color('primary'); // primary is the color label of 'blue'
 }
-```
 
-#### `background-colors` class
-
-The `background-colors` class contains all colors as chained classes.
-
-**A chained color class consists out of the following:**
-
-```sass
-border-color: $color;
-background: $color;
-color: $color; // This color should have enough contrast on to make text readable on the given background color
-```
-
-**Best practice of using the `.background-colors` class**
-
-```sass
-.hdd-element {
-  @extend .background-colors;
+.hdd-data-color-set {
+  background: color('data-navy', $data-colors)
 }
-```
 
-```html
-<button class="hdd-element is-primary">Submit</button>
-<button class="hdd-element is-data-seagreen">Submit</button>
-```
-
-The `color` property is set to a color that makes text readable on the given background. If you want to set the text color to the given background color add the `remove-text-contrast` class.
-
-This is usefull when trying to for example to remove the background color and set the text color to the given background color.
-
-**A usecase of the `.background-colors.remove-text-contrast` class**
-
-```sass
-.hdd-element {
-  @extend .background-colors;
-
-  &.no-background {
-    @extend .background-colors.remove-text-contrast;
-    background: none;
-    border-style: solid;
-    border-width: 1px;
-  }
+.hdd-custom-color-set {
+  background: color('AntiqueWhite', $custom-color-set)
 }
+
+$custom-color-set: (
+  AntiqueWhite: (
+    color: #FAEBD7,
+    contrast: #444,
+    alt-labels: (primary, superimportant) // Optional
+  )
+);
 ```
 
-```html
-<button class="hdd-element is-primary no-background">Submit</button>
-```
+## Color set
 
-#### `$colors` variable
-
-The `$colors` variable is a big map containing all colors. Every color map has a couple of required properties.
+A color set is a big map containing all available colors. Every color map has a couple of required and optional properties.
 
 ```sass
 blue: ( // <- label
@@ -95,3 +67,41 @@ blue: ( // <- label
 | `color` | `true` | is the hex color value of the label |
 | `contrast` | `true` | is the contrast of color |
 | `alt-labels` | `false` | is a list of alternative labels<br>that could be used to get this color |
+
+## `background-colors` class
+
+The `background-colors` class contains all colors as chained classes.
+
+**A chained color class consists out of the following:**
+
+```sass
+border-color: $color;
+background: $color;
+color: $color; // This color should have enough contrast on to make text readable on the given background color
+```
+
+## Color modifiers
+
+A set of color modifiers could be applied/extended to a class in a couple of ways.
+Multiple classes are made of all colors that could be extended/included inside of your classes.
+The best way of including a set of color modifiers is by using the `color-modifiers` function.
+
+**`color-modifiers($list: ('primary', 'warn', 'danger', 'safe'), $main-property: 'background', $contrast-property: '', $selector: '', $color-set: $colors)` function**
+
+The `color-modifiers` function returns modifiers for the given colors (list).
+
+```scss
+&.is-primary {
+  background: #...; // <- Main property (2th argument)
+  color: #...; // <- Contrast property (3th argument)
+}
+
+&.is-warn {
+  background: #...;
+  color: #...;
+}
+
+...
+```
+
+A main property and optionally a contrast property could be given. By default is the `$colors` color set used but a custom color set could be passed as a argument.

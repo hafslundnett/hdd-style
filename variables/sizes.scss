@@ -13,21 +13,20 @@ $button-outlined-border-width: 1px;
 $button-padding: .7rem 1.8rem;
 $button-padding-small: .5rem 1rem;
 $button-padding-icon: 1.25rem;
-$button-icon-spacing: .5rem;
-$button-icon-padding: .5rem;
+$button-icon-padding: .5rem .9rem;
 
 /************************
  * Cards
  ************************/
 
 $card-radius: $border-radius;
-$card-padding-y: 1.5rem;
-$card-padding-x: 1.75rem;
+$card-padding-y: 1.375rem;
+$card-padding-x: 2.375rem;
 $card-header-icon-height: 28px;
 $card-header-icon-margin: 8px;
 $card-header-action-icon-size: 24px;
-$card-action-button-spacing: 8px;
-$card-margin-bottom: 1rem;
+$card-actions-action-padding: 13px 0;
+$card-actions-button-spacing: 25px;
 
 /************************
  * Form Input
@@ -43,9 +42,17 @@ $form-input-border: 1px solid color('grey');
  * Form Checkbox
  ************************/
 
-$form-checkbox-mark-size: 18px;
+$form-checkbox-mark-size: 14px;
 $form-checkbox-mark-border-radius: $border-radius;
-$form-checkbox-mark-border: 1px solid color('grey');
+$form-checkbox-mark-border: 1px solid color('primary');
+
+/************************
+ * Form Radiobutton
+ ************************/
+
+$form-radiobutton-mark-size: 14px;
+$form-radiobutton-mark-border-radius: 14px;
+$form-radiobutton-mark-border: 1px solid color('primary');
 
 /************************
  * Form Select
@@ -61,7 +68,16 @@ $form-select-icon-margin: .9rem;
 
 $sidenav-collapsed-width: 65px;
 $sidenav-extended-width: 300px;
-$sidenav-z-index: 99;
+$sidenav-z-index: 90;
+ 
+/************************
+ * Navigation
+ ************************/
+
+$navigation-height: $sidenav-collapsed-width;
+$navigation-z-index: 99;
+$navigation-padding: 0 .5rem;
+$navigation-avatar-size: .7;
 
 /************************
  * Badge
@@ -83,6 +99,18 @@ $table-first-column-padding: 1.5rem;
 $table-last-column-padding: 1.5rem;
 
 /************************
+ * Small menu
+ ************************/
+
+$small-menu-tip-size: 5px;
+$small-menu-padding: .5rem 1rem;
+$small-menu-width: 150px;
+$small-menu-menu-padding: .75rem;
+$small-menu-tip-right-offset: 1rem;
+$small-menu-tip-left-offset: 1rem;
+$small-menu-border-radius: $border-radius;
+
+/************************
  * Tooltip
  ************************/
 
@@ -94,11 +122,11 @@ $tooltip-menu-padding: .5rem 1rem;
 $tooltip-tip-right-offset: 1rem;
 $tooltip-tip-left-offset: 1rem;
 $tooltip-border-radius: $border-radius;
-
+ 
 /************************
- * Datepicker
- ************************/
-
+* Datepicker
+************************/
+ 
 $datepicker-tip-size: $tooltip-tip-size;
 $datepicker-padding: .75rem;
 $datepicker-border-width: 1px;
@@ -110,14 +138,6 @@ $datepicker-days-border-width: 1px;
 $datepicker-days-per-week: 7;
 $datepicker-tip-right-offset: 1.5rem;
 $datepicker-tip-left-offset: 1.5rem;
-
-/************************
- * Navigation
- ************************/
-
-$navigation-height: $sidenav-collapsed-width;
-$navigation-padding: 0 .5rem;
-$navigation-avatar-size: .7;
 
 /************************
  * Tags
@@ -138,6 +158,17 @@ $dropdown-border: 1px solid color('grey');
 $dropdown-spacing-element: 4px;
 $dropdown-content-padding: .5rem 0;
 $dropdown-item-padding: .5rem 0 .5rem 1rem;
+
+/************************
+ * Feedback message
+ ************************/
+$feedback-padding: 20px 30px;
+$feedback-border-radius: $border-radius;
+$feedback-min-width: 260px;
+$feedback-icon-size: 20px;
+$feedback-icon-gap: 20px;
+$feedback-close-button-size: 14px;
+$feedback-message-gap: 10px;
 
 /************************
  * Modal

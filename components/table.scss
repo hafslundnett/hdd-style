@@ -57,13 +57,15 @@
   tr {
     position: relative;
 
-    &::before {
-      @extend .background-colors;
+    @include color-modifiers(('primary', 'warn', 'danger', 'safe'), 'border-color', '', '::before');
 
+    &::before {
       content: '';
       display: table-cell;
       box-sizing: border-box;
       border-width: 0 .3rem 0 0;
+      border-style: solid;
+      border-color: transparent;
     }
 
     &.is-stripe {

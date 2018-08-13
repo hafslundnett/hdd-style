@@ -30,17 +30,13 @@ Buttons should be used across the different internal services. If only one butto
 <button class="hdd-button has-icon is-right" disabled>Forward <i class="fal fa-arrow-right"></i></button>
 ```
 
-## Tags 
-
-```tags.html
-<span class="hdd-tags_item">7070575000516247284<button class="fal fa-times hdd-tags_icon"></button></span>
-<span class="hdd-tags_item">2014<button class="fal fa-times hdd-tags_icon"></button></span>
-```
-
-## Next-button TODO
+## Next-button
 
 ```next-button.html
 <button class="hdd-button-icon"><i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button-icon is-hovering"><i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button-icon is-active"><i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button-icon is-transparent"><i class="fal fa-arrow-right"></i></button>
 ```
 
 ## Confirm edit TODO
@@ -59,6 +55,8 @@ Buttons should be used across the different internal services. If only one butto
 ## Links TODO
 
 ```links.html
-<a href="https://google.com">Home</a>
-<a href="https://hafslundnett.no">Hafslund Nett</a>
+<a href="https://google.com" class="hdd-link">Normal</a>
+<a href="https://hafslundnett.no" class="hdd-link is-hovering">Hovered</a>
+<a href="https://hafslundnett.no" class="hdd-link is-active">Active</a>
+<a href="https://hafslundnett.no" class="hdd-link no-hover">Disabled hover state</a>
 ```

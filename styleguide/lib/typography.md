@@ -1,6 +1,6 @@
 ---
-name: Typeface TODO QA
-category: Typography
+name: Typeface
+category: Components
 ---
 The typeface should be kept consistent in all mediums, physical and digital.
 
@@ -25,4 +25,9 @@ The typeface should be kept consistent in all mediums, physical and digital.
 <p>ABCDEFHILMNOPQRSTVXÆØÅ</p>
 <p>abcdefghijklmnopqrstuvwxyzæøå</p>
 <p>0123456789</p>
+<br />
+<p class="is-p-faded">paragraph faded</p>
+<p class="is-p-faded">ABCDEFHILMNOPQRSTVXÆØÅ</p>
+<p class="is-p-faded">abcdefghijklmnopqrstuvwxyzæøå</p>
+<p class="is-p-faded">0123456789</p>
 ```

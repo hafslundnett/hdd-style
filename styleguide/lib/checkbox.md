@@ -1,5 +1,5 @@
 ---
-name: Checkbox TODO
+name: Checkbox
 category: Components
 ---
 

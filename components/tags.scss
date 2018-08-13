@@ -11,7 +11,7 @@
     padding: 0;
     border: none;
     background: none;
-    color: $font-color;
+    color: color('font-color');
     font-size: $tag-font-size;
     cursor: pointer;
   }
@@ -25,7 +25,7 @@
     padding: $tag-padding;
     border-radius: $tag-border-radius;
     background: color('blue-light3');
-    color: $font-color;
+    color: color('font-color');
     font-size: $tag-font-size;
     font-weight: 400;
     letter-spacing: .1px;

@@ -1,5 +1,3 @@
-@import '../variables/main';
-
 .hdd-form {
   /************************
    *  Field
@@ -39,16 +37,19 @@
     }
 
     &_error {
-      color: color('signal-red');
+      > i {
+        margin-right: 5px;
+        color: color('signal-red');
+      }
     }
 
     &_info {
-      color: $font-color;
+      color: color('font-color');
     }
 
     &.is-line {
       > * {
-        &:not(#{$e}_title):not(#{$e}_error), {
+        &:not(#{$e}_title):not(#{$e}_error) {
           margin-right: 1rem;
           float: left;
         }
@@ -84,7 +85,9 @@
     &.is-focus {
       border-color: color('primary');
 
-      #{$e}_icon, svg, i {
+      #{$e}_icon,
+      svg,
+      i {
         opacity: 1;
         color: color('primary');
       }
@@ -92,10 +95,6 @@
 
     &.is-invalid {
       border-color: color('signal-red');
-
-      input {
-        color: color('signal-red');
-      }
 
       i {
         color: color('signal-red');
@@ -160,15 +159,16 @@
     // We have to seperate the checkbox marked styling because of the checked state
     %checkbox-mark.is-checked {
       position: relative;
-
+      background-color: color('primary');
       &::before {
         @extend .fal, .fa-check:before;
 
+        top: -2px;
         left: 50%;
         transform: translateX(-50%);
 
-        color: color('primary');
-        font-size: .85rem;
+        color: color('white');
+        font-size: .75rem;
       }
     }
 
@@ -208,8 +208,63 @@
 
       width: $form-checkbox-mark-size;
       height: $form-checkbox-mark-size;
+      transition: background .3s $transition-cubic;
       border: $form-checkbox-mark-border;
       border-radius: $form-checkbox-mark-border-radius;
+      background: color('white');
+    }
+
+    &_label {
+      flex-grow: 1;
+      margin-left: 1rem;
+    }
+  }
+
+  /************************
+   *  Radiobutton
+   ************************/
+  &_radiobutton {
+    $e: #{&};
+
+    display: flex;
+    align-items: center;
+    margin-bottom: .75rem;
+    cursor: pointer;
+
+    %radiobutton-mark.is-checked {
+      position: relative;
+      background-color: color('primary');
+      &:before {
+        content: '';
+        display: inline-block;
+        padding: 5px;
+        border: 2px solid color('white');
+        border-radius: 14px;
+      }
+    }
+
+    &.is-checked {
+      #{$e}_mark {
+        @extend %radiobutton-mark.is-checked;
+      }
+    }
+
+    input {
+      display: none;
+
+      &:checked ~ #{$e}_mark {
+        @extend %radiobutton-mark.is-checked;
+      }
+    }
+
+    &_mark {
+      display: inline-block;
+
+      width: $form-radiobutton-mark-size;
+      height: $form-radiobutton-mark-size;
+      transition: background .3s $transition-cubic;
+      border: $form-radiobutton-mark-border;
+      border-radius: $form-radiobutton-mark-border-radius;
       background: color('white');
     }
 
@@ -263,7 +318,9 @@
         color: color('primary');
       }
 
-      #{$e}_icon, > svg, > i {
+      #{$e}_icon,
+      > svg,
+      > i {
         opacity: 1;
         color: color('primary');
       }

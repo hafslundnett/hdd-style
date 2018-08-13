@@ -7,15 +7,15 @@
 }
 
 .theme-content-element-description h2 {
-  font-size: 1.5rem;
   margin-bottom: 30px;
+  font-size: 1.5rem;
 }
 
 .theme-content-element-description h3 {
+  margin-bottom: 10px;
+  padding-top: 10px;
   font-size: 1.1rem;
   font-weight: 500;
-  padding-top: 10px;
-  margin-bottom: 10px;
 }
 
 .theme-content-element-description table {
@@ -31,9 +31,9 @@
 }
 
 .theme-content-element-title {
+  margin-bottom: 30px;
   font-size: 2.5rem;
   font-weight: 500;
-  margin-bottom: 30px;
 }
 
 .theme-sidebar-header-title {
