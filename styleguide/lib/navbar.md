@@ -8,7 +8,7 @@ category: Components
 <nav class="hdd-layout_sidenav">
   <div class="hdd-sidenav">
     <a class="hdd-sidenav_logo" href="#">
-      <img src="/styleguide/lib/logo.svg" alt="Hafslund logo">
+      <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
     </a>
 
     <ul class="hdd-sidenav_list">
