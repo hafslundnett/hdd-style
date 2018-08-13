@@ -21,7 +21,7 @@ There are multiple ways of using HDD:
 * Add it as an npm dependency: `npm install @hafslundnett/hdd-style`
   * Import main.sass in your stylesheet: `@import '~@hafslundnett/hdd-style/main';`
   * Use the bundled and minified file: `dist/bundle.min.css`
-* **TBD**: Add a link tag in your `<head>` tag and refer to our CDN: `<link rel="stylesheet" href="https://cdn.com/hdd/latest/bundle.min.css">`
+* Add a link tag in your `<head>` tag and refer to UNPKG CDN (not maintained by us, best effort SLA): `<link rel="stylesheet" href="https://unpkg.com/@hafslundnett/hdd-style@0.3.29/dist/bundle.min.css">`
 
 
 

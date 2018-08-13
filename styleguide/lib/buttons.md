@@ -39,20 +39,7 @@ Buttons should be used across the different internal services. If only one butto
 <button class="hdd-button-icon is-transparent"><i class="fal fa-arrow-right"></i></button>
 ```
 
-## Confirm edit TODO
-
-```confirm-edit.html
-
-```
-
-## Switch TODO
-
-```switch.html
-<a href="https://google.com">Home</a>
-<a href="https://hafslundnett.no">Hafslund Nett</a>
-```
-
-## Links TODO
+## Links
 
 ```links.html
 <a href="https://google.com" class="hdd-link">Normal</a>
