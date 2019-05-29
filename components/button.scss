@@ -1,8 +1,6 @@
 .hdd-button {
-  $c: &;
-
   @extend .is-p;
-  @extend #{$c}.is-primary;
+  @extend .hdd-button, .is-primary;
 
   &.is-primary {
     display: inline-block;
@@ -126,7 +124,7 @@
 
   &.is-small {
     @extend .is-p-small;
-    @extend #{$c}.is-primary;
+    @extend .hdd-button, .is-primary;
 
     padding: $button-padding-small;
   }
