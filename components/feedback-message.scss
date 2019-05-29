@@ -8,7 +8,7 @@
   padding: $feedback-padding;
   border: none;
   border-radius: $feedback-border-radius;
-  @extend #{$c}.is-info;
+  @extend .feedback-container, .is-info;
 
   &.is-info {
     background-color: color('blue-light3');
