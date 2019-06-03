@@ -13,16 +13,16 @@
     "start": "npm run build -- -w -b"
   },
   "devDependencies": {
-    "autoprefixer": "^9.1.0",
+    "autoprefixer": "^9.5.1",
     "commitizen": "^2.10.1",
-    "cssnano": "^4.0.5",
+    "cssnano": "^4.1.10",
     "cz-conventional-changelog": "^2.1.0",
-    "node-sass": "^4.9.2",
+    "node-sass": "^4.12.0",
     "node-watch": "^0.5.8",
-    "ora": "^3.0.0",
-    "postcss": "^7.0.2",
-    "sass-lint": "^1.12.1",
-    "stylemark": "^3.0.2"
+    "ora": "^3.4.0",
+    "postcss": "^7.0.16",
+    "sass-lint": "^1.13.1",
+    "stylemark": "^3.1.3"
   },
   "config": {
     "commitizen": {
