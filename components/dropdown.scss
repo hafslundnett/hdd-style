@@ -2,7 +2,7 @@
   position: relative;
 
   &_content {
-    @extend #{&}.is-aligned-bottom;
+    @extend .hdd-dropdown_content, .is-aligned-bottom;
 
     display: none;
     position: absolute;

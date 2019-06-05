@@ -75,7 +75,7 @@
     color: transparent;
 
     &::after {
-      @extend .fa-spinner-third:before;
+      @extend .fa-spinner-third, :before;
       @include animation(spinner, .5s, infinite, linear);
 
       position: absolute;
