@@ -128,7 +128,8 @@
   &.is-striped {
     > tbody {
       > tr:nth-of-type(odd) {
-        @extend #{$b}_row.is-stripe;
+        // @extend #{$b}_row.is-stripe;
+        @extend .hdd-table_row, .is-stripe
       }
     }
   }

@@ -5,7 +5,8 @@
 
   &:hover:not(.no-hovering) {
     #{$e}_content {
-      @extend #{$e}_content.is-active;
+      // @extend #{$e}_content.is-active;
+      @extend .hdd-tooltip_content, .is-active;
     }
   }
 

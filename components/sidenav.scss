@@ -26,7 +26,8 @@
 
   &:hover {
     &:not(.no-hover) {
-      @extend #{$c}.is-active;
+      // @extend #{$c}.is-active;
+      @extend .hdd-sidenav, .is-active;
     }
   }
 

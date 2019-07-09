@@ -6,13 +6,15 @@
 
   &:hover {
     #{$b}_content:not(.no-hover):not(:hover) {
-      @extend #{$b}_list.is-active;
+      // @extend #{$b}_list.is-active;
+      @extend .hdd-small-menu_list, .is-active;
     }
   }
 
   &:focus {
     #{$b}_content:not(.no-focus) {
-      @extend #{$b}_list.is-active;
+      // @extend #{$b}_list.is-active;
+      @extend .hdd-small-menu_list, .is-active;
     }
   }
 
@@ -70,7 +72,8 @@
       }
 
       &:not(.no-hover):hover {
-        @extend #{$e}.is-active;
+        // @extend #{$e}.is-active;
+        @extend .hdd-small-menu_list_item, .is-active;
       }
 
       &.is-active {

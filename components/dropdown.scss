@@ -39,7 +39,8 @@
       cursor: pointer;
 
       &:hover:not(.no-hover) {
-        @extend #{$e}.is-active;
+        // @extend #{$e}.is-active;
+        @extend .hdd-dropdown_content_item, .is-active;
       }
 
       &.is-active {

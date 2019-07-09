@@ -142,7 +142,8 @@
           border-right-width: $datepicker-days-border-width;
 
           &:hover {
-            @extend #{$e}_day.is-selected;
+            // @extend #{$e}_day.is-selected;
+            @extend .hdd-datepicker_container_days_day, .is-selected;
           }
 
           &::after {

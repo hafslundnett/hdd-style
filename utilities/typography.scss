@@ -29,10 +29,19 @@
     }
   }
 
+  // TODO Fix
   @if $elements {
     @each $element in $elements {
       #{$element} {
         @extend %fontblock-#{$label};
+        // %fontblock-#{$label} {
+        //   color: $color;
+        //   font-family: $family;
+        //   font-size: $size;
+        //   font-weight: $weight;
+        //   letter-spacing: $spacing;
+        //   line-height: $line-height;
+        // }
       }
     }
   }
@@ -40,6 +49,14 @@
   @each $label in $labels {
     .is-#{$label} {
       @extend %fontblock-#{$label};
+      // %fontblock-#{$label} {
+      //   color: $color;
+      //   font-family: $family;
+      //   font-size: $size;
+      //   font-weight: $weight;
+      //   letter-spacing: $spacing;
+      //   line-height: $line-height;
+      // }
     }
   }
 }

@@ -32,7 +32,7 @@
 
     &_action {
       @extend .is-icon-small;
-      @extend .hdd-button-icon.is-transparent;
+      @extend .hdd-button-icon, .is-transparent
     }
 
     .is-center {
