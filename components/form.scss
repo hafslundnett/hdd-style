@@ -158,11 +158,10 @@
     cursor: pointer;
 
     // We have to seperate the checkbox marked styling because of the checked state
-    %checkbox-mark.is-checked {
+    %checkbox-mark {
       position: relative;
       background-color: color('primary');
       &::before {
-        // @extend .fal, .fa-check:before;
         @extend .fal, .fa-check, :before;
 
         top: -1px;
@@ -176,8 +175,7 @@
 
     &.is-checked {
       #{$e}_mark {
-        // @extend %checkbox-mark.is-checked;
-        @extend %checkbox-mark, .is-checked;
+        @extend %checkbox-mark;
       }
     }
 
