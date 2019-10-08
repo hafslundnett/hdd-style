@@ -1,0 +1,20 @@
+.hdd-link {
+	@extend .is-p;
+
+	color: color('primary');
+	font-weight: bold;
+	text-decoration: underline rgba(color('primary'), .5);
+
+	&:hover:not(.no-hover),
+	&.is-hovering,
+	&:focus:not(.no-focus),
+	&.is-focusing {
+		text-decoration: none;
+	}
+
+	&:active:not(.no-active),
+	&.is-active {
+		color: color('primary-dark');
+		text-decoration: none;
+	}
+}
