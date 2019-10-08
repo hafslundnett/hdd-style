@@ -53,20 +53,10 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div>
-  <span>Element 1 <span class="hdd-badge is-danger">5</span></span>
-</div>
-<div style="padding-top: 1rem;" class="is-p">
-  <span>Element 2 <span class="hdd-badge is-primary">10</span></span>
-</div>
+    <i class="fal fa-cog"><span class="hdd-badge-icon"></span></i>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div>
-  <span>Element 1 <span class="hdd-badge is-danger">5</span></span>
-</div>
-<div style="padding-top: 1rem;" class="is-p">
-  <span>Element 2 <span class="hdd-badge is-primary">10</span></span>
-</div></script>
+			<script type="text/x-stylemark" data-language="html"><i class="fal fa-cog"><span class="hdd-badge-icon"></span></i></script>
 
 		<!--
 			Vanilla JS
@@ -99,10 +89,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-badge-badge', []);
+						module = angular.module('stylemark-badge-badge-icon', []);
 					}
 
-					module.controller('stylemark-badge-badge-' + index, function($scope) {
+					module.controller('stylemark-badge-badge-icon-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});
