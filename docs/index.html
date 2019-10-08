@@ -31,9 +31,9 @@
 									<option value="badge">Badge</option>
 									<option value="button">Button</option>
 									<option value="cards">Cards</option>
-									<option value="datepicker">Datepicker</option>
 									<option value="dropdown">Dropdown</option>
 									<option value="feedback-message">Feedback message</option>
+									<option value="links">Links</option>
 									<option value="search-fields">Search fields</option>
 									<option value="small-menu">Small menu</option>
 									<option value="table">Table</option>
@@ -634,313 +634,6 @@ Below is a example of how to achieve this with sass.</p>
 </div></div>
 </div>
 
-						<div id="datepicker" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">Datepicker</h1>
-	<span class="theme-content-element-source">
-		<span class="theme-content-element-source-label">Source:</span>
-		<span class="theme-content-element-source-path">datepicker.md</span>
-	</span>
-	<div class="theme-content-element-description"><div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="datepicker-datepicker.html"
-                            target="_blank"
-                            class="plain-link"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Open in a new window"
-                        >
-                            <i class="fa fa-external-link-square fa-fw"></i>
-                            Example
-                        </a>
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="datepicker-datepicker.html"
-                            data-initinview="true"
-                            data-title="Loading..." 
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-xs&quot;&gt;
-        &lt;div class=&quot;hdd-datepicker_container is-inline&quot;&gt;
-          &lt;div class=&quot;hdd-datepicker_container_header&quot;&gt;
-            &lt;span class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-left&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-            &lt;span class=&quot;hdd-datepicker_container_header_title&quot;&gt;mars 2018&lt;/span&gt;
-            &lt;span class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-          &lt;/div&gt;
-          &lt;div class=&quot;hdd-datepicker_container_week&quot;&gt;
-            &lt;span&gt;ma&lt;/span&gt;
-            &lt;span&gt;ti&lt;/span&gt;
-            &lt;span&gt;on&lt;/span&gt;
-            &lt;span&gt;to&lt;/span&gt;
-            &lt;span&gt;fr&lt;/span&gt;
-            &lt;span&gt;lø&lt;/span&gt;
-            &lt;span&gt;sø&lt;/span&gt;
-          &lt;/div&gt;
-          &lt;div class=&quot;hdd-datepicker_container_days&quot;&gt;
-            &lt;span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;1&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;2&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;3&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;4&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;5&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;6&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;7&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;8&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;9&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;10&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;11&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;12&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;13&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;14&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;15&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;16&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;17&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;18&lt;/span&gt;&lt;/span&gt;
-            &lt;span class=&quot;is-selected&quot;&gt;&lt;span&gt;19&lt;/span&gt;&lt;/span&gt;
-            &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;20&lt;/span&gt;&lt;/span&gt;
-            &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;21&lt;/span&gt;&lt;/span&gt;
-            &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;22&lt;/span&gt;&lt;/span&gt;
-            &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;23&lt;/span&gt;&lt;/span&gt;
-            &lt;span class=&quot;is-selected&quot;&gt;&lt;span&gt;24&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;25&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;26&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;27&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;28&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;29&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;30&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;31&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;/span&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&quot;col-xs&quot;&gt;
-        &lt;div class=&quot;hdd-form_input hdd-datepicker&quot;&gt;
-            &lt;input&gt;
-
-            &lt;div class=&quot;hdd-datepicker_container is-active has-arrow-right&quot;&gt;
-              &lt;div class=&quot;hdd-datepicker_container_header&quot;&gt;
-                &lt;span class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-left&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-                &lt;span class=&quot;hdd-datepicker_container_header_title&quot;&gt;mars 2018&lt;/span&gt;
-                &lt;span class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;hdd-datepicker_container_week&quot;&gt;
-                &lt;span&gt;ma&lt;/span&gt;
-                &lt;span&gt;ti&lt;/span&gt;
-                &lt;span&gt;on&lt;/span&gt;
-                &lt;span&gt;to&lt;/span&gt;
-                &lt;span&gt;fr&lt;/span&gt;
-                &lt;span&gt;lø&lt;/span&gt;
-                &lt;span&gt;sø&lt;/span&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;hdd-datepicker_container_days&quot;&gt;
-                &lt;span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;1&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;2&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;3&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;4&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;5&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;6&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;7&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;8&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;9&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;10&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;11&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;12&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;13&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;14&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;15&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;16&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;17&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;18&lt;/span&gt;&lt;/span&gt;
-                &lt;span class=&quot;is-selected&quot;&gt;&lt;span&gt;19&lt;/span&gt;&lt;/span&gt;
-                &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;20&lt;/span&gt;&lt;/span&gt;
-                &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;21&lt;/span&gt;&lt;/span&gt;
-                &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;22&lt;/span&gt;&lt;/span&gt;
-                &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;23&lt;/span&gt;&lt;/span&gt;
-                &lt;span class=&quot;is-selected&quot;&gt;&lt;span&gt;24&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;25&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;26&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;27&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;28&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;29&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;30&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;31&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;/span&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-xs&quot;&gt;
-        &lt;div class=&quot;hdd-datepicker_container is-inline&quot;&gt;
-          &lt;div class=&quot;hdd-datepicker_container_header&quot;&gt;
-            &lt;span class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-left&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-            &lt;span class=&quot;hdd-datepicker_container_header_title&quot;&gt;mars 2018&lt;/span&gt;
-            &lt;span class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-          &lt;/div&gt;
-          &lt;div class=&quot;hdd-datepicker_container_week&quot;&gt;
-            &lt;span&gt;ma&lt;/span&gt;
-            &lt;span&gt;ti&lt;/span&gt;
-            &lt;span&gt;on&lt;/span&gt;
-            &lt;span&gt;to&lt;/span&gt;
-            &lt;span&gt;fr&lt;/span&gt;
-            &lt;span&gt;lø&lt;/span&gt;
-            &lt;span&gt;sø&lt;/span&gt;
-          &lt;/div&gt;
-          &lt;div class=&quot;hdd-datepicker_container_days&quot;&gt;
-            &lt;span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;1&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;2&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;3&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;4&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;5&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;6&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;7&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;8&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;9&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;10&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;11&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;12&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;13&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;14&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;15&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;16&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;17&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;18&lt;/span&gt;&lt;/span&gt;
-            &lt;span class=&quot;is-selected&quot;&gt;&lt;span&gt;19&lt;/span&gt;&lt;/span&gt;
-            &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;20&lt;/span&gt;&lt;/span&gt;
-            &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;21&lt;/span&gt;&lt;/span&gt;
-            &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;22&lt;/span&gt;&lt;/span&gt;
-            &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;23&lt;/span&gt;&lt;/span&gt;
-            &lt;span class=&quot;is-selected&quot;&gt;&lt;span&gt;24&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;25&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;26&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;27&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;28&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;29&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;30&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;span&gt;31&lt;/span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;/span&gt;
-            &lt;span&gt;&lt;/span&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class=&quot;col-xs&quot;&gt;
-        &lt;div class=&quot;hdd-form_input hdd-datepicker&quot;&gt;
-            &lt;input&gt;
-
-            &lt;div class=&quot;hdd-datepicker_container is-active has-arrow-right&quot;&gt;
-              &lt;div class=&quot;hdd-datepicker_container_header&quot;&gt;
-                &lt;span class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-left&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-                &lt;span class=&quot;hdd-datepicker_container_header_title&quot;&gt;mars 2018&lt;/span&gt;
-                &lt;span class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;hdd-datepicker_container_week&quot;&gt;
-                &lt;span&gt;ma&lt;/span&gt;
-                &lt;span&gt;ti&lt;/span&gt;
-                &lt;span&gt;on&lt;/span&gt;
-                &lt;span&gt;to&lt;/span&gt;
-                &lt;span&gt;fr&lt;/span&gt;
-                &lt;span&gt;lø&lt;/span&gt;
-                &lt;span&gt;sø&lt;/span&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;hdd-datepicker_container_days&quot;&gt;
-                &lt;span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;1&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;2&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;3&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;4&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;5&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;6&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;7&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;8&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;9&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;10&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;11&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;12&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;13&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;14&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;15&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;16&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;17&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;18&lt;/span&gt;&lt;/span&gt;
-                &lt;span class=&quot;is-selected&quot;&gt;&lt;span&gt;19&lt;/span&gt;&lt;/span&gt;
-                &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;20&lt;/span&gt;&lt;/span&gt;
-                &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;21&lt;/span&gt;&lt;/span&gt;
-                &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;22&lt;/span&gt;&lt;/span&gt;
-                &lt;span class=&quot;is-in-range&quot;&gt;&lt;span&gt;23&lt;/span&gt;&lt;/span&gt;
-                &lt;span class=&quot;is-selected&quot;&gt;&lt;span&gt;24&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;25&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;26&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;27&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;28&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;29&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;30&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;span&gt;31&lt;/span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;/span&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div><h3>Mutations</h3><p><strong><code>hdd-datepicker_container</code>:</strong></p>
-<table class="table"><thead><tr>
-<th style="text-align:left">class</th>
-<th style="text-align:left">description</th>
-</tr>
-</thead><tbody><tr>
-<td style="text-align:left"><code>is-inline</code></td>
-<td style="text-align:left">Use the datepicker as a inline element</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>is-active</code></td>
-<td style="text-align:left">Show the datepicker</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>has-arrow-left</code></td>
-<td style="text-align:left">Places the arrow on the left side of the datepicker and aligns the datepicker tip as center point</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>has-arrow-right</code></td>
-<td style="text-align:left">Places the arrow on the right side of the datepicker and aligns the datepicker tip as center point</td>
-</tr>
-</tbody></table><p><strong><code>hdd-datepicker_container_days &gt; span</code></strong> | <strong><code>hdd-datepicker_container_days_day</code>:</strong></p>
-<table class="table"><thead><tr>
-<th style="text-align:left">class</th>
-<th style="text-align:left">description</th>
-</tr>
-</thead><tbody><tr>
-<td style="text-align:left"><code>is-selected</code></td>
-<td style="text-align:left">Set the given day to the selected style</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>is-in-range</code></td>
-<td style="text-align:left">Set the given day to the in range style</td>
-</tr>
-</tbody></table></div>
-</div>
-
 						<div id="dropdown" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Dropdown</h1>
 	<span class="theme-content-element-source">
@@ -1087,6 +780,53 @@ Usage of icons in feedback messages should be kept to an absolute minimum, since
 &lt;div class=&quot;feedback-container is-error&quot;&gt;
   &lt;p class=&quot;feedback-container_message&quot;&gt;There is something seriously wrong going on!&lt;/p&gt;
 &lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="links" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Links</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">links.md</span>
+	</span>
+	<div class="theme-content-element-description"><div id="links" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#links" class="icon-link i-section__link -heading"></a>Links</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="links-links.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="links-links.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;a href=&quot;https://google.com&quot; class=&quot;hdd-link&quot;&gt;Normal&lt;/a&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-hovering&quot;&gt;Hovered&lt;/a&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-active&quot;&gt;Active&lt;/a&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link no-hover&quot;&gt;Disabled hover state&lt;/a&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;a href=&quot;https://google.com&quot; class=&quot;hdd-link&quot;&gt;Normal&lt;/a&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-hovering&quot;&gt;Hovered&lt;/a&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-active&quot;&gt;Active&lt;/a&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link no-hover&quot;&gt;Disabled hover state&lt;/a&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -1570,7 +1310,9 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">checkbox.md</span>
 	</span>
-	<div class="theme-content-element-description"><div class="i-example">
+	<div class="theme-content-element-description"><p>A checkbox component could be used to let a user select one or more options of a limited numberof choices. 
+Checkbox classes are asigned to the corresponding checkbox label.</p>
+<div class="i-example">
                     <h5 class="i-example__heading">
                         <a
                             href="checkbox-checkbox.html"
@@ -1604,17 +1346,17 @@ menu.addEventListener(&#39;click&#39;, function(e) {
   &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
     &lt;input type=&quot;checkbox&quot; checked=&quot;&quot;&gt;
     &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Picked&lt;/span&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot;&gt;
-    &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Picked&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Picked chechbox&lt;/span&gt;
   &lt;/label&gt;
   &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
     &lt;input type=&quot;checkbox&quot;&gt;
     &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Unpicked&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Unpicked checkbox&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;hdd-form_checkbox is-invalid&quot;&gt;
+    &lt;input type=&quot;checkbox&quot;&gt;
+    &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Invalid checkbox&lt;/span&gt;
   &lt;/label&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_field&quot;&gt;
@@ -1622,21 +1364,34 @@ menu.addEventListener(&#39;click&#39;, function(e) {
   &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
     &lt;input type=&quot;checkbox&quot; checked=&quot;&quot;&gt;
     &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Picked&lt;/span&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot;&gt;
-    &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Picked&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Picked chechbox&lt;/span&gt;
   &lt;/label&gt;
   &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
     &lt;input type=&quot;checkbox&quot;&gt;
     &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Unpicked&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Unpicked checkbox&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;hdd-form_checkbox is-invalid&quot;&gt;
+    &lt;input type=&quot;checkbox&quot;&gt;
+    &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Invalid checkbox&lt;/span&gt;
   &lt;/label&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div></div>
+</div><h3>Mutations</h3><p><strong><code>hdd-form_checkbox</code>:</strong></p>
+<table class="table"><thead><tr>
+<th style="text-align:left">class</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead><tbody><tr>
+<td style="text-align:left"><code>is-invalid</code></td>
+<td style="text-align:left">Mark the checkbox as invalid</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-checked</code></td>
+<td style="text-align:left">Mark the checkbox as always checked</td>
+</tr>
+</tbody></table></div>
 </div>
 
 						<div id="input-fields" class="i-library theme-content-element">
@@ -1646,7 +1401,6 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 		<span class="theme-content-element-source-path">input-fields.md</span>
 	</span>
 	<div class="theme-content-element-description"><p>An input field should be a call to action. If the text/content can&#39;t be changed, it should not be in an input field, but shown as static text.</p>
-<p>En input skal oppfordre til handling fra brukeren. Dersom teksten/innholdet ikke kan endres skal det ikke opptre i et input-felt av noe slag (vises som statisk tekst).</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -1705,7 +1459,29 @@ menu.addEventListener(&#39;click&#39;, function(e) {
   &lt;span class=&quot;hdd-form_field_error is-active&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt;E-mailen må inneholde @&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div></div>
+</div><h3>Mutations</h3><p><strong><code>hdd-form_field</code>:</strong>
+<strong><code>hdd-form_input</code>:</strong></p>
+<p>| JUST FROM DATEPICKER MUTATIONS REWRITE | This is dummydata |
+| class | description|
+| :--- | :--- |
+| <code>is-inline</code> | Use the datepicker as a inline element |
+| <code>is-active</code> | Show the datepicker |
+| <code>has-arrow-left</code> | Places the arrow on the left side of the datepicker and aligns the datepicker tip as center point |
+| <code>has-arrow-right</code> | Places the arrow on the right side of the datepicker and aligns the datepicker tip as center point |</p>
+<p><strong><code>hdd-datepicker_container_days &gt; span</code></strong> | <strong><code>hdd-datepicker_container_days_day</code>:</strong></p>
+<table class="table"><thead><tr>
+<th style="text-align:left">class</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead><tbody><tr>
+<td style="text-align:left"><code>is-selected</code></td>
+<td style="text-align:left">Set the given day to the selected style</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-in-range</code></td>
+<td style="text-align:left">Set the given day to the in range style</td>
+</tr>
+</tbody></table></div>
 </div>
 
 						<div id="radio-button" class="i-library theme-content-element">
@@ -1714,7 +1490,8 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">radiobuttons.md</span>
 	</span>
-	<div class="theme-content-element-description"><div class="i-example">
+	<div class="theme-content-element-description"><p>A radiobutton component let a user select only one of a limited number of choices. </p>
+<div class="i-example">
                     <h5 class="i-example__heading">
                         <a
                             href="radio-button-radiobutton.html"
@@ -2454,7 +2231,7 @@ The best way of including a set of color modifiers is by using the <code>color-m
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Badge  Button  Cards  Datepicker  Dropdown  Feedback message  Search fields  Small menu  Table  Tags  Tooltip "
+							data-filter-value=" Badge  Button  Cards  Dropdown  Feedback message  Links  Search fields  Small menu  Table  Tags  Tooltip "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -2484,13 +2261,6 @@ The best way of including a set of color modifiers is by using the <code>color-m
 									<span>Cards</span>
 								</a>
 								<a
-									href="#datepicker"
-									class="i-sidebar-list-item theme-sidebar-element"
-									data-filter-value="Datepicker"
-								>
-									<span>Datepicker</span>
-								</a>
-								<a
 									href="#dropdown"
 									class="i-sidebar-list-item theme-sidebar-element"
 									data-filter-value="Dropdown"
@@ -2503,6 +2273,13 @@ The best way of including a set of color modifiers is by using the <code>color-m
 									data-filter-value="Feedback message"
 								>
 									<span>Feedback message</span>
+								</a>
+								<a
+									href="#links"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Links"
+								>
+									<span>Links</span>
 								</a>
 								<a
 									href="#search-fields"

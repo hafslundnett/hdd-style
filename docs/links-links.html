@@ -53,44 +53,16 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div class="hdd-form_field">
-  <span class="hdd-form_field_title">Checkboxes</span>
-  <label class="hdd-form_checkbox">
-    <input type="checkbox" checked="">
-    <span class="hdd-form_checkbox_mark"></span>
-    <span class="hdd-form_checkbox_label">Picked chechbox</span>
-  </label>
-  <label class="hdd-form_checkbox">
-    <input type="checkbox">
-    <span class="hdd-form_checkbox_mark"></span>
-    <span class="hdd-form_checkbox_label">Unpicked checkbox</span>
-  </label>
-  <label class="hdd-form_checkbox is-invalid">
-    <input type="checkbox">
-    <span class="hdd-form_checkbox_mark"></span>
-    <span class="hdd-form_checkbox_label">Invalid checkbox</span>
-  </label>
-</div>
+    <a href="https://google.com" class="hdd-link">Normal</a>
+<a href="https://hafslundnett.no" class="hdd-link is-hovering">Hovered</a>
+<a href="https://hafslundnett.no" class="hdd-link is-active">Active</a>
+<a href="https://hafslundnett.no" class="hdd-link no-hover">Disabled hover state</a>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="hdd-form_field">
-  <span class="hdd-form_field_title">Checkboxes</span>
-  <label class="hdd-form_checkbox">
-    <input type="checkbox" checked="">
-    <span class="hdd-form_checkbox_mark"></span>
-    <span class="hdd-form_checkbox_label">Picked chechbox</span>
-  </label>
-  <label class="hdd-form_checkbox">
-    <input type="checkbox">
-    <span class="hdd-form_checkbox_mark"></span>
-    <span class="hdd-form_checkbox_label">Unpicked checkbox</span>
-  </label>
-  <label class="hdd-form_checkbox is-invalid">
-    <input type="checkbox">
-    <span class="hdd-form_checkbox_mark"></span>
-    <span class="hdd-form_checkbox_label">Invalid checkbox</span>
-  </label>
-</div></script>
+			<script type="text/x-stylemark" data-language="html"><a href="https://google.com" class="hdd-link">Normal</a>
+<a href="https://hafslundnett.no" class="hdd-link is-hovering">Hovered</a>
+<a href="https://hafslundnett.no" class="hdd-link is-active">Active</a>
+<a href="https://hafslundnett.no" class="hdd-link no-hover">Disabled hover state</a></script>
 
 		<!--
 			Vanilla JS
@@ -123,10 +95,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-checkbox-checkbox', []);
+						module = angular.module('stylemark-links-links', []);
 					}
 
-					module.controller('stylemark-checkbox-checkbox-' + index, function($scope) {
+					module.controller('stylemark-links-links-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});
