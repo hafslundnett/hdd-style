@@ -1,6 +1,6 @@
 ---
 name: Header
-category: Components
+category: Layout-Components
 ---
 
 ## Header

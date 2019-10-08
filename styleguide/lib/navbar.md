@@ -1,6 +1,6 @@
 ---
 name: Navbar
-category: Components
+category: Layout-Components
 ---
 
 ## Sidebar

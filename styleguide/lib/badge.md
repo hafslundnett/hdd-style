@@ -1,6 +1,6 @@
 ---
 name: Badge
-category: Elements
+category: Components
 ---
 
 ```badge.html

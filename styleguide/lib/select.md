@@ -1,6 +1,6 @@
 ---
 name: Select
-category: Components
+category: Form-Components
 ---
 
 A select component could be used to give a user a set of options.

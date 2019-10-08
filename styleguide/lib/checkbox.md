@@ -1,6 +1,6 @@
 ---
 name: Checkbox
-category: Components
+category: Form-Components
 ---
 
 ```checkbox.html

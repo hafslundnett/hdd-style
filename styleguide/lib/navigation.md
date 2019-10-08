@@ -1,6 +1,6 @@
 ---
 name: Navigation
-category: Elements
+category: Layout-Components
 ---
 
 > 🚧 It advised to place the `hdd-navigation` block in the `hdd-layout` block wrapped in the `hdd-layout_navigation` element.

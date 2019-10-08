@@ -1,6 +1,6 @@
 ---
 name: Input fields
-category: Components
+category: Form-Components
 ---
 An input field should be a call to action. If the text/content can't be changed, it should not be in an input field, but shown as static text.
 

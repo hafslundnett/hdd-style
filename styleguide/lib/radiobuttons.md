@@ -1,6 +1,6 @@
 ---
 name: Radio button
-category: Components
+category: Form-Components
 ---
 
 ```radiobutton.html
