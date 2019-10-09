@@ -13,7 +13,7 @@ category: Layout-Components
 
     <ul class="hdd-sidenav_list">
       <li>
-        <a href="#" class="hdd-sidenav_list_item">
+        <a href="#" class="hdd-sidenav_list_item ">
           <span class="hdd-sidenav_list_item_icon">
             <i class="fal fa-chart-pie"><span class="hdd-badge-icon"></span></i>
           </span>
@@ -56,3 +56,12 @@ category: Layout-Components
   height: 450px!important;
 }
 ```
+
+### Mutations
+**`hdd-sidenav_list_item`:**
+
+| class | description|
+| :--- | :--- |
+| `is-active` | Set the given hdd-sidenav_list_item to it's active state |
+
+

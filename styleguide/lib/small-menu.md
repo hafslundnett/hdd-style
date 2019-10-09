@@ -8,8 +8,9 @@ A small menu can hold a list of choices. It can be hidden and shown on hover/act
 ```small-menu.html
 <div class="hdd-small-menu">
   <span class="hdd-small-menu_title"><i class="fal fa-cog"></i></span>
-  <ul class="hdd-small-menu_list is-active no-hover">
+  <ul class="hdd-small-menu_list is-active">
     <li class="hdd-small-menu_list_item">Profile</li>
+    <li class="hdd-small-menu_list_item is-active">Active tab</li>
     <li class="hdd-small-menu_list_item"><i class="fal fa-sign-out"></i>Logout</li>
   </ul>
 </div>
