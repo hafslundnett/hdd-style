@@ -3,34 +3,48 @@ name: Button
 category: Components
 ---
 
-Buttons should be used across the different internal services. If only one button exists on a page, it should always be a primary button. The secondary button should never be used alone in a page. Action buttons are for prompting a user action that will affect another part. Changing the color of a button to convey purpose is not ideal as people with vision impairments will not be able to pick this up. Usage of other colors should be well discussed and the context around it clear enough.
+Buttons should be used across the different internal services. Changing the color of a button to convey purpose is not ideal as people with vision impairments will not be able to pick this up. Usage of other colors should be well discussed and the context around it clear enough.
 
 ## Primary button
+`hdd-button`
+
+If only one button exists on a page, it should always be a primary button. 
 
 ```primary-button.html
 <button class="hdd-button">Primary</button>
 <button class="hdd-button" disabled>Disabled</button>
+<button class="hdd-button is-loading">Loading</button>
 <button class="hdd-button is-small">Primary small</button>
 <button class="hdd-button is-small" disabled>Disabled</button>
+<button class="hdd-button is-small is-loading">Loading</button>
 ```
 
 ## Secondary button
+`hdd-button`
+
+The secondary button should never be used alone in a page.
 
 ```secondary-button.html
 <button class="hdd-button is-secondary">Secondary</button>
-<button class="hdd-button is-secondary" disabled>Secondary</button>
+<button class="hdd-button is-secondary" disabled>Disabled</button>
+<button class="hdd-button is-secondary is-loading">Loading</button>
 <button class="hdd-button is-small is-secondary">Secondary small</button>
-<button class="hdd-button is-small is-secondary" disabled>Secondary small</button>
+<button class="hdd-button is-small is-secondary" disabled>Disabled</button>
+<button class="hdd-button is-small is-secondary is-loading">Loading</button>
 ```
 
 ## Action button
+`hdd-button`.`has-icon`
+
+Action buttons are for prompting a user action that will affect another part.
 
 ```action-button.html
-<button class="hdd-button has-icon is-right">Forward <i class="fal fa-arrow-right"></i></button>
-<button class="hdd-button has-icon is-right" disabled>Forward <i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button has-icon">Forward <i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button has-icon" disabled>Forward <i class="fal fa-arrow-right"></i></button>
 ```
 
 ## Next-button
+`hdd-button-icon`
 
 ```next-button.html
 <button class="hdd-button-icon"><i class="fal fa-arrow-right"></i></button>
@@ -39,11 +53,16 @@ Buttons should be used across the different internal services. If only one butto
 <button class="hdd-button-icon is-transparent"><i class="fal fa-arrow-right"></i></button>
 ```
 
-## Links
+### Mutations
+**`hdd-button`:**
 
-```links.html
-<a href="https://google.com" class="hdd-link">Normal</a>
-<a href="https://hafslundnett.no" class="hdd-link is-hovering">Hovered</a>
-<a href="https://hafslundnett.no" class="hdd-link is-active">Active</a>
-<a href="https://hafslundnett.no" class="hdd-link no-hover">Disabled hover state</a>
-```
+| class | description|
+| :--- | :--- |
+| `no-active` | Disable the `:active` state |
+| `no-focus` | Disable the `:focus` state |
+| `no-hover` | Disable the `:hover` state |
+| `is-active` | Sets the given button to it's active state |
+| `is-hovering` | Sets the given button to it's hovering state |
+| `is-loading` | Sets the given button to it's loading state |
+| `is-small` | Sets the given button to it's small state |
+| `is-transparent` | Sets the given button to it's transparent state |
