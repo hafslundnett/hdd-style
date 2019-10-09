@@ -1564,14 +1564,26 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;parent hdd-tooltip&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;hdd-tooltip&quot; style=&quot;margin-right: 10px&quot;&gt;
   Hover me
-  &lt;span class=&quot;hdd-tooltip_content is-leaning-right&quot;&gt;Hello world&lt;/span&gt;
-&lt;/span&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;parent hdd-tooltip&quot;&gt;
+  &lt;span class=&quot;hdd-tooltip_content is-leaning-right&quot;&gt;Right Leaning Tooltip&lt;/span&gt;
+&lt;/span&gt;
+|
+&lt;span class=&quot;hdd-tooltip&quot; style=&quot;margin-left: 10px&quot;&gt;
+  Hover me too
+  &lt;span class=&quot;hdd-tooltip_content is-leaning-left&quot;&gt;Left Leaning Tooltip&lt;/span&gt;
+&lt;/span&gt;
+">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;hdd-tooltip&quot; style=&quot;margin-right: 10px&quot;&gt;
   Hover me
-  &lt;span class=&quot;hdd-tooltip_content is-leaning-right&quot;&gt;Hello world&lt;/span&gt;
-&lt;/span&gt;</code></pre>
+  &lt;span class=&quot;hdd-tooltip_content is-leaning-right&quot;&gt;Right Leaning Tooltip&lt;/span&gt;
+&lt;/span&gt;
+|
+&lt;span class=&quot;hdd-tooltip&quot; style=&quot;margin-left: 10px&quot;&gt;
+  Hover me too
+  &lt;span class=&quot;hdd-tooltip_content is-leaning-left&quot;&gt;Left Leaning Tooltip&lt;/span&gt;
+&lt;/span&gt;
+</code></pre>
 	</div>
 </div><h3>Mutations</h3><p><strong><code>hdd-tooltip</code>:</strong></p>
 <table class="table"><thead><tr>
@@ -1580,7 +1592,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 </tr>
 </thead><tbody><tr>
 <td style="text-align:left"><code>no-hovering</code></td>
-<td style="text-align:left">Disable the <code>:hover</code> state</td>
+<td style="text-align:left">Disable the tooltip&#39;s <code>:hover</code> state</td>
 </tr>
 </tbody></table><p><strong><code>hdd-tooltip_content</code>:</strong></p>
 <table class="table"><thead><tr>
