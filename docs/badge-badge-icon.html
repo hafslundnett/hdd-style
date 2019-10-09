@@ -53,12 +53,10 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <button class="hdd-button has-icon">Forward <i class="fal fa-arrow-right"></i></button>
-<button class="hdd-button has-icon" disabled>Forward <i class="fal fa-arrow-right"></i></button>
+    <i class="fal fa-cog"><span class="hdd-badge-icon"></span></i>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><button class="hdd-button has-icon">Forward <i class="fal fa-arrow-right"></i></button>
-<button class="hdd-button has-icon" disabled>Forward <i class="fal fa-arrow-right"></i></button></script>
+			<script type="text/x-stylemark" data-language="html"><i class="fal fa-cog"><span class="hdd-badge-icon"></span></i></script>
 
 		<!--
 			Vanilla JS
@@ -91,10 +89,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-button-action-button', []);
+						module = angular.module('stylemark-badge-badge-icon', []);
 					}
 
-					module.controller('stylemark-button-action-button-' + index, function($scope) {
+					module.controller('stylemark-badge-badge-icon-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});
