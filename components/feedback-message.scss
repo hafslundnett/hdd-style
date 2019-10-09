@@ -1,5 +1,5 @@
 .feedback-container {
-  $c: &;
+  $this: &;
   display: flex;
   box-sizing: border-box;
   align-items: center;
@@ -8,12 +8,13 @@
   padding: $feedback-padding;
   border: none;
   border-radius: $feedback-border-radius;
-  @extend .feedback-container, .is-info;
+  // .is-info is the default for any feedback-container
+  @extend .is-info;
 
   &.is-info {
     background-color: color('blue-light3');
 
-    #{$c}_icon, #{$c}_message, #{$c}_close-button {
+    #{$this}_icon, #{$this}_message, #{$this}_close-button {
       color: color('font-color');
     }
   }
@@ -21,7 +22,7 @@
   &.is-warn {
     background-color: color('signal-yellow');
 
-    #{$c}_icon, #{$c}_message, #{$c}_close-button {
+    #{$this}_icon, #{$this}_message, #{$this}_close-button {
       color: color('font-color');
     }
   }
@@ -29,7 +30,7 @@
   &.is-error {
     background-color: color('signal-red');
 
-    #{$c}_icon, #{$c}_message, #{$c}_close-button {
+    #{$this}_icon, #{$this}_message, #{$this}_close-button {
       color: color('white');
     }
   }
