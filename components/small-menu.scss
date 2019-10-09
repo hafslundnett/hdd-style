@@ -68,11 +68,9 @@
         width: 1rem;
         margin-right: .5rem;
       }
-      //if there is no 
-      @if(no-hover) {
-          &:hover {
-            @extend .hdd-small-menu_list_item, .is-active;
-          }
+      //if not applying no-hover, then this style when hover
+      &:not(.no-hover):hover {
+        @extend .hdd-small-menu_list_item, .is-active;
       }
       
       &.is-active {
