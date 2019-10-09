@@ -25,6 +25,7 @@ If only one button exists on a page, it should always be a primary button.
 The secondary button should never be used alone in a page.
 
 ```secondary-button.html
+
 <button class="hdd-button is-secondary">Secondary</button>
 <button class="hdd-button is-secondary" disabled>Disabled</button>
 <button class="hdd-button is-secondary is-loading">Loading</button>
@@ -43,8 +44,10 @@ Action buttons are for prompting a user action that will affect another part.
 <button class="hdd-button has-icon" disabled>Forward <i class="fal fa-arrow-right"></i></button>
 ```
 
-## Next-button
+## Icon-button
 `hdd-button-icon`
+
+A button that only contains an icon and should be used when an icon is used as an button.
 
 ```next-button.html
 <button class="hdd-button-icon"><i class="fal fa-arrow-right"></i></button>
@@ -65,4 +68,9 @@ Action buttons are for prompting a user action that will affect another part.
 | `is-hovering` | Sets the given button to it's hovering state |
 | `is-loading` | Sets the given button to it's loading state |
 | `is-small` | Sets the given button to it's small state |
+
+**`hdd-button-icon`:**
+
+| class | description|
+| :--- | :--- |
 | `is-transparent` | Sets the given button to it's transparent state |
