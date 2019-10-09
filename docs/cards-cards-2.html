@@ -3,9 +3,6 @@
 
 	<head>
 		<style>
-					.hdd-card {
-  margin-bottom: 20px!important;
-}
 		</style>
 
 		<style>
@@ -56,21 +53,7 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div class="hdd-card is-full-height">
-  <div class="hdd-card_header">
-    <div class="hdd-card_header_text">
-      <div class="hdd-card_title is-center">Title</div>
-    </div>
-    <button class="hdd-card_header_action">
-      <i class="fal fa-cog"></i>
-    </button>
-  </div>
-  <div class="hdd-card_content">
-    <p>Example-content</p>
-  </div>
-</div>
-
-<div class="hdd-card">
+    <div class="hdd-card">
   <div class="hdd-card_header">
     <div class="hdd-card_header_icon">
       <i class="fal fa-info"></i>
@@ -86,60 +69,9 @@
     <button class="hdd-button">Full width button</button>
   </div>
 </div>
-
-<div class="hdd-card">
-  <div class="hdd-card_header">
-    <div class="hdd-card_header_icon">
-      <i class="fal fa-info"></i>
-    </div>
-    <div class="hdd-card_header_text">
-      <div class="hdd-card_title">Title</div>
-      <div class="hdd-card_subtitle">Subtitle</div>
-    </div>
-    <button class="hdd-card_header_action">
-      <i class="fal fa-cog"></i>
-    </button>
-  </div>
-  <div class="hdd-card_content">
-    <p>Example-content</p>
-  </div>
-  <div class="hdd-card_actions">
-    <button class="hdd-button">Cancel action</button>
-    <button class="hdd-button">Complete action</button>
-  </div>
 </div>
 
-<div class="hdd-card">
-  <div class="hdd-card_header">
-    <div class="hdd-card_header_text">
-      <div class="hdd-card_title">Title</div>
-      <div class="hdd-card_subtitle">Subtitle</div>
-    </div>
-  </div>
-  <div class="hdd-card_content">
-    <p>Any content can be placed within the card body.</p>
-  </div>
-  <div class="hdd-card_actions">
-    <button class="hdd-card_actions_action">View more</button>
-  </div>
-</div>
-</div>
-
-			<script type="text/x-stylemark" data-language="html"><div class="hdd-card is-full-height">
-  <div class="hdd-card_header">
-    <div class="hdd-card_header_text">
-      <div class="hdd-card_title is-center">Title</div>
-    </div>
-    <button class="hdd-card_header_action">
-      <i class="fal fa-cog"></i>
-    </button>
-  </div>
-  <div class="hdd-card_content">
-    <p>Example-content</p>
-  </div>
-</div>
-
-<div class="hdd-card">
+			<script type="text/x-stylemark" data-language="html"><div class="hdd-card">
   <div class="hdd-card_header">
     <div class="hdd-card_header_icon">
       <i class="fal fa-info"></i>
@@ -153,48 +85,8 @@
   </div>
   <div class="hdd-card_actions">
     <button class="hdd-button">Full width button</button>
-  </div>
-</div>
-
-<div class="hdd-card">
-  <div class="hdd-card_header">
-    <div class="hdd-card_header_icon">
-      <i class="fal fa-info"></i>
-    </div>
-    <div class="hdd-card_header_text">
-      <div class="hdd-card_title">Title</div>
-      <div class="hdd-card_subtitle">Subtitle</div>
-    </div>
-    <button class="hdd-card_header_action">
-      <i class="fal fa-cog"></i>
-    </button>
-  </div>
-  <div class="hdd-card_content">
-    <p>Example-content</p>
-  </div>
-  <div class="hdd-card_actions">
-    <button class="hdd-button">Cancel action</button>
-    <button class="hdd-button">Complete action</button>
-  </div>
-</div>
-
-<div class="hdd-card">
-  <div class="hdd-card_header">
-    <div class="hdd-card_header_text">
-      <div class="hdd-card_title">Title</div>
-      <div class="hdd-card_subtitle">Subtitle</div>
-    </div>
-  </div>
-  <div class="hdd-card_content">
-    <p>Any content can be placed within the card body.</p>
-  </div>
-  <div class="hdd-card_actions">
-    <button class="hdd-card_actions_action">View more</button>
   </div>
 </div></script>
-			<script type="text/x-stylemark" data-language="css">.hdd-card {
-  margin-bottom: 20px!important;
-}</script>
 
 		<!--
 			Vanilla JS
@@ -227,10 +119,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-cards-cards', []);
+						module = angular.module('stylemark-cards-cards-2', []);
 					}
 
-					module.controller('stylemark-cards-cards-' + index, function($scope) {
+					module.controller('stylemark-cards-cards-2-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});
