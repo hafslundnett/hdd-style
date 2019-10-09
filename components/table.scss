@@ -1,6 +1,6 @@
 .hdd-table {
   //Creating variable containing '&' to jump to parent inside a child class.   
-  $b: #{&};
+  $this: &;
 
   min-width: 100%;
   overflow: scroll;
@@ -14,7 +14,7 @@
     padding: $table-row-padding;
     text-align: left;
 
-    &#{$b}_action {
+    &#{$this}_action {
       display: flex;
       float: right;
       font-size: font-size(icon-small);
@@ -42,7 +42,7 @@
   }
 
   &:not(.no-row-padding) {
-    &#{$b}_row,
+    &#{$this}_row,
     tr {
       > *:first-child {
         padding-left: $table-first-column-padding;

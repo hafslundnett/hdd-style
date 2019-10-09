@@ -4,7 +4,7 @@
    ************************/
   &_field {
     //Creating variable containing '&' to jump to parent inside a child class. 
-    $e: #{&};
+    $this: &;
 
     display: block;
     position: relative;
@@ -52,7 +52,7 @@
 
     &.is-line {
       > * {
-        &:not(#{$e}_title):not(#{$e}_error) {
+        &:not(#{$this}_title):not(#{$this}_error) {
           margin-right: 1rem;
           float: left;
         }
@@ -70,7 +70,7 @@
   &_input {
     
     //Creating variable containing '&' to jump to parent inside a child class. 
-    $e: #{&};
+    $this: &;
 
     display: flex;
     box-sizing: border-box;
@@ -90,7 +90,7 @@
     &.is-focus {
       border-color: color('primary');
 
-      #{$e}_icon,
+      #{$this}_icon,
       svg,
       i {
         opacity: 1;
@@ -156,7 +156,7 @@
    ************************/
   &_checkbox {
     //Creating variable containing '&' to jump to parent inside a child class. 
-    $e: #{&};
+    $this: &;
     
     display: flex;
     align-items: center;
@@ -181,14 +181,14 @@
     }
 
     &.is-checked {
-      #{$e}_mark {
+      #{$this}_mark {
         @extend %checkbox-mark;
       }
     }
 
     &.is-invalid {
-      input:checked ~ #{$e}_mark,
-      #{$e}_mark {
+      input:checked ~ #{$this}_mark,
+      #{$this}_mark {
         border-color: color('signal-red');
 
         &::before {
@@ -201,7 +201,7 @@
     input {
       display: none;
 
-      &:checked ~ #{$e}_mark {
+      &:checked ~ #{$this}_mark {
         @extend %checkbox-mark, .is-checked;
       }
     }
@@ -234,7 +234,7 @@
    ************************/
   &_radiobutton {
     //Creating variable containing '&' to jump to parent inside a child class. 
-    $e: #{&};
+    $this: &;
 
     display: flex;
     align-items: center;
@@ -255,7 +255,7 @@
     }
 
     &.is-checked {
-      #{$e}_mark {
+      #{$this}_mark {
         // @extend %radiobutton-mark.is-checked;
         @extend %radiobutton-mark, .is-checked;
       }
@@ -264,7 +264,7 @@
     input {
       display: none;
 
-      &:checked ~ #{$e}_mark {
+      &:checked ~ #{$this}_mark {
         // @extend %radiobutton-mark.is-checked;
         @extend %radiobutton-mark, .is-checked;
       }
@@ -292,7 +292,7 @@
    ************************/
   &_select {
     //Creating variable containing '&' to jump to parent inside a child class. 
-    $e: #{&};
+    $this: &;
 
     display: flex;
     position: relative;
@@ -332,7 +332,7 @@
         color: color('primary');
       }
 
-      #{$e}_icon,
+      #{$this}_icon,
       > svg,
       > i {
         opacity: 1;
