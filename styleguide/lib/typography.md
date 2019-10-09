@@ -4,7 +4,7 @@ category: Utilities
 ---
 The typeface should be kept consistent in all mediums, physical and digital.
 
-### Helvetica Neue LT Std
+### Roboto
 ```search-fields.html
 <h1>Heading 1</h1>
 <h1>ABCDEFHILMNOPQRSTVXÆØÅ</h1>
