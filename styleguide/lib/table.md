@@ -8,7 +8,7 @@ Create a basic html table in the Hdd style. A table can consist out of data, but
 All color sub classes can be used on the form rows. These colors get added as a small bar at the beginning of the row.
 
 ```stripedtable.html
-<table class="hdd-table is-striped">
+<table class="hdd-table is-striped has-shadow">
   <tr class="hdd-table_header">
     <th>ID<i class="far fa-arrow-up"></i></th>
     <th>Kundenr.<i class="far fa-arrow-up"></i></th>
@@ -27,14 +27,36 @@ All color sub classes can be used on the form rows. These colors get added as a 
       <button class="hdd-button is-small">Submit</button>
     </td>
   </tr>
+  <tr class="is-danger">
+    <th>2</th>
+    <td>872736</td>
+    <td>123419384</td>
+    <td>23</td>
+    <td class="hdd-table_action">
+      <i class="far fa-angle-down"></i>
+      <i class="far fa-ellipsis-v"></i>
+      <button class="hdd-button is-small">Submit</button>
+    </td>
+  </tr>
+  <tr class="is-warn">
+    <th>3</th>
+    <td>938472</td>
+    <td>123419384</td>
+    <td>17</td>
+    <td class="hdd-table_action">
+      <i class="far fa-angle-down"></i>
+      <i class="far fa-ellipsis-v"></i>
+      <button class="hdd-button is-small">Submit</button>
+    </td>
+  </tr>
 </table>
 ```
 
-## Detail row
+## Detailed row
 
 In the Hdd design specs is it plausible to have a expandable rows that show more information about the given row.
 
-> ⚠️ When using the `is-striped` mutation on the `hdd-table` does it include the detail rows. When wanting to create a striped form is it advised to stripe the odd rows use the `is-stripe` row mutation instead.
+> ⚠️ When using the `is-striped` mutation on the `hdd-table` it does not include the detail rows. When wanting to create a striped form is it advised to stripe the odd rows use the `is-stripe` row mutation instead.
 
 ```expandabletable.html
 <tr class="hdd-table_details is-primary">
@@ -54,7 +76,7 @@ In the Hdd design specs is it plausible to have a expandable rows that show more
         <td>100</td>
         <td>CL-01 Død måler<br>CL-04 Dårlig Rssi<br>CL-12 Dårlig innsamling</td>
         <td>Drammensveien 114</td>
-        <td>05.04.18</td>
+        <td>17.05.19</td>
         <td>89%</td>
         <td>-91dB</td>
       </tr>

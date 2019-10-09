@@ -1,6 +1,6 @@
 .hdd-small-menu {
   //Creating variable containing '&' to jump to parent inside a child class.   
-  $b: #{&};
+  $b: &;
 
   display: inline-block;
   position: relative;
@@ -68,7 +68,7 @@
         width: 1rem;
         margin-right: .5rem;
       }
-      //if not applying no-hover, then this style when hover
+  
       &:not(.no-hover):hover {
         @extend .hdd-small-menu_list_item, .is-active;
       }
