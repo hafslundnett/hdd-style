@@ -3,6 +3,8 @@ name: Radio button
 category: Form-Components
 ---
 
+A radiobutton component let a user select only one of a limited number of choices. 
+
 ```radiobutton.html
 
 <form class="hdd-form_field">
@@ -17,10 +19,11 @@ category: Form-Components
         <span class="hdd-form_radiobutton_mark"></span>
         <span class="hdd-form_radiobutton_label">Unpicked</span>
     </label>
-    <label class="hdd-form_radiobutton">
+    <label class="hdd-form_radiobutton is-checked">
         <input type="radio" name="formname" />
         <span class="hdd-form_radiobutton_mark"></span>
-        <span class="hdd-form_radiobutton_label">Unpicked</span>
+        <span class="hdd-form_radiobutton_label">Styled with 'is-checked' style</span>
     </label>
 </form>
 ```
+

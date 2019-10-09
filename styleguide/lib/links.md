@@ -1,0 +1,26 @@
+---
+name: Links
+category: Components
+---
+
+## Links
+
+```links.html
+<a href="https://google.com" class="hdd-link">Normal</a> <br>
+<a href="https://hafslundnett.no" class="hdd-link is-hovering">Hovered</a><br>
+<a href="https://hafslundnett.no" class="hdd-link no-hover">Disabled hover state</a><br>
+<a href="https://hafslundnett.no" class="hdd-link is-active">Active</a><br>
+```
+
+### Mutations
+**`hdd-link`:**
+
+| class | description|
+| :--- | :--- |
+| `no-active` | Disable the `:active` state|
+| `no-focus` | Disable the `:focus` state |
+| `no-hover` | Disable the `:hover` state |
+| `is-active` | Set the given link to it's active state |
+| `is-focus` | Set the given link to it's focus state  |
+| `is-hovering` | Set the given link to it's hovering state  |
+

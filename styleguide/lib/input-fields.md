@@ -4,21 +4,45 @@ category: Form-Components
 ---
 An input field should be a call to action. If the text/content can't be changed, it should not be in an input field, but shown as static text.
 
-En input skal oppfordre til handling fra brukeren. Dersom teksten/innholdet ikke kan endres skal det ikke opptre i et input-felt av noe slag (vises som statisk tekst).
-
 ```input-fields.html
 <div class="hdd-form_field">
-  <label class="hdd-form_field_label" for="title">Tittel</label>
+  <label class="hdd-form_field_label" for="title">Normal input field </label>
   <div class="hdd-form_input">
     <input id="title" placeholder="Placeholdertext">
   </div>
 </div>
 
 <div class="hdd-form_field">
-  <label class="hdd-form_field_label" for="title">Tittel</label>
+  <label class="hdd-form_field_label" for="title">Disabled</label>
+  <div class="hdd-form_input is-disabled">
+    <input id="title" placeholder="Placeholdertext">
+  </div>
+</div>
+
+<div class="hdd-form_field">
+  <label class="hdd-form_field_label" for="title">Invalid (with field errormessage)</label>
   <div class="hdd-form_input is-invalid">
     <input id="title" value="ola.hafslund.no">
   </div>
   <span class="hdd-form_field_error is-active"><i class="fal fa-info-circle"></i>E-mailen må inneholde @</span>
 </div>
+
+<div class="hdd-form_field">
+  <label class="hdd-form_field_label" for="title">Textarea</label>
+  <div class="hdd-form_input">
+    <textarea placeholder="Placeholdertext"></textarea>
+  </div>
+</div>
 ```
+
+
+### Mutations
+**`hdd-form_input`:**
+
+| class | description|
+| :--- | :--- |
+| `is-disabled` | Set the input field to it's disabled state |
+| `is-invalid` | Set the input field to it's invalid state |
+
+
+
