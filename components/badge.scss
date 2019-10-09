@@ -1,5 +1,7 @@
 .hdd-badge {
+  // .is-p-small is font-properties, defined in typography.
   @extend .is-p-small;
+  // Colors available for badge
   @include color-modifiers(('primary', 'warn', 'danger', 'safe'), 'background', 'color');
 
   padding: $badge-padding;
