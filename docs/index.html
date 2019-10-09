@@ -819,16 +819,45 @@ Usage of icons in feedback messages should be kept to an absolute minimum, since
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;a href=&quot;https://google.com&quot; class=&quot;hdd-link&quot;&gt;Normal&lt;/a&gt;
-&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-hovering&quot;&gt;Hovered&lt;/a&gt;
-&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-active&quot;&gt;Active&lt;/a&gt;
-&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link no-hover&quot;&gt;Disabled hover state&lt;/a&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;a href=&quot;https://google.com&quot; class=&quot;hdd-link&quot;&gt;Normal&lt;/a&gt;
-&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-hovering&quot;&gt;Hovered&lt;/a&gt;
-&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-active&quot;&gt;Active&lt;/a&gt;
-&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link no-hover&quot;&gt;Disabled hover state&lt;/a&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;a href=&quot;https://google.com&quot; class=&quot;hdd-link&quot;&gt;Normal&lt;/a&gt; &lt;br&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-hovering&quot;&gt;Hovered&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link no-hover&quot;&gt;Disabled hover state&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-active&quot;&gt;Active&lt;/a&gt;&lt;br&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;a href=&quot;https://google.com&quot; class=&quot;hdd-link&quot;&gt;Normal&lt;/a&gt; &lt;br&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-hovering&quot;&gt;Hovered&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link no-hover&quot;&gt;Disabled hover state&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-active&quot;&gt;Active&lt;/a&gt;&lt;br&gt;</code></pre>
 	</div>
-</div></div>
+</div><h3>Mutations</h3><p><strong><code>hdd-link</code>:</strong></p>
+<table class="table"><thead><tr>
+<th style="text-align:left">class</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead><tbody><tr>
+<td style="text-align:left"><code>no-active</code></td>
+<td style="text-align:left">Disable the <code>:active</code> state</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>no-focus</code></td>
+<td style="text-align:left">Disable the <code>:focus</code> state</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>no-hover</code></td>
+<td style="text-align:left">Disable the <code>:hover</code> state</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-active</code></td>
+<td style="text-align:left">Set the given link to it&#39;s active state</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-focus</code></td>
+<td style="text-align:left">Set the given link to it&#39;s focus state</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-hovering</code></td>
+<td style="text-align:left">Set the given link to it&#39;s hovering state</td>
+</tr>
+</tbody></table></div>
 </div>
 
 						<div id="search-fields" class="i-library theme-content-element">

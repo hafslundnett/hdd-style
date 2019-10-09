@@ -11,6 +11,7 @@
     text-align: left;
 
     &_label {
+      // .is-p is setting font properties from variables/typography
       @extend .is-p;
 
       display: inline-block;
@@ -19,6 +20,7 @@
     }
 
     &_title {
+      // .is-p is setting font properties from variables/typography
       @extend .is-p;
       display: block;
       margin-bottom: 1rem;
@@ -111,6 +113,7 @@
     &_field,
     > input,
     > textarea {
+      // .is-p is setting font properties from variables/typography
       @extend .is-p;
 
       width: 100%;
