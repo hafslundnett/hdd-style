@@ -65,6 +65,8 @@
    *  Input
    ************************/
   &_input {
+    
+    //Creating variable containing '&' to jump to parent inside a child class. 
     $e: #{&};
 
     display: flex;
@@ -79,7 +81,6 @@
     background: color('white');
 
     &:not(.is-invalid):focus-within {
-      // @extend #{$e}.is-focus;
       @extend .hdd-form_input, .is-focus;
     }
 
@@ -150,13 +151,15 @@
    *  Checkbox
    ************************/
   &_checkbox {
+    //Creating variable containing '&' to jump to parent inside a child class. 
     $e: #{&};
-
+    
     display: flex;
     align-items: center;
     margin-bottom: .75rem;
     cursor: pointer;
-
+    
+    // Creating placeholder to inject style into checkbox mutations.
     // We have to seperate the checkbox marked styling because of the checked state
     %checkbox-mark {
       position: relative;
@@ -195,11 +198,11 @@
       display: none;
 
       &:checked ~ #{$e}_mark {
-        // @extend %checkbox-mark.is-checked;
         @extend %checkbox-mark, .is-checked;
       }
     }
 
+    // not used, migth remove later on?
     .hdd-badge {
       margin-left: .5rem;
       float: right;
@@ -226,6 +229,7 @@
    *  Radiobutton
    ************************/
   &_radiobutton {
+    //Creating variable containing '&' to jump to parent inside a child class. 
     $e: #{&};
 
     display: flex;
@@ -233,6 +237,7 @@
     margin-bottom: .75rem;
     cursor: pointer;
 
+    // Creating placeholder to inject style into radiobutton mutations.
     %radiobutton-mark.is-checked {
       position: relative;
       background-color: color('primary');
@@ -282,6 +287,7 @@
    *  Select
    ************************/
   &_select {
+    //Creating variable containing '&' to jump to parent inside a child class. 
     $e: #{&};
 
     display: flex;
@@ -312,7 +318,6 @@
     }
 
     &:focus-within {
-      // @extend #{$e}.is-focus;
       @extend .hdd-form_select, .is-focus;
     }
 

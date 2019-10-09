@@ -1385,11 +1385,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 </tr>
 </thead><tbody><tr>
 <td style="text-align:left"><code>is-invalid</code></td>
-<td style="text-align:left">Mark the checkbox as invalid</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>is-checked</code></td>
-<td style="text-align:left">Mark the checkbox as always checked</td>
+<td style="text-align:left">Set the checkbox to it&#39;s invalid state</td>
 </tr>
 </tbody></table></div>
 </div>
@@ -1431,55 +1427,74 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Tittel&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal input field &lt;/label&gt;
   &lt;div class=&quot;hdd-form_input&quot;&gt;
     &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Tittel&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Disabled&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input is-disabled&quot;&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Invalid (with field errormessage)&lt;/label&gt;
   &lt;div class=&quot;hdd-form_input is-invalid&quot;&gt;
     &lt;input id=&quot;title&quot; value=&quot;ola.hafslund.no&quot;&gt;
   &lt;/div&gt;
   &lt;span class=&quot;hdd-form_field_error is-active&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt;E-mailen må inneholde @&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Textarea&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;textarea placeholder=&quot;Placeholdertext&quot;&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Tittel&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal input field &lt;/label&gt;
   &lt;div class=&quot;hdd-form_input&quot;&gt;
     &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Tittel&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Disabled&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input is-disabled&quot;&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Invalid (with field errormessage)&lt;/label&gt;
   &lt;div class=&quot;hdd-form_input is-invalid&quot;&gt;
     &lt;input id=&quot;title&quot; value=&quot;ola.hafslund.no&quot;&gt;
   &lt;/div&gt;
   &lt;span class=&quot;hdd-form_field_error is-active&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt;E-mailen må inneholde @&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Textarea&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;textarea placeholder=&quot;Placeholdertext&quot;&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><h3>Mutations</h3><p><strong><code>hdd-form_field</code>:</strong>
-<strong><code>hdd-form_input</code>:</strong></p>
-<p>| JUST FROM DATEPICKER MUTATIONS REWRITE | This is dummydata |
-| class | description|
-| :--- | :--- |
-| <code>is-inline</code> | Use the datepicker as a inline element |
-| <code>is-active</code> | Show the datepicker |
-| <code>has-arrow-left</code> | Places the arrow on the left side of the datepicker and aligns the datepicker tip as center point |
-| <code>has-arrow-right</code> | Places the arrow on the right side of the datepicker and aligns the datepicker tip as center point |</p>
-<p><strong><code>hdd-datepicker_container_days &gt; span</code></strong> | <strong><code>hdd-datepicker_container_days_day</code>:</strong></p>
+</div><h3>Mutations</h3><p><strong><code>hdd-form_input</code>:</strong></p>
 <table class="table"><thead><tr>
 <th style="text-align:left">class</th>
 <th style="text-align:left">description</th>
 </tr>
 </thead><tbody><tr>
-<td style="text-align:left"><code>is-selected</code></td>
-<td style="text-align:left">Set the given day to the selected style</td>
+<td style="text-align:left"><code>is-disabled</code></td>
+<td style="text-align:left">Set the input field to it&#39;s disabled state</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>is-in-range</code></td>
-<td style="text-align:left">Set the given day to the in range style</td>
+<td style="text-align:left"><code>is-invalid</code></td>
+<td style="text-align:left">Set the input field to it&#39;s invalid state</td>
 </tr>
 </tbody></table></div>
 </div>
@@ -1533,10 +1548,10 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
         &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
         &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Unpicked&lt;/span&gt;
     &lt;/label&gt;
-    &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
+    &lt;label class=&quot;hdd-form_radiobutton is-checked&quot;&gt;
         &lt;input type=&quot;radio&quot; name=&quot;formname&quot; /&gt;
         &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
-        &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Unpicked&lt;/span&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Styled with &#39;is-checked&#39; style&lt;/span&gt;
     &lt;/label&gt;
 &lt;/form&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">
@@ -1552,10 +1567,10 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
         &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
         &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Unpicked&lt;/span&gt;
     &lt;/label&gt;
-    &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
+    &lt;label class=&quot;hdd-form_radiobutton is-checked&quot;&gt;
         &lt;input type=&quot;radio&quot; name=&quot;formname&quot; /&gt;
         &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
-        &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Unpicked&lt;/span&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Styled with &#39;is-checked&#39; style&lt;/span&gt;
     &lt;/label&gt;
 &lt;/form&gt;</code></pre>
 	</div>
@@ -1599,7 +1614,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Velg handling&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Select Option&lt;/label&gt;
   &lt;div class=&quot;hdd-form_select&quot;&gt;
     &lt;select id=&quot;select-alt1&quot; placeholder=&quot;Placeholder text&quot;&gt;
       &lt;option&gt;Alternative 1&lt;/option&gt;
@@ -1608,10 +1623,22 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
     &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
 &lt;/div&gt;
+
 &lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Velg handling&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Select Option(Disabled)&lt;/label&gt;
   &lt;div class=&quot;hdd-form_select is-disabled&quot;&gt;
     &lt;select id=&quot;select-alt2&quot; placeholder=&quot;Placeholder text&quot; disabled&gt;
+      &lt;option&gt;Alternative 1&lt;/option&gt;
+      &lt;option&gt;Alternative 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Select Option(Invalid)&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_select is-invalid&quot;&gt;
+    &lt;select id=&quot;select-alt2&quot; placeholder=&quot;Placeholder text&quot;&gt;
       &lt;option&gt;Alternative 1&lt;/option&gt;
       &lt;option&gt;Alternative 2&lt;/option&gt;
     &lt;/select&gt;
@@ -1619,7 +1646,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
   &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Velg handling&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Select Option&lt;/label&gt;
   &lt;div class=&quot;hdd-form_select&quot;&gt;
     &lt;select id=&quot;select-alt1&quot; placeholder=&quot;Placeholder text&quot;&gt;
       &lt;option&gt;Alternative 1&lt;/option&gt;
@@ -1628,8 +1655,9 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
     &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
 &lt;/div&gt;
+
 &lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Velg handling&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Select Option(Disabled)&lt;/label&gt;
   &lt;div class=&quot;hdd-form_select is-disabled&quot;&gt;
     &lt;select id=&quot;select-alt2&quot; placeholder=&quot;Placeholder text&quot; disabled&gt;
       &lt;option&gt;Alternative 1&lt;/option&gt;
@@ -1637,9 +1665,33 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
     &lt;/select&gt;
     &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Select Option(Invalid)&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_select is-invalid&quot;&gt;
+    &lt;select id=&quot;select-alt2&quot; placeholder=&quot;Placeholder text&quot;&gt;
+      &lt;option&gt;Alternative 1&lt;/option&gt;
+      &lt;option&gt;Alternative 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div></div>
+</div><h3>Mutations</h3><p><strong><code>hdd-form-select</code>:</strong></p>
+<table class="table"><thead><tr>
+<th style="text-align:left">class</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead><tbody><tr>
+<td style="text-align:left"><code>is-disabled</code></td>
+<td style="text-align:left">Set the select to it&#39;s invalid state</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-invalid</code></td>
+<td style="text-align:left">Set the select to it&#39;s invalid state</td>
+</tr>
+</tbody></table></div>
 </div>
 
 				</div>
