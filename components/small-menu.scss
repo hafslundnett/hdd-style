@@ -1,4 +1,5 @@
 .hdd-small-menu {
+  //Creating variable containing '&' to jump to parent inside a child class.   
   $b: #{&};
 
   display: inline-block;
@@ -51,7 +52,6 @@
     }
 
     &_item {
-      $e: #{&};
       display: flex;
       box-sizing: border-box;
       align-items: center;
@@ -68,11 +68,13 @@
         width: 1rem;
         margin-right: .5rem;
       }
-
-      &:not(.no-hover):hover {
-        @extend .hdd-small-menu_list_item, .is-active;
+      //if there is no 
+      @if(no-hover) {
+          &:hover {
+            @extend .hdd-small-menu_list_item, .is-active;
+          }
       }
-
+      
       &.is-active {
         background: color('blue-light3');
       }

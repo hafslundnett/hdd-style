@@ -1,5 +1,5 @@
 .hdd-link {
-	// .is-p is setting font properties from variables/typography
+	// .is-p is font-properties, defined in typography
 	@extend .is-p;
 
 	color: color('primary');
