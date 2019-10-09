@@ -25,7 +25,6 @@ If only one button exists on a page, it should always be a primary button.
 The secondary button should never be used alone in a page.
 
 ```secondary-button.html
-
 <button class="hdd-button is-secondary">Secondary</button>
 <button class="hdd-button is-secondary" disabled>Disabled</button>
 <button class="hdd-button is-secondary is-loading">Loading</button>

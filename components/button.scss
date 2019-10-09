@@ -75,8 +75,9 @@
   &.is-loading {
     // .fal is icon-properties
     @extend .fal;
-    color: transparent;
 
+    color: transparent;
+    
     &::after {
       @extend .fa-spinner-third, :before;
       @include animation(spinner, .5s, infinite, linear);
