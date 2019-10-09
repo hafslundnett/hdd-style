@@ -1,4 +1,5 @@
 .hdd-table {
+  //Creating variable containing '&' to jump to parent inside a child class.   
   $b: #{&};
 
   min-width: 100%;
