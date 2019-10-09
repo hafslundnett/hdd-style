@@ -5,7 +5,12 @@ category: Components
 
 In component based services (especially internal systems), content can be structured using Cards.
 
-```cards.html
+## Card 1
+`hdd-card`
+
+Normal card.
+
+```cards-1.html
 <div class="hdd-card is-full-height">
   <div class="hdd-card_header">
     <div class="hdd-card_header_text">
@@ -19,7 +24,15 @@ In component based services (especially internal systems), content can be struct
     <p>Example-content</p>
   </div>
 </div>
+</div>
+```
 
+## Card 2
+`hdd-card`
+ 
+ Card with action.
+
+```cards-2.html
 <div class="hdd-card">
   <div class="hdd-card_header">
     <div class="hdd-card_header_icon">
@@ -36,7 +49,14 @@ In component based services (especially internal systems), content can be struct
     <button class="hdd-button">Full width button</button>
   </div>
 </div>
+```
 
+## Card 3
+`hdd-card`
+
+Card with actions.
+
+```cards-3.html
 <div class="hdd-card">
   <div class="hdd-card_header">
     <div class="hdd-card_header_icon">
@@ -58,7 +78,14 @@ In component based services (especially internal systems), content can be struct
     <button class="hdd-button">Complete action</button>
   </div>
 </div>
+```
 
+## Card 4
+`hdd-card`
+
+Card with action.
+
+```cards-4.html
 <div class="hdd-card">
   <div class="hdd-card_header">
     <div class="hdd-card_header_text">
@@ -75,8 +102,16 @@ In component based services (especially internal systems), content can be struct
 </div>
 ```
 
-```cards.css hidden
-.hdd-card {
-  margin-bottom: 20px!important;
-}
-```
+
+### Mutations
+**`hdd-card`:**
+
+| class | description|
+| :--- | :--- |
+| `is-full-height` | Sets the given card to it's full height |
+
+**`hdd-card_header`:**
+
+| class | description|
+| :--- | :--- |
+| `is-center` | Sets the given content of card header centered |
