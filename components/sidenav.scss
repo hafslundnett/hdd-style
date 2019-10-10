@@ -1,6 +1,6 @@
 .hdd-sidenav {
-  //Creating variable containing '&' to jump to parent inside a child class.   
-  $c: #{&};
+  // Variable containing '&' to jump to current parent inside a child class.  
+  $this: &;
 
   @include box-shadow($shadow-light);
   @include transition(width $medium-transition $transition-cubic);
@@ -15,7 +15,7 @@
   &.is-active {
     width: $sidenav-extended-width;
 
-    #{$c}_list {
+    #{$this}_list {
       &_item {
         &_label {
           margin-left: 0;
@@ -31,7 +31,6 @@
     }
   }
   
-  // Setting the class at the root element of layout component, check layout.md for more info. 
   @at-root {
     .hdd-layout_sidenav {
       min-width: $sidenav-collapsed-width;
@@ -47,7 +46,8 @@
 
   &_list {
     &_item {
-      $c: #{&};
+      // Variable containing '&' to jump to current parent inside a child class. 
+      $this: &;
       @include transition(all $short-transition $transition-cubic);
 
       display: flex;
@@ -59,8 +59,8 @@
       &.is-active {
         background: color('blue-light1');
 
-        #{$c}_icon,
-        #{$c}_label {
+        #{$this}_icon,
+        #{$this}_label {
           color: color('white');
         }
       }
