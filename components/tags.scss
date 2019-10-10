@@ -32,19 +32,5 @@
     &:first-child {
       margin-left: 0;
     }
-
-    & .is-primary {
-    background: color('blue-light3');
-    } 
-
-    & .is-danger {
-      background: color('signal-red');
-    }
-    & .is-warn {
-      background: color('signal-yellow');
-    }
-    & .is-safe {
-      background: color('signal-green');
-    }
   }
 }
