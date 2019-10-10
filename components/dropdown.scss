@@ -19,16 +19,16 @@
 
     // Alignement is not used in documentation, migh rework later if there is a need for these attributes. 
 
-    // &.is-aligned-top {
-    //   // Still needs work
-    //   top: -100%;
-    //   bottom: 100%;
-    // }
+    &.is-aligned-top {
+      // Still needs work
+      top: -100%;
+      bottom: 100%;
+    }
 
-    // &.is-aligned-bottom {
-    //   top: calc(100% + #{$dropdown-spacing-element});
-    //   bottom: 0;
-    // }
+    &.is-aligned-bottom {
+      top: calc(100% + #{$dropdown-spacing-element});
+      bottom: 0;
+    }
 
     &.is-active {
       display: inline-table;

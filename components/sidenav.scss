@@ -26,6 +26,7 @@
   }
 
   &:hover {
+    // Extends the the sidenav style only if the "no-hover" class is not applied.
     &:not(.no-hover) {
       @extend .hdd-sidenav, .is-active;
     }
