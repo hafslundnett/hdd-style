@@ -5,14 +5,27 @@ category: Layout-Components
 
 > 🚧 It advised to place the `hdd-navigation` block in the `hdd-layout` block wrapped in the `hdd-layout_navigation` element.
 
-```html
-<div class="hdd-navigation">
-    hdd-navigation subclasses:
+```navigation.html
+<div class="hdd-layout">
+    <div class="hdd-layout_navigation hdd-navigation">
+        
+            <div class="hdd-navigation_logo">
+                <a class="hdd-sidenav_logo" href="#">
+                    <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
+                </a>
+            </div>
+            <div class="hdd-navigation_title">
+                Example title
+            </div>
+            <div class="hdd-navigation_user">
+                Kari Nordmann
+            </div>
+            <div class="hdd-navigation_avatar">
 
-    "hdd-navigation_logo" | For logo size attributes
-    "hdd-navigation_title" | For title font properties
-    "hdd-navigation_user" | For username positioning
-    "hdd-navigation_avatar" | For avatar positioning and style attributes
+            </div>
+
+    </div>
 </div>
+
 
 ```
