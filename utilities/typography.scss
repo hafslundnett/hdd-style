@@ -2,6 +2,11 @@
 @import '../variables/fontawesome/fa-light';
 @import '../variables/fontawesome/fa-regular';
 
+/**
+ * Looper over $typography i variables og lager .is-klassene
+ * Klassene som genereres: is-h1, is-h2, is-h3, is-p, is-p-faded, is-p-small, is-icon-small, is-icon-medium, is-icon-large
+ */
+
 @each $label, $map in $typography {
   $family: map-get($map, family);
   $size: map-get($map, size);
