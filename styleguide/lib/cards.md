@@ -115,3 +115,9 @@ Card with action.
 | class | description|
 | :--- | :--- |
 | `is-center` | Sets the given content of card header centered |
+
+**`hdd-card_actions`:**
+
+| class | description|
+| :--- | :--- |
+| `no-hover` | Disable the `:hover` state |

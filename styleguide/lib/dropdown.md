@@ -11,7 +11,17 @@ category: Components
     <div class="hdd-dropdown_content_item is-active"><b>Jer</b>oen</div>
     <div class="hdd-dropdown_content_item">Stian</div>
     <div class="hdd-dropdown_content_item">Erik</div>
+    <div class="hdd-dropdown_content_item">Per</div>
+    <div class="hdd-dropdown_content_item no-hover">Pål</div>
   </div>
 </div>
 
 ```
+
+### Mutations
+**`hdd-dropdown_content_item`:**
+
+| class | description|
+| :--- | :--- |
+| `no-hover` | Disable the `:hover` state |
+
