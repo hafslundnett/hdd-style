@@ -49,38 +49,6 @@
   }
 }
 
-.is-title {
-  margin-bottom: 15px;
-}
-
-.is-subtitle {
-  margin-bottom: 7.5px;
-}
-
-.is-text-left {
-  text-align: left;
-}
-
-.is-text-right {
-  text-align: right;
-}
-
-.is-text-center {
-  text-align: center;
-}
-
-.is-text-uppercase {
-  text-transform: uppercase;
-}
-
-.is-text-lowercase {
-  text-transform: lowercase;
-}
-
-.is-text-capitalize {
-  text-transform: capitalize;
-}
-
 body {
   @extend .is-p;
 }
