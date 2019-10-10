@@ -1198,6 +1198,7 @@ Below is a example of how to achieve this with sass.</p>
   &lt;span class=&quot;hdd-small-menu_title&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/span&gt;
   &lt;ul class=&quot;hdd-small-menu_list is-active&quot;&gt;
     &lt;li class=&quot;hdd-small-menu_list_item&quot;&gt;Profile&lt;/li&gt;
+    &lt;li class=&quot;hdd-small-menu_list_item no-hover&quot;&gt;No hover&lt;/li&gt;
     &lt;li class=&quot;hdd-small-menu_list_item is-active&quot;&gt;Active tab&lt;/li&gt;
     &lt;li class=&quot;hdd-small-menu_list_item&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Logout&lt;/li&gt;
   &lt;/ul&gt;
@@ -1206,6 +1207,7 @@ Below is a example of how to achieve this with sass.</p>
   &lt;span class=&quot;hdd-small-menu_title&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/span&gt;
   &lt;ul class=&quot;hdd-small-menu_list is-active&quot;&gt;
     &lt;li class=&quot;hdd-small-menu_list_item&quot;&gt;Profile&lt;/li&gt;
+    &lt;li class=&quot;hdd-small-menu_list_item no-hover&quot;&gt;No hover&lt;/li&gt;
     &lt;li class=&quot;hdd-small-menu_list_item is-active&quot;&gt;Active tab&lt;/li&gt;
     &lt;li class=&quot;hdd-small-menu_list_item&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Logout&lt;/li&gt;
   &lt;/ul&gt;
@@ -1226,23 +1228,18 @@ menu.addEventListener(&#39;click&#39;, function(e) {
   menuList.classList.toggle(&#39;is-active&#39;)
 })</code></pre>
 	</div>
-</div><h3>Mutations</h3><p><strong><code>hdd-small-menu</code>:</strong></p>
-<table class="table"><thead><tr>
-<th style="text-align:left">class</th>
-<th style="text-align:left">description</th>
-</tr>
-</thead><tbody><tr>
-<td style="text-align:left"><code>no-hovering</code></td>
-<td style="text-align:left">Disable the <code>:hover</code> state</td>
-</tr>
-</tbody></table><p><strong><code>hdd-small-menu_list</code>:</strong></p>
+</div><h3>Mutations</h3><p><strong><code>hdd-small-menu_list_item</code>:</strong></p>
 <table class="table"><thead><tr>
 <th style="text-align:left">class</th>
 <th style="text-align:left">description</th>
 </tr>
 </thead><tbody><tr>
 <td style="text-align:left"><code>is-active</code></td>
-<td style="text-align:left">Set the given small menu to it&#39;s active state</td>
+<td style="text-align:left">Set the given small menu item to it&#39;s active state</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>no-hover</code></td>
+<td style="text-align:left">Disable the <code>:hover</code> state</td>
 </tr>
 </tbody></table></div>
 </div>
@@ -2231,7 +2228,16 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
   &lt;/div&gt;
 &lt;/nav&gt;</code></pre>
 	</div>
-</div><h3>Mutations</h3><p><strong><code>hdd-sidenav_list_item</code>:</strong></p>
+</div><h3>Mutations</h3><p><strong><code>hdd-sidenav</code>:</strong></p>
+<table class="table"><thead><tr>
+<th style="text-align:left">class</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead><tbody><tr>
+<td style="text-align:left"><code>no-hover</code></td>
+<td style="text-align:left">Disable the <code>:hover</code> state</td>
+</tr>
+</tbody></table><p><strong><code>hdd-sidenav_list_item</code>:</strong></p>
 <table class="table"><thead><tr>
 <th style="text-align:left">class</th>
 <th style="text-align:left">description</th>

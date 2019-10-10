@@ -58,6 +58,13 @@ category: Layout-Components
 ```
 
 ### Mutations
+
+**`hdd-sidenav`:**
+
+| class | description|
+| :--- | :--- |
+| `no-hover` | Disable the `:hover` state |
+
 **`hdd-sidenav_list_item`:**
 
 | class | description|
