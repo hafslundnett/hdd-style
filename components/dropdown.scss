@@ -2,7 +2,7 @@
   position: relative;
 
   &_content {
-    @extend .hdd-dropdown_content ;
+    @extend #{&}.is-aligned-bottom;
 
     display: none;
     position: absolute;
@@ -16,8 +16,6 @@
     border-radius: $dropdown-border-radius;
 
     background: color('white');
-
-    // Alignement is not used in documentation, migh rework later if there is a need for these attributes. 
 
     &.is-aligned-top {
       // Still needs work
@@ -35,12 +33,13 @@
     }
 
     &_item {
+      $e: #{&};
 
       padding: $dropdown-item-padding;
       cursor: pointer;
 
       &:hover:not(.no-hover) {
-        @extend .hdd-dropdown_content_item, .is-active;
+        @extend #{$e}.is-active;
       }
 
       &.is-active {
