@@ -59,10 +59,10 @@ In the Hdd design specs is it plausible to have a expandable rows that show more
 > ⚠️ When using the `is-striped` mutation on the `hdd-table` it does not include the detail rows. When wanting to create a striped form is it advised to stripe the odd rows use the `is-stripe` row mutation instead.
 
 ```expandabletable.html
-<tr class="hdd-table_details is-primary">
+<tr class="hdd-table_details">
   <td colspan="4">
     <table class="hdd-table is-aligned-top">
-      <tr class="hdd-table_header">
+      <tr class="hdd-table_header is-stripe">
         <th>Målepunkt</th>
         <th>Anleggsraning</th>
         <th>Klassifiseringer</th>
@@ -70,6 +70,24 @@ In the Hdd design specs is it plausible to have a expandable rows that show more
         <th>Siste aksjon utført</th>
         <th>Innsamling siste 7 dagen</th>
         <th>Snitt RSSI siste 7 dagen</th>
+      </tr>
+      <tr>
+        <td>M: 101231</td>
+        <td>100</td>
+        <td>CL-01 Død måler<br>CL-04 Dårlig Rssi<br>CL-12 Dårlig innsamling</td>
+        <td>Drammensveien 114</td>
+        <td>17.05.19</td>
+        <td>89%</td>
+        <td>-91dB</td>
+      </tr>
+      <tr class="is-stripe">
+        <td>M: 101231</td>
+        <td>100</td>
+        <td>CL-01 Død måler<br>CL-04 Dårlig Rssi<br>CL-12 Dårlig innsamling</td>
+        <td>Drammensveien 114</td>
+        <td>17.05.19</td>
+        <td>89%</td>
+        <td>-91dB</td>
       </tr>
       <tr>
         <td>M: 101231</td>
