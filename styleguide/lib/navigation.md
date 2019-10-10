@@ -17,9 +17,9 @@ category: Layout-Components
             <div class="hdd-navigation_title">
                 Example title
             </div>
-            <div class="hdd-navigation_user">
+            <!-- <div class="hdd-navigation_user">
                 Kari Nordmann
-            </div>
+            </div> -->
             <div class="hdd-navigation_avatar">
 
             </div>
