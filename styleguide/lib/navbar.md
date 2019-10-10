@@ -1,9 +1,9 @@
 ---
-name: Navbar
+name: Sidenav
 category: Layout-Components
 ---
 
-## Sidebar
+## Sidenav
 ```nav.html
 <nav class="hdd-layout_sidenav">
   <div class="hdd-sidenav">

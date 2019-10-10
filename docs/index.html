@@ -48,8 +48,8 @@
 							</optgroup>
 							<optgroup label="Layout-Components">
 									<option value="header">Header</option>
-									<option value="navbar">Navbar</option>
 									<option value="navigation">Navigation</option>
+									<option value="sidenav">Sidenav</option>
 							</optgroup>
 							<optgroup label="Utilities">
 									<option value="accessibility">Accessibility</option>
@@ -2168,16 +2168,51 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 </div></div>
 </div>
 
-						<div id="navbar" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">Navbar</h1>
+						<div id="navigation" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Navigation</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">navigation.md</span>
+	</span>
+	<div class="theme-content-element-description"><blockquote>
+<p>🚧 It advised to place the <code>hdd-navigation</code> block in the <code>hdd-layout</code> block wrapped in the <code>hdd-layout_navigation</code> element.</p>
+</blockquote>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> html</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-navigation&quot;&gt;
+    hdd-navigation subclasses:
+
+    &quot;hdd-navigation_logo&quot; | For logo size attributes
+    &quot;hdd-navigation_title&quot; | For title font properties
+    &quot;hdd-navigation_user&quot; | For username positioning
+    &quot;hdd-navigation_avatar&quot; | For avatar positioning and style attributes
+&lt;/div&gt;
+">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-navigation&quot;&gt;
+    hdd-navigation subclasses:
+
+    &quot;hdd-navigation_logo&quot; | For logo size attributes
+    &quot;hdd-navigation_title&quot; | For title font properties
+    &quot;hdd-navigation_user&quot; | For username positioning
+    &quot;hdd-navigation_avatar&quot; | For avatar positioning and style attributes
+&lt;/div&gt;
+</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="sidenav" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Sidenav</h1>
 	<span class="theme-content-element-source">
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">navbar.md</span>
 	</span>
-	<div class="theme-content-element-description"><div id="sidebar" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#sidebar" class="icon-link i-section__link -heading"></a>Sidebar</h2></div><div class="i-example">
+	<div class="theme-content-element-description"><div id="sidenav" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#sidenav" class="icon-link i-section__link -heading"></a>Sidenav</h2></div><div class="i-example">
                     <h5 class="i-example__heading">
                         <a
-                            href="navbar-nav.html"
+                            href="sidenav-nav.html"
                             target="_blank"
                             class="plain-link"
                             data-toggle="tooltip"
@@ -2192,7 +2227,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
                         <div
                             class="i-example__iframe"
                             lazyframe
-                            data-src="navbar-nav.html"
+                            data-src="sidenav-nav.html"
                             data-initinview="true"
                             data-title="Loading..." 
                         ></div>
@@ -2309,41 +2344,6 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 <td style="text-align:left">Set the given hdd-sidenav_list_item to it&#39;s active state</td>
 </tr>
 </tbody></table></div>
-</div>
-
-						<div id="navigation" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">Navigation</h1>
-	<span class="theme-content-element-source">
-		<span class="theme-content-element-source-label">Source:</span>
-		<span class="theme-content-element-source-path">navigation.md</span>
-	</span>
-	<div class="theme-content-element-description"><blockquote>
-<p>🚧 It advised to place the <code>hdd-navigation</code> block in the <code>hdd-layout</code> block wrapped in the <code>hdd-layout_navigation</code> element.</p>
-</blockquote>
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang "> html</button>
-	<div class="i-code-block__content ">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-navigation&quot;&gt;
-    hdd-navigation subclasses:
-
-    &quot;hdd-navigation_logo&quot; | For logo size attributes
-    &quot;hdd-navigation_title&quot; | For title font properties
-    &quot;hdd-navigation_user&quot; | For username positioning
-    &quot;hdd-navigation_avatar&quot; | For avatar positioning and style attributes
-&lt;/div&gt;
-">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-navigation&quot;&gt;
-    hdd-navigation subclasses:
-
-    &quot;hdd-navigation_logo&quot; | For logo size attributes
-    &quot;hdd-navigation_title&quot; | For title font properties
-    &quot;hdd-navigation_user&quot; | For username positioning
-    &quot;hdd-navigation_avatar&quot; | For avatar positioning and style attributes
-&lt;/div&gt;
-</code></pre>
-	</div>
-</div></div>
 </div>
 
 				</div>
@@ -2846,7 +2846,7 @@ The best way of including a set of color modifiers is by using the <code>color-m
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Header  Navbar  Navigation "
+							data-filter-value=" Header  Navigation  Sidenav "
 						>
 							<a href="#category-layout-components" class="i-sidebar-list-item">
 								<b>Layout-Components</b>
@@ -2862,18 +2862,18 @@ The best way of including a set of color modifiers is by using the <code>color-m
 									<span>Header</span>
 								</a>
 								<a
-									href="#navbar"
-									class="i-sidebar-list-item theme-sidebar-element"
-									data-filter-value="Navbar"
-								>
-									<span>Navbar</span>
-								</a>
-								<a
 									href="#navigation"
 									class="i-sidebar-list-item theme-sidebar-element"
 									data-filter-value="Navigation"
 								>
 									<span>Navigation</span>
+								</a>
+								<a
+									href="#sidenav"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Sidenav"
+								>
+									<span>Sidenav</span>
 								</a>
 						</div>
 			
