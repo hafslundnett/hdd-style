@@ -5,7 +5,9 @@ category: Utilities
 The typeface should be kept consistent in all mediums, physical and digital.
 
 ### Roboto
-```search-fields.html
+Roboto is default font for all text.
+
+```roboto.html
 <h1>Heading 1</h1>
 <h1>ABCDEFHILMNOPQRSTVXÆØÅ</h1>
 <h1>abcdefghijklmnopqrstuvwxyzæøå</h1>
