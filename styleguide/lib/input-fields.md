@@ -13,14 +13,22 @@ An input field should be a call to action. If the text/content can't be changed,
 </div>
 
 <div class="hdd-form_field">
-  <label class="hdd-form_field_label" for="title">Disabled</label>
+  <label class="hdd-form_field_label" for="title">Normal input field with icon</label>
+  <div class="hdd-form_input">
+    <i class="fal fa-info-circle hdd-form_input_icon"></i>
+    <input id="title" placeholder="Placeholdertext">
+  </div>
+</div>
+
+<div class="hdd-form_field">
+  <label class="hdd-form_field_label" for="title">Disabled input field</label>
   <div class="hdd-form_input is-disabled">
     <input id="title" placeholder="Placeholdertext">
   </div>
 </div>
 
 <div class="hdd-form_field">
-  <label class="hdd-form_field_label" for="title">Invalid (with field errormessage)</label>
+  <label class="hdd-form_field_label" for="title">Invalid input fielt with field errormessage</label>
   <div class="hdd-form_input is-invalid">
     <input id="title" value="ola.hafslund.no">
   </div>

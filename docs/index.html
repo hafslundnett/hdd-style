@@ -198,8 +198,8 @@ Below is a example of how to achieve this with sass.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">badge.md</span>
 	</span>
-	<div class="theme-content-element-description"><div id="badge" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#badge" class="icon-link i-section__link -heading"></a>Badge</h2></div><p><code>hdd-badge</code></p>
-<p>A small red dot indication dot with optionally a number inside. All colors can be used on a <code>hdd-badge</code> by default is the color <code>signal-red</code> used for badges.</p>
+	<div class="theme-content-element-description"><p>All colors can be used on <code>hdd-badge</code> and <code>hdd-badge-icon</code>. <code>signal-red</code> is used as the default color.</p>
+<div id="badge" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#badge" class="icon-link i-section__link -heading"></a>Badge</h2></div><p><code>hdd-badge</code></p>
 <p><strong>Example</strong></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -231,16 +231,22 @@ Below is a example of how to achieve this with sass.</p>
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
-  &lt;span&gt;Element 1 &lt;span class=&quot;hdd-badge is-danger&quot;&gt;5&lt;/span&gt;&lt;/span&gt;
+  &lt;span&gt;Example 1 &lt;span class=&quot;hdd-badge&quot;&gt;5&lt;/span&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding-top: 1rem;&quot; class=&quot;is-p&quot;&gt;
-  &lt;span&gt;Element 2 &lt;span class=&quot;hdd-badge is-primary&quot;&gt;10&lt;/span&gt;&lt;/span&gt;
+&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
+  &lt;span&gt;Example 2 &lt;span class=&quot;hdd-badge is-primary&quot;&gt;8&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
+  &lt;span&gt;Example 2 &lt;span class=&quot;hdd-badge is-safe&quot;&gt;10&lt;/span&gt;&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div&gt;
-  &lt;span&gt;Element 1 &lt;span class=&quot;hdd-badge is-danger&quot;&gt;5&lt;/span&gt;&lt;/span&gt;
+  &lt;span&gt;Example 1 &lt;span class=&quot;hdd-badge&quot;&gt;5&lt;/span&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding-top: 1rem;&quot; class=&quot;is-p&quot;&gt;
-  &lt;span&gt;Element 2 &lt;span class=&quot;hdd-badge is-primary&quot;&gt;10&lt;/span&gt;&lt;/span&gt;
+&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
+  &lt;span&gt;Example 2 &lt;span class=&quot;hdd-badge is-primary&quot;&gt;8&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
+  &lt;span&gt;Example 2 &lt;span class=&quot;hdd-badge is-safe&quot;&gt;10&lt;/span&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><div id="icon-badge" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#icon-badge" class="icon-link i-section__link -heading"></a>Icon badge</h2></div><p><code>hdd-badge-icon</code></p>
@@ -275,8 +281,24 @@ Below is a example of how to achieve this with sass.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon&quot;&gt;&lt;/span&gt;&lt;/i&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon&quot;&gt;&lt;/span&gt;&lt;/i&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
+  &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon&quot;&gt;&lt;/span&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
+  &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon is-primary&quot;&gt;&lt;/span&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
+  &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon is-safe&quot;&gt;&lt;/span&gt;&lt;/i&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div&gt;
+  &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon&quot;&gt;&lt;/span&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
+  &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon is-primary&quot;&gt;&lt;/span&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
+  &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon is-safe&quot;&gt;&lt;/span&gt;&lt;/i&gt;
+&lt;/div&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -1767,14 +1789,22 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 &lt;/div&gt;
 
 &lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Disabled&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal input field with icon&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;i class=&quot;fal fa-info-circle hdd-form_input_icon&quot;&gt;&lt;/i&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Disabled input field&lt;/label&gt;
   &lt;div class=&quot;hdd-form_input is-disabled&quot;&gt;
     &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Invalid (with field errormessage)&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Invalid input fielt with field errormessage&lt;/label&gt;
   &lt;div class=&quot;hdd-form_input is-invalid&quot;&gt;
     &lt;input id=&quot;title&quot; value=&quot;ola.hafslund.no&quot;&gt;
   &lt;/div&gt;
@@ -1795,14 +1825,22 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 &lt;/div&gt;
 
 &lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Disabled&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal input field with icon&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;i class=&quot;fal fa-info-circle hdd-form_input_icon&quot;&gt;&lt;/i&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Disabled input field&lt;/label&gt;
   &lt;div class=&quot;hdd-form_input is-disabled&quot;&gt;
     &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Invalid (with field errormessage)&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Invalid input fielt with field errormessage&lt;/label&gt;
   &lt;div class=&quot;hdd-form_input is-invalid&quot;&gt;
     &lt;input id=&quot;title&quot; value=&quot;ola.hafslund.no&quot;&gt;
   &lt;/div&gt;
@@ -1958,7 +1996,19 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 &lt;/div&gt;
 
 &lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Select Option(Disabled)&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Select Option with icon&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_select has-icon&quot;&gt;
+    &lt;i class=&quot;fal fa-info-circle hdd-form_select_icon&quot;&gt;&lt;/i&gt;
+    &lt;select id=&quot;select-alt1&quot; placeholder=&quot;Placeholder text&quot;&gt;
+      &lt;option&gt;Alternative 1&lt;/option&gt;
+      &lt;option&gt;Alternative 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Select Option (Disabled)&lt;/label&gt;
   &lt;div class=&quot;hdd-form_select is-disabled&quot;&gt;
     &lt;select id=&quot;select-alt2&quot; placeholder=&quot;Placeholder text&quot; disabled&gt;
       &lt;option&gt;Alternative 1&lt;/option&gt;
@@ -1969,7 +2019,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 &lt;/div&gt;
 
 &lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Select Option(Invalid)&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Select Option (Invalid)&lt;/label&gt;
   &lt;div class=&quot;hdd-form_select is-invalid&quot;&gt;
     &lt;select id=&quot;select-alt2&quot; placeholder=&quot;Placeholder text&quot;&gt;
       &lt;option&gt;Alternative 1&lt;/option&gt;
@@ -1990,7 +2040,19 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 &lt;/div&gt;
 
 &lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Select Option(Disabled)&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Select Option with icon&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_select has-icon&quot;&gt;
+    &lt;i class=&quot;fal fa-info-circle hdd-form_select_icon&quot;&gt;&lt;/i&gt;
+    &lt;select id=&quot;select-alt1&quot; placeholder=&quot;Placeholder text&quot;&gt;
+      &lt;option&gt;Alternative 1&lt;/option&gt;
+      &lt;option&gt;Alternative 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Select Option (Disabled)&lt;/label&gt;
   &lt;div class=&quot;hdd-form_select is-disabled&quot;&gt;
     &lt;select id=&quot;select-alt2&quot; placeholder=&quot;Placeholder text&quot; disabled&gt;
       &lt;option&gt;Alternative 1&lt;/option&gt;
@@ -2001,7 +2063,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 &lt;/div&gt;
 
 &lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Select Option(Invalid)&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Select Option (Invalid)&lt;/label&gt;
   &lt;div class=&quot;hdd-form_select is-invalid&quot;&gt;
     &lt;select id=&quot;select-alt2&quot; placeholder=&quot;Placeholder text&quot;&gt;
       &lt;option&gt;Alternative 1&lt;/option&gt;
