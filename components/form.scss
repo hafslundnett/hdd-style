@@ -2,8 +2,9 @@
   /************************
    *  Field
    ************************/
+
   &_field {
-    //Creating variable containing '&' to jump to parent inside a child class. 
+    // Variable containing '&' to jump to current parent inside a child class.
     $this: &;
 
     display: block;
@@ -67,9 +68,10 @@
   /************************
    *  Input
    ************************/
+
   &_input {
     
-    //Creating variable containing '&' to jump to parent inside a child class. 
+    // Variable containing '&' to jump to current parent inside a child class.
     $this: &;
 
     display: flex;
@@ -154,8 +156,10 @@
   /************************
    *  Checkbox
    ************************/
+
   &_checkbox {
-    //Creating variable containing '&' to jump to parent inside a child class. 
+
+    // Variable containing '&' to jump to current parent inside a child class. 
     $this: &;
     
     display: flex;
@@ -206,7 +210,7 @@
       }
     }
 
-    // not used, migth remove later on?
+    // currently not in use
     .hdd-badge {
       margin-left: .5rem;
       float: right;
@@ -232,8 +236,10 @@
   /************************
    *  Radiobutton
    ************************/
+
   &_radiobutton {
-    //Creating variable containing '&' to jump to parent inside a child class. 
+
+    // Variable containing '&' to jump to current parent inside a child class.
     $this: &;
 
     display: flex;
@@ -290,8 +296,10 @@
   /************************
    *  Select
    ************************/
+
   &_select {
-    //Creating variable containing '&' to jump to parent inside a child class. 
+
+    // Variable containing '&' to jump to current parent inside a child class. 
     $this: &;
 
     display: flex;
