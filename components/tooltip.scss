@@ -4,7 +4,7 @@
 
   position: relative;
 
-  &:hover:not(.no-hovering) {
+  &:hover:not(.no-hover) {
     #{$this}_content {
       @extend .hdd-tooltip_content, .is-active;
     }

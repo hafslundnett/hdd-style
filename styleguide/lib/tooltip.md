@@ -23,7 +23,7 @@ A tooltip can give context to a given icon/piece of text. Tooltips are usually h
 
 | class | description|
 | :--- | :--- |
-| `no-hovering` | Disable the tooltip's `:hover` state |
+| `no-hover` | Disable the tooltip's `:hover` state |
 
 **`hdd-tooltip_content`:**
 
