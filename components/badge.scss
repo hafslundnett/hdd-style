@@ -13,6 +13,7 @@
   color: color-contrast('danger');
 
   &-icon {
+    @include color-modifiers(('primary', 'warn', 'danger', 'safe'), 'background', 'color');
     position: absolute;
     top: calc(#{$badge-icon-size}/-2);
     right: calc(#{$badge-icon-size}/-2);
