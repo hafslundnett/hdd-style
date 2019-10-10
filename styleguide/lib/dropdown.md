@@ -11,8 +11,7 @@ category: Components
     <div class="hdd-dropdown_content_item is-active">Jeroen</div>
     <div class="hdd-dropdown_content_item">Stian</div>
     <div class="hdd-dropdown_content_item">Erik</div>
-    <div class="hdd-dropdown_content_item">Fride</div>
-    <div class="hdd-dropdown_content_item">Martin</div>
   </div>
 </div>
+
 ```
