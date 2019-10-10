@@ -1,18 +1,18 @@
 .hdd-small-menu {
-  //Creating variable containing '&' to jump to parent inside a child class.   
-  $b: &;
+  // Variable containing '&' to jump to current parent inside a child class.   
+  $this: &;
 
   display: inline-block;
   position: relative;
 
   &:hover {
-    #{$b}_content:not(.no-hover):not(:hover) {
+    #{$this}_content:not(.no-hover):not(:hover) {
       @extend .hdd-small-menu_list, .is-active;
     }
   }
 
   &:focus {
-    #{$b}_content:not(.no-focus) {
+    #{$this}_content:not(.no-focus) {
       @extend .hdd-small-menu_list, .is-active;
     }
   }
