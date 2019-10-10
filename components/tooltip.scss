@@ -1,5 +1,5 @@
 .hdd-tooltip {
-  // Variable for appending style to parent class
+  // Variable containing '&' to jump to current parent inside a child class.
   $this: &;
 
   position: relative;
