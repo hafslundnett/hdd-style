@@ -1,4 +1,5 @@
 .feedback-container {
+  // Variable containing '&' to jump to current parent inside a child class.
   $this: &;
   display: flex;
   box-sizing: border-box;
