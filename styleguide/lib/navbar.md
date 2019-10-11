@@ -3,6 +3,8 @@ name: Sidenav
 category: Layout-Components
 ---
 
+>🚧 It is adviced to place the `hdd-navigation` in the `hdd-layout` block wrapped as an `hdd-layout_sidenav` element. 
+
 ## Sidenav
 ```nav.html
 <nav class="hdd-layout_sidenav">

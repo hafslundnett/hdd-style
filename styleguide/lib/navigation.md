@@ -1,4 +1,7 @@
----
+<!-- ---
+
+Placed the information from this chapter into the header and sidenav components where it is more relevant for when  implementing hdd-style navigation components. 
+
 name: Navigation
 category: Layout-Components
 ---
@@ -17,9 +20,9 @@ category: Layout-Components
             <div class="hdd-navigation_title">
                 Example title
             </div>
-            <!-- <div class="hdd-navigation_user">
+            <div class="hdd-navigation_user">
                 Kari Nordmann
-            </div> -->
+            </div>
             <div class="hdd-navigation_avatar">
 
             </div>
@@ -28,4 +31,4 @@ category: Layout-Components
 </div>
 
 
-```
+``` -->

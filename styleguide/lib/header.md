@@ -3,7 +3,9 @@ name: Header
 category: Layout-Components
 ---
 
-## Header
+>🚧 It is adviced to place the `hdd-navigation` in the `hdd-layout` block wrapped as an `hdd-layout_navigation` element. 
+
+## Header/Navbars
 ```header.html
 <header class="hdd-layout_navigation">
   <div class="hdd-navigation">
