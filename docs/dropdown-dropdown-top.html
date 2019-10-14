@@ -53,10 +53,20 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div class="hdd-form_input hdd-dropdown">
+    <div style="margin:20px">
+  <p>Some content</p>
+  <p>Some content</p>
+  <p>Some content</p>
+  <p>Some content</p>
+  <p>Some content</p>
+  <p>Some content</p>
+  <p>Some content</p>
+  <p>Some content</p>
+</div>
+<div class="hdd-form_input hdd-dropdown">
   <input value="Jer">
 
-  <div class="hdd-dropdown_content is-active">
+  <div class="hdd-dropdown_content is-active is-aligned-top">
     <div class="hdd-dropdown_content_item is-active"><b>Jer</b>oen</div>
     <div class="hdd-dropdown_content_item">Stian</div>
     <div class="hdd-dropdown_content_item no-hover">Erik</div>
@@ -65,10 +75,20 @@
 
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="hdd-form_input hdd-dropdown">
+			<script type="text/x-stylemark" data-language="html"><div style="margin:20px">
+  <p>Some content</p>
+  <p>Some content</p>
+  <p>Some content</p>
+  <p>Some content</p>
+  <p>Some content</p>
+  <p>Some content</p>
+  <p>Some content</p>
+  <p>Some content</p>
+</div>
+<div class="hdd-form_input hdd-dropdown">
   <input value="Jer">
 
-  <div class="hdd-dropdown_content is-active">
+  <div class="hdd-dropdown_content is-active is-aligned-top">
     <div class="hdd-dropdown_content_item is-active"><b>Jer</b>oen</div>
     <div class="hdd-dropdown_content_item">Stian</div>
     <div class="hdd-dropdown_content_item no-hover">Erik</div>
@@ -107,10 +127,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-dropdown-dropdown', []);
+						module = angular.module('stylemark-dropdown-dropdown-top', []);
 					}
 
-					module.controller('stylemark-dropdown-dropdown-' + index, function($scope) {
+					module.controller('stylemark-dropdown-dropdown-top-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

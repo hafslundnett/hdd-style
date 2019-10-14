@@ -1682,8 +1682,8 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">dropdown.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>The dropdown lets the user choose between a set of options</p>
-<div id="info-feedback" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#info-feedback" class="icon-link i-section__link -heading"></a>Info feedback</h2></div><p><code>hdd-form_input</code>.<code>hdd-dropdown</code></p>
+	<div class="theme-content-element-description"><p>The dropdown lets the user search for and choose between a set of options. The dropdown aligns to the bottom by default.</p>
+<div id="dropdown" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#dropdown" class="icon-link i-section__link -heading"></a>Dropdown</h2></div><p><code>hdd-form_input</code>.<code>hdd-dropdown</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -1719,9 +1719,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
   &lt;div class=&quot;hdd-dropdown_content is-active&quot;&gt;
     &lt;div class=&quot;hdd-dropdown_content_item is-active&quot;&gt;&lt;b&gt;Jer&lt;/b&gt;oen&lt;/div&gt;
     &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Stian&lt;/div&gt;
-    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Erik&lt;/div&gt;
-    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Per&lt;/div&gt;
-    &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Pål&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Erik&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 ">Copy</button>
@@ -1731,14 +1729,25 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
   &lt;div class=&quot;hdd-dropdown_content is-active&quot;&gt;
     &lt;div class=&quot;hdd-dropdown_content_item is-active&quot;&gt;&lt;b&gt;Jer&lt;/b&gt;oen&lt;/div&gt;
     &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Stian&lt;/div&gt;
-    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Erik&lt;/div&gt;
-    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Per&lt;/div&gt;
-    &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Pål&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Erik&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 	</div>
-</div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-dropdown_content_item</code>:</strong></p>
+</div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-dropdown_content</code>:</strong></p>
+<table class="table"><thead><tr>
+<th style="text-align:left">class</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead><tbody><tr>
+<td style="text-align:left"><code>is-active</code></td>
+<td style="text-align:left">Sets the given dropdown-content to it&#39;s active state</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-aligned-bottom</code></td>
+<td style="text-align:left">Sets the given dropdown-content to it&#39;s active state</td>
+</tr>
+</tbody></table><p><strong><code>hdd-dropdown_content_item</code>:</strong></p>
 <table class="table"><thead><tr>
 <th style="text-align:left">class</th>
 <th style="text-align:left">description</th>
@@ -1746,6 +1755,10 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 </thead><tbody><tr>
 <td style="text-align:left"><code>no-hover</code></td>
 <td style="text-align:left">Disable the <code>:hover</code> state</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-active</code></td>
+<td style="text-align:left">Sets the given dropdown-item to it&#39;s active state</td>
 </tr>
 </tbody></table></div>
 </div>
