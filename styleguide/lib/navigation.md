@@ -1,34 +1,31 @@
-<!-- ---
-
-Placed the information from this chapter into the header and sidenav components where it is more relevant for when  implementing hdd-style navigation components. 
-
+---
 name: Navigation
 category: Layout-Components
 ---
 
-> 🚧 It advised to place the `hdd-navigation` block in the `hdd-layout` block wrapped in the `hdd-layout_navigation` element.
+>🚧 It is adviced to place the `hdd-navigation` in the `hdd-layout` block wrapped as an `hdd-layout_navigation` element. 
+
+## Navigation
+`hdd-layout_navigation`
 
 ```navigation.html
-<div class="hdd-layout">
-    <div class="hdd-layout_navigation hdd-navigation">
-        
-            <div class="hdd-navigation_logo">
-                <a class="hdd-sidenav_logo" href="#">
-                    <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
-                </a>
-            </div>
-            <div class="hdd-navigation_title">
-                Example title
-            </div>
-            <div class="hdd-navigation_user">
-                Kari Nordmann
-            </div>
-            <div class="hdd-navigation_avatar">
+<header class="hdd-layout_navigation">
+  <div class="hdd-navigation">
+    <a class="hdd-navigation_logo" href="#">
+      <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
+    </a>
+    <h1 class="hdd-navigation_title">Overview</h1>
 
-            </div>
-
+    <div class="hdd-navigation_user">
+      <div class="hdd-small-menu">
+        <span class="hdd-small-menu_title">Kari Nordmann</span>
+        <ul class="hdd-small-menu_list is-active has-arrow-right">
+          <li class="hdd-small-menu_list_item"><i class="fal fa-user"></i>Profile</li>
+          <li class="hdd-small-menu_list_item"><i class="fal fa-sign-out"></i>Logout</li>
+        </ul>
+      </div>
+      <img class="hdd-navigation_avatar" src="http://placekitten.com/150/150"/>
     </div>
-</div>
-
-
-``` -->
+  </div>
+</header>
+```

@@ -125,10 +125,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-navigation-navigation', []);
+						module = angular.module('stylemark-header-navigation-header', []);
 					}
 
-					module.controller('stylemark-navigation-navigation-' + index, function($scope) {
+					module.controller('stylemark-header-navigation-header-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

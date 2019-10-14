@@ -47,7 +47,7 @@
 									<option value="select">Select</option>
 							</optgroup>
 							<optgroup label="Layout-Components">
-									<option value="header">Header</option>
+									<option value="navigation">Navigation</option>
 									<option value="sidenav">Sidenav</option>
 							</optgroup>
 							<optgroup label="Utilities">
@@ -113,33 +113,108 @@
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">layout.md</span>
 	</span>
-	<div class="theme-content-element-description"><div id="class" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#class" class="icon-link i-section__link -heading"></a>Class</h2></div><p><code>hdd-layout</code></p>
-<p>It is advised to add the <code>hdd-layout</code> block around your project page. The <code>hdd-layout</code> block can help you saving space around your content container for elements like sidebars or navigation. <code>hdd-layout</code> has one default child element which is called <code>content</code>. This element should contain the content that you want to show on the page. By default does the <code>content</code> child element fill the remaining free space on the page.</p>
-<p><strong>Example</strong></p>
+	<div class="theme-content-element-description"><p>It is advised to add the <code>hdd-layout</code> block around your project page. The <code>hdd-layout</code> block can help you save space around your content container for elements like sidebars or navigation. <code>hdd-layout</code> has one default child element which is called <code>content</code>. This element should contain the content that you want to show on the page. The <code>content</code> child element fill the remaining free space on the page by default.</p>
+<div id="layout" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#layout" class="icon-link i-section__link -heading"></a>Layout</h2></div><p><code>hdd-layout</code>, <code>hdd-layout_sidenav</code>, <code>hdd-layout_content</code>, <code>hdd-layout_navigation</code></p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="layout-layout.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="layout-layout.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
 
 <div class="i-code-block">
-	<button type="button" class="i-code-block__lang "> html</button>
-	<div class="i-code-block__content ">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-layout&quot;&gt;
-  &lt;div class=&quot;hdd-layout_sidenav&quot;&gt;
-    My sidebar navigation...
-  &lt;/div&gt;
+
+  &lt;nav class=&quot;hdd-layout_sidenav&quot;&gt;
+    &lt;div class=&quot;hdd-sidenav&quot;&gt;
+      &lt;a class=&quot;hdd-sidenav_logo&quot; href=&quot;#&quot;&gt;
+        &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
+      &lt;/a&gt;
+      &lt;ul class=&quot;hdd-sidenav_list&quot;&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#&quot; class=&quot;hdd-sidenav_list_item &quot;&gt;
+            &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
+              &lt;i class=&quot;fal fa-chart-pie&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+            &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
+              &lt;span&gt;Oversikt&lt;/span&gt;
+            &lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+
   &lt;div class=&quot;hdd-layout_content&quot;&gt;
-    My content...
+    &lt;header class=&quot;hdd-layout_navigation&quot;&gt;
+      &lt;div class=&quot;hdd-navigation&quot;&gt;
+        &lt;h1 class=&quot;hdd-navigation_title&quot;&gt;Overview&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+
+    &lt;div style=&quot;padding: 20px&quot;&gt;
+      My content...
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-layout&quot;&gt;
-  &lt;div class=&quot;hdd-layout_sidenav&quot;&gt;
-    My sidebar navigation...
-  &lt;/div&gt;
+
+  &lt;nav class=&quot;hdd-layout_sidenav&quot;&gt;
+    &lt;div class=&quot;hdd-sidenav&quot;&gt;
+      &lt;a class=&quot;hdd-sidenav_logo&quot; href=&quot;#&quot;&gt;
+        &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
+      &lt;/a&gt;
+      &lt;ul class=&quot;hdd-sidenav_list&quot;&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#&quot; class=&quot;hdd-sidenav_list_item &quot;&gt;
+            &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
+              &lt;i class=&quot;fal fa-chart-pie&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+            &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
+              &lt;span&gt;Oversikt&lt;/span&gt;
+            &lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+
   &lt;div class=&quot;hdd-layout_content&quot;&gt;
-    My content...
+    &lt;header class=&quot;hdd-layout_navigation&quot;&gt;
+      &lt;div class=&quot;hdd-navigation&quot;&gt;
+        &lt;h1 class=&quot;hdd-navigation_title&quot;&gt;Overview&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+
+    &lt;div style=&quot;padding: 20px&quot;&gt;
+      My content...
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><div id="extending-hdd-layout" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#extending-hdd-layout" class="icon-link i-section__link -heading"></a>Extending hdd-layout</h2></div><p>When wanting to add your block to the <code>hdd-layout</code> block please extend the <code>hdd-layout</code> class in your own block.
 Below is a example of how to achieve this with sass.</p>
-<p><strong>Example</strong></p>
 
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang "> sass</button>
@@ -2124,19 +2199,20 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 
 				</div>
 				<div id="category-layout-components" class="theme-content-category">
-						<div id="header" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">Header</h1>
+						<div id="navigation" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Navigation</h1>
 	<span class="theme-content-element-source">
 		<span class="theme-content-element-source-label">Source:</span>
-		<span class="theme-content-element-source-path">header.md</span>
+		<span class="theme-content-element-source-path">navigation.md</span>
 	</span>
 	<div class="theme-content-element-description"><blockquote>
 <p>🚧 It is adviced to place the <code>hdd-navigation</code> in the <code>hdd-layout</code> block wrapped as an <code>hdd-layout_navigation</code> element. </p>
 </blockquote>
-<div id="header-navbars" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#header-navbars" class="icon-link i-section__link -heading"></a>Header/Navbars</h2></div><div class="i-example">
+<div id="navigation" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#navigation" class="icon-link i-section__link -heading"></a>Navigation</h2></div><p><code>hdd-layout_navigation</code></p>
+<div class="i-example">
                     <h5 class="i-example__heading">
                         <a
-                            href="header-header.html"
+                            href="navigation-navigation.html"
                             target="_blank"
                             class="plain-link"
                             data-toggle="tooltip"
@@ -2151,7 +2227,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
                         <div
                             class="i-example__iframe"
                             lazyframe
-                            data-src="header-header.html"
+                            data-src="navigation-navigation.html"
                             data-initinview="true"
                             data-title="Loading..." 
                         ></div>
@@ -2211,9 +2287,10 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 		<span class="theme-content-element-source-path">navbar.md</span>
 	</span>
 	<div class="theme-content-element-description"><blockquote>
-<p>🚧 It is adviced to place the <code>hdd-navigation</code> in the <code>hdd-layout</code> block wrapped as an <code>hdd-layout_sidenav</code> element. </p>
+<p>🚧 It is adviced to place the <code>hdd-sidenav</code> in the <code>hdd-layout</code> block wrapped as an <code>hdd-layout_sidenav</code> element. </p>
 </blockquote>
-<div id="sidenav" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#sidenav" class="icon-link i-section__link -heading"></a>Sidenav</h2></div><div class="i-example">
+<div id="sidenav" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#sidenav" class="icon-link i-section__link -heading"></a>Sidenav</h2></div><p><code>hdd-layout_sidenav</code></p>
+<div class="i-example">
                     <h5 class="i-example__heading">
                         <a
                             href="sidenav-nav.html"
@@ -2850,7 +2927,7 @@ The best way of including a set of color modifiers is by using the <code>color-m
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Header  Sidenav "
+							data-filter-value=" Navigation  Sidenav "
 						>
 							<a href="#category-layout-components" class="i-sidebar-list-item">
 								<b>Layout-Components</b>
@@ -2859,11 +2936,11 @@ The best way of including a set of color modifiers is by using the <code>color-m
 			
 						<div>
 								<a
-									href="#header"
+									href="#navigation"
 									class="i-sidebar-list-item theme-sidebar-element"
-									data-filter-value="Header"
+									data-filter-value="Navigation"
 								>
-									<span>Header</span>
+									<span>Navigation</span>
 								</a>
 								<a
 									href="#sidenav"

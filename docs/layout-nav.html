@@ -3,6 +3,10 @@
 
 	<head>
 		<style>
+					/* 100% height makes the iframe funky on hover*/
+.hdd-sidenav {
+  height: 450px!important;
+}
 		</style>
 
 		<style>
@@ -52,47 +56,10 @@
 		
 	</head>
 
-	<body>					<div style="padding: 20px;">
-    <header class="hdd-layout_navigation">
-  <div class="hdd-navigation">
-    <a class="hdd-navigation_logo" href="#">
-      <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
-    </a>
-    <h1 class="hdd-navigation_title">Overview</h1>
-
-    <div class="hdd-navigation_user">
-      <div class="hdd-small-menu">
-        <span class="hdd-small-menu_title">Kari Nordmann</span>
-        <ul class="hdd-small-menu_list is-active has-arrow-right">
-          <li class="hdd-small-menu_list_item"><i class="fal fa-user"></i>Profile</li>
-          <li class="hdd-small-menu_list_item"><i class="fal fa-sign-out"></i>Logout</li>
-        </ul>
-      </div>
-      <img class="hdd-navigation_avatar" src="http://placekitten.com/150/150"/>
-    </div>
-  </div>
-</header>
-</div>
-
-			<script type="text/x-stylemark" data-language="html"><header class="hdd-layout_navigation">
-  <div class="hdd-navigation">
-    <a class="hdd-navigation_logo" href="#">
-      <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
-    </a>
-    <h1 class="hdd-navigation_title">Overview</h1>
-
-    <div class="hdd-navigation_user">
-      <div class="hdd-small-menu">
-        <span class="hdd-small-menu_title">Kari Nordmann</span>
-        <ul class="hdd-small-menu_list is-active has-arrow-right">
-          <li class="hdd-small-menu_list_item"><i class="fal fa-user"></i>Profile</li>
-          <li class="hdd-small-menu_list_item"><i class="fal fa-sign-out"></i>Logout</li>
-        </ul>
-      </div>
-      <img class="hdd-navigation_avatar" src="http://placekitten.com/150/150"/>
-    </div>
-  </div>
-</header></script>
+	<body>			<script type="text/x-stylemark" data-language="css">/* 100% height makes the iframe funky on hover*/
+.hdd-sidenav {
+  height: 450px!important;
+}</script>
 
 		<!--
 			Vanilla JS
@@ -125,10 +92,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-navigation-navigation', []);
+						module = angular.module('stylemark-layout-nav', []);
 					}
 
-					module.controller('stylemark-navigation-navigation-' + index, function($scope) {
+					module.controller('stylemark-layout-nav-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});
