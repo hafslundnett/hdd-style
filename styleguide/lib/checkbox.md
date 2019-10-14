@@ -36,4 +36,5 @@ Checkbox classes are asigned to the corresponding checkbox label.
 | class | description|
 | :--- | :--- |
 | `is-invalid` | Set the checkbox to it's invalid state |
+| `is-checked` | Set the checkbox style to it's checked class |
 
