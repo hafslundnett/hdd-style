@@ -21,6 +21,36 @@ The dropdown lets the user search for and choose between a set of options. The d
 
 ```
 
+## Dropdown aligned top
+`hdd-form_input`.`hdd-dropdown`
+
+Only use `is-aligned-top` when there are enough room from the top and not enough from the bottom.
+ 
+```dropdown-top.html
+<div style="margin:20px">
+  <p>Some content</p>
+  <p>Some content</p>
+  <p>Some content</p>
+  <p>Some content</p>
+  <p>Some content</p>
+  <p>Some content</p>
+  <p>Some content</p>
+  <p>Some content</p>
+</div>
+<div class="hdd-form_input hdd-dropdown">
+  <input value="Jer">
+ 
+  <div class="hdd-dropdown_content is-active is-aligned-top">
+    <div class="hdd-dropdown_content_item is-active"><b>Jer</b>oen</div>
+    <div class="hdd-dropdown_content_item">Stian</div>
+    <div class="hdd-dropdown_content_item">Rune</div>
+    <div class="hdd-dropdown_content_item no-hover">Erik</div>
+  </div>
+</div>
+ 
+```
+
+
 
 ## Mutations
 **`hdd-dropdown_content`:**
@@ -28,7 +58,8 @@ The dropdown lets the user search for and choose between a set of options. The d
 | class | description|
 | :--- | :--- |
 | `is-active` | Sets the given dropdown-content to it's active state |
-| `is-aligned-bottom` | Sets the given dropdown-content to it's active state |
+| `is-aligned-bottom` | Sets the given dropdown-content to be aligned at the bottom of the input field |
+| `is-aligned-top` | Sets the given dropdown-content to be aligned at the top of the input field |
 
 **`hdd-dropdown_content_item`:**
 

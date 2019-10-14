@@ -17,11 +17,11 @@
 
     background: color('white');
 
-    // Alignes the dropdown on to of the search field. 8 is max number of dropdown elements.
+    // Alignes the dropdown on top of the search field. 
     &.is-aligned-top {
-      // Still needs work
       top: initial;
-      bottom: 0;
+      // 18px is the overlap that was between the input field and the elements
+      bottom: 18px + $dropdown-spacing-element;
     }
 
     &.is-aligned-bottom {

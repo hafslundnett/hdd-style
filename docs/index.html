@@ -1676,7 +1676,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 </tr>
 <tr>
 <td style="text-align:left"><code>is-checked</code></td>
-<td style="text-align:left">Set the checkbox to it&#39;s checked state</td>
+<td style="text-align:left">Set the checkbox style to it&#39;s checked class</td>
 </tr>
 </tbody></table></div>
 </div>
@@ -1739,6 +1739,80 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 &lt;/div&gt;
 </code></pre>
 	</div>
+</div><div id="dropdown-aligned-top" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#dropdown-aligned-top" class="icon-link i-section__link -heading"></a>Dropdown aligned top</h2></div><p><code>hdd-form_input</code>.<code>hdd-dropdown</code></p>
+<p>Only use <code>is-aligned-top</code> when there are enough room from the top and not enough from the bottom.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="dropdown-dropdown-top.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="dropdown-dropdown-top.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;margin:20px&quot;&gt;
+  &lt;p&gt;Some content&lt;/p&gt;
+  &lt;p&gt;Some content&lt;/p&gt;
+  &lt;p&gt;Some content&lt;/p&gt;
+  &lt;p&gt;Some content&lt;/p&gt;
+  &lt;p&gt;Some content&lt;/p&gt;
+  &lt;p&gt;Some content&lt;/p&gt;
+  &lt;p&gt;Some content&lt;/p&gt;
+  &lt;p&gt;Some content&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;hdd-form_input hdd-dropdown&quot;&gt;
+  &lt;input value=&quot;Jer&quot;&gt;
+
+  &lt;div class=&quot;hdd-dropdown_content is-active is-aligned-top&quot;&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item is-active&quot;&gt;&lt;b&gt;Jer&lt;/b&gt;oen&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Stian&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Rune&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Erik&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;margin:20px&quot;&gt;
+  &lt;p&gt;Some content&lt;/p&gt;
+  &lt;p&gt;Some content&lt;/p&gt;
+  &lt;p&gt;Some content&lt;/p&gt;
+  &lt;p&gt;Some content&lt;/p&gt;
+  &lt;p&gt;Some content&lt;/p&gt;
+  &lt;p&gt;Some content&lt;/p&gt;
+  &lt;p&gt;Some content&lt;/p&gt;
+  &lt;p&gt;Some content&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;hdd-form_input hdd-dropdown&quot;&gt;
+  &lt;input value=&quot;Jer&quot;&gt;
+
+  &lt;div class=&quot;hdd-dropdown_content is-active is-aligned-top&quot;&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item is-active&quot;&gt;&lt;b&gt;Jer&lt;/b&gt;oen&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Stian&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Rune&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Erik&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-dropdown_content</code>:</strong></p>
 <table class="table"><thead><tr>
 <th style="text-align:left">class</th>
@@ -1750,7 +1824,11 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 </tr>
 <tr>
 <td style="text-align:left"><code>is-aligned-bottom</code></td>
-<td style="text-align:left">Sets the given dropdown-content to it&#39;s active state</td>
+<td style="text-align:left">Sets the given dropdown-content to be aligned at the bottom of the input field</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-aligned-top</code></td>
+<td style="text-align:left">Sets the given dropdown-content to be aligned at the top of the input field</td>
 </tr>
 </tbody></table><p><strong><code>hdd-dropdown_content_item</code>:</strong></p>
 <table class="table"><thead><tr>
@@ -1943,11 +2021,6 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
         &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
         &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Unpicked&lt;/span&gt;
     &lt;/label&gt;
-    &lt;label class=&quot;hdd-form_radiobutton is-checked&quot;&gt;
-        &lt;input type=&quot;radio&quot; name=&quot;formname&quot; /&gt;
-        &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
-        &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Styled as checked&lt;/span&gt;
-    &lt;/label&gt;
 &lt;/form&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;form class=&quot;hdd-form_field&quot;&gt;
     &lt;span class=&quot;hdd-form_field_title&quot;&gt;Radio buttons&lt;/span&gt;
@@ -1961,11 +2034,6 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
         &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
         &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Unpicked&lt;/span&gt;
     &lt;/label&gt;
-    &lt;label class=&quot;hdd-form_radiobutton is-checked&quot;&gt;
-        &lt;input type=&quot;radio&quot; name=&quot;formname&quot; /&gt;
-        &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
-        &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Styled as checked&lt;/span&gt;
-    &lt;/label&gt;
 &lt;/form&gt;</code></pre>
 	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-form_radiobutton</code>:</strong></p>
@@ -1975,7 +2043,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 </tr>
 </thead><tbody><tr>
 <td style="text-align:left"><code>is-checked</code></td>
-<td style="text-align:left">Set the checkbox to it&#39;s checked state</td>
+<td style="text-align:left">Set the radiobutton style to it&#39;s checked class</td>
 </tr>
 </tbody></table></div>
 </div>
