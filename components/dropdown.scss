@@ -2,7 +2,7 @@
   position: relative;
 
   &_content {
-    @extend #{&}.is-aligned-bottom;
+    @extend .is-aligned-bottom;
 
     display: none;
     position: absolute;
@@ -41,7 +41,7 @@
       cursor: pointer;
 
       &:hover:not(.no-hover) {
-        @extend #{$e}.is-active;
+        @extend .is-active;
       }
 
       &.is-active {
