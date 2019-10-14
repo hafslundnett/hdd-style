@@ -3,9 +3,11 @@ name: Checkbox
 category: Form-Components
 ---
 
-A checkbox component could be used to let a user select one or more options of a limited numberof choices. 
+A checkbox component lets a user select one or more options of a limited number of choices. 
 Checkbox classes are asigned to the corresponding checkbox label.
 
+## Checkbox
+`hdd-form_checkbox`
 
 ```checkbox.html
 <div class="hdd-form_field">
@@ -28,7 +30,7 @@ Checkbox classes are asigned to the corresponding checkbox label.
 </div>
 ```
 
-### Mutations
+## Mutations
 **`hdd-form_checkbox`:**
 
 | class | description|

@@ -5,33 +5,9 @@ category: Components
 
 In component based services (especially internal systems), content can be structured using Cards.
 
-## Card 1
-`hdd-card`
-
-Normal card.
-
-```cards-1.html
-<div class="hdd-card is-full-height">
-  <div class="hdd-card_header">
-    <div class="hdd-card_header_text">
-      <div class="hdd-card_title is-center">Title</div>
-    </div>
-    <button class="hdd-card_header_action">
-      <i class="fal fa-cog"></i>
-    </button>
-  </div>
-  <div class="hdd-card_content">
-    <p>Example-content</p>
-  </div>
-</div>
-</div>
-```
-
-## Card 2
+## Card with full width button
 `hdd-card`
  
- Card with action.
-
 ```cards-2.html
 <div class="hdd-card">
   <div class="hdd-card_header">
@@ -51,10 +27,8 @@ Normal card.
 </div>
 ```
 
-## Card 3
+## Card with header action
 `hdd-card`
-
-Card with actions.
 
 ```cards-3.html
 <div class="hdd-card">
@@ -80,10 +54,8 @@ Card with actions.
 </div>
 ```
 
-## Card 4
+## Card with action button
 `hdd-card`
-
-Card with action.
 
 ```cards-4.html
 <div class="hdd-card">
@@ -103,7 +75,7 @@ Card with action.
 ```
 
 
-### Mutations
+## Mutations
 **`hdd-card`:**
 
 | class | description|

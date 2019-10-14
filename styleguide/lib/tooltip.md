@@ -5,6 +5,9 @@ category: Components
 
 A tooltip can give context to a given icon/piece of text. Tooltips are usually hidden and become visible after a action or when hovering.
 
+## Tooltip
+`hdd-tooltip`
+
 ```tooltip.html
 <span class="hdd-tooltip" style="margin-right: 10px">
   Hover me
@@ -18,7 +21,7 @@ A tooltip can give context to a given icon/piece of text. Tooltips are usually h
 
 ```
 
-### Mutations
+## Mutations
 **`hdd-tooltip`:**
 
 | class | description|

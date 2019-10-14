@@ -3,10 +3,13 @@ name: Radio button
 category: Form-Components
 ---
 
-A radiobutton component let a user select only one of a limited number of choices. 
+A radiobutton component lets a user select only one of a limited number of choices. 
+
+
+## Radiobutton
+`hdd-form_radiobutton`
 
 ```radiobutton.html
-
 <form class="hdd-form_field">
     <span class="hdd-form_field_title">Radio buttons</span>
     <label class="hdd-form_radiobutton">

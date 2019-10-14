@@ -5,6 +5,9 @@ category: Components
 
 A small menu can hold a list of choices. It can be hidden and shown on hover/active state. Clicking the cog toggles the is-active in the example:
 
+## Small menu
+`hdd-small-menu`
+
 ```small-menu.html
 <div class="hdd-small-menu">
   <span class="hdd-small-menu_title"><i class="fal fa-cog"></i></span>
@@ -32,7 +35,7 @@ menu.addEventListener('click', function(e) {
 })
 ```
 
-### Mutations
+## Mutations
 
 **`hdd-small-menu_list_item`:**
 

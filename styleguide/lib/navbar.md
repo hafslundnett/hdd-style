@@ -61,7 +61,7 @@ category: Layout-Components
 }
 ```
 
-### Mutations
+## Mutations
 
 **`hdd-sidenav`:**
 

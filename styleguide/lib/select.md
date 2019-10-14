@@ -3,7 +3,10 @@ name: Select
 category: Form-Components
 ---
 
-A select component could be used to give a user a set of options.
+A select component lets a user choose between a set of options.
+
+## Select
+`hdd-form_select`
 
 ```select.html
 <div class="hdd-form_field">
@@ -52,7 +55,7 @@ A select component could be used to give a user a set of options.
 </div>
 ```
 
-### Mutations
+## Mutations
 **`hdd-form-select`:**
 
 | class | description|

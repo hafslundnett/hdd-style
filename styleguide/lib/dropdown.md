@@ -1,7 +1,12 @@
 ---
 name: Dropdown
-category: Components
+category: Form-Components
 ---
+
+The dropdown lets the user choose between a set of options
+
+## Info feedback
+`hdd-form_input`.`hdd-dropdown`
 
 ```dropdown.html
 <div class="hdd-form_input hdd-dropdown">
@@ -18,7 +23,7 @@ category: Components
 
 ```
 
-### Mutations
+## Mutations
 **`hdd-dropdown_content_item`:**
 
 | class | description|

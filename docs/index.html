@@ -31,10 +31,8 @@
 									<option value="badge">Badge</option>
 									<option value="button">Button</option>
 									<option value="cards">Cards</option>
-									<option value="dropdown">Dropdown</option>
 									<option value="feedback-message">Feedback message</option>
 									<option value="links">Links</option>
-									<option value="search-fields">Search fields</option>
 									<option value="small-menu">Small menu</option>
 									<option value="table">Table</option>
 									<option value="tags">Tags</option>
@@ -42,8 +40,10 @@
 							</optgroup>
 							<optgroup label="Form-Components">
 									<option value="checkbox">Checkbox</option>
+									<option value="dropdown">Dropdown</option>
 									<option value="input-fields">Input fields</option>
 									<option value="radio-button">Radio button</option>
+									<option value="search-fields">Search fields</option>
 									<option value="select">Select</option>
 							</optgroup>
 							<optgroup label="Layout-Components">
@@ -381,7 +381,7 @@ Below is a example of how to achieve this with sass.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">buttons.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>Buttons should be used across the different internal services. Changing the color of a button to convey purpose is not ideal as people with vision impairments will not be able to pick this up. Usage of other colors should be well discussed and the context around it clear enough.</p>
+	<div class="theme-content-element-description"><p>Buttons should be used across the different internal services. Changing the color of a button to convey purpose is not ideal as people with vision impairments will not be able to pick this up. Usage of other colors should be well discussed and the context around it clear.</p>
 <div id="primary-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#primary-button" class="icon-link i-section__link -heading"></a>Primary button</h2></div><p><code>hdd-button</code></p>
 <p>If only one button exists on a page, it should always be a primary button. </p>
 <div class="i-example">
@@ -546,7 +546,7 @@ Below is a example of how to achieve this with sass.</p>
 &lt;button class=&quot;hdd-button-icon is-active&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;button class=&quot;hdd-button-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
 	</div>
-</div><h3>Mutations</h3><p><strong><code>hdd-button</code>:</strong></p>
+</div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-button</code>:</strong></p>
 <table class="table"><thead><tr>
 <th style="text-align:left">class</th>
 <th style="text-align:left">description</th>
@@ -598,68 +598,7 @@ Below is a example of how to achieve this with sass.</p>
 		<span class="theme-content-element-source-path">cards.md</span>
 	</span>
 	<div class="theme-content-element-description"><p>In component based services (especially internal systems), content can be structured using Cards.</p>
-<div id="card-1" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#card-1" class="icon-link i-section__link -heading"></a>Card 1</h2></div><p><code>hdd-card</code></p>
-<p>Normal card.</p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="cards-cards-1.html"
-                            target="_blank"
-                            class="plain-link"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Open in a new window"
-                        >
-                            <i class="fa fa-external-link-square fa-fw"></i>
-                            Example
-                        </a>
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="cards-cards-1.html"
-                            data-initinview="true"
-                            data-title="Loading..." 
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-card is-full-height&quot;&gt;
-  &lt;div class=&quot;hdd-card_header&quot;&gt;
-    &lt;div class=&quot;hdd-card_header_text&quot;&gt;
-      &lt;div class=&quot;hdd-card_title is-center&quot;&gt;Title&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;button class=&quot;hdd-card_header_action&quot;&gt;
-      &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;hdd-card_content&quot;&gt;
-    &lt;p&gt;Example-content&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-card is-full-height&quot;&gt;
-  &lt;div class=&quot;hdd-card_header&quot;&gt;
-    &lt;div class=&quot;hdd-card_header_text&quot;&gt;
-      &lt;div class=&quot;hdd-card_title is-center&quot;&gt;Title&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;button class=&quot;hdd-card_header_action&quot;&gt;
-      &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;hdd-card_content&quot;&gt;
-    &lt;p&gt;Example-content&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div><div id="card-2" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#card-2" class="icon-link i-section__link -heading"></a>Card 2</h2></div><p><code>hdd-card</code></p>
-<p> Card with action.</p>
+<div id="card-with-full-width-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#card-with-full-width-button" class="icon-link i-section__link -heading"></a>Card with full width button</h2></div><p><code>hdd-card</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -722,8 +661,7 @@ Below is a example of how to achieve this with sass.</p>
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><div id="card-3" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#card-3" class="icon-link i-section__link -heading"></a>Card 3</h2></div><p><code>hdd-card</code></p>
-<p>Card with actions.</p>
+</div><div id="card-with-header-action" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#card-with-header-action" class="icon-link i-section__link -heading"></a>Card with header action</h2></div><p><code>hdd-card</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -796,8 +734,7 @@ Below is a example of how to achieve this with sass.</p>
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><div id="card-4" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#card-4" class="icon-link i-section__link -heading"></a>Card 4</h2></div><p><code>hdd-card</code></p>
-<p>Card with action.</p>
+</div><div id="card-with-action-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#card-with-action-button" class="icon-link i-section__link -heading"></a>Card with action button</h2></div><p><code>hdd-card</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -856,7 +793,7 @@ Below is a example of how to achieve this with sass.</p>
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><h3>Mutations</h3><p><strong><code>hdd-card</code>:</strong></p>
+</div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-card</code>:</strong></p>
 <table class="table"><thead><tr>
 <th style="text-align:left">class</th>
 <th style="text-align:left">description</th>
@@ -886,86 +823,15 @@ Below is a example of how to achieve this with sass.</p>
 </tbody></table></div>
 </div>
 
-						<div id="dropdown" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">Dropdown</h1>
-	<span class="theme-content-element-source">
-		<span class="theme-content-element-source-label">Source:</span>
-		<span class="theme-content-element-source-path">dropdown.md</span>
-	</span>
-	<div class="theme-content-element-description"><div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="dropdown-dropdown.html"
-                            target="_blank"
-                            class="plain-link"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Open in a new window"
-                        >
-                            <i class="fa fa-external-link-square fa-fw"></i>
-                            Example
-                        </a>
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="dropdown-dropdown.html"
-                            data-initinview="true"
-                            data-title="Loading..." 
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_input hdd-dropdown&quot;&gt;
-  &lt;input value=&quot;Jer&quot;&gt;
-
-  &lt;div class=&quot;hdd-dropdown_content is-active&quot;&gt;
-    &lt;div class=&quot;hdd-dropdown_content_item is-active&quot;&gt;&lt;b&gt;Jer&lt;/b&gt;oen&lt;/div&gt;
-    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Stian&lt;/div&gt;
-    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Erik&lt;/div&gt;
-    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Per&lt;/div&gt;
-    &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Pål&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_input hdd-dropdown&quot;&gt;
-  &lt;input value=&quot;Jer&quot;&gt;
-
-  &lt;div class=&quot;hdd-dropdown_content is-active&quot;&gt;
-    &lt;div class=&quot;hdd-dropdown_content_item is-active&quot;&gt;&lt;b&gt;Jer&lt;/b&gt;oen&lt;/div&gt;
-    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Stian&lt;/div&gt;
-    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Erik&lt;/div&gt;
-    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Per&lt;/div&gt;
-    &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Pål&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-	</div>
-</div><h3>Mutations</h3><p><strong><code>hdd-dropdown_content_item</code>:</strong></p>
-<table class="table"><thead><tr>
-<th style="text-align:left">class</th>
-<th style="text-align:left">description</th>
-</tr>
-</thead><tbody><tr>
-<td style="text-align:left"><code>no-hover</code></td>
-<td style="text-align:left">Disable the <code>:hover</code> state</td>
-</tr>
-</tbody></table></div>
-</div>
-
 						<div id="feedback-message" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Feedback message</h1>
 	<span class="theme-content-element-source">
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">feedback-message.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>A feedback message could be an info, warning or error. Feedback messages should be displayed in the lower right corner and act like a &quot;snackbar&quot; that pops up and dissapears after approximately 8 seconds. Usage of icons in feedback messages should be kept to an absolute minimum, since they usually don&#39;t serve any purpose and may be considered as visual &quot;noise&quot;.</p>
+	<div class="theme-content-element-description"><p>A feedback message could be an info, warning or error. Feedback messages should be displayed in the lower right corner and act like a &quot;snackbar&quot; that pops up and dissapears after approximately 8 seconds. </p>
 <div id="info-feedback" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#info-feedback" class="icon-link i-section__link -heading"></a>Info feedback</h2></div><p><code>feedback-container</code>.<code>is-info</code></p>
+<p>Usage of icons in feedback messages should be kept to an absolute minimum, since they usually don&#39;t serve any purpose and may be considered as visual &quot;noise&quot;.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -1069,8 +935,7 @@ Below is a example of how to achieve this with sass.</p>
   &lt;/button&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><p>A user should be given the opportunity to fix/act on the error message.</p>
-<div id="error-feedback" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#error-feedback" class="icon-link i-section__link -heading"></a>Error feedback</h2></div><p><code>feedback-container</code>.<code>is-error</code></p>
+</div><div id="error-feedback" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#error-feedback" class="icon-link i-section__link -heading"></a>Error feedback</h2></div><p><code>feedback-container</code>.<code>is-error</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -1107,7 +972,7 @@ Below is a example of how to achieve this with sass.</p>
   &lt;p class=&quot;feedback-container_message&quot;&gt;There is something seriously wrong going on!&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><h3>Mutations</h3><p><strong><code>feedback-container</code>:</strong></p>
+</div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>feedback-container</code>:</strong></p>
 <table class="table"><thead><tr>
 <th style="text-align:left">class</th>
 <th style="text-align:left">description</th>
@@ -1133,7 +998,9 @@ Below is a example of how to achieve this with sass.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">links.md</span>
 	</span>
-	<div class="theme-content-element-description"><div id="links" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#links" class="icon-link i-section__link -heading"></a>Links</h2></div><div class="i-example">
+	<div class="theme-content-element-description"><p>Links can be used anywhere. Here are some mutations that can be used with links.</p>
+<div id="links" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#links" class="icon-link i-section__link -heading"></a>Links</h2></div><p><code>hdd-link</code></p>
+<div class="i-example">
                     <h5 class="i-example__heading">
                         <a
                             href="links-links.html"
@@ -1171,7 +1038,7 @@ Below is a example of how to achieve this with sass.</p>
 &lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link no-hover&quot;&gt;Disabled hover state&lt;/a&gt;&lt;br&gt;
 &lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-active&quot;&gt;Active&lt;/a&gt;&lt;br&gt;</code></pre>
 	</div>
-</div><h3>Mutations</h3><p><strong><code>hdd-link</code>:</strong></p>
+</div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-link</code>:</strong></p>
 <table class="table"><thead><tr>
 <th style="text-align:left">class</th>
 <th style="text-align:left">description</th>
@@ -1203,55 +1070,6 @@ Below is a example of how to achieve this with sass.</p>
 </tbody></table></div>
 </div>
 
-						<div id="search-fields" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">Search fields</h1>
-	<span class="theme-content-element-source">
-		<span class="theme-content-element-source-label">Source:</span>
-		<span class="theme-content-element-source-path">searchfields.md</span>
-	</span>
-	<div class="theme-content-element-description"><div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="search-fields-search-fields.html"
-                            target="_blank"
-                            class="plain-link"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Open in a new window"
-                        >
-                            <i class="fa fa-external-link-square fa-fw"></i>
-                            Example
-                        </a>
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="search-fields-search-fields.html"
-                            data-initinview="true"
-                            data-title="Loading..." 
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_input&quot;&gt;
-  &lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt;
-  &lt;input placeholder=&quot;Placeholder text&quot; /&gt;
-  &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_input&quot;&gt;
-  &lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt;
-  &lt;input placeholder=&quot;Placeholder text&quot; /&gt;
-  &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div></div>
-</div>
-
 						<div id="small-menu" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Small menu</h1>
 	<span class="theme-content-element-source">
@@ -1259,6 +1077,7 @@ Below is a example of how to achieve this with sass.</p>
 		<span class="theme-content-element-source-path">small-menu.md</span>
 	</span>
 	<div class="theme-content-element-description"><p>A small menu can hold a list of choices. It can be hidden and shown on hover/active state. Clicking the cog toggles the is-active in the example:</p>
+<div id="small-menu" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#small-menu" class="icon-link i-section__link -heading"></a>Small menu</h2></div><p><code>hdd-small-menu</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -1322,7 +1141,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
   menuList.classList.toggle(&#39;is-active&#39;)
 })</code></pre>
 	</div>
-</div><h3>Mutations</h3><p><strong><code>hdd-small-menu_list_item</code>:</strong></p>
+</div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-small-menu_list_item</code>:</strong></p>
 <table class="table"><thead><tr>
 <th style="text-align:left">class</th>
 <th style="text-align:left">description</th>
@@ -1578,7 +1397,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
   &lt;/td&gt;
 &lt;/tr&gt;</code></pre>
 	</div>
-</div><h3>Mutations</h3><p><strong><code>hdd-table</code>:</strong></p>
+</div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-table</code>:</strong></p>
 <table class="table"><thead><tr>
 <th style="text-align:left">class</th>
 <th style="text-align:left">description</th>
@@ -1634,7 +1453,9 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">tags.md</span>
 	</span>
-	<div class="theme-content-element-description"><div class="i-example">
+	<div class="theme-content-element-description"><p>Tags can be grouped togheter and they should only contain text and a single icon.</p>
+<div id="tags" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#tags" class="icon-link i-section__link -heading"></a>Tags</h2></div><p><code>hdd-tags</code>, <code>hdd-tags_item</code></p>
+<div class="i-example">
                     <h5 class="i-example__heading">
                         <a
                             href="tags-tags.html"
@@ -1686,6 +1507,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 		<span class="theme-content-element-source-path">tooltip.md</span>
 	</span>
 	<div class="theme-content-element-description"><p>A tooltip can give context to a given icon/piece of text. Tooltips are usually hidden and become visible after a action or when hovering.</p>
+<div id="tooltip" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#tooltip" class="icon-link i-section__link -heading"></a>Tooltip</h2></div><p><code>hdd-tooltip</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -1736,7 +1558,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 &lt;/span&gt;
 </code></pre>
 	</div>
-</div><h3>Mutations</h3><p><strong><code>hdd-tooltip</code>:</strong></p>
+</div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-tooltip</code>:</strong></p>
 <table class="table"><thead><tr>
 <th style="text-align:left">class</th>
 <th style="text-align:left">description</th>
@@ -1773,8 +1595,9 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">checkbox.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>A checkbox component could be used to let a user select one or more options of a limited numberof choices. 
+	<div class="theme-content-element-description"><p>A checkbox component lets a user select one or more options of a limited number of choices. 
 Checkbox classes are asigned to the corresponding checkbox label.</p>
+<div id="checkbox" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#checkbox" class="icon-link i-section__link -heading"></a>Checkbox</h2></div><p><code>hdd-form_checkbox</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -1841,7 +1664,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
   &lt;/label&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><h3>Mutations</h3><p><strong><code>hdd-form_checkbox</code>:</strong></p>
+</div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-form_checkbox</code>:</strong></p>
 <table class="table"><thead><tr>
 <th style="text-align:left">class</th>
 <th style="text-align:left">description</th>
@@ -1853,6 +1676,80 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 </tbody></table></div>
 </div>
 
+						<div id="dropdown" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Dropdown</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">dropdown.md</span>
+	</span>
+	<div class="theme-content-element-description"><p>The dropdown lets the user choose between a set of options</p>
+<div id="info-feedback" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#info-feedback" class="icon-link i-section__link -heading"></a>Info feedback</h2></div><p><code>hdd-form_input</code>.<code>hdd-dropdown</code></p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="dropdown-dropdown.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="dropdown-dropdown.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_input hdd-dropdown&quot;&gt;
+  &lt;input value=&quot;Jer&quot;&gt;
+
+  &lt;div class=&quot;hdd-dropdown_content is-active&quot;&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item is-active&quot;&gt;&lt;b&gt;Jer&lt;/b&gt;oen&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Stian&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Erik&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Per&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Pål&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_input hdd-dropdown&quot;&gt;
+  &lt;input value=&quot;Jer&quot;&gt;
+
+  &lt;div class=&quot;hdd-dropdown_content is-active&quot;&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item is-active&quot;&gt;&lt;b&gt;Jer&lt;/b&gt;oen&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Stian&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Erik&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Per&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Pål&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+	</div>
+</div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-dropdown_content_item</code>:</strong></p>
+<table class="table"><thead><tr>
+<th style="text-align:left">class</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead><tbody><tr>
+<td style="text-align:left"><code>no-hover</code></td>
+<td style="text-align:left">Disable the <code>:hover</code> state</td>
+</tr>
+</tbody></table></div>
+</div>
+
 						<div id="input-fields" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Input fields</h1>
 	<span class="theme-content-element-source">
@@ -1860,6 +1757,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 		<span class="theme-content-element-source-path">input-fields.md</span>
 	</span>
 	<div class="theme-content-element-description"><p>An input field should be a call to action. If the text/content can&#39;t be changed, it should not be in an input field, but shown as static text.</p>
+<div id="input-fields" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#input-fields" class="icon-link i-section__link -heading"></a>Input fields</h2></div><p><code>hdd-form_input</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -1962,7 +1860,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><h3>Mutations</h3><p><strong><code>hdd-form_input</code>:</strong></p>
+</div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-form_input</code>:</strong></p>
 <table class="table"><thead><tr>
 <th style="text-align:left">class</th>
 <th style="text-align:left">description</th>
@@ -1984,7 +1882,8 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">radiobuttons.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>A radiobutton component let a user select only one of a limited number of choices. </p>
+	<div class="theme-content-element-description"><p>A radiobutton component lets a user select only one of a limited number of choices. </p>
+<div id="radiobutton" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#radiobutton" class="icon-link i-section__link -heading"></a>Radiobutton</h2></div><p><code>hdd-form_radiobutton</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -2014,8 +1913,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="
-&lt;form class=&quot;hdd-form_field&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;form class=&quot;hdd-form_field&quot;&gt;
     &lt;span class=&quot;hdd-form_field_title&quot;&gt;Radio buttons&lt;/span&gt;
     &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
         &lt;input type=&quot;radio&quot; name=&quot;formname&quot; checked /&gt;
@@ -2033,8 +1931,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
         &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Unpicked&lt;/span&gt;
     &lt;/label&gt;
 &lt;/form&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">
-&lt;form class=&quot;hdd-form_field&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;form class=&quot;hdd-form_field&quot;&gt;
     &lt;span class=&quot;hdd-form_field_title&quot;&gt;Radio buttons&lt;/span&gt;
     &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
         &lt;input type=&quot;radio&quot; name=&quot;formname&quot; checked /&gt;
@@ -2056,13 +1953,65 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 </div></div>
 </div>
 
+						<div id="search-fields" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Search fields</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">searchfields.md</span>
+	</span>
+	<div class="theme-content-element-description"><p>A search field should be used to give a user the ability to search for options.</p>
+<div id="search-field" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#search-field" class="icon-link i-section__link -heading"></a>Search field</h2></div><p><code>hdd-form_input</code></p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="search-fields-search-fields.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="search-fields-search-fields.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_input&quot;&gt;
+  &lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt;
+  &lt;input placeholder=&quot;Placeholder text&quot; /&gt;
+  &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_input&quot;&gt;
+  &lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt;
+  &lt;input placeholder=&quot;Placeholder text&quot; /&gt;
+  &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="select" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Select</h1>
 	<span class="theme-content-element-source">
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">select.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>A select component could be used to give a user a set of options.</p>
+	<div class="theme-content-element-description"><p>A select component lets a user choose between a set of options.</p>
+<div id="select" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#select" class="icon-link i-section__link -heading"></a>Select</h2></div><p><code>hdd-form_select</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -2181,7 +2130,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><h3>Mutations</h3><p><strong><code>hdd-form-select</code>:</strong></p>
+</div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-form-select</code>:</strong></p>
 <table class="table"><thead><tr>
 <th style="text-align:left">class</th>
 <th style="text-align:left">description</th>
@@ -2406,7 +2355,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
   &lt;/div&gt;
 &lt;/nav&gt;</code></pre>
 	</div>
-</div><h3>Mutations</h3><p><strong><code>hdd-sidenav</code>:</strong></p>
+</div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-sidenav</code>:</strong></p>
 <table class="table"><thead><tr>
 <th style="text-align:left">class</th>
 <th style="text-align:left">description</th>
@@ -2615,7 +2564,8 @@ The best way of including a set of color modifiers is by using the <code>color-m
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">flush.md</span>
 	</span>
-	<div class="theme-content-element-description"><div id="flush" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#flush" class="icon-link i-section__link -heading"></a>Flush</h2></div><h3>Class</h3><p><code>flush-</code></p>
+	<div class="theme-content-element-description"><p>Flush to remove the margin or padding of elements.</p>
+<div id="flush-class" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#flush-class" class="icon-link i-section__link -heading"></a>Flush class</h2></div><p><code>flush-</code></p>
 <p>The flush class can be used to remove the margin or padding of the given element on the given side.</p>
 <ul>
 <li><code>flush-margin</code> Remove the margin on all sides</li>
@@ -2623,7 +2573,7 @@ The best way of including a set of color modifiers is by using the <code>color-m
 <li><code>flush-margin-(top, right, bottom, left)</code> Remove the margin on the given side</li>
 <li><code>flush-padding-(top, right, bottom, left)</code> Remove the padding on the given side</li>
 </ul>
-<h3>Example</h3>
+
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang "> html</button>
 	<div class="i-code-block__content ">
@@ -2648,7 +2598,7 @@ The best way of including a set of color modifiers is by using the <code>color-m
 		<span class="theme-content-element-source-path">typography.md</span>
 	</span>
 	<div class="theme-content-element-description"><p>The typeface should be kept consistent in all mediums, physical and digital.</p>
-<h3>Roboto</h3><p>Roboto is default font for all text.</p>
+<div id="default-font" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#default-font" class="icon-link i-section__link -heading"></a>Default font</h2></div><p>Roboto is default font for all text.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -2792,7 +2742,7 @@ The best way of including a set of color modifiers is by using the <code>color-m
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Badge  Button  Cards  Dropdown  Feedback message  Links  Search fields  Small menu  Table  Tags  Tooltip "
+							data-filter-value=" Badge  Button  Cards  Feedback message  Links  Small menu  Table  Tags  Tooltip "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -2822,13 +2772,6 @@ The best way of including a set of color modifiers is by using the <code>color-m
 									<span>Cards</span>
 								</a>
 								<a
-									href="#dropdown"
-									class="i-sidebar-list-item theme-sidebar-element"
-									data-filter-value="Dropdown"
-								>
-									<span>Dropdown</span>
-								</a>
-								<a
 									href="#feedback-message"
 									class="i-sidebar-list-item theme-sidebar-element"
 									data-filter-value="Feedback message"
@@ -2841,13 +2784,6 @@ The best way of including a set of color modifiers is by using the <code>color-m
 									data-filter-value="Links"
 								>
 									<span>Links</span>
-								</a>
-								<a
-									href="#search-fields"
-									class="i-sidebar-list-item theme-sidebar-element"
-									data-filter-value="Search fields"
-								>
-									<span>Search fields</span>
 								</a>
 								<a
 									href="#small-menu"
@@ -2884,7 +2820,7 @@ The best way of including a set of color modifiers is by using the <code>color-m
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Checkbox  Input fields  Radio button  Select "
+							data-filter-value=" Checkbox  Dropdown  Input fields  Radio button  Search fields  Select "
 						>
 							<a href="#category-form-components" class="i-sidebar-list-item">
 								<b>Form-Components</b>
@@ -2900,6 +2836,13 @@ The best way of including a set of color modifiers is by using the <code>color-m
 									<span>Checkbox</span>
 								</a>
 								<a
+									href="#dropdown"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Dropdown"
+								>
+									<span>Dropdown</span>
+								</a>
+								<a
 									href="#input-fields"
 									class="i-sidebar-list-item theme-sidebar-element"
 									data-filter-value="Input fields"
@@ -2912,6 +2855,13 @@ The best way of including a set of color modifiers is by using the <code>color-m
 									data-filter-value="Radio button"
 								>
 									<span>Radio button</span>
+								</a>
+								<a
+									href="#search-fields"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Search fields"
+								>
+									<span>Search fields</span>
 								</a>
 								<a
 									href="#select"

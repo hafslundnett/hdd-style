@@ -3,7 +3,7 @@ name: Button
 category: Components
 ---
 
-Buttons should be used across the different internal services. Changing the color of a button to convey purpose is not ideal as people with vision impairments will not be able to pick this up. Usage of other colors should be well discussed and the context around it clear enough.
+Buttons should be used across the different internal services. Changing the color of a button to convey purpose is not ideal as people with vision impairments will not be able to pick this up. Usage of other colors should be well discussed and the context around it clear.
 
 ## Primary button
 `hdd-button`
@@ -55,7 +55,7 @@ A button that only contains an icon and should be used when an icon is used as a
 <button class="hdd-button-icon is-transparent"><i class="fal fa-arrow-right"></i></button>
 ```
 
-### Mutations
+## Mutations
 **`hdd-button`:**
 
 | class | description|

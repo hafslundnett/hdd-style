@@ -106,7 +106,7 @@ It is possible to have expandable rows to show more information for each row.
 </tr>
 ```
 
-### Mutations
+## Mutations
 **`hdd-table`:**
 
 | class | description|

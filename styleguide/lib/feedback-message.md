@@ -3,11 +3,14 @@ name: Feedback message
 category: Components
 ---
 
-A feedback message could be an info, warning or error. Feedback messages should be displayed in the lower right corner and act like a "snackbar" that pops up and dissapears after approximately 8 seconds. Usage of icons in feedback messages should be kept to an absolute minimum, since they usually don't serve any purpose and may be considered as visual "noise".
+A feedback message could be an info, warning or error. Feedback messages should be displayed in the lower right corner and act like a "snackbar" that pops up and dissapears after approximately 8 seconds. 
 
 
 ## Info feedback
 `feedback-container`.`is-info`
+
+Usage of icons in feedback messages should be kept to an absolute minimum, since they usually don't serve any purpose and may be considered as visual "noise".
+
 ```feedbackmessage-info.html
 <div class="feedback-container" style="margin-bottom: 10px">
   <i class="fal fa-info-circle feedback-container_icon"></i>
@@ -28,6 +31,7 @@ A feedback message could be an info, warning or error. Feedback messages should 
 
 ## Warning feedback
 `feedback-container`.`is-warn`
+
 ```feedbackmessage-warn.html
 <div class="feedback-container is-warn" style="margin-bottom: 10px">
   <p class="feedback-container_message">There are some things you might want to check out.</p>
@@ -37,17 +41,16 @@ A feedback message could be an info, warning or error. Feedback messages should 
 </div>
 ```
 
-A user should be given the opportunity to fix/act on the error message.
-
 ## Error feedback
 `feedback-container`.`is-error`
+
 ```feedbackmessage-error.html
 <div class="feedback-container is-error">
   <p class="feedback-container_message">There is something seriously wrong going on!</p>
 </div>
 ```
 
-### Mutations
+## Mutations
 **`feedback-container`:**
 
 | class | description|

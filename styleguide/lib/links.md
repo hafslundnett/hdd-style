@@ -3,7 +3,10 @@ name: Links
 category: Components
 ---
 
+Links can be used anywhere. Here are some mutations that can be used with links.
+
 ## Links
+`hdd-link`
 
 ```links.html
 <a href="https://google.com" class="hdd-link">Normal</a> <br>
@@ -12,7 +15,7 @@ category: Components
 <a href="https://hafslundnett.no" class="hdd-link is-active">Active</a><br>
 ```
 
-### Mutations
+## Mutations
 **`hdd-link`:**
 
 | class | description|

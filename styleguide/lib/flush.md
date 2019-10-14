@@ -3,9 +3,9 @@ name: Flush
 category: Utilities
 ---
 
-## Flush
+Flush to remove the margin or padding of elements.
 
-### Class
+## Flush class
 `flush-`
 
 The flush class can be used to remove the margin or padding of the given element on the given side.
@@ -15,7 +15,6 @@ The flush class can be used to remove the margin or padding of the given element
 - `flush-margin-(top, right, bottom, left)` Remove the margin on the given side
 - `flush-padding-(top, right, bottom, left)` Remove the padding on the given side
 
-### Example
 
 ```html
 <div class="flush-margin"></div>

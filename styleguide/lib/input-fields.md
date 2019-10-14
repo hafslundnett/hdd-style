@@ -2,7 +2,11 @@
 name: Input fields
 category: Form-Components
 ---
+
 An input field should be a call to action. If the text/content can't be changed, it should not be in an input field, but shown as static text.
+
+## Input fields
+`hdd-form_input`
 
 ```input-fields.html
 <div class="hdd-form_field">
@@ -44,7 +48,7 @@ An input field should be a call to action. If the text/content can't be changed,
 ```
 
 
-### Mutations
+## Mutations
 **`hdd-form_input`:**
 
 | class | description|

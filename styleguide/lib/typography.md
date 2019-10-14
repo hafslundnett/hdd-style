@@ -4,7 +4,7 @@ category: Utilities
 ---
 The typeface should be kept consistent in all mediums, physical and digital.
 
-### Roboto
+## Default font
 Roboto is default font for all text.
 
 ```roboto.html
