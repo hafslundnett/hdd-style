@@ -59,12 +59,13 @@ A table can consist out of data, buttons and icons. A table row can also have a 
 It is possible to have expandable rows to show more information for each row.
 
 <!-- Er denne delen nødvendig? Man kan sette is-striped på hdd-table elementet istedet for hdd-table_details elementet! 
+
 > ⚠️ The `is-striped` mutation on the `hdd-table` does not include the detail rows. When wanting to create a striped table is it advised to use the `is-stripe` row mutation on each row instead. -->
 
 ```expandabletable.html
 <tr class="hdd-table_details">
   <td colspan="4">
-    <table class="hdd-table is-aligned-top is-striped">
+    <table class="hdd-table is-aligned-top is-striped no-row-padding">
       <tr class="hdd-table_header">
         <th>Målepunkt</th>
         <th>Anleggsraning</th>
@@ -116,6 +117,7 @@ It is possible to have expandable rows to show more information for each row.
 | `is-aligned-top` | Sets the `vertical-align` of all cells to `top` |
 | `is-aligned-bottom` | Sets the `vertical-align` of all cells to `bottom` |
 | `no-wrap` | Sets the `white-space` property of all th/td elements to `nowrap` |
+| `no-row-padding` | Removes the extra left-padding on the first column in a table |
 
 **`hdd-table tr` | `hdd-table_row`:**
 
