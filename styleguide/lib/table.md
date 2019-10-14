@@ -3,9 +3,10 @@ name: Table
 category: Components
 ---
 
-Create a basic html table in the Hdd style. A table can consist out of data, buttons and icons. Take a look below at the example on how to use icons and buttons in a table.
+A table can consist out of data, buttons and icons. A table row can also have a small color bar at the beginning of the row, all color subclasses can be used.
 
-All color sub classes can be used on the form rows. These colors get added as a small bar at the beginning of the row.
+## Table with color bars
+`hdd-table`
 
 ```stripedtable.html
 <table class="hdd-table is-striped has-shadow">
@@ -52,17 +53,19 @@ All color sub classes can be used on the form rows. These colors get added as a 
 </table>
 ```
 
-## Detailed row
+## Detailed row table
+`hdd-table_details`
 
-In the Hdd design specs is it plausible to have a expandable rows that show more information about the given row.
+It is possible to have expandable rows to show more information for each row.
 
-> ⚠️ When using the `is-striped` mutation on the `hdd-table` it does not include the detail rows. When wanting to create a striped form is it advised to stripe the odd rows use the `is-stripe` row mutation instead.
+<!-- Er denne delen nødvendig? Man kan sette is-striped på hdd-table elementet istedet for hdd-table_details elementet! 
+> ⚠️ The `is-striped` mutation on the `hdd-table` does not include the detail rows. When wanting to create a striped table is it advised to use the `is-stripe` row mutation on each row instead. -->
 
 ```expandabletable.html
 <tr class="hdd-table_details">
   <td colspan="4">
-    <table class="hdd-table is-aligned-top">
-      <tr class="hdd-table_header is-stripe">
+    <table class="hdd-table is-aligned-top is-striped">
+      <tr class="hdd-table_header">
         <th>Målepunkt</th>
         <th>Anleggsraning</th>
         <th>Klassifiseringer</th>
@@ -80,7 +83,7 @@ In the Hdd design specs is it plausible to have a expandable rows that show more
         <td>89%</td>
         <td>-91dB</td>
       </tr>
-      <tr class="is-stripe">
+      <tr class="">
         <td>M: 101231</td>
         <td>100</td>
         <td>CL-01 Død måler<br>CL-04 Dårlig Rssi<br>CL-12 Dårlig innsamling</td>

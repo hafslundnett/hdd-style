@@ -199,7 +199,6 @@ Below is a example of how to achieve this with sass.</p>
 	</span>
 	<div class="theme-content-element-description"><p>All colors can be used on <code>hdd-badge</code> and <code>hdd-badge-icon</code>. <code>signal-red</code> is used as the default color.</p>
 <div id="badge" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#badge" class="icon-link i-section__link -heading"></a>Badge</h2></div><p><code>hdd-badge</code></p>
-<p><strong>Example</strong></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -250,7 +249,6 @@ Below is a example of how to achieve this with sass.</p>
 	</div>
 </div><div id="icon-badge" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#icon-badge" class="icon-link i-section__link -heading"></a>Icon badge</h2></div><p><code>hdd-badge-icon</code></p>
 <p>Add a small red dot with a white border to the top right side of a icon.</p>
-<p><strong>Example</strong></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -1271,8 +1269,8 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">table.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>Create a basic html table in the Hdd style. A table can consist out of data, buttons and icons. Take a look below at the example on how to use icons and buttons in a table.</p>
-<p>All color sub classes can be used on the form rows. These colors get added as a small bar at the beginning of the row.</p>
+	<div class="theme-content-element-description"><p>A table can consist out of data, buttons and icons. A table row can also have a small color bar at the beginning of the row, all color subclasses can be used.</p>
+<div id="table-with-color-bars" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#table-with-color-bars" class="icon-link i-section__link -heading"></a>Table with color bars</h2></div><p><code>hdd-table</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -1387,10 +1385,10 @@ menu.addEventListener(&#39;click&#39;, function(e) {
   &lt;/tr&gt;
 &lt;/table&gt;</code></pre>
 	</div>
-</div><div id="detailed-row" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#detailed-row" class="icon-link i-section__link -heading"></a>Detailed row</h2></div><p>In the Hdd design specs is it plausible to have a expandable rows that show more information about the given row.</p>
-<blockquote>
-<p>⚠️ When using the <code>is-striped</code> mutation on the <code>hdd-table</code> it does not include the detail rows. When wanting to create a striped form is it advised to stripe the odd rows use the <code>is-stripe</code> row mutation instead.</p>
-</blockquote>
+</div><div id="detailed-row-table" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#detailed-row-table" class="icon-link i-section__link -heading"></a>Detailed row table</h2></div><p><code>hdd-table_details</code></p>
+<p>It is possible to have expandable rows to show more information for each row.</p>
+<!-- Er denne delen nødvendig? Man kan sette is-striped på hdd-table elementet istedet for hdd-table_details elementet! 
+> ⚠️ The `is-striped` mutation on the `hdd-table` does not include the detail rows. When wanting to create a striped table is it advised to use the `is-stripe` row mutation on each row instead. -->
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -1422,8 +1420,8 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;tr class=&quot;hdd-table_details&quot;&gt;
   &lt;td colspan=&quot;4&quot;&gt;
-    &lt;table class=&quot;hdd-table is-aligned-top&quot;&gt;
-      &lt;tr class=&quot;hdd-table_header is-stripe&quot;&gt;
+    &lt;table class=&quot;hdd-table is-aligned-top is-striped&quot;&gt;
+      &lt;tr class=&quot;hdd-table_header&quot;&gt;
         &lt;th&gt;Målepunkt&lt;/th&gt;
         &lt;th&gt;Anleggsraning&lt;/th&gt;
         &lt;th&gt;Klassifiseringer&lt;/th&gt;
@@ -1441,7 +1439,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
         &lt;td&gt;89%&lt;/td&gt;
         &lt;td&gt;-91dB&lt;/td&gt;
       &lt;/tr&gt;
-      &lt;tr class=&quot;is-stripe&quot;&gt;
+      &lt;tr class=&quot;&quot;&gt;
         &lt;td&gt;M: 101231&lt;/td&gt;
         &lt;td&gt;100&lt;/td&gt;
         &lt;td&gt;CL-01 Død måler&lt;br&gt;CL-04 Dårlig Rssi&lt;br&gt;CL-12 Dårlig innsamling&lt;/td&gt;
@@ -1464,8 +1462,8 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 &lt;/tr&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;tr class=&quot;hdd-table_details&quot;&gt;
   &lt;td colspan=&quot;4&quot;&gt;
-    &lt;table class=&quot;hdd-table is-aligned-top&quot;&gt;
-      &lt;tr class=&quot;hdd-table_header is-stripe&quot;&gt;
+    &lt;table class=&quot;hdd-table is-aligned-top is-striped&quot;&gt;
+      &lt;tr class=&quot;hdd-table_header&quot;&gt;
         &lt;th&gt;Målepunkt&lt;/th&gt;
         &lt;th&gt;Anleggsraning&lt;/th&gt;
         &lt;th&gt;Klassifiseringer&lt;/th&gt;
@@ -1483,7 +1481,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
         &lt;td&gt;89%&lt;/td&gt;
         &lt;td&gt;-91dB&lt;/td&gt;
       &lt;/tr&gt;
-      &lt;tr class=&quot;is-stripe&quot;&gt;
+      &lt;tr class=&quot;&quot;&gt;
         &lt;td&gt;M: 101231&lt;/td&gt;
         &lt;td&gt;100&lt;/td&gt;
         &lt;td&gt;CL-01 Død måler&lt;br&gt;CL-04 Dårlig Rssi&lt;br&gt;CL-12 Dårlig innsamling&lt;/td&gt;
