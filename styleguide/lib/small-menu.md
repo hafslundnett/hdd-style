@@ -3,10 +3,12 @@ name: Small menu
 category: Components
 ---
 
-A small menu can hold a list of choices. It can be hidden and shown on hover/active state. Clicking the cog toggles the is-active in the example:
+A small menu can hold a list of choices. It can be hidden and shown on hover/active state. 
 
 ## Small menu
 `hdd-small-menu`
+
+Clicking the cog toggles the is-active state of the small meny.
 
 ```small-menu.html
 <div class="hdd-small-menu">

@@ -3,7 +3,7 @@ name: Tags
 category: Components
 ---
 
-Tags can be grouped togheter and they should only contain text and a single icon.
+Tags can be grouped togheter and can contain text and icons.
 
 ## Tags
 `hdd-tags`, `hdd-tags_item`
