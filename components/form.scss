@@ -206,7 +206,7 @@
       display: none;
 
       &:checked ~ #{$this}_mark {
-        @extend %checkbox-mark, .is-checked;
+        @extend %checkbox-mark;
       }
     }
 
@@ -248,7 +248,7 @@
     cursor: pointer;
 
     // Creating placeholder to inject style into radiobutton mutations.
-    %radiobutton-mark.is-checked {
+    %radiobutton-mark {
       position: relative;
       background-color: color('primary');
       &:before {
@@ -262,8 +262,7 @@
 
     &.is-checked {
       #{$this}_mark {
-        // @extend %radiobutton-mark.is-checked;
-        @extend %radiobutton-mark, .is-checked;
+        @extend %radiobutton-mark;
       }
     }
 
@@ -271,8 +270,7 @@
       display: none;
 
       &:checked ~ #{$this}_mark {
-        // @extend %radiobutton-mark.is-checked;
-        @extend %radiobutton-mark, .is-checked;
+        @extend %radiobutton-mark;
       }
     }
 
