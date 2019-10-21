@@ -431,17 +431,13 @@ Below is a example of how to achieve this with sass.</p>
 &lt;button class=&quot;hdd-button is-loading&quot;&gt;Loading&lt;/button&gt;
 &lt;button class=&quot;hdd-button is-small&quot;&gt;Primary small&lt;/button&gt;
 &lt;button class=&quot;hdd-button is-small&quot; disabled&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-small is-loading&quot;&gt;Loading&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-small has-icon-right&quot;&gt;Ohh icons &lt;i class=&quot;fal fa-magic&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-small has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-magic&quot;&gt;&lt;/i&gt; Ohh icons&lt;/button&gt;">Copy</button>
+&lt;button class=&quot;hdd-button is-small is-loading&quot;&gt;Loading&lt;/button&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button&quot;&gt;Primary&lt;/button&gt;
 &lt;button class=&quot;hdd-button&quot; disabled&gt;Disabled&lt;/button&gt;
 &lt;button class=&quot;hdd-button is-loading&quot;&gt;Loading&lt;/button&gt;
 &lt;button class=&quot;hdd-button is-small&quot;&gt;Primary small&lt;/button&gt;
 &lt;button class=&quot;hdd-button is-small&quot; disabled&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-small is-loading&quot;&gt;Loading&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-small has-icon-right&quot;&gt;Ohh icons &lt;i class=&quot;fal fa-magic&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-small has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-magic&quot;&gt;&lt;/i&gt; Ohh icons&lt;/button&gt;</code></pre>
+&lt;button class=&quot;hdd-button is-small is-loading&quot;&gt;Loading&lt;/button&gt;</code></pre>
 	</div>
 </div><div id="secondary-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#secondary-button" class="icon-link i-section__link -heading"></a>Secondary button</h2></div><p><code>hdd-button</code></p>
 <p>The secondary button should never be used alone in a page.</p>
@@ -518,10 +514,14 @@ Below is a example of how to achieve this with sass.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button has-icon&quot;&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon&quot; disabled&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button has-icon&quot;&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon&quot; disabled&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-arrow-left&quot;&gt;&lt;/i&gt; Back&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon-right&quot;&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon-left&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-left&quot;&gt;&lt;/i&gt; Back&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon-right&quot; disabled&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-arrow-left&quot;&gt;&lt;/i&gt; Back&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon-right&quot;&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon-left&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-left&quot;&gt;&lt;/i&gt; Back&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon-right&quot; disabled&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
 	</div>
 </div><div id="icon-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#icon-button" class="icon-link i-section__link -heading"></a>Icon-button</h2></div><p><code>hdd-button-icon</code></p>
 <p>A button that only contains an icon and should be used when an icon is used as an button.</p>
@@ -580,24 +580,12 @@ Below is a example of how to achieve this with sass.</p>
 <td style="text-align:left"><code>is-small</code></td>
 <td style="text-align:left">Sets the given button to it&#39;s small state</td>
 </tr>
-<tr>
-<td style="text-align:left"><code>is-small</code></td>
-<td style="text-align:left">Sets the given button to it&#39;s small state</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>is-small</code></td>
-<td style="text-align:left">Sets the given button to it&#39;s small state</td>
-</tr>
 </tbody></table><p><strong><code>hdd-button-icon</code>:</strong></p>
 <table class="table"><thead><tr>
 <th style="text-align:left">class</th>
 <th style="text-align:left">description</th>
 </tr>
 </thead><tbody><tr>
-<td style="text-align:left"><code>is-transparent</code></td>
-<td style="text-align:left">Sets the given button to it&#39;s transparent state</td>
-</tr>
-<tr>
 <td style="text-align:left"><code>no-active</code></td>
 <td style="text-align:left">Disable the <code>:active</code> state</td>
 </tr>
@@ -608,6 +596,10 @@ Below is a example of how to achieve this with sass.</p>
 <tr>
 <td style="text-align:left"><code>no-hover</code></td>
 <td style="text-align:left">Disable the <code>:hover</code> state</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-transparent</code></td>
+<td style="text-align:left">Sets the given button to it&#39;s transparent state</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>is-active</code></td>
