@@ -1,21 +1,26 @@
 .hdd-link {
 	// .is-p is font-properties, defined in typography
-	@extend .is-p;
+ 	@extend .is-p;
 
-	color: color('primary');
-	font-weight: bold;
-	text-decoration: underline rgba(color('primary'), .5);
-
-	&:hover:not(.no-hover),
-	&.is-hovering,
-	&:focus:not(.no-focus),
-	&.is-focusing {
-		text-decoration: none;
+    text-decoration: none;
+    color: color('primary-dark');
+	
+	&:not([disabled]) {
+		&:hover:not(.no-hover),
+		&.is-hovering,
+		&:focus:not(.no-focus),
+		&.is-focusing,
+		&:active:not(.no-active),
+		&.is-active {
+			text-decoration: underline;
+			cursor: pointer;
+		}
 	}
 
-	&:active:not(.no-active),
-	&.is-active {
-		color: color('primary-dark');
-		text-decoration: none;
+	&[disabled] {
+		border-color: color('grey');
+      	background: color('grey');
+		color: color('grey');
+		pointer-events: none;
 	}
 }
