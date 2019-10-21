@@ -23,8 +23,8 @@
 
   &_list {
     @include filter(drop-shadow($shadow-light));
-    @include box-shadow($shadow-light); // IE fallback?
     
+    box-shadow: $shadow-light;
     display: table;
     visibility: hidden;
     

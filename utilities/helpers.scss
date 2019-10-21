@@ -1,28 +1,3 @@
-@mixin box-sizing($value...) {
-  box-sizing: $value;
-  -webkit-box-sizing: $value;
-  -moz-box-sizing: $value;
-}
-
-@mixin box-shadow($value) {
-  box-shadow: $value;
-  -webkit-box-shadow: $value;
-  -moz-box-shadow: $value;
-}
-
-@mixin border-radius($value) {
-  border-radius: $value;
-  -moz-border-radius: $value;
-  -webkit-radius: $value;
-}
-
-@mixin background-size($value) {
-  background-size: $value;
-  -o-background-size: $value;
-  -webkit-background-size: $value;
-  -moz-background-size: $value;
-}
-
 @mixin linear-gradient($angle, $gradient1, $gradient2) {
   background-color: $gradient2;
   /* Fallback Color */
@@ -33,11 +8,6 @@
   background-image: -moz-linear-gradient($angle, $gradient1, $gradient2);
   /* FF3.6 */
   background-image: -ms-linear-gradient($angle, $gradient1, $gradient2);
-}
-
-@mixin transition($value) {
-  transition: $value;
-  -webkit-transition: $value;
 }
 
 @mixin transform($value) {
@@ -89,12 +59,6 @@
   -webkit-filter: $value;
   -moz-filter: $value;
   filter: $value;
-}
-
-@mixin appearance($value) {
-  -moz-appearance: $value;
-  -webkit-appearance: $value;
-  appearance: $value;
 }
 
 @mixin user-select($value) {

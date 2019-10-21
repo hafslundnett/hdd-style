@@ -1,6 +1,6 @@
 .hdd-navigation {
-  @include box-shadow($shadow-medium);
 
+  box-shadow: $shadow-medium;
   display: flex;
   z-index: $navigation-z-index;
   box-sizing: border-box;

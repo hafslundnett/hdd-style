@@ -1,8 +1,8 @@
 .hdd-card {
-  @include box-sizing(border-box);
-  @include box-shadow($shadow-light);
-  @include border-radius($card-radius);
-
+  
+  border-radius: $card-radius;
+  box-shadow: $shadow-light;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   background: color('white');

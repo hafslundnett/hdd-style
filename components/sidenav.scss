@@ -2,9 +2,9 @@
   // Variable containing '&' to jump to current parent inside a child class.  
   $this: &;
 
-  @include box-shadow($shadow-light);
-  @include transition(width $medium-transition $transition-cubic);
+  transition: width $medium-transition $transition-cubic;
 
+  box-shadow: $shadow-light;
   position: fixed;
   z-index: $sidenav-z-index;
   width: $sidenav-collapsed-width;
@@ -49,7 +49,7 @@
     &_item {
       // Variable containing '&' to jump to current parent inside a child class. 
       $this: &;
-      @include transition(all $short-transition $transition-cubic);
+      transition: all $short-transition $transition-cubic;
 
       display: flex;
       align-items: center;
@@ -81,7 +81,7 @@
 
       &_label {
         @extend .is-h2;
-        @include transition(all $short-transition $transition-cubic);
+        transition: all $short-transition $transition-cubic;
 
         flex-grow: 1;
         margin-left: -10px;
