@@ -3,7 +3,7 @@ name: Links
 category: Components
 ---
 
-Links can be used anywhere. Here are some mutations that can be used with links.
+Links are for prompting a user action that will affect another part. 
 
 ## Links
 `hdd-link`

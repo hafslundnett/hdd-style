@@ -33,10 +33,6 @@
   background-image: -moz-linear-gradient($angle, $gradient1, $gradient2);
   /* FF3.6 */
   background-image: -ms-linear-gradient($angle, $gradient1, $gradient2);
-  /* IE10 */
-  background-image: -o-linear-gradient($angle, $gradient1, $gradient2);
-  /* Opera 11.10+ */
-  background-image: linear-gradient($angle, $gradient1, $gradient2);
 }
 
 @mixin transition($value) {
@@ -111,22 +107,9 @@
 }
 
 @mixin placeholder() {
-  &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    @content;
-  }
-
-  &::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    @content;
-    opacity: 1;
-  }
-
   &::-moz-placeholder { /* Mozilla Firefox 19+ */
     @content;
     opacity: 1;
-  }
-
-  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    @content;
   }
 
   &:-ms-input-placeholder { /* Microsoft Edge */

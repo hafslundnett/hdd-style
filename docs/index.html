@@ -177,6 +177,7 @@
       My content...
     &lt;/div&gt;
   &lt;/div&gt;
+
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-layout&quot;&gt;
 
@@ -211,6 +212,7 @@
       My content...
     &lt;/div&gt;
   &lt;/div&gt;
+
 &lt;/div&gt;</code></pre>
 	</div>
 </div><div id="extending-hdd-layout" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#extending-hdd-layout" class="icon-link i-section__link -heading"></a>Extending hdd-layout</h2></div><p>When wanting to add your block to the <code>hdd-layout</code> block please extend the <code>hdd-layout</code> class in your own block.
@@ -998,7 +1000,7 @@ Below is a example of how to achieve this with sass.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">links.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>Links can be used anywhere. Here are some mutations that can be used with links.</p>
+	<div class="theme-content-element-description"><p>Links are for prompting a user action that will affect another part. </p>
 <div id="links" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#links" class="icon-link i-section__link -heading"></a>Links</h2></div><p><code>hdd-link</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -1236,6 +1238,28 @@ menu.addEventListener(&#39;click&#39;, function(e) {
       &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
     &lt;/td&gt;
   &lt;/tr&gt;
+  &lt;tr class=&quot;is-danger&quot;&gt;
+    &lt;th&gt;3&lt;/th&gt;
+    &lt;td&gt;938472&lt;/td&gt;
+    &lt;td&gt;123419384&lt;/td&gt;
+    &lt;td&gt;17&lt;/td&gt;
+    &lt;td class=&quot;hdd-table_action&quot;&gt;
+      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class=&quot;is-danger&quot;&gt;
+    &lt;th&gt;3&lt;/th&gt;
+    &lt;td&gt;938472&lt;/td&gt;
+    &lt;td&gt;123419384&lt;/td&gt;
+    &lt;td&gt;17&lt;/td&gt;
+    &lt;td class=&quot;hdd-table_action&quot;&gt;
+      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
 &lt;/table&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;table class=&quot;hdd-table is-striped has-shadow&quot;&gt;
   &lt;tr class=&quot;hdd-table_header&quot;&gt;
@@ -1268,6 +1292,28 @@ menu.addEventListener(&#39;click&#39;, function(e) {
     &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr class=&quot;is-warn&quot;&gt;
+    &lt;th&gt;3&lt;/th&gt;
+    &lt;td&gt;938472&lt;/td&gt;
+    &lt;td&gt;123419384&lt;/td&gt;
+    &lt;td&gt;17&lt;/td&gt;
+    &lt;td class=&quot;hdd-table_action&quot;&gt;
+      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class=&quot;is-danger&quot;&gt;
+    &lt;th&gt;3&lt;/th&gt;
+    &lt;td&gt;938472&lt;/td&gt;
+    &lt;td&gt;123419384&lt;/td&gt;
+    &lt;td&gt;17&lt;/td&gt;
+    &lt;td class=&quot;hdd-table_action&quot;&gt;
+      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class=&quot;is-danger&quot;&gt;
     &lt;th&gt;3&lt;/th&gt;
     &lt;td&gt;938472&lt;/td&gt;
     &lt;td&gt;123419384&lt;/td&gt;
@@ -2376,7 +2422,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 
     &lt;ul class=&quot;hdd-sidenav_list&quot;&gt;
       &lt;li&gt;
-        &lt;a href=&quot;#&quot; class=&quot;hdd-sidenav_list_item &quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;hdd-sidenav_list_item&quot; accesskey=&quot;s&quot;&gt;
           &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
             &lt;i class=&quot;fal fa-chart-pie&quot;&gt;&lt;span class=&quot;hdd-badge-icon&quot;&gt;&lt;/span&gt;&lt;/i&gt;
           &lt;/span&gt;
@@ -2419,7 +2465,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 
     &lt;ul class=&quot;hdd-sidenav_list&quot;&gt;
       &lt;li&gt;
-        &lt;a href=&quot;#&quot; class=&quot;hdd-sidenav_list_item &quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;hdd-sidenav_list_item&quot; accesskey=&quot;s&quot;&gt;
           &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
             &lt;i class=&quot;fal fa-chart-pie&quot;&gt;&lt;span class=&quot;hdd-badge-icon&quot;&gt;&lt;/span&gt;&lt;/i&gt;
           &lt;/span&gt;

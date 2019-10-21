@@ -35,8 +35,6 @@
     }
 
     &_item {
-      $e: #{&};
-
       padding: $dropdown-item-padding;
       cursor: pointer;
 

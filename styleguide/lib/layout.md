@@ -42,6 +42,7 @@ It is advised to add the `hdd-layout` block around your project page. The `hdd-l
       My content...
     </div>
   </div>
+  
 </div>
 ```
 

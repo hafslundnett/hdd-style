@@ -17,7 +17,7 @@ category: Layout-Components
 
     <ul class="hdd-sidenav_list">
       <li>
-        <a href="#" class="hdd-sidenav_list_item ">
+        <a href="#" class="hdd-sidenav_list_item" accesskey="s">
           <span class="hdd-sidenav_list_item_icon">
             <i class="fal fa-chart-pie"><span class="hdd-badge-icon"></span></i>
           </span>
