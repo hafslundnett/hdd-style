@@ -60,12 +60,8 @@ A button that only contains an icon and should be used when an icon is used as a
 
 | class | description|
 | :--- | :--- |
-| `no-active` | Disable the `:active` state |
-| `no-focus` | Disable the `:focus` state |
-| `no-hover` | Disable the `:hover` state |
-| `is-active` | Sets the given button to it's active state |
-| `is-hovering` | Sets the given button to it's hovering state |
-| `is-loading` | Sets the given button to it's loading state |
+| `is-primary` | Sets the color of the given button to the primary color |
+| `is-secondary` | Sets the color of the given button to the secondary color |
 | `is-small` | Sets the given button to it's small state |
 
 **`hdd-button-icon`:**
@@ -73,3 +69,9 @@ A button that only contains an icon and should be used when an icon is used as a
 | class | description|
 | :--- | :--- |
 | `is-transparent` | Sets the given button to it's transparent state |
+| `no-active` | Disable the `:active` state |
+| `no-focus` | Disable the `:focus` state |
+| `no-hover` | Disable the `:hover` state |
+| `is-active` | Sets the given button to it's active state |
+| `is-hovering` | Sets the given button to it's hovering state |
+| `is-loading` | Sets the given button to it's loading state |

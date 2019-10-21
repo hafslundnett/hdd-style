@@ -431,13 +431,17 @@ Below is a example of how to achieve this with sass.</p>
 &lt;button class=&quot;hdd-button is-loading&quot;&gt;Loading&lt;/button&gt;
 &lt;button class=&quot;hdd-button is-small&quot;&gt;Primary small&lt;/button&gt;
 &lt;button class=&quot;hdd-button is-small&quot; disabled&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-small is-loading&quot;&gt;Loading&lt;/button&gt;">Copy</button>
+&lt;button class=&quot;hdd-button is-small is-loading&quot;&gt;Loading&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-small has-icon-right&quot;&gt;Ohh icons &lt;i class=&quot;fal fa-magic&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-small has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-magic&quot;&gt;&lt;/i&gt; Ohh icons&lt;/button&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button&quot;&gt;Primary&lt;/button&gt;
 &lt;button class=&quot;hdd-button&quot; disabled&gt;Disabled&lt;/button&gt;
 &lt;button class=&quot;hdd-button is-loading&quot;&gt;Loading&lt;/button&gt;
 &lt;button class=&quot;hdd-button is-small&quot;&gt;Primary small&lt;/button&gt;
 &lt;button class=&quot;hdd-button is-small&quot; disabled&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-small is-loading&quot;&gt;Loading&lt;/button&gt;</code></pre>
+&lt;button class=&quot;hdd-button is-small is-loading&quot;&gt;Loading&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-small has-icon-right&quot;&gt;Ohh icons &lt;i class=&quot;fal fa-magic&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-small has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-magic&quot;&gt;&lt;/i&gt; Ohh icons&lt;/button&gt;</code></pre>
 	</div>
 </div><div id="secondary-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#secondary-button" class="icon-link i-section__link -heading"></a>Secondary button</h2></div><p><code>hdd-button</code></p>
 <p>The secondary button should never be used alone in a page.</p>
@@ -565,6 +569,35 @@ Below is a example of how to achieve this with sass.</p>
 <th style="text-align:left">description</th>
 </tr>
 </thead><tbody><tr>
+<td style="text-align:left"><code>is-primary</code></td>
+<td style="text-align:left">Sets the color of the given button to the primary color</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-secondary</code></td>
+<td style="text-align:left">Sets the color of the given button to the secondary color</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-small</code></td>
+<td style="text-align:left">Sets the given button to it&#39;s small state</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-small</code></td>
+<td style="text-align:left">Sets the given button to it&#39;s small state</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-small</code></td>
+<td style="text-align:left">Sets the given button to it&#39;s small state</td>
+</tr>
+</tbody></table><p><strong><code>hdd-button-icon</code>:</strong></p>
+<table class="table"><thead><tr>
+<th style="text-align:left">class</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead><tbody><tr>
+<td style="text-align:left"><code>is-transparent</code></td>
+<td style="text-align:left">Sets the given button to it&#39;s transparent state</td>
+</tr>
+<tr>
 <td style="text-align:left"><code>no-active</code></td>
 <td style="text-align:left">Disable the <code>:active</code> state</td>
 </tr>
@@ -587,19 +620,6 @@ Below is a example of how to achieve this with sass.</p>
 <tr>
 <td style="text-align:left"><code>is-loading</code></td>
 <td style="text-align:left">Sets the given button to it&#39;s loading state</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>is-small</code></td>
-<td style="text-align:left">Sets the given button to it&#39;s small state</td>
-</tr>
-</tbody></table><p><strong><code>hdd-button-icon</code>:</strong></p>
-<table class="table"><thead><tr>
-<th style="text-align:left">class</th>
-<th style="text-align:left">description</th>
-</tr>
-</thead><tbody><tr>
-<td style="text-align:left"><code>is-transparent</code></td>
-<td style="text-align:left">Sets the given button to it&#39;s transparent state</td>
 </tr>
 </tbody></table></div>
 </div>
@@ -2402,7 +2422,8 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">navbar.md</span>
 	</span>
-	<div class="theme-content-element-description"><blockquote>
+	<div class="theme-content-element-description"><p>The navigation floats on top of all elements with a z-index of 99. The z-index value is defined in the sizes variable file. When the navigation is hovered or the hover trigger class is added will the navigation expand and show the assigned label text to each list element.</p>
+<blockquote>
 <p>🚧 It is adviced to place the <code>hdd-sidenav</code> in the <code>hdd-layout</code> block wrapped as an <code>hdd-layout_sidenav</code> element. </p>
 </blockquote>
 <div id="sidenav" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#sidenav" class="icon-link i-section__link -heading"></a>Sidenav</h2></div><p><code>hdd-layout_sidenav</code></p>
@@ -2764,7 +2785,7 @@ The best way of including a set of color modifiers is by using the <code>color-m
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">typography.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>The typeface should be kept consistent in all mediums, physical and digital.</p>
+	<div class="theme-content-element-description"><p>The typeface should be kept consistent in all mediums, physical and digital. The typography of Hdd is based on the rem unit. The body is set to the browsers default font size. All typography blocks are defined in the $typography variable found in the typography variables file.</p>
 <div id="default-font" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#default-font" class="icon-link i-section__link -heading"></a>Default font</h2></div><p>Roboto is default font for all text.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
