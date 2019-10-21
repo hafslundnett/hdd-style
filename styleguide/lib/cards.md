@@ -80,7 +80,7 @@ In component based services (especially internal systems), content can be struct
 
 | class | description|
 | :--- | :--- |
-| `is-full-height` | Sets the given card to it's full height |
+| `is-full-height` | Sets the height of the given card to 100% |
 
 **`hdd-card_header`:**
 
