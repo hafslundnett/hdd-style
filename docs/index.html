@@ -273,7 +273,7 @@ Below is a example of how to achieve this with sass.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">badge.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>All colors can be used on <code>hdd-badge</code> and <code>hdd-badge-icon</code>. <code>signal-red</code> is used as the default color.</p>
+	<div class="theme-content-element-description"><p>Multiple colors can be used on <code>hdd-badge</code> and <code>hdd-badge-icon</code>. <code>signal-red</code> is used as the default color.</p>
 <div id="badge" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#badge" class="icon-link i-section__link -heading"></a>Badge</h2></div><p><code>hdd-badge</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -311,7 +311,10 @@ Below is a example of how to achieve this with sass.</p>
   &lt;span&gt;Example 2 &lt;span class=&quot;hdd-badge is-primary&quot;&gt;8&lt;/span&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&quot;padding-top: 1rem;&quot;&gt;
-  &lt;span&gt;Example 2 &lt;span class=&quot;hdd-badge is-safe&quot;&gt;10&lt;/span&gt;&lt;/span&gt;
+  &lt;span&gt;Example 3 &lt;span class=&quot;hdd-badge is-safe&quot;&gt;10&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
+  &lt;span&gt;Example 4 &lt;span class=&quot;hdd-badge is-warn&quot;&gt;10&lt;/span&gt;&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div&gt;
   &lt;span&gt;Example 1 &lt;span class=&quot;hdd-badge&quot;&gt;5&lt;/span&gt;&lt;/span&gt;
@@ -320,7 +323,10 @@ Below is a example of how to achieve this with sass.</p>
   &lt;span&gt;Example 2 &lt;span class=&quot;hdd-badge is-primary&quot;&gt;8&lt;/span&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&quot;padding-top: 1rem;&quot;&gt;
-  &lt;span&gt;Example 2 &lt;span class=&quot;hdd-badge is-safe&quot;&gt;10&lt;/span&gt;&lt;/span&gt;
+  &lt;span&gt;Example 3 &lt;span class=&quot;hdd-badge is-safe&quot;&gt;10&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
+  &lt;span&gt;Example 4 &lt;span class=&quot;hdd-badge is-warn&quot;&gt;10&lt;/span&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><div id="icon-badge" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#icon-badge" class="icon-link i-section__link -heading"></a>Icon badge</h2></div><p><code>hdd-badge-icon</code></p>
@@ -362,6 +368,9 @@ Below is a example of how to achieve this with sass.</p>
 &lt;/div&gt;
 &lt;div style=&quot;padding-top: 1rem;&quot;&gt;
   &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon is-safe&quot;&gt;&lt;/span&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
+  &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon is-warn&quot;&gt;&lt;/span&gt;&lt;/i&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div&gt;
   &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon&quot;&gt;&lt;/span&gt;&lt;/i&gt;
@@ -371,6 +380,9 @@ Below is a example of how to achieve this with sass.</p>
 &lt;/div&gt;
 &lt;div style=&quot;padding-top: 1rem;&quot;&gt;
   &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon is-safe&quot;&gt;&lt;/span&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
+  &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon is-warn&quot;&gt;&lt;/span&gt;&lt;/i&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div></div>
@@ -1593,6 +1605,11 @@ menu.addEventListener(&#39;click&#39;, function(e) {
   &lt;span class=&quot;hdd-tooltip_content is-leaning-right&quot;&gt;Right Leaning Tooltip&lt;/span&gt;
 &lt;/span&gt;
 |
+&lt;span class=&quot;hdd-tooltip&quot; style=&quot;margin-right: 10px, margin-left: 10px;&quot;&gt;
+  Hover me
+  &lt;span class=&quot;hdd-tooltip_content&quot;&gt;Centered Leaning Tooltip&lt;/span&gt;
+&lt;/span&gt;
+|
 &lt;span class=&quot;hdd-tooltip&quot; style=&quot;margin-left: 10px&quot;&gt;
   Hover me too
   &lt;span class=&quot;hdd-tooltip_content is-leaning-left&quot;&gt;Left Leaning Tooltip&lt;/span&gt;
@@ -1601,6 +1618,11 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;hdd-tooltip&quot; style=&quot;margin-right: 10px&quot;&gt;
   Hover me
   &lt;span class=&quot;hdd-tooltip_content is-leaning-right&quot;&gt;Right Leaning Tooltip&lt;/span&gt;
+&lt;/span&gt;
+|
+&lt;span class=&quot;hdd-tooltip&quot; style=&quot;margin-right: 10px, margin-left: 10px;&quot;&gt;
+  Hover me
+  &lt;span class=&quot;hdd-tooltip_content&quot;&gt;Centered Leaning Tooltip&lt;/span&gt;
 &lt;/span&gt;
 |
 &lt;span class=&quot;hdd-tooltip&quot; style=&quot;margin-left: 10px&quot;&gt;

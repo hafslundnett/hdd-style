@@ -3,7 +3,7 @@ name: Badge
 category: Components
 ---
 
-All colors can be used on `hdd-badge` and `hdd-badge-icon`. `signal-red` is used as the default color.
+Multiple colors can be used on `hdd-badge` and `hdd-badge-icon`. `signal-red` is used as the default color.
 
 ## Badge
 `hdd-badge`
@@ -17,7 +17,10 @@ All colors can be used on `hdd-badge` and `hdd-badge-icon`. `signal-red` is used
   <span>Example 2 <span class="hdd-badge is-primary">8</span></span>
 </div>
 <div style="padding-top: 1rem;">
-  <span>Example 2 <span class="hdd-badge is-safe">10</span></span>
+  <span>Example 3 <span class="hdd-badge is-safe">10</span></span>
+</div>
+<div style="padding-top: 1rem;">
+  <span>Example 4 <span class="hdd-badge is-warn">10</span></span>
 </div>
 ```
 
@@ -36,5 +39,8 @@ Add a small red dot with a white border to the top right side of a icon.
 </div>
 <div style="padding-top: 1rem;">
   <i class="fal fa-cog"><span class="hdd-badge-icon is-safe"></span></i>
+</div>
+<div style="padding-top: 1rem;">
+  <i class="fal fa-cog"><span class="hdd-badge-icon is-warn"></span></i>
 </div>
 ```
