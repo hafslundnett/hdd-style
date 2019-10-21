@@ -56,7 +56,7 @@
 
   &_row,
   tr {
-    position: relative;
+    
 
     @include color-modifiers(('primary', 'warn', 'danger', 'safe'), 'border-color', '', '::before');
 
