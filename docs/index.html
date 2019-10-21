@@ -514,10 +514,14 @@ Below is a example of how to achieve this with sass.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button has-icon&quot;&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon&quot; disabled&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button has-icon&quot;&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon&quot; disabled&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-arrow-left&quot;&gt;&lt;/i&gt; Back&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon-right&quot;&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon-left&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-left&quot;&gt;&lt;/i&gt; Back&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon-right&quot; disabled&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-arrow-left&quot;&gt;&lt;/i&gt; Back&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon-right&quot;&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon-left&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-left&quot;&gt;&lt;/i&gt; Back&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon-right&quot; disabled&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
 	</div>
 </div><div id="icon-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#icon-button" class="icon-link i-section__link -heading"></a>Icon-button</h2></div><p><code>hdd-button-icon</code></p>
 <p>A button that only contains an icon and should be used when an icon is used as an button.</p>
@@ -565,6 +569,31 @@ Below is a example of how to achieve this with sass.</p>
 <th style="text-align:left">description</th>
 </tr>
 </thead><tbody><tr>
+<td style="text-align:left"><code>is-primary</code></td>
+<td style="text-align:left">Sets the color of the given button to the primary color</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-secondary</code></td>
+<td style="text-align:left">Sets the color of the given button to the secondary color</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-small</code></td>
+<td style="text-align:left">Sets the given button to it&#39;s small state</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>has-icon-right</code></td>
+<td style="text-align:left">Adds padding to the right of icon</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>has-icon-left</code></td>
+<td style="text-align:left">Adds padding to the left of icon</td>
+</tr>
+</tbody></table><p><strong><code>hdd-button-icon</code>:</strong></p>
+<table class="table"><thead><tr>
+<th style="text-align:left">class</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead><tbody><tr>
 <td style="text-align:left"><code>no-active</code></td>
 <td style="text-align:left">Disable the <code>:active</code> state</td>
 </tr>
@@ -577,6 +606,10 @@ Below is a example of how to achieve this with sass.</p>
 <td style="text-align:left">Disable the <code>:hover</code> state</td>
 </tr>
 <tr>
+<td style="text-align:left"><code>is-transparent</code></td>
+<td style="text-align:left">Sets the given button to it&#39;s transparent state</td>
+</tr>
+<tr>
 <td style="text-align:left"><code>is-active</code></td>
 <td style="text-align:left">Sets the given button to it&#39;s active state</td>
 </tr>
@@ -587,19 +620,6 @@ Below is a example of how to achieve this with sass.</p>
 <tr>
 <td style="text-align:left"><code>is-loading</code></td>
 <td style="text-align:left">Sets the given button to it&#39;s loading state</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>is-small</code></td>
-<td style="text-align:left">Sets the given button to it&#39;s small state</td>
-</tr>
-</tbody></table><p><strong><code>hdd-button-icon</code>:</strong></p>
-<table class="table"><thead><tr>
-<th style="text-align:left">class</th>
-<th style="text-align:left">description</th>
-</tr>
-</thead><tbody><tr>
-<td style="text-align:left"><code>is-transparent</code></td>
-<td style="text-align:left">Sets the given button to it&#39;s transparent state</td>
 </tr>
 </tbody></table></div>
 </div>
@@ -813,7 +833,7 @@ Below is a example of how to achieve this with sass.</p>
 </tr>
 </thead><tbody><tr>
 <td style="text-align:left"><code>is-full-height</code></td>
-<td style="text-align:left">Sets the given card to it&#39;s full height</td>
+<td style="text-align:left">Sets the height of the given card to 100%</td>
 </tr>
 </tbody></table><p><strong><code>hdd-card_header</code>:</strong></p>
 <table class="table"><thead><tr>
@@ -2402,7 +2422,8 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">navbar.md</span>
 	</span>
-	<div class="theme-content-element-description"><blockquote>
+	<div class="theme-content-element-description"><p>The navigation floats on top of all elements with a z-index of 99. The z-index value is defined in the sizes variable file. When the navigation is hovered or the hover trigger class is added will the navigation expand and show the assigned label text to each list element.</p>
+<blockquote>
 <p>🚧 It is adviced to place the <code>hdd-sidenav</code> in the <code>hdd-layout</code> block wrapped as an <code>hdd-layout_sidenav</code> element. </p>
 </blockquote>
 <div id="sidenav" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#sidenav" class="icon-link i-section__link -heading"></a>Sidenav</h2></div><p><code>hdd-layout_sidenav</code></p>
@@ -2764,7 +2785,7 @@ The best way of including a set of color modifiers is by using the <code>color-m
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">typography.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>The typeface should be kept consistent in all mediums, physical and digital.</p>
+	<div class="theme-content-element-description"><p>The typeface should be kept consistent in all mediums, physical and digital. The typography of Hdd is based on the rem unit. The body is set to the browsers default font size. All typography blocks are defined in the $typography variable found in the typography variables file.</p>
 <div id="default-font" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#default-font" class="icon-link i-section__link -heading"></a>Default font</h2></div><p>Roboto is default font for all text.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">

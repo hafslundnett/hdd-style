@@ -116,17 +116,15 @@
 
     &-left {
       @extend %icon-base;
-
       i {
-        margin-right: .5rem;
+        margin-right: .5rem
       }
     }
 
     &-right {
       @extend %icon-base;
-
       i {
-        margin-left: .5rem;
+        margin-left: .5rem
       }
     }
   }

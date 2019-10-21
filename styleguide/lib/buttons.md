@@ -39,8 +39,10 @@ The secondary button should never be used alone in a page.
 Action buttons are for prompting a user action that will affect another part.
 
 ```action-button.html
-<button class="hdd-button has-icon">Forward <i class="fal fa-arrow-right"></i></button>
-<button class="hdd-button has-icon" disabled>Forward <i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button has-icon-left"><i class="fal fa-arrow-left"></i> Back</button>
+<button class="hdd-button has-icon-right">Forward <i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button has-icon-left" disabled><i class="fal fa-arrow-left"></i> Back</button>
+<button class="hdd-button has-icon-right" disabled>Forward <i class="fal fa-arrow-right"></i></button>
 ```
 
 ## Icon-button
@@ -60,16 +62,20 @@ A button that only contains an icon and should be used when an icon is used as a
 
 | class | description|
 | :--- | :--- |
-| `no-active` | Disable the `:active` state |
-| `no-focus` | Disable the `:focus` state |
-| `no-hover` | Disable the `:hover` state |
-| `is-active` | Sets the given button to it's active state |
-| `is-hovering` | Sets the given button to it's hovering state |
-| `is-loading` | Sets the given button to it's loading state |
+| `is-primary` | Sets the color of the given button to the primary color |
+| `is-secondary` | Sets the color of the given button to the secondary color |
 | `is-small` | Sets the given button to it's small state |
+| `has-icon-right` | Adds padding to the right of icon |
+| `has-icon-left` | Adds padding to the left of icon |
 
 **`hdd-button-icon`:**
 
 | class | description|
 | :--- | :--- |
+| `no-active` | Disable the `:active` state |
+| `no-focus` | Disable the `:focus` state |
+| `no-hover` | Disable the `:hover` state |
 | `is-transparent` | Sets the given button to it's transparent state |
+| `is-active` | Sets the given button to it's active state |
+| `is-hovering` | Sets the given button to it's hovering state |
+| `is-loading` | Sets the given button to it's loading state |
