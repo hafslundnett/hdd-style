@@ -60,6 +60,10 @@
     color: color('font-color');
   }
 
+  &_scroll-wrapper {	
+    overflow-x: auto;	
+  }
+
   &_content {
     // .is-p is font-properties, defined in typography.
     @extend .is-p;
