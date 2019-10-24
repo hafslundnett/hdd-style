@@ -864,12 +864,12 @@ Below is a example of how to achieve this with sass.</p>
 		<span class="theme-content-element-source-path">feedback-message.md</span>
 	</span>
 	<div class="theme-content-element-description"><p>A feedback message could be an info, warning or error. Feedback messages should be displayed in the lower right corner and act like a &quot;snackbar&quot; that pops up and dissapears after approximately 8 seconds. </p>
-<div id="info-feedback" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#info-feedback" class="icon-link i-section__link -heading"></a>Info feedback</h2></div><p><code>feedback-container</code>.<code>is-info</code></p>
+<div id="info-feedback" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#info-feedback" class="icon-link i-section__link -heading"></a>Info feedback</h2></div><p><code>feedback-container</code>, <code>is-success</code>, <code>is-info</code>, <code>is-warn</code>, <code>is-error</code></p>
 <p>Usage of icons in feedback messages should be kept to an absolute minimum, since they usually don&#39;t serve any purpose and may be considered as visual &quot;noise&quot;.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
-                            href="feedback-message-feedbackmessage-info.html"
+                            href="feedback-message-feedbackmessage.html"
                             target="_blank"
                             class="plain-link"
                             data-toggle="tooltip"
@@ -884,7 +884,7 @@ Below is a example of how to achieve this with sass.</p>
                         <div
                             class="i-example__iframe"
                             lazyframe
-                            data-src="feedback-message-feedbackmessage-info.html"
+                            data-src="feedback-message-feedbackmessage.html"
                             data-initinview="true"
                             data-title="Loading..." 
                         ></div>
@@ -897,113 +897,75 @@ Below is a example of how to achieve this with sass.</p>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;feedback-container&quot; style=&quot;margin-bottom: 10px&quot;&gt;
   &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
-  &lt;p class=&quot;feedback-container_message&quot;&gt;This is just for &lt;em&gt;info&lt;/em&gt;&lt;/p&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    This is just for info! Usage of icons should be kept to an absolute minimum. Long messages are also supported, the text will wrap to a new line. However, long feedbacks are not recommended.
+  &lt;/p&gt;
   &lt;button class=&quot;feedback-container_close-button&quot;&gt;
     &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
   &lt;/button&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;feedback-container is-info&quot; style=&quot;margin-bottom: 10px&quot;&gt;
-  &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
-  &lt;p class=&quot;feedback-container_message&quot;&gt;Usage of icons should be kept to an absolute &lt;span class=&quot;is-strong&quot;&gt;minimum&lt;/span&gt;. Long messages is also supported, since the text will wrap to a new line. However, long feedbacks is not recommended.&lt;/p&gt;
+&lt;div class=&quot;feedback-container is-success&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    Something was a success!
+  &lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+    &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-warn&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    There are some things you might want to check out.
+  &lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+    &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-error&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    There is something seriously wrong going on!
+  &lt;/p&gt;
   &lt;button class=&quot;feedback-container_close-button&quot;&gt;
     &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
   &lt;/button&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;feedback-container&quot; style=&quot;margin-bottom: 10px&quot;&gt;
   &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
-  &lt;p class=&quot;feedback-container_message&quot;&gt;This is just for &lt;em&gt;info&lt;/em&gt;&lt;/p&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    This is just for info! Usage of icons should be kept to an absolute minimum. Long messages are also supported, the text will wrap to a new line. However, long feedbacks are not recommended.
+  &lt;/p&gt;
   &lt;button class=&quot;feedback-container_close-button&quot;&gt;
     &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
   &lt;/button&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;feedback-container is-info&quot; style=&quot;margin-bottom: 10px&quot;&gt;
-  &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
-  &lt;p class=&quot;feedback-container_message&quot;&gt;Usage of icons should be kept to an absolute &lt;span class=&quot;is-strong&quot;&gt;minimum&lt;/span&gt;. Long messages is also supported, since the text will wrap to a new line. However, long feedbacks is not recommended.&lt;/p&gt;
+&lt;div class=&quot;feedback-container is-success&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    Something was a success!
+  &lt;/p&gt;
   &lt;button class=&quot;feedback-container_close-button&quot;&gt;
     &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
   &lt;/button&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div><div id="warning-feedback" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#warning-feedback" class="icon-link i-section__link -heading"></a>Warning feedback</h2></div><p><code>feedback-container</code>.<code>is-warn</code></p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="feedback-message-feedbackmessage-warn.html"
-                            target="_blank"
-                            class="plain-link"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Open in a new window"
-                        >
-                            <i class="fa fa-external-link-square fa-fw"></i>
-                            Example
-                        </a>
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="feedback-message-feedbackmessage-warn.html"
-                            data-initinview="true"
-                            data-title="Loading..." 
-                        ></div>
-                    </div>
-                </div>
+&lt;/div&gt;
 
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;feedback-container is-warn&quot; style=&quot;margin-bottom: 10px&quot;&gt;
-  &lt;p class=&quot;feedback-container_message&quot;&gt;There are some things you might want to check out.&lt;/p&gt;
+&lt;div class=&quot;feedback-container is-warn&quot; style=&quot;margin-bottom: 10px&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    There are some things you might want to check out.
+  &lt;/p&gt;
   &lt;button class=&quot;feedback-container_close-button&quot;&gt;
     &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
   &lt;/button&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;feedback-container is-warn&quot; style=&quot;margin-bottom: 10px&quot;&gt;
-  &lt;p class=&quot;feedback-container_message&quot;&gt;There are some things you might want to check out.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-error&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    There is something seriously wrong going on!
+  &lt;/p&gt;
   &lt;button class=&quot;feedback-container_close-button&quot;&gt;
     &lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;
   &lt;/button&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div><div id="error-feedback" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#error-feedback" class="icon-link i-section__link -heading"></a>Error feedback</h2></div><p><code>feedback-container</code>.<code>is-error</code></p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="feedback-message-feedbackmessage-error.html"
-                            target="_blank"
-                            class="plain-link"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Open in a new window"
-                        >
-                            <i class="fa fa-external-link-square fa-fw"></i>
-                            Example
-                        </a>
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="feedback-message-feedbackmessage-error.html"
-                            data-initinview="true"
-                            data-title="Loading..." 
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;feedback-container is-error&quot;&gt;
-  &lt;p class=&quot;feedback-container_message&quot;&gt;There is something seriously wrong going on!&lt;/p&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;feedback-container is-error&quot;&gt;
-  &lt;p class=&quot;feedback-container_message&quot;&gt;There is something seriously wrong going on!&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>feedback-container</code>:</strong></p>
@@ -1016,12 +978,16 @@ Below is a example of how to achieve this with sass.</p>
 <td style="text-align:left">Sets the given feedback to the info state</td>
 </tr>
 <tr>
+<td style="text-align:left"><code>is-success</code></td>
+<td style="text-align:left">Sets the given feedback to the success state</td>
+</tr>
+<tr>
 <td style="text-align:left"><code>is-warn</code></td>
-<td style="text-align:left">Sets the given button to the warn state</td>
+<td style="text-align:left">Sets the given feedback to the warn state</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>is-error</code></td>
-<td style="text-align:left">Sets the given button to the error state</td>
+<td style="text-align:left">Sets the given feedback to the error state</td>
 </tr>
 </tbody></table></div>
 </div>
@@ -1066,13 +1032,11 @@ Below is a example of how to achieve this with sass.</p>
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;a href=&quot;https://google.com&quot; class=&quot;hdd-link&quot;&gt;Normal&lt;/a&gt; &lt;br&gt;
 &lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-active&quot;&gt;Active&lt;/a&gt;&lt;br&gt;
 &lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-hovering&quot;&gt;Hovered&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link no-hover&quot;&gt;Disabled hover state&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link&quot; disabled&gt;Disabled&lt;/a&gt;&lt;br&gt;">Copy</button>
+&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link no-hover&quot;&gt;Disabled hover state&lt;/a&gt;&lt;br&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;a href=&quot;https://google.com&quot; class=&quot;hdd-link&quot;&gt;Normal&lt;/a&gt; &lt;br&gt;
 &lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-active&quot;&gt;Active&lt;/a&gt;&lt;br&gt;
 &lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-hovering&quot;&gt;Hovered&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link no-hover&quot;&gt;Disabled hover state&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link&quot; disabled&gt;Disabled&lt;/a&gt;&lt;br&gt;</code></pre>
+&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link no-hover&quot;&gt;Disabled hover state&lt;/a&gt;&lt;br&gt;</code></pre>
 	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-link</code>:</strong></p>
 <table class="table"><thead><tr>

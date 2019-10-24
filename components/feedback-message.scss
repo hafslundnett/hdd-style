@@ -12,27 +12,35 @@
   // .is-info is the default for any feedback-container
   @extend .is-info;
 
+  &.is-success {
+    background: color('safe');
+    
+    #{$this}_icon, #{$this}_message, #{$this}_close-button {
+      color: color-contrast('safe');
+    }
+  }
+
   &.is-info {
     background-color: color('blue-light3');
 
     #{$this}_icon, #{$this}_message, #{$this}_close-button {
-      color: color('font-color');
+      color: color-contrast('blue-light3');
     }
   }
 
   &.is-warn {
-    background-color: color('signal-yellow');
+    background-color: color('warn');
 
     #{$this}_icon, #{$this}_message, #{$this}_close-button {
-      color: color('font-color');
+      color: color-contrast('warn');
     }
   }
 
   &.is-error {
-    background-color: color('signal-red');
+    background-color: color('danger');
 
     #{$this}_icon, #{$this}_message, #{$this}_close-button {
-      color: color('white');
+      color: color-contrast('danger');
     }
   }
 
@@ -47,11 +55,6 @@
     margin-right: $feedback-message-gap;
     font-size: font-size('p');
     line-height: 1.125rem;
-
-    em, b, .is-strong {
-      font-style: normal;
-      font-weight: bold;
-    }
   }
 
   &_close-button {
