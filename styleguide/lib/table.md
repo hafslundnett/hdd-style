@@ -50,22 +50,11 @@ A table can consist out of data, buttons and icons. A table row can also have a 
       <button class="hdd-button is-small">Submit</button>
     </td>
   </tr>
-  <tr class="is-danger">
-    <th>3</th>
-    <td>938472</td>
+  <tr class="is-safe">
+    <th>4</th>
+    <td>338472</td>
     <td>123419384</td>
-    <td>17</td>
-    <td class="hdd-table_action">
-      <i class="far fa-angle-down"></i>
-      <i class="far fa-ellipsis-v"></i>
-      <button class="hdd-button is-small">Submit</button>
-    </td>
-  </tr>
-  <tr class="is-danger">
-    <th>3</th>
-    <td>938472</td>
-    <td>123419384</td>
-    <td>17</td>
+    <td>14</td>
     <td class="hdd-table_action">
       <i class="far fa-angle-down"></i>
       <i class="far fa-ellipsis-v"></i>
