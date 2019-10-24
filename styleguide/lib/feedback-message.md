@@ -33,7 +33,7 @@ Usage of icons in feedback messages should be kept to an absolute minimum, since
 
 <div class="feedback-container is-warn" style="margin-bottom: 10px">
   <p class="feedback-container_message">
-    There are some things you might want to check out.
+    There is something you might want to check out.
   </p>
   <button class="feedback-container_close-button">
     <i class="fal fa-times"></i>
