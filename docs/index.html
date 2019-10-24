@@ -2786,7 +2786,7 @@ The best way of including a set of color modifiers is by using the <code>color-m
 		<span class="theme-content-element-source-path">icons.md</span>
 	</span>
 	<div class="theme-content-element-description"><p>Icons, symbols indicating action, information or intention to the user. </p>
-<p>HDD-style implments Font Awesomes icon library, and is implemented with the <code>&lt;i&gt; &lt;/i&gt;</code> tags, along with the corresponding class for an icon, see the examples for some of the icons that are available. A full list of all of Font Awesome icons can be found here: <a href="https://fontawesome.com/icons?d=gallery">https://fontawesome.com/icons?d=gallery</a></p>
+<p>HDD-style uses Font Awesomes icon library, and is implemented with the <code>&lt;i&gt; &lt;/i&gt;</code> tags, along with the corresponding class for an icon, see the examples for some of the icons that are available. A full list of all of Font Awesome icons can be found here: <a href="https://fontawesome.com/icons?d=gallery">https://fontawesome.com/icons?d=gallery</a></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -2817,97 +2817,22 @@ The best way of including a set of color modifiers is by using the <code>color-m
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/icons.css&quot; /&gt;
+&lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt; Info Icon&lt;/button&gt;
 
-&lt;div class=&quot;iconContainer&quot;&gt; 
-    &lt;i class=&quot;fal fa-info-circle iconPlacement&quot;&gt;&lt;/i&gt;  
-    &lt;p class=&quot;iconText&quot;&gt;Info icon&lt;p&gt;
-&lt;/div&gt;
+&lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-user&quot;&gt;&lt;/i&gt; User Icon&lt;/button&gt;
 
-&lt;div class=&quot;iconContainer&quot;&gt; 
-    &lt;i class=&quot;fal fa-user iconPlacement&quot;&gt;&lt;/i&gt;  
-    &lt;p class=&quot;iconText&quot;&gt;User icon&lt;p&gt;
-&lt;/div&gt;
+&lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-bars&quot;&gt;&lt;/i&gt; Menubar Icon&lt;/button&gt;
 
-&lt;div class=&quot;iconContainer&quot;&gt; 
-    &lt;i class=&quot;fal fa-bars iconPlacement&quot;&gt;&lt;/i&gt;  
-    &lt;p class=&quot;iconText&quot;&gt;Menubar icon&lt;p&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;iconContainer&quot;&gt; 
-    &lt;i class=&quot;fal fa-search iconPlacement&quot;&gt;&lt;/i&gt;  
-    &lt;p class=&quot;iconText&quot;&gt;Search icon&lt;p&gt;
-&lt;/div&gt;
+&lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt; Search Icon&lt;/button&gt;
 ">Copy</button>
 		<pre class="mb-0"><code class="lang-">
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/icons.css&quot; /&gt;
+&lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt; Info Icon&lt;/button&gt;
 
-&lt;div class=&quot;iconContainer&quot;&gt; 
-    &lt;i class=&quot;fal fa-info-circle iconPlacement&quot;&gt;&lt;/i&gt;  
-    &lt;p class=&quot;iconText&quot;&gt;Info icon&lt;p&gt;
-&lt;/div&gt;
+&lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-user&quot;&gt;&lt;/i&gt; User Icon&lt;/button&gt;
 
-&lt;div class=&quot;iconContainer&quot;&gt; 
-    &lt;i class=&quot;fal fa-user iconPlacement&quot;&gt;&lt;/i&gt;  
-    &lt;p class=&quot;iconText&quot;&gt;User icon&lt;p&gt;
-&lt;/div&gt;
+&lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-bars&quot;&gt;&lt;/i&gt; Menubar Icon&lt;/button&gt;
 
-&lt;div class=&quot;iconContainer&quot;&gt; 
-    &lt;i class=&quot;fal fa-bars iconPlacement&quot;&gt;&lt;/i&gt;  
-    &lt;p class=&quot;iconText&quot;&gt;Menubar icon&lt;p&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;iconContainer&quot;&gt; 
-    &lt;i class=&quot;fal fa-search iconPlacement&quot;&gt;&lt;/i&gt;  
-    &lt;p class=&quot;iconText&quot;&gt;Search icon&lt;p&gt;
-&lt;/div&gt;
-</code></pre>
-	</div>
-</div>
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> css</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="
-.iconContainer {
-    heigth: 50px;
-    width: 20%;
-    margin: 10px;
-    border: 1px solid black;
-    text-align:center;
-    display: inline-block;
-    border-radius: 5%;
-}
-
-.iconPlacement {
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-.iconText {
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-">Copy</button>
-		<pre class="mb-0"><code class="lang-">
-.iconContainer {
-    heigth: 50px;
-    width: 20%;
-    margin: 10px;
-    border: 1px solid black;
-    text-align:center;
-    display: inline-block;
-    border-radius: 5%;
-}
-
-.iconPlacement {
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-.iconText {
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
+&lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt; Search Icon&lt;/button&gt;
 </code></pre>
 	</div>
 </div></div>
