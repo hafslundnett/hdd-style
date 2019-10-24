@@ -331,7 +331,7 @@ Below is a example of how to achieve this with sass.</p>
 &lt;/div&gt;</code></pre>
 	</div>
 </div><div id="icon-badge" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#icon-badge" class="icon-link i-section__link -heading"></a>Icon badge</h2></div><p><code>hdd-badge-icon</code></p>
-<p>Add a small red dot with a white border to the top right side of a icon.</p>
+<p>Add a small red dot with a white border to the top right side of an icon.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -395,7 +395,7 @@ Below is a example of how to achieve this with sass.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">buttons.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>Buttons should be used across the different internal services. Changing the color of a button to convey purpose is not ideal as people with vision impairments will not be able to pick this up. Usage of other colors should be well discussed and the context around it clear.</p>
+	<div class="theme-content-element-description"><p>Buttons should be used across the different internal services. Changing the color of a button to convey purpose is not ideal as people with vision impairments may struggle. Usage of other colors should be properly discussed and the context clear.</p>
 <div id="primary-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#primary-button" class="icon-link i-section__link -heading"></a>Primary button</h2></div><p><code>hdd-button</code></p>
 <p>If only one button exists on a page, it should always be a primary button. </p>
 <div class="i-example">
@@ -441,7 +441,7 @@ Below is a example of how to achieve this with sass.</p>
 &lt;button class=&quot;hdd-button is-small is-loading&quot;&gt;Loading&lt;/button&gt;</code></pre>
 	</div>
 </div><div id="secondary-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#secondary-button" class="icon-link i-section__link -heading"></a>Secondary button</h2></div><p><code>hdd-button</code></p>
-<p>The secondary button should never be used alone in a page.</p>
+<p>The secondary button should never be used alone on a page.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -632,7 +632,80 @@ Below is a example of how to achieve this with sass.</p>
 		<span class="theme-content-element-source-path">cards.md</span>
 	</span>
 	<div class="theme-content-element-description"><p>In component based services (especially internal systems), content can be structured using Cards.</p>
-<div id="card-with-full-width-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#card-with-full-width-button" class="icon-link i-section__link -heading"></a>Card with full width button</h2></div><p><code>hdd-card</code></p>
+<div id="card" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#card" class="icon-link i-section__link -heading"></a>Card</h2></div><p><code>hdd-card</code></p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="cards-cards-1.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="cards-cards-1.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-card&quot;&gt;
+  &lt;div class=&quot;hdd-card_header&quot;&gt;
+    &lt;div class=&quot;hdd-card_header_text&quot;&gt;
+      &lt;div class=&quot;hdd-card_title&quot;&gt;A card should have a title&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_content&quot;&gt;
+    &lt;p&gt;A card consist of some content.&lt;/p&gt;
+    &lt;p&gt;The card can have multiple lines of content.&lt;/p&gt;
+    &lt;p&gt;Cards are useful for displaying some kind of information&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_header&quot;&gt;
+    &lt;div class=&quot;hdd-card_header_text&quot;&gt;
+      &lt;div class=&quot;hdd-card_title&quot;&gt;A card can have more than one title&lt;/div&gt;
+      &lt;div class=&quot;hdd-card_subtitle&quot;&gt;And a subtitle&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_content&quot;&gt;
+    &lt;p&gt;And more content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-card&quot;&gt;
+  &lt;div class=&quot;hdd-card_header&quot;&gt;
+    &lt;div class=&quot;hdd-card_header_text&quot;&gt;
+      &lt;div class=&quot;hdd-card_title&quot;&gt;A card should have a title&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_content&quot;&gt;
+    &lt;p&gt;A card consist of some content.&lt;/p&gt;
+    &lt;p&gt;The card can have multiple lines of content.&lt;/p&gt;
+    &lt;p&gt;Cards are useful for displaying some kind of information&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_header&quot;&gt;
+    &lt;div class=&quot;hdd-card_header_text&quot;&gt;
+      &lt;div class=&quot;hdd-card_title&quot;&gt;A card can have more than one title&lt;/div&gt;
+      &lt;div class=&quot;hdd-card_subtitle&quot;&gt;And a subtitle&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_content&quot;&gt;
+    &lt;p&gt;And more content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><div id="card-with-full-width-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#card-with-full-width-button" class="icon-link i-section__link -heading"></a>Card with full width button</h2></div><p><code>hdd-card</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -864,7 +937,7 @@ Below is a example of how to achieve this with sass.</p>
 		<span class="theme-content-element-source-path">feedback-message.md</span>
 	</span>
 	<div class="theme-content-element-description"><p>A feedback message could be an info, warning or error. Feedback messages should be displayed in the lower right corner and act like a &quot;snackbar&quot; that pops up and dissapears after approximately 8 seconds. </p>
-<div id="info-feedback" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#info-feedback" class="icon-link i-section__link -heading"></a>Info feedback</h2></div><p><code>feedback-container</code>, <code>is-success</code>, <code>is-info</code>, <code>is-warn</code>, <code>is-error</code></p>
+<div id="info-feedback" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#info-feedback" class="icon-link i-section__link -heading"></a>Info feedback</h2></div><p><code>feedback-container</code>,  <code>is-info</code>, <code>is-success</code>, <code>is-warn</code>, <code>is-error</code></p>
 <p>Usage of icons in feedback messages should be kept to an absolute minimum, since they usually don&#39;t serve any purpose and may be considered as visual &quot;noise&quot;.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">

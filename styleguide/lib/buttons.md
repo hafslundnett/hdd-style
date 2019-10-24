@@ -3,7 +3,7 @@ name: Button
 category: Components
 ---
 
-Buttons should be used across the different internal services. Changing the color of a button to convey purpose is not ideal as people with vision impairments will not be able to pick this up. Usage of other colors should be well discussed and the context around it clear.
+Buttons should be used across the different internal services. Changing the color of a button to convey purpose is not ideal as people with vision impairments may struggle. Usage of other colors should be properly discussed and the context clear.
 
 ## Primary button
 `hdd-button`
@@ -22,7 +22,7 @@ If only one button exists on a page, it should always be a primary button.
 ## Secondary button
 `hdd-button`
 
-The secondary button should never be used alone in a page.
+The secondary button should never be used alone on a page.
 
 ```secondary-button.html
 <button class="hdd-button is-secondary">Secondary</button>

@@ -28,7 +28,7 @@ Multiple colors can be used on `hdd-badge` and `hdd-badge-icon`. `signal-red` is
 ## Icon badge
 `hdd-badge-icon`
 
-Add a small red dot with a white border to the top right side of a icon.
+Add a small red dot with a white border to the top right side of an icon.
 
 ```badge-icon.html
 <div>

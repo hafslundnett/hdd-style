@@ -5,6 +5,33 @@ category: Components
 
 In component based services (especially internal systems), content can be structured using Cards.
 
+## Card 
+`hdd-card`
+ 
+```cards-1.html
+<div class="hdd-card">
+  <div class="hdd-card_header">
+    <div class="hdd-card_header_text">
+      <div class="hdd-card_title">A card should have a title</div>
+    </div>
+  </div>
+  <div class="hdd-card_content">
+    <p>A card consist of some content.</p>
+    <p>The card can have multiple lines of content.</p>
+    <p>Cards are useful for displaying some kind of information</p>
+  </div>
+  <div class="hdd-card_header">
+    <div class="hdd-card_header_text">
+      <div class="hdd-card_title">A card can have more than one title</div>
+      <div class="hdd-card_subtitle">And a subtitle</div>
+    </div>
+  </div>
+  <div class="hdd-card_content">
+    <p>And more content.</p>
+  </div>
+</div>
+```
+
 ## Card with full width button
 `hdd-card`
  
