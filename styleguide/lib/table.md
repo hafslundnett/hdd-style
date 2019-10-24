@@ -5,10 +5,58 @@ category: Components
 
 A table can consist out of data, buttons and icons. A table row can also have a small color bar at the beginning of the row, all color subclasses can be used.
 
+## Table
+`hdd-table`
+
+```table.html
+<table class="hdd-table is-striped has-shadow">
+  <tr class="hdd-table_header">
+    <th>ID<i class="far fa-arrow-up"></i></th>
+    <th>Kundenr.<i class="far fa-arrow-up"></i></th>
+    <th>Personnr.</th>
+    <th>Fakturanr.<i class="far fa-arrow-up"></i></th>
+    <th></th>
+  </tr>
+  <tr>
+    <th>1</th>
+    <td>338472</td>
+    <td>123419384</td>
+    <td>14</td>
+    <td class="hdd-table_action">
+      <i class="far fa-angle-down"></i>
+      <i class="far fa-ellipsis-v"></i>
+      <button class="hdd-button is-small">Submit</button>
+    </td>
+  </tr>
+  <tr>
+    <th>2</th>
+    <td>338472</td>
+    <td>123419384</td>
+    <td>14</td>
+    <td class="hdd-table_action">
+      <i class="far fa-angle-down"></i>
+      <i class="far fa-ellipsis-v"></i>
+      <button class="hdd-button is-small">Submit</button>
+    </td>
+  </tr>
+  <tr>
+    <th>3</th>
+    <td>338472</td>
+    <td>123419384</td>
+    <td>14</td>
+    <td class="hdd-table_action">
+      <i class="far fa-angle-down"></i>
+      <i class="far fa-ellipsis-v"></i>
+      <button class="hdd-button is-small">Submit</button>
+    </td>
+  </tr>
+</table>
+```
+
 ## Table with color bars
 `hdd-table`
 
-```stripedtable.html
+```coloredtable.html
 <table class="hdd-table is-striped has-shadow">
   <tr class="hdd-table_header">
     <th>ID<i class="far fa-arrow-up"></i></th>
@@ -64,59 +112,6 @@ A table can consist out of data, buttons and icons. A table row can also have a 
 </table>
 ```
 
-## Detailed row table
-`hdd-table_details`
-
-It is possible to have expandable rows to show more information for each row.
-
-<!-- Er denne delen nødvendig? Man kan sette is-striped på hdd-table elementet istedet for hdd-table_details elementet! 
-
-> ⚠️ The `is-striped` mutation on the `hdd-table` does not include the detail rows. When wanting to create a striped table is it advised to use the `is-stripe` row mutation on each row instead. -->
-
-```expandabletable.html
-<tr class="hdd-table_details">
-  <td colspan="4">
-    <table class="hdd-table is-aligned-top is-striped no-row-padding">
-      <tr class="hdd-table_header">
-        <th>Målepunkt</th>
-        <th>Anleggsraning</th>
-        <th>Klassifiseringer</th>
-        <th>Adresse</th>
-        <th>Siste aksjon utført</th>
-        <th>Innsamling siste 7 dagen</th>
-        <th>Snitt RSSI siste 7 dagen</th>
-      </tr>
-      <tr>
-        <td>M: 101231</td>
-        <td>100</td>
-        <td>CL-01 Død måler<br>CL-04 Dårlig Rssi<br>CL-12 Dårlig innsamling</td>
-        <td>Drammensveien 115</td>
-        <td>17.06.19</td>
-        <td>84%</td>
-        <td>-91dB</td>
-      </tr>
-      <tr class="">
-        <td>M: 101231</td>
-        <td>101</td>
-        <td>CL-01 Død måler<br>CL-04 Dårlig Rssi<br>CL-12 Dårlig innsamling</td>
-        <td>Drammensveien 114</td>
-        <td>18.05.19</td>
-        <td>89%</td>
-        <td>-94dB</td>
-      </tr>
-      <tr>
-        <td>M: 101231</td>
-        <td>102</td>
-        <td>CL-01 Død måler<br>CL-04 Dårlig Rssi<br>CL-12 Dårlig innsamling</td>
-        <td>Drammensveien 116</td>
-        <td>19.07.19</td>
-        <td>91%</td>
-        <td>-91dB</td>
-      </tr>
-    </table>
-  </td>
-</tr>
-```
 
 ## Mutations
 **`hdd-table`:**
@@ -137,8 +132,3 @@ It is possible to have expandable rows to show more information for each row.
 | `is-stripe` | Mark the given row as a stripe |
 | `is-selected` | Mark the given row as selected |
 
-**`hdd-table_details`:**
-
-| class | description|
-| :--- | :--- |
-| `is-active` | Expand the details row |

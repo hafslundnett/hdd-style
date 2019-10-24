@@ -100,34 +100,6 @@
     }
   }
 
-  &_details {
-    display: none;
-
-    > td {
-      column-span: all;
-
-      &:last-child {
-        padding-right: 0;
-      }
-    }
-
-    tr {
-      &::before {
-        width: 0;
-      }
-
-      > * {
-        &:first-child {
-          padding-left: 0;
-        }
-      }
-    }
-
-    &.is-active {
-      display: table-row;
-    }
-  }
-
   &.is-striped {
     > tbody {
       > tr:nth-of-type(odd) {

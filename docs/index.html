@@ -79,19 +79,14 @@
 </tr>
 </thead><tbody><tr>
 <td>Angular 5.x</td>
-<td><a href="https://www.npmjs.com/package/@hafslundnett/hdd-ng-components"><img src="https://img.shields.io/npm/v/@hafslundnett/hdd-ng-components.svg" alt="hdd-ng-components"></a></td>
-<td><a href="https://www.npmjs.com/package/@hafslundnett/hdd-ng-components">Github</a></td>
-</tr>
-<tr>
-<td>Vue 2.x</td>
-<td><a href="https://www.npmjs.com/package/@hafslundnett/hdd-vue"><img src="https://img.shields.io/npm/v/@hafslundnett/hdd-vue.svg" alt="hdd-vue"></a></td>
-<td><a href="https://www.npmjs.com/package/@hafslundnett/hdd-vue">Github</a></td>
+<td><a href="https://www.npmjs.com/package/@hafslundnett/hal-components"><img src="https://img.shields.io/npm/v/@hafslundnett/hal-components.svg" alt="hal-components"></a></td>
+<td><a href="https://github.com/hafslundnett/hal-components">Github</a></td>
 </tr>
 </tbody></table><p><a href="https://www.figma.com/file/bGrhst0owpGqOQzKbxMtkdz2/Designsystem-(Interne-applikasjoner">Design document (Figma</a>)</p>
 <div id="getting-started" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#getting-started" class="icon-link i-section__link -heading"></a>Getting started</h2></div><p>There are multiple ways of using HDD:</p>
 <ul>
 <li>Cloning the git repository: <code>git clone git@github.com:hafslundnett/hdd-style.git</code></li>
-<li>Add it as an npm dependency: <code>npm install @hafslundnett/hdd-style</code><ul>
+<li>Add it as an npm dependency: <code>npm install @hafslundnett/hdd-style</code> <ul>
 <li>Import main.sass in your stylesheet: <code>@import &#39;~@hafslundnett/hdd-style/main&#39;;</code></li>
 <li>Use the bundled and minified file: <code>dist/bundle.min.css</code></li>
 </ul>
@@ -100,8 +95,8 @@
 <div id="contribute" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#contribute" class="icon-link i-section__link -heading"></a>Contribute</h2></div><p>Do you wish to change, remove or add something? Please read our <a href="./CONTRIBUTING.md">contribution guide</a> and <a href="./CODE_OF_CONDUCT.md">code of conduct</a>. Check for related open issues, and if none exist please open a new one: <a href="https://github.com/hafslundnett/hdd-style/issues/new">Github Issues</a>.</p>
 <div id="open-the-styleguide-locally" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#open-the-styleguide-locally" class="icon-link i-section__link -heading"></a>Open the styleguide locally</h2></div><p>In order to get started you will need to have <code>node</code> and <code>npm</code> installed. You can get it at <a href="https://nodejs.org">https://nodejs.org</a>. When those are installed run:</p>
 <ul>
-<li><code>npm install</code></li>
-<li><code>npm start</code></li>
+<li><code>yarn</code></li>
+<li><code>yarn start</code></li>
 </ul>
 <p>This will open the styleguide in your browser and refresh on changes.</p>
 </div>
@@ -1238,11 +1233,11 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 		<span class="theme-content-element-source-path">table.md</span>
 	</span>
 	<div class="theme-content-element-description"><p>A table can consist out of data, buttons and icons. A table row can also have a small color bar at the beginning of the row, all color subclasses can be used.</p>
-<div id="table-with-color-bars" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#table-with-color-bars" class="icon-link i-section__link -heading"></a>Table with color bars</h2></div><p><code>hdd-table</code></p>
+<div id="table" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#table" class="icon-link i-section__link -heading"></a>Table</h2></div><p><code>hdd-table</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
-                            href="table-stripedtable.html"
+                            href="table-table.html"
                             target="_blank"
                             class="plain-link"
                             data-toggle="tooltip"
@@ -1257,7 +1252,122 @@ menu.addEventListener(&#39;click&#39;, function(e) {
                         <div
                             class="i-example__iframe"
                             lazyframe
-                            data-src="table-stripedtable.html"
+                            data-src="table-table.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;table class=&quot;hdd-table is-striped has-shadow&quot;&gt;
+  &lt;tr class=&quot;hdd-table_header&quot;&gt;
+    &lt;th&gt;ID&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+    &lt;th&gt;Kundenr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+    &lt;th&gt;Personnr.&lt;/th&gt;
+    &lt;th&gt;Fakturanr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+    &lt;th&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;1&lt;/th&gt;
+    &lt;td&gt;338472&lt;/td&gt;
+    &lt;td&gt;123419384&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+    &lt;td class=&quot;hdd-table_action&quot;&gt;
+      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;2&lt;/th&gt;
+    &lt;td&gt;338472&lt;/td&gt;
+    &lt;td&gt;123419384&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+    &lt;td class=&quot;hdd-table_action&quot;&gt;
+      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;3&lt;/th&gt;
+    &lt;td&gt;338472&lt;/td&gt;
+    &lt;td&gt;123419384&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+    &lt;td class=&quot;hdd-table_action&quot;&gt;
+      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;table class=&quot;hdd-table is-striped has-shadow&quot;&gt;
+  &lt;tr class=&quot;hdd-table_header&quot;&gt;
+    &lt;th&gt;ID&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+    &lt;th&gt;Kundenr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+    &lt;th&gt;Personnr.&lt;/th&gt;
+    &lt;th&gt;Fakturanr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+    &lt;th&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;1&lt;/th&gt;
+    &lt;td&gt;338472&lt;/td&gt;
+    &lt;td&gt;123419384&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+    &lt;td class=&quot;hdd-table_action&quot;&gt;
+      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;2&lt;/th&gt;
+    &lt;td&gt;338472&lt;/td&gt;
+    &lt;td&gt;123419384&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+    &lt;td class=&quot;hdd-table_action&quot;&gt;
+      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th&gt;3&lt;/th&gt;
+    &lt;td&gt;338472&lt;/td&gt;
+    &lt;td&gt;123419384&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+    &lt;td class=&quot;hdd-table_action&quot;&gt;
+      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+	</div>
+</div><div id="table-with-color-bars" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#table-with-color-bars" class="icon-link i-section__link -heading"></a>Table with color bars</h2></div><p><code>hdd-table</code></p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="table-coloredtable.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="table-coloredtable.html"
                             data-initinview="true"
                             data-title="Loading..." 
                         ></div>
@@ -1375,125 +1485,6 @@ menu.addEventListener(&#39;click&#39;, function(e) {
   &lt;/tr&gt;
 &lt;/table&gt;</code></pre>
 	</div>
-</div><div id="detailed-row-table" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#detailed-row-table" class="icon-link i-section__link -heading"></a>Detailed row table</h2></div><p><code>hdd-table_details</code></p>
-<p>It is possible to have expandable rows to show more information for each row.</p>
-<!-- Er denne delen nødvendig? Man kan sette is-striped på hdd-table elementet istedet for hdd-table_details elementet! 
-
-> ⚠️ The `is-striped` mutation on the `hdd-table` does not include the detail rows. When wanting to create a striped table is it advised to use the `is-stripe` row mutation on each row instead. -->
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="table-expandabletable.html"
-                            target="_blank"
-                            class="plain-link"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Open in a new window"
-                        >
-                            <i class="fa fa-external-link-square fa-fw"></i>
-                            Example
-                        </a>
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="table-expandabletable.html"
-                            data-initinview="true"
-                            data-title="Loading..." 
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;tr class=&quot;hdd-table_details&quot;&gt;
-  &lt;td colspan=&quot;4&quot;&gt;
-    &lt;table class=&quot;hdd-table is-aligned-top is-striped no-row-padding&quot;&gt;
-      &lt;tr class=&quot;hdd-table_header&quot;&gt;
-        &lt;th&gt;Målepunkt&lt;/th&gt;
-        &lt;th&gt;Anleggsraning&lt;/th&gt;
-        &lt;th&gt;Klassifiseringer&lt;/th&gt;
-        &lt;th&gt;Adresse&lt;/th&gt;
-        &lt;th&gt;Siste aksjon utført&lt;/th&gt;
-        &lt;th&gt;Innsamling siste 7 dagen&lt;/th&gt;
-        &lt;th&gt;Snitt RSSI siste 7 dagen&lt;/th&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;M: 101231&lt;/td&gt;
-        &lt;td&gt;100&lt;/td&gt;
-        &lt;td&gt;CL-01 Død måler&lt;br&gt;CL-04 Dårlig Rssi&lt;br&gt;CL-12 Dårlig innsamling&lt;/td&gt;
-        &lt;td&gt;Drammensveien 115&lt;/td&gt;
-        &lt;td&gt;17.06.19&lt;/td&gt;
-        &lt;td&gt;84%&lt;/td&gt;
-        &lt;td&gt;-91dB&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr class=&quot;&quot;&gt;
-        &lt;td&gt;M: 101231&lt;/td&gt;
-        &lt;td&gt;101&lt;/td&gt;
-        &lt;td&gt;CL-01 Død måler&lt;br&gt;CL-04 Dårlig Rssi&lt;br&gt;CL-12 Dårlig innsamling&lt;/td&gt;
-        &lt;td&gt;Drammensveien 114&lt;/td&gt;
-        &lt;td&gt;18.05.19&lt;/td&gt;
-        &lt;td&gt;89%&lt;/td&gt;
-        &lt;td&gt;-94dB&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;M: 101231&lt;/td&gt;
-        &lt;td&gt;102&lt;/td&gt;
-        &lt;td&gt;CL-01 Død måler&lt;br&gt;CL-04 Dårlig Rssi&lt;br&gt;CL-12 Dårlig innsamling&lt;/td&gt;
-        &lt;td&gt;Drammensveien 116&lt;/td&gt;
-        &lt;td&gt;19.07.19&lt;/td&gt;
-        &lt;td&gt;91%&lt;/td&gt;
-        &lt;td&gt;-91dB&lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/table&gt;
-  &lt;/td&gt;
-&lt;/tr&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;tr class=&quot;hdd-table_details&quot;&gt;
-  &lt;td colspan=&quot;4&quot;&gt;
-    &lt;table class=&quot;hdd-table is-aligned-top is-striped no-row-padding&quot;&gt;
-      &lt;tr class=&quot;hdd-table_header&quot;&gt;
-        &lt;th&gt;Målepunkt&lt;/th&gt;
-        &lt;th&gt;Anleggsraning&lt;/th&gt;
-        &lt;th&gt;Klassifiseringer&lt;/th&gt;
-        &lt;th&gt;Adresse&lt;/th&gt;
-        &lt;th&gt;Siste aksjon utført&lt;/th&gt;
-        &lt;th&gt;Innsamling siste 7 dagen&lt;/th&gt;
-        &lt;th&gt;Snitt RSSI siste 7 dagen&lt;/th&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;M: 101231&lt;/td&gt;
-        &lt;td&gt;100&lt;/td&gt;
-        &lt;td&gt;CL-01 Død måler&lt;br&gt;CL-04 Dårlig Rssi&lt;br&gt;CL-12 Dårlig innsamling&lt;/td&gt;
-        &lt;td&gt;Drammensveien 115&lt;/td&gt;
-        &lt;td&gt;17.06.19&lt;/td&gt;
-        &lt;td&gt;84%&lt;/td&gt;
-        &lt;td&gt;-91dB&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr class=&quot;&quot;&gt;
-        &lt;td&gt;M: 101231&lt;/td&gt;
-        &lt;td&gt;101&lt;/td&gt;
-        &lt;td&gt;CL-01 Død måler&lt;br&gt;CL-04 Dårlig Rssi&lt;br&gt;CL-12 Dårlig innsamling&lt;/td&gt;
-        &lt;td&gt;Drammensveien 114&lt;/td&gt;
-        &lt;td&gt;18.05.19&lt;/td&gt;
-        &lt;td&gt;89%&lt;/td&gt;
-        &lt;td&gt;-94dB&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;M: 101231&lt;/td&gt;
-        &lt;td&gt;102&lt;/td&gt;
-        &lt;td&gt;CL-01 Død måler&lt;br&gt;CL-04 Dårlig Rssi&lt;br&gt;CL-12 Dårlig innsamling&lt;/td&gt;
-        &lt;td&gt;Drammensveien 116&lt;/td&gt;
-        &lt;td&gt;19.07.19&lt;/td&gt;
-        &lt;td&gt;91%&lt;/td&gt;
-        &lt;td&gt;-91dB&lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/table&gt;
-  &lt;/td&gt;
-&lt;/tr&gt;</code></pre>
-	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-table</code>:</strong></p>
 <table class="table"><thead><tr>
 <th style="text-align:left">class</th>
@@ -1535,15 +1526,6 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 <tr>
 <td style="text-align:left"><code>is-selected</code></td>
 <td style="text-align:left">Mark the given row as selected</td>
-</tr>
-</tbody></table><p><strong><code>hdd-table_details</code>:</strong></p>
-<table class="table"><thead><tr>
-<th style="text-align:left">class</th>
-<th style="text-align:left">description</th>
-</tr>
-</thead><tbody><tr>
-<td style="text-align:left"><code>is-active</code></td>
-<td style="text-align:left">Expand the details row</td>
 </tr>
 </tbody></table></div>
 </div>
