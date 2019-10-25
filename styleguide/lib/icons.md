@@ -11,11 +11,8 @@ The examples below are illustrated in an "Action button", if there is no need fo
 ```icons.html
 
 <button class="hdd-button has-icon-left"><i class="fal fa-info-circle"></i> Info Icon</button>
-
 <button class="hdd-button has-icon-left"><i class="fal fa-user"></i> User Icon</button>
-
 <button class="hdd-button has-icon-left"><i class="fal fa-bars"></i> Menubar Icon</button>
-
 <button class="hdd-button has-icon-left"><i class="fal fa-search"></i> Search Icon</button>
 
 ```
