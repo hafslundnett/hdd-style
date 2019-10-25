@@ -22,7 +22,7 @@
   }
 
   &_list {
-    @include filter(drop-shadow($shadow-light));
+    filter: drop-shadow($shadow-light);
     
     box-shadow: $shadow-light;
     display: table;
