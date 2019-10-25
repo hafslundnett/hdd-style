@@ -2743,7 +2743,101 @@ The best way of including a set of color modifiers is by using the <code>color-m
 ...</code></pre>
 	</div>
 </div><p>A main property and optionally a contrast property could be given. By default is the <code>$colors</code> color set used but a custom color set could be passed as a argument.</p>
-</div>
+<div id="color-directly" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#color-directly" class="icon-link i-section__link -heading"></a>Color directly</h2></div><p>Setting the color and background attribute directly on elements are possible with the classes hdd-color, hdd-contrast-color, hdd-background and hdd-contrast-background, togheter with a color of choice. All colors from the colors map can be used.</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> scss</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&amp;-color-#{$label} {
+  color: $color;
+}
+
+&amp;-contrast-color-#{$label} {
+  color: $contrast;
+}
+
+&amp;-background-#{$label} {
+  background: $color;
+}
+
+&amp;-contrast-background-#{$label} {
+  background: $contrast;
+}">Copy</button>
+		<pre class="mb-0"><code class="lang-">&amp;-color-#{$label} {
+  color: $color;
+}
+
+&amp;-contrast-color-#{$label} {
+  color: $contrast;
+}
+
+&amp;-background-#{$label} {
+  background: $color;
+}
+
+&amp;-contrast-background-#{$label} {
+  background: $contrast;
+}</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="colors-color-directly.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="colors-color-directly.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 20px;&quot; class=&quot;hdd-background-primary&quot;&gt;
+  &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-contrast-background-primary&quot;&gt;
+    &lt;h1 class=&quot;hdd-color-primary&quot;&gt;Just a h1&lt;/h1&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-background-grey-dark&quot;&gt;
+    &lt;h2 class=&quot;hdd-contrast-color-grey-dark&quot;&gt;Just a h2&lt;/h2&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-background-blue-light2&quot;&gt;
+    &lt;h3 class=&quot;hdd-contrast-color-blue-light2&quot;&gt;Just a h3&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-background-primary-dark&quot;&gt;
+    &lt;p class=&quot;hdd-contrast-color-primary-dark&quot;&gt;Just a p&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 20px;&quot; class=&quot;hdd-background-primary&quot;&gt;
+  &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-contrast-background-primary&quot;&gt;
+    &lt;h1 class=&quot;hdd-color-primary&quot;&gt;Just a h1&lt;/h1&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-background-grey-dark&quot;&gt;
+    &lt;h2 class=&quot;hdd-contrast-color-grey-dark&quot;&gt;Just a h2&lt;/h2&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-background-blue-light2&quot;&gt;
+    &lt;h3 class=&quot;hdd-contrast-color-blue-light2&quot;&gt;Just a h3&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-background-primary-dark&quot;&gt;
+    &lt;p class=&quot;hdd-contrast-color-primary-dark&quot;&gt;Just a p&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
 </div>
 
 						<div id="flush" class="i-library theme-content-element">

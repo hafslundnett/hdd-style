@@ -105,3 +105,41 @@ The `color-modifiers` function returns modifiers for the given colors (list).
 ```
 
 A main property and optionally a contrast property could be given. By default is the `$colors` color set used but a custom color set could be passed as a argument.
+
+## Color directly
+Setting the color and background attribute directly on elements are possible with the classes hdd-color, hdd-contrast-color, hdd-background and hdd-contrast-background, togheter with a color of choice. All colors from the colors map can be used.
+
+```scss
+&-color-#{$label} {
+  color: $color;
+}
+
+&-contrast-color-#{$label} {
+  color: $contrast;
+}
+
+&-background-#{$label} {
+  background: $color;
+}
+
+&-contrast-background-#{$label} {
+  background: $contrast;
+}
+```
+
+```color-directly.html
+<div style="padding: 20px;" class="hdd-background-primary">
+  <div style="padding: 15px; margin: 15px;" class="hdd-contrast-background-primary">
+    <h1 class="hdd-color-primary">Just a h1</h1>
+  </div>
+  <div style="padding: 15px; margin: 15px;" class="hdd-background-grey-dark">
+    <h2 class="hdd-contrast-color-grey-dark">Just a h2</h2>
+  </div>
+  <div style="padding: 15px; margin: 15px;" class="hdd-background-blue-light2">
+    <h3 class="hdd-contrast-color-blue-light2">Just a h3</h3>
+  </div>
+  <div style="padding: 15px; margin: 15px;" class="hdd-background-primary-dark">
+    <p class="hdd-contrast-color-primary-dark">Just a p</p>
+  </div>
+</div>
+```
