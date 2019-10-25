@@ -1,19 +1,18 @@
 .hdd-small-menu {
-  $b: #{&};
+  // Variable containing '&' to jump to current parent inside a child class.   
+  $this: &;
 
   display: inline-block;
   position: relative;
 
   &:hover {
-    #{$b}_content:not(.no-hover):not(:hover) {
-      // @extend #{$b}_list.is-active;
+    #{$this}_content:not(.no-hover):not(:hover) {
       @extend .hdd-small-menu_list, .is-active;
     }
   }
 
   &:focus {
-    #{$b}_content:not(.no-focus) {
-      // @extend #{$b}_list.is-active;
+    #{$this}_content:not(.no-focus) {
       @extend .hdd-small-menu_list, .is-active;
     }
   }
@@ -23,9 +22,9 @@
   }
 
   &_list {
-    @include filter(drop-shadow($shadow-light));
-    @include box-shadow($shadow-light); // IE fallback?
+    filter: drop-shadow($shadow-light);
     
+    box-shadow: $shadow-light;
     display: table;
     visibility: hidden;
     
@@ -53,7 +52,6 @@
     }
 
     &_item {
-      $e: #{&};
       display: flex;
       box-sizing: border-box;
       align-items: center;
@@ -70,12 +68,11 @@
         width: 1rem;
         margin-right: .5rem;
       }
-
+  
       &:not(.no-hover):hover {
-        // @extend #{$e}.is-active;
         @extend .hdd-small-menu_list_item, .is-active;
       }
-
+      
       &.is-active {
         background: color('blue-light3');
       }

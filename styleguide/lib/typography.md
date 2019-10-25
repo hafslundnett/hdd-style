@@ -1,11 +1,13 @@
 ---
 name: Typeface
-category: Components
+category: Utilities
 ---
-The typeface should be kept consistent in all mediums, physical and digital.
+The typeface should be kept consistent in all mediums, physical and digital. The typography of Hdd is based on the rem unit. The body is set to the browsers default font size. All typography blocks are defined in the $typography variable found in the typography variables file.
 
-### Helvetica Neue LT Std
-```search-fields.html
+## Default font
+Roboto is default font for all text. These tags are automatically styled: h1, h2, h3 and p.
+
+```roboto.html
 <h1>Heading 1</h1>
 <h1>ABCDEFHILMNOPQRSTVXÆØÅ</h1>
 <h1>abcdefghijklmnopqrstuvwxyzæøå</h1>

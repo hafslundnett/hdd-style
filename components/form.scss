@@ -2,8 +2,10 @@
   /************************
    *  Field
    ************************/
+
   &_field {
-    $e: #{&};
+    // Variable containing '&' to jump to current parent inside a child class.
+    $this: &;
 
     display: block;
     position: relative;
@@ -11,6 +13,7 @@
     text-align: left;
 
     &_label {
+      // .is-p is font-properties, defined in typography.
       @extend .is-p;
 
       display: inline-block;
@@ -19,6 +22,7 @@
     }
 
     &_title {
+      // .is-p is font-properties, defined in typography.
       @extend .is-p;
       display: block;
       margin-bottom: 1rem;
@@ -49,7 +53,7 @@
 
     &.is-line {
       > * {
-        &:not(#{$e}_title):not(#{$e}_error) {
+        &:not(#{$this}_title):not(#{$this}_error) {
           margin-right: 1rem;
           float: left;
         }
@@ -64,8 +68,11 @@
   /************************
    *  Input
    ************************/
+
   &_input {
-    $e: #{&};
+    
+    // Variable containing '&' to jump to current parent inside a child class.
+    $this: &;
 
     display: flex;
     box-sizing: border-box;
@@ -79,14 +86,13 @@
     background: color('white');
 
     &:not(.is-invalid):focus-within {
-      // @extend #{$e}.is-focus;
       @extend .hdd-form_input, .is-focus;
     }
 
     &.is-focus {
       border-color: color('primary');
 
-      #{$e}_icon,
+      #{$this}_icon,
       svg,
       i {
         opacity: 1;
@@ -110,6 +116,7 @@
     &_field,
     > input,
     > textarea {
+      // .is-p is font-properties, defined in typography
       @extend .is-p;
 
       width: 100%;
@@ -149,20 +156,23 @@
   /************************
    *  Checkbox
    ************************/
-  &_checkbox {
-    $e: #{&};
 
+  &_checkbox {
+
+    // Variable containing '&' to jump to current parent inside a child class. 
+    $this: &;
+    
     display: flex;
     align-items: center;
     margin-bottom: .75rem;
     cursor: pointer;
-
+    
+    // Creating placeholder to inject style into checkbox mutations.
     // We have to seperate the checkbox marked styling because of the checked state
-    %checkbox-mark.is-checked {
+    %checkbox-mark {
       position: relative;
       background-color: color('primary');
       &::before {
-        // @extend .fal, .fa-check:before;
         @extend .fal, .fa-check, :before;
 
         top: -1px;
@@ -175,15 +185,14 @@
     }
 
     &.is-checked {
-      #{$e}_mark {
-        // @extend %checkbox-mark.is-checked;
-        @extend %checkbox-mark, .is-checked;
+      #{$this}_mark {
+        @extend %checkbox-mark;
       }
     }
 
     &.is-invalid {
-      input:checked ~ #{$e}_mark,
-      #{$e}_mark {
+      input:checked ~ #{$this}_mark,
+      #{$this}_mark {
         border-color: color('signal-red');
 
         &::before {
@@ -196,12 +205,12 @@
     input {
       display: none;
 
-      &:checked ~ #{$e}_mark {
-        // @extend %checkbox-mark.is-checked;
-        @extend %checkbox-mark, .is-checked;
+      &:checked ~ #{$this}_mark {
+        @extend %checkbox-mark;
       }
     }
 
+    // currently not in use
     .hdd-badge {
       margin-left: .5rem;
       float: right;
@@ -227,15 +236,19 @@
   /************************
    *  Radiobutton
    ************************/
+
   &_radiobutton {
-    $e: #{&};
+
+    // Variable containing '&' to jump to current parent inside a child class.
+    $this: &;
 
     display: flex;
     align-items: center;
     margin-bottom: .75rem;
     cursor: pointer;
 
-    %radiobutton-mark.is-checked {
+    // Creating placeholder to inject style into radiobutton mutations.
+    %radiobutton-mark {
       position: relative;
       background-color: color('primary');
       &:before {
@@ -248,18 +261,16 @@
     }
 
     &.is-checked {
-      #{$e}_mark {
-        // @extend %radiobutton-mark.is-checked;
-        @extend %radiobutton-mark, .is-checked;
+      #{$this}_mark {
+        @extend %radiobutton-mark;
       }
     }
 
     input {
       display: none;
 
-      &:checked ~ #{$e}_mark {
-        // @extend %radiobutton-mark.is-checked;
-        @extend %radiobutton-mark, .is-checked;
+      &:checked ~ #{$this}_mark {
+        @extend %radiobutton-mark;
       }
     }
 
@@ -283,8 +294,11 @@
   /************************
    *  Select
    ************************/
+
   &_select {
-    $e: #{&};
+
+    // Variable containing '&' to jump to current parent inside a child class. 
+    $this: &;
 
     display: flex;
     position: relative;
@@ -304,7 +318,7 @@
 
       border: 0;
       background: none;
-
+      
       -moz-appearance: none;
       -webkit-appearance: none;
 
@@ -314,7 +328,6 @@
     }
 
     &:focus-within {
-      // @extend #{$e}.is-focus;
       @extend .hdd-form_select, .is-focus;
     }
 
@@ -325,7 +338,7 @@
         color: color('primary');
       }
 
-      #{$e}_icon,
+      #{$this}_icon,
       > svg,
       > i {
         opacity: 1;

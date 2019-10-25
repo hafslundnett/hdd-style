@@ -1,0 +1,17 @@
+.hdd-link {
+	// .is-p is font-properties, defined in typography
+ 	@extend .is-p;
+
+    text-decoration: none;
+    color: color('primary-dark');
+	
+	&:hover:not(.no-hover),
+	&.is-hovering,
+	&:focus:not(.no-focus),
+	&.is-focusing,
+	&:active:not(.no-active),
+	&.is-active {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+}

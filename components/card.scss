@@ -1,8 +1,8 @@
 .hdd-card {
-  @include box-sizing(border-box);
-  @include box-shadow($shadow-light);
-  @include border-radius($card-radius);
-
+  
+  border-radius: $card-radius;
+  box-shadow: $shadow-light;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   background: color('white');
@@ -16,6 +16,7 @@
     padding: $card-padding-y $card-padding-x;
 
     &_icon {
+      // .is-icon-small is icon-properties, defined in typography.
       @extend .is-icon-small;
 
       display: inline-block;
@@ -31,7 +32,9 @@
     }
 
     &_action {
+      // .is-icon-small is icon-properties, defined in typography.
       @extend .is-icon-small;
+      // .is-button-icon and .is-transparent is icon-properties, defined in button.
       @extend .hdd-button-icon, .is-transparent
     }
 
@@ -41,6 +44,7 @@
   }
 
   &_title {
+    // .is-h2 is font-properties, defined in typography.
     @extend .is-h2;
 
     display: block;
@@ -49,17 +53,19 @@
   }
 
   &_subtitle {
+    // .is-p is font-properties, defined in typography.
     @extend .is-p;
 
     display: block;
     color: color('font-color');
   }
 
-  &_scroll-wrapper {
-    overflow-x: scroll;
+  &_scroll-wrapper {	
+    overflow-x: auto;	
   }
 
   &_content {
+    // .is-p is font-properties, defined in typography.
     @extend .is-p;
 
     display: block;
@@ -81,6 +87,7 @@
     }
     
     &_action {
+      // .is-p is font-properties, defined in typography.
       @extend .is-p;
       
       flex-grow: 1;
@@ -95,7 +102,7 @@
       font-weight: 500;
       text-align: center;
       cursor: pointer;
-
+      
       &:hover:not(.no-hover),
       &.is-hovering {
         background-color: color('blue-light3');

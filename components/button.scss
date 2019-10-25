@@ -1,6 +1,8 @@
 .hdd-button {
+  // .is-p is font-properties, defined in typography.
   @extend .is-p;
-  @extend .hdd-button, .is-primary;
+  // .is-primary is the default for any hdd-button
+  @extend .is-primary;
 
   &.is-primary {
     display: inline-block;
@@ -71,12 +73,18 @@
   }
 
   &.is-loading {
+    // .fal is icon-properties
     @extend .fal;
-    color: transparent;
+    // .is-p is font-properties,  defined in typography.
+    @extend .is-p;
 
+    color: transparent;
+    
     &::after {
       @extend .fa-spinner-third, :before;
       @include animation(spinner, .5s, infinite, linear);
+      // .fal is icon-properties
+      @extend .fal;
 
       position: absolute;
       top: calc(50% - (1em / 2));
@@ -95,6 +103,7 @@
     cursor: not-allowed;
   }
 
+  // For buttons with text and icons
   &.has-icon {
     %icon-base {
       display: inline-flex;
@@ -107,7 +116,6 @@
 
     &-left {
       @extend %icon-base;
-
       i {
         margin-right: .5rem;
       }
@@ -115,7 +123,6 @@
 
     &-right {
       @extend %icon-base;
-
       i {
         margin-left: .5rem;
       }
@@ -123,12 +130,14 @@
   }
 
   &.is-small {
+    // .is-p-small is font-properties, defined in typography.
     @extend .is-p-small;
     @extend .hdd-button, .is-primary;
 
     padding: $button-padding-small;
   }
 
+  // For buttons with only icons
   &-icon {
     padding: $button-icon-padding;
     border: 1px solid color('grey-border');
@@ -177,23 +186,3 @@
   }
 }
 
-.hdd-link {
-  @extend .is-p;
-
-  color: color('primary');
-  font-weight: bold;
-  text-decoration: underline rgba(color('primary'), .5);
-
-  &:hover:not(.no-hover),
-  &.is-hovering,
-  &:focus:not(.no-focus),
-  &.is-focusing {
-    text-decoration: none;
-  }
-
-  &:active:not(.no-active),
-  &.is-active {
-    color: color('primary-dark');
-    text-decoration: none;
-  }
-}

@@ -2,8 +2,6 @@
 <html>
 
 	<head>
-		
-
 		<style>
 		</style>
 
@@ -50,49 +48,41 @@
 		</script>
 
 			<link rel="stylesheet" href="dist/bundle.min.css">
+
+		
 	</head>
 
-	<body>					<div style="padding: 20px">
-    <h1>Heading 1</h1>
-<h1>ABCDEFHILMNOPQRSTVXÆØÅ</h1>
-<h1>abcdefghijklmnopqrstuvwxyzæøå</h1>
-<h1>0123456789</h1>
-<br />
-<h2>Heading 2</h2>
-<h2>ABCDEFHILMNOPQRSTVXÆØÅ</h2>
-<h2>abcdefghijklmnopqrstuvwxyzæøå</h2>
-<h2>0123456789</h2>
-<br />
-<h3>Heading 3</h3>
-<h3>ABCDEFHILMNOPQRSTVXÆØÅ</h3>
-<h3>abcdefghijklmnopqrstuvwxyzæøå</h3>
-<h3>0123456789</h3>
-<br />
-<p>paragraph</p>
-<p>ABCDEFHILMNOPQRSTVXÆØÅ</p>
-<p>abcdefghijklmnopqrstuvwxyzæøå</p>
-<p>0123456789</p>
+	<body>					<div style="padding: 20px;">
+    <div style="padding: 20px;" class="hdd-background-primary">
+  <div style="padding: 15px; margin: 15px;" class="hdd-contrast-background-primary">
+    <h1 class="hdd-color-primary">Just a h1</h1>
+  </div>
+  <div style="padding: 15px; margin: 15px;" class="hdd-background-grey-dark">
+    <h2 class="hdd-contrast-color-grey-dark">Just a h2</h2>
+  </div>
+  <div style="padding: 15px; margin: 15px;" class="hdd-background-blue-light2">
+    <h3 class="hdd-contrast-color-blue-light2">Just a h3</h3>
+  </div>
+  <div style="padding: 15px; margin: 15px;" class="hdd-background-primary-dark">
+    <p class="hdd-contrast-color-primary-dark">Just a p</p>
+  </div>
+</div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><h1>Heading 1</h1>
-<h1>ABCDEFHILMNOPQRSTVXÆØÅ</h1>
-<h1>abcdefghijklmnopqrstuvwxyzæøå</h1>
-<h1>0123456789</h1>
-<br />
-<h2>Heading 2</h2>
-<h2>ABCDEFHILMNOPQRSTVXÆØÅ</h2>
-<h2>abcdefghijklmnopqrstuvwxyzæøå</h2>
-<h2>0123456789</h2>
-<br />
-<h3>Heading 3</h3>
-<h3>ABCDEFHILMNOPQRSTVXÆØÅ</h3>
-<h3>abcdefghijklmnopqrstuvwxyzæøå</h3>
-<h3>0123456789</h3>
-<br />
-<p>paragraph</p>
-<p>ABCDEFHILMNOPQRSTVXÆØÅ</p>
-<p>abcdefghijklmnopqrstuvwxyzæøå</p>
-<p>0123456789</p></script>
+			<script type="text/x-stylemark" data-language="html"><div style="padding: 20px;" class="hdd-background-primary">
+  <div style="padding: 15px; margin: 15px;" class="hdd-contrast-background-primary">
+    <h1 class="hdd-color-primary">Just a h1</h1>
+  </div>
+  <div style="padding: 15px; margin: 15px;" class="hdd-background-grey-dark">
+    <h2 class="hdd-contrast-color-grey-dark">Just a h2</h2>
+  </div>
+  <div style="padding: 15px; margin: 15px;" class="hdd-background-blue-light2">
+    <h3 class="hdd-contrast-color-blue-light2">Just a h3</h3>
+  </div>
+  <div style="padding: 15px; margin: 15px;" class="hdd-background-primary-dark">
+    <p class="hdd-contrast-color-primary-dark">Just a p</p>
+  </div>
+</div></script>
 
 		<!--
 			Vanilla JS
@@ -125,10 +115,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-typeface-todo-qa-search-fields', []);
+						module = angular.module('stylemark-colors-color-directly', []);
 					}
 
-					module.controller('stylemark-typeface-todo-qa-search-fields-' + index, function($scope) {
+					module.controller('stylemark-colors-color-directly-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});
