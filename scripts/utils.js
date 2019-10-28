@@ -2,7 +2,7 @@ const ora = require('ora')
 const zlib = require('zlib')
 const fs = require('fs')
 const path = require('path')
-const sass = require('node-sass')
+const sass = require('sass')
 const postcss = require('postcss')
 
 const outDir = path.join(__dirname, '../dist')
@@ -68,7 +68,7 @@ const compileSass = (options, outputName) => {
     try {
       const sassResult = sass.renderSync(options)
 
-      spinner.text = `📦  node-sass successfully compiled ${outputName}: ${sassResult.stats.includedFiles.length} files`
+      spinner.text = `📦  sass successfully compiled ${outputName}: ${sassResult.stats.includedFiles.length} files`
 
       resolve({ sassResult, options })
     } catch (err) {

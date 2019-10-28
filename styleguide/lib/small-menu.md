@@ -3,13 +3,20 @@ name: Small menu
 category: Components
 ---
 
-A small menu can hold a list of choices. It can be hidden and shown on hover/active state. Clicking the cog toggles the is-active in the example:
+A small menu can hold a list of choices. It can be hidden and shown on the hover and active state. 
+
+## Small menu
+`hdd-small-menu`
+
+Clicking the icon toggles the is-active state of the small menu.
 
 ```small-menu.html
 <div class="hdd-small-menu">
   <span class="hdd-small-menu_title"><i class="fal fa-cog"></i></span>
-  <ul class="hdd-small-menu_list is-active no-hover">
+  <ul class="hdd-small-menu_list is-active">
     <li class="hdd-small-menu_list_item">Profile</li>
+    <li class="hdd-small-menu_list_item no-hover">No hover</li>
+    <li class="hdd-small-menu_list_item is-active">Active tab</li>
     <li class="hdd-small-menu_list_item"><i class="fal fa-sign-out"></i>Logout</li>
   </ul>
 </div>
@@ -30,15 +37,11 @@ menu.addEventListener('click', function(e) {
 })
 ```
 
-### Mutations
-**`hdd-small-menu`:**
+## Mutations
+
+**`hdd-small-menu_list_item`:**
 
 | class | description|
 | :--- | :--- |
-| `no-hovering` | Disable the `:hover` state |
-
-**`hdd-small-menu_list`:**
-
-| class | description|
-| :--- | :--- |
-| `is-active` | Set the given small menu to it's active state |
+| `is-active` | Set the given small menu item to it's active state |
+| `no-hover` | Disable the `:hover` state |

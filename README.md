@@ -16,12 +16,17 @@ For every used front-end framework a separate 'components' library should be cre
 
 ## Documentation
 
-The documentation of this project can be found on [Github](https://github.com/hafslundnett/hdd-theme/wiki). This project also contains a showoff website that shows examples of most components. The showoff website can be generated/started by running:
+The showoff website include all documentation off components with related examples. The showoff website can be generated/started by running:
 
 * `yarn`
 * `yarn start`
 
 You need to have `node` and `yarn` installed in order to start the showoff website.
+
+## Publish new version
+You need access to the Hafslund Nett NPM organisation
+* `yarn build`
+* `npm publish`
 
 ## Code of conduct
 

@@ -1,8 +1,12 @@
 ---
 name: Search fields
-category: Components
+category: Form-Components
 ---
 
+A search field should be used to give a user the ability to search for options.
+
+## Search field
+`hdd-form_input`
 
 ```search-fields.html
 <div class="hdd-form_input">

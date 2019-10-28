@@ -1,9 +1,14 @@
 ---
-name: Navbar
-category: Components
+name: Sidenav
+category: Layout-Components
 ---
 
-## Sidebar
+The navigation floats on top of all elements with a z-index of 99. The z-index value is defined in the sizes variable file. When the navigation is hovered or the hover trigger class is added will the navigation expand and show the assigned label text to each list element.
+>🚧 It is adviced to place the `hdd-sidenav` in the `hdd-layout` block wrapped as an `hdd-layout_sidenav` element. 
+
+## Sidenav
+`hdd-layout_sidenav`
+
 ```nav.html
 <nav class="hdd-layout_sidenav">
   <div class="hdd-sidenav">
@@ -13,7 +18,7 @@ category: Components
 
     <ul class="hdd-sidenav_list">
       <li>
-        <a href="#" class="hdd-sidenav_list_item">
+        <a href="#" class="hdd-sidenav_list_item" accesskey="s">
           <span class="hdd-sidenav_list_item_icon">
             <i class="fal fa-chart-pie"><span class="hdd-badge-icon"></span></i>
           </span>
@@ -56,3 +61,19 @@ category: Components
   height: 450px!important;
 }
 ```
+
+## Mutations
+
+**`hdd-sidenav`:**
+
+| class | description|
+| :--- | :--- |
+| `no-hover` | Disable the `:hover` state |
+
+**`hdd-sidenav_list_item`:**
+
+| class | description|
+| :--- | :--- |
+| `is-active` | Set the given hdd-sidenav_list_item to it's active state |
+
+
