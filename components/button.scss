@@ -11,22 +11,22 @@
     border-style: solid;
     border-radius: $button-radius;
 
-    border-color: color('primary');
+    border-color: color("primary");
     outline: none;
-    background: color('primary');
-    color: color('white');
+    background: color("primary");
+    color: color("white");
     cursor: pointer;
   }
 
   &.is-secondary {
-    border-color: color('primary');
+    border-color: color("primary");
     background: transparent;
-    color: color('primary');
+    color: color("primary");
 
     &[disabled] {
-      border-color: color('grey');
+      border-color: color("grey");
       background: transparent;
-      color: color('grey');
+      color: color("grey");
     }
 
     &:not([disabled]) {
@@ -34,28 +34,28 @@
       &.is-hovering,
       &:focus:not(.no-focus),
       &.is-focusing {
-        border-color: color('primary');
-        background: color('primary');
-        color: color('white');
+        border-color: color("primary");
+        background: color("primary");
+        color: color("white");
       }
 
       &:active:not(.no-active),
       &.is-active {
-        border-color: color('blue-dark');
-        background: color('blue-dark');
-        color: color('white');
+        border-color: color("blue-dark");
+        background: color("blue-dark");
+        color: color("white");
       }
     }
 
     // Consider finding a better way of doing this
     // Changes spinner-color on hower
     &.is-loading::after {
-      color: color('primary') !important;
+      color: color("primary") !important;
     }
 
     &:hover {
       &.is-loading::after {
-        color: color('white') !important;
+        color: color("white") !important;
       }
     }
   }
@@ -63,20 +63,20 @@
   &:not([disabled]) {
     &:focus:not(.no-focus),
     &.is-focusing {
-      border-color: color('blue-dark');
-      background: color('blue-dark');
+      border-color: color("blue-dark");
+      background: color("blue-dark");
     }
 
     &:hover:not(.no-hover),
     &.is-hovering {
-      border-color: color('blue-dark');
-      background: color('blue-dark');
+      border-color: color("blue-dark");
+      background: color("blue-dark");
     }
 
     &:active:not(.no-active),
     &.is-active {
-      border-color: color('blue-dark');
-      background: color('blue-dark');
+      border-color: color("blue-dark");
+      background: color("blue-dark");
     }
   }
 
@@ -89,10 +89,10 @@
     @extend .is-p;
 
     color: transparent !important;
-    
+
     &::after {
       @extend .fa-spinner-third, ::before;
-      @include animation(spinner, .5s, infinite, linear);
+      @include animation(spinner, 0.5s, infinite, linear);
       // .fal is icon-properties
       @extend .fal;
 
@@ -100,16 +100,16 @@
       top: calc(50% - (1em / 2));
       left: calc(50% - (1em / 2));
 
-      color: color('white');
+      color: color("white");
       font-size: 1em;
     }
   }
 
   &[disabled] {
     border-width: $button-solid-border-width;
-    border-color: color('grey');
-    background: color('grey');
-    color: color('white');
+    border-color: color("grey");
+    background: color("grey");
+    color: color("white");
     cursor: not-allowed;
   }
 
@@ -127,14 +127,14 @@
     &-left {
       @extend %icon-base;
       i {
-        margin-right: .5rem;
+        margin-right: 0.5rem;
       }
     }
 
     &-right {
       @extend %icon-base;
       i {
-        margin-left: .5rem;
+        margin-left: 0.5rem;
       }
     }
   }
@@ -150,30 +150,29 @@
   // For buttons with only icons
   &-icon {
     padding: $button-icon-padding;
-    border: 1px solid color('grey-border');
+    border: 1px solid color("grey-border");
     border-radius: $button-radius;
-    background: color('white');
+    background: color("white");
     cursor: pointer;
 
     &:focus:not(.no-focus),
     &.is-focusing,
     &:hover:not(.no-hover),
     &.is-hovering {
-      border-color: color('blue-dark');
-      background: color('blue-dark');
-      color: color('white');
+      border-color: color("blue-dark");
+      background: color("blue-dark");
+      color: color("white");
     }
 
     &:active:not(.no-active),
     &.is-active {
-      border-color: color('blue-dark');
-      background: color('blue-dark');
-      color: color('white');
+      border-color: color("blue-dark");
+      background: color("blue-dark");
+      color: color("white");
     }
 
     &.is-transparent {
-      margin: 0;
-      padding: 0;
+      padding: $button-padding + 1px; // 1 px for missing border
 
       border: none;
       background: none;
@@ -184,15 +183,18 @@
       &:hover:not(.no-hover),
       .is-hovering {
         background: none;
-        color: color('primary');
+        color: color("primary");
       }
 
       &:active:not(.no-active),
       .is-active {
         background: none;
-        color: color('primary');
+        color: color("primary");
       }
+    }
+    
+    &.is-no-padding {
+      padding: 0px;
     }
   }
 }
-

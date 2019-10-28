@@ -52,9 +52,8 @@ A button that only contains an icon and should be used when an icon is used as a
 
 ```next-button.html
 <button class="hdd-button-icon"><i class="fal fa-arrow-right"></i></button>
-<button class="hdd-button-icon is-hovering"><i class="fal fa-arrow-right"></i></button>
-<button class="hdd-button-icon is-active"><i class="fal fa-arrow-right"></i></button>
 <button class="hdd-button-icon is-transparent"><i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button-icon is-transparent is-no-padding"><i class="fal fa-arrow-right"></i></button>
 ```
 
 ## Mutations
@@ -79,3 +78,4 @@ A button that only contains an icon and should be used when an icon is used as a
 | `is-active` | Sets the given button to it's active state |
 | `is-hovering` | Sets the given button to it's hovering state |
 | `is-loading` | Sets the given button to it's loading state |
+| `is-no-padding` | Removes button padding |
