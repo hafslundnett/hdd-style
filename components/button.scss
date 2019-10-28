@@ -23,10 +23,6 @@
     background: transparent;
     color: color('primary');
 
-    &.is-loading::after {
-      color: color('primary');
-    }
-
     &[disabled] {
       border-color: color('grey');
       background: transparent;
@@ -48,6 +44,18 @@
         border-color: color('blue-dark');
         background: color('blue-dark');
         color: color('white');
+      }
+    }
+
+    // Consider finding a better way of doing this
+    // Changes spinner-color on hower
+    &.is-loading::after {
+      color: color('primary') !important;
+    }
+
+    &:hover {
+      &.is-loading::after {
+        color: color('white') !important;
       }
     }
   }
@@ -73,15 +81,17 @@
   }
 
   &.is-loading {
+    // Adds icon from font awesome to content
+    @extend .fa-spinner-third;
     // .fal is icon-properties
     @extend .fal;
     // .is-p is font-properties,  defined in typography.
     @extend .is-p;
 
-    color: transparent;
+    color: transparent !important;
     
     &::after {
-      @extend .fa-spinner-third, :before;
+      @extend .fa-spinner-third, ::before;
       @include animation(spinner, .5s, infinite, linear);
       // .fal is icon-properties
       @extend .fal;
