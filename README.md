@@ -23,6 +23,11 @@ The showoff website include all documentation off components with related exampl
 
 You need to have `node` and `yarn` installed in order to start the showoff website.
 
+## Publish new version
+You need access to the Hafslund Nett NPM organisation
+* `yarn build`
+* `npm publish`
+
 ## Code of conduct
 
 We will behave ourselves if you behave yourselves. For more details see our
