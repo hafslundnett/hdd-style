@@ -22,5 +22,7 @@ examples:
 order:
   - +Getting started
   - Components
+  - Form-Components
+  - Layout-Components
   - Utilities
 

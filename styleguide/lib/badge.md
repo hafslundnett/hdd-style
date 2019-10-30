@@ -1,33 +1,46 @@
 ---
 name: Badge
-category: Elements
+category: Components
 ---
+
+Multiple colors can be used on `hdd-badge` and `hdd-badge-icon`. `signal-red` is used as the default color.
+
+## Badge
+`hdd-badge`
+
 
 ```badge.html
 <div>
-  <span>List <span class="hdd-badge is-danger">10</span></span>
+  <span>Example 1 <span class="hdd-badge">5</span></span>
 </div>
-<div style="padding-top: 1rem;" class="is-p">
-  <i class="fal fa-cog"><span class="hdd-badge-icon"></span></i>
+<div style="padding-top: 1rem;">
+  <span>Example 2 <span class="hdd-badge is-primary">8</span></span>
+</div>
+<div style="padding-top: 1rem;">
+  <span>Example 3 <span class="hdd-badge is-safe">10</span></span>
+</div>
+<div style="padding-top: 1rem;">
+  <span>Example 4 <span class="hdd-badge is-warn">10</span></span>
 </div>
 ```
 
-A small red dot indication dot with optionally a number inside. All colors can be used on a `hdd-badge` by default is the color `signal-red` used for badges.
-
-**Example**
-
-```html
-<span class="hdd-badge"></span>
-<span class="hdd-badge is-primary">10</span>
-```
 
 ## Icon badge
 `hdd-badge-icon`
 
-Add a small red dot with a white border to the top right side of a icon.
+Add a small red dot with a white border to the top right side of an icon.
 
-**Example**
-
-```html
-<i class="fal fa-cog"><span class="hdd-badge-icon"></span></i>
+```badge-icon.html
+<div>
+  <i class="fal fa-cog"><span class="hdd-badge-icon"></span></i>
+</div>
+<div style="padding-top: 1rem;">
+  <i class="fal fa-cog"><span class="hdd-badge-icon is-primary"></span></i>
+</div>
+<div style="padding-top: 1rem;">
+  <i class="fal fa-cog"><span class="hdd-badge-icon is-safe"></span></i>
+</div>
+<div style="padding-top: 1rem;">
+  <i class="fal fa-cog"><span class="hdd-badge-icon is-warn"></span></i>
+</div>
 ```

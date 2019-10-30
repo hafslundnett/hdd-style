@@ -2,7 +2,7 @@
   position: relative;
 
   &_content {
-    @extend #{&}.is-aligned-bottom;
+    @extend .is-aligned-bottom;
 
     display: none;
     position: absolute;
@@ -17,15 +17,17 @@
 
     background: color('white');
 
+    // Alignes the dropdown on top of the search field. 
     &.is-aligned-top {
-      // Still needs work
-      top: -100%;
-      bottom: 100%;
+      top: initial;
+      // 18px is the overlap that was between the input field and the elements
+      bottom: 18px + $dropdown-spacing-element;
     }
 
     &.is-aligned-bottom {
       top: calc(100% + #{$dropdown-spacing-element});
       bottom: 0;
+      margin-bottom: $dropdown-margin;
     }
 
     &.is-active {
@@ -33,13 +35,11 @@
     }
 
     &_item {
-      $e: #{&};
-
       padding: $dropdown-item-padding;
       cursor: pointer;
 
       &:hover:not(.no-hover) {
-        @extend #{$e}.is-active;
+        @extend .is-active;
       }
 
       &.is-active {

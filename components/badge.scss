@@ -1,5 +1,7 @@
 .hdd-badge {
+  // .is-p-small is font-properties, defined in typography.
   @extend .is-p-small;
+  // Colors available for badge
   @include color-modifiers(('primary', 'warn', 'danger', 'safe'), 'background', 'color');
 
   padding: $badge-padding;
@@ -11,6 +13,7 @@
   color: color-contrast('danger');
 
   &-icon {
+    @include color-modifiers(('primary', 'warn', 'danger', 'safe'), 'background', 'color');
     position: absolute;
     top: calc(#{$badge-icon-size}/-2);
     right: calc(#{$badge-icon-size}/-2);

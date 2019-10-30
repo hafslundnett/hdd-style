@@ -1,6 +1,6 @@
 .hdd-navigation {
-  @include box-shadow($shadow-medium);
 
+  box-shadow: $shadow-medium;
   display: flex;
   z-index: $navigation-z-index;
   box-sizing: border-box;
@@ -12,6 +12,7 @@
   padding: $navigation-padding;
   background: color('white');
 
+  // Setting the class at the root element of layout component, check layout.md for more info. 
   @at-root {
     .hdd-layout_navigation {
       height: $navigation-height;
@@ -28,6 +29,7 @@
     left: 0;
     align-self: center;
     margin: auto;
+    max-width: 50%;
     text-align: center;
   }
 
