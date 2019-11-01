@@ -12,7 +12,8 @@ In component based services (especially internal systems), content can be struct
 <div class="hdd-card">
   <div class="hdd-card_header">
     <div class="hdd-card_header_text">
-      <div class="hdd-card_title">A card should have a title</div>
+      <div class="hdd-card_title is-center">A card should have a title</div>
+      <div class="hdd-card_subtitle is-center">And a subtitle</div>
     </div>
   </div>
   <div class="hdd-card_content">
@@ -109,11 +110,17 @@ In component based services (especially internal systems), content can be struct
 | :--- | :--- |
 | `is-full-height` | Sets the height of the given card to 100% |
 
-**`hdd-card_header`:**
+**`hdd-card_title`:**
 
 | class | description|
 | :--- | :--- |
-| `is-center` | Sets the given content of card header centered |
+| `is-center` | Sets the given content of card title centered |
+
+**`hdd-card_subtitle`:**
+
+| class | description|
+| :--- | :--- |
+| `is-center` | Sets the given content of card subtitle centered |
 
 **`hdd-card_actions`:**
 
