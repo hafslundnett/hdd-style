@@ -3,7 +3,8 @@
   border-radius: $card-radius;
   box-shadow: $shadow-light;
   box-sizing: border-box;
-  display: flex;
+  display: inline-flex;
+  width: 100%;
   flex-direction: column;
   background: color('white');
 
