@@ -1,9 +1,10 @@
 .hdd-sidenav {
-  $c: #{&};
+  // Variable containing '&' to jump to current parent inside a child class.  
+  $this: &;
 
-  @include box-shadow($shadow-light);
-  @include transition(width $medium-transition $transition-cubic);
+  transition: width $medium-transition $transition-cubic;
 
+  box-shadow: $shadow-light;
   position: fixed;
   z-index: $sidenav-z-index;
   width: $sidenav-collapsed-width;
@@ -14,7 +15,7 @@
   &.is-active {
     width: $sidenav-extended-width;
 
-    #{$c}_list {
+    #{$this}_list {
       &_item {
         &_label {
           margin-left: 0;
@@ -25,11 +26,12 @@
   }
 
   &:hover {
+    // Extends the the sidenav style only if the "no-hover" class is not applied.
     &:not(.no-hover) {
-      @extend #{$c}.is-active;
+      @extend .hdd-sidenav, .is-active;
     }
   }
-
+  
   @at-root {
     .hdd-layout_sidenav {
       min-width: $sidenav-collapsed-width;
@@ -45,8 +47,9 @@
 
   &_list {
     &_item {
-      $c: #{&};
-      @include transition(all $short-transition $transition-cubic);
+      // Variable containing '&' to jump to current parent inside a child class. 
+      $this: &;
+      transition: all $short-transition $transition-cubic;
 
       display: flex;
       align-items: center;
@@ -57,8 +60,8 @@
       &.is-active {
         background: color('blue-light1');
 
-        #{$c}_icon,
-        #{$c}_label {
+        #{$this}_icon,
+        #{$this}_label {
           color: color('white');
         }
       }
@@ -78,7 +81,7 @@
 
       &_label {
         @extend .is-h2;
-        @include transition(all $short-transition $transition-cubic);
+        transition: all $short-transition $transition-cubic;
 
         flex-grow: 1;
         margin-left: -10px;

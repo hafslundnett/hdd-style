@@ -1,5 +1,6 @@
 .feedback-container {
-  $c: &;
+  // Variable containing '&' to jump to current parent inside a child class.
+  $this: &;
   display: flex;
   box-sizing: border-box;
   align-items: center;
@@ -8,29 +9,38 @@
   padding: $feedback-padding;
   border: none;
   border-radius: $feedback-border-radius;
-  @extend #{$c}.is-info;
+  // .is-info is the default for any feedback-container
+  @extend .is-info;
+
+  &.is-success {
+    background: color('safe');
+    
+    #{$this}_icon, #{$this}_message, #{$this}_close-button {
+      color: color-contrast('safe');
+    }
+  }
 
   &.is-info {
     background-color: color('blue-light3');
 
-    #{$c}_icon, #{$c}_message, #{$c}_close-button {
-      color: color('font-color');
+    #{$this}_icon, #{$this}_message, #{$this}_close-button {
+      color: color-contrast('blue-light3');
     }
   }
 
   &.is-warn {
-    background-color: color('signal-yellow');
+    background-color: color('warn');
 
-    #{$c}_icon, #{$c}_message, #{$c}_close-button {
-      color: color('font-color');
+    #{$this}_icon, #{$this}_message, #{$this}_close-button {
+      color: color-contrast('warn');
     }
   }
 
   &.is-error {
-    background-color: color('signal-red');
+    background-color: color('danger');
 
-    #{$c}_icon, #{$c}_message, #{$c}_close-button {
-      color: color('white');
+    #{$this}_icon, #{$this}_message, #{$this}_close-button {
+      color: color-contrast('danger');
     }
   }
 
@@ -45,11 +55,6 @@
     margin-right: $feedback-message-gap;
     font-size: font-size('p');
     line-height: 1.125rem;
-
-    em, b, .is-strong {
-      font-style: normal;
-      font-weight: bold;
-    }
   }
 
   &_close-button {

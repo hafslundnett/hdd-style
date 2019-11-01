@@ -1,15 +1,17 @@
 .hdd-tooltip {
-  $e: #{&};
+  // Variable containing '&' to jump to current parent inside a child class.
+  $this: &;
 
   position: relative;
 
-  &:hover:not(.no-hovering) {
-    #{$e}_content {
-      @extend #{$e}_content.is-active;
+  &:hover:not(.no-hover) {
+    #{$this}_content {
+      @extend .hdd-tooltip_content, .is-active;
     }
   }
 
   &_content {
+    //.is-p is font-properties, defined in typography.
     @extend .is-p;
 
     $content-color: color('grey-dark');

@@ -3,22 +3,54 @@ name: Layout
 category: Getting started
 ---
 
-## Class
-`hdd-layout`
+It is advised to add the `hdd-layout` block around your project page. The `hdd-layout` block can help you save space around your content container for elements like sidebars or navigation. `hdd-layout` has one default child element which is called `content`. This element should contain the content that you want to show on the page. The `content` child element fill the remaining free space on the page by default.
 
-It is advised to add the `hdd-layout` block around your project page. The `hdd-layout` block can help you saving space around your content container for elements like sidebars or navigation. `hdd-layout` has one default child element which is called `content`. This element should contain the content that you want to show on the page. By default does the `content` child element fill the remaining free space on the page.
+## Layout
+`hdd-layout`, `hdd-layout_sidenav`, `hdd-layout_content`, `hdd-layout_navigation`
 
-**Example**
-
-```html
+```layout.html
 <div class="hdd-layout">
-  <div class="hdd-layout_sidenav">
-    My sidebar navigation...
-  </div>
+
+  <nav class="hdd-layout_sidenav">
+    <div class="hdd-sidenav">
+      <a class="hdd-sidenav_logo" href="#">
+        <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
+      </a>
+      <ul class="hdd-sidenav_list">
+        <li>
+          <a href="#" class="hdd-sidenav_list_item ">
+            <span class="hdd-sidenav_list_item_icon">
+              <i class="fal fa-chart-pie"></i>
+            </span>
+            <span class="hdd-sidenav_list_item_label">
+              <span>Oversikt</span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
   <div class="hdd-layout_content">
-    My content...
+    <header class="hdd-layout_navigation">
+      <div class="hdd-navigation">
+        <h1 class="hdd-navigation_title">Overview</h1>
+      </div>
+    </header>
+
+    <div style="padding: 20px">
+      My content...
+    </div>
   </div>
+  
 </div>
+```
+
+```layout.css hidden
+/* 100% height makes the iframe funky on hover*/
+.hdd-sidenav {
+  height: 250px!important;
+}
 ```
 
 ## Extending hdd-layout
@@ -26,7 +58,6 @@ It is advised to add the `hdd-layout` block around your project page. The `hdd-l
 When wanting to add your block to the `hdd-layout` block please extend the `hdd-layout` class in your own block.
 Below is a example of how to achieve this with sass.
 
-**Example**
 
 ```sass
 .hdd-block {

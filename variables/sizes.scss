@@ -124,22 +124,6 @@ $tooltip-tip-left-offset: 1rem;
 $tooltip-border-radius: $border-radius;
 
 /************************
-* Datepicker
-************************/
-
-$datepicker-tip-size: $tooltip-tip-size;
-$datepicker-padding: .75rem;
-$datepicker-border-width: 1px;
-$datepicker-max-width: 250px;
-$datepicker-border-color: color('grey');
-$datepicker-border: $datepicker-border-width solid $datepicker-border-color;
-$datepicker-border-radius: $border-radius;
-$datepicker-days-border-width: 1px;
-$datepicker-days-per-week: 7;
-$datepicker-tip-right-offset: 1.5rem;
-$datepicker-tip-left-offset: 1.5rem;
-
-/************************
  * Tags
  ************************/
 
@@ -155,6 +139,7 @@ $tag-spacing: .25rem;
 
 $dropdown-border-radius: $border-radius;
 $dropdown-border: 1px solid color('grey');
+$dropdown-margin: 20px;
 $dropdown-spacing-element: 4px;
 $dropdown-content-padding: .5rem 0;
 $dropdown-item-padding: .5rem 0 .5rem 1rem;
@@ -169,18 +154,3 @@ $feedback-icon-size: 20px;
 $feedback-icon-gap: 20px;
 $feedback-close-button-size: 14px;
 $feedback-message-gap: 10px;
-
-/************************
- * Modal
- ************************/
-
-$modal-border-radius: $border-radius;
-$modal-max-width: 90%;
-$modal-max-height: 90%;
-$modal-width: 500px;
-
-/************************
- * Breadcrumbs
- ************************/
-$breadcrumbs-padding: 0 0 1rem;
-$breadcrumb-icon-spacing: 0 .35rem;
