@@ -1,12 +1,12 @@
 .hdd-table {
-  //Creating variable containing '&' to jump to parent inside a child class.   
+  //Creating variable containing '&' to jump to parent inside a child class.
   $this: &;
 
   min-width: 100%;
   overflow: scroll;
   border-spacing: 0;
   border-collapse: collapse;
-  background: color('white');
+  background: color("white");
 
   th,
   td {
@@ -21,7 +21,7 @@
       text-align: right;
 
       > * {
-        margin: 0 .5rem;
+        margin: 0 0.5rem;
 
         &:first-child {
           margin-left: 0;
@@ -56,25 +56,23 @@
 
   &_row,
   tr {
-    
-
-    @include color-modifiers(('primary', 'warn', 'danger', 'safe'), 'border-color', '', '::before');
+    @include color-modifiers(("primary", "warn", "danger", "safe"), "border-color", "", "::before");
 
     &::before {
-      content: '';
+      content: "";
       display: table-cell;
       box-sizing: border-box;
-      border-width: 0 .3rem 0 0;
+      border-width: 0 0.3rem 0 0;
       border-style: solid;
       border-color: transparent;
     }
 
     &.is-stripe {
-      background: color('blue-light4');
+      background: color("blue-light4");
     }
 
     &.is-selected {
-      background: color('blue-light3');
+      background: color("blue-light3");
     }
   }
 
@@ -87,7 +85,7 @@
     // .is-h3 is font-properties, defined in typography.
     @extend .is-h3;
 
-    border-bottom: 2px solid color('grey-light');
+    border-bottom: 2px solid color("grey-light");
     text-align: left;
 
     th,
@@ -95,16 +93,14 @@
       padding: $table-header-padding;
 
       > i {
-        margin-left: .3rem;
+        margin-left: 0.3rem;
       }
     }
   }
 
   &.is-striped {
-    > tbody {
-      > tr:nth-of-type(odd) {
-        @extend .hdd-table_row, .is-stripe
-      }
+    tr:nth-of-type(even) {
+      @extend .hdd-table_row, .is-stripe;
     }
   }
 
