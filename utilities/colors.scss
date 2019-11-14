@@ -1,4 +1,5 @@
 @import '../variables/colors';
+@import '../variables/shadows';
 
 .hdd {
   @each $label, $map in $colors {
@@ -33,6 +34,16 @@
     }
   }
 }
+
+.hdd-shadow-light {
+  box-shadow: $shadow-light;
+} 
+.hdd-shadow-medium {
+  box-shadow: $shadow-medium;
+} 
+.hdd-shadow-strong {
+  box-shadow: $shadow-strong;
+} 
 
 @mixin color-modifiers($list: ('primary', 'warn', 'danger', 'safe'), $main-property: 'background', $contrast-property: '', $selector: '', $color-set: $colors) {
   @each $label in $list {
