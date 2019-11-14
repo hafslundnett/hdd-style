@@ -5,18 +5,6 @@ category: Utilities
 
 Hafslund Nett has its own distinct groups of colors. These are defined as two different palettes, primary colors and support colors, and they should be used in all communication to create identity. Every color can be used directly by using the `color($name)` function or by extended the `background-colors` class.
 
-If you want to override a color could you define a `$override-colors` map. The colors or labels defined in this map will override the default colors.
-
-```scss
-$override-colors: (
-  'blue': (
-    color: #2196F3,
-    contrast: #FFF,
-    alt-labels: (primary)
-  )
-);
-```
-
 ## Primary colors
 The primary color is blue and work as an important element for building the identity of Hafslund Nett. Blue symbolize credibility and stability. The associated shades of blue provide contrast, flexibility and airiness. This limited color scheme provides visual continuity throughout the user interface. When using estimates, pay particular attention to creating contrasts that are approved in WCAG. 
 
@@ -60,7 +48,7 @@ Signal colors should only be used in meaningful (never being identity-bearing or
 ```
 
 ### Data visualization
-These colors are chosen to be used for infographics. If necessary, these colors can also be used in varying degrees of opacity (eg on heat maps).
+These colors are chosen to be used for infographics. If necessary, these colors can also be used in varying degrees of opacity (eg heat maps).
 
 ```data-colors.html
 <div class="hdd-contrast-background-primary" style="padding: 15px;">
@@ -113,49 +101,39 @@ Shadows should be used behind all cards. In most cases, "Normal" shadow should b
 ```
 
 
-## `color($name, $color-set: $colors)` function
+## Using colors in your code
+<b>`color($name, $color-set: $colors)`</b>
 
-This function returns the respected color value if found. A color set could optionally be given if no color set is given will the `$colors` map be used. When the given color is not found will a warning be thrown during building. A color can be selected by it's color name or label.
+This function returns the color value if found. Giving a color-set is optional, if no color-set is given the `$colors` map will be used. When the given color is not found will a warning be thrown during building. A color can be selected by it's color name or label.
 
 There are by default two data color sets available:
 - `$colors` - This is the default data set containing the hdd theme colors
-- `$data-colors` - This data set contains all colors that should be used when working on graphs
+- `$data-colors` - This data set contains all colors that should be used when working with data-visualizations, eg graphs.
 
-```sass
+```scss
 @import '../frameworks/colors';
 
 .hdd-element {
-  background: color('white');
-  color: color('primary'); // primary is the color label of 'blue'
+  color: color('primary'); // using the primary color, blue
+  background: color('data-navy', $data-colors); // using the color navy from the data color set
 }
-
-.hdd-data-color-set {
-  background: color('data-navy', $data-colors)
-}
-
-.hdd-custom-color-set {
-  background: color('AntiqueWhite', $custom-color-set)
-}
-
-$custom-color-set: (
-  AntiqueWhite: (
-    color: #FAEBD7,
-    contrast: #444,
-    alt-labels: (primary, superimportant) // Optional
-  )
-);
 ```
 
-## Color set
+### Custom color sets
+A color set is a map containing all available colors. Every color map has a couple of required and optional properties.
 
-A color set is a big map containing all available colors. Every color map has a couple of required and optional properties.
+```scss
+$custom-color-set: (
+  blue: ( // <- label
+    color: #1164A4, // Required
+    contrast: #FFFFFF, // Required
+    alt-labels: (primary, superimportant) // Optional
+  );
+};
 
-```sass
-blue: ( // <- label
-  color: #1164A4, // Required
-  contrast: #FFFFFF, // Required
-  alt-labels: (primary, superimportant) // Optional
-)
+.hdd-element {
+  background: color('blue', $custom-color-set); // using blue from the custom color set
+}
 ```
 
 | property | required | description |
@@ -164,64 +142,54 @@ blue: ( // <- label
 | `contrast` | `true` | is the contrast of color |
 | `alt-labels` | `false` | is a list of alternative labels<br>that could be used to get this color |
 
-## `background-colors` class
 
-The `background-colors` class contains all colors as chained classes.
+### Overriding colors
+If you want to override a color could you define a `$override-colors` map. The colors or labels defined in this map will override the default colors.
 
-**A chained color class consists out of the following:**
-
-```sass
-border-color: $color;
-background: $color;
-color: $color; // This color should have enough contrast on to make text readable on the given background color
+```scss
+$override-colors: (
+  'blue': (
+    color: #2196F3,
+    contrast: #FFF,
+    alt-labels: (primary)
+  )
+);
 ```
 
-## Color modifiers
-
+### Color modifiers
 A set of color modifiers could be applied/extended to a class in a couple of ways.
 Multiple classes are made of all colors that could be extended/included inside of your classes.
 The best way of including a set of color modifiers is by using the `color-modifiers` function.
 
-**`color-modifiers($list: ('primary', 'warn', 'danger', 'safe'), $main-property: 'background', $contrast-property: '', $selector: '', $color-set: $colors)` function**
-
-The `color-modifiers` function returns modifiers for the given colors (list).
+The `color-modifiers` function returns modifiers for the given colors. When including the modifiers in a class the `is-somelabel` classes can be used on the html-elements with that class. The element will then get a background-color and a contrasting text-color. These
 
 ```scss
-&.is-primary {
-  background: #...; // <- Main property (2th argument)
-  color: #...; // <- Contrast property (3th argument)
-}
-
-&.is-warn {
-  background: #...;
-  color: #...;
-}
-
-...
-```
-
-A main property and optionally a contrast property could be given. By default is the `$colors` color set used but a custom color set could be passed as a argument.
-
-## Color directly
-Setting the color and background attribute directly on elements are possible with the classes hdd-color, hdd-contrast-color, hdd-background and hdd-contrast-background, togheter with a color of choice. All colors from the colors map can be used.
-
-```scss
-&-color-#{$label} {
-  color: $color;
-}
-
-&-contrast-color-#{$label} {
-  color: $contrast;
-}
-
-&-background-#{$label} {
-  background: $color;
-}
-
-&-contrast-background-#{$label} {
-  background: $contrast;
+.hdd-badge {
+  @include color-modifiers(('primary', 'warn', 'danger', 'safe'), 'background', 'color');
 }
 ```
+
+```color-modifiers.html
+<div>
+  <span class="hdd-badge is-primary">is-primary</span>
+</div>
+<div style="padding-top: 1rem;">
+  <span class="hdd-badge is-warn">is-warn</span>
+</div>
+<div style="padding-top: 1rem;">
+  <span class="hdd-badge is-danger">is-danger</span>
+</div>
+<div style="padding-top: 1rem;">
+  <span class="hdd-badge is-safe">is-safe</span>
+</div>
+```
+
+### Color directly
+Setting the color and background attribute directly on elements are also possible with the following classes. All colors from the colors map can be used.
+- hdd-color-somecolor
+- hdd-contrast-color-somecolor
+- hdd-background-somecolor
+- hdd-contrast-background-somecolor
 
 ```color-directly.html
 <div style="padding: 20px;" class="hdd-background-primary">
