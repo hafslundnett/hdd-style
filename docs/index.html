@@ -2850,55 +2850,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
   background: color(&#39;data-navy&#39;, $data-colors); // using the color navy from the data color set
 }</code></pre>
 	</div>
-</div><h3>Custom color sets</h3><p>A color set is a map containing all available colors. Every color map has a couple of required and optional properties.</p>
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang "> scss</button>
-	<div class="i-code-block__content ">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="$custom-color-set: (
-  blue: ( // &lt;- label
-    color: #1164A4, // Required
-    contrast: #FFFFFF, // Required
-    alt-labels: (primary, superimportant) // Optional
-  );
-};
-
-.hdd-element {
-  background: color(&#39;blue&#39;, $custom-color-set); // using blue from the custom color set
-}">Copy</button>
-		<pre class="mb-0"><code class="lang-">$custom-color-set: (
-  blue: ( // &lt;- label
-    color: #1164A4, // Required
-    contrast: #FFFFFF, // Required
-    alt-labels: (primary, superimportant) // Optional
-  );
-};
-
-.hdd-element {
-  background: color(&#39;blue&#39;, $custom-color-set); // using blue from the custom color set
-}</code></pre>
-	</div>
-</div><table class="table"><thead><tr>
-<th style="text-align:left">property</th>
-<th style="text-align:left">required</th>
-<th style="text-align:left">description</th>
-</tr>
-</thead><tbody><tr>
-<td style="text-align:left"><code>color</code></td>
-<td style="text-align:left"><code>true</code></td>
-<td style="text-align:left">is the hex color value of the label</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>contrast</code></td>
-<td style="text-align:left"><code>true</code></td>
-<td style="text-align:left">is the contrast of color</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>alt-labels</code></td>
-<td style="text-align:left"><code>false</code></td>
-<td style="text-align:left">is a list of alternative labels<br>that could be used to get this color</td>
-</tr>
-</tbody></table><h3>Color modifiers</h3><p>A set of color modifiers could be applied/extended to a class in a couple of ways.
+</div><h3>Color modifiers</h3><p>A set of color modifiers could be applied/extended to a class in a couple of ways.
 Multiple classes are made of all colors that could be extended/included inside of your classes.
 The best way of including a set of color modifiers is by using the <code>color-modifiers</code> function.</p>
 <p>The <code>color-modifiers</code> function returns modifiers for the given colors. When including the modifiers in a class the <code>is-somelabel</code> classes can be used on the html-elements with that class. The element will then get a background-color and a contrasting text-color. These</p>

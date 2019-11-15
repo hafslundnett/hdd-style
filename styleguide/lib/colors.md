@@ -119,29 +119,6 @@ There are by default two data color sets available:
 }
 ```
 
-### Custom color sets
-A color set is a map containing all available colors. Every color map has a couple of required and optional properties.
-
-```scss
-$custom-color-set: (
-  blue: ( // <- label
-    color: #1164A4, // Required
-    contrast: #FFFFFF, // Required
-    alt-labels: (primary, superimportant) // Optional
-  );
-};
-
-.hdd-element {
-  background: color('blue', $custom-color-set); // using blue from the custom color set
-}
-```
-
-| property | required | description |
-| :--- | :--- | :--- |
-| `color` | `true` | is the hex color value of the label |
-| `contrast` | `true` | is the contrast of color |
-| `alt-labels` | `false` | is a list of alternative labels<br>that could be used to get this color |
-
 ### Color modifiers
 A set of color modifiers could be applied/extended to a class in a couple of ways.
 Multiple classes are made of all colors that could be extended/included inside of your classes.
