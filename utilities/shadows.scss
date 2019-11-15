@@ -1,0 +1,11 @@
+@import '../variables/shadows';
+
+.hdd-shadow-light {
+    box-shadow: $shadow-light;
+} 
+.hdd-shadow-medium {
+    box-shadow: $shadow-medium;
+} 
+.hdd-shadow-strong {
+    box-shadow: $shadow-strong;
+} 

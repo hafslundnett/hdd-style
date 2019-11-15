@@ -142,20 +142,6 @@ $custom-color-set: (
 | `contrast` | `true` | is the contrast of color |
 | `alt-labels` | `false` | is a list of alternative labels<br>that could be used to get this color |
 
-
-### Overriding colors
-If you want to override a color could you define a `$override-colors` map. The colors or labels defined in this map will override the default colors.
-
-```scss
-$override-colors: (
-  'blue': (
-    color: #2196F3,
-    contrast: #FFF,
-    alt-labels: (primary)
-  )
-);
-```
-
 ### Color modifiers
 A set of color modifiers could be applied/extended to a class in a couple of ways.
 Multiple classes are made of all colors that could be extended/included inside of your classes.

@@ -2898,27 +2898,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 <td style="text-align:left"><code>false</code></td>
 <td style="text-align:left">is a list of alternative labels<br>that could be used to get this color</td>
 </tr>
-</tbody></table><h3>Overriding colors</h3><p>If you want to override a color could you define a <code>$override-colors</code> map. The colors or labels defined in this map will override the default colors.</p>
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang "> scss</button>
-	<div class="i-code-block__content ">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="$override-colors: (
-  &#39;blue&#39;: (
-    color: #2196F3,
-    contrast: #FFF,
-    alt-labels: (primary)
-  )
-);">Copy</button>
-		<pre class="mb-0"><code class="lang-">$override-colors: (
-  &#39;blue&#39;: (
-    color: #2196F3,
-    contrast: #FFF,
-    alt-labels: (primary)
-  )
-);</code></pre>
-	</div>
-</div><h3>Color modifiers</h3><p>A set of color modifiers could be applied/extended to a class in a couple of ways.
+</tbody></table><h3>Color modifiers</h3><p>A set of color modifiers could be applied/extended to a class in a couple of ways.
 Multiple classes are made of all colors that could be extended/included inside of your classes.
 The best way of including a set of color modifiers is by using the <code>color-modifiers</code> function.</p>
 <p>The <code>color-modifiers</code> function returns modifiers for the given colors. When including the modifiers in a class the <code>is-somelabel</code> classes can be used on the html-elements with that class. The element will then get a background-color and a contrasting text-color. These</p>
