@@ -15,7 +15,7 @@
     border: $dropdown-border;
     border-radius: $dropdown-border-radius;
 
-    background: color('white');
+    background: var(--hdd-white);
 
     // Alignes the dropdown on top of the search field. 
     &.is-aligned-top {
@@ -43,7 +43,7 @@
       }
 
       &.is-active {
-        background: color('blue-light4');
+        background: var(--hdd-blue-light4);
       }
     }
   }

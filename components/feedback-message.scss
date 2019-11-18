@@ -13,34 +13,34 @@
   @extend .is-info;
 
   &.is-success {
-    background: color('safe');
+    background: var(--hdd-safe);
     
     #{$this}_icon, #{$this}_message, #{$this}_close-button {
-      color: color-contrast('safe');
+      color: var(--hdd-contrast-safe);
     }
   }
 
   &.is-info {
-    background-color: color('blue-light3');
+    background-color: var(--hdd-blue-light3);
 
     #{$this}_icon, #{$this}_message, #{$this}_close-button {
-      color: color-contrast('blue-light3');
+      color: var(--hdd-contrast-blue-light3);
     }
   }
 
   &.is-warn {
-    background-color: color('warn');
+    background-color: var(--hdd-warn);
 
     #{$this}_icon, #{$this}_message, #{$this}_close-button {
-      color: color-contrast('warn');
+      color: var(--hdd-contrast-warn);
     }
   }
 
   &.is-error {
-    background-color: color('danger');
+    background-color: var(--hdd-danger);
 
     #{$this}_icon, #{$this}_message, #{$this}_close-button {
-      color: color-contrast('danger');
+      color: var(--hdd-contrast-danger);
     }
   }
 

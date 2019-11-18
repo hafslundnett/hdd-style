@@ -6,7 +6,7 @@
   overflow: scroll;
   border-spacing: 0;
   border-collapse: collapse;
-  background: color("white");
+  background: var(--hdd-white);
 
   th,
   td {
@@ -68,11 +68,11 @@
     }
 
     &.is-stripe {
-      background: color("blue-light4");
+      background: var(--hdd-blue-light4);
     }
 
     &.is-selected {
-      background: color("blue-light3");
+      background: var(--hdd-blue-light3);
     }
   }
 
@@ -85,7 +85,7 @@
     // .is-h3 is font-properties, defined in typography.
     @extend .is-h3;
 
-    border-bottom: 2px solid color("grey-light");
+    border-bottom: 2px solid var(--hdd-grey-light);
     text-align: left;
 
     th,
