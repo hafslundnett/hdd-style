@@ -31,13 +31,13 @@
   @return $color-map;
 }
 
-@function color($name, $color-set: $all-colors) {
-  $map: color-map($name, $color-set);
+@function color($name) {
+  $map: color-map($name, $all-colors);
   @return map-get($map, color);
 }
 
-@function color-contrast($name, $color-set: $all-colors) {
-  $map: color-map($name, $color-set);
+@function color-contrast($name) {
+  $map: color-map($name, $all-colors);
   @return map-get($map, contrast);
 }
 
@@ -188,7 +188,7 @@ $all-colors: map-merge($colors, $data-colors);
 $gradients: (
   'dusk': (
     angle: 180deg,
-    from: color('blue'),
+    from: var(--hdd-blue),
     to: #279DD0
   )
 );

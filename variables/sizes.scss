@@ -36,7 +36,7 @@ $form-input-icon-margin: .9rem;
 $form-input-padding-left: .7rem;
 $form-input-padding: $form-input-padding-left .9rem;
 $form-input-border-radius: $border-radius;
-$form-input-border: 1px solid color('grey');
+$form-input-border: 1px solid var(--hdd-grey);
 
 /************************
  * Form Checkbox
@@ -44,7 +44,7 @@ $form-input-border: 1px solid color('grey');
 
 $form-checkbox-mark-size: 14px;
 $form-checkbox-mark-border-radius: $border-radius;
-$form-checkbox-mark-border: 1px solid color('primary');
+$form-checkbox-mark-border: 1px solid var(--hdd-primary);
 
 /************************
  * Form Radiobutton
@@ -52,7 +52,7 @@ $form-checkbox-mark-border: 1px solid color('primary');
 
 $form-radiobutton-mark-size: 14px;
 $form-radiobutton-mark-border-radius: 14px;
-$form-radiobutton-mark-border: 1px solid color('primary');
+$form-radiobutton-mark-border: 1px solid var(--hdd-primary);
 
 /************************
  * Form Select
@@ -87,7 +87,7 @@ $badge-padding: .2rem .6rem;
 $badge-radius: 2rem;
 
 $badge-icon-size: 6px;
-$badge-icon-border: 2px solid color('white');
+$badge-icon-border: 2px solid var(--hdd-white);
 
 /************************
  * Table
@@ -138,7 +138,7 @@ $tag-spacing: .25rem;
  ************************/
 
 $dropdown-border-radius: $border-radius;
-$dropdown-border: 1px solid color('grey');
+$dropdown-border: 1px solid var(--hdd-grey);
 $dropdown-margin: 20px;
 $dropdown-spacing-element: 4px;
 $dropdown-content-padding: .5rem 0;

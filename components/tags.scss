@@ -11,7 +11,7 @@
     padding: 0;
     border: none;
     background: none;
-    color: color('font-color');
+    color: var(--hdd-font-color);
     font-size: $tag-font-size;
     cursor: pointer;
   }
@@ -24,8 +24,8 @@
     margin-left: $tag-spacing;
     padding: $tag-padding;
     border-radius: $tag-border-radius;
-    background: color('blue-light3');
-    color: color('font-color');
+    background: var(--hdd-blue-light3);
+    color: var(--hdd-font-color);
     font-size: $tag-font-size;
     font-weight: 400;
     letter-spacing: .1px;

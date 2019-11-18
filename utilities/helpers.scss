@@ -85,7 +85,7 @@
   margin: auto;
   
   border-right: $size solid transparent;
-  border-bottom: $size solid color('white');
+  border-bottom: $size solid var(--hdd-white);
   border-left: $size solid transparent;
 
   color: $color;

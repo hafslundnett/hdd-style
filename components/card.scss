@@ -6,7 +6,7 @@
   display: inline-flex;
   width: 100%;
   flex-direction: column;
-  background: color('white');
+  background: var(--hdd-white);
 
   &.is-full-height {
     height: 100%;
@@ -22,7 +22,7 @@
 
       display: inline-block;
       margin-right: $card-header-icon-margin;
-      color: color('blue');
+      color: var(--hdd-blue);
       line-height: $card-header-icon-height;
       vertical-align: top;
     }
@@ -58,7 +58,7 @@
     @extend .is-p;
 
     display: block;
-    color: color('font-color');
+    color: var(--hdd-font-color);
   }
 
   &_scroll-wrapper {	
@@ -95,18 +95,18 @@
       margin: calc(#{$card-padding-y} * -1) calc(#{$card-padding-x} * -1);
       padding: $card-actions-action-padding;
       border: 0;
-      border-top: 1px solid color('grey-light');
+      border-top: 1px solid var(--hdd-grey-light);
       border-radius: 0;
       background: transparent;
 
-      color: color('primary');
+      color: var(--hdd-primary);
       font-weight: 500;
       text-align: center;
       cursor: pointer;
       
       &:hover:not(.no-hover),
       &.is-hovering {
-        background-color: color('blue-light3');
+        background-color: var(--hdd-blue-light3);
       }
     }
   }

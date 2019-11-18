@@ -9,11 +9,13 @@
   border-radius: $badge-radius;
 
   // Default colors
-  background: color('danger');
-  color: color-contrast('danger');
+  background: var(--hdd-danger);
+  color: var(--hdd-contrast-danger);
 
   &-icon {
+    // Colors available for badge-icon
     @include color-modifiers(('primary', 'warn', 'danger', 'safe'), 'background', 'color');
+    
     position: absolute;
     top: calc(#{$badge-icon-size}/-2);
     right: calc(#{$badge-icon-size}/-2);
@@ -24,6 +26,8 @@
     border: $badge-icon-border;
     border-radius: 100%;
 
-    background: color('danger');
+    // Default colors
+    background: var(--hdd-danger);
+    color: var(--hdd-contrast-danger);
   }
 }

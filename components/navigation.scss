@@ -10,7 +10,7 @@
   width: 100%;
   height: $navigation-height;
   padding: $navigation-padding;
-  background: color('white');
+  background: var(--hdd-white);
 
   // Setting the class at the root element of layout component, check layout.md for more info. 
   @at-root {
@@ -46,7 +46,7 @@
     margin-left: .5rem;
     border-radius: 100%;
 
-    background: color('grey-light');
+    background: var(--hdd-grey-light);
     background-position: center;
   }
 }
