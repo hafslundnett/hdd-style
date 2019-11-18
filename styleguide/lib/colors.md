@@ -141,8 +141,8 @@ The css-variables can be accessed anywhere when importing hdd into your applicat
 
 ```scss
 .hdd-element {
-  color: var(--hdd-primary); // using the primary color, blue
-  background: var(--hdd-contrast-primary); // using the contrast color of primary 
+  background: var(--hdd-primary); // using the primary color, blue
+  color: var(--hdd-contrast-primary); // using the contrast color of primary 
 }
 ```
 
@@ -151,13 +151,14 @@ The css-variables can be accessed anywhere when importing hdd into your applicat
 The color function returns the color value if found. When the given color is not found will a warning be thrown during building. A color can be selected by it's color name or label.
 
 - `color($name)`
+- `color-contrast('$name')`
 
 ```scss
 @import '../frameworks/colors';
 
 .hdd-element {
-  color: color('primary'); // using the primary color, blue
-  background: color('white'); // using the color white 
+  background: color('primary'); // using the primary color, blue 
+  color: color-contrast('primary'); // using the color contrast of primary 
 }
 ```
 
