@@ -15,7 +15,7 @@
     @extend .is-p;
 
     $content-color: var(--hdd-grey-dark);
-    $content-text-color: var(--hdd-white);
+    $content-text-color: var(--hdd-contrast-grey-dark);
 
     display: table;
     position: absolute;
