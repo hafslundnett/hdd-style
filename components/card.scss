@@ -20,7 +20,8 @@
       // .is-icon-small is icon-properties, defined in typography.
       @extend .is-icon-small;
 
-      display: inline-block;
+      display: inline-flex;
+      align-self: center;
       margin-right: $card-header-icon-margin;
       color: var(--hdd-blue);
       line-height: $card-header-icon-height;
@@ -28,8 +29,11 @@
     }
 
     &_text {
-      display: block;
-      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+      width: 100%;
     }
 
     &_action {
@@ -40,7 +44,8 @@
     }
 
     .is-center {
-      text-align: center;
+      display: flex;
+      justify-content: center;
     }
   }
 
@@ -48,9 +53,9 @@
     // .is-h2 is font-properties, defined in typography.
     @extend .is-h2;
 
-    display: block;
+    display: flex;
+    height: 100%;
     font-weight: bold;
-    text-align: left;
   }
 
   &_subtitle {
