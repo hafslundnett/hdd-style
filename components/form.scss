@@ -43,12 +43,12 @@
     &_error {
       > i {
         margin-right: 5px;
-        color: color('signal-red');
+        color: var(--hdd-signal-red);
       }
     }
 
     &_info {
-      color: color('font-color');
+      color: var(--hdd-font-color);
     }
 
     &.is-line {
@@ -83,33 +83,33 @@
     border: $form-input-border;
     border-radius: $form-input-border-radius;
 
-    background: color('white');
+    background: var(--hdd-white);
 
     &:not(.is-invalid):focus-within {
       @extend .hdd-form_input, .is-focus;
     }
 
     &.is-focus {
-      border-color: color('primary');
+      border-color: var(--hdd-primary);
 
       #{$this}_icon,
       svg,
       i {
         opacity: 1;
-        color: color('primary');
+        color: var(--hdd-primary);
       }
     }
 
     &.is-invalid {
-      border-color: color('signal-red');
+      border-color: var(--hdd-signal-red);
 
       i {
-        color: color('signal-red');
+        color: var(--hdd-signal-red);
       }
     }
 
     &.is-disabled {
-      background: color('grey-light');
+      background: var(--hdd-grey-light);
       cursor: default;
     }
 
@@ -125,7 +125,7 @@
       background: transparent;
 
       @include placeholder() {
-        color: color('grey');
+        color: var(--hdd-grey);
       }
     }
 
@@ -140,7 +140,7 @@
     > i {
       transition: color $medium-transition $transition-cubic, opacity $medium-transition $transition-cubic;
       opacity: .44;
-      color: color('black');
+      color: var(--hdd-black);
       font-size: font-size(h2);
 
       &:first-child {
@@ -171,7 +171,7 @@
     // We have to seperate the checkbox marked styling because of the checked state
     %checkbox-mark {
       position: relative;
-      background-color: color('primary');
+      background-color: var(--hdd-primary);
       &::before {
         @extend .fal, .fa-check, :before;
 
@@ -179,7 +179,7 @@
         left: 50%;
         transform: translateX(-50%);
 
-        color: color('white');
+        color: var(--hdd-white);
         font-size: .75rem;
       }
     }
@@ -193,10 +193,10 @@
     &.is-invalid {
       input:checked ~ #{$this}_mark,
       #{$this}_mark {
-        border-color: color('signal-red');
+        border-color: var(--hdd-signal-red);
 
         &::before {
-          color: color('signal-red');
+          color: var(--hdd-signal-red);
         }
       }
     }
@@ -224,7 +224,7 @@
       transition: background .3s $transition-cubic;
       border: $form-checkbox-mark-border;
       border-radius: $form-checkbox-mark-border-radius;
-      background: color('white');
+      background: var(--hdd-white);
     }
 
     &_label {
@@ -250,12 +250,12 @@
     // Creating placeholder to inject style into radiobutton mutations.
     %radiobutton-mark {
       position: relative;
-      background-color: color('primary');
+      background-color: var(--hdd-primary);
       &:before {
         content: '';
         display: inline-block;
         padding: 5px;
-        border: 2px solid color('white');
+        border: 2px solid var(--hdd-white);
         border-radius: 14px;
       }
     }
@@ -282,7 +282,7 @@
       transition: background .3s $transition-cubic;
       border: $form-radiobutton-mark-border;
       border-radius: $form-radiobutton-mark-border-radius;
-      background: color('white');
+      background: var(--hdd-white);
     }
 
     &_label {
@@ -310,7 +310,7 @@
     border: $form-select-border;
     border-radius: $form-select-border-radius;
 
-    background: color('white');
+    background: var(--hdd-white);
 
     select {
       flex-grow: 1;
@@ -332,35 +332,35 @@
     }
 
     &.is-focus {
-      border-color: color('primary');
+      border-color: var(--hdd-primary);
 
       select {
-        color: color('primary');
+        color: var(--hdd-primary);
       }
 
       #{$this}_icon,
       > svg,
       > i {
         opacity: 1;
-        color: color('primary');
+        color: var(--hdd-primary);
       }
     }
 
     &.is-invalid {
-      border-color: color('signal-red');
+      border-color: var(--hdd-signal-red);
 
       select {
-        color: color('signal-red');
+        color: var(--hdd-signal-red);
       }
 
       i {
         opacity: 1;
-        color: color('signal-red');
+        color: var(--hdd-signal-red);
       }
     }
 
     &.is-disabled {
-      background: color('grey-light');
+      background: var(--hdd-grey-light);
       cursor: default;
     }
 
@@ -376,7 +376,7 @@
       position: absolute;
       transition: color $medium-transition $transition-cubic, opacity $medium-transition $transition-cubic;
       opacity: .44;
-      color: color('black');
+      color: var(--hdd-black);
       font-size: font-size(h2);
 
       &:first-child {

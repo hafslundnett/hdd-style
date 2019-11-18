@@ -14,8 +14,8 @@
     //.is-p is font-properties, defined in typography.
     @extend .is-p;
 
-    $content-color: color('grey-dark');
-    $content-text-color: color('white');
+    $content-color: var(--hdd-grey-dark);
+    $content-text-color: var(--hdd-white);
 
     display: table;
     position: absolute;

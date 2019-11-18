@@ -11,22 +11,22 @@
     border-style: solid;
     border-radius: $button-radius;
 
-    border-color: color("primary");
+    border-color: var(--hdd-primary);
     outline: none;
-    background: color("primary");
-    color: color("white");
+    background: var(--hdd-primary);
+    color: var(--hdd-white);
     cursor: pointer;
   }
 
   &.is-secondary {
-    border-color: color("primary");
+    border-color: var(--hdd-primary);
     background: transparent;
-    color: color("primary");
+    color: var(--hdd-primary);
 
     &[disabled] {
-      border-color: color("grey");
+      border-color: var(--hdd-grey);
       background: transparent;
-      color: color("grey");
+      color: var(--hdd-grey);
     }
 
     &:not([disabled]) {
@@ -34,28 +34,28 @@
       &.is-hovering,
       &:focus:not(.no-focus),
       &.is-focusing {
-        border-color: color("primary");
-        background: color("primary");
-        color: color("white");
+        border-color: var(--hdd-primary);
+        background: var(--hdd-primary);
+        color: var(--hdd-white);
       }
 
       &:active:not(.no-active),
       &.is-active {
-        border-color: color("blue-dark");
-        background: color("blue-dark");
-        color: color("white");
+        border-color: var(--hdd-blue-dark);
+        background: var(--hdd-blue-dark);
+        color: var(--hdd-white);
       }
     }
 
     // Consider finding a better way of doing this
     // Changes spinner-color on hower
     &.is-loading::after {
-      color: color("primary") !important;
+      color: var(--hdd-primary) !important;
     }
 
     &:hover {
       &.is-loading::after {
-        color: color("white") !important;
+        color: var(--hdd-white) !important;
       }
     }
   }
@@ -63,20 +63,20 @@
   &:not([disabled]) {
     &:focus:not(.no-focus),
     &.is-focusing {
-      border-color: color("blue-dark");
-      background: color("blue-dark");
+      border-color: var(--hdd-blue-dark);
+      background: var(--hdd-blue-dark);
     }
 
     &:hover:not(.no-hover),
     &.is-hovering {
-      border-color: color("blue-dark");
-      background: color("blue-dark");
+      border-color: var(--hdd-blue-dark);
+      background: var(--hdd-blue-dark);
     }
 
     &:active:not(.no-active),
     &.is-active {
-      border-color: color("blue-dark");
-      background: color("blue-dark");
+      border-color: var(--hdd-blue-dark);
+      background: var(--hdd-blue-dark);
     }
   }
 
@@ -100,16 +100,16 @@
       top: calc(50% - (1em / 2));
       left: calc(50% - (1em / 2));
 
-      color: color("white");
+      color: var(--hdd-white);
       font-size: 1em;
     }
   }
 
   &[disabled] {
     border-width: $button-solid-border-width;
-    border-color: color("grey");
-    background: color("grey");
-    color: color("white");
+    border-color: var(--hdd-grey);
+    background: var(--hdd-grey);
+    color: var(--hdd-white);
     cursor: not-allowed;
   }
 
@@ -150,25 +150,25 @@
   // For buttons with only icons
   &-icon {
     padding: $button-icon-padding;
-    border: 1px solid color("grey-border");
+    border: 1px solid var(--hdd-grey-border);
     border-radius: $button-radius;
-    background: color("white");
+    background: var(--hdd-white);
     cursor: pointer;
 
     &:focus:not(.no-focus),
     &.is-focusing,
     &:hover:not(.no-hover),
     &.is-hovering {
-      border-color: color("blue-dark");
-      background: color("blue-dark");
-      color: color("white");
+      border-color: var(--hdd-blue-dark);
+      background: var(--hdd-blue-dark);
+      color: var(--hdd-white);
     }
 
     &:active:not(.no-active),
     &.is-active {
-      border-color: color("blue-dark");
-      background: color("blue-dark");
-      color: color("white");
+      border-color: var(--hdd-blue-dark);
+      background: var(--hdd-blue-dark);
+      color: var(--hdd-white);
     }
 
     &.is-transparent {
@@ -183,13 +183,13 @@
       &:hover:not(.no-hover),
       .is-hovering {
         background: none;
-        color: color("primary");
+        color: var(--hdd-primary);
       }
 
       &:active:not(.no-active),
       .is-active {
         background: none;
-        color: color("primary");
+        color: var(--hdd-primary);
       }
     }
     
