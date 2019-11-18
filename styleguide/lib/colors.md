@@ -97,7 +97,7 @@ Shadows should be used behind all cards. In most cases, "Normal" shadow should b
 - `--hdd-shadow-medium`
 - `--hdd-shadow-strong`
 
-```shaddow-colors.html
+```shadow-colors.html
 <div class="hdd-contrast-background-primary" style="padding: 15px;">
   <span class="hdd-shadow-light hdd-contrast-background-primary color-example"></span>
   <span class="hdd-shadow-medium hdd-contrast-background-primary color-example"></span>
