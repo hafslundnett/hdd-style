@@ -47,3 +47,25 @@
     }
   }
 }
+
+// Making CSS-variables for all colors and contrast-colors
+@each $label, $map in $all-colors {
+  $color: color($label);
+  $contrast: map-get($map, contrast);
+
+  $alt-labels: map-get($map, alt-labels);
+  $labels: ($label);
+
+  @if $alt-labels {
+    @each $label in $alt-labels {
+      $labels: append($labels, $label);
+    }
+  }
+
+  @each $label in $labels {
+    :root {
+      --hdd-#{$label}: #{$color};
+      --hdd-contrast-#{$label}: #{$contrast};
+    }
+  }
+}

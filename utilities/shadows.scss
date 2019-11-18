@@ -11,3 +11,10 @@
         box-shadow: $shadow-strong;
     }
 } 
+
+// Making CSS-variables for all shadows
+:root {
+    --hdd-shadow-light: #{$shadow-light};
+    --hdd-shadow-medium: #{$shadow-medium};
+    --hdd-shadow-strong: #{$shadow-strong};
+}
