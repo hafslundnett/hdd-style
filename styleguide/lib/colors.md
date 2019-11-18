@@ -3,10 +3,17 @@ name: Colors
 category: Utilities
 ---
 
-Hafslund Nett has its own distinct groups of colors. These are defined as two different palettes, primary colors and support colors, and they should be used in all communication to create identity. All colors that are being used in this project are defined in the [colors map](https://github.com/hafslundnett/hdd-style/blob/master/variables/colors.scss). Every color can be used directly by using the `color($name)` function or by extended the `background-colors` class.
+Hafslund Nett has its own distinct groups of colors. These are defined as two different palettes, primary colors and support colors, and they should be used in all communication to create identity. All colors that are being used in this project are defined in the [colors map](https://github.com/hafslundnett/hdd-style/blob/master/variables/colors.scss). Every color can be used directly by using the `color($name)` function.
 
 ## Primary colors
 The primary color is blue and work as an important element for building the identity of Hafslund Nett. Blue symbolize credibility and stability. The associated shades of blue provide contrast, flexibility and airiness. This limited color scheme provides visual continuity throughout the user interface. When using estimates, pay particular attention to creating contrasts that are approved in WCAG. 
+
+- `blue`
+- `blue-dark`
+- `blue-light1`
+- `blue-light2`
+- `blue-light3`
+- `blue-light4`
 
 ```primary-colors.html
 <div class="hdd-contrast-background-primary" style="padding: 15px;">
@@ -25,6 +32,13 @@ Support colors are all colors which are not considered primary colors. These col
 ### Grayscale
 The grayscale should be used in addition to the primary colors of non-printable items. The darkest gray is text color and should be used on all titles, paragraphs, and content. If text appears on a dark surface, contrast requirements must be maintained and white text must be used (#FFFFFF).
 
+- `font-color`
+- `grey-dark`
+- `grey-medium`
+- `grey-new`
+- `grey-border`
+- `grey-light`
+
 ```grey-colors.html
 <div class="hdd-contrast-background-primary" style="padding: 15px;">
   <span class="hdd-background-font-color color-example"></span>
@@ -39,6 +53,10 @@ The grayscale should be used in addition to the primary colors of non-printable 
 ### Signal colors
 Signal colors should only be used in meaningful (never being identity-bearing or the only color appearing on a screen) situations and should only mean one thing per platform.
 
+- `signal-green`
+- `signal-yellow`
+- `signal-red`
+
 ```signal-colors.html
 <div class="hdd-contrast-background-primary" style="padding: 15px;">
   <span class="hdd-background-signal-green color-example"></span>
@@ -49,6 +67,15 @@ Signal colors should only be used in meaningful (never being identity-bearing or
 
 ### Data visualization
 These colors are chosen to be used for infographics. If necessary, these colors can also be used in varying degrees of opacity (eg heat maps).
+
+- `data-navy`
+- `data-marine`
+- `data-blue`
+- `data-turquoise`
+- `data-seagreen`
+- `data-green`
+- `data-orange`
+- `data-yellow`
 
 ```data-colors.html
 <div class="hdd-contrast-background-primary" style="padding: 15px;">
@@ -65,6 +92,10 @@ These colors are chosen to be used for infographics. If necessary, these colors 
 
 ### Shaddows
 Shadows should be used behind all cards. In most cases, "Normal" shadow should be used, with the exception of menus and tooltips that overlay other content.
+
+- `shadow-light`
+- `shadow-medium`
+- `shadow-strong`
 
 ```shaddow-colors.html
 <div class="hdd-contrast-background-primary" style="padding: 15px;">
@@ -124,7 +155,12 @@ A set of color modifiers could be applied/extended to a class in a couple of way
 Multiple classes are made of all colors that could be extended/included inside of your classes.
 The best way of including a set of color modifiers is by using the `color-modifiers` function.
 
-The `color-modifiers` function returns modifiers for the given colors. When including the modifiers in a class the `is-somelabel` classes can be used on the html-elements with that class. The element will then get a background-color and a contrasting text-color. These
+The `color-modifiers` function returns modifiers for the given colors. When including the modifiers in a class the `is-somelabel` classes can be used on the html-elements with that class. The element will then get a background-color and a contrasting text-color. 
+
+- `is-primary`
+- `is-warn`
+- `is-danger`
+- `is-safe`
 
 ```scss
 .hdd-badge {
@@ -149,24 +185,24 @@ The `color-modifiers` function returns modifiers for the given colors. When incl
 
 ### Color directly
 Setting the color and background attribute directly on elements are also possible with the following classes. All colors from the colors map can be used.
-- hdd-color-somecolor
-- hdd-contrast-color-somecolor
-- hdd-background-somecolor
-- hdd-contrast-background-somecolor
+- `hdd-color-primary`
+- `hdd-contrast-color-primary`
+- `hdd-background-primary`
+- `hdd-contrast-background-primary`
 
 ```color-directly.html
 <div style="padding: 20px;" class="hdd-background-primary">
   <div style="padding: 15px; margin: 15px;" class="hdd-contrast-background-primary">
-    <h1 class="hdd-color-primary">Just a h1</h1>
+    <h2 class="hdd-color-primary">hdd-color-primary</h2>
   </div>
   <div style="padding: 15px; margin: 15px;" class="hdd-background-grey-dark">
-    <h2 class="hdd-contrast-color-grey-dark">Just a h2</h2>
+    <h2 class="hdd-contrast-color-grey-dark">hdd-contrast-color-grey-dark</h2>
   </div>
   <div style="padding: 15px; margin: 15px;" class="hdd-background-blue-light2">
-    <h3 class="hdd-contrast-color-blue-light2">Just a h3</h3>
+    <h2 class="hdd-contrast-color-blue-light2">hdd-contrast-color-blue-light2</h2>
   </div>
   <div style="padding: 15px; margin: 15px;" class="hdd-background-primary-dark">
-    <p class="hdd-contrast-color-primary-dark">Just a p</p>
+    <h2 class="hdd-contrast-color-primary-dark">hdd-contrast-color-primary-dark</h2>
   </div>
 </div>
 ```

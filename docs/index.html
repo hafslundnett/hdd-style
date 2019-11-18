@@ -2597,8 +2597,16 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">colors.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>Hafslund Nett has its own distinct groups of colors. These are defined as two different palettes, primary colors and support colors, and they should be used in all communication to create identity. All colors that are being used in this project are defined in the <a href="https://github.com/hafslundnett/hdd-style/blob/master/variables/colors.scss">colors map</a>. Every color can be used directly by using the <code>color($name)</code> function or by extended the <code>background-colors</code> class.</p>
+	<div class="theme-content-element-description"><p>Hafslund Nett has its own distinct groups of colors. These are defined as two different palettes, primary colors and support colors, and they should be used in all communication to create identity. All colors that are being used in this project are defined in the <a href="https://github.com/hafslundnett/hdd-style/blob/master/variables/colors.scss">colors map</a>. Every color can be used directly by using the <code>color($name)</code> function.</p>
 <div id="primary-colors" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#primary-colors" class="icon-link i-section__link -heading"></a>Primary colors</h2></div><p>The primary color is blue and work as an important element for building the identity of Hafslund Nett. Blue symbolize credibility and stability. The associated shades of blue provide contrast, flexibility and airiness. This limited color scheme provides visual continuity throughout the user interface. When using estimates, pay particular attention to creating contrasts that are approved in WCAG. </p>
+<ul>
+<li><code>blue</code></li>
+<li><code>blue-dark</code></li>
+<li><code>blue-light1</code></li>
+<li><code>blue-light2</code></li>
+<li><code>blue-light3</code></li>
+<li><code>blue-light4</code></li>
+</ul>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -2647,6 +2655,14 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 	</div>
 </div><div id="support-colors" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#support-colors" class="icon-link i-section__link -heading"></a>Support colors</h2></div><p>Support colors are all colors which are not considered primary colors. These colors include greys, signaling colors, data visualization colors, and shaddows.</p>
 <h3>Grayscale</h3><p>The grayscale should be used in addition to the primary colors of non-printable items. The darkest gray is text color and should be used on all titles, paragraphs, and content. If text appears on a dark surface, contrast requirements must be maintained and white text must be used (#FFFFFF).</p>
+<ul>
+<li><code>font-color</code></li>
+<li><code>grey-dark</code></li>
+<li><code>grey-medium</code></li>
+<li><code>grey-new</code></li>
+<li><code>grey-border</code></li>
+<li><code>grey-light</code></li>
+</ul>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -2694,6 +2710,11 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 &lt;/div&gt;</code></pre>
 	</div>
 </div><h3>Signal colors</h3><p>Signal colors should only be used in meaningful (never being identity-bearing or the only color appearing on a screen) situations and should only mean one thing per platform.</p>
+<ul>
+<li><code>signal-green</code></li>
+<li><code>signal-yellow</code></li>
+<li><code>signal-red</code></li>
+</ul>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -2735,6 +2756,16 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 &lt;/div&gt;</code></pre>
 	</div>
 </div><h3>Data visualization</h3><p>These colors are chosen to be used for infographics. If necessary, these colors can also be used in varying degrees of opacity (eg heat maps).</p>
+<ul>
+<li><code>data-navy</code></li>
+<li><code>data-marine</code></li>
+<li><code>data-blue</code></li>
+<li><code>data-turquoise</code></li>
+<li><code>data-seagreen</code></li>
+<li><code>data-green</code></li>
+<li><code>data-orange</code></li>
+<li><code>data-yellow</code></li>
+</ul>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -2786,6 +2817,11 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 &lt;/div&gt;</code></pre>
 	</div>
 </div><h3>Shaddows</h3><p>Shadows should be used behind all cards. In most cases, &quot;Normal&quot; shadow should be used, with the exception of menus and tooltips that overlay other content.</p>
+<ul>
+<li><code>shadow-light</code></li>
+<li><code>shadow-medium</code></li>
+<li><code>shadow-strong</code></li>
+</ul>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -2853,7 +2889,13 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 </div><h3>Color modifiers</h3><p>A set of color modifiers could be applied/extended to a class in a couple of ways.
 Multiple classes are made of all colors that could be extended/included inside of your classes.
 The best way of including a set of color modifiers is by using the <code>color-modifiers</code> function.</p>
-<p>The <code>color-modifiers</code> function returns modifiers for the given colors. When including the modifiers in a class the <code>is-somelabel</code> classes can be used on the html-elements with that class. The element will then get a background-color and a contrasting text-color. These</p>
+<p>The <code>color-modifiers</code> function returns modifiers for the given colors. When including the modifiers in a class the <code>is-somelabel</code> classes can be used on the html-elements with that class. The element will then get a background-color and a contrasting text-color. </p>
+<ul>
+<li><code>is-primary</code></li>
+<li><code>is-warn</code></li>
+<li><code>is-danger</code></li>
+<li><code>is-safe</code></li>
+</ul>
 
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang "> scss</button>
@@ -2921,10 +2963,10 @@ The best way of including a set of color modifiers is by using the <code>color-m
 	</div>
 </div><h3>Color directly</h3><p>Setting the color and background attribute directly on elements are also possible with the following classes. All colors from the colors map can be used.</p>
 <ul>
-<li>hdd-color-somecolor</li>
-<li>hdd-contrast-color-somecolor</li>
-<li>hdd-background-somecolor</li>
-<li>hdd-contrast-background-somecolor</li>
+<li><code>hdd-color-primary</code></li>
+<li><code>hdd-contrast-color-primary</code></li>
+<li><code>hdd-background-primary</code></li>
+<li><code>hdd-contrast-background-primary</code></li>
 </ul>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -2957,30 +2999,30 @@ The best way of including a set of color modifiers is by using the <code>color-m
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 20px;&quot; class=&quot;hdd-background-primary&quot;&gt;
   &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-contrast-background-primary&quot;&gt;
-    &lt;h1 class=&quot;hdd-color-primary&quot;&gt;Just a h1&lt;/h1&gt;
+    &lt;h2 class=&quot;hdd-color-primary&quot;&gt;hdd-color-primary&lt;/h2&gt;
   &lt;/div&gt;
   &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-background-grey-dark&quot;&gt;
-    &lt;h2 class=&quot;hdd-contrast-color-grey-dark&quot;&gt;Just a h2&lt;/h2&gt;
+    &lt;h2 class=&quot;hdd-contrast-color-grey-dark&quot;&gt;hdd-contrast-color-grey-dark&lt;/h2&gt;
   &lt;/div&gt;
   &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-background-blue-light2&quot;&gt;
-    &lt;h3 class=&quot;hdd-contrast-color-blue-light2&quot;&gt;Just a h3&lt;/h3&gt;
+    &lt;h2 class=&quot;hdd-contrast-color-blue-light2&quot;&gt;hdd-contrast-color-blue-light2&lt;/h2&gt;
   &lt;/div&gt;
   &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-background-primary-dark&quot;&gt;
-    &lt;p class=&quot;hdd-contrast-color-primary-dark&quot;&gt;Just a p&lt;/p&gt;
+    &lt;h2 class=&quot;hdd-contrast-color-primary-dark&quot;&gt;hdd-contrast-color-primary-dark&lt;/h2&gt;
   &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 20px;&quot; class=&quot;hdd-background-primary&quot;&gt;
   &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-contrast-background-primary&quot;&gt;
-    &lt;h1 class=&quot;hdd-color-primary&quot;&gt;Just a h1&lt;/h1&gt;
+    &lt;h2 class=&quot;hdd-color-primary&quot;&gt;hdd-color-primary&lt;/h2&gt;
   &lt;/div&gt;
   &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-background-grey-dark&quot;&gt;
-    &lt;h2 class=&quot;hdd-contrast-color-grey-dark&quot;&gt;Just a h2&lt;/h2&gt;
+    &lt;h2 class=&quot;hdd-contrast-color-grey-dark&quot;&gt;hdd-contrast-color-grey-dark&lt;/h2&gt;
   &lt;/div&gt;
   &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-background-blue-light2&quot;&gt;
-    &lt;h3 class=&quot;hdd-contrast-color-blue-light2&quot;&gt;Just a h3&lt;/h3&gt;
+    &lt;h2 class=&quot;hdd-contrast-color-blue-light2&quot;&gt;hdd-contrast-color-blue-light2&lt;/h2&gt;
   &lt;/div&gt;
   &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-background-primary-dark&quot;&gt;
-    &lt;p class=&quot;hdd-contrast-color-primary-dark&quot;&gt;Just a p&lt;/p&gt;
+    &lt;h2 class=&quot;hdd-contrast-color-primary-dark&quot;&gt;hdd-contrast-color-primary-dark&lt;/h2&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
