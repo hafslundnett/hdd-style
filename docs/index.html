@@ -2597,7 +2597,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">colors.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>Hafslund Nett has its own distinct groups of colors. These are defined as two different palettes, primary colors and support colors, and they should be used in all communication to create identity. All colors that are being used in this project are defined in the <a href="https://github.com/hafslundnett/hdd-style/blob/master/variables/colors.scss">colors map</a>. Every color can be used directly by using the css-variable for a color: <code>var(--hdd-$name)</code> or through the color function: <code>color($name)</code>.</p>
+	<div class="theme-content-element-description"><p>Hafslund Nett has its own distinct groups of colors. These are defined as two different palettes, primary colors and support colors, and they should be used in all communication to create identity. All colors that are being used in this project are defined in the <a href="https://github.com/hafslundnett/hdd-style/blob/master/variables/colors.scss">colors map</a>. Every color can be used directly by using the css-variable for a color: <code>var(--hdd-$name)</code>.</p>
 <div id="primary-colors" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#primary-colors" class="icon-link i-section__link -heading"></a>Primary colors</h2></div><p>The primary color is blue and work as an important element for building the identity of Hafslund Nett. Blue symbolize credibility and stability. The associated shades of blue provide contrast, flexibility and airiness. This limited color scheme provides visual continuity throughout the user interface. When using estimates, pay particular attention to creating contrasts that are approved in WCAG. </p>
 <ul>
 <li><code>--hdd-blue</code></li>
@@ -2862,7 +2862,7 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
   &lt;span class=&quot;hdd-shadow-strong hdd-contrast-background-primary color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><div id="using-colors-in-your-code" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#using-colors-in-your-code" class="icon-link i-section__link -heading"></a>Using colors in your code</h2></div><h3>Using CSS-variables</h3><p>The css-variables can be accessed anywhere when importing hdd into your application. All colors, as well as their contrast color is awailable for use. A color can be selected by it&#39;s color name or label.</p>
+</div><div id="using-colors-in-your-code" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#using-colors-in-your-code" class="icon-link i-section__link -heading"></a>Using colors in your code</h2></div><h3>Using CSS-variables</h3><p>The css-variables can be accessed anywhere when importing hdd into your application. All colors, as well as their contrast color is available for use. A color can be selected by it&#39;s color name or label.</p>
 <ul>
 <li><code>var(--hdd-$name)</code></li>
 <li><code>var(--hdd-contrast-$name)</code></li>
@@ -2872,33 +2872,12 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 	<button type="button" class="i-code-block__lang "> scss</button>
 	<div class="i-code-block__content ">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".hdd-element {
-  color: var(--hdd-primary); // using the primary color, blue
-  background: var(--hdd-contrast-primary); // using the contrast color of primary 
+  background: var(--hdd-primary); // using the primary color, blue
+  color: var(--hdd-contrast-primary); // using the contrast color of primary 
 }">Copy</button>
 		<pre class="mb-0"><code class="lang-">.hdd-element {
-  color: var(--hdd-primary); // using the primary color, blue
-  background: var(--hdd-contrast-primary); // using the contrast color of primary 
-}</code></pre>
-	</div>
-</div><h3>Using color-function (old version)</h3><p>The color function returns the color value if found. When the given color is not found will a warning be thrown during building. A color can be selected by it&#39;s color name or label.</p>
-<ul>
-<li><code>color($name)</code></li>
-</ul>
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang "> scss</button>
-	<div class="i-code-block__content ">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="@import &#39;../frameworks/colors&#39;;
-
-.hdd-element {
-  color: color(&#39;primary&#39;); // using the primary color, blue
-  background: color(&#39;white&#39;); // using the color white 
-}">Copy</button>
-		<pre class="mb-0"><code class="lang-">@import &#39;../frameworks/colors&#39;;
-
-.hdd-element {
-  color: color(&#39;primary&#39;); // using the primary color, blue
-  background: color(&#39;white&#39;); // using the color white 
+  background: var(--hdd-primary); // using the primary color, blue
+  color: var(--hdd-contrast-primary); // using the contrast color of primary 
 }</code></pre>
 	</div>
 </div><h3>Using color modifiers</h3><p>A set of color modifiers could be applied/extended to a class in a couple of ways.
