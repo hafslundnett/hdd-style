@@ -3,7 +3,7 @@ name: Colors
 category: Utilities
 ---
 
-Hafslund Nett has its own distinct groups of colors. These are defined as two different palettes, primary colors and support colors, and they should be used in all communication to create identity. All colors that are being used in this project are defined in the [colors map](https://github.com/hafslundnett/hdd-style/blob/master/variables/colors.scss). Every color can be used directly by using the css-variable for a color: `var(--hdd-$name)` or through the color function: `color($name)`.
+Hafslund Nett has its own distinct groups of colors. These are defined as two different palettes, primary colors and support colors, and they should be used in all communication to create identity. All colors that are being used in this project are defined in the [colors map](https://github.com/hafslundnett/hdd-style/blob/master/variables/colors.scss). Every color can be used directly by using the css-variable for a color: `var(--hdd-$name)`.
 
 ## Primary colors
 The primary color is blue and work as an important element for building the identity of Hafslund Nett. Blue symbolize credibility and stability. The associated shades of blue provide contrast, flexibility and airiness. This limited color scheme provides visual continuity throughout the user interface. When using estimates, pay particular attention to creating contrasts that are approved in WCAG. 
@@ -125,7 +125,7 @@ Shadows should be used behind all cards. In most cases, "Normal" shadow should b
   display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px;
 }
 ```
-```shaddow-colors.css  hidden
+```shadow-colors.css  hidden
 .color-example {
   display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px;
 }
@@ -134,7 +134,7 @@ Shadows should be used behind all cards. In most cases, "Normal" shadow should b
 
 ## Using colors in your code
 ### Using CSS-variables 
-The css-variables can be accessed anywhere when importing hdd into your application. All colors, as well as their contrast color is awailable for use. A color can be selected by it's color name or label.
+The css-variables can be accessed anywhere when importing hdd into your application. All colors, as well as their contrast color is available for use. A color can be selected by it's color name or label.
 
 - `var(--hdd-$name)`
 - `var(--hdd-contrast-$name)`
@@ -143,22 +143,6 @@ The css-variables can be accessed anywhere when importing hdd into your applicat
 .hdd-element {
   background: var(--hdd-primary); // using the primary color, blue
   color: var(--hdd-contrast-primary); // using the contrast color of primary 
-}
-```
-
-### Using color-function (old version)
-
-The color function returns the color value if found. When the given color is not found will a warning be thrown during building. A color can be selected by it's color name or label.
-
-- `color($name)`
-- `color-contrast('$name')`
-
-```scss
-@import '../frameworks/colors';
-
-.hdd-element {
-  background: color('primary'); // using the primary color, blue 
-  color: color-contrast('primary'); // using the color contrast of primary 
 }
 ```
 
