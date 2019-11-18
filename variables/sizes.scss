@@ -10,10 +10,10 @@ $border-radius: 4px;
 $button-radius: $border-radius;
 $button-solid-border-width: 1px;
 $button-outlined-border-width: 1px;
-$button-padding: .7rem 1.8rem;
-$button-padding-small: .5rem 1rem;
+$button-padding: 0.7rem 1.8rem;
+$button-padding-small: 0.5rem 1rem;
 $button-padding-icon: 1.25rem;
-$button-icon-padding: .5rem .9rem;
+$button-icon-padding: 0.5rem 0.9rem;
 
 /************************
  * Cards
@@ -32,9 +32,9 @@ $card-actions-button-spacing: 25px;
  * Form Input
  ************************/
 
-$form-input-icon-margin: .9rem;
-$form-input-padding-left: .7rem;
-$form-input-padding: $form-input-padding-left .9rem;
+$form-input-icon-margin: 0.9rem;
+$form-input-padding-left: 0.7rem;
+$form-input-padding: $form-input-padding-left 0.9rem;
 $form-input-border-radius: $border-radius;
 $form-input-border: 1px solid var(--hdd-grey);
 
@@ -60,7 +60,7 @@ $form-radiobutton-mark-border: 1px solid var(--hdd-primary);
 $form-select-padding: $form-input-padding;
 $form-select-border-radius: $border-radius;
 $form-select-border: $form-input-border;
-$form-select-icon-margin: .9rem;
+$form-select-icon-margin: 0.9rem;
 
 /************************
  * Sidebar navigation
@@ -76,14 +76,14 @@ $sidenav-z-index: 90;
 
 $navigation-height: $sidenav-collapsed-width;
 $navigation-z-index: 99;
-$navigation-padding: 0 .5rem;
-$navigation-avatar-size: .7;
+$navigation-padding: 0 0.5rem;
+$navigation-avatar-size: 0.7;
 
 /************************
  * Badge
  ************************/
 
-$badge-padding: .2rem .6rem;
+$badge-padding: 0.2rem 0.6rem;
 $badge-radius: 2rem;
 
 $badge-icon-size: 6px;
@@ -94,7 +94,7 @@ $badge-icon-border: 2px solid var(--hdd-white);
  ************************/
 
 $table-header-padding: 1.2rem 1rem;
-$table-row-padding: .7rem 1rem;
+$table-row-padding: 0.7rem 1rem;
 $table-first-column-padding: 1.5rem;
 $table-last-column-padding: 1.5rem;
 
@@ -103,9 +103,9 @@ $table-last-column-padding: 1.5rem;
  ************************/
 
 $small-menu-tip-size: 5px;
-$small-menu-padding: .5rem 1rem;
+$small-menu-padding: 0.5rem 1rem;
 $small-menu-width: 150px;
-$small-menu-menu-padding: .75rem;
+$small-menu-menu-padding: 0.75rem;
 $small-menu-tip-right-offset: 1rem;
 $small-menu-tip-left-offset: 1rem;
 $small-menu-border-radius: $border-radius;
@@ -115,10 +115,10 @@ $small-menu-border-radius: $border-radius;
  ************************/
 
 $tooltip-tip-size: 10px;
-$tooltip-padding: .5rem 1rem;
+$tooltip-padding: 0.5rem 1rem;
 $tooltip-width: 150px;
-$tooltip-menu-side-padding: .75rem;
-$tooltip-menu-padding: .5rem 1rem;
+$tooltip-menu-side-padding: 0.75rem;
+$tooltip-menu-padding: 0.5rem 1rem;
 $tooltip-tip-right-offset: 1rem;
 $tooltip-tip-left-offset: 1rem;
 $tooltip-border-radius: $border-radius;
@@ -128,10 +128,10 @@ $tooltip-border-radius: $border-radius;
  ************************/
 
 $tag-font-size: 0.6875rem;
-$tag-padding: .4375rem .75rem;
-$tag-icon-spacing: .625rem;
+$tag-padding: 0.4375rem 0.75rem;
+$tag-icon-spacing: 0.625rem;
 $tag-border-radius: $border-radius;
-$tag-spacing: .25rem;
+$tag-spacing: 0.25rem;
 
 /************************
  * Dropdown
@@ -141,8 +141,8 @@ $dropdown-border-radius: $border-radius;
 $dropdown-border: 1px solid var(--hdd-grey);
 $dropdown-margin: 20px;
 $dropdown-spacing-element: 4px;
-$dropdown-content-padding: .5rem 0;
-$dropdown-item-padding: .5rem 0 .5rem 1rem;
+$dropdown-content-padding: 0.5rem 0;
+$dropdown-item-padding: 0.5rem 0 0.5rem 1rem;
 
 /************************
  * Feedback message
