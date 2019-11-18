@@ -3,6 +3,9 @@
 
 	<head>
 		<style>
+					.color-example {
+  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px;
+}
 		</style>
 
 		<style>
@@ -53,36 +56,27 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div style="padding: 20px;" class="hdd-background-primary">
-  <div style="padding: 15px; margin: 15px;" class="hdd-contrast-background-primary">
-    <h2 class="hdd-color-primary">hdd-color-primary</h2>
-  </div>
-  <div style="padding: 15px; margin: 15px;" class="hdd-background-grey-dark">
-    <h2 class="hdd-contrast-color-grey-dark">hdd-contrast-color-grey-dark</h2>
-  </div>
-  <div style="padding: 15px; margin: 15px;" class="hdd-background-blue-light2">
-    <h2 class="hdd-contrast-color-blue-light2">hdd-contrast-color-blue-light2</h2>
-  </div>
-  <div style="padding: 15px; margin: 15px;" class="hdd-background-primary-dark">
-    <h2 class="hdd-contrast-color-primary-dark">hdd-contrast-color-primary-dark</h2>
-  </div>
+    <div class="hdd-contrast-background-primary" style="padding: 15px;">
+  <span class="hdd-background-font-color color-example"></span>
+  <span class="hdd-background-grey-dark color-example"></span>
+  <span class="hdd-background-grey-medium color-example"></span>
+  <span class="hdd-background-grey-new color-example"></span>
+  <span class="hdd-background-grey-border color-example"></span>
+  <span class="hdd-background-grey-light color-example"></span>
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div style="padding: 20px;" class="hdd-background-primary">
-  <div style="padding: 15px; margin: 15px;" class="hdd-contrast-background-primary">
-    <h2 class="hdd-color-primary">hdd-color-primary</h2>
-  </div>
-  <div style="padding: 15px; margin: 15px;" class="hdd-background-grey-dark">
-    <h2 class="hdd-contrast-color-grey-dark">hdd-contrast-color-grey-dark</h2>
-  </div>
-  <div style="padding: 15px; margin: 15px;" class="hdd-background-blue-light2">
-    <h2 class="hdd-contrast-color-blue-light2">hdd-contrast-color-blue-light2</h2>
-  </div>
-  <div style="padding: 15px; margin: 15px;" class="hdd-background-primary-dark">
-    <h2 class="hdd-contrast-color-primary-dark">hdd-contrast-color-primary-dark</h2>
-  </div>
+			<script type="text/x-stylemark" data-language="html"><div class="hdd-contrast-background-primary" style="padding: 15px;">
+  <span class="hdd-background-font-color color-example"></span>
+  <span class="hdd-background-grey-dark color-example"></span>
+  <span class="hdd-background-grey-medium color-example"></span>
+  <span class="hdd-background-grey-new color-example"></span>
+  <span class="hdd-background-grey-border color-example"></span>
+  <span class="hdd-background-grey-light color-example"></span>
 </div></script>
+			<script type="text/x-stylemark" data-language="css">.color-example {
+  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px;
+}</script>
 
 		<!--
 			Vanilla JS
@@ -115,10 +109,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-colors-color-directly', []);
+						module = angular.module('stylemark-colors-grey-colors', []);
 					}
 
-					module.controller('stylemark-colors-color-directly-' + index, function($scope) {
+					module.controller('stylemark-colors-grey-colors-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

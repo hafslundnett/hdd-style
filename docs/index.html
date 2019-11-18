@@ -2597,201 +2597,378 @@ Checkbox classes are asigned to the corresponding checkbox label.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">colors.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>All colors that are being used in this project are defined in the <a href="https://github.com/hafslundnett/hdd-theme/tree/develop/variables/colors.scss">colors map</a>. Every color can be used directly by using the <code>color($name)</code> function or by extended the <code>background-colors</code> class.</p>
-<p>If you want to override a color could you define a <code>$override-colors</code> map. The colors or labels defined in this map will override the default colors.</p>
+	<div class="theme-content-element-description"><p>Hafslund Nett has its own distinct groups of colors. These are defined as two different palettes, primary colors and support colors, and they should be used in all communication to create identity. All colors that are being used in this project are defined in the <a href="https://github.com/hafslundnett/hdd-style/blob/master/variables/colors.scss">colors map</a>. Every color can be used directly by using the <code>color($name)</code> function.</p>
+<div id="primary-colors" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#primary-colors" class="icon-link i-section__link -heading"></a>Primary colors</h2></div><p>The primary color is blue and work as an important element for building the identity of Hafslund Nett. Blue symbolize credibility and stability. The associated shades of blue provide contrast, flexibility and airiness. This limited color scheme provides visual continuity throughout the user interface. When using estimates, pay particular attention to creating contrasts that are approved in WCAG. </p>
+<ul>
+<li><code>blue</code></li>
+<li><code>blue-dark</code></li>
+<li><code>blue-light1</code></li>
+<li><code>blue-light2</code></li>
+<li><code>blue-light3</code></li>
+<li><code>blue-light4</code></li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="colors-primary-colors.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="colors-primary-colors.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
 
 <div class="i-code-block">
-	<button type="button" class="i-code-block__lang "> scss</button>
-	<div class="i-code-block__content ">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="$override-colors: (
-  &#39;blue&#39;: (
-    color: #2196F3,
-    contrast: #FFF,
-    alt-labels: (primary)
-  )
-);">Copy</button>
-		<pre class="mb-0"><code class="lang-">$override-colors: (
-  &#39;blue&#39;: (
-    color: #2196F3,
-    contrast: #FFF,
-    alt-labels: (primary)
-  )
-);</code></pre>
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-contrast-background-primary&quot; style=&quot;padding: 15px;&quot;&gt;
+  &lt;span class=&quot;hdd-background-blue color-example&quot; style=&quot;height: 100px; width: 100px;&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-blue-dark color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-blue-light1 color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-blue-light2 color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-blue-light3 color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-blue-light4 color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-contrast-background-primary&quot; style=&quot;padding: 15px;&quot;&gt;
+  &lt;span class=&quot;hdd-background-blue color-example&quot; style=&quot;height: 100px; width: 100px;&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-blue-dark color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-blue-light1 color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-blue-light2 color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-blue-light3 color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-blue-light4 color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
 	</div>
-</div><div id="code-color-name-color-set-colors-code-function" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#code-color-name-color-set-colors-code-function" class="icon-link i-section__link -heading"></a><code>color($name, $color-set: $colors)</code> function</h2></div><p>This function returns the respected color value if found. A color set could optionally be given if no color set is given will the <code>$colors</code> map be used. When the given color is not found will a warning be thrown during building. A color can be selected by it&#39;s color name or label.</p>
+</div><div id="support-colors" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#support-colors" class="icon-link i-section__link -heading"></a>Support colors</h2></div><p>Support colors are all colors which are not considered primary colors. These colors include greys, signaling colors, data visualization colors, and shaddows.</p>
+<h3>Grayscale</h3><p>The grayscale should be used in addition to the primary colors of non-printable items. The darkest gray is text color and should be used on all titles, paragraphs, and content. If text appears on a dark surface, contrast requirements must be maintained and white text must be used (#FFFFFF).</p>
+<ul>
+<li><code>font-color</code></li>
+<li><code>grey-dark</code></li>
+<li><code>grey-medium</code></li>
+<li><code>grey-new</code></li>
+<li><code>grey-border</code></li>
+<li><code>grey-light</code></li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="colors-grey-colors.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="colors-grey-colors.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-contrast-background-primary&quot; style=&quot;padding: 15px;&quot;&gt;
+  &lt;span class=&quot;hdd-background-font-color color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-grey-dark color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-grey-medium color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-grey-new color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-grey-border color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-grey-light color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-contrast-background-primary&quot; style=&quot;padding: 15px;&quot;&gt;
+  &lt;span class=&quot;hdd-background-font-color color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-grey-dark color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-grey-medium color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-grey-new color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-grey-border color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-grey-light color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><h3>Signal colors</h3><p>Signal colors should only be used in meaningful (never being identity-bearing or the only color appearing on a screen) situations and should only mean one thing per platform.</p>
+<ul>
+<li><code>signal-green</code></li>
+<li><code>signal-yellow</code></li>
+<li><code>signal-red</code></li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="colors-signal-colors.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="colors-signal-colors.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-contrast-background-primary&quot; style=&quot;padding: 15px;&quot;&gt;
+  &lt;span class=&quot;hdd-background-signal-green color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-signal-yellow color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-signal-red color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-contrast-background-primary&quot; style=&quot;padding: 15px;&quot;&gt;
+  &lt;span class=&quot;hdd-background-signal-green color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-signal-yellow color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-signal-red color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><h3>Data visualization</h3><p>These colors are chosen to be used for infographics. If necessary, these colors can also be used in varying degrees of opacity (eg heat maps).</p>
+<ul>
+<li><code>data-navy</code></li>
+<li><code>data-marine</code></li>
+<li><code>data-blue</code></li>
+<li><code>data-turquoise</code></li>
+<li><code>data-seagreen</code></li>
+<li><code>data-green</code></li>
+<li><code>data-orange</code></li>
+<li><code>data-yellow</code></li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="colors-data-colors.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="colors-data-colors.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-contrast-background-primary&quot; style=&quot;padding: 15px;&quot;&gt;
+  &lt;span class=&quot;hdd-background-data-navy color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-data-marine color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-data-blue color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-data-turquoise color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-data-seagreen color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-data-green color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-data-orange color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-data-yellow color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-contrast-background-primary&quot; style=&quot;padding: 15px;&quot;&gt;
+  &lt;span class=&quot;hdd-background-data-navy color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-data-marine color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-data-blue color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-data-turquoise color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-data-seagreen color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-data-green color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-data-orange color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-data-yellow color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><h3>Shaddows</h3><p>Shadows should be used behind all cards. In most cases, &quot;Normal&quot; shadow should be used, with the exception of menus and tooltips that overlay other content.</p>
+<ul>
+<li><code>shadow-light</code></li>
+<li><code>shadow-medium</code></li>
+<li><code>shadow-strong</code></li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="colors-shaddow-colors.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="colors-shaddow-colors.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-contrast-background-primary&quot; style=&quot;padding: 15px;&quot;&gt;
+  &lt;span class=&quot;hdd-shadow-light hdd-contrast-background-primary color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-shadow-medium hdd-contrast-background-primary color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-shadow-strong hdd-contrast-background-primary color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-contrast-background-primary&quot; style=&quot;padding: 15px;&quot;&gt;
+  &lt;span class=&quot;hdd-shadow-light hdd-contrast-background-primary color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-shadow-medium hdd-contrast-background-primary color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-shadow-strong hdd-contrast-background-primary color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><div id="using-colors-in-your-code" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#using-colors-in-your-code" class="icon-link i-section__link -heading"></a>Using colors in your code</h2></div><p><b><code>color($name, $color-set: $colors)</code></b></p>
+<p>This function returns the color value if found. Giving a color-set is optional, if no color-set is given the <code>$colors</code> map will be used. When the given color is not found will a warning be thrown during building. A color can be selected by it&#39;s color name or label.</p>
 <p>There are by default two data color sets available:</p>
 <ul>
 <li><code>$colors</code> - This is the default data set containing the hdd theme colors</li>
-<li><code>$data-colors</code> - This data set contains all colors that should be used when working on graphs</li>
+<li><code>$data-colors</code> - This data set contains all colors that should be used when working with data-visualizations, eg graphs.</li>
 </ul>
 
 <div class="i-code-block">
-	<button type="button" class="i-code-block__lang "> sass</button>
+	<button type="button" class="i-code-block__lang "> scss</button>
 	<div class="i-code-block__content ">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="@import &#39;../frameworks/colors&#39;;
 
 .hdd-element {
-  background: color(&#39;white&#39;);
-  color: color(&#39;primary&#39;); // primary is the color label of &#39;blue&#39;
-}
-
-.hdd-data-color-set {
-  background: color(&#39;data-navy&#39;, $data-colors)
-}
-
-.hdd-custom-color-set {
-  background: color(&#39;AntiqueWhite&#39;, $custom-color-set)
-}
-
-$custom-color-set: (
-  AntiqueWhite: (
-    color: #FAEBD7,
-    contrast: #444,
-    alt-labels: (primary, superimportant) // Optional
-  )
-);">Copy</button>
+  color: color(&#39;primary&#39;); // using the primary color, blue
+  background: color(&#39;data-navy&#39;, $data-colors); // using the color navy from the data color set
+}">Copy</button>
 		<pre class="mb-0"><code class="lang-">@import &#39;../frameworks/colors&#39;;
 
 .hdd-element {
-  background: color(&#39;white&#39;);
-  color: color(&#39;primary&#39;); // primary is the color label of &#39;blue&#39;
-}
-
-.hdd-data-color-set {
-  background: color(&#39;data-navy&#39;, $data-colors)
-}
-
-.hdd-custom-color-set {
-  background: color(&#39;AntiqueWhite&#39;, $custom-color-set)
-}
-
-$custom-color-set: (
-  AntiqueWhite: (
-    color: #FAEBD7,
-    contrast: #444,
-    alt-labels: (primary, superimportant) // Optional
-  )
-);</code></pre>
+  color: color(&#39;primary&#39;); // using the primary color, blue
+  background: color(&#39;data-navy&#39;, $data-colors); // using the color navy from the data color set
+}</code></pre>
 	</div>
-</div><div id="color-set" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#color-set" class="icon-link i-section__link -heading"></a>Color set</h2></div><p>A color set is a big map containing all available colors. Every color map has a couple of required and optional properties.</p>
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang "> sass</button>
-	<div class="i-code-block__content ">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="blue: ( // &lt;- label
-  color: #1164A4, // Required
-  contrast: #FFFFFF, // Required
-  alt-labels: (primary, superimportant) // Optional
-)">Copy</button>
-		<pre class="mb-0"><code class="lang-">blue: ( // &lt;- label
-  color: #1164A4, // Required
-  contrast: #FFFFFF, // Required
-  alt-labels: (primary, superimportant) // Optional
-)</code></pre>
-	</div>
-</div><table class="table"><thead><tr>
-<th style="text-align:left">property</th>
-<th style="text-align:left">required</th>
-<th style="text-align:left">description</th>
-</tr>
-</thead><tbody><tr>
-<td style="text-align:left"><code>color</code></td>
-<td style="text-align:left"><code>true</code></td>
-<td style="text-align:left">is the hex color value of the label</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>contrast</code></td>
-<td style="text-align:left"><code>true</code></td>
-<td style="text-align:left">is the contrast of color</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>alt-labels</code></td>
-<td style="text-align:left"><code>false</code></td>
-<td style="text-align:left">is a list of alternative labels<br>that could be used to get this color</td>
-</tr>
-</tbody></table><div id="code-background-colors-code-class" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#code-background-colors-code-class" class="icon-link i-section__link -heading"></a><code>background-colors</code> class</h2></div><p>The <code>background-colors</code> class contains all colors as chained classes.</p>
-<p><strong>A chained color class consists out of the following:</strong></p>
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang "> sass</button>
-	<div class="i-code-block__content ">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="border-color: $color;
-background: $color;
-color: $color; // This color should have enough contrast on to make text readable on the given background color">Copy</button>
-		<pre class="mb-0"><code class="lang-">border-color: $color;
-background: $color;
-color: $color; // This color should have enough contrast on to make text readable on the given background color</code></pre>
-	</div>
-</div><div id="color-modifiers" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#color-modifiers" class="icon-link i-section__link -heading"></a>Color modifiers</h2></div><p>A set of color modifiers could be applied/extended to a class in a couple of ways.
+</div><h3>Color modifiers</h3><p>A set of color modifiers could be applied/extended to a class in a couple of ways.
 Multiple classes are made of all colors that could be extended/included inside of your classes.
 The best way of including a set of color modifiers is by using the <code>color-modifiers</code> function.</p>
-<p><strong><code>color-modifiers($list: (&#39;primary&#39;, &#39;warn&#39;, &#39;danger&#39;, &#39;safe&#39;), $main-property: &#39;background&#39;, $contrast-property: &#39;&#39;, $selector: &#39;&#39;, $color-set: $colors)</code> function</strong></p>
-<p>The <code>color-modifiers</code> function returns modifiers for the given colors (list).</p>
+<p>The <code>color-modifiers</code> function returns modifiers for the given colors. When including the modifiers in a class the <code>is-somelabel</code> classes can be used on the html-elements with that class. The element will then get a background-color and a contrasting text-color. </p>
+<ul>
+<li><code>is-primary</code></li>
+<li><code>is-warn</code></li>
+<li><code>is-danger</code></li>
+<li><code>is-safe</code></li>
+</ul>
 
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang "> scss</button>
 	<div class="i-code-block__content ">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&amp;.is-primary {
-  background: #...; // &lt;- Main property (2th argument)
-  color: #...; // &lt;- Contrast property (3th argument)
-}
-
-&amp;.is-warn {
-  background: #...;
-  color: #...;
-}
-
-...">Copy</button>
-		<pre class="mb-0"><code class="lang-">&amp;.is-primary {
-  background: #...; // &lt;- Main property (2th argument)
-  color: #...; // &lt;- Contrast property (3th argument)
-}
-
-&amp;.is-warn {
-  background: #...;
-  color: #...;
-}
-
-...</code></pre>
-	</div>
-</div><p>A main property and optionally a contrast property could be given. By default is the <code>$colors</code> color set used but a custom color set could be passed as a argument.</p>
-<div id="color-directly" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#color-directly" class="icon-link i-section__link -heading"></a>Color directly</h2></div><p>Setting the color and background attribute directly on elements are possible with the classes hdd-color, hdd-contrast-color, hdd-background and hdd-contrast-background, togheter with a color of choice. All colors from the colors map can be used.</p>
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang "> scss</button>
-	<div class="i-code-block__content ">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&amp;-color-#{$label} {
-  color: $color;
-}
-
-&amp;-contrast-color-#{$label} {
-  color: $contrast;
-}
-
-&amp;-background-#{$label} {
-  background: $color;
-}
-
-&amp;-contrast-background-#{$label} {
-  background: $contrast;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".hdd-badge {
+  @include color-modifiers((&#39;primary&#39;, &#39;warn&#39;, &#39;danger&#39;, &#39;safe&#39;), &#39;background&#39;, &#39;color&#39;);
 }">Copy</button>
-		<pre class="mb-0"><code class="lang-">&amp;-color-#{$label} {
-  color: $color;
-}
-
-&amp;-contrast-color-#{$label} {
-  color: $contrast;
-}
-
-&amp;-background-#{$label} {
-  background: $color;
-}
-
-&amp;-contrast-background-#{$label} {
-  background: $contrast;
+		<pre class="mb-0"><code class="lang-">.hdd-badge {
+  @include color-modifiers((&#39;primary&#39;, &#39;warn&#39;, &#39;danger&#39;, &#39;safe&#39;), &#39;background&#39;, &#39;color&#39;);
 }</code></pre>
 	</div>
 </div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="colors-color-modifiers.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="colors-color-modifiers.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
+  &lt;span class=&quot;hdd-badge is-primary&quot;&gt;is-primary&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
+  &lt;span class=&quot;hdd-badge is-warn&quot;&gt;is-warn&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
+  &lt;span class=&quot;hdd-badge is-danger&quot;&gt;is-danger&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
+  &lt;span class=&quot;hdd-badge is-safe&quot;&gt;is-safe&lt;/span&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div&gt;
+  &lt;span class=&quot;hdd-badge is-primary&quot;&gt;is-primary&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
+  &lt;span class=&quot;hdd-badge is-warn&quot;&gt;is-warn&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
+  &lt;span class=&quot;hdd-badge is-danger&quot;&gt;is-danger&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
+  &lt;span class=&quot;hdd-badge is-safe&quot;&gt;is-safe&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><h3>Color directly</h3><p>Setting the color and background attribute directly on elements are also possible with the following classes. All colors from the colors map can be used.</p>
+<ul>
+<li><code>hdd-color-primary</code></li>
+<li><code>hdd-contrast-color-primary</code></li>
+<li><code>hdd-background-primary</code></li>
+<li><code>hdd-contrast-background-primary</code></li>
+</ul>
+<div class="i-example">
                     <h5 class="i-example__heading">
                         <a
                             href="colors-color-directly.html"
@@ -2822,30 +2999,30 @@ The best way of including a set of color modifiers is by using the <code>color-m
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 20px;&quot; class=&quot;hdd-background-primary&quot;&gt;
   &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-contrast-background-primary&quot;&gt;
-    &lt;h1 class=&quot;hdd-color-primary&quot;&gt;Just a h1&lt;/h1&gt;
+    &lt;h2 class=&quot;hdd-color-primary&quot;&gt;hdd-color-primary&lt;/h2&gt;
   &lt;/div&gt;
   &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-background-grey-dark&quot;&gt;
-    &lt;h2 class=&quot;hdd-contrast-color-grey-dark&quot;&gt;Just a h2&lt;/h2&gt;
+    &lt;h2 class=&quot;hdd-contrast-color-grey-dark&quot;&gt;hdd-contrast-color-grey-dark&lt;/h2&gt;
   &lt;/div&gt;
   &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-background-blue-light2&quot;&gt;
-    &lt;h3 class=&quot;hdd-contrast-color-blue-light2&quot;&gt;Just a h3&lt;/h3&gt;
+    &lt;h2 class=&quot;hdd-contrast-color-blue-light2&quot;&gt;hdd-contrast-color-blue-light2&lt;/h2&gt;
   &lt;/div&gt;
   &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-background-primary-dark&quot;&gt;
-    &lt;p class=&quot;hdd-contrast-color-primary-dark&quot;&gt;Just a p&lt;/p&gt;
+    &lt;h2 class=&quot;hdd-contrast-color-primary-dark&quot;&gt;hdd-contrast-color-primary-dark&lt;/h2&gt;
   &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 20px;&quot; class=&quot;hdd-background-primary&quot;&gt;
   &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-contrast-background-primary&quot;&gt;
-    &lt;h1 class=&quot;hdd-color-primary&quot;&gt;Just a h1&lt;/h1&gt;
+    &lt;h2 class=&quot;hdd-color-primary&quot;&gt;hdd-color-primary&lt;/h2&gt;
   &lt;/div&gt;
   &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-background-grey-dark&quot;&gt;
-    &lt;h2 class=&quot;hdd-contrast-color-grey-dark&quot;&gt;Just a h2&lt;/h2&gt;
+    &lt;h2 class=&quot;hdd-contrast-color-grey-dark&quot;&gt;hdd-contrast-color-grey-dark&lt;/h2&gt;
   &lt;/div&gt;
   &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-background-blue-light2&quot;&gt;
-    &lt;h3 class=&quot;hdd-contrast-color-blue-light2&quot;&gt;Just a h3&lt;/h3&gt;
+    &lt;h2 class=&quot;hdd-contrast-color-blue-light2&quot;&gt;hdd-contrast-color-blue-light2&lt;/h2&gt;
   &lt;/div&gt;
   &lt;div style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-background-primary-dark&quot;&gt;
-    &lt;p class=&quot;hdd-contrast-color-primary-dark&quot;&gt;Just a p&lt;/p&gt;
+    &lt;h2 class=&quot;hdd-contrast-color-primary-dark&quot;&gt;hdd-contrast-color-primary-dark&lt;/h2&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>

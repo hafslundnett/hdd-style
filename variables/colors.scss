@@ -1,4 +1,4 @@
-@function color-map($name, $color-set: $colors) {
+@function color-map($name, $color-set: $all-colors) {
   $color-map: null;
 
   @if map-has-key($color-set, $name) {
@@ -31,12 +31,12 @@
   @return $color-map;
 }
 
-@function color($name, $color-set: $colors) {
+@function color($name, $color-set: $all-colors) {
   $map: color-map($name, $color-set);
   @return map-get($map, color);
 }
 
-@function color-contrast($name, $color-set: $colors) {
+@function color-contrast($name, $color-set: $all-colors) {
   $map: color-map($name, $color-set);
   @return map-get($map, contrast);
 }
@@ -66,6 +66,7 @@
 }
 
 // All colors as a list ready for iterations
+
 $colors: (
   'white': (
     color: #FFF,
@@ -126,6 +127,10 @@ $colors: (
     color: #D3DBE0,
     contrast: #444
   ),
+  'grey-new': (
+    color: #ADB0B6,
+    contrast: #444
+  ),
   'signal-green': (
     color: #6AAB2F,
     contrast: #FFF,
@@ -178,6 +183,8 @@ $data-colors: (
   )
 );
 
+$all-colors: map-merge($colors, $data-colors);
+
 $gradients: (
   'dusk': (
     angle: 180deg,
@@ -185,3 +192,4 @@ $gradients: (
     to: #279DD0
   )
 );
+
