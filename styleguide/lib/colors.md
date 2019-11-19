@@ -43,7 +43,7 @@ The grayscale should be used in addition to the primary colors of non-printable 
 - `--hdd-font-color` `--hdd-contrast-font-color`
 - `--hdd-grey-dark` `--hdd-contrast-grey-dark`
 - `--hdd-grey-medium` `--hdd-contrast-grey-medium`
-- `--hdd-grey-new` `--hdd-contrast-grey-new`
+- `--hdd-grey` `--hdd-contrast-grey`
 - `--hdd-grey-border` `--hdd-contrast-grey-border`
 - `--hdd-grey-light` `--hdd-contrast-grey-light` 
 
@@ -52,7 +52,7 @@ The grayscale should be used in addition to the primary colors of non-printable 
   <span class="hdd-background-font-color color-example"></span>
   <span class="hdd-background-grey-dark color-example"></span>
   <span class="hdd-background-grey-medium color-example"></span>
-  <span class="hdd-background-grey-new color-example"></span>
+  <span class="hdd-background-grey color-example"></span>
   <span class="hdd-background-grey-border color-example"></span>
   <span class="hdd-background-grey-light color-example"></span>
 </div>
@@ -60,7 +60,7 @@ The grayscale should be used in addition to the primary colors of non-printable 
   <span class="hdd-contrast-background-font-color color-example"></span>
   <span class="hdd-contrast-background-grey-dark color-example"></span>
   <span class="hdd-contrast-background-grey-medium color-example"></span>
-  <span class="hdd-contrast-background-grey-new color-example"></span>
+  <span class="hdd-contrast-background-grey color-example"></span>
   <span class="hdd-contrast-background-grey-border color-example"></span>
   <span class="hdd-contrast-background-grey-light color-example"></span>
 </div>
