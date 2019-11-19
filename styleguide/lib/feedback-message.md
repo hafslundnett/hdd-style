@@ -3,7 +3,7 @@ name: Feedback message
 category: Components
 ---
 
-A feedback message could be an info, warning or error. Feedback messages should be displayed in the lower right corner and act like a "snackbar" that pops up and dissapears after approximately 8 seconds. 
+A feedback message could be an info, warning or error. Feedback messages should be displayed in the lower right corner and act like a "snackbar" that pops up and disappears after approximately 8 seconds. 
 
 
 ## Info feedback

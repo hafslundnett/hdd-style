@@ -4,7 +4,7 @@ category: Layout-Components
 ---
 
 The navigation floats on top of all elements with a z-index of 99. The z-index value is defined in the sizes variable file. When the navigation is hovered or the hover trigger class is added will the navigation expand and show the assigned label text to each list element.
->🚧 It is adviced to place the `hdd-sidenav` in the `hdd-layout` block wrapped as an `hdd-layout_sidenav` element. 
+>🚧 It is advised to place the `hdd-sidenav` in the `hdd-layout` block wrapped as an `hdd-layout_sidenav` element. 
 
 ## Sidenav
 `hdd-layout_sidenav`

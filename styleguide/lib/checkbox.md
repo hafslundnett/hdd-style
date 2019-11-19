@@ -4,7 +4,7 @@ category: Form-Components
 ---
 
 A checkbox component lets a user select one or more options of a limited number of choices. 
-Checkbox classes are asigned to the corresponding checkbox label.
+Checkbox classes are assigned to the corresponding checkbox label.
 
 ## Checkbox
 `hdd-form_checkbox`
@@ -15,7 +15,7 @@ Checkbox classes are asigned to the corresponding checkbox label.
   <label class="hdd-form_checkbox">
     <input type="checkbox" checked="">
     <span class="hdd-form_checkbox_mark"></span>
-    <span class="hdd-form_checkbox_label">Picked chechbox</span>
+    <span class="hdd-form_checkbox_label">Picked checkbox</span>
   </label>
   <label class="hdd-form_checkbox">
     <input type="checkbox">
