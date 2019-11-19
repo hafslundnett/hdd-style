@@ -3,9 +3,6 @@
 
 	<head>
 		<style>
-					.color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px; box-shadow: var(--hdd-shadow-strong);
-}
 		</style>
 
 		<style>
@@ -56,21 +53,32 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div style="padding: 15px; background: white;">
-  <span class="hdd-shadow-light color-example"></span>
-  <span class="hdd-shadow-medium color-example"></span>
-  <span class="hdd-shadow-strong color-example"></span>
+    <div>
+  <span class="hdd-badge is-primary">is-primary</span>
+</div>
+<div style="padding-top: 1rem;">
+  <span class="hdd-badge is-warn">is-warn</span>
+</div>
+<div style="padding-top: 1rem;">
+  <span class="hdd-badge is-danger">is-danger</span>
+</div>
+<div style="padding-top: 1rem;">
+  <span class="hdd-badge is-safe">is-safe</span>
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div style="padding: 15px; background: white;">
-  <span class="hdd-shadow-light color-example"></span>
-  <span class="hdd-shadow-medium color-example"></span>
-  <span class="hdd-shadow-strong color-example"></span>
+			<script type="text/x-stylemark" data-language="html"><div>
+  <span class="hdd-badge is-primary">is-primary</span>
+</div>
+<div style="padding-top: 1rem;">
+  <span class="hdd-badge is-warn">is-warn</span>
+</div>
+<div style="padding-top: 1rem;">
+  <span class="hdd-badge is-danger">is-danger</span>
+</div>
+<div style="padding-top: 1rem;">
+  <span class="hdd-badge is-safe">is-safe</span>
 </div></script>
-			<script type="text/x-stylemark" data-language="css">.color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px; box-shadow: var(--hdd-shadow-strong);
-}</script>
 
 		<!--
 			Vanilla JS
@@ -103,10 +111,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-overview-of-colors-shadow-colors', []);
+						module = angular.module('stylemark-colors-examples-color-modifiers', []);
 					}
 
-					module.controller('stylemark-overview-of-colors-shadow-colors-' + index, function($scope) {
+					module.controller('stylemark-colors-examples-color-modifiers-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

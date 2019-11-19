@@ -3,9 +3,6 @@
 
 	<head>
 		<style>
-					.color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px; box-shadow: var(--hdd-shadow-strong);
-}
 		</style>
 
 		<style>
@@ -56,21 +53,36 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div style="padding: 15px; background: white;">
-  <span class="hdd-shadow-light color-example"></span>
-  <span class="hdd-shadow-medium color-example"></span>
-  <span class="hdd-shadow-strong color-example"></span>
+    <div style="padding: 20px;" class="hdd-background-primary">
+  <div style="padding: 15px; margin: 15px;" class="hdd-contrast-background-primary">
+    <h2 class="hdd-color-primary">hdd-color-primary</h2>
+  </div>
+  <div style="padding: 15px; margin: 15px;" class="hdd-background-grey-dark">
+    <h2 class="hdd-contrast-color-grey-dark">hdd-contrast-color-grey-dark</h2>
+  </div>
+  <div style="padding: 15px; margin: 15px;" class="hdd-background-blue-light2">
+    <h2 class="hdd-contrast-color-blue-light2">hdd-contrast-color-blue-light2</h2>
+  </div>
+  <div style="padding: 15px; margin: 15px;" class="hdd-background-primary-dark">
+    <h2 class="hdd-contrast-color-primary-dark">hdd-contrast-color-primary-dark</h2>
+  </div>
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div style="padding: 15px; background: white;">
-  <span class="hdd-shadow-light color-example"></span>
-  <span class="hdd-shadow-medium color-example"></span>
-  <span class="hdd-shadow-strong color-example"></span>
+			<script type="text/x-stylemark" data-language="html"><div style="padding: 20px;" class="hdd-background-primary">
+  <div style="padding: 15px; margin: 15px;" class="hdd-contrast-background-primary">
+    <h2 class="hdd-color-primary">hdd-color-primary</h2>
+  </div>
+  <div style="padding: 15px; margin: 15px;" class="hdd-background-grey-dark">
+    <h2 class="hdd-contrast-color-grey-dark">hdd-contrast-color-grey-dark</h2>
+  </div>
+  <div style="padding: 15px; margin: 15px;" class="hdd-background-blue-light2">
+    <h2 class="hdd-contrast-color-blue-light2">hdd-contrast-color-blue-light2</h2>
+  </div>
+  <div style="padding: 15px; margin: 15px;" class="hdd-background-primary-dark">
+    <h2 class="hdd-contrast-color-primary-dark">hdd-contrast-color-primary-dark</h2>
+  </div>
 </div></script>
-			<script type="text/x-stylemark" data-language="css">.color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px; box-shadow: var(--hdd-shadow-strong);
-}</script>
 
 		<!--
 			Vanilla JS
@@ -103,10 +115,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-overview-of-colors-shadow-colors', []);
+						module = angular.module('stylemark-colors-examples-color-directly', []);
 					}
 
-					module.controller('stylemark-overview-of-colors-shadow-colors-' + index, function($scope) {
+					module.controller('stylemark-colors-examples-color-directly-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

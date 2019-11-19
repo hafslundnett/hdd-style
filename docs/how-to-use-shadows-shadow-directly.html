@@ -3,9 +3,6 @@
 
 	<head>
 		<style>
-					.color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px; box-shadow: var(--hdd-shadow-strong);
-}
 		</style>
 
 		<style>
@@ -56,21 +53,30 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div style="padding: 15px; background: white;">
-  <span class="hdd-shadow-light color-example"></span>
-  <span class="hdd-shadow-medium color-example"></span>
-  <span class="hdd-shadow-strong color-example"></span>
+    <div style="padding: 20px; background: white;" class="hdd-shadow-strong">
+    <h2 style="padding: 15px; margin: 15px;" class="hdd-shadow-light">
+        hdd-shadow-light
+    </h2>
+    <h2 style="padding: 15px; margin: 15px;" class="hdd-shadow-medium">
+        hdd-shadow-medium
+    </h2>
+    <h2 style="padding: 15px; margin: 15px;" class="hdd-shadow-strong">
+        hdd-shadow-strong
+    </h2>
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div style="padding: 15px; background: white;">
-  <span class="hdd-shadow-light color-example"></span>
-  <span class="hdd-shadow-medium color-example"></span>
-  <span class="hdd-shadow-strong color-example"></span>
+			<script type="text/x-stylemark" data-language="html"><div style="padding: 20px; background: white;" class="hdd-shadow-strong">
+    <h2 style="padding: 15px; margin: 15px;" class="hdd-shadow-light">
+        hdd-shadow-light
+    </h2>
+    <h2 style="padding: 15px; margin: 15px;" class="hdd-shadow-medium">
+        hdd-shadow-medium
+    </h2>
+    <h2 style="padding: 15px; margin: 15px;" class="hdd-shadow-strong">
+        hdd-shadow-strong
+    </h2>
 </div></script>
-			<script type="text/x-stylemark" data-language="css">.color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px; box-shadow: var(--hdd-shadow-strong);
-}</script>
 
 		<!--
 			Vanilla JS
@@ -103,10 +109,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-overview-of-colors-shadow-colors', []);
+						module = angular.module('stylemark-how-to-use-shadows-shadow-directly', []);
 					}
 
-					module.controller('stylemark-overview-of-colors-shadow-colors-' + index, function($scope) {
+					module.controller('stylemark-how-to-use-shadows-shadow-directly-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

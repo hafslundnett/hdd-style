@@ -1,5 +1,5 @@
 ---
-name: How to use colors
+name: Colors
 category: Colors
 ---
 
@@ -16,39 +16,6 @@ The css-variables can be accessed anywhere when importing hdd into your applicat
   background: var(--hdd-primary); // using the primary color, blue
   color: var(--hdd-contrast-primary); // using the contrast color of primary 
 }
-```
-
-## Using color modifiers
-A set of color modifiers could be applied/extended to a class in a couple of ways.
-Multiple classes are made of all colors that could be extended/included inside of your classes.
-The best way of including a set of color modifiers is by using the `color-modifiers` function.
-
-The `color-modifiers` function returns modifiers for the given colors. When including the modifiers in a class the `is-somelabel` classes can be used on the html-elements with that class. The element will then get a background-color and a contrasting text-color. 
-
-- `is-primary`
-- `is-warn`
-- `is-danger`
-- `is-safe`
-
-```scss
-.hdd-badge {
-  @include color-modifiers(('primary', 'warn', 'danger', 'safe'), 'background', 'color');
-}
-```
-
-```color-modifiers.html
-<div>
-  <span class="hdd-badge is-primary">is-primary</span>
-</div>
-<div style="padding-top: 1rem;">
-  <span class="hdd-badge is-warn">is-warn</span>
-</div>
-<div style="padding-top: 1rem;">
-  <span class="hdd-badge is-danger">is-danger</span>
-</div>
-<div style="padding-top: 1rem;">
-  <span class="hdd-badge is-safe">is-safe</span>
-</div>
 ```
 
 ## Using hdd-color-classes

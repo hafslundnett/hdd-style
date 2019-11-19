@@ -1,5 +1,5 @@
 ---
-name: Overview of colors
+name: Colors preview
 category: Colors
 ---
 
@@ -121,20 +121,6 @@ These colors are chosen to be used for infographics. If necessary, these colors 
 </div>
 ```
 
-### Shadows
-Shadows should be used behind all cards. In most cases, "Normal" shadow should be used, with the exception of menus and tooltips that overlay other content.
-
-- `--hdd-shadow-light`
-- `--hdd-shadow-medium`
-- `--hdd-shadow-strong`
-
-```shadow-colors.html
-<div style="padding: 15px; background: white;">
-  <span class="hdd-shadow-light hdd-contrast-background-primary color-example"></span>
-  <span class="hdd-shadow-medium hdd-contrast-background-primary color-example"></span>
-  <span class="hdd-shadow-strong hdd-contrast-background-primary color-example"></span>
-</div>
-```
 
 ```primary-colors.css  hidden
 .color-example {
@@ -156,11 +142,5 @@ Shadows should be used behind all cards. In most cases, "Normal" shadow should b
   display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px; box-shadow: var(--hdd-shadow-strong);
 }
 ```
-```shadow-colors.css  hidden
-.color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px; box-shadow: var(--hdd-shadow-strong);
-}
-```
-
 
 
