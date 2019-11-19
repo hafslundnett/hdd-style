@@ -40,29 +40,35 @@ Support colors are all colors which are not considered primary colors. These col
 ### Grayscale
 The grayscale should be used in addition to the primary colors of non-printable items. The darkest gray is text color and should be used on all titles, paragraphs, and content. If text appears on a dark surface, contrast requirements must be maintained and white text must be used (#FFFFFF).
 
+- `--hdd-black` `--hdd-contrast-black`
 - `--hdd-font-color` `--hdd-contrast-font-color`
 - `--hdd-grey-dark` `--hdd-contrast-grey-dark`
 - `--hdd-grey-medium` `--hdd-contrast-grey-medium`
 - `--hdd-grey` `--hdd-contrast-grey`
 - `--hdd-grey-border` `--hdd-contrast-grey-border`
 - `--hdd-grey-light` `--hdd-contrast-grey-light` 
+- `--hdd-white` `--hdd-contrast-white` 
 
 ```grey-colors.html
 <div style="padding: 15px 15px 0 15px; background: white;">
+  <span class="hdd-background-black color-example"></span>
   <span class="hdd-background-font-color color-example"></span>
   <span class="hdd-background-grey-dark color-example"></span>
   <span class="hdd-background-grey-medium color-example"></span>
   <span class="hdd-background-grey color-example"></span>
   <span class="hdd-background-grey-border color-example"></span>
   <span class="hdd-background-grey-light color-example"></span>
+  <span class="hdd-background-white color-example"></span>
 </div>
 <div style="padding: 0 15px 15px 15px; background: white;">
+  <span class="hdd-contrast-background-black color-example"></span>
   <span class="hdd-contrast-background-font-color color-example"></span>
   <span class="hdd-contrast-background-grey-dark color-example"></span>
   <span class="hdd-contrast-background-grey-medium color-example"></span>
   <span class="hdd-contrast-background-grey color-example"></span>
   <span class="hdd-contrast-background-grey-border color-example"></span>
   <span class="hdd-contrast-background-grey-light color-example"></span>
+  <span class="hdd-contrast-background-white color-example"></span>
 </div>
 ```
 
