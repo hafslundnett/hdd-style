@@ -3,6 +3,9 @@
 
 	<head>
 		<style>
+					.color-example {
+  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px;
+}
 		</style>
 
 		<style>
@@ -53,46 +56,31 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <header class="hdd-layout_navigation">
-  <div class="hdd-navigation">
-    <a class="hdd-navigation_logo" href="#">
-      <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
-    </a>
-    <h1 class="hdd-navigation_title">Overview</h1>
-
-    <div class="hdd-navigation_user">
-      <div class="hdd-small-menu">
-        <span class="hdd-small-menu_title">Kari Nordmann</span>
-        <ul class="hdd-small-menu_list is-active has-arrow-right">
-          <li class="hdd-small-menu_list_item"><i class="fal fa-user"></i>Profile</li>
-          <li class="hdd-small-menu_list_item"><i class="fal fa-sign-out"></i>Logout</li>
-        </ul>
-      </div>
-      <img class="hdd-navigation_avatar" src="http://placekitten.com/150/150"/>
-    </div>
-  </div>
-</header>
+    <div class="hdd-contrast-background-primary" style="padding: 15px;">
+  <span class="hdd-background-data-navy color-example"></span>
+  <span class="hdd-background-data-marine color-example"></span>
+  <span class="hdd-background-data-blue color-example"></span>
+  <span class="hdd-background-data-turquoise color-example"></span>
+  <span class="hdd-background-data-seagreen color-example"></span>
+  <span class="hdd-background-data-green color-example"></span>
+  <span class="hdd-background-data-orange color-example"></span>
+  <span class="hdd-background-data-yellow color-example"></span>
+</div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><header class="hdd-layout_navigation">
-  <div class="hdd-navigation">
-    <a class="hdd-navigation_logo" href="#">
-      <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
-    </a>
-    <h1 class="hdd-navigation_title">Overview</h1>
-
-    <div class="hdd-navigation_user">
-      <div class="hdd-small-menu">
-        <span class="hdd-small-menu_title">Kari Nordmann</span>
-        <ul class="hdd-small-menu_list is-active has-arrow-right">
-          <li class="hdd-small-menu_list_item"><i class="fal fa-user"></i>Profile</li>
-          <li class="hdd-small-menu_list_item"><i class="fal fa-sign-out"></i>Logout</li>
-        </ul>
-      </div>
-      <img class="hdd-navigation_avatar" src="http://placekitten.com/150/150"/>
-    </div>
-  </div>
-</header></script>
+			<script type="text/x-stylemark" data-language="html"><div class="hdd-contrast-background-primary" style="padding: 15px;">
+  <span class="hdd-background-data-navy color-example"></span>
+  <span class="hdd-background-data-marine color-example"></span>
+  <span class="hdd-background-data-blue color-example"></span>
+  <span class="hdd-background-data-turquoise color-example"></span>
+  <span class="hdd-background-data-seagreen color-example"></span>
+  <span class="hdd-background-data-green color-example"></span>
+  <span class="hdd-background-data-orange color-example"></span>
+  <span class="hdd-background-data-yellow color-example"></span>
+</div></script>
+			<script type="text/x-stylemark" data-language="css">.color-example {
+  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px;
+}</script>
 
 		<!--
 			Vanilla JS
@@ -125,10 +113,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-navigation-header', []);
+						module = angular.module('stylemark-overview-data-colors', []);
 					}
 
-					module.controller('stylemark-navigation-header-' + index, function($scope) {
+					module.controller('stylemark-overview-data-colors-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});
