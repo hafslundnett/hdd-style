@@ -2721,6 +2721,7 @@ Checkbox classes are assigned to the corresponding checkbox label.</p>
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
+  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
   &lt;span class=&quot;hdd-background-blue color-example&quot; style=&quot;height: 100px; width: 100px;&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-blue-dark color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-blue-light1 color-example&quot;&gt;&lt;/span&gt;
@@ -2729,6 +2730,7 @@ Checkbox classes are assigned to the corresponding checkbox label.</p>
   &lt;span class=&quot;hdd-background-blue-light4 color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
+  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
   &lt;span class=&quot;hdd-contrast-background-blue color-example&quot; style=&quot;height: 100px; width: 100px;&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-blue-dark color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-blue-light1 color-example&quot;&gt;&lt;/span&gt;
@@ -2737,6 +2739,7 @@ Checkbox classes are assigned to the corresponding checkbox label.</p>
   &lt;span class=&quot;hdd-contrast-background-blue-light4 color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
+  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
   &lt;span class=&quot;hdd-background-blue color-example&quot; style=&quot;height: 100px; width: 100px;&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-blue-dark color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-blue-light1 color-example&quot;&gt;&lt;/span&gt;
@@ -2745,6 +2748,7 @@ Checkbox classes are assigned to the corresponding checkbox label.</p>
   &lt;span class=&quot;hdd-background-blue-light4 color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
+  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
   &lt;span class=&quot;hdd-contrast-background-blue color-example&quot; style=&quot;height: 100px; width: 100px;&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-blue-dark color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-blue-light1 color-example&quot;&gt;&lt;/span&gt;
@@ -2756,12 +2760,15 @@ Checkbox classes are assigned to the corresponding checkbox label.</p>
 </div><div id="support-colors" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#support-colors" class="icon-link i-section__link -heading"></a>Support colors</h2></div><p>Support colors are all colors which are not considered primary colors. These colors include greys, signaling colors, data visualization colors, and shadows.</p>
 <h3>Grayscale</h3><p>The grayscale should be used in addition to the primary colors of non-printable items. The darkest gray is text color and should be used on all titles, paragraphs, and content. If text appears on a dark surface, contrast requirements must be maintained and white text must be used (#FFFFFF).</p>
 <ul>
+<li><code>--hdd-black</code> <code>--hdd-contrast-black</code></li>
 <li><code>--hdd-font-color</code> <code>--hdd-contrast-font-color</code></li>
 <li><code>--hdd-grey-dark</code> <code>--hdd-contrast-grey-dark</code></li>
 <li><code>--hdd-grey-medium</code> <code>--hdd-contrast-grey-medium</code></li>
-<li><code>--hdd-grey-new</code> <code>--hdd-contrast-grey-new</code></li>
+<li><code>--hdd-grey</code> <code>--hdd-contrast-grey</code></li>
 <li><code>--hdd-grey-border</code> <code>--hdd-contrast-grey-border</code></li>
 <li><code>--hdd-grey-light</code> <code>--hdd-contrast-grey-light</code> </li>
+<li><code>--hdd-grey-background</code> <code>--hdd-contrast-grey-background</code> </li>
+<li><code>--hdd-white</code> <code>--hdd-contrast-white</code> </li>
 </ul>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -2793,36 +2800,52 @@ Checkbox classes are assigned to the corresponding checkbox label.</p>
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
+  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
+  &lt;span class=&quot;hdd-background-black color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-font-color color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-grey-dark color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-grey-medium color-example&quot;&gt;&lt;/span&gt;
-  &lt;span class=&quot;hdd-background-grey-new color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-grey color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-grey-border color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-grey-light color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-grey-background color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-white color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
+  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
+  &lt;span class=&quot;hdd-contrast-background-black color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-font-color color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-grey-dark color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-grey-medium color-example&quot;&gt;&lt;/span&gt;
-  &lt;span class=&quot;hdd-contrast-background-grey-new color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-grey color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-grey-border color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-grey-light color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-grey-background color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-white color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
+  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
+  &lt;span class=&quot;hdd-background-black color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-font-color color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-grey-dark color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-grey-medium color-example&quot;&gt;&lt;/span&gt;
-  &lt;span class=&quot;hdd-background-grey-new color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-grey color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-grey-border color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-grey-light color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-grey-background color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-background-white color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
+  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
+  &lt;span class=&quot;hdd-contrast-background-black color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-font-color color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-grey-dark color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-grey-medium color-example&quot;&gt;&lt;/span&gt;
-  &lt;span class=&quot;hdd-contrast-background-grey-new color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-grey color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-grey-border color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-grey-light color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-grey-background color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-white color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><h3>Signal colors</h3><p>Signal colors should only be used in meaningful (never being identity-bearing or the only color appearing on a screen) situations and should only mean one thing per platform.</p>
@@ -2861,21 +2884,25 @@ Checkbox classes are assigned to the corresponding checkbox label.</p>
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
+  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
   &lt;span class=&quot;hdd-background-signal-green color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-signal-yellow color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-signal-red color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
+  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
   &lt;span class=&quot;hdd-contrast-background-signal-green color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-signal-yellow color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-signal-red color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
+  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
   &lt;span class=&quot;hdd-background-signal-green color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-signal-yellow color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-signal-red color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
+  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
   &lt;span class=&quot;hdd-contrast-background-signal-green color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-signal-yellow color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-signal-red color-example&quot;&gt;&lt;/span&gt;
@@ -2922,6 +2949,7 @@ Checkbox classes are assigned to the corresponding checkbox label.</p>
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
+  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
   &lt;span class=&quot;hdd-background-data-navy color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-data-marine color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-data-blue color-example&quot;&gt;&lt;/span&gt;
@@ -2932,6 +2960,7 @@ Checkbox classes are assigned to the corresponding checkbox label.</p>
   &lt;span class=&quot;hdd-background-data-yellow color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
+  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
   &lt;span class=&quot;hdd-contrast-background-data-navy color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-data-marine color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-data-blue color-example&quot;&gt;&lt;/span&gt;
@@ -2942,6 +2971,7 @@ Checkbox classes are assigned to the corresponding checkbox label.</p>
   &lt;span class=&quot;hdd-contrast-background-data-yellow color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
+  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
   &lt;span class=&quot;hdd-background-data-navy color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-data-marine color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-data-blue color-example&quot;&gt;&lt;/span&gt;
@@ -2952,6 +2982,7 @@ Checkbox classes are assigned to the corresponding checkbox label.</p>
   &lt;span class=&quot;hdd-background-data-yellow color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
+  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
   &lt;span class=&quot;hdd-contrast-background-data-navy color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-data-marine color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-contrast-background-data-blue color-example&quot;&gt;&lt;/span&gt;
