@@ -27,7 +27,7 @@ The primary color is blue and work as an important element for building the iden
 ```
 
 ## Support colors
-Support colors are all colors which are not considered primary colors. These colors include greys, signaling colors, data visualization colors, and shaddows.
+Support colors are all colors which are not considered primary colors. These colors include greys, signaling colors, data visualization colors, and shadows.
 
 ### Grayscale
 The grayscale should be used in addition to the primary colors of non-printable items. The darkest gray is text color and should be used on all titles, paragraphs, and content. If text appears on a dark surface, contrast requirements must be maintained and white text must be used (#FFFFFF).
@@ -90,7 +90,7 @@ These colors are chosen to be used for infographics. If necessary, these colors 
 </div>
 ```
 
-### Shaddows
+### Shadows
 Shadows should be used behind all cards. In most cases, "Normal" shadow should be used, with the exception of menus and tooltips that overlay other content.
 
 - `--hdd-shadow-light`

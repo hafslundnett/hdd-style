@@ -32,11 +32,11 @@ An input field should be a call to action. If the text/content can't be changed,
 </div>
 
 <div class="hdd-form_field">
-  <label class="hdd-form_field_label" for="title">Invalid input fielt with field errormessage</label>
+  <label class="hdd-form_field_label" for="title">Invalid input field with field errormessage</label>
   <div class="hdd-form_input is-invalid">
     <input id="title" value="ola.hafslund.no">
   </div>
-  <span class="hdd-form_field_error is-active"><i class="fal fa-info-circle"></i>E-mailen må inneholde @</span>
+  <span class="hdd-form_field_error is-active"><i class="fal fa-info-circle"></i>The email must contain @</span>
 </div>
 
 <div class="hdd-form_field">

@@ -3,7 +3,7 @@ name: Navigation
 category: Layout-Components
 ---
 
->🚧 It is adviced to place the `hdd-navigation` in the `hdd-layout` block wrapped as an `hdd-layout_navigation` element. 
+>🚧 It is advised to place the `hdd-navigation` in the `hdd-layout` block wrapped as an `hdd-layout_navigation` element. 
 
 ## Navigation
 `hdd-layout_navigation`

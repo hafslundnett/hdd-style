@@ -3,7 +3,7 @@ name: Tags
 category: Components
 ---
 
-Tags can be grouped togheter and are useful for displaying metadata and filtering.
+Tags can be grouped together and are useful for displaying metadata and filtering.
 
 ## Tags
 `hdd-tags`, `hdd-tags_item`
