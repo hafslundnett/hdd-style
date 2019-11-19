@@ -17,6 +17,7 @@ The primary color is blue and work as an important element for building the iden
 
 ```primary-colors.html
 <div style="padding: 15px 15px 0 15px; background: white;">
+  <h2 style="padding: 20px 10px;">Color</h2>
   <span class="hdd-background-blue color-example" style="height: 100px; width: 100px;"></span>
   <span class="hdd-background-blue-dark color-example"></span>
   <span class="hdd-background-blue-light1 color-example"></span>
@@ -25,6 +26,7 @@ The primary color is blue and work as an important element for building the iden
   <span class="hdd-background-blue-light4 color-example"></span>
 </div>
 <div style="padding: 0 15px 15px 15px; background: white;">
+  <h2 style="padding: 20px 10px;">Contrast</h2>
   <span class="hdd-contrast-background-blue color-example" style="height: 100px; width: 100px;"></span>
   <span class="hdd-contrast-background-blue-dark color-example"></span>
   <span class="hdd-contrast-background-blue-light1 color-example"></span>
@@ -47,10 +49,12 @@ The grayscale should be used in addition to the primary colors of non-printable 
 - `--hdd-grey` `--hdd-contrast-grey`
 - `--hdd-grey-border` `--hdd-contrast-grey-border`
 - `--hdd-grey-light` `--hdd-contrast-grey-light` 
+- `--hdd-grey-background` `--hdd-contrast-grey-background` 
 - `--hdd-white` `--hdd-contrast-white` 
 
 ```grey-colors.html
 <div style="padding: 15px 15px 0 15px; background: white;">
+  <h2 style="padding: 20px 10px;">Color</h2>
   <span class="hdd-background-black color-example"></span>
   <span class="hdd-background-font-color color-example"></span>
   <span class="hdd-background-grey-dark color-example"></span>
@@ -58,9 +62,11 @@ The grayscale should be used in addition to the primary colors of non-printable 
   <span class="hdd-background-grey color-example"></span>
   <span class="hdd-background-grey-border color-example"></span>
   <span class="hdd-background-grey-light color-example"></span>
+  <span class="hdd-background-grey-background color-example"></span>
   <span class="hdd-background-white color-example"></span>
 </div>
 <div style="padding: 0 15px 15px 15px; background: white;">
+  <h2 style="padding: 20px 10px;">Contrast</h2>
   <span class="hdd-contrast-background-black color-example"></span>
   <span class="hdd-contrast-background-font-color color-example"></span>
   <span class="hdd-contrast-background-grey-dark color-example"></span>
@@ -68,6 +74,7 @@ The grayscale should be used in addition to the primary colors of non-printable 
   <span class="hdd-contrast-background-grey color-example"></span>
   <span class="hdd-contrast-background-grey-border color-example"></span>
   <span class="hdd-contrast-background-grey-light color-example"></span>
+  <span class="hdd-contrast-background-grey-background color-example"></span>
   <span class="hdd-contrast-background-white color-example"></span>
 </div>
 ```
@@ -81,11 +88,13 @@ Signal colors should only be used in meaningful (never being identity-bearing or
 
 ```signal-colors.html
 <div style="padding: 15px 15px 0 15px; background: white;">
+  <h2 style="padding: 20px 10px;">Color</h2>
   <span class="hdd-background-signal-green color-example"></span>
   <span class="hdd-background-signal-yellow color-example"></span>
   <span class="hdd-background-signal-red color-example"></span>
 </div>
 <div style="padding: 0 15px 15px 15px; background: white;">
+  <h2 style="padding: 20px 10px;">Contrast</h2>
   <span class="hdd-contrast-background-signal-green color-example"></span>
   <span class="hdd-contrast-background-signal-yellow color-example"></span>
   <span class="hdd-contrast-background-signal-red color-example"></span>
@@ -106,6 +115,7 @@ These colors are chosen to be used for infographics. If necessary, these colors 
 
 ```data-colors.html
 <div style="padding: 15px 15px 0 15px; background: white;">
+  <h2 style="padding: 20px 10px;">Color</h2>
   <span class="hdd-background-data-navy color-example"></span>
   <span class="hdd-background-data-marine color-example"></span>
   <span class="hdd-background-data-blue color-example"></span>
@@ -116,6 +126,7 @@ These colors are chosen to be used for infographics. If necessary, these colors 
   <span class="hdd-background-data-yellow color-example"></span>
 </div>
 <div style="padding: 0 15px 15px 15px; background: white;">
+  <h2 style="padding: 20px 10px;">Contrast</h2>
   <span class="hdd-contrast-background-data-navy color-example"></span>
   <span class="hdd-contrast-background-data-marine color-example"></span>
   <span class="hdd-contrast-background-data-blue color-example"></span>

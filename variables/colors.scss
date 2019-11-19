@@ -108,8 +108,7 @@ $colors: (
   ),
   'grey': (
     color: #ADB0B6,
-    contrast: #444,
-    alt-labels: ('grey-lightest')
+    contrast: #444
   ),
   'grey-dark': (
     color: #57585A,
@@ -121,6 +120,10 @@ $colors: (
   ),
   'grey-light': (
     color: #EEF0F4,
+    contrast: #444
+  ),
+  'grey-background': (
+    color: #F3F4F6,
     contrast: #444
   ),
   'grey-border': (
