@@ -1,5 +1,5 @@
 ---
-name: How to use shadows
+name: Shadows
 category: Colors
 ---
 
@@ -27,16 +27,16 @@ Setting the shadow attribute directly on elements are also possible with the fol
 - `hdd-shadow-medium`
 - `hdd-shadow-strong`
 
-```shadow-directly.html
-<div style="padding: 20px; background: white;" class="hdd-shadow-strong">
-    <h2 style="padding: 15px; margin: 15px;" class="hdd-shadow-light">
-        hdd-shadow-light
-    </h2>
-    <h2 style="padding: 15px; margin: 15px;" class="hdd-shadow-medium">
-        hdd-shadow-medium
-    </h2>
-    <h2 style="padding: 15px; margin: 15px;" class="hdd-shadow-strong">
-        hdd-shadow-strong
-    </h2>
+```shadow-colors.html
+<div style="padding: 15px; background: white;">
+  <span class="hdd-shadow-light color-example"></span>
+  <span class="hdd-shadow-medium color-example"></span>
+  <span class="hdd-shadow-strong color-example"></span>
 </div>
+```
+
+```shadow-colors.css  hidden
+.color-example {
+  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px;
+}
 ```

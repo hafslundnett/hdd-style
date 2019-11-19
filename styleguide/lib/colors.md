@@ -1,5 +1,5 @@
 ---
-name: Overview of colors
+name: Colors preview
 category: Colors
 ---
 
