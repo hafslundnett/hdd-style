@@ -52,7 +52,9 @@
 							</optgroup>
 							<optgroup label="Colors">
 									<option value="how-to-use-colors">How to use colors</option>
+									<option value="how-to-use-shadows">How to use shadows</option>
 									<option value="overview-of-colors">Overview of colors</option>
+									<option value="overview-of-shadows">Overview of shadows</option>
 							</optgroup>
 							<optgroup label="Utilities">
 									<option value="accessibility">Accessibility</option>
@@ -2749,6 +2751,95 @@ The best way of including a set of color modifiers is by using the <code>color-m
 </div></div>
 </div>
 
+						<div id="how-to-use-shadows" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">How to use shadows</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">using-shadow.md</span>
+	</span>
+	<div class="theme-content-element-description"><p>HDD contain 3 different types of shadows, that goes from light to strong. Every shadow can be used directly by using the css-variable for that shadow: <code>var(--hdd-$name)</code>. For example for the light shadow: <code>box-shadow: var(--hdd-shadow-light)</code>.</p>
+<div id="using-shadows-as-css-variables" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#using-shadows-as-css-variables" class="icon-link i-section__link -heading"></a>Using shadows as CSS-variables</h2></div><p>The css-variables can be accessed anywhere when importing hdd into your application. All shadows are available for use. A shadow can be selected by it&#39;s name.</p>
+<ul>
+<li><code>var(--hdd-shadow-light)</code></li>
+<li><code>var(--hdd-shadow-medium)</code></li>
+<li><code>var(--hdd-shadow-strong)</code></li>
+</ul>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> scss</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".hdd-element {
+  box-shadow: var(--hdd-shadow-light); // using the light shadow
+  box-shadow: var(--hdd-shadow-medium); // using the medium shadow
+  box-shadow: var(--hdd-shadow-strong); // using the strong shadow
+}">Copy</button>
+		<pre class="mb-0"><code class="lang-">.hdd-element {
+  box-shadow: var(--hdd-shadow-light); // using the light shadow
+  box-shadow: var(--hdd-shadow-medium); // using the medium shadow
+  box-shadow: var(--hdd-shadow-strong); // using the strong shadow
+}</code></pre>
+	</div>
+</div><div id="using-hdd-shadow-classes" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#using-hdd-shadow-classes" class="icon-link i-section__link -heading"></a>Using hdd-shadow-classes</h2></div><p>Setting the shadow attribute directly on elements are also possible with the following classes. All shadows can be used.</p>
+<ul>
+<li><code>hdd-shadow-light</code></li>
+<li><code>hdd-shadow-medium</code></li>
+<li><code>hdd-shadow-strong</code></li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="how-to-use-shadows-shadow-directly.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="how-to-use-shadows-shadow-directly.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 20px; background: white;&quot; class=&quot;hdd-shadow-strong&quot;&gt;
+    &lt;h2 style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-shadow-light&quot;&gt;
+        hdd-shadow-light
+    &lt;/h2&gt;
+    &lt;h2 style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-shadow-medium&quot;&gt;
+        hdd-shadow-medium
+    &lt;/h2&gt;
+    &lt;h2 style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-shadow-strong&quot;&gt;
+        hdd-shadow-strong
+    &lt;/h2&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 20px; background: white;&quot; class=&quot;hdd-shadow-strong&quot;&gt;
+    &lt;h2 style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-shadow-light&quot;&gt;
+        hdd-shadow-light
+    &lt;/h2&gt;
+    &lt;h2 style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-shadow-medium&quot;&gt;
+        hdd-shadow-medium
+    &lt;/h2&gt;
+    &lt;h2 style=&quot;padding: 15px; margin: 15px;&quot; class=&quot;hdd-shadow-strong&quot;&gt;
+        hdd-shadow-strong
+    &lt;/h2&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="overview-of-colors" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Overview of colors</h1>
 	<span class="theme-content-element-source">
@@ -3036,7 +3127,17 @@ The best way of including a set of color modifiers is by using the <code>color-m
   &lt;span class=&quot;hdd-contrast-background-data-yellow color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><h3>Shadows</h3><p>Shadows should be used behind all cards. In most cases, &quot;Normal&quot; shadow should be used, with the exception of menus and tooltips that overlay other content.</p>
+</div></div>
+</div>
+
+						<div id="overview-of-shadows" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Overview of shadows</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">shadow.md</span>
+	</span>
+	<div class="theme-content-element-description"><p>Hafslund Nett has 3 different available shadows. In this section all the shadows are visualized.</p>
+<div id="shadows" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#shadows" class="icon-link i-section__link -heading"></a>Shadows</h2></div><p>Shadows should be used behind all cards. In most cases, &quot;Normal&quot; shadow should be used, with the exception of menus and tooltips that overlay other content.</p>
 <ul>
 <li><code>--hdd-shadow-light</code></li>
 <li><code>--hdd-shadow-medium</code></li>
@@ -3045,7 +3146,7 @@ The best way of including a set of color modifiers is by using the <code>color-m
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
-                            href="overview-of-colors-shadow-colors.html"
+                            href="overview-of-shadows-shadow-colors.html"
                             target="_blank"
                             class="plain-link"
                             data-toggle="tooltip"
@@ -3060,7 +3161,7 @@ The best way of including a set of color modifiers is by using the <code>color-m
                         <div
                             class="i-example__iframe"
                             lazyframe
-                            data-src="overview-of-colors-shadow-colors.html"
+                            data-src="overview-of-shadows-shadow-colors.html"
                             data-initinview="true"
                             data-title="Loading..." 
                         ></div>
@@ -3469,7 +3570,7 @@ The best way of including a set of color modifiers is by using the <code>color-m
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" How to use colors  Overview of colors "
+							data-filter-value=" How to use colors  How to use shadows  Overview of colors  Overview of shadows "
 						>
 							<a href="#category-colors" class="i-sidebar-list-item">
 								<b>Colors</b>
@@ -3485,11 +3586,25 @@ The best way of including a set of color modifiers is by using the <code>color-m
 									<span>How to use colors</span>
 								</a>
 								<a
+									href="#how-to-use-shadows"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="How to use shadows"
+								>
+									<span>How to use shadows</span>
+								</a>
+								<a
 									href="#overview-of-colors"
 									class="i-sidebar-list-item theme-sidebar-element"
 									data-filter-value="Overview of colors"
 								>
 									<span>Overview of colors</span>
+								</a>
+								<a
+									href="#overview-of-shadows"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Overview of shadows"
+								>
+									<span>Overview of shadows</span>
 								</a>
 						</div>
 			
