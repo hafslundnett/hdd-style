@@ -2758,12 +2758,12 @@ The best way of including a set of color modifiers is by using the <code>color-m
 	<div class="theme-content-element-description"><p>Hafslund Nett has two different palettes of colors, primary colors and support colors, and they should be used in all communication to create identity. In this section all the available colors with their corresponding contrast-color is visualized.</p>
 <div id="primary-colors" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#primary-colors" class="icon-link i-section__link -heading"></a>Primary colors</h2></div><p>The primary color is blue and work as an important element for building the identity of Hafslund Nett. Blue symbolize credibility and stability. The associated shades of blue provide contrast, flexibility and airiness. This limited color scheme provides visual continuity throughout the user interface. When using estimates, pay particular attention to creating contrasts that are approved in WCAG. </p>
 <ul>
-<li><code>--hdd-blue</code></li>
-<li><code>--hdd-blue-dark</code></li>
-<li><code>--hdd-blue-light1</code></li>
-<li><code>--hdd-blue-light2</code></li>
-<li><code>--hdd-blue-light3</code></li>
-<li><code>--hdd-blue-light4</code></li>
+<li><code>--hdd-blue</code> <code>--hdd-contrast-blue</code></li>
+<li><code>--hdd-blue-dark</code> <code>--hdd-contrast-blue-dark</code></li>
+<li><code>--hdd-blue-light1</code> <code>--hdd-contrast-blue-light1</code></li>
+<li><code>--hdd-blue-light2</code> <code>--hdd-contrast-blue-light2</code></li>
+<li><code>--hdd-blue-light3</code> <code>--hdd-contrast-blue-light3</code></li>
+<li><code>--hdd-blue-light4</code> <code>--hdd-contrast-blue-light4</code></li>
 </ul>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -2794,32 +2794,48 @@ The best way of including a set of color modifiers is by using the <code>color-m
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-contrast-background-primary&quot; style=&quot;padding: 15px;&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
   &lt;span class=&quot;hdd-background-blue color-example&quot; style=&quot;height: 100px; width: 100px;&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-blue-dark color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-blue-light1 color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-blue-light2 color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-blue-light3 color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-blue-light4 color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
+  &lt;span class=&quot;hdd-contrast-background-blue color-example&quot; style=&quot;height: 100px; width: 100px;&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-blue-dark color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-blue-light1 color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-blue-light2 color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-blue-light3 color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-blue-light4 color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-contrast-background-primary&quot; style=&quot;padding: 15px;&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
   &lt;span class=&quot;hdd-background-blue color-example&quot; style=&quot;height: 100px; width: 100px;&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-blue-dark color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-blue-light1 color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-blue-light2 color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-blue-light3 color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-blue-light4 color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
+  &lt;span class=&quot;hdd-contrast-background-blue color-example&quot; style=&quot;height: 100px; width: 100px;&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-blue-dark color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-blue-light1 color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-blue-light2 color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-blue-light3 color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-blue-light4 color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><div id="support-colors" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#support-colors" class="icon-link i-section__link -heading"></a>Support colors</h2></div><p>Support colors are all colors which are not considered primary colors. These colors include greys, signaling colors, data visualization colors, and shadows.</p>
 <h3>Grayscale</h3><p>The grayscale should be used in addition to the primary colors of non-printable items. The darkest gray is text color and should be used on all titles, paragraphs, and content. If text appears on a dark surface, contrast requirements must be maintained and white text must be used (#FFFFFF).</p>
 <ul>
-<li><code>--hdd-font-color</code></li>
-<li><code>--hdd-grey-dark</code></li>
-<li><code>--hdd-grey-medium</code></li>
-<li><code>--hdd-grey-new</code></li>
-<li><code>--hdd-grey-border</code></li>
-<li><code>--hdd-grey-light</code></li>
+<li><code>--hdd-font-color</code> <code>--hdd-contrast-font-color</code></li>
+<li><code>--hdd-grey-dark</code> <code>--hdd-contrast-grey-dark</code></li>
+<li><code>--hdd-grey-medium</code> <code>--hdd-contrast-grey-medium</code></li>
+<li><code>--hdd-grey-new</code> <code>--hdd-contrast-grey-new</code></li>
+<li><code>--hdd-grey-border</code> <code>--hdd-contrast-grey-border</code></li>
+<li><code>--hdd-grey-light</code> <code>--hdd-contrast-grey-light</code> </li>
 </ul>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -2850,28 +2866,44 @@ The best way of including a set of color modifiers is by using the <code>color-m
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-contrast-background-primary&quot; style=&quot;padding: 15px;&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
   &lt;span class=&quot;hdd-background-font-color color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-grey-dark color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-grey-medium color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-grey-new color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-grey-border color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-grey-light color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
+  &lt;span class=&quot;hdd-contrast-background-font-color color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-grey-dark color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-grey-medium color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-grey-new color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-grey-border color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-grey-light color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-contrast-background-primary&quot; style=&quot;padding: 15px;&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
   &lt;span class=&quot;hdd-background-font-color color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-grey-dark color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-grey-medium color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-grey-new color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-grey-border color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-grey-light color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
+  &lt;span class=&quot;hdd-contrast-background-font-color color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-grey-dark color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-grey-medium color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-grey-new color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-grey-border color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-grey-light color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><h3>Signal colors</h3><p>Signal colors should only be used in meaningful (never being identity-bearing or the only color appearing on a screen) situations and should only mean one thing per platform.</p>
 <ul>
-<li><code>--hdd-signal-green</code></li>
-<li><code>--hdd-signal-yellow</code></li>
-<li><code>--hdd-signal-red</code></li>
+<li><code>--hdd-signal-green</code>    <code>--hdd-contrast-signal-green</code></li>
+<li><code>--hdd-signal-yellow</code>   <code>--hdd-contrast-signal-yellow</code></li>
+<li><code>--hdd-signal-red</code>      <code>--hdd-contrast-signal-red</code></li>
 </ul>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -2902,27 +2934,37 @@ The best way of including a set of color modifiers is by using the <code>color-m
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-contrast-background-primary&quot; style=&quot;padding: 15px;&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
   &lt;span class=&quot;hdd-background-signal-green color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-signal-yellow color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-signal-red color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
+  &lt;span class=&quot;hdd-contrast-background-signal-green color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-signal-yellow color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-signal-red color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-contrast-background-primary&quot; style=&quot;padding: 15px;&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
   &lt;span class=&quot;hdd-background-signal-green color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-signal-yellow color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-signal-red color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
+  &lt;span class=&quot;hdd-contrast-background-signal-green color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-signal-yellow color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-signal-red color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><h3>Data visualization</h3><p>These colors are chosen to be used for infographics. If necessary, these colors can also be used in varying degrees of opacity (eg heat maps).</p>
 <ul>
-<li><code>--hdd-data-navy</code></li>
-<li><code>--hdd-data-marine</code></li>
-<li><code>--hdd-data-blue</code></li>
-<li><code>--hdd-data-turquoise</code></li>
-<li><code>--hdd-data-seagreen</code></li>
-<li><code>--hdd-data-green</code></li>
-<li><code>--hdd-data-orange</code></li>
-<li><code>--hdd-data-yellow</code></li>
+<li><code>--hdd-data-navy</code>   <code>--hdd-contrast-data-navy</code></li>
+<li><code>--hdd-data-marine</code>   <code>--hdd-contrast-data-marine</code></li>
+<li><code>--hdd-data-blue</code>   <code>--hdd-contrast-data-blue</code></li>
+<li><code>--hdd-data-turquoise</code>   <code>--hdd-contrast-data-turquoise</code></li>
+<li><code>--hdd-data-seagreen</code>   <code>--hdd-contrast-data-seagreen</code></li>
+<li><code>--hdd-data-green</code>    <code>--hdd-contrast-data-green</code></li>
+<li><code>--hdd-data-orange</code>   <code>--hdd-contrast-data-orange</code></li>
+<li><code>--hdd-data-yellow</code>   <code>--hdd-contrast-data-yellow</code></li>
 </ul>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -2953,7 +2995,7 @@ The best way of including a set of color modifiers is by using the <code>color-m
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-contrast-background-primary&quot; style=&quot;padding: 15px;&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
   &lt;span class=&quot;hdd-background-data-navy color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-data-marine color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-data-blue color-example&quot;&gt;&lt;/span&gt;
@@ -2962,8 +3004,18 @@ The best way of including a set of color modifiers is by using the <code>color-m
   &lt;span class=&quot;hdd-background-data-green color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-data-orange color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-data-yellow color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
+  &lt;span class=&quot;hdd-contrast-background-data-navy color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-data-marine color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-data-blue color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-data-turquoise color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-data-seagreen color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-data-green color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-data-orange color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-data-yellow color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-contrast-background-primary&quot; style=&quot;padding: 15px;&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
   &lt;span class=&quot;hdd-background-data-navy color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-data-marine color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-data-blue color-example&quot;&gt;&lt;/span&gt;
@@ -2972,6 +3024,16 @@ The best way of including a set of color modifiers is by using the <code>color-m
   &lt;span class=&quot;hdd-background-data-green color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-data-orange color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-background-data-yellow color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
+  &lt;span class=&quot;hdd-contrast-background-data-navy color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-data-marine color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-data-blue color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-data-turquoise color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-data-seagreen color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-data-green color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-data-orange color-example&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-contrast-background-data-yellow color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><h3>Shadows</h3><p>Shadows should be used behind all cards. In most cases, &quot;Normal&quot; shadow should be used, with the exception of menus and tooltips that overlay other content.</p>
@@ -3009,12 +3071,12 @@ The best way of including a set of color modifiers is by using the <code>color-m
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-contrast-background-primary&quot; style=&quot;padding: 15px;&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px; background: white;&quot;&gt;
   &lt;span class=&quot;hdd-shadow-light hdd-contrast-background-primary color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-shadow-medium hdd-contrast-background-primary color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-shadow-strong hdd-contrast-background-primary color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-contrast-background-primary&quot; style=&quot;padding: 15px;&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px; background: white;&quot;&gt;
   &lt;span class=&quot;hdd-shadow-light hdd-contrast-background-primary color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-shadow-medium hdd-contrast-background-primary color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-shadow-strong hdd-contrast-background-primary color-example&quot;&gt;&lt;/span&gt;
