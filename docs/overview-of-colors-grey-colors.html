@@ -3,6 +3,9 @@
 
 	<head>
 		<style>
+					.color-example {
+  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px;
+}
 		</style>
 
 		<style>
@@ -53,32 +56,27 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div>
-  <span class="hdd-badge is-primary">is-primary</span>
-</div>
-<div style="padding-top: 1rem;">
-  <span class="hdd-badge is-warn">is-warn</span>
-</div>
-<div style="padding-top: 1rem;">
-  <span class="hdd-badge is-danger">is-danger</span>
-</div>
-<div style="padding-top: 1rem;">
-  <span class="hdd-badge is-safe">is-safe</span>
+    <div class="hdd-contrast-background-primary" style="padding: 15px;">
+  <span class="hdd-background-font-color color-example"></span>
+  <span class="hdd-background-grey-dark color-example"></span>
+  <span class="hdd-background-grey-medium color-example"></span>
+  <span class="hdd-background-grey-new color-example"></span>
+  <span class="hdd-background-grey-border color-example"></span>
+  <span class="hdd-background-grey-light color-example"></span>
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div>
-  <span class="hdd-badge is-primary">is-primary</span>
-</div>
-<div style="padding-top: 1rem;">
-  <span class="hdd-badge is-warn">is-warn</span>
-</div>
-<div style="padding-top: 1rem;">
-  <span class="hdd-badge is-danger">is-danger</span>
-</div>
-<div style="padding-top: 1rem;">
-  <span class="hdd-badge is-safe">is-safe</span>
+			<script type="text/x-stylemark" data-language="html"><div class="hdd-contrast-background-primary" style="padding: 15px;">
+  <span class="hdd-background-font-color color-example"></span>
+  <span class="hdd-background-grey-dark color-example"></span>
+  <span class="hdd-background-grey-medium color-example"></span>
+  <span class="hdd-background-grey-new color-example"></span>
+  <span class="hdd-background-grey-border color-example"></span>
+  <span class="hdd-background-grey-light color-example"></span>
 </div></script>
+			<script type="text/x-stylemark" data-language="css">.color-example {
+  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px;
+}</script>
 
 		<!--
 			Vanilla JS
@@ -111,10 +109,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-colors-color-modifiers', []);
+						module = angular.module('stylemark-overview-of-colors-grey-colors', []);
 					}
 
-					module.controller('stylemark-colors-color-modifiers-' + index, function($scope) {
+					module.controller('stylemark-overview-of-colors-grey-colors-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

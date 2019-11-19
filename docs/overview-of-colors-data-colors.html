@@ -2,9 +2,10 @@
 <html>
 
 	<head>
-		
-
 		<style>
+					.color-example {
+  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px;
+}
 		</style>
 
 		<style>
@@ -50,15 +51,36 @@
 		</script>
 
 			<link rel="stylesheet" href="dist/bundle.min.css">
+
+		
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <a href="https://google.com">Home</a>
-<a href="https://hafslundnett.no">Hafslund Nett</a>
+    <div class="hdd-contrast-background-primary" style="padding: 15px;">
+  <span class="hdd-background-data-navy color-example"></span>
+  <span class="hdd-background-data-marine color-example"></span>
+  <span class="hdd-background-data-blue color-example"></span>
+  <span class="hdd-background-data-turquoise color-example"></span>
+  <span class="hdd-background-data-seagreen color-example"></span>
+  <span class="hdd-background-data-green color-example"></span>
+  <span class="hdd-background-data-orange color-example"></span>
+  <span class="hdd-background-data-yellow color-example"></span>
+</div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><a href="https://google.com">Home</a>
-<a href="https://hafslundnett.no">Hafslund Nett</a></script>
+			<script type="text/x-stylemark" data-language="html"><div class="hdd-contrast-background-primary" style="padding: 15px;">
+  <span class="hdd-background-data-navy color-example"></span>
+  <span class="hdd-background-data-marine color-example"></span>
+  <span class="hdd-background-data-blue color-example"></span>
+  <span class="hdd-background-data-turquoise color-example"></span>
+  <span class="hdd-background-data-seagreen color-example"></span>
+  <span class="hdd-background-data-green color-example"></span>
+  <span class="hdd-background-data-orange color-example"></span>
+  <span class="hdd-background-data-yellow color-example"></span>
+</div></script>
+			<script type="text/x-stylemark" data-language="css">.color-example {
+  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px;
+}</script>
 
 		<!--
 			Vanilla JS
@@ -91,10 +113,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-button-switch', []);
+						module = angular.module('stylemark-overview-of-colors-data-colors', []);
 					}
 
-					module.controller('stylemark-button-switch-' + index, function($scope) {
+					module.controller('stylemark-overview-of-colors-data-colors-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

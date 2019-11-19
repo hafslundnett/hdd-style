@@ -3,9 +3,6 @@
 
 	<head>
 		<style>
-					.color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px;
-}
 		</style>
 
 		<style>
@@ -56,27 +53,32 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div class="hdd-contrast-background-primary" style="padding: 15px;">
-  <span class="hdd-background-blue color-example" style="height: 100px; width: 100px;"></span>
-  <span class="hdd-background-blue-dark color-example"></span>
-  <span class="hdd-background-blue-light1 color-example"></span>
-  <span class="hdd-background-blue-light2 color-example"></span>
-  <span class="hdd-background-blue-light3 color-example"></span>
-  <span class="hdd-background-blue-light4 color-example"></span>
+    <div>
+  <span class="hdd-badge is-primary">is-primary</span>
+</div>
+<div style="padding-top: 1rem;">
+  <span class="hdd-badge is-warn">is-warn</span>
+</div>
+<div style="padding-top: 1rem;">
+  <span class="hdd-badge is-danger">is-danger</span>
+</div>
+<div style="padding-top: 1rem;">
+  <span class="hdd-badge is-safe">is-safe</span>
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="hdd-contrast-background-primary" style="padding: 15px;">
-  <span class="hdd-background-blue color-example" style="height: 100px; width: 100px;"></span>
-  <span class="hdd-background-blue-dark color-example"></span>
-  <span class="hdd-background-blue-light1 color-example"></span>
-  <span class="hdd-background-blue-light2 color-example"></span>
-  <span class="hdd-background-blue-light3 color-example"></span>
-  <span class="hdd-background-blue-light4 color-example"></span>
+			<script type="text/x-stylemark" data-language="html"><div>
+  <span class="hdd-badge is-primary">is-primary</span>
+</div>
+<div style="padding-top: 1rem;">
+  <span class="hdd-badge is-warn">is-warn</span>
+</div>
+<div style="padding-top: 1rem;">
+  <span class="hdd-badge is-danger">is-danger</span>
+</div>
+<div style="padding-top: 1rem;">
+  <span class="hdd-badge is-safe">is-safe</span>
 </div></script>
-			<script type="text/x-stylemark" data-language="css">.color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px;
-}</script>
 
 		<!--
 			Vanilla JS
@@ -109,10 +111,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-colors-primary-colors', []);
+						module = angular.module('stylemark-how-to-use-colors-color-modifiers', []);
 					}
 
-					module.controller('stylemark-colors-primary-colors-' + index, function($scope) {
+					module.controller('stylemark-how-to-use-colors-color-modifiers-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

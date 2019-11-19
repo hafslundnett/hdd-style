@@ -57,16 +57,22 @@
 
 	<body>					<div style="padding: 20px;">
     <div class="hdd-contrast-background-primary" style="padding: 15px;">
-  <span class="hdd-shadow-light hdd-contrast-background-primary color-example"></span>
-  <span class="hdd-shadow-medium hdd-contrast-background-primary color-example"></span>
-  <span class="hdd-shadow-strong hdd-contrast-background-primary color-example"></span>
+  <span class="hdd-background-blue color-example" style="height: 100px; width: 100px;"></span>
+  <span class="hdd-background-blue-dark color-example"></span>
+  <span class="hdd-background-blue-light1 color-example"></span>
+  <span class="hdd-background-blue-light2 color-example"></span>
+  <span class="hdd-background-blue-light3 color-example"></span>
+  <span class="hdd-background-blue-light4 color-example"></span>
 </div>
 </div>
 
 			<script type="text/x-stylemark" data-language="html"><div class="hdd-contrast-background-primary" style="padding: 15px;">
-  <span class="hdd-shadow-light hdd-contrast-background-primary color-example"></span>
-  <span class="hdd-shadow-medium hdd-contrast-background-primary color-example"></span>
-  <span class="hdd-shadow-strong hdd-contrast-background-primary color-example"></span>
+  <span class="hdd-background-blue color-example" style="height: 100px; width: 100px;"></span>
+  <span class="hdd-background-blue-dark color-example"></span>
+  <span class="hdd-background-blue-light1 color-example"></span>
+  <span class="hdd-background-blue-light2 color-example"></span>
+  <span class="hdd-background-blue-light3 color-example"></span>
+  <span class="hdd-background-blue-light4 color-example"></span>
 </div></script>
 			<script type="text/x-stylemark" data-language="css">.color-example {
   display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px;
@@ -103,10 +109,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-colors-shadow-colors', []);
+						module = angular.module('stylemark-overview-of-colors-primary-colors', []);
 					}
 
-					module.controller('stylemark-colors-shadow-colors-' + index, function($scope) {
+					module.controller('stylemark-overview-of-colors-primary-colors-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

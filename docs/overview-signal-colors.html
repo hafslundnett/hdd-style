@@ -3,6 +3,9 @@
 
 	<head>
 		<style>
+					.color-example {
+  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px;
+}
 		</style>
 
 		<style>
@@ -53,114 +56,21 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <table class="hdd-table is-striped has-shadow">
-  <tr class="hdd-table_header">
-    <th>ID<i class="far fa-arrow-up"></i></th>
-    <th>Kundenr.<i class="far fa-arrow-up"></i></th>
-    <th>Personnr.</th>
-    <th>Fakturanr.<i class="far fa-arrow-up"></i></th>
-    <th></th>
-  </tr>
-  <tr class="is-primary">
-    <th>1</th>
-    <td>124221</td>
-    <td>123419384</td>
-    <td>31</td>
-    <td class="hdd-table_action">
-      <i class="far fa-angle-down"></i>
-      <i class="far fa-ellipsis-v"></i>
-      <button class="hdd-button is-small">Submit</button>
-    </td>
-  </tr>
-  <tr class="is-danger">
-    <th>2</th>
-    <td>872736</td>
-    <td>123419384</td>
-    <td>23</td>
-    <td class="hdd-table_action">
-      <i class="far fa-angle-down"></i>
-      <i class="far fa-ellipsis-v"></i>
-      <button class="hdd-button is-small">Submit</button>
-    </td>
-  </tr>
-  <tr class="is-warn">
-    <th>3</th>
-    <td>938472</td>
-    <td>123419384</td>
-    <td>17</td>
-    <td class="hdd-table_action">
-      <i class="far fa-angle-down"></i>
-      <i class="far fa-ellipsis-v"></i>
-      <button class="hdd-button is-small">Submit</button>
-    </td>
-  </tr>
-  <tr class="is-safe">
-    <th>4</th>
-    <td>338472</td>
-    <td>123419384</td>
-    <td>14</td>
-    <td class="hdd-table_action">
-      <i class="far fa-angle-down"></i>
-      <i class="far fa-ellipsis-v"></i>
-      <button class="hdd-button is-small">Submit</button>
-    </td>
-  </tr>
-</table>
+    <div class="hdd-contrast-background-primary" style="padding: 15px;">
+  <span class="hdd-background-signal-green color-example"></span>
+  <span class="hdd-background-signal-yellow color-example"></span>
+  <span class="hdd-background-signal-red color-example"></span>
+</div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><table class="hdd-table is-striped has-shadow">
-  <tr class="hdd-table_header">
-    <th>ID<i class="far fa-arrow-up"></i></th>
-    <th>Kundenr.<i class="far fa-arrow-up"></i></th>
-    <th>Personnr.</th>
-    <th>Fakturanr.<i class="far fa-arrow-up"></i></th>
-    <th></th>
-  </tr>
-  <tr class="is-primary">
-    <th>1</th>
-    <td>124221</td>
-    <td>123419384</td>
-    <td>31</td>
-    <td class="hdd-table_action">
-      <i class="far fa-angle-down"></i>
-      <i class="far fa-ellipsis-v"></i>
-      <button class="hdd-button is-small">Submit</button>
-    </td>
-  </tr>
-  <tr class="is-danger">
-    <th>2</th>
-    <td>872736</td>
-    <td>123419384</td>
-    <td>23</td>
-    <td class="hdd-table_action">
-      <i class="far fa-angle-down"></i>
-      <i class="far fa-ellipsis-v"></i>
-      <button class="hdd-button is-small">Submit</button>
-    </td>
-  </tr>
-  <tr class="is-warn">
-    <th>3</th>
-    <td>938472</td>
-    <td>123419384</td>
-    <td>17</td>
-    <td class="hdd-table_action">
-      <i class="far fa-angle-down"></i>
-      <i class="far fa-ellipsis-v"></i>
-      <button class="hdd-button is-small">Submit</button>
-    </td>
-  </tr>
-  <tr class="is-safe">
-    <th>4</th>
-    <td>338472</td>
-    <td>123419384</td>
-    <td>14</td>
-    <td class="hdd-table_action">
-      <i class="far fa-angle-down"></i>
-      <i class="far fa-ellipsis-v"></i>
-      <button class="hdd-button is-small">Submit</button>
-    </td>
-  </tr>
-</table></script>
+			<script type="text/x-stylemark" data-language="html"><div class="hdd-contrast-background-primary" style="padding: 15px;">
+  <span class="hdd-background-signal-green color-example"></span>
+  <span class="hdd-background-signal-yellow color-example"></span>
+  <span class="hdd-background-signal-red color-example"></span>
+</div></script>
+			<script type="text/x-stylemark" data-language="css">.color-example {
+  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px;
+}</script>
 
 		<!--
 			Vanilla JS
@@ -193,10 +103,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-table-stripedtable', []);
+						module = angular.module('stylemark-overview-signal-colors', []);
 					}
 
-					module.controller('stylemark-table-stripedtable-' + index, function($scope) {
+					module.controller('stylemark-overview-signal-colors-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

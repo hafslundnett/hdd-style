@@ -3,6 +3,9 @@
 
 	<head>
 		<style>
+					.color-example {
+  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px;
+}
 		</style>
 
 		<style>
@@ -54,17 +57,26 @@
 
 	<body>					<div style="padding: 20px;">
     <div class="hdd-contrast-background-primary" style="padding: 15px;">
-  <span class="hdd-shadow-light hdd-contrast-background-primary color-example"></span>
-  <span class="hdd-shadow-medium hdd-contrast-background-primary color-example"></span>
-  <span class="hdd-shadow-strong hdd-contrast-background-primary color-example"></span>
+  <span class="hdd-background-font-color color-example"></span>
+  <span class="hdd-background-grey-dark color-example"></span>
+  <span class="hdd-background-grey-medium color-example"></span>
+  <span class="hdd-background-grey-new color-example"></span>
+  <span class="hdd-background-grey-border color-example"></span>
+  <span class="hdd-background-grey-light color-example"></span>
 </div>
 </div>
 
 			<script type="text/x-stylemark" data-language="html"><div class="hdd-contrast-background-primary" style="padding: 15px;">
-  <span class="hdd-shadow-light hdd-contrast-background-primary color-example"></span>
-  <span class="hdd-shadow-medium hdd-contrast-background-primary color-example"></span>
-  <span class="hdd-shadow-strong hdd-contrast-background-primary color-example"></span>
+  <span class="hdd-background-font-color color-example"></span>
+  <span class="hdd-background-grey-dark color-example"></span>
+  <span class="hdd-background-grey-medium color-example"></span>
+  <span class="hdd-background-grey-new color-example"></span>
+  <span class="hdd-background-grey-border color-example"></span>
+  <span class="hdd-background-grey-light color-example"></span>
 </div></script>
+			<script type="text/x-stylemark" data-language="css">.color-example {
+  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px;
+}</script>
 
 		<!--
 			Vanilla JS
@@ -97,10 +109,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-colors-shaddow-colors', []);
+						module = angular.module('stylemark-overview-grey-colors', []);
 					}
 
-					module.controller('stylemark-colors-shaddow-colors-' + index, function($scope) {
+					module.controller('stylemark-overview-grey-colors-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});
