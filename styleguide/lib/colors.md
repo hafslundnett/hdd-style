@@ -1,7 +1,6 @@
 ---
 name: Overview of colors
 category: Colors
-priority: 2
 ---
 
 Hafslund Nett has two different palettes of colors, primary colors and support colors, and they should be used in all communication to create identity. In this section all the available colors with their corresponding contrast-color is visualized.
