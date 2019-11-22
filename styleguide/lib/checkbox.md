@@ -30,6 +30,20 @@ Checkbox classes are assigned to the corresponding checkbox label.
 </div>
 ```
 
+## Checkbox Toggle
+`hdd-form_toggle`
+```checkboxToggle.html
+<div class="hdd-form_field">
+  <span class="hdd-form_field_title">Checkbox Toggles</span>
+  <label class="hdd-form_toggle">
+    <input type="checkbox">
+    <span class="hdd-form_toggle slider"></span>
+  </label>
+</div>
+
+```
+
+
 ## Mutations
 **`hdd-form_checkbox`:**
 

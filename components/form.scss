@@ -17,7 +17,7 @@
       @extend .is-p;
 
       display: inline-block;
-      margin-bottom: .2rem;
+      margin-bottom: 0.2rem;
       font-weight: bold;
     }
 
@@ -32,8 +32,8 @@
     &_info {
       display: none;
       position: absolute;
-      margin-top: .2rem;
-      font-size: .8rem;
+      margin-top: 0.2rem;
+      font-size: 0.8rem;
 
       &.is-active {
         display: block;
@@ -70,7 +70,6 @@
    ************************/
 
   &_input {
-    
     // Variable containing '&' to jump to current parent inside a child class.
     $this: &;
 
@@ -139,7 +138,7 @@
     > svg,
     > i {
       transition: color $medium-transition $transition-cubic, opacity $medium-transition $transition-cubic;
-      opacity: .44;
+      opacity: 0.44;
       color: var(--hdd-black);
       font-size: font-size(h2);
 
@@ -154,19 +153,70 @@
   }
 
   /************************
+   *  Checkbox Toggle
+   ************************/
+
+&_toggle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+    height: 1rem;
+
+    // Hides inital html checkbox
+    & input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      background-color: var(--hdd-white);
+      transition: 0.4s;
+      border: 1px solid var(--hdd-blue);
+      border-radius: 2rem;
+      
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: .7rem;
+      width: .7rem;
+      top:0.15rem;
+      right:0.2rem;
+      left: 0.2rem;
+      background-color: var(--hdd-blue);
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+  
+    input:checked + .slider {
+      background-color: var(--hdd-blue);
+    }
+
+    input:checked + .slider:before {
+      background-color: var(--hdd-white);
+      @include transform(translateX(.9rem));
+    }
+  }
+
+  /************************
    *  Checkbox
    ************************/
 
   &_checkbox {
-
-    // Variable containing '&' to jump to current parent inside a child class. 
+    // Variable containing '&' to jump to current parent inside a child class.
     $this: &;
-    
+
     display: flex;
     align-items: center;
-    margin-bottom: .75rem;
+    margin-bottom: 0.75rem;
     cursor: pointer;
-    
+
     // Creating placeholder to inject style into checkbox mutations.
     // We have to seperate the checkbox marked styling because of the checked state
     %checkbox-mark {
@@ -180,7 +230,7 @@
         transform: translateX(-50%);
 
         color: var(--hdd-white);
-        font-size: .75rem;
+        font-size: 0.75rem;
       }
     }
 
@@ -212,7 +262,7 @@
 
     // currently not in use
     .hdd-badge {
-      margin-left: .5rem;
+      margin-left: 0.5rem;
       float: right;
     }
 
@@ -221,7 +271,7 @@
 
       width: $form-checkbox-mark-size;
       height: $form-checkbox-mark-size;
-      transition: background .3s $transition-cubic;
+      transition: background 0.3s $transition-cubic;
       border: $form-checkbox-mark-border;
       border-radius: $form-checkbox-mark-border-radius;
       background: var(--hdd-white);
@@ -238,13 +288,12 @@
    ************************/
 
   &_radiobutton {
-
     // Variable containing '&' to jump to current parent inside a child class.
     $this: &;
 
     display: flex;
     align-items: center;
-    margin-bottom: .75rem;
+    margin-bottom: 0.75rem;
     cursor: pointer;
 
     // Creating placeholder to inject style into radiobutton mutations.
@@ -252,7 +301,7 @@
       position: relative;
       background-color: var(--hdd-primary);
       &:before {
-        content: '';
+        content: "";
         display: inline-block;
         padding: 5px;
         border: 2px solid var(--hdd-white);
@@ -279,7 +328,7 @@
 
       width: $form-radiobutton-mark-size;
       height: $form-radiobutton-mark-size;
-      transition: background .3s $transition-cubic;
+      transition: background 0.3s $transition-cubic;
       border: $form-radiobutton-mark-border;
       border-radius: $form-radiobutton-mark-border-radius;
       background: var(--hdd-white);
@@ -296,8 +345,7 @@
    ************************/
 
   &_select {
-
-    // Variable containing '&' to jump to current parent inside a child class. 
+    // Variable containing '&' to jump to current parent inside a child class.
     $this: &;
 
     display: flex;
@@ -318,7 +366,7 @@
 
       border: 0;
       background: none;
-      
+
       -moz-appearance: none;
       -webkit-appearance: none;
 
@@ -375,7 +423,7 @@
     > i {
       position: absolute;
       transition: color $medium-transition $transition-cubic, opacity $medium-transition $transition-cubic;
-      opacity: .44;
+      opacity: 0.44;
       color: var(--hdd-black);
       font-size: font-size(h2);
 
