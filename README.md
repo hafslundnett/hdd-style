@@ -1,9 +1,12 @@
 # Hafslund digital designsystem (Hdd)
 
 [![npm version](https://img.shields.io/npm/v/@hafslundnett/hdd-style.svg)](https://www.npmjs.com/package/@hafslundnett/hdd-style)
+
+[![npm version](https://badge.fury.io/js/%40hafslundnett%2Fhal-components.svg)](https://badge.fury.io/js/%40hafslundnett%2Fhdd-style)
+
+
+
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![Build status](https://hafslundtfs.visualstudio.com/Hafslund%20Nett/_apis/build/status/HDD/hdd-style/hdd-style.build)](https://hafslundtfs.visualstudio.com/Hafslund%20Nett/_build/latest?definitionId=632)
-[![Build status](https://hafslundtfs.visualstudio.com/Hafslund%20Nett/_apis/build/status/HDD/hdd-style/hdd-style.release)](https://hafslundtfs.visualstudio.com/Hafslund%20Nett/_build/latest?definitionId=683)
 
 'Hafslund digital designsystem' is a design system that can be used across projects while maintaining consistancy. The project follows strict naming guidlines, your can read more about them in the [wiki](https://github.com/hafslundnett/hdd-theme/wiki/Naming-guidelines). Every component should be able to run in an isolated environment without depending on parent classes/elements.
 
