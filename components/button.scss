@@ -96,7 +96,7 @@
       // .fal is icon-properties
       @extend .fal;
 
-      position: absolute;
+      position: absolute !important;
       top: calc(50% - (1em / 2));
       left: calc(50% - (1em / 2));
 
