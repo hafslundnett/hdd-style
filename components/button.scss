@@ -91,7 +91,12 @@
     color: transparent !important;
 
     &::after {
-      @extend .fa-spinner-third, ::before;
+      // Should find a better solution
+      // @extend .fa-spinner-third, ::before; <---  this does not work in mdm-ui
+      font-family: "Font Awesome 5 Pro";
+      font-weight: 300;
+      content: "\F3F4"; // fa-spinner-third
+
       @include animation(spinner, 0.5s, infinite, linear);
       // .fal is icon-properties
       @extend .fal;
@@ -192,7 +197,7 @@
         color: var(--hdd-primary);
       }
     }
-    
+
     &.is-no-padding {
       padding: 0px;
     }
