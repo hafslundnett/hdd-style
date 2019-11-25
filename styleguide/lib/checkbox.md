@@ -22,11 +22,6 @@ Checkbox classes are assigned to the corresponding checkbox label.
     <span class="hdd-form_checkbox_mark"></span>
     <span class="hdd-form_checkbox_label">Unpicked checkbox</span>
   </label>
-  <label class="hdd-form_checkbox is-invalid">
-    <input type="checkbox">
-    <span class="hdd-form_checkbox_mark"></span>
-    <span class="hdd-form_checkbox_label">Invalid checkbox</span>
-  </label>
 </div>
 ```
 
@@ -35,6 +30,5 @@ Checkbox classes are assigned to the corresponding checkbox label.
 
 | class | description|
 | :--- | :--- |
-| `is-invalid` | Set the checkbox to it's invalid state |
 | `is-checked` | Set the checkbox style to it's checked class |
 

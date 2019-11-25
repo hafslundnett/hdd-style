@@ -190,15 +190,6 @@
       }
     }
 
-    &.is-invalid {
-      pointer-events: none;
-      input:checked ~ #{$this}_mark,
-
-      #{$this}_mark {
-        border-color: var(--hdd-signal-red);
-      }
-    }
-
     // Need to hide the original checkbox
     input {
       display: none;
