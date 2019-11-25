@@ -236,30 +236,28 @@
    ************************/
 
   &_toggle {
-    display: flex;
-    align-items: center;
-    position: relative;
-    display: inline-block;
-    width: 2rem;
-    height: 1rem;
-    margin-bottom: 0.75rem;
 
+    cursor: pointer;
+    display: flex;
+    height: 1rem;
+    width: 2rem;
+   
     // Hides inital html checkbox
     & input {
       opacity: 0;
-      width: 0;
       height: 0;
+      width: 0;
     }
 
-    .slider {
-      position: absolute;
-      cursor: pointer;
+    &.slider {
       background-color: var(--hdd-white);
-      transition: 0.4s;
       border: 1px solid var(--hdd-blue);
       border-radius: 2rem;
+      position: absolute;
+      transition: 0.4s;
+
     }
-    .slider:before {
+    &.slider:before {
       position: absolute;
       content: "";
       height: 0.7rem;

@@ -64,7 +64,6 @@
     <span class="hdd-form_toggle slider"></span>
   </label>
 </div>
-
 </div>
 
 			<script type="text/x-stylemark" data-language="html"><div class="hdd-form_field">
@@ -77,8 +76,7 @@
     <input type="checkbox" checked>
     <span class="hdd-form_toggle slider"></span>
   </label>
-</div>
-</script>
+</div></script>
 
 		<!--
 			Vanilla JS
@@ -111,10 +109,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-toggle-checkbox-toggle', []);
+						module = angular.module('stylemark-checkbox-toggle', []);
 					}
 
-					module.controller('stylemark-toggle-checkbox-toggle-' + index, function($scope) {
+					module.controller('stylemark-checkbox-toggle-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

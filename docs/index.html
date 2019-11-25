@@ -45,7 +45,6 @@
 									<option value="radio-button">Radio button</option>
 									<option value="search-fields">Search fields</option>
 									<option value="select">Select</option>
-									<option value="toggle-checkbox">Toggle Checkbox</option>
 							</optgroup>
 							<optgroup label="Layout-Components">
 									<option value="navigation">Navigation</option>
@@ -1774,11 +1773,14 @@ Checkbox classes are assigned to the corresponding checkbox label.</p>
   &lt;/label&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><div id="checkbox-toggle" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#checkbox-toggle" class="icon-link i-section__link -heading"></a>Checkbox Toggle</h2></div><p><code>hdd-form_toggle</code></p>
+</div><div id="toggle-checkbox" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#toggle-checkbox" class="icon-link i-section__link -heading"></a>Toggle Checkbox</h2></div><p>A toggle checkbox component lets a user toggle between true or false state.
+The toggle checkbox slider class are assigned to the corresponding span beneath the checkbox input tag.
+<br></p>
+<p><code>hdd-form_toggle</code> &amp; <code>hdd-form_toggle slider</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
-                            href="checkbox-checkboxToggle.html"
+                            href="checkbox-toggle.html"
                             target="_blank"
                             class="plain-link"
                             data-toggle="tooltip"
@@ -1793,7 +1795,7 @@ Checkbox classes are assigned to the corresponding checkbox label.</p>
                         <div
                             class="i-example__iframe"
                             lazyframe
-                            data-src="checkbox-checkboxToggle.html"
+                            data-src="checkbox-toggle.html"
                             data-initinview="true"
                             data-title="Loading..." 
                         ></div>
@@ -1805,21 +1807,27 @@ Checkbox classes are assigned to the corresponding checkbox label.</p>
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;span class=&quot;hdd-form_field_title&quot;&gt;Checkbox Toggles&lt;/span&gt;
-  &lt;label class=&quot;hdd-form_toggle&quot;&gt;
+  &lt;span class=&quot;hdd-form_field_title&quot;&gt;Toggle Checkbox&lt;/span&gt;
+  &lt;label class=&quot;hdd-form_toggle&quot; style=&quot;margin-bottom: 15px&quot;&gt;
     &lt;input type=&quot;checkbox&quot;&gt;
     &lt;span class=&quot;hdd-form_toggle slider&quot;&gt;&lt;/span&gt;
   &lt;/label&gt;
-&lt;/div&gt;
-">Copy</button>
+  &lt;label class=&quot;hdd-form_toggle&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; checked&gt;
+    &lt;span class=&quot;hdd-form_toggle slider&quot;&gt;&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;span class=&quot;hdd-form_field_title&quot;&gt;Checkbox Toggles&lt;/span&gt;
-  &lt;label class=&quot;hdd-form_toggle&quot;&gt;
+  &lt;span class=&quot;hdd-form_field_title&quot;&gt;Toggle Checkbox&lt;/span&gt;
+  &lt;label class=&quot;hdd-form_toggle&quot; style=&quot;margin-bottom: 15px&quot;&gt;
     &lt;input type=&quot;checkbox&quot;&gt;
     &lt;span class=&quot;hdd-form_toggle slider&quot;&gt;&lt;/span&gt;
   &lt;/label&gt;
-&lt;/div&gt;
-</code></pre>
+  &lt;label class=&quot;hdd-form_toggle&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; checked&gt;
+    &lt;span class=&quot;hdd-form_toggle slider&quot;&gt;&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;</code></pre>
 	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-form_checkbox</code>:</strong></p>
 <table class="table"><thead><tr>
@@ -2395,64 +2403,6 @@ Checkbox classes are assigned to the corresponding checkbox label.</p>
 <td style="text-align:left">Set the select to it&#39;s invalid state</td>
 </tr>
 </tbody></table></div>
-</div>
-
-						<div id="toggle-checkbox" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">Toggle Checkbox</h1>
-	<span class="theme-content-element-source">
-		<span class="theme-content-element-source-label">Source:</span>
-		<span class="theme-content-element-source-path">toggle.md</span>
-	</span>
-	<div class="theme-content-element-description"><p>A toggle checkbox component lets a user toggle between true or false state.
-The toggle checkbox slider class are assigned to the corresponding span beneath the checkbox input tag.</p>
-<div id="toggle-checkbox" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#toggle-checkbox" class="icon-link i-section__link -heading"></a>Toggle Checkbox</h2></div><p><code>hdd-form_toggle</code></p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="toggle-checkbox-toggle.html"
-                            target="_blank"
-                            class="plain-link"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Open in a new window"
-                        >
-                            <i class="fa fa-external-link-square fa-fw"></i>
-                            Example
-                        </a>
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="toggle-checkbox-toggle.html"
-                            data-initinview="true"
-                            data-title="Loading..." 
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;span class=&quot;hdd-form_field_title&quot;&gt;Toggle Checkbox&lt;/span&gt;
-  &lt;label class=&quot;hdd-form_toggle&quot;&gt;
-    &lt;input type=&quot;checkbox&quot;&gt;
-    &lt;span class=&quot;hdd-form_toggle slider&quot;&gt;&lt;/span&gt;
-  &lt;/label&gt;
-&lt;/div&gt;
-">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;span class=&quot;hdd-form_field_title&quot;&gt;Toggle Checkbox&lt;/span&gt;
-  &lt;label class=&quot;hdd-form_toggle&quot;&gt;
-    &lt;input type=&quot;checkbox&quot;&gt;
-    &lt;span class=&quot;hdd-form_toggle slider&quot;&gt;&lt;/span&gt;
-  &lt;/label&gt;
-&lt;/div&gt;
-</code></pre>
-	</div>
-</div></div>
 </div>
 
 				</div>
@@ -3477,7 +3427,7 @@ The toggle checkbox slider class are assigned to the corresponding span beneath 
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Checkbox  Dropdown  Input fields  Radio button  Search fields  Select  Toggle Checkbox "
+							data-filter-value=" Checkbox  Dropdown  Input fields  Radio button  Search fields  Select "
 						>
 							<a href="#category-form-components" class="i-sidebar-list-item">
 								<b>Form-Components</b>
@@ -3526,13 +3476,6 @@ The toggle checkbox slider class are assigned to the corresponding span beneath 
 									data-filter-value="Select"
 								>
 									<span>Select</span>
-								</a>
-								<a
-									href="#toggle-checkbox"
-									class="i-sidebar-list-item theme-sidebar-element"
-									data-filter-value="Toggle Checkbox"
-								>
-									<span>Toggle Checkbox</span>
 								</a>
 						</div>
 			
