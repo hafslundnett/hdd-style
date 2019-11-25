@@ -254,7 +254,7 @@
       border: 1px solid var(--hdd-blue);
       border-radius: 2rem;
       position: absolute;
-      transition: 0.4s;
+      transition: 0.1s;
 
     }
     &.slider:before {
@@ -267,7 +267,7 @@
       left: 0.2rem;
       bottom: 0.15rem;
       background-color: var(--hdd-blue);
-      transition: 0.4s;
+      transition: 0.1s;
       border-radius: 50%;
     }
 
