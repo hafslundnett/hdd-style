@@ -153,58 +153,6 @@
   }
 
   /************************
-   *  Checkbox Toggle
-   ************************/
-
-&_toggle {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.75rem;
-    position: relative;
-    display: inline-block;
-    width: 2rem;
-    height: 1rem;
-
-    // Hides inital html checkbox
-    & input {
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
-
-    .slider {
-      position: absolute;
-      cursor: pointer;
-      background-color: var(--hdd-white);
-      transition: 0.4s;
-      border: 1px solid var(--hdd-blue);
-      border-radius: 2rem;
-      
-    }
-    .slider:before {
-      position: absolute;
-      content: "";
-      height: .7rem;
-      width: .7rem;
-      top:0.15rem;
-      right:0.2rem;
-      left: 0.2rem;
-      background-color: var(--hdd-blue);
-      transition: 0.4s;
-      border-radius: 50%;
-    }
-  
-    input:checked + .slider {
-      background-color: var(--hdd-blue);
-    }
-
-    input:checked + .slider:before {
-      background-color: var(--hdd-white);
-      @include transform(translateX(.9rem));
-    }
-  }
-
-  /************************
    *  Checkbox
    ************************/
 
@@ -280,6 +228,58 @@
     &_label {
       flex-grow: 1;
       margin-left: 1rem;
+    }
+  }
+
+  /************************
+   *  Checkbox Toggle
+   ************************/
+
+  &_toggle {
+    display: flex;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+    height: 1rem;
+    margin-bottom: 0.75rem;
+
+    // Hides inital html checkbox
+    & input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      background-color: var(--hdd-white);
+      transition: 0.4s;
+      border: 1px solid var(--hdd-blue);
+      border-radius: 2rem;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 0.7rem;
+      width: 0.7rem;
+      top: 0.15rem;
+      right: 0.2rem;
+      left: 0.2rem;
+      bottom: 0.15rem;
+      background-color: var(--hdd-blue);
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider {
+      background-color: var(--hdd-blue);
+    }
+
+    input:checked + .slider:before {
+      background-color: var(--hdd-white);
+      @include transform(translateX(0.9rem));
     }
   }
 
