@@ -191,13 +191,11 @@
     }
 
     &.is-invalid {
+      pointer-events: none;
       input:checked ~ #{$this}_mark,
+
       #{$this}_mark {
         border-color: var(--hdd-signal-red);
-
-        &::before {
-          color: var(--hdd-signal-red);
-        }
       }
     }
 
