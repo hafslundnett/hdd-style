@@ -3,7 +3,7 @@ name: Input fields
 category: Form-Components
 ---
 
-An input field should be a call to action. If the text/content can't be changed, it should not be in an input field, but shown as static text.
+An input should encourage action by the user. If the text / content cannot be changed, it should not appear in an input field of any kind (displayed as static text). An input should not stand alone, it should have a descriptive prompt.
 
 ## Input fields
 `hdd-form_input`
