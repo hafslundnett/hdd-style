@@ -4,6 +4,7 @@ category: Form-Components
 ---
 
 The dropdown lets the user search for and choose between a set of options. The dropdown aligns to the bottom by default.
+Dropdown should be used if the user wants a recommended selection out of all the options (then this choice should be the default), or if the list of choices is longer than 5 (then placeholder text should be used). In a long dropdown list, it must be possible for the user to start typing to filter.
 
 ## Dropdown
 `hdd-form_input`.`hdd-dropdown`
