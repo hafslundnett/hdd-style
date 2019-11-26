@@ -108,15 +108,15 @@ $colors: (
   ),
   'grey': (
     color: #ADB0B6,
-    contrast: #444
+    contrast: #000
   ),
   'grey-dark': (
     color: #57585A,
-    contrast: #FFF
+    contrast: #000
   ),
   'grey-medium': (
     color: #8F9599,
-    contrast: #444
+    contrast: #000
   ),
   'grey-light': (
     color: #EEF0F4,
@@ -149,36 +149,36 @@ $colors: (
 
 $data-colors: (
   'data-navy': (
-    color: #23588C,
+    color: #24598C,
     contrast: #FFF
   ),
   'data-marine': (
-    color: #0F6ECA,
+    color: #116FCA,
     contrast: #FFF
   ),
   'data-blue': (
-    color: #4BA8FF,
-    contrast: #FFF
+    color: #4CA8FF,
+    contrast: #000
   ),
   'data-turquoise': (
-    color: #24D2EF,
-    contrast: #FFF
+    color: #25D2EF,
+    contrast: #000
   ),
   'data-seagreen': (
     color: #46B5AB,
-    contrast: #FFF
+    contrast: #000
   ),
   'data-green': (
-    color: #6FE9AA,
-    contrast: #FFF
+    color: #70E9AA,
+    contrast: #000
   ),
   'data-orange': (
-    color: #F1842B,
-    contrast: #FFF
+    color: #F1832D,
+    contrast: #000
   ),
   'data-yellow': (
-    color: #FFD209,
-    contrast: #FFF
+    color: #FFD20D,
+    contrast: #000
   )
 );
 
