@@ -1,0 +1,92 @@
+.hdd-form_select {
+  // Variable containing '&' to jump to current parent inside a child class.
+  $this: &;
+
+  display: flex;
+  position: relative;
+  align-items: center;
+
+  width: 100%;
+
+  transition: border-color $medium-transition $transition-cubic;
+  border: $form-select-border;
+  border-radius: $form-select-border-radius;
+
+  background: var(--hdd-white);
+
+  select {
+    flex-grow: 1;
+    padding: $form-select-padding;
+
+    border: 0;
+    background: none;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    &::-ms-expand {
+      display: none;
+    }
+  }
+
+  &:focus-within {
+    @extend .hdd-form_select, .is-focus;
+  }
+
+  &.is-focus {
+    border-color: var(--hdd-primary);
+
+    select {
+      color: var(--hdd-primary);
+    }
+
+    #{$this}_icon,
+    > svg,
+    > i {
+      opacity: 1;
+      color: var(--hdd-primary);
+    }
+  }
+
+  &.is-invalid {
+    border-color: var(--hdd-signal-red);
+
+    select {
+      color: var(--hdd-signal-red);
+    }
+
+    i {
+      opacity: 1;
+      color: var(--hdd-signal-red);
+    }
+  }
+
+  &.is-disabled {
+    background: var(--hdd-grey-light);
+    cursor: default;
+  }
+
+  &.has-icon {
+    select {
+      padding-left: calc(#{$form-input-icon-margin} + #{font-size(h2)} + #{$form-input-padding-left});
+    }
+  }
+
+  &_icon,
+  > svg,
+  > i {
+    position: absolute;
+    transition: color $medium-transition $transition-cubic, opacity $medium-transition $transition-cubic;
+    opacity: 0.44;
+    color: var(--hdd-black);
+    font-size: font-size(h2);
+
+    &:first-child {
+      left: $form-select-icon-margin;
+    }
+
+    &:last-child {
+      right: $form-select-icon-margin;
+    }
+  }
+}
