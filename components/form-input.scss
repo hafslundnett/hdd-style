@@ -1,0 +1,82 @@
+.hdd-form_input {
+  // Variable containing '&' to jump to current parent inside a child class.
+  $this: &;
+
+  display: flex;
+  box-sizing: border-box;
+
+  align-items: center;
+  padding: $form-input-padding;
+  transition: border-color $medium-transition $transition-cubic;
+  border: $form-input-border;
+  border-radius: $form-input-border-radius;
+
+  background: var(--hdd-white);
+
+  &:not(.is-invalid):focus-within {
+    @extend .hdd-form_input, .is-focus;
+  }
+
+  &.is-focus {
+    border-color: var(--hdd-primary);
+
+    #{$this}_icon,
+    svg,
+    i {
+      opacity: 1;
+      color: var(--hdd-primary);
+    }
+  }
+
+  &.is-invalid {
+    border-color: var(--hdd-signal-red);
+
+    i {
+      color: var(--hdd-signal-red);
+    }
+  }
+
+  &.is-disabled {
+    background: var(--hdd-grey-light);
+    cursor: default;
+  }
+
+  &_field,
+  > input,
+  > textarea {
+    // .is-p is font-properties, defined in typography
+    @extend .is-p;
+
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: transparent;
+
+    @include placeholder() {
+      color: var(--hdd-grey);
+    }
+  }
+
+  > textarea {
+    height: 16px;
+    min-height: 16px;
+    resize: vertical;
+  }
+
+  &_icon,
+  > svg,
+  > i {
+    transition: color $medium-transition $transition-cubic, opacity $medium-transition $transition-cubic;
+    opacity: 0.44;
+    color: var(--hdd-black);
+    font-size: font-size(h2);
+
+    &:first-child {
+      margin-right: $form-input-icon-margin;
+    }
+
+    &:last-child {
+      margin-left: $form-input-icon-margin;
+    }
+  }
+}
