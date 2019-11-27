@@ -4,7 +4,7 @@ $margin-spacing: (
   "margin-1": (
     margin: 8px,
     alt-labels: (
-      primary-margin
+      primary
     )
   ),
   "margin-2": (
@@ -37,7 +37,7 @@ $padding-spacing: (
   "padding-1": (
     padding: 8px,
     alt-labels: (
-      primary-padding
+      primary
     )
   ),
   "padding-2": (
@@ -65,3 +65,5 @@ $padding-spacing: (
     padding: 72px
   )
 );
+
+$all-spacing: map-merge($margin-spacing, $padding-spacing);

@@ -1,1 +1,49 @@
 @import "../variables/spacing";
+
+.hdd {
+  @each $label, $map in $all-spacing {
+    $margin: map-get($map, margin);
+    $padding: map-get($map, padding);
+		$alt-labels: map-get($map, alt-labels);
+		
+  	$labels: ($label);
+  	@if $alt-labels {
+  		@each $label in $alt-labels {
+  			$labels: append($labels, $label);
+  		}
+  	}
+
+    @each $label in $labels {
+      &-spacing-#{$label} {
+        margin: $margin;
+        padding: $padding;
+      }
+    }
+  }
+}
+
+// Making CSS-variables for all spacing
+@each $label, $map in $all-spacing {
+	$margin: map-get($map, margin);
+	$padding: map-get($map, padding);
+	$alt-labels: map-get($map, alt-labels);
+	
+	$labels: ($label);
+	@if $alt-labels {
+		@each $label in $alt-labels {
+			$labels: append($labels, $label);
+		}
+	}
+
+  @each $label in $labels {
+		@if $margin {
+			:root {
+				--hdd-spacing-#{$label}: #{$margin};
+			}
+		} @else {
+			:root {
+				--hdd-spacing-#{$label}: #{$padding};
+			}
+		}
+  }
+}
