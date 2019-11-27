@@ -3,7 +3,7 @@ name: Spacing
 category: Utilities
 ---
 
-Spatial system that follows 8pt. This provides predictability and is visually more comfortable to look at.
+Spatial system that follows multiplication of 0.5rem (1rem = 16px). This provides predictability and is visually more comfortable to look at. Every spacing can be used directly on margins and paddings by using the css-variable for a spacing: `var(--hdd-spacing-$name)`. For example for primary: `padding: var(--hdd-spacing-primary)`
 
 ## All spacing sizes
 
