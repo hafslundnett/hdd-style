@@ -18,21 +18,21 @@ The primary color is blue and work as an important element for building the iden
 ```primary-colors.html
 <div style="padding: 15px 15px 0 15px; background: white;">
   <h2 style="padding: 20px 10px;">Color</h2>
-  <span class="hdd-background-blue color-example" style="height: 100px; width: 100px;"></span>
-  <span class="hdd-background-blue-dark color-example"></span>
-  <span class="hdd-background-blue-light1 color-example"></span>
-  <span class="hdd-background-blue-light2 color-example"></span>
-  <span class="hdd-background-blue-light3 color-example"></span>
-  <span class="hdd-background-blue-light4 color-example"></span>
+  <span style="background: var(--hdd-blue); height: 100px; width: 100px;" class="color-example"></span>
+  <span style="background: var(--hdd-blue-dark)" class="color-example"></span>
+  <span style="background: var(--hdd-blue-light1)" class="color-example"></span>
+  <span style="background: var(--hdd-blue-light2)" class="color-example"></span>
+  <span style="background: var(--hdd-blue-light3)" class="color-example"></span>
+  <span style="background: var(--hdd-blue-light4)" class="color-example"></span>
 </div>
 <div style="padding: 0 15px 15px 15px; background: white;">
   <h2 style="padding: 20px 10px;">Contrast</h2>
-  <span class="hdd-contrast-background-blue color-example" style="height: 100px; width: 100px;"></span>
-  <span class="hdd-contrast-background-blue-dark color-example"></span>
-  <span class="hdd-contrast-background-blue-light1 color-example"></span>
-  <span class="hdd-contrast-background-blue-light2 color-example"></span>
-  <span class="hdd-contrast-background-blue-light3 color-example"></span>
-  <span class="hdd-contrast-background-blue-light4 color-example"></span>
+  <span style="background: var(--hdd-contrast-blue); height: 100px; width: 100px;" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-blue-dark)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-blue-light1)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-blue-light2)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-blue-light3)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-blue-light4)" class="color-example"></span>
 </div>
 ```
 
@@ -55,27 +55,27 @@ The grayscale should be used in addition to the primary colors of non-printable 
 ```grey-colors.html
 <div style="padding: 15px 15px 0 15px; background: white;">
   <h2 style="padding: 20px 10px;">Color</h2>
-  <span class="hdd-background-black color-example"></span>
-  <span class="hdd-background-font-color color-example"></span>
-  <span class="hdd-background-grey-dark color-example"></span>
-  <span class="hdd-background-grey-medium color-example"></span>
-  <span class="hdd-background-grey color-example"></span>
-  <span class="hdd-background-grey-border color-example"></span>
-  <span class="hdd-background-grey-light color-example"></span>
-  <span class="hdd-background-grey-background color-example"></span>
-  <span class="hdd-background-white color-example"></span>
+  <span style="background: var(--hdd-black)" class="color-example"></span>
+  <span style="background: var(--hdd-font-color)" class="color-example"></span>
+  <span style="background: var(--hdd-grey-dark)" class="color-example"></span>
+  <span style="background: var(--hdd-grey-medium)" class="color-example"></span>
+  <span style="background: var(--hdd-grey)" class="color-example"></span>
+  <span style="background: var(--hdd-grey-border)" class="color-example"></span>
+  <span style="background: var(--hdd-grey-light)" class="color-example"></span>
+  <span style="background: var(--hdd-grey-background)" class="color-example"></span>
+  <span style="background: var(--hdd-white)" class="color-example"></span>
 </div>
 <div style="padding: 0 15px 15px 15px; background: white;">
   <h2 style="padding: 20px 10px;">Contrast</h2>
-  <span class="hdd-contrast-background-black color-example"></span>
-  <span class="hdd-contrast-background-font-color color-example"></span>
-  <span class="hdd-contrast-background-grey-dark color-example"></span>
-  <span class="hdd-contrast-background-grey-medium color-example"></span>
-  <span class="hdd-contrast-background-grey color-example"></span>
-  <span class="hdd-contrast-background-grey-border color-example"></span>
-  <span class="hdd-contrast-background-grey-light color-example"></span>
-  <span class="hdd-contrast-background-grey-background color-example"></span>
-  <span class="hdd-contrast-background-white color-example"></span>
+  <span style="background: var(--hdd-contrast-black)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-font-color)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-grey-dark)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-grey-medium)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-grey)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-grey-border)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-grey-light)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-grey-background)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-white)" class="color-example"></span>
 </div>
 ```
 
@@ -89,15 +89,15 @@ Signal colors should only be used in meaningful (never being identity-bearing or
 ```signal-colors.html
 <div style="padding: 15px 15px 0 15px; background: white;">
   <h2 style="padding: 20px 10px;">Color</h2>
-  <span class="hdd-background-signal-green color-example"></span>
-  <span class="hdd-background-signal-yellow color-example"></span>
-  <span class="hdd-background-signal-red color-example"></span>
+  <span style="background: var(--hdd-signal-green)" class="color-example"></span>
+  <span style="background: var(--hdd-signal-yellow)" class="color-example"></span>
+  <span style="background: var(--hdd-signal-red)" class="color-example"></span>
 </div>
 <div style="padding: 0 15px 15px 15px; background: white;">
   <h2 style="padding: 20px 10px;">Contrast</h2>
-  <span class="hdd-contrast-background-signal-green color-example"></span>
-  <span class="hdd-contrast-background-signal-yellow color-example"></span>
-  <span class="hdd-contrast-background-signal-red color-example"></span>
+  <span style="background: var(--hdd-contrast-signal-green)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-signal-yellow)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-signal-red)" class="color-example"></span>
 </div>
 ```
 
@@ -116,25 +116,25 @@ These colors are chosen to be used for infographics. If necessary, these colors 
 ```data-colors.html
 <div style="padding: 15px 15px 0 15px; background: white;">
   <h2 style="padding: 20px 10px;">Color</h2>
-  <span class="hdd-background-data-navy color-example"></span>
-  <span class="hdd-background-data-marine color-example"></span>
-  <span class="hdd-background-data-blue color-example"></span>
-  <span class="hdd-background-data-turquoise color-example"></span>
-  <span class="hdd-background-data-seagreen color-example"></span>
-  <span class="hdd-background-data-green color-example"></span>
-  <span class="hdd-background-data-orange color-example"></span>
-  <span class="hdd-background-data-yellow color-example"></span>
+  <span style="background: var(--hdd-data-navy)" class="color-example"></span>
+  <span style="background: var(--hdd-data-marine)" class="color-example"></span>
+  <span style="background: var(--hdd-data-blue)" class="color-example"></span>
+  <span style="background: var(--hdd-data-turquoise)" class="color-example"></span>
+  <span style="background: var(--hdd-data-seagreen)" class="color-example"></span>
+  <span style="background: var(--hdd-data-green)" class="color-example"></span>
+  <span style="background: var(--hdd-data-orange)" class="color-example"></span>
+  <span style="background: var(--hdd-data-yellow)" class="color-example"></span>
 </div>
 <div style="padding: 0 15px 15px 15px; background: white;">
   <h2 style="padding: 20px 10px;">Contrast</h2>
-  <span class="hdd-contrast-background-data-navy color-example"></span>
-  <span class="hdd-contrast-background-data-marine color-example"></span>
-  <span class="hdd-contrast-background-data-blue color-example"></span>
-  <span class="hdd-contrast-background-data-turquoise color-example"></span>
-  <span class="hdd-contrast-background-data-seagreen color-example"></span>
-  <span class="hdd-contrast-background-data-green color-example"></span>
-  <span class="hdd-contrast-background-data-orange color-example"></span>
-  <span class="hdd-contrast-background-data-yellow color-example"></span>
+  <span style="background: var(--hdd-contrast-data-navy)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-data-marine)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-data-blue)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-data-turquoise)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-data-seagreen)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-data-green)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-data-orange)" class="color-example"></span>
+  <span style="background: var(--hdd-contrast-data-yellow)" class="color-example"></span>
 </div>
 ```
 

@@ -3,9 +3,6 @@
 
 	<head>
 		<style>
-					.color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px; box-shadow: var(--hdd-shadow-strong);
-}
 		</style>
 
 		<style>
@@ -56,35 +53,66 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div style="padding: 15px 15px 0 15px; background: white;">
-  <h2 style="padding: 20px 10px;">Color</h2>
-  <span style="background: var(--hdd-signal-green)" class="color-example"></span>
-  <span style="background: var(--hdd-signal-yellow)" class="color-example"></span>
-  <span style="background: var(--hdd-signal-red)" class="color-example"></span>
-</div>
-<div style="padding: 0 15px 15px 15px; background: white;">
-  <h2 style="padding: 20px 10px;">Contrast</h2>
-  <span style="background: var(--hdd-contrast-signal-green)" class="color-example"></span>
-  <span style="background: var(--hdd-contrast-signal-yellow)" class="color-example"></span>
-  <span style="background: var(--hdd-contrast-signal-red)" class="color-example"></span>
-</div>
+    	<h1 style="margin-bottom: var(--hdd-spacing-3)">Header</h1>
+
+	<div class="hdd-tags" style="margin-bottom: var(--hdd-spacing-primary)">
+		<span class="hdd-tags_item">2019<i class="fal fa-times"></i></span>
+		<span class="hdd-tags_item">2018<i class="fal fa-times"></i></span>
+		<span class="hdd-tags_item">2017<i class="fal fa-times"></i></span>
+	</div>
+
+	<div class="hdd-card" style="margin-bottom: var(--hdd-spacing-primary);">
+		<div class="hdd-card_header">
+			<div class="hdd-card_header_text">
+				<div class="hdd-card_title">A card should have a title</div>
+			</div>
+		</div>
+		<div class="hdd-card_content">
+			<p>A card content.</p>
+		</div>
+	</div>
+	
+	<div class="hdd-card" style="margin-bottom: var(--hdd-spacing-primary)">
+		<div class="hdd-card_header">
+			<div class="hdd-card_header_text">
+				<div class="hdd-card_title">A card should have a title</div>
+			</div>
+		</div>
+		<div class="hdd-card_content">
+			<p>A card content.</p>
+		</div>
+	</div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div style="padding: 15px 15px 0 15px; background: white;">
-  <h2 style="padding: 20px 10px;">Color</h2>
-  <span style="background: var(--hdd-signal-green)" class="color-example"></span>
-  <span style="background: var(--hdd-signal-yellow)" class="color-example"></span>
-  <span style="background: var(--hdd-signal-red)" class="color-example"></span>
-</div>
-<div style="padding: 0 15px 15px 15px; background: white;">
-  <h2 style="padding: 20px 10px;">Contrast</h2>
-  <span style="background: var(--hdd-contrast-signal-green)" class="color-example"></span>
-  <span style="background: var(--hdd-contrast-signal-yellow)" class="color-example"></span>
-  <span style="background: var(--hdd-contrast-signal-red)" class="color-example"></span>
-</div></script>
-			<script type="text/x-stylemark" data-language="css">.color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px; box-shadow: var(--hdd-shadow-strong);
-}</script>
+			<script type="text/x-stylemark" data-language="html">	<h1 style="margin-bottom: var(--hdd-spacing-3)">Header</h1>
+
+	<div class="hdd-tags" style="margin-bottom: var(--hdd-spacing-primary)">
+		<span class="hdd-tags_item">2019<i class="fal fa-times"></i></span>
+		<span class="hdd-tags_item">2018<i class="fal fa-times"></i></span>
+		<span class="hdd-tags_item">2017<i class="fal fa-times"></i></span>
+	</div>
+
+	<div class="hdd-card" style="margin-bottom: var(--hdd-spacing-primary);">
+		<div class="hdd-card_header">
+			<div class="hdd-card_header_text">
+				<div class="hdd-card_title">A card should have a title</div>
+			</div>
+		</div>
+		<div class="hdd-card_content">
+			<p>A card content.</p>
+		</div>
+	</div>
+	
+	<div class="hdd-card" style="margin-bottom: var(--hdd-spacing-primary)">
+		<div class="hdd-card_header">
+			<div class="hdd-card_header_text">
+				<div class="hdd-card_title">A card should have a title</div>
+			</div>
+		</div>
+		<div class="hdd-card_content">
+			<p>A card content.</p>
+		</div>
+	</div></script>
 
 		<!--
 			Vanilla JS
@@ -117,10 +145,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-colors-preview-signal-colors', []);
+						module = angular.module('stylemark-spacing-spacing-realistic', []);
 					}
 
-					module.controller('stylemark-colors-preview-signal-colors-' + index, function($scope) {
+					module.controller('stylemark-spacing-spacing-realistic-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

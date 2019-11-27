@@ -1,39 +1,5 @@
 @import '../variables/colors';
 
-.hdd {
-  @each $label, $map in $all-colors {
-    $color: color($label);
-    $contrast: map-get($map, contrast);
-
-    $alt-labels: map-get($map, alt-labels);
-    $labels: ($label);
-
-    @if $alt-labels {
-      @each $label in $alt-labels {
-        $labels: append($labels, $label);
-      }
-    }
-
-    @each $label in $labels {
-      &-color-#{$label} {
-        color: $color;
-      }
-
-      &-contrast-color-#{$label} {
-        color: $contrast;
-      }
-
-      &-background-#{$label} {
-        background: $color;
-      }
-
-      &-contrast-background-#{$label} {
-        background: $contrast;
-      }
-    }
-  }
-}
-
 @mixin color-modifiers($list: ('primary', 'warn', 'danger', 'safe'), $main-property: 'background', $contrast-property: '', $selector: '', $color-set: $all-colors) {
   @each $label in $list {
     $map: color-map($label, $color-set);

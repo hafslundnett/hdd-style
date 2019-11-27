@@ -3,8 +3,11 @@
 
 	<head>
 		<style>
-					.color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px; box-shadow: var(--hdd-shadow-strong);
+					.color-example-blue {
+  height: 100px; width: 100px; box-shadow: var(--hdd-shadow-strong); border: solid 1px var(--hdd-blue); padding: var(--hdd-spacing-to);
+}
+.color-example-dark {
+  height: 100px; width: 100px; box-shadow: var(--hdd-shadow-strong); border: solid 1px var(--hdd-blue-dark); 
 }
 		</style>
 
@@ -56,34 +59,19 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div style="padding: 15px 15px 0 15px; background: white;">
-  <h2 style="padding: 20px 10px;">Color</h2>
-  <span style="background: var(--hdd-signal-green)" class="color-example"></span>
-  <span style="background: var(--hdd-signal-yellow)" class="color-example"></span>
-  <span style="background: var(--hdd-signal-red)" class="color-example"></span>
-</div>
-<div style="padding: 0 15px 15px 15px; background: white;">
-  <h2 style="padding: 20px 10px;">Contrast</h2>
-  <span style="background: var(--hdd-contrast-signal-green)" class="color-example"></span>
-  <span style="background: var(--hdd-contrast-signal-yellow)" class="color-example"></span>
-  <span style="background: var(--hdd-contrast-signal-red)" class="color-example"></span>
+    <div class="color-example-dark">
+	<div class="color-example-blue">Some spacing</div>
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div style="padding: 15px 15px 0 15px; background: white;">
-  <h2 style="padding: 20px 10px;">Color</h2>
-  <span style="background: var(--hdd-signal-green)" class="color-example"></span>
-  <span style="background: var(--hdd-signal-yellow)" class="color-example"></span>
-  <span style="background: var(--hdd-signal-red)" class="color-example"></span>
-</div>
-<div style="padding: 0 15px 15px 15px; background: white;">
-  <h2 style="padding: 20px 10px;">Contrast</h2>
-  <span style="background: var(--hdd-contrast-signal-green)" class="color-example"></span>
-  <span style="background: var(--hdd-contrast-signal-yellow)" class="color-example"></span>
-  <span style="background: var(--hdd-contrast-signal-red)" class="color-example"></span>
+			<script type="text/x-stylemark" data-language="html"><div class="color-example-dark">
+	<div class="color-example-blue">Some spacing</div>
 </div></script>
-			<script type="text/x-stylemark" data-language="css">.color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px; box-shadow: var(--hdd-shadow-strong);
+			<script type="text/x-stylemark" data-language="css">.color-example-blue {
+  height: 100px; width: 100px; box-shadow: var(--hdd-shadow-strong); border: solid 1px var(--hdd-blue); padding: var(--hdd-spacing-to);
+}
+.color-example-dark {
+  height: 100px; width: 100px; box-shadow: var(--hdd-shadow-strong); border: solid 1px var(--hdd-blue-dark); 
 }</script>
 
 		<!--
@@ -117,10 +105,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-colors-preview-signal-colors', []);
+						module = angular.module('stylemark-spacing-primary-colors', []);
 					}
 
-					module.controller('stylemark-colors-preview-signal-colors-' + index, function($scope) {
+					module.controller('stylemark-spacing-primary-colors-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});
