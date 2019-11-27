@@ -12,13 +12,20 @@ A select component lets a user choose between a set of options.
 <div class="hdd-form_field">
   <label class="hdd-form_field_label" for="select-alt1">Select Option</label>
   <div class="hdd-form_select">
-    <select id="select-alt1" placeholder="Placeholder text">
+    <select id="select-alt1">
+      <option value="" class="placeholder">Placeholder</option>
       <option>Alternative 1</option>
       <option>Alternative 2</option>
     </select>
     <i class="fal fa-angle-down"></i>
   </div>
 </div>
+
+
+    <select placeholder="Placeholder text">
+      <option>Alternative 1</option>
+      <option>Alternative 2</option>
+    </select>
 
 <div class="hdd-form_field">
   <label class="hdd-form_field_label" for="select-alt1">Select Option with icon</label>
