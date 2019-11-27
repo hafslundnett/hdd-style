@@ -5,7 +5,9 @@ category: Utilities
 
 Spatial system that follows 8pt. This provides predictability and is visually more comfortable to look at.
 
-- `--hdd-spacing-1`
+## All spacing sizes
+
+- `--hdd-spacing-1` / `--hdd-spacing-primary`
 - `--hdd-spacing-2`
 - `--hdd-spacing-3`
 - `--hdd-spacing-4`
@@ -13,28 +15,13 @@ Spatial system that follows 8pt. This provides predictability and is visually mo
 - `--hdd-spacing-6`
 - `--hdd-spacing-7`
 - `--hdd-spacing-8`
-- `--hdd-spacing-9`
 
 ```spacing.html
 <div>
-	<div style="padding: var(--hdd-spacing-9)" class="spacing-circle">
+	<div style="padding: var(--hdd-spacing-1)" class="spacing-circle">
 		<span class="spacing-circle-mini"></span>
 	</div>
-	<div style="padding: var(--hdd-spacing-8)" class="spacing-circle">
-		<span class="spacing-circle-mini"></span>
-	</div>
-	<div style="padding: var(--hdd-spacing-7)" class="spacing-circle">
-		<span class="spacing-circle-mini"></span>
-	</div>
-</div>
-<div>
-	<div style="padding: var(--hdd-spacing-6)" class="spacing-circle">
-		<span class="spacing-circle-mini"></span>
-	</div>
-	<div style="padding: var(--hdd-spacing-5)" class="spacing-circle">
-		<span class="spacing-circle-mini"></span>
-	</div>
-	<div style="padding: var(--hdd-spacing-4)" class="spacing-circle">
+	<div style="padding: var(--hdd-spacing-2)" class="spacing-circle">
 		<span class="spacing-circle-mini"></span>
 	</div>
 </div>
@@ -42,10 +29,23 @@ Spatial system that follows 8pt. This provides predictability and is visually mo
 	<div style="padding: var(--hdd-spacing-3)" class="spacing-circle">
 		<span class="spacing-circle-mini"></span>
 	</div>
-	<div style="padding: var(--hdd-spacing-2)" class="spacing-circle">
+	<div style="padding: var(--hdd-spacing-4)" class="spacing-circle">
 		<span class="spacing-circle-mini"></span>
 	</div>
-	<div style="padding: var(--hdd-spacing-1)" class="spacing-circle">
+</div>
+<div>
+	<div style="padding: var(--hdd-spacing-5)" class="spacing-circle">
+		<span class="spacing-circle-mini"></span>
+	</div>
+	<div style="padding: var(--hdd-spacing-6)" class="spacing-circle">
+		<span class="spacing-circle-mini"></span>
+	</div>
+</div>
+<div>
+	<div style="padding: var(--hdd-spacing-7)" class="spacing-circle">
+		<span class="spacing-circle-mini"></span>
+	</div>
+	<div style="padding: var(--hdd-spacing-8)" class="spacing-circle">
 		<span class="spacing-circle-mini"></span>
 	</div>
 </div>
@@ -60,3 +60,37 @@ Spatial system that follows 8pt. This provides predictability and is visually mo
 }
 ```
 
+## Spacing in practice
+NB! Work in progress.
+
+```spacing-realistic.html
+	<h1 style="margin-bottom: var(--hdd-spacing-3)">Header</h1>
+
+	<div class="hdd-tags" style="margin-bottom: var(--hdd-spacing-primary)">
+		<span class="hdd-tags_item">2019<i class="fal fa-times"></i></span>
+		<span class="hdd-tags_item">2018<i class="fal fa-times"></i></span>
+		<span class="hdd-tags_item">2017<i class="fal fa-times"></i></span>
+	</div>
+
+	<div class="hdd-card" style="margin-bottom: var(--hdd-spacing-primary);">
+		<div class="hdd-card_header">
+			<div class="hdd-card_header_text">
+				<div class="hdd-card_title">A card should have a title</div>
+			</div>
+		</div>
+		<div class="hdd-card_content">
+			<p>A card content.</p>
+		</div>
+	</div>
+	
+	<div class="hdd-card" style="margin-bottom: var(--hdd-spacing-primary)">
+		<div class="hdd-card_header">
+			<div class="hdd-card_header_text">
+				<div class="hdd-card_title">A card should have a title</div>
+			</div>
+		</div>
+		<div class="hdd-card_content">
+			<p>A card content.</p>
+		</div>
+	</div>
+```
