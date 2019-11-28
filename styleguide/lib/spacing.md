@@ -61,36 +61,29 @@ Spatial system that follows multiplication of 0.5rem (1rem = 16px). This provide
 ```
 
 ## Spacing in practice
-NB! Work in progress.
+Standard spacing should be used when possible to standardized the separation between elements, as seen in the example below. Exceptions from this should be pre-approved by designer.
 
 ```spacing-realistic.html
-	<h1 style="margin-bottom: var(--hdd-spacing-3)">Header</h1>
-
-	<div class="hdd-tags" style="margin-bottom: var(--hdd-spacing-primary)">
-		<span class="hdd-tags_item">2019<i class="fal fa-times"></i></span>
-		<span class="hdd-tags_item">2018<i class="fal fa-times"></i></span>
-		<span class="hdd-tags_item">2017<i class="fal fa-times"></i></span>
-	</div>
-
-	<div class="hdd-card" style="margin-bottom: var(--hdd-spacing-primary);">
-		<div class="hdd-card_header">
-			<div class="hdd-card_header_text">
-				<div class="hdd-card_title">A card should have a title</div>
-			</div>
-		</div>
-		<div class="hdd-card_content">
-			<p>A card content.</p>
-		</div>
-	</div>
+<div style="padding: var(--hdd-spacing-3); background: var(--hdd-white); border-radius: 5px;">
+	<h1 style="margin-bottom: var(--hdd-spacing-3);">
+		Gjennomfør handling for ticket #8
+	</h1>
 	
-	<div class="hdd-card" style="margin-bottom: var(--hdd-spacing-primary)">
-		<div class="hdd-card_header">
-			<div class="hdd-card_header_text">
-				<div class="hdd-card_title">A card should have a title</div>
-			</div>
-		</div>
-		<div class="hdd-card_content">
-			<p>A card content.</p>
+	<div class="hdd-form_field" style="margin-bottom: var(--hdd-spacing-2)">
+		<label class="hdd-form_field_label" for="select-alt1">Målepunkt</label>
+		<div class="hdd-form_select">
+			<select id="select-alt2">
+				<option default>Velg handling</option>
+				<option>Alternative 1</option>
+				<option>Alternative 2</option>
+			</select>
+			<i class="fal fa-angle-down"></i>
 		</div>
 	</div>
+
+	<div>
+		<button class="hdd-button is-secondary" style="margin-right: var(--hdd-spacing-2);">Avbryt</button>
+		<button class="hdd-button">Gjennomfør handling</button>
+	</div>
+</div>
 ```
