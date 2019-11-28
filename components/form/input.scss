@@ -1,3 +1,7 @@
+$form-input-padding: $form-input-padding-left 0.9rem;
+$form-input-border-radius: $border-radius;
+$form-input-border: 1px solid var(--hdd-grey);
+
 .hdd-form_input {
   // Variable containing '&' to jump to current parent inside a child class.
   $this: &;

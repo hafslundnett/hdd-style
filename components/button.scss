@@ -1,3 +1,11 @@
+ $button-radius: $border-radius;
+ $button-solid-border-width: 1px;
+ $button-outlined-border-width: 1px;
+ $button-padding: 0.7rem 1.8rem;
+ $button-padding-small: 0.5rem 1rem;
+ $button-padding-icon: 1.25rem;
+ $button-icon-padding: 0.5rem 0.9rem;
+
 .hdd-button {
   // .is-p is font-properties, defined in typography.
   @extend .is-p;

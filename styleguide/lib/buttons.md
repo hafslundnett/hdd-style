@@ -3,7 +3,9 @@ name: Button
 category: Components
 ---
 
-Buttons should be used across the different internal services. Changing the color of a button to convey purpose is not ideal as people with vision impairments may struggle. Usage of other colors should be properly discussed and the context clear.
+The buttons are to be used across the various internal systems. If there is only one button on the current screen, this should always be a primary button. When you use multiple buttons, the primary button appears on the right and any secondary buttons appear on the left. Secondary button should not be used alone on a screen.
+
+Changing the color of a button to convey purpose is not ideal as people with vision impairments may struggle. Usage of other colors should be properly discussed and the context clear.
 
 ## Primary button
 `hdd-button`
@@ -36,7 +38,7 @@ The secondary button should never be used alone on a page.
 ## Action button
 `hdd-button`.`has-icon`
 
-Action buttons are for prompting a user action that will affect another part.
+Action buttons are specially designed for the user to take an action that will affect something else.
 
 ```action-button.html
 <button class="hdd-button has-icon-left"><i class="fal fa-arrow-left"></i> Back</button>

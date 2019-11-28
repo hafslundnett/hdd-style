@@ -1,3 +1,11 @@
+$small-menu-tip-size: 5px;
+$small-menu-padding: 0.5rem 1rem;
+$small-menu-width: 150px;
+$small-menu-menu-padding: 0.75rem;
+$small-menu-tip-right-offset: 1rem;
+$small-menu-tip-left-offset: 1rem;
+$small-menu-border-radius: $border-radius;
+
 .hdd-small-menu {
   // Variable containing '&' to jump to current parent inside a child class.   
   $this: &;

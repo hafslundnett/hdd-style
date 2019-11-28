@@ -1,3 +1,12 @@
+$tooltip-tip-size: 10px;
+$tooltip-padding: 0.5rem 1rem;
+$tooltip-width: 150px;
+$tooltip-menu-side-padding: 0.75rem;
+$tooltip-menu-padding: 0.5rem 1rem;
+$tooltip-tip-right-offset: 1rem;
+$tooltip-tip-left-offset: 1rem;
+$tooltip-border-radius: $border-radius;
+
 .hdd-tooltip {
   // Variable containing '&' to jump to current parent inside a child class.
   $this: &;

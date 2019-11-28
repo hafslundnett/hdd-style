@@ -1,3 +1,10 @@
+$dropdown-border-radius: $border-radius;
+$dropdown-border: 1px solid var(--hdd-grey);
+$dropdown-margin: 20px;
+$dropdown-spacing-element: 4px;
+$dropdown-content-padding: 0.5rem 0;
+$dropdown-item-padding: 0.5rem 0 0.5rem 1rem;
+
 .hdd-dropdown {
   position: relative;
 
