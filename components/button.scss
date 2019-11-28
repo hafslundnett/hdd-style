@@ -2,7 +2,6 @@
 
  $button-padding: 0.625rem 1rem;
  $button-padding-secondary: 0.563rem 1rem;
- $button-padding-small: 0.5rem 1rem;
  $button-padding-icon: 0.563rem 1rem;
  $button-icon-padding: 0.5rem 0.9rem;
 
@@ -11,8 +10,6 @@
   @extend .is-p;
   // .is-primary is the default for any hdd-button
   @extend .is-primary;
-  // Colors available for badge
-  @include color-modifiers(('primary', 'danger'), 'background', 'color');
 
   &.is-primary {
     display: inline-block;
@@ -148,14 +145,6 @@
         margin-left: 0.5rem;
       }
     }
-  }
-
-  &.is-small {
-    // .is-p-small is font-properties, defined in typography.
-    @extend .is-p-small;
-    @extend .hdd-button, .is-primary;
-
-    padding: $button-padding-small;
   }
 
   // For buttons with only icons

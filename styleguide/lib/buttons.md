@@ -16,9 +16,6 @@ If only one button exists on a page, it should always be a primary button.
 <button class="hdd-button" style="margin-right: var(--hdd-spacing-1)">Primary</button>
 <button class="hdd-button" disabled style="margin-right: var(--hdd-spacing-1)">Disabled</button>
 <button class="hdd-button is-loading" style="margin-right: var(--hdd-spacing-1)">Loading</button>
-<button class="hdd-button is-small" style="margin-right: var(--hdd-spacing-1)">Primary small</button>
-<button class="hdd-button is-small" disabled style="margin-right: var(--hdd-spacing-1)">Disabled</button>
-<button class="hdd-button is-small is-loading" style="margin-right: var(--hdd-spacing-1)">Loading</button>
 ```
 
 ## Secondary button
@@ -30,9 +27,6 @@ The secondary button should never be used alone on a page.
 <button class="hdd-button is-secondary" style="margin-right: var(--hdd-spacing-1)">Secondary</button>
 <button class="hdd-button is-secondary" style="margin-right: var(--hdd-spacing-1)" disabled>Disabled</button>
 <button class="hdd-button is-secondary is-loading" style="margin-right: var(--hdd-spacing-1)">Loading</button>
-<button class="hdd-button is-small is-secondary" style="margin-right: var(--hdd-spacing-1)">Secondary small</button>
-<button class="hdd-button is-small is-secondary" style="margin-right: var(--hdd-spacing-1)" disabled>Disabled</button>
-<button class="hdd-button is-small is-secondary style="margin-right: var(--hdd-spacing-1)" is-loading">Loading</button>
 ```
 
 ## Action button
@@ -44,7 +38,6 @@ Action buttons are specially designed for the user to take an action that will a
 <button class="hdd-button has-icon-left" style="margin-right: var(--hdd-spacing-1)"><i class="fal fa-cog"></i>Action button</button>
 <button class="hdd-button has-icon-left is-secondary" style="margin-right: var(--hdd-spacing-1)"><i class="fal fa-cog"></i>Action button</button>
 <button class="hdd-button has-icon-left" disabled style="margin-right: var(--hdd-spacing-1)"><i class="fal fa-cog"></i>Action button</button>
-<button class="hdd-button has-icon-left is-danger" style="margin-right: var(--hdd-spacing-1)"><i class="fal fa-trash-alt"></i>Delete</button>
 ```
 
 ## Icon-button
@@ -71,7 +64,6 @@ A button that only contains an icon and should be used when an icon is used as a
 | :--- | :--- |
 | `is-primary` | Sets the color of the given button to the primary color |
 | `is-secondary` | Sets the color of the given button to the secondary color |
-| `is-small` | Sets the given button to it's small state |
 | `has-icon-right` | Adds padding to the right of icon |
 | `has-icon-left` | Adds padding to the left of icon |
 
