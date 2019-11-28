@@ -61,7 +61,7 @@ Spatial system that follows multiplication of 0.5rem (1rem = 16px). This provide
 ```
 
 ## Spacing in practice
-NB! Work in progress.
+Standard spacing should be used when possible to standardized the separation between elements, as seen in the example below. Exceptions from this should be pre-approved by designer.
 
 ```spacing-realistic.html
 <div style="padding: var(--hdd-spacing-3); background: var(--hdd-white); border-radius: 5px;">
