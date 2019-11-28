@@ -32,11 +32,12 @@
       color: var(--hdd-grey);
     }
 
-    // Changes background on hover/active/focus
+    // Changes button-text on hover/active/focus
     &:not([disabled]) {
       &:hover:not(.no-hover),
       &.is-hovering {
         background: var(--hdd-primary);
+        color: var(--hdd-white);
       }
 
       &:active:not(.no-active),
@@ -44,22 +45,22 @@
       &:focus:not(.no-focus),
       &.is-focusing {
         background: var(--hdd-blue-dark);
+        color: var(--hdd-white);
       }
     }
 
-    // Consider finding a better way of doing this
     // Changes spinner-color on hover/active/focus
     &.is-loading::after {
       color: var(--hdd-primary) !important;
     }
-
+    
+    &:hover:not(.no-hover),
+    &.is-hovering,
     &:active:not(.no-active),
     &.is-active,
     &:focus:not(.no-focus),
-    &.is-focusing,
-    &.is-loading::after,
-    &:hover:not(.no-hover),
-    &.is-hovering {
+    &.is-focusing {
+      &.is-loading::after {
         color: var(--hdd-white) !important;
       }
     }
