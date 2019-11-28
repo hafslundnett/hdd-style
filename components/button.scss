@@ -32,32 +32,34 @@
       color: var(--hdd-grey);
     }
 
+    // Changes background on hover/active/focus
     &:not([disabled]) {
       &:hover:not(.no-hover),
-      &.is-hovering,
-      &:focus:not(.no-focus),
-      &.is-focusing {
-        border-color: var(--hdd-primary);
+      &.is-hovering {
         background: var(--hdd-primary);
-        color: var(--hdd-white);
       }
 
       &:active:not(.no-active),
-      &.is-active {
-        border-color: var(--hdd-blue-dark);
+      &.is-active,
+      &:focus:not(.no-focus),
+      &.is-focusing {
         background: var(--hdd-blue-dark);
-        color: var(--hdd-white);
       }
     }
 
     // Consider finding a better way of doing this
-    // Changes spinner-color on hower
+    // Changes spinner-color on hover/active/focus
     &.is-loading::after {
       color: var(--hdd-primary) !important;
     }
 
-    &:hover {
-      &.is-loading::after {
+    &:active:not(.no-active),
+    &.is-active,
+    &:focus:not(.no-focus),
+    &.is-focusing,
+    &.is-loading::after,
+    &:hover:not(.no-hover),
+    &.is-hovering {
         color: var(--hdd-white) !important;
       }
     }
