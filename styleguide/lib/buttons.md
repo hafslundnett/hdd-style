@@ -13,12 +13,12 @@ Changing the color of a button to convey purpose is not ideal as people with vis
 If only one button exists on a page, it should always be a primary button. 
 
 ```primary-button.html
-<button class="hdd-button">Primary</button>
-<button class="hdd-button" disabled>Disabled</button>
-<button class="hdd-button is-loading">Loading</button>
-<button class="hdd-button is-small">Primary small</button>
-<button class="hdd-button is-small" disabled>Disabled</button>
-<button class="hdd-button is-small is-loading">Loading</button>
+<button class="hdd-button" style="margin-right: var(--hdd-spacing-1)">Primary</button>
+<button class="hdd-button" disabled style="margin-right: var(--hdd-spacing-1)">Disabled</button>
+<button class="hdd-button is-loading" style="margin-right: var(--hdd-spacing-1)">Loading</button>
+<button class="hdd-button is-small" style="margin-right: var(--hdd-spacing-1)">Primary small</button>
+<button class="hdd-button is-small" disabled style="margin-right: var(--hdd-spacing-1)">Disabled</button>
+<button class="hdd-button is-small is-loading" style="margin-right: var(--hdd-spacing-1)">Loading</button>
 ```
 
 ## Secondary button
@@ -27,12 +27,12 @@ If only one button exists on a page, it should always be a primary button.
 The secondary button should never be used alone on a page.
 
 ```secondary-button.html
-<button class="hdd-button is-secondary">Secondary</button>
-<button class="hdd-button is-secondary" disabled>Disabled</button>
-<button class="hdd-button is-secondary is-loading">Loading</button>
-<button class="hdd-button is-small is-secondary">Secondary small</button>
-<button class="hdd-button is-small is-secondary" disabled>Disabled</button>
-<button class="hdd-button is-small is-secondary is-loading">Loading</button>
+<button class="hdd-button is-secondary" style="margin-right: var(--hdd-spacing-1)">Secondary</button>
+<button class="hdd-button is-secondary" style="margin-right: var(--hdd-spacing-1)" disabled>Disabled</button>
+<button class="hdd-button is-secondary is-loading" style="margin-right: var(--hdd-spacing-1)">Loading</button>
+<button class="hdd-button is-small is-secondary" style="margin-right: var(--hdd-spacing-1)">Secondary small</button>
+<button class="hdd-button is-small is-secondary" style="margin-right: var(--hdd-spacing-1)" disabled>Disabled</button>
+<button class="hdd-button is-small is-secondary style="margin-right: var(--hdd-spacing-1)" is-loading">Loading</button>
 ```
 
 ## Action button
@@ -41,10 +41,10 @@ The secondary button should never be used alone on a page.
 Action buttons are specially designed for the user to take an action that will affect something else.
 
 ```action-button.html
-<button class="hdd-button has-icon-left"><i class="fal fa-arrow-left"></i> Back</button>
-<button class="hdd-button has-icon-right">Forward <i class="fal fa-arrow-right"></i></button>
-<button class="hdd-button has-icon-left" disabled><i class="fal fa-arrow-left"></i> Back</button>
-<button class="hdd-button has-icon-right" disabled>Forward <i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button has-icon-left" style="margin-right: var(--hdd-spacing-1)"><i class="fal fa-cog"></i>Action button</button>
+<button class="hdd-button has-icon-left is-secondary" style="margin-right: var(--hdd-spacing-1)"><i class="fal fa-cog"></i>Action button</button>
+<button class="hdd-button has-icon-left" disabled style="margin-right: var(--hdd-spacing-1)"><i class="fal fa-cog"></i>Action button</button>
+<button class="hdd-button has-icon-left is-danger" style="margin-right: var(--hdd-spacing-1)"><i class="fal fa-trash-alt"></i>Delete</button>
 ```
 
 ## Icon-button
@@ -53,9 +53,15 @@ Action buttons are specially designed for the user to take an action that will a
 A button that only contains an icon and should be used when an icon is used as an button.
 
 ```next-button.html
-<button class="hdd-button-icon"><i class="fal fa-arrow-right"></i></button>
-<button class="hdd-button-icon is-transparent"><i class="fal fa-arrow-right"></i></button>
-<button class="hdd-button-icon is-transparent is-no-padding"><i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button-icon button-margin"><i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button-icon is-transparent button-margin"><i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button-icon is-transparent is-no-padding button-margin"><i class="fal fa-arrow-right"></i></button>
+```
+
+```next-button.css  hidden
+.button-margin {
+  margin-right: var(--hdd-spacing-1)
+}
 ```
 
 ## Mutations

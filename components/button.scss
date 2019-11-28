@@ -1,9 +1,9 @@
  $button-radius: $border-radius;
- $button-solid-border-width: 1px;
- $button-outlined-border-width: 1px;
- $button-padding: 0.7rem 1.8rem;
+
+ $button-padding: 0.625rem 1rem;
+ $button-padding-secondary: 0.563rem 1rem;
  $button-padding-small: 0.5rem 1rem;
- $button-padding-icon: 1.25rem;
+ $button-padding-icon: 0.563rem 1rem;
  $button-icon-padding: 0.5rem 0.9rem;
 
 .hdd-button {
@@ -11,16 +11,15 @@
   @extend .is-p;
   // .is-primary is the default for any hdd-button
   @extend .is-primary;
+  // Colors available for badge
+  @include color-modifiers(('primary', 'danger'), 'background', 'color');
 
   &.is-primary {
     display: inline-block;
     padding: $button-padding;
-    border-width: $button-solid-border-width;
-    border-style: solid;
     border-radius: $button-radius;
 
-    border-color: var(--hdd-primary);
-    outline: none;
+    outline-color: var(--hdd-blue-light1);
     background: var(--hdd-primary);
     color: var(--hdd-white);
     cursor: pointer;
@@ -32,7 +31,6 @@
     color: var(--hdd-primary);
 
     &[disabled] {
-      border-color: var(--hdd-grey);
       background: transparent;
       color: var(--hdd-grey);
     }
@@ -66,24 +64,26 @@
         color: var(--hdd-white) !important;
       }
     }
+    
+    &[disabled] {
+      border-color: var(--hdd-grey);
+      color: var(--hdd-grey);
+    }
   }
 
   &:not([disabled]) {
     &:focus:not(.no-focus),
     &.is-focusing {
-      border-color: var(--hdd-blue-dark);
       background: var(--hdd-blue-dark);
     }
 
     &:hover:not(.no-hover),
     &.is-hovering {
-      border-color: var(--hdd-blue-dark);
       background: var(--hdd-blue-dark);
     }
 
     &:active:not(.no-active),
     &.is-active {
-      border-color: var(--hdd-blue-dark);
       background: var(--hdd-blue-dark);
     }
   }
@@ -119,8 +119,6 @@
   }
 
   &[disabled] {
-    border-width: $button-solid-border-width;
-    border-color: var(--hdd-grey);
     background: var(--hdd-grey);
     color: var(--hdd-white);
     cursor: not-allowed;
@@ -163,9 +161,9 @@
   // For buttons with only icons
   &-icon {
     padding: $button-icon-padding;
-    border: 1px solid var(--hdd-grey-border);
+    border-color: var(--hdd-grey-border);
     border-radius: $button-radius;
-    background: var(--hdd-white);
+    background: transparent;
     cursor: pointer;
 
     &:focus:not(.no-focus),
