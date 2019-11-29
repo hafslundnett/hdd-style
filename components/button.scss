@@ -126,27 +126,15 @@
 
   // For buttons with text and icons
   &.has-icon {
-    %icon-base {
-      display: inline-flex;
-      align-items: center;
-      justify-content: space-between;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
 
-      padding-right: $button-padding-icon;
-      padding-left: $button-padding-icon;
-    }
-
-    &-left {
-      @extend %icon-base;
-      i {
-        margin-right: 0.5rem;
-      }
-    }
-
-    &-right {
-      @extend %icon-base;
-      i {
-        margin-left: 0.5rem;
-      }
+    padding-right: $button-padding-icon;
+    padding-left: $button-padding-icon;
+    
+    i {
+      margin-right: 0.5rem;
     }
   }
 

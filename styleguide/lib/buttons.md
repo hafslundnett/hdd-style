@@ -35,9 +35,9 @@ The secondary button should never be used alone on a page.
 Action buttons are specially designed for the user to take an action that will affect something else.
 
 ```action-button.html
-<button class="hdd-button has-icon-left" style="margin-right: var(--hdd-spacing-1)"><i class="fal fa-cog"></i>Action button</button>
-<button class="hdd-button has-icon-left is-secondary" style="margin-right: var(--hdd-spacing-1)"><i class="fal fa-cog"></i>Action button</button>
-<button class="hdd-button has-icon-left" disabled style="margin-right: var(--hdd-spacing-1)"><i class="fal fa-cog"></i>Action button</button>
+<button class="hdd-button has-icon" style="margin-right: var(--hdd-spacing-1)"><i class="fal fa-cog"></i>Action button</button>
+<button class="hdd-button has-icon is-secondary" style="margin-right: var(--hdd-spacing-1)"><i class="fal fa-cog"></i>Action button</button>
+<button class="hdd-button has-icon" disabled style="margin-right: var(--hdd-spacing-1)"><i class="fal fa-cog"></i>Action button</button>
 ```
 
 ## Icon-button
