@@ -396,47 +396,7 @@ Below is a example of how to achieve this with sass.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">buttons.md</span>
 	</span>
-	<div class="theme-content-element-description"><div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="button-button.html"
-                            target="_blank"
-                            class="plain-link"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Open in a new window"
-                        >
-                            <i class="fa fa-external-link-square fa-fw"></i>
-                            Example
-                        </a>
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="button-button.html"
-                            data-initinview="true"
-                            data-title="Loading..." 
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;display:flex; justify-content: center;&quot;&gt;
-  &lt;button class=&quot;hdd-button&quot; style=&quot;margin-right: var(--hdd-spacing-1)&quot;&gt;Primary&lt;/button&gt;
-  &lt;button class=&quot;hdd-button is-secondary&quot; style=&quot;margin-right: var(--hdd-spacing-1)&quot;&gt;Secondary&lt;/button&gt;
-  &lt;button class=&quot;hdd-button-icon button-margin&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;display:flex; justify-content: center;&quot;&gt;
-  &lt;button class=&quot;hdd-button&quot; style=&quot;margin-right: var(--hdd-spacing-1)&quot;&gt;Primary&lt;/button&gt;
-  &lt;button class=&quot;hdd-button is-secondary&quot; style=&quot;margin-right: var(--hdd-spacing-1)&quot;&gt;Secondary&lt;/button&gt;
-  &lt;button class=&quot;hdd-button-icon button-margin&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div><p>The buttons are to be used across the various internal systems. If there is only one button on the current screen, this should always be a primary button. When you use multiple buttons, the primary button appears on the right and any secondary buttons appear on the left. Secondary button should not be used alone on a screen. Action buttons are specially designed for the user to take an action that will affect something else.</p>
+	<div class="theme-content-element-description"><p>The buttons are to be used across the various internal systems. If there is only one button on the current screen, this should always be a primary button. When you use multiple buttons, the primary button appears on the right and any secondary buttons appear on the left. Secondary button should not be used alone on a screen. Action buttons are specially designed for the user to take an action that will affect something else.</p>
 <p>Changing the color of a button to convey purpose is not ideal as people with vision impairments may struggle. Usage of other colors should be properly discussed and the context clear.</p>
 <div id="primary-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#primary-button" class="icon-link i-section__link -heading"></a>Primary button</h2></div><p><code>hdd-button</code></p>
 <p>If only one button exists on a page, it should always be a primary button. </p>
@@ -469,14 +429,14 @@ Below is a example of how to achieve this with sass.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button&quot; style=&quot;margin-right: var(--hdd-spacing-1)&quot;&gt;Primary&lt;/button&gt;
-&lt;button class=&quot;hdd-button&quot; disabled style=&quot;margin-right: var(--hdd-spacing-1)&quot;&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-loading&quot; style=&quot;margin-right: var(--hdd-spacing-1)&quot;&gt;Loading&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon&quot; style=&quot;margin-right: var(--hdd-spacing-1)&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button&quot; style=&quot;margin-right: var(--hdd-spacing-1)&quot;&gt;Primary&lt;/button&gt;
-&lt;button class=&quot;hdd-button&quot; disabled style=&quot;margin-right: var(--hdd-spacing-1)&quot;&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-loading&quot; style=&quot;margin-right: var(--hdd-spacing-1)&quot;&gt;Loading&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon&quot; style=&quot;margin-right: var(--hdd-spacing-1)&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button button-margin&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;hdd-button button-margin&quot; disabled&gt;Disabled&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-loading button-margin&quot;&gt;Loading&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button button-margin&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;hdd-button button-margin&quot; disabled&gt;Disabled&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-loading button-margin&quot;&gt;Loading&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;</code></pre>
 	</div>
 </div><div id="secondary-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#secondary-button" class="icon-link i-section__link -heading"></a>Secondary button</h2></div><p><code>hdd-button</code></p>
 <p>The secondary button should never be used alone on a page.</p>
@@ -509,14 +469,14 @@ Below is a example of how to achieve this with sass.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button is-secondary&quot; style=&quot;margin-right: var(--hdd-spacing-1)&quot;&gt;Secondary&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-secondary&quot; style=&quot;margin-right: var(--hdd-spacing-1)&quot; disabled&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-secondary is-loading&quot; style=&quot;margin-right: var(--hdd-spacing-1)&quot;&gt;Loading&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon is-secondary&quot; style=&quot;margin-right: var(--hdd-spacing-1)&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button is-secondary&quot; style=&quot;margin-right: var(--hdd-spacing-1)&quot;&gt;Secondary&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-secondary&quot; style=&quot;margin-right: var(--hdd-spacing-1)&quot; disabled&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-secondary is-loading&quot; style=&quot;margin-right: var(--hdd-spacing-1)&quot;&gt;Loading&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon is-secondary&quot; style=&quot;margin-right: var(--hdd-spacing-1)&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button is-secondary button-margin&quot;&gt;Secondary&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-secondary button-margin&quot; disabled&gt;Disabled&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-secondary is-loading button-margin&quot;&gt;Loading&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon is-secondary&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button is-secondary button-margin&quot;&gt;Secondary&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-secondary button-margin&quot; disabled&gt;Disabled&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-secondary is-loading button-margin&quot;&gt;Loading&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon is-secondary&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;</code></pre>
 	</div>
 </div><div id="icon-buttons" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#icon-buttons" class="icon-link i-section__link -heading"></a>Icon buttons</h2></div><p><code>hdd-button-icon</code></p>
 <div class="i-example">
@@ -551,11 +511,11 @@ Below is a example of how to achieve this with sass.</p>
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button-icon button-margin&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;button class=&quot;hdd-button-icon button-margin&quot; disabled&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;button class=&quot;hdd-button-icon button-margin&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon button-margin&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;">Copy</button>
+&lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button-icon button-margin&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;button class=&quot;hdd-button-icon button-margin&quot; disabled&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;button class=&quot;hdd-button-icon button-margin&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon button-margin&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
+&lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
 	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-button</code>:</strong></p>
 <table class="table"><thead><tr>

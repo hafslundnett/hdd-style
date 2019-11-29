@@ -18,7 +18,6 @@ $button-height: 36px;
     height: $button-height;
     padding: $button-padding;
     border-radius: $button-radius;
-    border: 0;
     outline-color: var(--hdd-blue-light1);
     background: var(--hdd-primary);
     color: var(--hdd-white);
@@ -44,6 +43,7 @@ $button-height: 36px;
 
   &.is-secondary {
     border: $button-border-width solid var(--hdd-primary);
+    height: $button-height - $button-border-width; // Subtracting size of border
     background: transparent;
     color: var(--hdd-primary);
 
@@ -134,7 +134,7 @@ $button-height: 36px;
     color: var(--hdd-primary);
     border-radius: $button-radius;
     background: transparent;
-    height: $button-height;
+    height: $button-height - $button-border-width; // Subtracting size of border
     width: $button-height;
     font-size: 1.375rem;
     padding: 0;

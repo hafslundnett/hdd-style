@@ -3,6 +3,9 @@
 
 	<head>
 		<style>
+					.button-margin {
+  margin-right: var(--hdd-spacing-1)
+}
 		</style>
 
 		<style>
@@ -53,16 +56,19 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <button class="hdd-button is-secondary" style="margin-right: var(--hdd-spacing-1)">Secondary</button>
-<button class="hdd-button is-secondary" style="margin-right: var(--hdd-spacing-1)" disabled>Disabled</button>
-<button class="hdd-button is-secondary is-loading" style="margin-right: var(--hdd-spacing-1)">Loading</button>
-<button class="hdd-button has-icon is-secondary" style="margin-right: var(--hdd-spacing-1)"><i class="fal fa-cog"></i>Icon button</button>
+    <button class="hdd-button is-secondary button-margin">Secondary</button>
+<button class="hdd-button is-secondary button-margin" disabled>Disabled</button>
+<button class="hdd-button is-secondary is-loading button-margin">Loading</button>
+<button class="hdd-button has-icon is-secondary"><i class="fal fa-cog"></i>Icon button</button>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><button class="hdd-button is-secondary" style="margin-right: var(--hdd-spacing-1)">Secondary</button>
-<button class="hdd-button is-secondary" style="margin-right: var(--hdd-spacing-1)" disabled>Disabled</button>
-<button class="hdd-button is-secondary is-loading" style="margin-right: var(--hdd-spacing-1)">Loading</button>
-<button class="hdd-button has-icon is-secondary" style="margin-right: var(--hdd-spacing-1)"><i class="fal fa-cog"></i>Icon button</button></script>
+			<script type="text/x-stylemark" data-language="html"><button class="hdd-button is-secondary button-margin">Secondary</button>
+<button class="hdd-button is-secondary button-margin" disabled>Disabled</button>
+<button class="hdd-button is-secondary is-loading button-margin">Loading</button>
+<button class="hdd-button has-icon is-secondary"><i class="fal fa-cog"></i>Icon button</button></script>
+			<script type="text/x-stylemark" data-language="css">.button-margin {
+  margin-right: var(--hdd-spacing-1)
+}</script>
 
 		<!--
 			Vanilla JS
