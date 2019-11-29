@@ -3,13 +3,17 @@
  $button-padding: 0.625rem 1rem;
  $button-padding-secondary: 0.563rem 1rem;
  $button-padding-icon: 0.563rem 1rem;
- $button-icon-padding: 0.5rem 0.9rem;
+ $button-icon-padding: 0.438rem;
 
 .hdd-button {
   // .is-p is font-properties, defined in typography.
   @extend .is-p;
   // .is-primary is the default for any hdd-button
   @extend .is-primary;
+
+  &[disabled] {
+    cursor: not-allowed;
+  }
 
   &.is-primary {
     display: inline-block;
@@ -20,6 +24,29 @@
     background: var(--hdd-primary);
     color: var(--hdd-white);
     cursor: pointer;
+
+    &[disabled] {
+      background: var(--hdd-grey);
+      color: var(--hdd-white);
+    }
+
+    // Changes button-text on hover/active/focus
+    &:not([disabled]) {
+      &:focus:not(.no-focus),
+      &.is-focusing {
+        background: var(--hdd-blue-dark);
+      }
+  
+      &:hover:not(.no-hover),
+      &.is-hovering {
+        background: var(--hdd-blue-dark);
+      }
+  
+      &:active:not(.no-active),
+      &.is-active {
+        background: var(--hdd-blue-dark);
+      }
+    }
   }
 
   &.is-secondary {
@@ -28,7 +55,7 @@
     color: var(--hdd-primary);
 
     &[disabled] {
-      background: transparent;
+      border-color: var(--hdd-grey);
       color: var(--hdd-grey);
     }
 
@@ -64,30 +91,23 @@
         color: var(--hdd-white) !important;
       }
     }
+  }
+
+  // When button with text has icon
+  &.has-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-right: $button-padding-icon;
+    padding-left: $button-padding-icon;
     
-    &[disabled] {
-      border-color: var(--hdd-grey);
-      color: var(--hdd-grey);
+    i {
+      margin-right: 0.5rem;
     }
   }
 
-  &:not([disabled]) {
-    &:focus:not(.no-focus),
-    &.is-focusing {
-      background: var(--hdd-blue-dark);
-    }
-
-    &:hover:not(.no-hover),
-    &.is-hovering {
-      background: var(--hdd-blue-dark);
-    }
-
-    &:active:not(.no-active),
-    &.is-active {
-      background: var(--hdd-blue-dark);
-    }
-  }
-
+  // When button is loading
   &.is-loading {
     // Adds icon from font awesome to content
     @extend .fa-spinner-third;
@@ -118,53 +138,40 @@
     }
   }
 
-  &[disabled] {
-    background: var(--hdd-grey);
-    color: var(--hdd-white);
-    cursor: not-allowed;
-  }
-
-  // For buttons with text and icons
-  &.has-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding-right: $button-padding-icon;
-    padding-left: $button-padding-icon;
-    
-    i {
-      margin-right: 0.5rem;
-    }
-  }
-
-  // For buttons with only icons
+  // Buttons with icons only
   &-icon {
     padding: $button-icon-padding;
-    border-color: var(--hdd-grey-border);
+    border-color: var(--hdd-primary);
+    color: var(--hdd-primary);
     border-radius: $button-radius;
     background: transparent;
     cursor: pointer;
 
-    &:focus:not(.no-focus),
-    &.is-focusing,
-    &:hover:not(.no-hover),
-    &.is-hovering {
-      border-color: var(--hdd-blue-dark);
-      background: var(--hdd-blue-dark);
-      color: var(--hdd-white);
+    &[disabled] {
+      border-color: var(--hdd-grey);
+      color: var(--hdd-grey);
     }
 
-    &:active:not(.no-active),
-    &.is-active {
-      border-color: var(--hdd-blue-dark);
-      background: var(--hdd-blue-dark);
-      color: var(--hdd-white);
+    &:not([disabled]) {
+      &:hover:not(.no-hover),
+      &.is-hovering {
+        border-color: var(--hdd-blue);
+        background: var(--hdd-blue);
+        color: var(--hdd-white);
+      }
+
+      &:focus:not(.no-focus),
+      &.is-focusing,
+      &:active:not(.no-active),
+      &.is-active {
+        border-color: var(--hdd-blue-dark);
+        background: var(--hdd-blue-dark);
+        color: var(--hdd-white);
+      }
     }
 
     &.is-transparent {
-      padding: $button-padding + 1px; // 1 px for missing border
-
+      padding: $button-icon-padding + 0.063rem; // 1 px for missing border
       border: none;
       background: none;
       cursor: pointer;
@@ -182,10 +189,6 @@
         background: none;
         color: var(--hdd-primary);
       }
-    }
-
-    &.is-no-padding {
-      padding: 0px;
     }
   }
 }
