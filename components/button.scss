@@ -32,16 +32,10 @@
 
     // Changes button-text on hover/active/focus
     &:not([disabled]) {
-      &:focus:not(.no-focus),
-      &.is-focusing {
-        background: var(--hdd-blue-dark);
-      }
-  
       &:hover:not(.no-hover),
-      &.is-hovering {
-        background: var(--hdd-blue-dark);
-      }
-  
+      &.is-hovering,
+      &:focus:not(.no-focus),
+      &.is-focusing,
       &:active:not(.no-active),
       &.is-active {
         background: var(--hdd-blue-dark);
@@ -184,14 +178,14 @@
       background: none;
       cursor: pointer;
 
-      &:focus:not(.no-focus),
-      .is-focusing,
       &:hover:not(.no-hover),
       .is-hovering {
         background: none;
         color: var(--hdd-primary);
       }
 
+      &:focus:not(.no-focus),
+      .is-focusing,
       &:active:not(.no-active),
       .is-active {
         background: none;
