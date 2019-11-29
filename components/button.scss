@@ -1,9 +1,7 @@
- $button-radius: $border-radius;
-
- $button-padding: 0.625rem 1rem;
- $button-padding-secondary: 0.563rem 1rem;
- $button-padding-icon: 0.563rem 1rem;
- $button-icon-padding: 0.438rem 0.563rem;
+$button-radius: $border-radius;
+$button-border-width: 1px;
+$button-padding: 0 16px;
+$button-height: 36px;
 
 .hdd-button {
   // .is-p is font-properties, defined in typography.
@@ -17,9 +15,10 @@
 
   &.is-primary {
     display: inline-block;
+    height: $button-height;
     padding: $button-padding;
     border-radius: $button-radius;
-
+    border: 0;
     outline-color: var(--hdd-blue-light1);
     background: var(--hdd-primary);
     color: var(--hdd-white);
@@ -44,12 +43,12 @@
   }
 
   &.is-secondary {
-    border-color: var(--hdd-primary);
+    border: $button-border-width solid var(--hdd-primary);
     background: transparent;
     color: var(--hdd-primary);
 
     &[disabled] {
-      border-color: var(--hdd-grey);
+      border: $button-border-width solid var(--hdd-grey);
       color: var(--hdd-grey);
     }
 
@@ -92,12 +91,9 @@
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-
-    padding-right: $button-padding-icon;
-    padding-left: $button-padding-icon;
     
     i {
-      margin-right: 0.5rem;
+      padding-right: 9px;
     }
   }
 
@@ -134,24 +130,25 @@
 
   // Buttons with icons only
   &-icon {
-    border-color: var(--hdd-primary);
+    border: $button-border-width solid var(--hdd-primary);
     color: var(--hdd-primary);
     border-radius: $button-radius;
     background: transparent;
-    height: 2.25rem;
-    width: 2.25rem;
-    padding: 0;
+    height: $button-height;
+    width: $button-height;
     font-size: 1.375rem;
+    padding: 0;
     cursor: pointer;
 
     i {
-      width: 1.375rem;
       height: 1.375rem;
+      width: 1.375rem;
     }
 
     &[disabled] {
       border-color: var(--hdd-grey);
       color: var(--hdd-grey);
+      cursor: not-allowed;
     }
 
     &:not([disabled]) {
@@ -173,10 +170,8 @@
     }
 
     &.is-transparent {
-      padding: $button-icon-padding + 0.063rem; // 1 px for missing border
       border: none;
       background: none;
-      cursor: pointer;
 
       &:hover:not(.no-hover),
       .is-hovering {

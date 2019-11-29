@@ -3,9 +3,7 @@ name: Button
 category: Components
 ---
 
-The buttons are to be used across the various internal systems. If there is only one button on the current screen, this should always be a primary button. When you use multiple buttons, the primary button appears on the right and any secondary buttons appear on the left. Secondary button should not be used alone on a screen.
-
-Action buttons are specially designed for the user to take an action that will affect something else.
+The buttons are to be used across the various internal systems. If there is only one button on the current screen, this should always be a primary button. When you use multiple buttons, the primary button appears on the right and any secondary buttons appear on the left. Secondary button should not be used alone on a screen. Action buttons are specially designed for the user to take an action that will affect something else.
 
 Changing the color of a button to convey purpose is not ideal as people with vision impairments may struggle. Usage of other colors should be properly discussed and the context clear.
 
