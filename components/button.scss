@@ -30,12 +30,9 @@ $button-height: 36px;
 
     // Changes button-text on hover/active/focus
     &:not([disabled]) {
-      &:hover:not(.no-hover),
-      &.is-hovering,
-      &:focus:not(.no-focus),
-      &.is-focusing,
-      &:active:not(.no-active),
-      &.is-active {
+      &:hover,
+      &:focus,
+      &:active {
         background: var(--hdd-blue-dark);
       }
     }
@@ -54,16 +51,13 @@ $button-height: 36px;
 
     // Changes button-text on hover/active/focus
     &:not([disabled]) {
-      &:hover:not(.no-hover),
-      &.is-hovering {
+      &:hover {
         background: var(--hdd-primary);
         color: var(--hdd-white);
       }
 
-      &:active:not(.no-active),
-      &.is-active,
-      &:focus:not(.no-focus),
-      &.is-focusing {
+      &:active,
+      &:focus {
         background: var(--hdd-blue-dark);
         color: var(--hdd-white);
       }
@@ -74,12 +68,9 @@ $button-height: 36px;
       color: var(--hdd-primary) !important;
     }
     
-    &:hover:not(.no-hover),
-    &.is-hovering,
-    &:active:not(.no-active),
-    &.is-active,
-    &:focus:not(.no-focus),
-    &.is-focusing {
+    &:hover,
+    &:active,
+    &:focus {
       &.is-loading::after {
         color: var(--hdd-white) !important;
       }
@@ -152,17 +143,14 @@ $button-height: 36px;
     }
 
     &:not([disabled]) {
-      &:hover:not(.no-hover),
-      &.is-hovering {
+      &:hover {
         border-color: var(--hdd-blue);
         background: var(--hdd-blue);
         color: var(--hdd-white);
       }
 
-      &:focus:not(.no-focus),
-      &.is-focusing,
-      &:active:not(.no-active),
-      &.is-active {
+      &:focus,
+      &:active {
         border-color: var(--hdd-blue-dark);
         background: var(--hdd-blue-dark);
         color: var(--hdd-white);
@@ -173,16 +161,13 @@ $button-height: 36px;
       border: none;
       background: none;
 
-      &:hover:not(.no-hover),
-      .is-hovering {
+      &:hover {
         background: none;
         color: var(--hdd-primary);
       }
 
-      &:focus:not(.no-focus),
-      .is-focusing,
-      &:active:not(.no-active),
-      .is-active {
+      &:focus,
+      &:active {
         background: none;
         color: var(--hdd-primary);
       }

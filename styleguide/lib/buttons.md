@@ -66,21 +66,6 @@ The secondary button should never be used alone on a page.
 | :--- | :--- |
 | `is-primary` | Sets the color of the given button to the primary color |
 | `is-secondary` | Sets the color of the given button to the secondary color |
-| `is-active` | Sets the given button to it's active state |
-| `is-hovering` | Sets the given button to it's hovering state |
 | `is-loading` | Sets the given button to it's loading state |
-| `no-active` | Disable the `:active` state |
-| `no-focus` | Disable the `:focus` state |
-| `no-hover` | Disable the `:hover` state |
 | `has-icon` | Adds padding to the right of icon in a button with text |
 
-**`hdd-button-icon`:**
-
-| class | description|
-| :--- | :--- |
-| `is-active` | Sets the given button to it's active state |
-| `is-hovering` | Sets the given button to it's hovering state |
-| `is-loading` | Sets the given button to it's loading state |
-| `no-active` | Disable the `:active` state |
-| `no-focus` | Disable the `:focus` state |
-| `no-hover` | Disable the `:hover` state |
