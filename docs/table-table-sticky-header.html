@@ -53,7 +53,8 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <table class="hdd-table is-striped has-shadow">
+    <div style="height: 200px; overflow: auto;">
+<table class="hdd-table is-striped has-shadow is-sticky-header">
   <tr class="hdd-table_header">
     <th>ID<i class="far fa-arrow-up"></i></th>
     <th>Kundenr.<i class="far fa-arrow-up"></i></th>
@@ -61,41 +62,52 @@
     <th>Fakturanr.<i class="far fa-arrow-up"></i></th>
     <th></th>
   </tr>
-  <tr class="is-primary">
+  <tr>
     <td>1</td>
-    <td>124221</td>
+    <td>338472</td>
     <td>123419384</td>
-    <td>31</td>
+    <td>14</td>
     <td class="hdd-table_action">
       <i class="far fa-angle-down"></i>
       <i class="far fa-ellipsis-v"></i>
       <button class="hdd-button is-small">Submit</button>
     </td>
   </tr>
-  <tr class="is-danger">
+  <tr>
     <td>2</td>
-    <td>872736</td>
+    <td>338472</td>
     <td>123419384</td>
-    <td>23</td>
+    <td>14</td>
     <td class="hdd-table_action">
       <i class="far fa-angle-down"></i>
       <i class="far fa-ellipsis-v"></i>
       <button class="hdd-button is-small">Submit</button>
     </td>
   </tr>
-  <tr class="is-warn">
+  <tr>
     <td>3</td>
-    <td>938472</td>
+    <td>338472</td>
     <td>123419384</td>
-    <td>17</td>
+    <td>14</td>
     <td class="hdd-table_action">
       <i class="far fa-angle-down"></i>
       <i class="far fa-ellipsis-v"></i>
       <button class="hdd-button is-small">Submit</button>
     </td>
   </tr>
-  <tr class="is-safe">
+  <tr>
     <td>4</td>
+    <td>338472</td>
+    <td>123419384</td>
+    <td>14</td>
+    <td class="hdd-table_action">
+      <i class="far fa-angle-down"></i>
+      <i class="far fa-ellipsis-v"></i>
+      <button class="hdd-button is-small">Submit</button>
+    </td>
+  </tr>
+  <tr>
+    <td>5</td>
     <td>338472</td>
     <td>123419384</td>
     <td>14</td>
@@ -108,7 +120,8 @@
 </table>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><table class="hdd-table is-striped has-shadow">
+			<script type="text/x-stylemark" data-language="html"><div style="height: 200px; overflow: auto;">
+<table class="hdd-table is-striped has-shadow is-sticky-header">
   <tr class="hdd-table_header">
     <th>ID<i class="far fa-arrow-up"></i></th>
     <th>Kundenr.<i class="far fa-arrow-up"></i></th>
@@ -116,41 +129,52 @@
     <th>Fakturanr.<i class="far fa-arrow-up"></i></th>
     <th></th>
   </tr>
-  <tr class="is-primary">
+  <tr>
     <td>1</td>
-    <td>124221</td>
+    <td>338472</td>
     <td>123419384</td>
-    <td>31</td>
+    <td>14</td>
     <td class="hdd-table_action">
       <i class="far fa-angle-down"></i>
       <i class="far fa-ellipsis-v"></i>
       <button class="hdd-button is-small">Submit</button>
     </td>
   </tr>
-  <tr class="is-danger">
+  <tr>
     <td>2</td>
-    <td>872736</td>
+    <td>338472</td>
     <td>123419384</td>
-    <td>23</td>
+    <td>14</td>
     <td class="hdd-table_action">
       <i class="far fa-angle-down"></i>
       <i class="far fa-ellipsis-v"></i>
       <button class="hdd-button is-small">Submit</button>
     </td>
   </tr>
-  <tr class="is-warn">
+  <tr>
     <td>3</td>
-    <td>938472</td>
+    <td>338472</td>
     <td>123419384</td>
-    <td>17</td>
+    <td>14</td>
     <td class="hdd-table_action">
       <i class="far fa-angle-down"></i>
       <i class="far fa-ellipsis-v"></i>
       <button class="hdd-button is-small">Submit</button>
     </td>
   </tr>
-  <tr class="is-safe">
+  <tr>
     <td>4</td>
+    <td>338472</td>
+    <td>123419384</td>
+    <td>14</td>
+    <td class="hdd-table_action">
+      <i class="far fa-angle-down"></i>
+      <i class="far fa-ellipsis-v"></i>
+      <button class="hdd-button is-small">Submit</button>
+    </td>
+  </tr>
+  <tr>
+    <td>5</td>
     <td>338472</td>
     <td>123419384</td>
     <td>14</td>
@@ -193,10 +217,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-table-coloredtable', []);
+						module = angular.module('stylemark-table-table-sticky-header', []);
 					}
 
-					module.controller('stylemark-table-coloredtable-' + index, function($scope) {
+					module.controller('stylemark-table-table-sticky-header-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});
