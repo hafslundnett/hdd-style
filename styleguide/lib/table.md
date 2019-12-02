@@ -18,7 +18,7 @@ A table can consist out of data, buttons and icons. A table row can also have a 
     <th></th>
   </tr>
   <tr>
-    <th>1</th>
+    <td>1</td>
     <td>338472</td>
     <td>123419384</td>
     <td>14</td>
@@ -29,7 +29,7 @@ A table can consist out of data, buttons and icons. A table row can also have a 
     </td>
   </tr>
   <tr>
-    <th>2</th>
+    <td>2</td>
     <td>338472</td>
     <td>123419384</td>
     <td>14</td>
@@ -40,7 +40,7 @@ A table can consist out of data, buttons and icons. A table row can also have a 
     </td>
   </tr>
   <tr>
-    <th>3</th>
+    <td>3</td>
     <td>338472</td>
     <td>123419384</td>
     <td>14</td>
@@ -53,11 +53,12 @@ A table can consist out of data, buttons and icons. A table row can also have a 
 </table>
 ```
 
-## Table with color bars
+## Table width sticky header
 `hdd-table`
 
-```coloredtable.html
-<table class="hdd-table is-striped has-shadow">
+```table-sticky-header.html
+<div style="height: 200px; overflow: auto;">
+<table class="hdd-table is-striped has-shadow is-sticky-header">
   <tr class="hdd-table_header">
     <th>ID<i class="far fa-arrow-up"></i></th>
     <th>Kundenr.<i class="far fa-arrow-up"></i></th>
@@ -65,41 +66,52 @@ A table can consist out of data, buttons and icons. A table row can also have a 
     <th>Fakturanr.<i class="far fa-arrow-up"></i></th>
     <th></th>
   </tr>
-  <tr class="is-primary">
-    <th>1</th>
-    <td>124221</td>
+  <tr>
+    <td>1</td>
+    <td>338472</td>
     <td>123419384</td>
-    <td>31</td>
+    <td>14</td>
     <td class="hdd-table_action">
       <i class="far fa-angle-down"></i>
       <i class="far fa-ellipsis-v"></i>
       <button class="hdd-button is-small">Submit</button>
     </td>
   </tr>
-  <tr class="is-danger">
-    <th>2</th>
-    <td>872736</td>
+  <tr>
+    <td>2</td>
+    <td>338472</td>
     <td>123419384</td>
-    <td>23</td>
+    <td>14</td>
     <td class="hdd-table_action">
       <i class="far fa-angle-down"></i>
       <i class="far fa-ellipsis-v"></i>
       <button class="hdd-button is-small">Submit</button>
     </td>
   </tr>
-  <tr class="is-warn">
-    <th>3</th>
-    <td>938472</td>
+  <tr>
+    <td>3</td>
+    <td>338472</td>
     <td>123419384</td>
-    <td>17</td>
+    <td>14</td>
     <td class="hdd-table_action">
       <i class="far fa-angle-down"></i>
       <i class="far fa-ellipsis-v"></i>
       <button class="hdd-button is-small">Submit</button>
     </td>
   </tr>
-  <tr class="is-safe">
-    <th>4</th>
+  <tr>
+    <td>4</td>
+    <td>338472</td>
+    <td>123419384</td>
+    <td>14</td>
+    <td class="hdd-table_action">
+      <i class="far fa-angle-down"></i>
+      <i class="far fa-ellipsis-v"></i>
+      <button class="hdd-button is-small">Submit</button>
+    </td>
+  </tr>
+  <tr>
+    <td>5</td>
     <td>338472</td>
     <td>123419384</td>
     <td>14</td>
@@ -119,6 +131,7 @@ A table can consist out of data, buttons and icons. A table row can also have a 
 | class | description|
 | :--- | :--- |
 | `has-shadow` | Add a light shadow to the table |
+| `is-sticky-header` | Table header sticks when scrolling table |
 | `is-striped` | Adds zebra-stripes to the table, needs to have `<thead>` and `<tbody>` defined in table |
 | `is-aligned-top` | Sets the `vertical-align` of all cells to `top` |
 | `is-aligned-bottom` | Sets the `vertical-align` of all cells to `bottom` |
