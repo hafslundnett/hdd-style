@@ -61,16 +61,6 @@ $table-last-column-padding: 1.5rem;
 
   &_row,
   tr {
-    @include color-modifiers(("primary", "warn", "danger", "safe"), "border-color", "", "::before");
-
-    &::before {
-      content: "";
-      display: table-cell;
-      box-sizing: border-box;
-      border-width: 0 0.3rem 0 0;
-      border-style: solid;
-      border-color: transparent;
-    }
 
     &.is-stripe {
       background: var(--hdd-blue-light4);
@@ -124,5 +114,16 @@ $table-last-column-padding: 1.5rem;
   &.has-shadow {
     box-shadow: $shadow-medium;
     border-radius: 5px;
+  }
+
+  
+  &.is-sticky-header {
+    th {
+      position: sticky;
+      top: 0;
+      background: white;
+      background-clip: padding-box;
+      z-index: 50;
+    }
   }
 }

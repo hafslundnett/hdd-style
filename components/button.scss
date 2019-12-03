@@ -148,14 +148,12 @@ $button-height: 36px;
 
     &:not([disabled]) {
       &:hover {
-        border: none;
         background: var(--hdd-blue);
         color: var(--hdd-white);
       }
 
       &:focus,
       &:active {
-        border: none;
         background: var(--hdd-blue-dark);
         color: var(--hdd-white);
       }

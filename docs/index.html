@@ -1215,7 +1215,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
     &lt;th&gt;&lt;/th&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;th&gt;1&lt;/th&gt;
+    &lt;td&gt;1&lt;/td&gt;
     &lt;td&gt;338472&lt;/td&gt;
     &lt;td&gt;123419384&lt;/td&gt;
     &lt;td&gt;14&lt;/td&gt;
@@ -1226,7 +1226,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
     &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;th&gt;2&lt;/th&gt;
+    &lt;td&gt;2&lt;/td&gt;
     &lt;td&gt;338472&lt;/td&gt;
     &lt;td&gt;123419384&lt;/td&gt;
     &lt;td&gt;14&lt;/td&gt;
@@ -1237,7 +1237,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
     &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;th&gt;3&lt;/th&gt;
+    &lt;td&gt;3&lt;/td&gt;
     &lt;td&gt;338472&lt;/td&gt;
     &lt;td&gt;123419384&lt;/td&gt;
     &lt;td&gt;14&lt;/td&gt;
@@ -1257,7 +1257,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
     &lt;th&gt;&lt;/th&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;th&gt;1&lt;/th&gt;
+    &lt;td&gt;1&lt;/td&gt;
     &lt;td&gt;338472&lt;/td&gt;
     &lt;td&gt;123419384&lt;/td&gt;
     &lt;td&gt;14&lt;/td&gt;
@@ -1268,7 +1268,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
     &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;th&gt;2&lt;/th&gt;
+    &lt;td&gt;2&lt;/td&gt;
     &lt;td&gt;338472&lt;/td&gt;
     &lt;td&gt;123419384&lt;/td&gt;
     &lt;td&gt;14&lt;/td&gt;
@@ -1279,7 +1279,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
     &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-    &lt;th&gt;3&lt;/th&gt;
+    &lt;td&gt;3&lt;/td&gt;
     &lt;td&gt;338472&lt;/td&gt;
     &lt;td&gt;123419384&lt;/td&gt;
     &lt;td&gt;14&lt;/td&gt;
@@ -1291,11 +1291,11 @@ menu.addEventListener(&#39;click&#39;, function(e) {
   &lt;/tr&gt;
 &lt;/table&gt;</code></pre>
 	</div>
-</div><div id="table-with-color-bars" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#table-with-color-bars" class="icon-link i-section__link -heading"></a>Table with color bars</h2></div><p><code>hdd-table</code></p>
+</div><div id="table-width-sticky-header" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#table-width-sticky-header" class="icon-link i-section__link -heading"></a>Table width sticky header</h2></div><p><code>hdd-table</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
-                            href="table-coloredtable.html"
+                            href="table-table-sticky-header.html"
                             target="_blank"
                             class="plain-link"
                             data-toggle="tooltip"
@@ -1310,7 +1310,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
                         <div
                             class="i-example__iframe"
                             lazyframe
-                            data-src="table-coloredtable.html"
+                            data-src="table-table-sticky-header.html"
                             data-initinview="true"
                             data-title="Loading..." 
                         ></div>
@@ -1321,7 +1321,8 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;table class=&quot;hdd-table is-striped has-shadow&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;height: 200px; overflow: auto;&quot;&gt;
+&lt;table class=&quot;hdd-table is-striped has-shadow is-sticky-header&quot;&gt;
   &lt;tr class=&quot;hdd-table_header&quot;&gt;
     &lt;th&gt;ID&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
     &lt;th&gt;Kundenr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
@@ -1329,41 +1330,52 @@ menu.addEventListener(&#39;click&#39;, function(e) {
     &lt;th&gt;Fakturanr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
     &lt;th&gt;&lt;/th&gt;
   &lt;/tr&gt;
-  &lt;tr class=&quot;is-primary&quot;&gt;
-    &lt;th&gt;1&lt;/th&gt;
-    &lt;td&gt;124221&lt;/td&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;338472&lt;/td&gt;
     &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;31&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
     &lt;td class=&quot;hdd-table_action&quot;&gt;
       &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
       &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
       &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
     &lt;/td&gt;
   &lt;/tr&gt;
-  &lt;tr class=&quot;is-danger&quot;&gt;
-    &lt;th&gt;2&lt;/th&gt;
-    &lt;td&gt;872736&lt;/td&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;338472&lt;/td&gt;
     &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;23&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
     &lt;td class=&quot;hdd-table_action&quot;&gt;
       &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
       &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
       &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
     &lt;/td&gt;
   &lt;/tr&gt;
-  &lt;tr class=&quot;is-warn&quot;&gt;
-    &lt;th&gt;3&lt;/th&gt;
-    &lt;td&gt;938472&lt;/td&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;338472&lt;/td&gt;
     &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;17&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
     &lt;td class=&quot;hdd-table_action&quot;&gt;
       &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
       &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
       &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
     &lt;/td&gt;
   &lt;/tr&gt;
-  &lt;tr class=&quot;is-safe&quot;&gt;
-    &lt;th&gt;4&lt;/th&gt;
+  &lt;tr&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;338472&lt;/td&gt;
+    &lt;td&gt;123419384&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+    &lt;td class=&quot;hdd-table_action&quot;&gt;
+      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;5&lt;/td&gt;
     &lt;td&gt;338472&lt;/td&gt;
     &lt;td&gt;123419384&lt;/td&gt;
     &lt;td&gt;14&lt;/td&gt;
@@ -1374,7 +1386,8 @@ menu.addEventListener(&#39;click&#39;, function(e) {
     &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;table class=&quot;hdd-table is-striped has-shadow&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;height: 200px; overflow: auto;&quot;&gt;
+&lt;table class=&quot;hdd-table is-striped has-shadow is-sticky-header&quot;&gt;
   &lt;tr class=&quot;hdd-table_header&quot;&gt;
     &lt;th&gt;ID&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
     &lt;th&gt;Kundenr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
@@ -1382,41 +1395,52 @@ menu.addEventListener(&#39;click&#39;, function(e) {
     &lt;th&gt;Fakturanr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
     &lt;th&gt;&lt;/th&gt;
   &lt;/tr&gt;
-  &lt;tr class=&quot;is-primary&quot;&gt;
-    &lt;th&gt;1&lt;/th&gt;
-    &lt;td&gt;124221&lt;/td&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;338472&lt;/td&gt;
     &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;31&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
     &lt;td class=&quot;hdd-table_action&quot;&gt;
       &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
       &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
       &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
     &lt;/td&gt;
   &lt;/tr&gt;
-  &lt;tr class=&quot;is-danger&quot;&gt;
-    &lt;th&gt;2&lt;/th&gt;
-    &lt;td&gt;872736&lt;/td&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;338472&lt;/td&gt;
     &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;23&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
     &lt;td class=&quot;hdd-table_action&quot;&gt;
       &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
       &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
       &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
     &lt;/td&gt;
   &lt;/tr&gt;
-  &lt;tr class=&quot;is-warn&quot;&gt;
-    &lt;th&gt;3&lt;/th&gt;
-    &lt;td&gt;938472&lt;/td&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;338472&lt;/td&gt;
     &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;17&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
     &lt;td class=&quot;hdd-table_action&quot;&gt;
       &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
       &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
       &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
     &lt;/td&gt;
   &lt;/tr&gt;
-  &lt;tr class=&quot;is-safe&quot;&gt;
-    &lt;th&gt;4&lt;/th&gt;
+  &lt;tr&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;338472&lt;/td&gt;
+    &lt;td&gt;123419384&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+    &lt;td class=&quot;hdd-table_action&quot;&gt;
+      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;5&lt;/td&gt;
     &lt;td&gt;338472&lt;/td&gt;
     &lt;td&gt;123419384&lt;/td&gt;
     &lt;td&gt;14&lt;/td&gt;
@@ -1436,6 +1460,10 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 </thead><tbody><tr>
 <td style="text-align:left"><code>has-shadow</code></td>
 <td style="text-align:left">Add a light shadow to the table</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-sticky-header</code></td>
+<td style="text-align:left">Table header sticks when scrolling table</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>is-striped</code></td>
