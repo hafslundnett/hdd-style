@@ -40,7 +40,8 @@ The secondary button should never be used alone on a page.
 <button class="hdd-button-icon button-margin"><i class="fal fa-plus-circle"></i></button>
 <button class="hdd-button-icon button-margin" disabled><i class="fal fa-plus-circle"></i></button>
 <button class="hdd-button-icon button-margin"><i class="fal fa-arrow-right"></i></button>
-<button class="hdd-button-icon" disabled><i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button-icon button-margin" disabled><i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button-icon is-transparent"><i class="fal fa-arrow-right"></i></button>
 ```
 
 ```primary-button.css  hidden
@@ -68,4 +69,11 @@ The secondary button should never be used alone on a page.
 | `is-secondary` | Sets the color of the given button to the secondary color |
 | `is-loading` | Sets the given button to it's loading state |
 | `has-icon` | Adds padding to the right of icon in a button with text |
+
+**`hdd-button-icon`:**
+
+| class | description|
+| :--- | :--- |
+| `is-transparent` | Sets background and border to transparent |
+
 

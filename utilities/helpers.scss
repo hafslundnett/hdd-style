@@ -90,3 +90,44 @@
 
   color: $color;
 }
+
+ /* Ripple effect */
+ @mixin ripple($ripple-color) {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    display: none;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: $ripple-color;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+    margin-top: -15px;
+    margin-left: -15px;
+    top: 50%;
+    left: 50%;
+    animation: ripple 1.6s;
+    opacity: 0;
+  }
+
+  @keyframes ripple {
+    from {
+      opacity: 0.7;
+      transform: scale(0);
+    }
+    to {
+      opacity: 0;
+      transform: scale(10);
+    }
+  }
+
+  &:not([disabled]){
+    &:focus:not(:active)::before {
+      display: block;
+    }
+  }
+}

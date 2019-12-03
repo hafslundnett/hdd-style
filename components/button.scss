@@ -14,6 +14,7 @@ $button-height: 36px;
   }
 
   &.is-primary {
+    @include ripple(var(--hdd-blue-light2));
     display: inline-block;
     height: $button-height;
     padding: $button-padding;
@@ -39,6 +40,7 @@ $button-height: 36px;
   }
 
   &.is-secondary {
+    @include ripple(var(--hdd-blue-light2));
     border: $button-border-width solid var(--hdd-primary);
     height: $button-height - $button-border-width; // Subtracting size of border
     background: transparent;
@@ -121,12 +123,13 @@ $button-height: 36px;
 
   // Buttons with icons only
   &-icon {
+    @include ripple(var(--hdd-blue-light2));
     border: $button-border-width solid var(--hdd-primary);
     color: var(--hdd-primary);
     border-radius: $button-radius;
     background: transparent;
     height: $button-height - $button-border-width; // Subtracting size of border
-    width: $button-height;
+    width: $button-height - $button-border-width; // Subtracting size of border
     font-size: 1.375rem;
     padding: 0;
     cursor: pointer;
@@ -144,14 +147,14 @@ $button-height: 36px;
 
     &:not([disabled]) {
       &:hover {
-        border-color: var(--hdd-blue);
+        border: none;
         background: var(--hdd-blue);
         color: var(--hdd-white);
       }
 
       &:focus,
       &:active {
-        border-color: var(--hdd-blue-dark);
+        border: none;
         background: var(--hdd-blue-dark);
         color: var(--hdd-white);
       }
@@ -161,13 +164,9 @@ $button-height: 36px;
       border: none;
       background: none;
 
-      &:hover {
-        background: none;
-        color: var(--hdd-primary);
-      }
-
       &:focus,
-      &:active {
+      &:active,
+      &:hover {
         background: none;
         color: var(--hdd-primary);
       }
