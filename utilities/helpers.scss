@@ -92,7 +92,7 @@
 }
 
  /* Ripple effect */
- @mixin ripple($ripple-color) {
+ @mixin ripple($ripple-color, $ripple-duration) {
   display: inline-block;
   position: relative;
   overflow: hidden;
@@ -110,7 +110,7 @@
     margin-left: -15px;
     top: 50%;
     left: 50%;
-    animation: ripple 1.6s;
+    animation: ripple $ripple-duration;
     opacity: 0;
   }
 

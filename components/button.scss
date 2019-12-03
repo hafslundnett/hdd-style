@@ -14,9 +14,11 @@ $button-height: 36px;
   }
 
   &.is-primary {
-    @include ripple(var(--hdd-blue-light2));
+    @include ripple(var(--hdd-blue-light2), 1.2s);
     display: inline-block;
     height: $button-height;
+    line-height: 14px;
+    letter-spacing: 0.5px;
     padding: $button-padding;
     border-radius: $button-radius;
     outline-color: var(--hdd-blue-light1);
@@ -40,7 +42,6 @@ $button-height: 36px;
   }
 
   &.is-secondary {
-    @include ripple(var(--hdd-blue-light2));
     border: $button-border-width solid var(--hdd-primary);
     height: $button-height - $button-border-width; // Subtracting size of border
     background: transparent;
@@ -123,7 +124,7 @@ $button-height: 36px;
 
   // Buttons with icons only
   &-icon {
-    @include ripple(var(--hdd-blue-light2));
+    @include ripple(var(--hdd-blue-light2), 1.8s);
     border: $button-border-width solid var(--hdd-primary);
     color: var(--hdd-primary);
     border-radius: $button-radius;
