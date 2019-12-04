@@ -3,10 +3,21 @@ name: Button
 category: Components
 ---
 
+```buttons.html
+<div style="display: flex; align-items: bottom">
+  <button class="hdd-button">Primary</button>
+  <button class="hdd-button is-secondary">Secondary</button>
+  <button class="hdd-button-icon"><i class="fal fa-plus-circle"></i></button>
+</div>
+```
+
 The buttons are to be used across the various internal systems. If there is only one button on the current screen, this should always be a primary button. When you use multiple buttons, the primary button appears on the right and any secondary buttons appear on the left. Secondary button should not be used alone on a screen. Action buttons are specially designed for the user to take an action that will affect something else.
 
 Changing the color of a button to convey purpose is not ideal as people with vision impairments may struggle. Usage of other colors should be properly discussed and the context clear.
 
+## NB! Breaking changes:
+- Small buttons (is-small) => removed
+- Normal buttons => new size that is between the old small and old normal button  
 
 ## Primary button
 `hdd-button`
@@ -75,5 +86,4 @@ The secondary button should never be used alone on a page.
 | class | description|
 | :--- | :--- |
 | `is-transparent` | Sets background and border to transparent |
-
 
