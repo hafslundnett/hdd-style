@@ -7,11 +7,6 @@ The buttons are to be used across the various internal systems. If there is only
 
 Changing the color of a button to convey purpose is not ideal as people with vision impairments may struggle. Usage of other colors should be properly discussed and the context clear.
 
-## NB! Breaking changes:
-- Small buttons (is-small) => removed
-- Normal buttons => new size that is between the old small and old normal button  
-- no-hover
-
 ## Primary button
 `hdd-button`
 

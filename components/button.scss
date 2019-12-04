@@ -3,12 +3,10 @@ $button-border-width: 1px;
 $button-padding: 10px 16px;
 $border-button-padding: (10px - $button-border-width) (16px - $button-border-width); // Subtract $button-border-width to match primary button size 
 $icon-button-height: 36px;
-$large-button-ripple-duration: 1.2s;
-$small-button-ripple-duration: 1.8s;
 $ripple-color: var(--hdd-blue-light2);
 
 /* Ripple effect */
-@mixin ripple($ripple-color, $ripple-duration) {
+@mixin ripple {
   display: inline-block;
   position: relative;
   overflow: hidden;
@@ -55,7 +53,7 @@ $ripple-color: var(--hdd-blue-light2);
   @extend .is-primary;
 
   &.is-primary {
-    @include ripple($ripple-color, $large-button-ripple-duration);
+    @include ripple;
     display: inline-block;
     border: none;
     padding: $button-padding;
@@ -141,6 +139,7 @@ $ripple-color: var(--hdd-blue-light2);
     @extend .is-p;
 
     color: transparent !important;
+    font-size: 16px; // Makes button same size as rest
 
     &::after {
       // Should find a better solution
@@ -164,7 +163,7 @@ $ripple-color: var(--hdd-blue-light2);
 
   // Buttons with icons only
   &-icon {
-    @include ripple($ripple-color, $small-button-ripple-duration);
+    @include ripple;
     border: $button-border-width solid var(--hdd-primary);
     color: var(--hdd-primary);
     border-radius: $button-radius;

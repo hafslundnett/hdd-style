@@ -1,6 +1,6 @@
 <a name="3.0.0"></a>
 # Update [3.0.0]
-In this update buttons have been redesigned completly and there are some breaking changes related to these.
+In this update buttons have been redesigned completely and there are some breaking changes related to these.
 
 ## Breaking changes
 
