@@ -4,6 +4,7 @@ $button-padding: 0 16px;
 $button-height: 36px;
 $large-button-ripple-duration: 1.2s;
 $small-button-ripple-duration: 1.8s;
+$ripple-color: var(--hdd-blue-light2);
 
 .hdd-button {
   // .is-p is font-properties, defined in typography.
@@ -16,7 +17,7 @@ $small-button-ripple-duration: 1.8s;
   }
 
   &.is-primary {
-    @include ripple(var(--hdd-blue-light2), $large-button-ripple-duration);
+    @include ripple($ripple-color, $large-button-ripple-duration);
     margin: 0;
     display: inline-block;
     height: $button-height;
@@ -127,7 +128,7 @@ $small-button-ripple-duration: 1.8s;
 
   // Buttons with icons only
   &-icon {
-    @include ripple(var(--hdd-blue-light2), $small-button-ripple-duration);
+    @include ripple($ripple-color, $small-button-ripple-duration);
     border: $button-border-width solid var(--hdd-primary);
     color: var(--hdd-primary);
     border-radius: $button-radius;
