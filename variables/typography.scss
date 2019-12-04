@@ -60,13 +60,6 @@ $typography: (
     color: var(--hdd-font-color),
     elements: (p)
   ),
-  p-faded: (
-    family: $font-family,
-    size: .875rem,
-    spacing: .21px,
-    weight: 400,
-    color: var(--hdd-grey-medium)
-  ),
   p-small: (
     family: $font-family,
     size: .675rem,

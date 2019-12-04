@@ -27,9 +27,4 @@ Roboto is default font for all text. These tags are automatically styled: h1, h2
 <p>ABCDEFHILMNOPQRSTVXÆØÅ</p>
 <p>abcdefghijklmnopqrstuvwxyzæøå</p>
 <p>0123456789</p>
-<br />
-<p class="is-p-faded">paragraph faded</p>
-<p class="is-p-faded">ABCDEFHILMNOPQRSTVXÆØÅ</p>
-<p class="is-p-faded">abcdefghijklmnopqrstuvwxyzæøå</p>
-<p class="is-p-faded">0123456789</p>
 ```
