@@ -3,7 +3,7 @@ $button-border-width: 1px;
 $button-padding: 10px 16px;
 $border-button-padding: (10px - $button-border-width) (16px - $button-border-width); // Subtract $button-border-width to match primary button size 
 $icon-button-height: 36px;
-$ripple-color: var(--hdd-blue-light2);
+$icon-button-icon-size: 22px;
 
 /* Ripple effect */
 @mixin ripple {
@@ -170,7 +170,7 @@ $ripple-color: var(--hdd-blue-light2);
     background: transparent;
     height: $icon-button-height - $button-border-width; // Subtract $button-border-width to match primary button size 
     width: $icon-button-height - $button-border-width; // Subtract $button-border-width to match primary button size
-    font-size: 22px;
+    font-size: $icon-button-icon-size;
     cursor: pointer;
     padding: 0;
 
