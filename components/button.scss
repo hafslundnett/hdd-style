@@ -1,10 +1,53 @@
 $button-radius: $border-radius;
 $button-border-width: 1px;
-$button-padding: 0 16px;
-$button-height: 36px;
+$button-padding: 10px 16px;
+$border-button-padding: (10px - $button-border-width) (16px - $button-border-width);
+$icon-button-padding: 7px - $button-border-width;
+$icon-button-height: 36px;
 $large-button-ripple-duration: 1.2s;
 $small-button-ripple-duration: 1.8s;
 $ripple-color: var(--hdd-blue-light2);
+
+/* Ripple effect */
+@mixin ripple($ripple-color, $ripple-duration) {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    display: none;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: $ripple-color;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+    margin-top: -15px;
+    margin-left: -15px;
+    top: 50%;
+    left: 50%;
+    animation: ripple $ripple-duration;
+    opacity: 0;
+  }
+
+  @keyframes ripple {
+    from {
+      opacity: 0.7;
+      transform: scale(0);
+    }
+    to {
+      opacity: 0;
+      transform: scale(10);
+    }
+  }
+
+  &:not([disabled]){
+    &:focus:not(:active)::before {
+      display: block;
+    }
+  }
+}
 
 .hdd-button {
   // .is-p is font-properties, defined in typography.
@@ -12,20 +55,13 @@ $ripple-color: var(--hdd-blue-light2);
   // .is-primary is the default for any hdd-button
   @extend .is-primary;
 
-  &[disabled] {
-    cursor: not-allowed;
-  }
-
   &.is-primary {
     @include ripple($ripple-color, $large-button-ripple-duration);
-    margin: 0;
     display: inline-block;
-    height: $button-height;
+    border: none;
     padding: $button-padding;
-    line-height: 14px;
     letter-spacing: 0.5px;
     border-radius: $button-radius;
-    outline-color: var(--hdd-blue-light1);
     background: var(--hdd-primary);
     color: var(--hdd-white);
     cursor: pointer;
@@ -33,6 +69,7 @@ $ripple-color: var(--hdd-blue-light2);
     &[disabled] {
       background: var(--hdd-grey);
       color: var(--hdd-white);
+      cursor: not-allowed;
     }
 
     // Changes button-text on hover/active/focus
@@ -47,7 +84,7 @@ $ripple-color: var(--hdd-blue-light2);
 
   &.is-secondary {
     border: $button-border-width solid var(--hdd-primary);
-    height: $button-height - $button-border-width; // Subtracting size of border
+    padding: $border-button-padding;
     background: transparent;
     color: var(--hdd-primary);
 
@@ -133,15 +170,15 @@ $ripple-color: var(--hdd-blue-light2);
     color: var(--hdd-primary);
     border-radius: $button-radius;
     background: transparent;
-    height: $button-height - $button-border-width; // Subtracting size of border
-    width: $button-height - $button-border-width; // Subtracting size of border
-    font-size: 1.375rem;
-    padding: 0;
+    padding: $icon-button-padding;
+    font-size: 22px;
     cursor: pointer;
 
     i {
-      height: 1.375rem;
-      width: 1.375rem;
+      height: 22px;
+      width: 22px;
+      padding: 0;
+      margin: 0;
     }
 
     &[disabled] {
@@ -176,3 +213,4 @@ $ripple-color: var(--hdd-blue-light2);
     }
   }
 }
+
