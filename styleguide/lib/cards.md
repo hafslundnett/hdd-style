@@ -117,18 +117,6 @@ In component based services (especially internal systems), content can be struct
 | :--- | :--- |
 | `is-full-height` | Sets the height of the given card to 100% |
 
-**`hdd-card_title`:**
-
-| class | description|
-| :--- | :--- |
-| `is-center` | Sets the given content of card title centered |
-
-**`hdd-card_subtitle`:**
-
-| class | description|
-| :--- | :--- |
-| `is-center` | Sets the given content of card subtitle centered |
-
 **`hdd-card_actions`:**
 
 | class | description|
