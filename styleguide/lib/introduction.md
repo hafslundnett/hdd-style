@@ -32,3 +32,7 @@ In order to get started you will need to have `node` and `npm` installed. You ca
 * `yarn start`
 
 This will open the styleguide in your browser and refresh on changes.
+
+## Changelog
+
+Please read the changelog [here](https://github.com/hafslundnett/blob/master/CHANGELOG.md) to keep up to date with breaking changes released with new updates. 
