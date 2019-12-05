@@ -12,8 +12,8 @@ In component based services (especially internal systems), content can be struct
 <div class="hdd-card">
   <div class="hdd-card_header">
     <div class="hdd-card_header_text">
-      <div class="hdd-card_title is-center">A card should have a title</div>
-      <div class="hdd-card_subtitle is-center">And a subtitle</div>
+      <div class="hdd-card_title">A card should have a title</div>
+      <div class="hdd-card_subtitle">And a subtitle</div>
     </div>
   </div>
   <div class="hdd-card_content">
@@ -21,26 +21,33 @@ In component based services (especially internal systems), content can be struct
     <p>The card can have multiple lines of content.The card can have multiple lines of content.The card can have multiple lines of content.</p>
     <p>Cards are useful for displaying some kind of information</p>
   </div>
+</div>
+```
+# Card without subtitle
+ 
+```cards-1-1.html
+<div class="hdd-card">
   <div class="hdd-card_header">
     <div class="hdd-card_header_text">
-      <div class="hdd-card_title">A card can have more than one title</div>
-      <div class="hdd-card_subtitle">And a subtitle</div>
+      <div class="hdd-card_title">Card with no subtitle</div>
     </div>
   </div>
   <div class="hdd-card_content">
-    <p>And more content.</p>
+    <p>A card consist of some content.</p>
+    <p>The card can have multiple lines of content.The card can have multiple lines of content.The card can have multiple lines of content.</p>
+    <p>Cards are useful for displaying some kind of information</p>
   </div>
 </div>
 ```
 
-## Card with full width button
+## Card with icons and View
 `hdd-card`
  
 ```cards-2.html
 <div class="hdd-card">
   <div class="hdd-card_header">
     <div class="hdd-card_header_icon">
-      <i class="fal fa-info"></i>
+     <img src="statistics.svg" />
     </div>
     <div class="hdd-card_header_text">
       <div class="hdd-card_title">Title</div>
