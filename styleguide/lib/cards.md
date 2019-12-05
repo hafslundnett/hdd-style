@@ -47,7 +47,7 @@ In component based services (especially internal systems), content can be struct
 <div class="hdd-card">
   <div class="hdd-card_header">
     <div class="hdd-card_header_icon">
-     <img src="statistics.svg" />
+      <i class="fal fa-arrow-right"></i>
     </div>
     <div class="hdd-card_header_text">
       <div class="hdd-card_title">Title</div>
@@ -57,37 +57,13 @@ In component based services (especially internal systems), content can be struct
     <p>The different pieces of a card can be combined as desired.</p>
   </div>
   <div class="hdd-card_actions">
-    <button class="hdd-button">Full width button</button>
+    <button class="hdd-card_actions_action">View more</button>
+    
   </div>
 </div>
 ```
 
-## Card with header action
-`hdd-card`
 
-```cards-3.html
-<div class="hdd-card">
-  <div class="hdd-card_header">
-    <div class="hdd-card_header_icon">
-      <i class="fal fa-info"></i>
-    </div>
-    <div class="hdd-card_header_text">
-      <div class="hdd-card_title">Title</div>
-      <div class="hdd-card_subtitle">Subtitle</div>
-    </div>
-    <button class="hdd-card_header_action">
-      <i class="fal fa-cog"></i>
-    </button>
-  </div>
-  <div class="hdd-card_content">
-    <p>Example-content</p>
-  </div>
-  <div class="hdd-card_actions">
-    <button class="hdd-button">Cancel action</button>
-    <button class="hdd-button">Complete action</button>
-  </div>
-</div>
-```
 
 ## Card with action button
 `hdd-card`
@@ -104,7 +80,8 @@ In component based services (especially internal systems), content can be struct
     <p>Any content can be placed within the card body.</p>
   </div>
   <div class="hdd-card_actions">
-    <button class="hdd-card_actions_action">View more</button>
+    <button class="hdd-card_actions_action">View more <i class="fal fa-arrow-right"></i>
+    </button>
   </div>
 </div>
 ```
