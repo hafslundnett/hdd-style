@@ -18,7 +18,7 @@ In component based services (especially internal systems), content can be struct
   </div>
   <div class="hdd-card_content">
     <p>A card consist of some content.</p>
-    <p>The card can have multiple lines of content.</p>
+    <p>The card can have multiple lines of content.The card can have multiple lines of content.The card can have multiple lines of content.</p>
     <p>Cards are useful for displaying some kind of information</p>
   </div>
   <div class="hdd-card_header">

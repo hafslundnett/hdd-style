@@ -1,5 +1,4 @@
 .hdd-card {
-  
   border-radius: $card-radius;
   box-shadow: $shadow-light;
   box-sizing: border-box;
@@ -14,18 +13,23 @@
 
   &_header {
     display: flex;
-    padding: $card-padding-y $card-padding-x;
+    padding-left: var(--hdd-spacing-3);
+    padding-top: var(--hdd-spacing-3);
 
     &_icon {
       // .is-icon-small is icon-properties, defined in typography.
-      @extend .is-icon-small;
+      // @extend .is-icon-small;
 
-      display: inline-flex;
-      align-self: center;
+      // display: inline-flex;
+      // align-self: center;
       margin-right: $card-header-icon-margin;
       color: var(--hdd-blue);
-      line-height: $card-header-icon-height;
-      vertical-align: top;
+      // line-height: $card-header-icon-height;
+      
+      height: 48px;
+      width: 48px;
+      border: 1px solid black;
+      border-radius: 50%;
     }
 
     &_text {
@@ -40,7 +44,7 @@
       // .is-icon-small is icon-properties, defined in typography.
       @extend .is-icon-small;
       // .is-button-icon and .is-transparent is icon-properties, defined in button.
-      @extend .hdd-button-icon, .is-transparent
+      @extend .hdd-button-icon, .is-transparent;
     }
 
     .is-center {
@@ -50,33 +54,49 @@
   }
 
   &_title {
-    // .is-h2 is font-properties, defined in typography.
-    @extend .is-h2;
+    // TODO: Typograghy must be updated before we extend a style.
+    font-family: "Roboto", "sans-serif";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.0015em;
 
+    color: var(--hdd-font-color);
     display: flex;
     height: 100%;
     font-weight: bold;
   }
 
   &_subtitle {
-    // .is-p is font-properties, defined in typography.
-    @extend .is-p;
+    // TODO: Extend typography when this is finished
+    font-family: "Roboto", "sans-serif";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
 
     display: block;
     color: var(--hdd-font-color);
+
+    //spacing spør ANNA
   }
 
-  &_scroll-wrapper {	
-    overflow-x: auto;	
+  &_scroll-wrapper {
+    overflow-x: auto;
   }
 
   &_content {
     // .is-p is font-properties, defined in typography.
     @extend .is-p;
 
+    //TODO: Update when typography is done, currently just override font-size to 16px. 
+    font-size: 16px;
+
     display: block;
-    margin-bottom: $card-padding-y;
-    padding: 0 $card-padding-x;
+    margin-bottom: $card-padding-y; // Spør anna
+    padding: var(--hdd-spacing-3);
+    max-width: 70ch !important;
   }
 
   &_actions {
@@ -86,16 +106,16 @@
 
     .hdd-button {
       flex: auto;
-      
+
       &:not(:last-child) {
         margin-right: $card-actions-button-spacing;
       }
     }
-    
+
     &_action {
       // .is-p is font-properties, defined in typography.
       @extend .is-p;
-      
+
       flex-grow: 1;
       margin: calc(#{$card-padding-y} * -1) calc(#{$card-padding-x} * -1);
       padding: $card-actions-action-padding;
@@ -108,7 +128,7 @@
       font-weight: 500;
       text-align: center;
       cursor: pointer;
-      
+
       &:hover:not(.no-hover),
       &.is-hovering {
         background-color: var(--hdd-blue-light3);
