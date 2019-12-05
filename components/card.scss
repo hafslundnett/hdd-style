@@ -17,25 +17,44 @@
     padding-left: var(--hdd-spacing-3);
     padding-top: var(--hdd-spacing-3);
 
-    &_icon {
-      // .is-icon-small is icon-properties, defined in typography.
-      // @extend .is-icon-small;
 
-      // display: inline-flex;
-      // align-self: center;
+        &_icon {
+      // .is-icon-small is icon-properties, defined in typography.
+      @extend .is-icon-small;
+
       display: inline-flex;
-      text-indent: -9999px;
-      width: 48px;
-      height: 48px;
+      align-self: center;
       margin-right: $card-header-icon-margin;
       color: var(--hdd-blue);
-      // line-height: $card-header-icon-height;
-      
-      height: 48px;
-      width: 48px;
-      border: 1px solid black;
-      border-radius: 50%;
+      line-height: $card-header-icon-height;
+      vertical-align: top;
+
+      // Add borders and padding
+
     }
+
+
+
+    // &_icon {
+    //   // .is-icon-small is icon-properties, defined in typography.
+    //   @extend .is-icon-small;
+
+    //   display: inline-flex;
+    //   align-self: center;
+    //   display: inline-flex;
+    //   text-indent: -9999px;
+    //   margin-right: $card-header-icon-margin;
+    //   color: var(--hdd-blue);
+    //   line-height: $card-header-icon-height;
+      
+    //   height: 48px;
+    //   width: 48px;
+    //   border: 1px solid black;
+    //   border-radius: 50%;
+    // }
+
+
+
 
     &_text {
       display: flex;
