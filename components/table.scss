@@ -120,10 +120,9 @@ $table-last-column-padding: 1.5rem;
   &.is-sticky-header {
     th {
       position: sticky;
-      top: 0;
+      top: 0; // set this higher if it overlaps with another sticky
       background: white;
-      background-clip: padding-box;
-      z-index: 50;
+      z-index: 1;
     }
   }
 }
