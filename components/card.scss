@@ -46,11 +46,6 @@
       // .is-button-icon and .is-transparent is icon-properties, defined in button.
       @extend .hdd-button-icon, .is-transparent;
     }
-
-    .is-center {
-      display: flex;
-      justify-content: center;
-    }
   }
 
   &_title {
