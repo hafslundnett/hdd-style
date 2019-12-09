@@ -4,16 +4,19 @@
 
 /**
  * Looper over $typography i variables og lager .is-klassene
- * Klassene som genereres: .is-h1, .is-h2, .is-h3, .is-p, .is-p-small, .is-icon-small, .is-icon-medium, .is-icon-large
+ * Klassene som genereres: .is-h1, .is-h2, .is-h3, .is-h4 .is-p, .is-p-2, .is-icon-small, .is-icon-medium, .is-icon-large,
+  .is-icon-text, .is-icon-text-italic, .is-button-text, .is-label, .is-label-small
  */
 
 @each $label, $map in $typography {
   $family: map-get($map, family);
   $size: map-get($map, size);
+  $style: map-get($map, $style );
   $color: map-get($map, color);
   $weight: map-get($map, weight);
   $spacing: map-get($map, spacing);
   $line-height: map-get($map, line-height);
+  $align-items: map-get($map, align-items);
 
   $elements: map-get($map, elements);
   $alt-labels: map-get($map, alt-labels);
@@ -23,9 +26,11 @@
     color: $color;
     font-family: $family;
     font-size: $size;
+    font-style: $style;
     font-weight: $weight;
     letter-spacing: $spacing;
     line-height: $line-height;
+    align-items: $align-items;
   }
 
   @if $alt-labels {
