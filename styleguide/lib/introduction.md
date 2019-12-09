@@ -9,8 +9,8 @@ For every used front-end framework a separate 'components' library should be cre
 
 | Framework     | Version       | Repo          |
 | ------------- | ------------- | ------------- |
-| Angular 5.x | [![hal-components](https://img.shields.io/npm/v/@hafslundnett/hal-components.svg)](https://www.npmjs.com/package/@hafslundnett/hal-components)  | [Github](https://github.com/hafslundnett/hal-components) |
-| [Design document (Figma](https://www.figma.com/file/bGrhst0owpGqOQzKbxMtkdz2/Designsystem-(Interne-applikasjoner)) |
+| Angular 5.x | <a href="https://www.npmjs.com/package/@hafslundnett/hal-components" target="blank">![hal-components](https://img.shields.io/npm/v/@hafslundnett/hal-components.svg)</a> | <a href="https://github.com/hafslundnett/hal-components" target="blank">Github</a> |
+| <a href="https://www.figma.com/file/bGrhst0owpGqOQzKbxMtkdz2/Designsystem-(Interne-applikasjoner" target="blank">Design document (Figma)</a> |
 
 ## Getting started
 
