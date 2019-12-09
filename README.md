@@ -18,7 +18,7 @@ For every used front-end framework a separate 'components' library should be cre
 ## Documentation
 
 HDD-style is documented along with it´s corresponding components library(HAL) at: 
-- https://hal-components.hafslundnett.io/welcome
+- https://hal-components.hafslundnett.io
 
 The showoff website include all documentation off components with related examples. The showoff website can be generated/started by running:
 
