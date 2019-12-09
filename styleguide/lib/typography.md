@@ -28,16 +28,15 @@ Roboto is default font for all text. Append the corresponding class to the tags,
 <h4>abcdefghijklmnopqrstuvwxyzæøå</h4>
 <h4>0123456789</h4>
 <br />
-<p>paragraph</p>
+<p>Paragraph</p>
 <p>ABCDEFHILMNOPQRSTVXÆØÅ</p>
 <p>abcdefghijklmnopqrstuvwxyzæøå</p>
 <p>0123456789</p>
 <br />
-<p class="is-icon-text">Icon-text</p>
-<p class="is-icon-text">ABCDEFHILMNOPQRSTVXÆØÅ</p>
-<br />
-<p class="is-icon-text-italic">Icon-text-italic</p>
-<p class="is-icon-text-italic">ABCDEFHILMNOPQRSTVXÆØÅ</p>
+<p class="is-p-2">Paragraph with is-p2(smaller)</p>
+<p class="is-p-2">ABCDEFHILMNOPQRSTVXÆØÅ</p>
+<p class="is-p-2">abcdefghijklmnopqrstuvwxyzæøå</p>
+<p class="is-p-2">0123456789</p>
 <br />
 <label>Label</label>
 <br />
@@ -47,5 +46,12 @@ Roboto is default font for all text. Append the corresponding class to the tags,
 <label class="is-label-small">Small Label text</label>
 <br />
 <label class="is-label-small">Some small informative text</label>
+<br />
+<br />
+<p class="is-icon-text">Icon-text</p>
+<p class="is-icon-text">ABCDEFHILMNOPQRSTVXÆØÅ</p>
+<br />
+<p class="is-icon-text-italic">Icon-text-italic</p>
+<p class="is-icon-text-italic">ABCDEFHILMNOPQRSTVXÆØÅ</p>
 
 ```

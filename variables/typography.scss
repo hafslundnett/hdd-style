@@ -61,7 +61,7 @@ $typography: (
   ),
   h4: (
     family: $font-family,
-    size: 0.75rem,
+    size: 0.875rem,
     style: normal,
     weight: bold,
     spacing: 0.5px,
@@ -121,8 +121,8 @@ $typography: (
     family: $font-family,
     size: 0.75rem,
     style: italic,
-    spacing: 0.2px,
     weight: normal,
+    spacing: 0.2px,
     color: var(--hdd-font-color),
     line-height: 120%,
     align-items: center
