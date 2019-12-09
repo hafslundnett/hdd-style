@@ -1,6 +1,6 @@
 .hdd-badge {
-  // .is-p-small is font-properties, defined in typography.
-  @extend .is-p-small;
+  // .is-p-2 is font-properties, defined in typography.
+  @extend .is-p-2;
   // Colors available for badge
   @include color-modifiers(('primary', 'warn', 'danger', 'safe'), 'background', 'color');
 

@@ -3359,7 +3359,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
 		<span class="theme-content-element-source-path">typography.md</span>
 	</span>
 	<div class="theme-content-element-description"><p>The typeface should be kept consistent in all mediums, physical and digital. The typography of Hdd is based on the rem unit. The body is set to the browsers default font size. All typography blocks are defined in the $typography variable found in the typography variables file.</p>
-<div id="default-font" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#default-font" class="icon-link i-section__link -heading"></a>Default font</h2></div><p>Roboto is default font for all text. These tags are automatically styled: h1, h2, h3 and p.</p>
+<div id="default-font" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#default-font" class="icon-link i-section__link -heading"></a>Default font</h2></div><p>Roboto is default font for all text. Append the corresponding class to the tags, like the class &quot;is-h1&quot; to a h1 tag for example.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -3404,21 +3404,30 @@ Dropdown should be used if the user wants a recommended selection out of all the
 &lt;h3 class=&quot;is-h3&quot;&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h3&gt;
 &lt;h3 class=&quot;is-h3&quot;&gt;0123456789&lt;/h3&gt;
 &lt;br /&gt;
-&lt;h3 class=&quot;is-h4&quot;&gt;Heading 4&lt;/h3&gt;
-&lt;h3 class=&quot;is-h4&quot;&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h3&gt;
-&lt;h3 class=&quot;is-h4&quot;&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h3&gt;
-&lt;h3 class=&quot;is-h4&quot;&gt;0123456789&lt;/h3&gt;
+&lt;h4 class=&quot;is-h4&quot;&gt;Heading 4&lt;/h4&gt;
+&lt;h4 class=&quot;is-h4&quot;&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h4&gt;
+&lt;h4 class=&quot;is-h4&quot;&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h4&gt;
+&lt;h4 class=&quot;is-h4&quot;&gt;0123456789&lt;/h4&gt;
 &lt;br /&gt;
-&lt;p&gt;paragraph&lt;/p&gt;
-&lt;p&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/p&gt;
-&lt;p&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/p&gt;
-&lt;p&gt;0123456789&lt;/p&gt;
-
+&lt;p class=&quot;is-p&quot;&gt;paragraph&lt;/p&gt;
+&lt;p class=&quot;is-p&quot;&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/p&gt;
+&lt;p class=&quot;is-p&quot;&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/p&gt;
+&lt;p class=&quot;is-p&quot;&gt;0123456789&lt;/p&gt;
+&lt;br /&gt;
 &lt;p class=&quot;is-icon-text&quot;&gt;Icon-text&lt;/p&gt;
 &lt;p class=&quot;is-icon-text&quot;&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/p&gt;
-
+&lt;br /&gt;
 &lt;p class=&quot;is-icon-text-italic&quot;&gt;Icon-text-italic&lt;/p&gt;
 &lt;p class=&quot;is-icon-text-italic&quot;&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/p&gt;
+&lt;br /&gt;
+&lt;label class=&quot;is-label&quot;&gt;Label&lt;/label&gt;
+&lt;br /&gt;
+&lt;label class=&quot;is-label&quot;&gt;Some informative text&lt;/label&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;label class=&quot;is-label-small&quot;&gt;Small Label text&lt;/label&gt;
+&lt;br /&gt;
+&lt;label class=&quot;is-label-small&quot;&gt;Some small informative text&lt;/label&gt;
 ">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;h1 class=&quot;is-h1&quot;&gt;Heading 1&lt;/h1&gt;
 &lt;h1 class=&quot;is-h1&quot;&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h1&gt;
@@ -3435,21 +3444,30 @@ Dropdown should be used if the user wants a recommended selection out of all the
 &lt;h3 class=&quot;is-h3&quot;&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h3&gt;
 &lt;h3 class=&quot;is-h3&quot;&gt;0123456789&lt;/h3&gt;
 &lt;br /&gt;
-&lt;h3 class=&quot;is-h4&quot;&gt;Heading 4&lt;/h3&gt;
-&lt;h3 class=&quot;is-h4&quot;&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h3&gt;
-&lt;h3 class=&quot;is-h4&quot;&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h3&gt;
-&lt;h3 class=&quot;is-h4&quot;&gt;0123456789&lt;/h3&gt;
+&lt;h4 class=&quot;is-h4&quot;&gt;Heading 4&lt;/h4&gt;
+&lt;h4 class=&quot;is-h4&quot;&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h4&gt;
+&lt;h4 class=&quot;is-h4&quot;&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h4&gt;
+&lt;h4 class=&quot;is-h4&quot;&gt;0123456789&lt;/h4&gt;
 &lt;br /&gt;
-&lt;p&gt;paragraph&lt;/p&gt;
-&lt;p&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/p&gt;
-&lt;p&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/p&gt;
-&lt;p&gt;0123456789&lt;/p&gt;
-
+&lt;p class=&quot;is-p&quot;&gt;paragraph&lt;/p&gt;
+&lt;p class=&quot;is-p&quot;&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/p&gt;
+&lt;p class=&quot;is-p&quot;&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/p&gt;
+&lt;p class=&quot;is-p&quot;&gt;0123456789&lt;/p&gt;
+&lt;br /&gt;
 &lt;p class=&quot;is-icon-text&quot;&gt;Icon-text&lt;/p&gt;
 &lt;p class=&quot;is-icon-text&quot;&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/p&gt;
-
+&lt;br /&gt;
 &lt;p class=&quot;is-icon-text-italic&quot;&gt;Icon-text-italic&lt;/p&gt;
 &lt;p class=&quot;is-icon-text-italic&quot;&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/p&gt;
+&lt;br /&gt;
+&lt;label class=&quot;is-label&quot;&gt;Label&lt;/label&gt;
+&lt;br /&gt;
+&lt;label class=&quot;is-label&quot;&gt;Some informative text&lt;/label&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;label class=&quot;is-label-small&quot;&gt;Small Label text&lt;/label&gt;
+&lt;br /&gt;
+&lt;label class=&quot;is-label-small&quot;&gt;Some small informative text&lt;/label&gt;
 </code></pre>
 	</div>
 </div></div>

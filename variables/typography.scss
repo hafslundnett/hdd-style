@@ -1,5 +1,5 @@
-@import 'fontawesome/fontawesome';
-@import 'colors';
+@import "fontawesome/fontawesome";
+@import "colors";
 
 @function font-size($name) {
   $typography-map: null;
@@ -24,8 +24,8 @@
   @return map-get($typography-map, size);
 }
 
-$font-family: 'Roboto', Arial ;
- 
+$font-family: "Roboto", Arial;
+
 // Klassene som legges på .is- i typography i utilities
 
 $typography: (
@@ -34,7 +34,7 @@ $typography: (
     size: 1.5rem,
     style: normal,
     weight: 500,
-    spacing: .15px,
+    spacing: 0.15px,
     color: var(--hdd-font-color),
     line-height: 120%
   ),
@@ -43,7 +43,7 @@ $typography: (
     size: 1.25rem,
     style: normal,
     weight: normal,
-    spacing: .15px,
+    spacing: 0.15px,
     color: var(--hdd-font-color),
     line-height: 120%
   ),
@@ -52,7 +52,7 @@ $typography: (
     size: 1rem,
     style: normal,
     weight: 500,
-    spacing: .15px,
+    spacing: 0.15px,
     color: var(--hdd-font-color),
     line-height: 120%
   ),
@@ -61,7 +61,7 @@ $typography: (
     size: 0.75rem,
     style: normal,
     weight: bold,
-    spacing: .5px,
+    spacing: 0.5px,
     color: var(--hdd-font-color),
     line-height: 120%
   ),
@@ -70,34 +70,34 @@ $typography: (
     size: 1rem,
     style: normal,
     weight: normal,
-    spacing: .15px,
+    spacing: 0.15px,
     color: var(--hdd-font-color),
     line-height: 150%
   ),
   p-2: (
     family: $font-family,
-    size: .0875rem,
+    size: 0.0875rem,
     style: normal,
     weight: normal,
-    spacing: .15px,
+    spacing: 0.15px,
     color: var(--hdd-font-color),
     line-height: 120%
   ),
-  // Icon size classes can be removed after svg icons are implemented. 
+  // Icon size classes can be removed after svg icons are implemented
   icon-small: (
-    family: 'Font Awesome 5 Pro',
-    size: 1.2rem,
-    weight: 300,
-    color: var(--hdd-font-color)
-  ),
+      family: "Font Awesome 5 Pro",
+      size: 1.2rem,
+      weight: 300,
+      color: var(--hdd-font-color)
+    ),
   icon-medium: (
-    family: 'Font Awesome 5 Pro',
+    family: "Font Awesome 5 Pro",
     size: 1.5rem,
     weight: 300,
     color: var(--hdd-font-color)
   ),
   icon-large: (
-    family: 'Font Awesome 5 Pro',
+    family: "Font Awesome 5 Pro",
     size: 2rem,
     weight: 300,
     color: var(--hdd-font-color)
@@ -107,7 +107,7 @@ $typography: (
     size: 0.75rem,
     style: normal,
     weight: normal,
-    spacing: .2px,
+    spacing: 0.2px,
     color: var(--hdd-font-color),
     line-height: 120%,
     align-items: center
@@ -116,7 +116,7 @@ $typography: (
     family: $font-family,
     size: 0.75rem,
     style: italic,
-    spacing: .2px,
+    spacing: 0.2px,
     weight: normal,
     color: var(--hdd-font-color),
     line-height: 120%,
@@ -127,7 +127,7 @@ $typography: (
     size: 0.875rem,
     style: normal,
     weight: normal,
-    spacing: .5px,
+    spacing: 0.5px,
     color: var(--hdd-font-color),
     line-height: 100%,
     align-items: center
@@ -137,7 +137,7 @@ $typography: (
     size: 0.875rem,
     style: normal,
     weight: bold,
-    spacing: .2px,
+    spacing: 0.2px,
     color: var(--hdd-font-color),
     line-height: 100%,
     align-items: left

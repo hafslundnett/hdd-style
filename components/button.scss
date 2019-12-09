@@ -1,8 +1,8 @@
 .hdd-button {
-  // .is-p is font-properties, defined in typography.
-  @extend .is-p;
   // .is-primary is the default for any hdd-button
   @extend .is-primary;
+  // .is-button-text is font-properties, defined in typography.
+  @extend .is-button-text;
 
   &.is-primary {
     display: inline-block;
@@ -145,9 +145,9 @@
   }
 
   &.is-small {
-    // .is-p-small is font-properties, defined in typography.
-    @extend .is-p-small;
+    // .is-button-text is font-properties, defined in typography.
     @extend .hdd-button, .is-primary;
+    @extend .is-button-text;
 
     padding: $button-padding-small;
   }
