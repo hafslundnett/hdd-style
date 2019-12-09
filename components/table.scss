@@ -68,7 +68,7 @@
 
   td {
     // .is-p is font-properties, defined in typography.
-    @extend .is-p;
+    @extend .is-p-2;
   }
 
   &_header {
