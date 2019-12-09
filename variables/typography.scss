@@ -36,7 +36,6 @@ $typography: (
     weight: 500,
     spacing: .15px,
     color: var(--hdd-font-color),
-    elements: (h1),
     line-height: 120%
   ),
   h2: (
@@ -46,7 +45,6 @@ $typography: (
     weight: normal,
     spacing: .15px,
     color: var(--hdd-font-color),
-    elements: (h2),
     line-height: 120%
   ),
   h3: (
@@ -56,7 +54,6 @@ $typography: (
     weight: 500,
     spacing: .15px,
     color: var(--hdd-font-color),
-    elements: (h3),
     line-height: 120%
   ),
   h4: (
@@ -66,7 +63,6 @@ $typography: (
     weight: bold,
     spacing: .5px,
     color: var(--hdd-font-color),
-    elements: (h4),
     line-height: 120%
   ),
   p: (
@@ -76,7 +72,6 @@ $typography: (
     weight: normal,
     spacing: .15px,
     color: var(--hdd-font-color),
-    elements: (p),
     line-height: 150%
   ),
   p-2: (
@@ -124,7 +119,7 @@ $typography: (
     spacing: .2px,
     weight: normal,
     color: var(--hdd-font-color),
-    line-height: 120%
+    line-height: 120%,
     align-items: center
   ),
   button-text: (

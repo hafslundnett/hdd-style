@@ -11,7 +11,7 @@
 @each $label, $map in $typography {
   $family: map-get($map, family);
   $size: map-get($map, size);
-  $style: map-get($map, $style );
+  $style: map-get($map, style );
   $color: map-get($map, color);
   $weight: map-get($map, weight);
   $spacing: map-get($map, spacing);
