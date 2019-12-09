@@ -102,6 +102,32 @@ In component based services (especially internal systems), content can be struct
 </div>
 ```
 
+## Popup
+`hdd-card-popup`
+
+Needs more work, wait for general cards to be done. 
+
+```cards-5-popup.html
+<div class="hdd-card">
+  <div class="hdd-card_header">
+    <div class="hdd-card_header_text">
+      <div class="hdd-card_title">This is a Popup Title</div>
+      <div class="hdd-card_subtitle">This is a subtitle</div>
+    </div>
+    <button class="hdd-card_header_action">
+      <i class="fal fa-times-circle"></i>
+    </button>
+  </div>
+  <div class="hdd-card_content">
+    <p>This is some content inside the popup</p>
+    <p>Ask the user to make a choice or to make an action/input</p>
+  </div>
+  <div class="hdd-card_actions">
+    <button class="hdd-button">Cancel action</button>
+    <button class="hdd-button">Complete action</button>
+  </div>
+</div>
+```
 
 ## Mutations
 **`hdd-card`:**
