@@ -1,3 +1,8 @@
+$badge-padding: 0.2rem 0.6rem;
+$badge-radius: 2rem;
+$badge-icon-size: 6px;
+$badge-icon-border: 2px solid var(--hdd-white);
+
 .hdd-badge {
   // .is-p-small is font-properties, defined in typography.
   @extend .is-p-small;

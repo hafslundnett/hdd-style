@@ -105,6 +105,7 @@
 <li><code>yarn start</code></li>
 </ul>
 <p>This will open the styleguide in your browser and refresh on changes.</p>
+<div id="changelog" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#changelog" class="icon-link i-section__link -heading"></a>Changelog</h2></div><p>Please read the changelog <a href="https://github.com/hafslundnett/blob/master/CHANGELOG.md">here</a> to keep up to date with breaking changes released with new updates. </p>
 </div>
 </div>
 
@@ -396,7 +397,8 @@ Below is a example of how to achieve this with sass.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">buttons.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>Buttons should be used across the different internal services. Changing the color of a button to convey purpose is not ideal as people with vision impairments may struggle. Usage of other colors should be properly discussed and the context clear.</p>
+	<div class="theme-content-element-description"><p>The buttons are to be used across the various internal systems. If there is only one button on the current screen, this should always be a primary button. When you use multiple buttons, the primary button appears on the right and any secondary buttons appear on the left. Secondary button should not be used alone on a screen. Action buttons are specially designed for the user to take an action that will affect something else.</p>
+<p>Changing the color of a button to convey purpose is not ideal as people with vision impairments may struggle. Usage of other colors should be properly discussed and the context clear.</p>
 <div id="primary-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#primary-button" class="icon-link i-section__link -heading"></a>Primary button</h2></div><p><code>hdd-button</code></p>
 <p>If only one button exists on a page, it should always be a primary button. </p>
 <div class="i-example">
@@ -428,18 +430,14 @@ Below is a example of how to achieve this with sass.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button&quot;&gt;Primary&lt;/button&gt;
-&lt;button class=&quot;hdd-button&quot; disabled&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-loading&quot;&gt;Loading&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-small&quot;&gt;Primary small&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-small&quot; disabled&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-small is-loading&quot;&gt;Loading&lt;/button&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button&quot;&gt;Primary&lt;/button&gt;
-&lt;button class=&quot;hdd-button&quot; disabled&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-loading&quot;&gt;Loading&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-small&quot;&gt;Primary small&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-small&quot; disabled&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-small is-loading&quot;&gt;Loading&lt;/button&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button button-margin&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;hdd-button button-margin&quot; disabled&gt;Disabled&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-loading button-margin&quot;&gt;Loading&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button button-margin&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;hdd-button button-margin&quot; disabled&gt;Disabled&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-loading button-margin&quot;&gt;Loading&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;</code></pre>
 	</div>
 </div><div id="secondary-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#secondary-button" class="icon-link i-section__link -heading"></a>Secondary button</h2></div><p><code>hdd-button</code></p>
 <p>The secondary button should never be used alone on a page.</p>
@@ -472,25 +470,20 @@ Below is a example of how to achieve this with sass.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button is-secondary&quot;&gt;Secondary&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-secondary&quot; disabled&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-secondary is-loading&quot;&gt;Loading&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-small is-secondary&quot;&gt;Secondary small&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-small is-secondary&quot; disabled&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-small is-secondary is-loading&quot;&gt;Loading&lt;/button&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button is-secondary&quot;&gt;Secondary&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-secondary&quot; disabled&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-secondary is-loading&quot;&gt;Loading&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-small is-secondary&quot;&gt;Secondary small&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-small is-secondary&quot; disabled&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-small is-secondary is-loading&quot;&gt;Loading&lt;/button&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button is-secondary button-margin&quot;&gt;Secondary&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-secondary button-margin&quot; disabled&gt;Disabled&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-secondary is-loading button-margin&quot;&gt;Loading&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon is-secondary&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button is-secondary button-margin&quot;&gt;Secondary&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-secondary button-margin&quot; disabled&gt;Disabled&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-secondary is-loading button-margin&quot;&gt;Loading&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon is-secondary&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;</code></pre>
 	</div>
-</div><div id="action-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#action-button" class="icon-link i-section__link -heading"></a>Action button</h2></div><p><code>hdd-button</code>.<code>has-icon</code></p>
-<p>Action buttons are for prompting a user action that will affect another part.</p>
+</div><div id="icon-buttons" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#icon-buttons" class="icon-link i-section__link -heading"></a>Icon buttons</h2></div><p><code>hdd-button-icon</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
-                            href="button-action-button.html"
+                            href="button-icon-button.html"
                             target="_blank"
                             class="plain-link"
                             data-toggle="tooltip"
@@ -505,7 +498,7 @@ Below is a example of how to achieve this with sass.</p>
                         <div
                             class="i-example__iframe"
                             lazyframe
-                            data-src="button-action-button.html"
+                            data-src="button-icon-button.html"
                             data-initinview="true"
                             data-title="Loading..." 
                         ></div>
@@ -516,52 +509,18 @@ Below is a example of how to achieve this with sass.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-arrow-left&quot;&gt;&lt;/i&gt; Back&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon-right&quot;&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon-left&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-left&quot;&gt;&lt;/i&gt; Back&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon-right&quot; disabled&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-arrow-left&quot;&gt;&lt;/i&gt; Back&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon-right&quot;&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon-left&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-left&quot;&gt;&lt;/i&gt; Back&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon-right&quot; disabled&gt;Forward &lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
-	</div>
-</div><div id="icon-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#icon-button" class="icon-link i-section__link -heading"></a>Icon-button</h2></div><p><code>hdd-button-icon</code></p>
-<p>A button that only contains an icon and should be used when an icon is used as an button.</p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="button-next-button.html"
-                            target="_blank"
-                            class="plain-link"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Open in a new window"
-                        >
-                            <i class="fa fa-external-link-square fa-fw"></i>
-                            Example
-                        </a>
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="button-next-button.html"
-                            data-initinview="true"
-                            data-title="Loading..." 
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button-icon button-margin&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;hdd-button-icon button-margin&quot; disabled&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;hdd-button-icon button-margin&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;hdd-button-icon button-margin&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;hdd-button-icon is-transparent button-margin&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button-icon button-margin&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;hdd-button-icon button-margin&quot; disabled&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;hdd-button-icon button-margin&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;hdd-button-icon button-margin&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;hdd-button-icon is-transparent button-margin&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
 	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-button</code>:</strong></p>
 <table class="table"><thead><tr>
@@ -577,16 +536,12 @@ Below is a example of how to achieve this with sass.</p>
 <td style="text-align:left">Sets the color of the given button to the secondary color</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>is-small</code></td>
-<td style="text-align:left">Sets the given button to it&#39;s small state</td>
+<td style="text-align:left"><code>is-loading</code></td>
+<td style="text-align:left">Sets the given button to it&#39;s loading state</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>has-icon-right</code></td>
-<td style="text-align:left">Adds padding to the right of icon</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>has-icon-left</code></td>
-<td style="text-align:left">Adds padding to the left of icon</td>
+<td style="text-align:left"><code>has-icon</code></td>
+<td style="text-align:left">Adds padding to the right of icon in a button with text</td>
 </tr>
 </tbody></table><p><strong><code>hdd-button-icon</code>:</strong></p>
 <table class="table"><thead><tr>
@@ -594,36 +549,12 @@ Below is a example of how to achieve this with sass.</p>
 <th style="text-align:left">description</th>
 </tr>
 </thead><tbody><tr>
-<td style="text-align:left"><code>no-active</code></td>
-<td style="text-align:left">Disable the <code>:active</code> state</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>no-focus</code></td>
-<td style="text-align:left">Disable the <code>:focus</code> state</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>no-hover</code></td>
-<td style="text-align:left">Disable the <code>:hover</code> state</td>
-</tr>
-<tr>
 <td style="text-align:left"><code>is-transparent</code></td>
-<td style="text-align:left">Sets the given button to it&#39;s transparent state</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>is-active</code></td>
-<td style="text-align:left">Sets the given button to it&#39;s active state</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>is-hovering</code></td>
-<td style="text-align:left">Sets the given button to it&#39;s hovering state</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>is-loading</code></td>
-<td style="text-align:left">Sets the given button to it&#39;s loading state</td>
+<td style="text-align:left">Sets background and border to transparent</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>is-no-padding</code></td>
-<td style="text-align:left">Removes button padding</td>
+<td style="text-align:left">Removes all padding from icon-button, should only used together with is-transparent</td>
 </tr>
 </tbody></table></div>
 </div>

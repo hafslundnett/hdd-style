@@ -1,3 +1,6 @@
+$sidenav-extended-width: 300px;
+$sidenav-z-index: 90;
+
 .hdd-sidenav {
   // Variable containing '&' to jump to current parent inside a child class.  
   $this: &;

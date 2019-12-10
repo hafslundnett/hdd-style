@@ -1,3 +1,8 @@
+$table-header-padding: 1.2rem 1rem;
+$table-row-padding: 0.7rem 1rem;
+$table-first-column-padding: 1.5rem;
+$table-last-column-padding: 1.5rem;
+
 .hdd-table {
   //Creating variable containing '&' to jump to parent inside a child class.
   $this: &;

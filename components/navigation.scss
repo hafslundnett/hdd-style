@@ -1,5 +1,9 @@
-.hdd-navigation {
+$navigation-height: $sidenav-collapsed-width;
+$navigation-z-index: 99;
+$navigation-padding: 0 0.5rem;
+$navigation-avatar-size: 0.7;
 
+.hdd-navigation {
   box-shadow: $shadow-medium;
   display: flex;
   z-index: $navigation-z-index;
