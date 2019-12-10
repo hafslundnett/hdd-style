@@ -5,10 +5,8 @@ $border-button-padding: (10px - $button-border-width) (16px - $button-border-wid
 $icon-button-height: 36px;
 $icon-button-icon-size: 22px;
 
-/* 
-  Ripple effect
-  Might not work in mdm-ui like loading spinner, need to test!
-*/
+// Ripple effect
+
 @mixin ripple {
   display: inline-block;
   position: relative;
