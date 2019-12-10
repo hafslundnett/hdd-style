@@ -1,11 +1,10 @@
-<a name="3.0.0"></a>
-# Update [3.0.0]
+# Update [4.0.0]
 In this update buttons have been redesigned completely and there are some breaking changes related to these.
 
 ## Breaking changes
 
 ### Buttons:
-The small button is removed, replaced by one mid-sized button.
+The small and normal buttons have been combined into one mid-sized button.
 * **Removed classes**
     * On hdd-button
         * **is-small** is removed
