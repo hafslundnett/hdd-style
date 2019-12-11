@@ -24,9 +24,13 @@
   @return map-get($typography-map, size);
 }
 // Define font-family property as css variable
+
 :root {
-  --hdd-font-family : "Roboto", Arial;
+  --hdd-font-family : 'Roboto', Arial;
 }
+// Keep until systems are updated with css variable. 
+$font-family: 'Roboto', Arial;
+
 
 $typography: (
   h1: (
