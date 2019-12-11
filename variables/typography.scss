@@ -23,14 +23,14 @@
 
   @return map-get($typography-map, size);
 }
-
-$font-family: "Roboto", Arial;
-
-// Klassene som legges på .is- i typography i utilities
+// Define font-family property as css variable
+:root {
+  --hdd-font-family : "Roboto", Arial;
+}
 
 $typography: (
   h1: (
-    family: $font-family,
+    family: var(--hdd-font-family),
     size: 1.5rem,
     style: normal,
     weight: 500,
@@ -42,7 +42,7 @@ $typography: (
     )
   ),
   h2: (
-    family: $font-family,
+    family: var(--hdd-font-family),
     size: 1.25rem,
     style: normal,
     weight: normal,
@@ -54,7 +54,7 @@ $typography: (
     )
   ),
   h3: (
-    family: $font-family,
+    family: var(--hdd-font-family),
     size: 1rem,
     style: normal,
     weight: 500,
@@ -66,7 +66,7 @@ $typography: (
     )
   ),
   h4: (
-    family: $font-family,
+    family: var(--hdd-font-family),
     size: 0.875rem,
     style: normal,
     weight: bold,
@@ -78,7 +78,7 @@ $typography: (
     )
   ),
   p: (
-    family: $font-family,
+    family: var(--hdd-font-family),
     size: 1rem,
     style: normal,
     weight: normal,
@@ -90,7 +90,7 @@ $typography: (
     )
   ),
   p-small: (
-    family: $font-family,
+    family: var(--hdd-font-family),
     size: 0.875rem,
     style: normal,
     weight: normal,
@@ -98,7 +98,9 @@ $typography: (
     color: var(--hdd-font-color),
     line-height: 120%
   ),
-  // Icon size classes can be removed after svg icons are implemented icon-small: (
+  /* icon sizing classes can be removed after svg icons are implemented */ 
+  icon-small:
+    (
       family: "Font Awesome 5 Pro",
       size: 1.2rem,
       weight: 300,
@@ -117,7 +119,7 @@ $typography: (
     color: var(--hdd-font-color)
   ),
   icon-text: (
-    family: $font-family,
+    family: var(--hdd-font-family),
     size: 0.75rem,
     style: normal,
     weight: normal,
@@ -127,7 +129,7 @@ $typography: (
     align-items: center
   ),
   icon-text-italic: (
-    family: $font-family,
+    family: var(--hdd-font-family),
     size: 0.75rem,
     style: italic,
     weight: normal,
@@ -137,7 +139,7 @@ $typography: (
     align-items: center
   ),
   button-text: (
-    family: $font-family,
+    family: var(--hdd-font-family),
     size: 0.875rem,
     style: normal,
     weight: normal,
@@ -147,7 +149,7 @@ $typography: (
     align-items: center
   ),
   label: (
-    family: $font-family,
+    family: var(--hdd-font-family),
     size: 0.875rem,
     style: normal,
     weight: bold,
@@ -160,7 +162,7 @@ $typography: (
     )
   ),
   label-small: (
-    family: $font-family,
+    family: var(--hdd-font-family),
     size: 0.75rem,
     style: normal,
     weight: bold,
