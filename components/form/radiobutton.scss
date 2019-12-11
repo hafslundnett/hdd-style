@@ -1,3 +1,7 @@
+$form-radiobutton-mark-size: 14px;
+$form-radiobutton-mark-border-radius: 14px;
+$form-radiobutton-mark-border: 1px solid var(--hdd-primary);
+
 .hdd-form_radiobutton {
   // Variable containing '&' to jump to current parent inside a child class.
   $this: &;

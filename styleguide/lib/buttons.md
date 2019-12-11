@@ -3,7 +3,9 @@ name: Button
 category: Components
 ---
 
-Buttons should be used across the different internal services. Changing the color of a button to convey purpose is not ideal as people with vision impairments may struggle. Usage of other colors should be properly discussed and the context clear.
+The buttons are to be used across the various internal systems. If there is only one button on the current screen, this should always be a primary button. When you use multiple buttons, the primary button appears on the right and any secondary buttons appear on the left. Secondary button should not be used alone on a screen. Action buttons are specially designed for the user to take an action that will affect something else.
+
+Changing the color of a button to convey purpose is not ideal as people with vision impairments may struggle. Usage of other colors should be properly discussed and the context clear.
 
 ## Primary button
 `hdd-button`
@@ -11,12 +13,10 @@ Buttons should be used across the different internal services. Changing the colo
 If only one button exists on a page, it should always be a primary button. 
 
 ```primary-button.html
-<button class="hdd-button">Primary</button>
-<button class="hdd-button" disabled>Disabled</button>
-<button class="hdd-button is-loading">Loading</button>
-<button class="hdd-button is-small">Primary small</button>
-<button class="hdd-button is-small" disabled>Disabled</button>
-<button class="hdd-button is-small is-loading">Loading</button>
+<button class="hdd-button button-margin">Primary</button>
+<button class="hdd-button button-margin" disabled>Disabled</button>
+<button class="hdd-button is-loading button-margin">Loading</button>
+<button class="hdd-button has-icon"><i class="fal fa-cog"></i>Icon button</button>
 ```
 
 ## Secondary button
@@ -25,35 +25,39 @@ If only one button exists on a page, it should always be a primary button.
 The secondary button should never be used alone on a page.
 
 ```secondary-button.html
-<button class="hdd-button is-secondary">Secondary</button>
-<button class="hdd-button is-secondary" disabled>Disabled</button>
-<button class="hdd-button is-secondary is-loading">Loading</button>
-<button class="hdd-button is-small is-secondary">Secondary small</button>
-<button class="hdd-button is-small is-secondary" disabled>Disabled</button>
-<button class="hdd-button is-small is-secondary is-loading">Loading</button>
+<button class="hdd-button is-secondary button-margin">Secondary</button>
+<button class="hdd-button is-secondary button-margin" disabled>Disabled</button>
+<button class="hdd-button is-secondary is-loading button-margin">Loading</button>
+<button class="hdd-button has-icon is-secondary"><i class="fal fa-cog"></i>Icon button</button>
 ```
 
-## Action button
-`hdd-button`.`has-icon`
-
-Action buttons are for prompting a user action that will affect another part.
-
-```action-button.html
-<button class="hdd-button has-icon-left"><i class="fal fa-arrow-left"></i> Back</button>
-<button class="hdd-button has-icon-right">Forward <i class="fal fa-arrow-right"></i></button>
-<button class="hdd-button has-icon-left" disabled><i class="fal fa-arrow-left"></i> Back</button>
-<button class="hdd-button has-icon-right" disabled>Forward <i class="fal fa-arrow-right"></i></button>
-```
-
-## Icon-button
+## Icon buttons
 `hdd-button-icon`
 
-A button that only contains an icon and should be used when an icon is used as an button.
 
-```next-button.html
-<button class="hdd-button-icon"><i class="fal fa-arrow-right"></i></button>
-<button class="hdd-button-icon is-transparent"><i class="fal fa-arrow-right"></i></button>
-<button class="hdd-button-icon is-transparent is-no-padding"><i class="fal fa-arrow-right"></i></button>
+```icon-button.html
+<button class="hdd-button-icon button-margin"><i class="fal fa-plus-circle"></i></button>
+<button class="hdd-button-icon button-margin" disabled><i class="fal fa-plus-circle"></i></button>
+<button class="hdd-button-icon button-margin"><i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button-icon button-margin" disabled><i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button-icon is-transparent button-margin"><i class="fal fa-cog"></i></button>
+<button class="hdd-button-icon is-transparent is-no-padding"><i class="fal fa-cog"></i></button>
+```
+
+```primary-button.css  hidden
+.button-margin {
+  margin-right: var(--hdd-spacing-1)
+}
+```
+```secondary-button.css  hidden
+.button-margin {
+  margin-right: var(--hdd-spacing-1)
+}
+```
+```icon-button.css  hidden
+.button-margin {
+  margin-right: var(--hdd-spacing-1)
+}
 ```
 
 ## Mutations
@@ -63,19 +67,13 @@ A button that only contains an icon and should be used when an icon is used as a
 | :--- | :--- |
 | `is-primary` | Sets the color of the given button to the primary color |
 | `is-secondary` | Sets the color of the given button to the secondary color |
-| `is-small` | Sets the given button to it's small state |
-| `has-icon-right` | Adds padding to the right of icon |
-| `has-icon-left` | Adds padding to the left of icon |
+| `is-loading` | Sets the given button to it's loading state |
+| `has-icon` | Adds padding to the right of icon in a button with text |
 
 **`hdd-button-icon`:**
 
 | class | description|
 | :--- | :--- |
-| `no-active` | Disable the `:active` state |
-| `no-focus` | Disable the `:focus` state |
-| `no-hover` | Disable the `:hover` state |
-| `is-transparent` | Sets the given button to it's transparent state |
-| `is-active` | Sets the given button to it's active state |
-| `is-hovering` | Sets the given button to it's hovering state |
-| `is-loading` | Sets the given button to it's loading state |
-| `is-no-padding` | Removes button padding |
+| `is-transparent` | Sets background and border to transparent |
+| `is-no-padding` | Removes all padding from icon-button, should only used together with is-transparent |
+

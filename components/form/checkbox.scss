@@ -1,3 +1,7 @@
+$form-checkbox-mark-size: 14px;
+$form-checkbox-mark-border-radius: $border-radius;
+$form-checkbox-mark-border: 1px solid var(--hdd-primary);
+
 .hdd-form_checkbox {
   // Variable containing '&' to jump to current parent inside a child class.
   $this: &;
