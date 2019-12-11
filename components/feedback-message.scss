@@ -21,34 +21,34 @@ $feedback-message-gap: 10px;
   @extend .is-info;
 
   &.is-success {
-    background: var(--hdd-safe);
+    background: var(--hdd-color-safe);
     
     #{$this}_icon, #{$this}_message, #{$this}_close-button {
-      color: var(--hdd-contrast-safe);
+      color: var(--hdd-color-contrast-safe);
     }
   }
 
   &.is-info {
-    background-color: var(--hdd-blue-light3);
+    background-color: var(--hdd-color-blue-light3);
 
     #{$this}_icon, #{$this}_message, #{$this}_close-button {
-      color: var(--hdd-contrast-blue-light3);
+      color: var(--hdd-color-contrast-blue-light3);
     }
   }
 
   &.is-warn {
-    background-color: var(--hdd-warn);
+    background-color: var(--hdd-color-warn);
 
     #{$this}_icon, #{$this}_message, #{$this}_close-button {
-      color: var(--hdd-contrast-warn);
+      color: var(--hdd-color-contrast-warn);
     }
   }
 
   &.is-error {
-    background-color: var(--hdd-danger);
+    background-color: var(--hdd-color-danger);
 
     #{$this}_icon, #{$this}_message, #{$this}_close-button {
-      color: var(--hdd-contrast-danger);
+      color: var(--hdd-color-contrast-danger);
     }
   }
 

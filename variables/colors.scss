@@ -187,7 +187,7 @@ $all-colors: map-merge($colors, $data-colors);
 $gradients: (
   'dusk': (
     angle: 180deg,
-    from: var(--hdd-blue),
+    from: var(--hdd--color-blue),
     to: #279DD0
   )
 );

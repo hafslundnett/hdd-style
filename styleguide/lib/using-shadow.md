@@ -3,7 +3,7 @@ name: Shadows
 category: Colors
 ---
 
-HDD contain 3 different types of shadows, that goes from light to strong. Every shadow can be used directly by using the css-variable for that shadow: `var(--hdd-$name)`. For example for the light shadow: `box-shadow: var(--hdd-shadow-light)`.
+HDD contain 3 different types of shadows, that goes from light to strong. Every shadow can be used directly by using the css-variable for that shadow: `var(--hdd-shadow-$name)`. For example for the light shadow: `box-shadow: var(--hdd-shadow-light)`.
 
 ## Using shadows as CSS-variables
 The css-variables can be accessed anywhere when importing hdd into your application. All shadows are available for use. A shadow can be selected by it's name.

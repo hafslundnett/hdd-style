@@ -14,8 +14,8 @@ $badge-icon-border: 2px solid var(--hdd-white);
   border-radius: $badge-radius;
 
   // Default colors
-  background: var(--hdd-danger);
-  color: var(--hdd-contrast-danger);
+  background: var(--hdd-color-danger);
+  color: var(--hdd-color-contrast-danger);
 
   &-icon {
     // Colors available for badge-icon
@@ -32,6 +32,6 @@ $badge-icon-border: 2px solid var(--hdd-white);
     border-radius: 100%;
 
     // Default colors
-    background: var(--hdd-danger);
+    background: var(--hdd-color-danger);
   }
 }

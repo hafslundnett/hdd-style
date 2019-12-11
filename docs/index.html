@@ -2605,23 +2605,23 @@ Dropdown should be used if the user wants a recommended selection out of all the
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">using-colors.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>Hafslund Nett has its own distinct groups of colors. All colors that are being used in this project are defined in the <a href="https://github.com/hafslundnett/hdd-style/blob/master/variables/colors.scss">colors map</a>. Every color can be used directly by using the css-variable for a color: <code>var(--hdd-$name)</code>. For example for primary: <code>color: var(--hdd-primary)</code>.</p>
+	<div class="theme-content-element-description"><p>Hafslund Nett has its own distinct groups of colors. All colors that are being used in this project are defined in the <a href="https://github.com/hafslundnett/hdd-style/blob/master/variables/colors.scss">colors map</a>. Every color can be used directly by using the css-variable for a color: <code>var(--hdd-color-$name)</code>. For example for primary: <code>color: var(--hdd-color-primary)</code>.</p>
 <div id="using-css-variables" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#using-css-variables" class="icon-link i-section__link -heading"></a>Using CSS-variables</h2></div><p>The css-variables can be accessed anywhere when importing hdd into your application. All colors, as well as their contrast color is available for use. A color can be selected by it&#39;s color name or label.</p>
 <ul>
-<li><code>var(--hdd-$name)</code></li>
-<li><code>var(--hdd-contrast-$name)</code></li>
+<li><code>var(--hdd-color-$name)</code></li>
+<li><code>var(--hdd-color-contrast-$name)</code></li>
 </ul>
 
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang "> scss</button>
 	<div class="i-code-block__content ">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".hdd-element {
-  background: var(--hdd-primary); // using the primary color, blue
-  color: var(--hdd-contrast-primary); // using the contrast color of primary 
+  background: var(--hdd-color-primary); // using the primary color, blue
+  color: var(--hdd-color-contrast-primary); // using the contrast color of primary 
 }">Copy</button>
 		<pre class="mb-0"><code class="lang-">.hdd-element {
-  background: var(--hdd-primary); // using the primary color, blue
-  color: var(--hdd-contrast-primary); // using the contrast color of primary 
+  background: var(--hdd-color-primary); // using the primary color, blue
+  color: var(--hdd-color-contrast-primary); // using the contrast color of primary 
 }</code></pre>
 	</div>
 </div></div>
@@ -2636,12 +2636,12 @@ Dropdown should be used if the user wants a recommended selection out of all the
 	<div class="theme-content-element-description"><p>Hafslund Nett has two different palettes of colors, primary colors and support colors, and they should be used in all communication to create identity. In this section all the available colors with their corresponding contrast-color is visualized.</p>
 <div id="primary-colors" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#primary-colors" class="icon-link i-section__link -heading"></a>Primary colors</h2></div><p>The primary color is blue and work as an important element for building the identity of Hafslund Nett. Blue symbolize credibility and stability. The associated shades of blue provide contrast, flexibility and airiness. This limited color scheme provides visual continuity throughout the user interface. When using estimates, pay particular attention to creating contrasts that are approved in WCAG. </p>
 <ul>
-<li><code>--hdd-blue</code> <code>--hdd-contrast-blue</code></li>
-<li><code>--hdd-blue-dark</code> <code>--hdd-contrast-blue-dark</code></li>
-<li><code>--hdd-blue-light1</code> <code>--hdd-contrast-blue-light1</code></li>
-<li><code>--hdd-blue-light2</code> <code>--hdd-contrast-blue-light2</code></li>
-<li><code>--hdd-blue-light3</code> <code>--hdd-contrast-blue-light3</code></li>
-<li><code>--hdd-blue-light4</code> <code>--hdd-contrast-blue-light4</code></li>
+<li><code>--hdd-color-blue</code> <code>--hdd-color-contrast-blue</code></li>
+<li><code>--hdd-color-blue-dark</code> <code>--hdd-color-contrast-blue-dark</code></li>
+<li><code>--hdd-color-blue-light1</code> <code>--hdd-color-contrast-blue-light1</code></li>
+<li><code>--hdd-color-blue-light2</code> <code>--hdd-color-contrast-blue-light2</code></li>
+<li><code>--hdd-color-blue-light3</code> <code>--hdd-color-contrast-blue-light3</code></li>
+<li><code>--hdd-color-blue-light4</code> <code>--hdd-color-contrast-blue-light4</code></li>
 </ul>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -2674,53 +2674,53 @@ Dropdown should be used if the user wants a recommended selection out of all the
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
   &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
-  &lt;span style=&quot;background: var(--hdd-blue); height: 100px; width: 100px;&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-blue-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-blue-light1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-blue-light2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-blue-light3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-blue-light4)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-blue); height: 100px; width: 100px;&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-blue-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-blue-light1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-blue-light2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-blue-light3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-blue-light4)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
   &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-blue); height: 100px; width: 100px;&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-blue-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-blue-light1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-blue-light2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-blue-light3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-blue-light4)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-blue); height: 100px; width: 100px;&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-blue-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light4)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
   &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
-  &lt;span style=&quot;background: var(--hdd-blue); height: 100px; width: 100px;&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-blue-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-blue-light1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-blue-light2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-blue-light3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-blue-light4)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-blue); height: 100px; width: 100px;&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-blue-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-blue-light1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-blue-light2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-blue-light3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-blue-light4)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
   &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-blue); height: 100px; width: 100px;&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-blue-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-blue-light1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-blue-light2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-blue-light3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-blue-light4)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-blue); height: 100px; width: 100px;&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-blue-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light4)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><div id="support-colors" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#support-colors" class="icon-link i-section__link -heading"></a>Support colors</h2></div><p>Support colors are all colors which are not considered primary colors. These colors include greys, signaling colors, data visualization colors, and shadows.</p>
 <h3>Grayscale</h3><p>The grayscale should be used in addition to the primary colors of non-printable items. The darkest gray is text color and should be used on all titles, paragraphs, and content. If text appears on a dark surface, contrast requirements must be maintained and white text must be used (#FFFFFF).</p>
 <ul>
-<li><code>--hdd-black</code> <code>--hdd-contrast-black</code></li>
-<li><code>--hdd-font-color</code> <code>--hdd-contrast-font-color</code></li>
-<li><code>--hdd-grey-dark</code> <code>--hdd-contrast-grey-dark</code></li>
-<li><code>--hdd-grey-medium</code> <code>--hdd-contrast-grey-medium</code></li>
-<li><code>--hdd-grey</code> <code>--hdd-contrast-grey</code></li>
-<li><code>--hdd-grey-border</code> <code>--hdd-contrast-grey-border</code></li>
-<li><code>--hdd-grey-light</code> <code>--hdd-contrast-grey-light</code> </li>
-<li><code>--hdd-grey-background</code> <code>--hdd-contrast-grey-background</code> </li>
-<li><code>--hdd-white</code> <code>--hdd-contrast-white</code> </li>
+<li><code>--hdd-color-black</code> <code>--hdd-color-contrast-black</code></li>
+<li><code>--hdd-color-font-color</code> <code>--hdd-color-contrast-font-color</code></li>
+<li><code>--hdd-color-grey-dark</code> <code>--hdd-color-contrast-grey-dark</code></li>
+<li><code>--hdd-color-grey-medium</code> <code>--hdd-color-contrast-grey-medium</code></li>
+<li><code>--hdd-color-grey</code> <code>--hdd-color-contrast-grey</code></li>
+<li><code>--hdd-color-grey-border</code> <code>--hdd-color-contrast-grey-border</code></li>
+<li><code>--hdd-color-grey-light</code> <code>--hdd-color-contrast-grey-light</code> </li>
+<li><code>--hdd-color-grey-background</code> <code>--hdd-color-contrast-grey-background</code> </li>
+<li><code>--hdd-color-white</code> <code>--hdd-color-contrast-white</code> </li>
 </ul>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -2753,58 +2753,58 @@ Dropdown should be used if the user wants a recommended selection out of all the
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
   &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
-  &lt;span style=&quot;background: var(--hdd-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-font-color)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-grey-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-grey-medium)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-grey)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-grey-border)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-grey-light)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-grey-background)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-font-color)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-medium)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-border)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-light)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-background)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
   &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-font-color)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-grey-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-grey-medium)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-grey)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-grey-border)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-grey-light)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-grey-background)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-font-color)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-medium)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-border)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-light)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-background)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
   &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
-  &lt;span style=&quot;background: var(--hdd-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-font-color)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-grey-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-grey-medium)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-grey)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-grey-border)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-grey-light)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-grey-background)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-font-color)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-medium)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-border)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-light)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-background)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
   &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-font-color)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-grey-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-grey-medium)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-grey)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-grey-border)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-grey-light)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-grey-background)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-font-color)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-medium)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-border)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-light)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-background)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><h3>Signal colors</h3><p>Signal colors should only be used in meaningful (never being identity-bearing or the only color appearing on a screen) situations and should only mean one thing per platform.</p>
 <ul>
-<li><code>--hdd-signal-green</code>    <code>--hdd-contrast-signal-green</code></li>
-<li><code>--hdd-signal-yellow</code>   <code>--hdd-contrast-signal-yellow</code></li>
-<li><code>--hdd-signal-red</code>      <code>--hdd-contrast-signal-red</code></li>
+<li><code>--hdd-color-signal-green</code>    <code>--hdd-color-contrast-signal-green</code></li>
+<li><code>--hdd-color-signal-yellow</code>   <code>--hdd-color-contrast-signal-yellow</code></li>
+<li><code>--hdd-color-signal-red</code>      <code>--hdd-color-contrast-signal-red</code></li>
 </ul>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -2837,39 +2837,39 @@ Dropdown should be used if the user wants a recommended selection out of all the
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
   &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
-  &lt;span style=&quot;background: var(--hdd-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
   &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
   &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
-  &lt;span style=&quot;background: var(--hdd-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
   &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><h3>Data visualization</h3><p>These colors are chosen to be used for infographics. If necessary, these colors can also be used in varying degrees of opacity (eg heat maps).</p>
 <ul>
-<li><code>--hdd-data-navy</code>   <code>--hdd-contrast-data-navy</code></li>
-<li><code>--hdd-data-marine</code>   <code>--hdd-contrast-data-marine</code></li>
-<li><code>--hdd-data-blue</code>   <code>--hdd-contrast-data-blue</code></li>
-<li><code>--hdd-data-turquoise</code>   <code>--hdd-contrast-data-turquoise</code></li>
-<li><code>--hdd-data-seagreen</code>   <code>--hdd-contrast-data-seagreen</code></li>
-<li><code>--hdd-data-green</code>    <code>--hdd-contrast-data-green</code></li>
-<li><code>--hdd-data-orange</code>   <code>--hdd-contrast-data-orange</code></li>
-<li><code>--hdd-data-yellow</code>   <code>--hdd-contrast-data-yellow</code></li>
+<li><code>--hdd-color-data-navy</code>   <code>--hdd-color-contrast-data-navy</code></li>
+<li><code>--hdd-color-data-marine</code>   <code>--hdd-color-contrast-data-marine</code></li>
+<li><code>--hdd-color-data-blue</code>   <code>--hdd-color-contrast-data-blue</code></li>
+<li><code>--hdd-color-data-turquoise</code>   <code>--hdd-color-contrast-data-turquoise</code></li>
+<li><code>--hdd-color-data-seagreen</code>   <code>--hdd-color-contrast-data-seagreen</code></li>
+<li><code>--hdd-color-data-green</code>    <code>--hdd-color-contrast-data-green</code></li>
+<li><code>--hdd-color-data-orange</code>   <code>--hdd-color-contrast-data-orange</code></li>
+<li><code>--hdd-color-data-yellow</code>   <code>--hdd-color-contrast-data-yellow</code></li>
 </ul>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -2902,47 +2902,47 @@ Dropdown should be used if the user wants a recommended selection out of all the
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
   &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
-  &lt;span style=&quot;background: var(--hdd-data-navy)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-data-marine)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-data-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-data-turquoise)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-data-seagreen)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-data-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-data-orange)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-data-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-data-navy)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-data-marine)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-data-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-data-turquoise)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-data-seagreen)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-data-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-data-orange)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-data-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
   &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-data-navy)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-data-marine)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-data-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-data-turquoise)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-data-seagreen)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-data-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-data-orange)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-data-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-data-navy)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-data-marine)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-data-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-data-turquoise)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-data-seagreen)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-data-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-data-orange)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-data-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
   &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
-  &lt;span style=&quot;background: var(--hdd-data-navy)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-data-marine)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-data-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-data-turquoise)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-data-seagreen)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-data-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-data-orange)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-data-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-data-navy)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-data-marine)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-data-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-data-turquoise)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-data-seagreen)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-data-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-data-orange)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-data-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
   &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-data-navy)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-data-marine)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-data-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-data-turquoise)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-data-seagreen)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-data-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-data-orange)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-contrast-data-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-data-navy)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-data-marine)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-data-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-data-turquoise)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-data-seagreen)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-data-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-data-orange)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-data-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div></div>
@@ -2954,7 +2954,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">using-shadow.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>HDD contain 3 different types of shadows, that goes from light to strong. Every shadow can be used directly by using the css-variable for that shadow: <code>var(--hdd-$name)</code>. For example for the light shadow: <code>box-shadow: var(--hdd-shadow-light)</code>.</p>
+	<div class="theme-content-element-description"><p>HDD contain 3 different types of shadows, that goes from light to strong. Every shadow can be used directly by using the css-variable for that shadow: <code>var(--hdd-shadow-$name)</code>. For example for the light shadow: <code>box-shadow: var(--hdd-shadow-light)</code>.</p>
 <div id="using-shadows-as-css-variables" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#using-shadows-as-css-variables" class="icon-link i-section__link -heading"></a>Using shadows as CSS-variables</h2></div><p>The css-variables can be accessed anywhere when importing hdd into your application. All shadows are available for use. A shadow can be selected by it&#39;s name.</p>
 <ul>
 <li><code>var(--hdd-shadow-light)</code></li>
@@ -3235,7 +3235,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: var(--hdd-spacing-3); background: var(--hdd-white); border-radius: 5px;&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: var(--hdd-spacing-3); background: var(--hdd-color-white); border-radius: 5px;&quot;&gt;
     &lt;h1 style=&quot;margin-bottom: var(--hdd-spacing-3);&quot;&gt;
         Gjennomfør handling for ticket #8
     &lt;/h1&gt;
@@ -3257,7 +3257,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
         &lt;button class=&quot;hdd-button&quot;&gt;Gjennomfør handling&lt;/button&gt;
     &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: var(--hdd-spacing-3); background: var(--hdd-white); border-radius: 5px;&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: var(--hdd-spacing-3); background: var(--hdd-color-white); border-radius: 5px;&quot;&gt;
     &lt;h1 style=&quot;margin-bottom: var(--hdd-spacing-3);&quot;&gt;
         Gjennomfør handling for ticket #8
     &lt;/h1&gt;
