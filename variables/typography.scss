@@ -37,7 +37,9 @@ $typography: (
     spacing: 0.15px,
     color: var(--hdd-font-color),
     line-height: 120%,
-    elements: (h1)
+    elements: (
+      h1
+    )
   ),
   h2: (
     family: $font-family,
@@ -47,7 +49,9 @@ $typography: (
     spacing: 0.15px,
     color: var(--hdd-font-color),
     line-height: 120%,
-    elements: (h2)
+    elements: (
+      h2
+    )
   ),
   h3: (
     family: $font-family,
@@ -57,7 +61,9 @@ $typography: (
     spacing: 0.15px,
     color: var(--hdd-font-color),
     line-height: 120%,
-    elements: (h3)
+    elements: (
+      h3
+    )
   ),
   h4: (
     family: $font-family,
@@ -67,7 +73,9 @@ $typography: (
     spacing: 0.5px,
     color: var(--hdd-font-color),
     line-height: 120%,
-    elements: (h4)
+    elements: (
+      h4
+    )
   ),
   p: (
     family: $font-family,
@@ -77,9 +85,11 @@ $typography: (
     spacing: 0.15px,
     color: var(--hdd-font-color),
     line-height: 150%,
-    elements: (p)
+    elements: (
+      p
+    )
   ),
-  p-2: (
+  p-small: (
     family: $font-family,
     size: 0.875rem,
     style: normal,
@@ -88,8 +98,7 @@ $typography: (
     color: var(--hdd-font-color),
     line-height: 120%
   ),
-  // Icon size classes can be removed after svg icons are implemented
-  icon-small: (
+  // Icon size classes can be removed after svg icons are implemented icon-small: (
       family: "Font Awesome 5 Pro",
       size: 1.2rem,
       weight: 300,
@@ -146,7 +155,9 @@ $typography: (
     color: var(--hdd-font-color),
     line-height: 100%,
     align-items: left,
-    elements:(label)
+    elements: (
+      label
+    )
   ),
   label-small: (
     family: $font-family,
