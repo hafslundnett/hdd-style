@@ -31,7 +31,6 @@
 // Keep until systems are updated with css variable. 
 $font-family: 'Roboto', Arial;
 
-
 $typography: (
   h1: (
     family: var(--hdd-font-family),
@@ -103,13 +102,12 @@ $typography: (
     line-height: 120%
   ),
   /* icon sizing classes can be removed after svg icons are implemented */ 
-  icon-small:
-    (
+  icon-small: (
       family: "Font Awesome 5 Pro",
       size: 1.2rem,
       weight: 300,
       color: var(--hdd-font-color)
-    ),
+  ),
   icon-medium: (
     family: "Font Awesome 5 Pro",
     size: 1.5rem,
