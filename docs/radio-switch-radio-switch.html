@@ -53,32 +53,24 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <ul class="hdd-form-radio-switch">
-  <li class="hdd-form-radio-switch_item">
-    <input class="radio-switch_input" type="radio" name="radioButton" id="radio1" checked>
-    <label class="hdd-form-radio-switch_label" for="radio1">Monthly</label>
-  </li>
+    <div class="hdd-radio-switch">
+  <input type="radio" id="radio-one" name="switch-example" value="month" checked/>
+  <label for="radio-one">Monthly</label>
 
-  <li class="hdd-form-radio-switch_item">
-    <input class="radio-switch_input" type="radio" name="radioButton" id="radio2">
-    <label class="hdd-form-radio-switch_label" for="radio2">Yearly</label>
-    <div aria-hidden="true" class="radio-switch__marker"></div>
-  </li>
-</ul>
+  <input type="radio" id="radio-two" name="switch-example" value="year" />
+  <label for="radio-two">Yearly</label>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><ul class="hdd-form-radio-switch">
-  <li class="hdd-form-radio-switch_item">
-    <input class="radio-switch_input" type="radio" name="radioButton" id="radio1" checked>
-    <label class="hdd-form-radio-switch_label" for="radio1">Monthly</label>
-  </li>
+</div>
 
-  <li class="hdd-form-radio-switch_item">
-    <input class="radio-switch_input" type="radio" name="radioButton" id="radio2">
-    <label class="hdd-form-radio-switch_label" for="radio2">Yearly</label>
-    <div aria-hidden="true" class="radio-switch__marker"></div>
-  </li>
-</ul></script>
+			<script type="text/x-stylemark" data-language="html"><div class="hdd-radio-switch">
+  <input type="radio" id="radio-one" name="switch-example" value="month" checked/>
+  <label for="radio-one">Monthly</label>
+
+  <input type="radio" id="radio-two" name="switch-example" value="year" />
+  <label for="radio-two">Yearly</label>
+</div>
+</script>
 
 		<!--
 			Vanilla JS
@@ -111,10 +103,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-switch-button-swtich-button', []);
+						module = angular.module('stylemark-radio-switch-radio-switch', []);
 					}
 
-					module.controller('stylemark-switch-button-swtich-button-' + index, function($scope) {
+					module.controller('stylemark-radio-switch-radio-switch-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

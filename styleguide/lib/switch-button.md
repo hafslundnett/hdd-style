@@ -1,20 +1,21 @@
 ---
-name: Switch Button
+name: Radio Switch
 category: Form-Components
 ---
 
-A radio button with a 'toggle' behaviour
+A radio switch
 
 
 ## Switch-button
 `hdd-form-radio-switch`
 
-```swtich-button.html
-<div class="hdd-form_field">
-  <span class="hdd-form_field_title">Radio switchName</span>
-    <label class="hdd-form-radio-switch" style="margin-bottom: 15px">
-        <input type="radio">
-        <span class="hdd-form-radio-switch slider"></span>
-    </label>
+```radio-switch.html
+<div class="hdd-radio-switch">
+  <input type="radio" id="radio-one" name="switch-example" value="month" checked/>
+  <label for="radio-one">Monthly</label>
+
+  <input type="radio" id="radio-two" name="switch-example" value="year" />
+  <label for="radio-two">Yearly</label>
 </div>
+
 ```
