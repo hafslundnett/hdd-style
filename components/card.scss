@@ -14,7 +14,7 @@ $card-actions-button-spacing: 25px;
   display: inline-flex;
   width: 100%;
   flex-direction: column;
-  background: var(--hdd-white);
+  background: var(--hdd-color-white);
 
   &.is-full-height {
     height: 100%;
@@ -31,7 +31,7 @@ $card-actions-button-spacing: 25px;
       display: inline-flex;
       align-self: center;
       margin-right: $card-header-icon-margin;
-      color: var(--hdd-blue);
+      color: var(--hdd-color-blue);
       line-height: $card-header-icon-height;
       vertical-align: top;
     }
@@ -71,7 +71,7 @@ $card-actions-button-spacing: 25px;
     @extend .is-p;
 
     display: block;
-    color: var(--hdd-font-color);
+    color: var(--hdd-color-font-color);
   }
 
   &_scroll-wrapper {	
@@ -108,18 +108,18 @@ $card-actions-button-spacing: 25px;
       margin: calc(#{$card-padding-y} * -1) calc(#{$card-padding-x} * -1);
       padding: $card-actions-action-padding;
       border: 0;
-      border-top: 1px solid var(--hdd-grey-light);
+      border-top: 1px solid var(--hdd-color-grey-light);
       border-radius: 0;
       background: transparent;
 
-      color: var(--hdd-primary);
+      color: var(--hdd-color-primary);
       font-weight: 500;
       text-align: center;
       cursor: pointer;
       
       &:hover:not(.no-hover),
       &.is-hovering {
-        background-color: var(--hdd-blue-light3);
+        background-color: var(--hdd-color-blue-light3);
       }
     }
   }

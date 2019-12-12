@@ -3,10 +3,10 @@ body {
 }
 
 *::selection {
-  background: var(--hdd-blue-light1);
-  color: var(--hdd-white);
+  background: var(--hdd-color-blue-light1);
+  color: var(--hdd-color-white);
 }
 
 *:focus {
-  outline-color: var(--hdd-blue-light1);
+  outline-color: var(--hdd-color-blue-light1);
 }

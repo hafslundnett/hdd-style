@@ -17,7 +17,7 @@ $form-select-icon-margin: 0.9rem;
   border: $form-select-border;
   border-radius: $form-select-border-radius;
 
-  background: var(--hdd-white);
+  background: var(--hdd-color-white);
 
   select {
     flex-grow: 1;
@@ -39,35 +39,35 @@ $form-select-icon-margin: 0.9rem;
   }
 
   &.is-focus {
-    border-color: var(--hdd-primary);
+    border-color: var(--hdd-color-primary);
 
     select {
-      color: var(--hdd-primary);
+      color: var(--hdd-color-primary);
     }
 
     #{$this}_icon,
     > svg,
     > i {
       opacity: 1;
-      color: var(--hdd-primary);
+      color: var(--hdd-color-primary);
     }
   }
 
   &.is-invalid {
-    border-color: var(--hdd-signal-red);
+    border-color: var(--hdd-color-signal-red);
 
     select {
-      color: var(--hdd-signal-red);
+      color: var(--hdd-color-signal-red);
     }
 
     i {
       opacity: 1;
-      color: var(--hdd-signal-red);
+      color: var(--hdd-color-signal-red);
     }
   }
 
   &.is-disabled {
-    background: var(--hdd-grey-light);
+    background: var(--hdd-color-grey-light);
     cursor: default;
   }
 
@@ -83,7 +83,7 @@ $form-select-icon-margin: 0.9rem;
     position: absolute;
     transition: color $medium-transition $transition-cubic, opacity $medium-transition $transition-cubic;
     opacity: 0.44;
-    color: var(--hdd-black);
+    color: var(--hdd-color-black);
     font-size: font-size(h2);
 
     &:first-child {

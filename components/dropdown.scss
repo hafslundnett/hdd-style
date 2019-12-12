@@ -1,5 +1,5 @@
 $dropdown-border-radius: $border-radius;
-$dropdown-border: 1px solid var(--hdd-grey);
+$dropdown-border: 1px solid var(--hdd-color-grey);
 $dropdown-margin: 20px;
 $dropdown-spacing-element: 4px;
 $dropdown-content-padding: 0.5rem 0;
@@ -22,7 +22,7 @@ $dropdown-item-padding: 0.5rem 0 0.5rem 1rem;
     border: $dropdown-border;
     border-radius: $dropdown-border-radius;
 
-    background: var(--hdd-white);
+    background: var(--hdd-color-white);
 
     // Alignes the dropdown on top of the search field. 
     &.is-aligned-top {
@@ -50,7 +50,7 @@ $dropdown-item-padding: 0.5rem 0 0.5rem 1rem;
       }
 
       &.is-active {
-        background: var(--hdd-blue-light4);
+        background: var(--hdd-color-blue-light4);
       }
     }
   }

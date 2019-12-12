@@ -13,7 +13,7 @@ $sidenav-z-index: 90;
   width: $sidenav-collapsed-width;
   height: 100%;
   overflow: hidden;
-  background: var(--hdd-white);
+  background: var(--hdd-color-white);
 
   &.is-active {
     width: $sidenav-extended-width;
@@ -57,15 +57,15 @@ $sidenav-z-index: 90;
       display: flex;
       align-items: center;
       width: $sidenav-extended-width;
-      background: var(--hdd-white);
+      background: var(--hdd-color-white);
 
       &:hover,
       &.is-active {
-        background: var(--hdd-blue-light1);
+        background: var(--hdd-color-blue-light1);
 
         #{$this}_icon,
         #{$this}_label {
-          color: var(--hdd-white);
+          color: var(--hdd-color-white);
         }
       }
 
@@ -78,7 +78,7 @@ $sidenav-z-index: 90;
         width: $sidenav-collapsed-width;
         height: $sidenav-collapsed-width;
 
-        color: var(--hdd-grey);
+        color: var(--hdd-color-grey);
         font-size: font-size(icon-small);
       }
 
@@ -91,7 +91,7 @@ $sidenav-z-index: 90;
         padding-right: 1.5rem;
         opacity: 0;
 
-        color: var(--hdd-grey);
+        color: var(--hdd-color-grey);
       }
 
       .hdd-badge {

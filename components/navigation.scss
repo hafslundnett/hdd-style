@@ -14,7 +14,7 @@ $navigation-avatar-size: 0.7;
   width: 100%;
   height: $navigation-height;
   padding: $navigation-padding;
-  background: var(--hdd-white);
+  background: var(--hdd-color-white);
 
   // Setting the class at the root element of layout component, check layout.md for more info. 
   @at-root {
@@ -50,7 +50,7 @@ $navigation-avatar-size: 0.7;
     margin-left: .5rem;
     border-radius: 100%;
 
-    background: var(--hdd-grey-light);
+    background: var(--hdd-color-grey-light);
     background-position: center;
   }
 }
