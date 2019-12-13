@@ -38,12 +38,12 @@
   &_error {
     > i {
       margin-right: 5px;
-      color: var(--hdd-signal-red);
+      color: var(--hdd-color-signal-red);
     }
   }
 
   &_info {
-    color: var(--hdd-font-color);
+    color: var(--hdd-color-font-color);
   }
 
   &.is-line {

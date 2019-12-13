@@ -30,8 +30,8 @@
 
   @each $label in $labels {
     :root {
-      --hdd-#{$label}: #{$color};
-      --hdd-contrast-#{$label}: #{$contrast};
+      --hdd-color-#{$label}: #{$color};
+      --hdd-color-contrast-#{$label}: #{$contrast};
     }
   }
 }

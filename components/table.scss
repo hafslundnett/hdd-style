@@ -11,7 +11,7 @@ $table-last-column-padding: 1.5rem;
   overflow: scroll;
   border-spacing: 0;
   border-collapse: collapse;
-  background: var(--hdd-white);
+  background: var(--hdd-color-white);
 
   th,
   td {
@@ -63,11 +63,11 @@ $table-last-column-padding: 1.5rem;
   tr {
 
     &.is-stripe {
-      background: var(--hdd-blue-light4);
+      background: var(--hdd-color-blue-light4);
     }
 
     &.is-selected {
-      background: var(--hdd-blue-light3);
+      background: var(--hdd-color-blue-light3);
     }
   }
 
@@ -80,7 +80,7 @@ $table-last-column-padding: 1.5rem;
     // .is-h3 is font-properties, defined in typography.
     @extend .is-h3;
 
-    border-bottom: 2px solid var(--hdd-grey-light);
+    border-bottom: 2px solid var(--hdd-color-grey-light);
     text-align: left;
 
     th,

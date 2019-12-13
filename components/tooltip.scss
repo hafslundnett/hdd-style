@@ -23,8 +23,8 @@ $tooltip-border-radius: $border-radius;
     //.is-p is font-properties, defined in typography.
     @extend .is-p;
 
-    $content-color: var(--hdd-grey-dark);
-    $content-text-color: var(--hdd-white);
+    $content-color: var(--hdd-color-grey-dark);
+    $content-text-color: var(--hdd-color-white);
 
     display: table;
     position: absolute;

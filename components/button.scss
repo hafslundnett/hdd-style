@@ -17,7 +17,7 @@ $icon-button-icon-size: 22px;
     content: "";
     position: absolute;
     border-radius: 50%;
-    background-color: var(--hdd-blue-light1);
+    background-color: var(--hdd-color-blue-light1);
     width: 30px;
     height: 30px;
     z-index: 1;
@@ -60,13 +60,13 @@ $icon-button-icon-size: 22px;
     padding: $button-padding;
     letter-spacing: 0.5px;
     border-radius: $button-radius;
-    background: var(--hdd-primary);
-    color: var(--hdd-white);
+    background: var(--hdd-color-primary);
+    color: var(--hdd-color-white);
     cursor: pointer;
 
     &[disabled] {
-      background: var(--hdd-grey);
-      color: var(--hdd-white);
+      background: var(--hdd-color-grey);
+      color: var(--hdd-color-white);
       cursor: not-allowed;
     }
 
@@ -75,46 +75,46 @@ $icon-button-icon-size: 22px;
       &:hover,
       &:focus,
       &:active {
-        background: var(--hdd-blue-dark);
+        background: var(--hdd-color-blue-dark);
       }
     }
   }
 
   &.is-secondary {
-    border: $button-border-width solid var(--hdd-primary);
+    border: $button-border-width solid var(--hdd-color-primary);
     padding: $border-button-padding;
     background: transparent;
-    color: var(--hdd-primary);
+    color: var(--hdd-color-primary);
 
     &[disabled] {
-      border: $button-border-width solid var(--hdd-grey);
-      color: var(--hdd-grey);
+      border: $button-border-width solid var(--hdd-color-grey);
+      color: var(--hdd-color-grey);
     }
 
     // Changes button-text on hover/active/focus
     &:not([disabled]) {
       &:hover {
-        background: var(--hdd-primary);
-        color: var(--hdd-white);
+        background: var(--hdd-color-primary);
+        color: var(--hdd-color-white);
       }
 
       &:active,
       &:focus {
-        background: var(--hdd-blue-dark);
-        color: var(--hdd-white);
+        background: var(--hdd-color-blue-dark);
+        color: var(--hdd-color-white);
       }
     }
 
     // Changes spinner-color on hover/active/focus
     &.is-loading::after {
-      color: var(--hdd-primary) !important;
+      color: var(--hdd-color-primary) !important;
     }
     
     &:hover,
     &:active,
     &:focus {
       &.is-loading::after {
-        color: var(--hdd-white) !important;
+        color: var(--hdd-color-white) !important;
       }
     }
   }
@@ -157,7 +157,7 @@ $icon-button-icon-size: 22px;
       top: calc(50% - (1em / 2));
       left: calc(50% - (1em / 2));
 
-      color: var(--hdd-white);
+      color: var(--hdd-color-white);
       font-size: 1em;
     }
   }
@@ -165,8 +165,8 @@ $icon-button-icon-size: 22px;
   // Buttons with icons only
   &-icon {
     @include ripple;
-    border: $button-border-width solid var(--hdd-primary);
-    color: var(--hdd-primary);
+    border: $button-border-width solid var(--hdd-color-primary);
+    color: var(--hdd-color-primary);
     border-radius: $button-radius;
     background: transparent;
     height: $icon-button-height - $button-border-width; // Subtract $button-border-width to match primary button size 
@@ -176,21 +176,21 @@ $icon-button-icon-size: 22px;
     padding: 0;
 
     &[disabled] {
-      border-color: var(--hdd-grey);
-      color: var(--hdd-grey);
+      border-color: var(--hdd-color-grey);
+      color: var(--hdd-color-grey);
       cursor: not-allowed;
     }
 
     &:not([disabled]) {
       &:hover {
-        background: var(--hdd-blue);
-        color: var(--hdd-white);
+        background: var(--hdd-color-blue);
+        color: var(--hdd-color-white);
       }
 
       &:focus,
       &:active {
-        background: var(--hdd-blue-dark);
-        color: var(--hdd-white);
+        background: var(--hdd-color-blue-dark);
+        color: var(--hdd-color-white);
       }
     }
 
@@ -202,7 +202,7 @@ $icon-button-icon-size: 22px;
       &:active,
       &:hover {
         background: none;
-        color: var(--hdd-primary);
+        color: var(--hdd-color-primary);
       }
     }
 
