@@ -8,12 +8,16 @@
   text-align: left;
 
   &_label {
-    // .is-p is font-properties, defined in typography.
-    @extend .is-p;
-
-    display: inline-block;
-    margin-bottom: 0.2rem;
+    // update to is-p-small, after typo is done, and adjust line height.
+    font-size: 0.875rem;
     font-weight: bold;
+    font-style: normal;
+    color: var(--hdd-color-black);
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    margin-bottom: 7px;
   }
 
   &_title {
@@ -29,9 +33,11 @@
     position: absolute;
     margin-top: 0.2rem;
     font-size: 0.8rem;
+    align-items: center;
 
     &.is-active {
-      display: block;
+      display: inline-flex;
+      align-items: center;
     }
   }
 

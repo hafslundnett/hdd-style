@@ -1,6 +1,6 @@
-$form-input-padding: $form-input-padding-left 0.9rem;
+$form-input-padding: $form-input-padding-left;
 $form-input-border-radius: $border-radius;
-$form-input-border: 1px solid var(--hdd-color-grey);
+$form-input-border: 1px solid var(--hdd-color-grey-border);
 
 .hdd-form_input {
   // Variable containing '&' to jump to current parent inside a child class.
@@ -8,29 +8,14 @@ $form-input-border: 1px solid var(--hdd-color-grey);
 
   display: flex;
   box-sizing: border-box;
-
   align-items: center;
-  padding: $form-input-padding;
+  padding: var(--hdd-spacing-1);
+  padding-left: $form-input-padding;
   transition: border-color $medium-transition $transition-cubic;
   border: $form-input-border;
   border-radius: $form-input-border-radius;
-
   background: var(--hdd-color-white);
-
-  &:not(.is-invalid):focus-within {
-    @extend .hdd-form_input, .is-focus;
-  }
-
-  &.is-focus {
-    border-color: var(--hdd-color-primary);
-
-    #{$this}_icon,
-    svg,
-    i {
-      opacity: 1;
-      color: var(--hdd-color-primary);
-    }
-  }
+  line-height: 150%;
 
   &.is-invalid {
     border-color: var(--hdd-color-signal-red);
@@ -41,8 +26,12 @@ $form-input-border: 1px solid var(--hdd-color-grey);
   }
 
   &.is-disabled {
-    background: var(--hdd-color-grey-light);
-    cursor: default;
+    border-color: var(--hdd-color-grey);;
+    cursor: not-allowed;
+
+    input {
+      color: var(--hdd-color-grey);
+    }
   }
 
   &_field,
@@ -71,7 +60,6 @@ $form-input-border: 1px solid var(--hdd-color-grey);
   > svg,
   > i {
     transition: color $medium-transition $transition-cubic, opacity $medium-transition $transition-cubic;
-    opacity: 0.44;
     color: var(--hdd-color-black);
     font-size: font-size(h2);
 

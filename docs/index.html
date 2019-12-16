@@ -2016,17 +2016,16 @@ Dropdown should be used if the user wants a recommended selection out of all the
 &lt;/div&gt;
 
 &lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal input field with icon&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Active input field &lt;/label&gt;
   &lt;div class=&quot;hdd-form_input&quot;&gt;
-    &lt;i class=&quot;fal fa-info-circle hdd-form_input_icon&quot;&gt;&lt;/i&gt;
-    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot; value=&quot;Kari Nordmann&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Disabled input field&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Disabled input field &lt;/label&gt;
   &lt;div class=&quot;hdd-form_input is-disabled&quot;&gt;
-    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot; value=&quot;Kari Nordmann&quot; disabled&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2035,13 +2034,38 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;div class=&quot;hdd-form_input is-invalid&quot;&gt;
     &lt;input id=&quot;title&quot; value=&quot;ola.hafslund.no&quot;&gt;
   &lt;/div&gt;
-  &lt;span class=&quot;hdd-form_field_error is-active&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt;The email must contain @&lt;/span&gt;
+  &lt;span class=&quot;hdd-form_field_error is-active&quot;&gt;
+
+  &lt;svg width=&quot;20&quot; height=&quot;20&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+&lt;circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;11.5&quot; fill=&quot;#DC3500&quot; stroke=&quot;#DC3500&quot;/&gt;
+&lt;path d=&quot;M12 7.45898V13.959&quot; stroke=&quot;white&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;
+&lt;path d=&quot;M12 16.209C12.0663 16.209 12.1299 16.2353 12.1768 16.2822C12.2237 16.3291 12.25 16.3927 12.25 16.459&quot; stroke=&quot;white&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;
+&lt;path d=&quot;M11.75 16.459C11.75 16.3927 11.7763 16.3291 11.8232 16.2822C11.8701 16.2353 11.9337 16.209 12 16.209&quot; stroke=&quot;white&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;
+&lt;path d=&quot;M12 16.709C11.9337 16.709 11.8701 16.6826 11.8232 16.6358C11.7763 16.5889 11.75 16.5253 11.75 16.459&quot; stroke=&quot;white&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;
+&lt;path d=&quot;M12.25 16.459C12.25 16.5253 12.2237 16.5889 12.1768 16.6358C12.1299 16.6826 12.0663 16.709 12 16.709&quot; stroke=&quot;white&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;
+&lt;/svg&gt;
+&lt;p class=&quot;is-p-small&quot;&gt;
+  The email must contain @
+&lt;/p&gt;
+&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Textarea&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Search field with icon&lt;/label&gt;
   &lt;div class=&quot;hdd-form_input&quot;&gt;
-    &lt;textarea placeholder=&quot;Placeholdertext&quot;&gt;&lt;/textarea&gt;
+    &lt;i class=&quot;hdd-form_input_icon&quot;&gt;
+    &lt;/i&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Search field with icon&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;i class=&quot;hdd-form_input_icon&quot;&gt;
+    &lt;/i&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot; value=&quot;Ola Nordmann&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_field&quot;&gt;
@@ -2052,17 +2076,16 @@ Dropdown should be used if the user wants a recommended selection out of all the
 &lt;/div&gt;
 
 &lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal input field with icon&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Active input field &lt;/label&gt;
   &lt;div class=&quot;hdd-form_input&quot;&gt;
-    &lt;i class=&quot;fal fa-info-circle hdd-form_input_icon&quot;&gt;&lt;/i&gt;
-    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot; value=&quot;Kari Nordmann&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Disabled input field&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Disabled input field &lt;/label&gt;
   &lt;div class=&quot;hdd-form_input is-disabled&quot;&gt;
-    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot; value=&quot;Kari Nordmann&quot; disabled&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2071,13 +2094,38 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;div class=&quot;hdd-form_input is-invalid&quot;&gt;
     &lt;input id=&quot;title&quot; value=&quot;ola.hafslund.no&quot;&gt;
   &lt;/div&gt;
-  &lt;span class=&quot;hdd-form_field_error is-active&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt;The email must contain @&lt;/span&gt;
+  &lt;span class=&quot;hdd-form_field_error is-active&quot;&gt;
+
+  &lt;svg width=&quot;20&quot; height=&quot;20&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;
+&lt;circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;11.5&quot; fill=&quot;#DC3500&quot; stroke=&quot;#DC3500&quot;/&gt;
+&lt;path d=&quot;M12 7.45898V13.959&quot; stroke=&quot;white&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;
+&lt;path d=&quot;M12 16.209C12.0663 16.209 12.1299 16.2353 12.1768 16.2822C12.2237 16.3291 12.25 16.3927 12.25 16.459&quot; stroke=&quot;white&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;
+&lt;path d=&quot;M11.75 16.459C11.75 16.3927 11.7763 16.3291 11.8232 16.2822C11.8701 16.2353 11.9337 16.209 12 16.209&quot; stroke=&quot;white&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;
+&lt;path d=&quot;M12 16.709C11.9337 16.709 11.8701 16.6826 11.8232 16.6358C11.7763 16.5889 11.75 16.5253 11.75 16.459&quot; stroke=&quot;white&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;
+&lt;path d=&quot;M12.25 16.459C12.25 16.5253 12.2237 16.5889 12.1768 16.6358C12.1299 16.6826 12.0663 16.709 12 16.709&quot; stroke=&quot;white&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;/&gt;
+&lt;/svg&gt;
+&lt;p class=&quot;is-p-small&quot;&gt;
+  The email must contain @
+&lt;/p&gt;
+&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;hdd-form_field&quot;&gt;
-  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Textarea&lt;/label&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Search field with icon&lt;/label&gt;
   &lt;div class=&quot;hdd-form_input&quot;&gt;
-    &lt;textarea placeholder=&quot;Placeholdertext&quot;&gt;&lt;/textarea&gt;
+    &lt;i class=&quot;hdd-form_input_icon&quot;&gt;
+    &lt;/i&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Search field with icon&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;i class=&quot;hdd-form_input_icon&quot;&gt;
+    &lt;/i&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot; value=&quot;Ola Nordmann&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
