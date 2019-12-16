@@ -18,6 +18,8 @@ $feedback-message-gap: 10px;
   border: none;
   border-radius: $feedback-border-radius;
   // .is-info is the default for any feedback-container
+  
+  @extend .is-info;
   @extend .is-p;
 
   &.is-success {
