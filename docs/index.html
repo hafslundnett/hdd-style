@@ -57,6 +57,7 @@
 							</optgroup>
 							<optgroup label="Utilities">
 									<option value="accessibility">Accessibility</option>
+									<option value="breakpoints">Breakpoints</option>
 									<option value="icons">Icons</option>
 									<option value="spacing">Spacing</option>
 									<option value="typeface">Typeface</option>
@@ -3040,6 +3041,61 @@ Dropdown should be used if the user wants a recommended selection out of all the
 </div>
 </div>
 
+						<div id="breakpoints" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Breakpoints</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">breakpoints.md</span>
+	</span>
+	<div class="theme-content-element-description"><p>The breakpoints uses the names of the planets in the solar system. This is done on purpose as opposed to names like phone and desktop. This is due to the changing nature of screen sizes and we don&#39;t want to have a strong link between our sizes and real devices.</p>
+<div id="using-the-sizes" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#using-the-sizes" class="icon-link i-section__link -heading"></a>Using the sizes</h2></div><p>We are using a mobile first philosophy which means you first create the styling for the smallest supported screen size. Then you add breakpoints for larger screens (a given size and up) where further changes are specified.</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> scss</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".element {
+    // less than 576px (Venus)
+    background: blue; 
+
+    // 576px and up
+    @include breakpoint-up(Venus) {
+        background: red; // will overwrite default color 
+    }
+
+    // 768px and up
+    @include breakpoint-up(Earth) {
+        background: green; // will overwrite Venus color
+    }
+}
+">Copy</button>
+		<pre class="mb-0"><code class="lang-">.element {
+    // less than 576px (Venus)
+    background: blue; 
+
+    // 576px and up
+    @include breakpoint-up(Venus) {
+        background: red; // will overwrite default color 
+    }
+
+    // 768px and up
+    @include breakpoint-up(Earth) {
+        background: green; // will overwrite Venus color
+    }
+}
+</code></pre>
+	</div>
+</div><div id="available-breakponts" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#available-breakponts" class="icon-link i-section__link -heading"></a>Available breakponts</h2></div><ul>
+<li>Venus 576px </li>
+<li>Earth 768px</li>
+<li>Mars 1024px</li>
+<li>Jupiter 1200px</li>
+<li>Saturn 1440px</li>
+<li>Uranus 1920px</li>
+</ul>
+<p>The first and last planet is not used and reserved for future use.</p>
+</div>
+</div>
+
 						<div id="icons" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Icons</h1>
 	<span class="theme-content-element-source">
@@ -3624,7 +3680,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Accessibility  Icons  Spacing  Typeface "
+							data-filter-value=" Accessibility  Breakpoints  Icons  Spacing  Typeface "
 						>
 							<a href="#category-utilities" class="i-sidebar-list-item">
 								<b>Utilities</b>
@@ -3638,6 +3694,13 @@ Dropdown should be used if the user wants a recommended selection out of all the
 									data-filter-value="Accessibility"
 								>
 									<span>Accessibility</span>
+								</a>
+								<a
+									href="#breakpoints"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Breakpoints"
+								>
+									<span>Breakpoints</span>
 								</a>
 								<a
 									href="#icons"
