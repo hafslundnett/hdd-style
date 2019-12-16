@@ -35,7 +35,6 @@ $typography: (
   h1: (
     family: var(--hdd-font-family),
     size: 1.5rem,
-    style: normal,
     weight: 500,
     spacing: 0.15px,
     color: var(--hdd-font-color),
@@ -47,7 +46,6 @@ $typography: (
   h2: (
     family: var(--hdd-font-family),
     size: 1.25rem,
-    style: normal,
     weight: normal,
     spacing: 0.15px,
     color: var(--hdd-font-color),
@@ -59,7 +57,6 @@ $typography: (
   h3: (
     family: var(--hdd-font-family),
     size: 1rem,
-    style: normal,
     weight: 500,
     spacing: 0.15px,
     color: var(--hdd-font-color),
@@ -71,7 +68,6 @@ $typography: (
   h4: (
     family: var(--hdd-font-family),
     size: 0.875rem,
-    style: normal,
     weight: bold,
     spacing: 0.5px,
     color: var(--hdd-font-color),
@@ -83,7 +79,6 @@ $typography: (
   p: (
     family: var(--hdd-font-family),
     size: 1rem,
-    style: normal,
     weight: normal,
     spacing: 0.15px,
     color: var(--hdd-font-color),
@@ -95,7 +90,6 @@ $typography: (
   p-small: (
     family: var(--hdd-font-family),
     size: 0.875rem,
-    style: normal,
     weight: normal,
     spacing: 0.15px,
     color: var(--hdd-font-color),
@@ -123,7 +117,6 @@ $typography: (
   icon-text: (
     family: var(--hdd-font-family),
     size: 0.75rem,
-    style: normal,
     weight: normal,
     spacing: 0.2px,
     color: var(--hdd-font-color),
@@ -143,7 +136,6 @@ $typography: (
   button-text: (
     family: var(--hdd-font-family),
     size: 0.875rem,
-    style: normal,
     weight: normal,
     spacing: 0.5px,
     color: var(--hdd-font-color),
@@ -153,7 +145,6 @@ $typography: (
   label: (
     family: var(--hdd-font-family),
     size: 0.875rem,
-    style: normal,
     weight: bold,
     spacing: 0.2px,
     color: var(--hdd-font-color),
@@ -166,7 +157,6 @@ $typography: (
   label-small: (
     family: var(--hdd-font-family),
     size: 0.75rem,
-    style: normal,
     weight: bold,
     spacing: 0px,
     color: var(--hdd-font-color),
