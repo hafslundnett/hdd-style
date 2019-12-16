@@ -1,6 +1,6 @@
 @import '../variables/colors';
 
-@mixin color-modifiers($list: ('primary', 'warn', 'danger', 'safe'), $main-property: 'background', $contrast-property: '', $selector: '', $color-set: $all-colors) {
+@mixin color-modifiers($list: ('info', 'warn', 'danger', 'safe'), $main-property: 'background', $contrast-property: '', $selector: '', $color-set: $all-colors) {
   @each $label in $list {
     $map: color-map($label, $color-set);
 
