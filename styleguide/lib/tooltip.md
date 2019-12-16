@@ -24,6 +24,17 @@ A tooltip can give context to a given icon/piece of text. Tooltips are usually h
   <span class="hdd-tooltip_content is-leaning-left">Left Leaning Tooltip</span>
 </span>
 
+<span class="hdd-tooltip" style="margin-left: 10px">
+  Hover me too
+  <span class="hdd-tooltip_content is-dark is-leaning-left">Left Leaning Tooltip</span>
+</span>
+
+<span class="hdd-tooltip" style="margin-left: 10px">
+  Hover me too
+  <span class="hdd-tooltip_content is-dark is-leaning-left">Left Leaning Tooltip</span>
+</span>
+
+
 ```
 
 ## Mutations
