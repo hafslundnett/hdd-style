@@ -11,13 +11,10 @@
     // update to is-p-small, after typo is done, and adjust line height.
     font-size: 0.875rem;
     font-weight: bold;
-    font-style: normal;
-    color: var(--hdd-color-black);
     line-height: 16px;
     display: flex;
-    align-items: center;
     letter-spacing: 0.2px;
-    margin-bottom: 7px;
+    margin-bottom: var(--hdd-spacing-1);
   }
 
   &_title {

@@ -15,7 +15,6 @@ $form-input-border: 1px solid var(--hdd-color-grey-border);
   border: $form-input-border;
   border-radius: $form-input-border-radius;
   background: var(--hdd-color-white);
-  line-height: 150%;
 
   &.is-invalid {
     border-color: var(--hdd-color-signal-red);
@@ -27,10 +26,9 @@ $form-input-border: 1px solid var(--hdd-color-grey-border);
 
   &.is-disabled {
     border-color: var(--hdd-color-grey);;
-    cursor: none;
-
     input {
       color: var(--hdd-color-grey);
+      cursor: not-allowed;
     }
   }
 
