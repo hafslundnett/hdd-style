@@ -5,6 +5,7 @@ $tooltip-menu-side-padding: 0.75rem;
 $tooltip-menu-padding: 0.5rem 1rem;
 $tooltip-tip-right-offset: 1rem;
 $tooltip-tip-left-offset: 1rem;
+$tooltip-tip--offset: 1rem;
 $tooltip-border-radius: $border-radius;
 
 .hdd-tooltip {
@@ -12,6 +13,8 @@ $tooltip-border-radius: $border-radius;
   $this: &;
 
   position: relative;
+  // display: inline-block;
+
 
   &:hover:not(.no-hover) {
     #{$this}_content {
@@ -22,62 +25,52 @@ $tooltip-border-radius: $border-radius;
   &_content {
     //.is-p is font-properties, defined in typography.
     @extend .is-p;
-    $isDark: false !default;
-    $content-color: var(--hdd-color-white);
-    $content-text-color: var(--hdd-color-font-color);
+    $content-color: var(--hdd-color-grey-dark);
+    $content-text-color: var(--hdd-color-contrast-font-color);
 
-    display: table;
+    display: inline-block;
     position: absolute;
+    background: var(--hdd-color-grey-dark);
+    color: var(--hdd-color-contrast-font-color);
+    text-align: left;
+    box-shadow: $shadow-strong;
     z-index: -1;
-
+    opacity: 0;
     top: calc(100% + #{$tooltip-tip-size});
     right: 0;
     left: 50%;
-
-    box-sizing: border-box;
     min-width: $tooltip-width;
-
+    width:fit-content;
     margin: auto;
-    padding: $tooltip-padding;
-
+    padding: 10px var(--hdd-spacing-2); 
+    border-radius: $tooltip-border-radius;
     transform: translateX(-50%);
     transition: opacity $medium-transition $transition-cubic, z-index $medium-transition step-end;
-    border-radius: $tooltip-border-radius;
 
-    opacity: 0;
-    background: $content-color;
-    color: $content-text-color;
-    text-align: left;
-
-    &.is-dark {
-    $isDark: true;
-    background: var(--hdd-color-grey-dark);
-    color: var(--hdd-color-white);
-    }
 
     &::before {
       content: '';
-
       display: block;
       position: absolute;
-
       top: -$tooltip-tip-size;
       right: 0;
       left: 0;
-
       width: 0;
       height: 0;
-
       margin: auto;
-
-      
       border-right: $tooltip-tip-size solid transparent;
       border-bottom: $tooltip-tip-size solid $content-color;
       border-left: $tooltip-tip-size solid transparent;
     }
-    @if $isDark == true {
-        border-bottom: $tooltip-tip-size solid var(--hdd-color-grey-dark);
+
+    &.is-light {
+      background: var(--hdd-color-white);
+      color: var(--hdd-color-font-color);
+
+      &::before {
+      border-bottom: $tooltip-tip-size solid var(--hdd-color-white);
       }
+    }
 
     &.is-active {
       z-index: 90;
