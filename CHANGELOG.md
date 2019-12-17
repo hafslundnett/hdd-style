@@ -1,3 +1,15 @@
+# Update [5.0.0]
+In this update the css-variables for colors are renamed to --hdd-color-$nameofcolor.
+
+## Breaking changes
+
+### Color variables:
+The small and normal buttons have been combined into one mid-sized button.
+* **New variables / Removed variables**
+    * --hdd-nameofcolor => --hdd-color-nameofcolor
+    * eks: --hdd-primary => --hdd-color-primary
+
+
 # Update [4.0.0]
 In this update buttons have been redesigned completely and there are some breaking changes related to these.
 
