@@ -33,10 +33,10 @@ Roboto is default font for all text. Append the corresponding class to the tags,
 <p>abcdefghijklmnopqrstuvwxyzæøå</p>
 <p>0123456789</p>
 <br />
-<p class="is-p-2">Paragraph with is-p2(smaller)</p>
-<p class="is-p-2">ABCDEFHILMNOPQRSTVXÆØÅ</p>
-<p class="is-p-2">abcdefghijklmnopqrstuvwxyzæøå</p>
-<p class="is-p-2">0123456789</p>
+<p class="is-p-small">Paragraph with is-p2(smaller)</p>
+<p class="is-p-small">ABCDEFHILMNOPQRSTVXÆØÅ</p>
+<p class="is-p-small">abcdefghijklmnopqrstuvwxyzæøå</p>
+<p class="is-p-small">0123456789</p>
 <br />
 <label>Label</label>
 <br />

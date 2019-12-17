@@ -23,83 +23,79 @@
 
   @return map-get($typography-map, size);
 }
-// Keep until systems are updated with css variable. 
+
 $font-family: 'Roboto', Arial;
-// As CSS variable
-:root {
-  --hdd-font-family: $font-family;
-}
 
 $typography: (
   h1: (
-    family: var(--hdd-font-family),
+    family: $font-family,
     size: 1.5rem,
     weight: 500,
     spacing: 0.15px,
-    color: var(--hdd-font-color),
+    color: var(--hdd-color-font-color),
     line-height: 120%,
     elements: (
       h1
     )
   ),
   h2: (
-    family: var(--hdd-font-family),
+    family:  $font-family,
     size: 1.25rem,
-    weight: normal,
     spacing: 0.15px,
-    color: var(--hdd-font-color),
+    weight: normal,
+    color: var(--hdd-color-font-color),
     line-height: 120%,
     elements: (
       h2
     )
   ),
   h3: (
-    family: var(--hdd-font-family),
+    family:  $font-family,
     size: 1rem,
     weight: 500,
     spacing: 0.15px,
-    color: var(--hdd-font-color),
+    color: var(--hdd-color-font-color),
     line-height: 120%,
     elements: (
       h3
     )
   ),
   h4: (
-    family: var(--hdd-font-family),
+    family:  $font-family,
     size: 0.875rem,
     weight: bold,
     spacing: 0.5px,
-    color: var(--hdd-font-color),
+    color: var(--hdd-color-font-color),
     line-height: 120%,
     elements: (
       h4
     )
   ),
   p: (
-    family: var(--hdd-font-family),
+    family:  $font-family,
     size: 1rem,
     weight: normal,
     spacing: 0.15px,
-    color: var(--hdd-font-color),
+    color: var(--hdd-color-font-color),
     line-height: 150%,
     elements: (
       p
     )
   ),
   p-small: (
-    family: var(--hdd-font-family),
+    family:  $font-family,
     size: 0.875rem,
     weight: normal,
     spacing: 0.15px,
-    color: var(--hdd-font-color),
-    line-height: 120%
+    color: var(--hdd-color-font-color),
+    line-height: 150%
   ),
   /* icon sizing classes can be removed after svg icons are implemented */ 
   icon-small: (
       family: "Font Awesome 5 Pro",
       size: 1.2rem,
       weight: 300,
-      color: var(--hdd-font-color)
+      color: var(--hdd-color-font-color)
   ),
   icon-medium: (
     family: "Font Awesome 5 Pro",
@@ -111,55 +107,49 @@ $typography: (
     family: "Font Awesome 5 Pro",
     size: 2rem,
     weight: 300,
-    color: var(--hdd-font-color)
+    color: var(--hdd-color-font-color)
   ),
   icon-text: (
-    family: var(--hdd-font-family),
+    family:  $font-family,
     size: 0.75rem,
     weight: normal,
     spacing: 0.2px,
-    color: var(--hdd-font-color),
+    color: var(--hdd-color-font-color),
     line-height: 120%,
-    align-items: center
   ),
   icon-text-italic: (
-    family: var(--hdd-font-family),
+    family:  $font-family,
     size: 0.75rem,
-    style: italic,
     weight: normal,
+    style: italic,
     spacing: 0.2px,
-    color: var(--hdd-font-color),
+    color: var(--hdd-color-font-color),
     line-height: 120%,
-    align-items: center
   ),
   button-text: (
-    family: var(--hdd-font-family),
+    family:  $font-family,
     size: 0.875rem,
     weight: normal,
     spacing: 0.5px,
-    color: var(--hdd-font-color),
+    color: var(--hdd-color-font-color),
     line-height: 100%,
-    align-items: center
+    elements:(button)
   ),
   label: (
-    family: var(--hdd-font-family),
+    family:  $font-family,
     size: 0.875rem,
     weight: bold,
     spacing: 0.2px,
-    color: var(--hdd-font-color),
+    color: var(--hdd-color-font-color),
     line-height: 100%,
-    align-items: left,
-    elements: (
-      label
-    )
+    elements:(label)
   ),
   label-small: (
-    family: var(--hdd-font-family),
+    family:  $font-family,
     size: 0.75rem,
     weight: bold,
     spacing: 0px,
-    color: var(--hdd-font-color),
-    line-height: 100%,
-    align-items: left
+    color: var(--hdd-color-font-color),
+    line-height: 120%,
   )
 );
