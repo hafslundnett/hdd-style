@@ -27,7 +27,7 @@
 $font-family: 'Roboto', Arial;
 
 :root {
-  --hdd-font-family: 'Roboto', Arial;
+  --hdd-font-family: #{$font-family};
 }
 
 $typography: (
