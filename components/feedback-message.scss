@@ -1,9 +1,9 @@
 $feedback-padding: 20px 30px;
 $feedback-border-radius: $border-radius;
 $feedback-min-width: 260px;
-$feedback-icon-size: 20px;
+$feedback-icon-size: 24px;
 $feedback-icon-gap: 20px;
-$feedback-close-button-size: 14px;
+$feedback-close-button-size: 16px;
 $feedback-message-gap: 10px;
 
 .feedback-container {
@@ -18,7 +18,9 @@ $feedback-message-gap: 10px;
   border: none;
   border-radius: $feedback-border-radius;
   // .is-info is the default for any feedback-container
+  
   @extend .is-info;
+  @extend .is-p;
 
   &.is-success {
     background: var(--hdd-color-safe);
