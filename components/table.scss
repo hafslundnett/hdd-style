@@ -72,7 +72,6 @@ $table-last-column-padding: 1.5rem;
   }
 
   td {
-    // .is-p-small is font-properties, defined in typography.
     @include standard-text-small;
   }
 

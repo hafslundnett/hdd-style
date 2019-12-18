@@ -78,7 +78,6 @@ $card-actions-button-spacing: 25px;
   }
 
   &_content {
-    // .is-p is font-properties, defined in typography.
     @include standard-text;
 
     display: block;
@@ -100,7 +99,6 @@ $card-actions-button-spacing: 25px;
     }
     
     &_action {
-      // .is-p is font-properties, defined in typography.
       @include standard-text;
       
       flex-grow: 1;

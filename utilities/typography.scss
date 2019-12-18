@@ -16,8 +16,6 @@
   $weight: map-get($map, weight);
   $spacing: map-get($map, spacing);
   $line-height: map-get($map, line-height);
-  $align-items: map-get($map, align-items);
-
   $elements: map-get($map, elements);
   $alt-labels: map-get($map, alt-labels);
   $labels: ($label);
@@ -30,7 +28,6 @@
     font-weight: $weight;
     letter-spacing: $spacing;
     line-height: $line-height;
-    align-items: $align-items;
   }
 
   @if $alt-labels {
