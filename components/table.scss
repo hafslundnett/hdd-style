@@ -78,7 +78,7 @@ $table-last-column-padding: 1.5rem;
 
   &_header {
     // .is-h3 is font-properties, defined in typography.
-    @include standard-text-small;
+    @extend .is-h3;
 
     border-bottom: 2px solid var(--hdd-color-grey-light);
     text-align: left;
