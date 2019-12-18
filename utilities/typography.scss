@@ -55,7 +55,7 @@
 }
 
 body {
-  @extend .is-p;
+  @include standard-text;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');

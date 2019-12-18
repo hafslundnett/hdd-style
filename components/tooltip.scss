@@ -21,7 +21,7 @@ $tooltip-border-radius: $border-radius;
 
   &_content {
     //.is-p is font-properties, defined in typography.
-    @extend .is-p;
+    @include standard-text-small;
 
     $content-color: var(--hdd-color-grey-dark);
     $content-text-color: var(--hdd-color-white);

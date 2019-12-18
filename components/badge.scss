@@ -5,7 +5,7 @@ $badge-icon-border: 2px solid var(--hdd-color-white);
 
 .hdd-badge {
   // .is-p-small is font-properties, defined in typography.
-  @extend .is-p-small;
+  @include standard-text-small;
   // Colors available for badge
   @include color-modifiers(('primary', 'warn', 'danger', 'safe'), 'background', 'color');
 

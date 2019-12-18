@@ -24,6 +24,22 @@
   @return map-get($typography-map, size);
 }
 
+@mixin standard-text {
+  font-family: var(--hdd-font-family);
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 0.15px;
+  color: var(--hdd-color-font-color);
+}
+@mixin standard-text-small {
+  font-family: var(--hdd-font-family);
+  font-size: 0.875rem;
+  font-weight: normal;
+  letter-spacing: 0.15px;
+  color: var(--hdd-color-font-color);
+}
+
+
 $font-family: 'Roboto', Arial;
 
 :root {
@@ -37,7 +53,7 @@ $typography: (
     weight: 500,
     spacing: 0.15px,
     color: var(--hdd-color-font-color),
-    line-height: 120%,
+    line-height: 1.2,
     elements: (
       h1
     )
@@ -48,7 +64,7 @@ $typography: (
     spacing: 0.15px,
     weight: normal,
     color: var(--hdd-color-font-color),
-    line-height: 120%,
+    line-height: 1.2,
     elements: (
       h2
     )
@@ -59,7 +75,7 @@ $typography: (
     weight: 500,
     spacing: 0.15px,
     color: var(--hdd-color-font-color),
-    line-height: 120%,
+    line-height: 1.2,
     elements: (
       h3
     )
@@ -70,7 +86,7 @@ $typography: (
     weight: bold,
     spacing: 0.5px,
     color: var(--hdd-color-font-color),
-    line-height: 120%,
+    line-height: 1.2,
     elements: (
       h4
     )
@@ -81,7 +97,7 @@ $typography: (
     weight: normal,
     spacing: 0.15px,
     color: var(--hdd-color-font-color),
-    line-height: 150%,
+    line-height: 1.5,
     elements: (
       p
     )
@@ -92,7 +108,7 @@ $typography: (
     weight: normal,
     spacing: 0.15px,
     color: var(--hdd-color-font-color),
-    line-height: 150%
+    line-height: 1.5
   ),
   /* icon sizing classes can be removed after svg icons are implemented */ 
   icon-small: (
@@ -119,7 +135,7 @@ $typography: (
     weight: normal,
     spacing: 0.2px,
     color: var(--hdd-color-font-color),
-    line-height: 120%,
+    line-height: 1.2,
   ),
   icon-text-italic: (
     family: var(--hdd-font-family),
@@ -128,7 +144,7 @@ $typography: (
     style: italic,
     spacing: 0.2px,
     color: var(--hdd-color-font-color),
-    line-height: 120%,
+    line-height: 1.2,
   ),
   button-text: (
     family: var(--hdd-font-family),
@@ -136,7 +152,7 @@ $typography: (
     weight: normal,
     spacing: 0.5px,
     color: var(--hdd-color-font-color),
-    line-height: 100%,
+    line-height: 1,
     elements:(button)
   ),
   label: (
@@ -145,7 +161,7 @@ $typography: (
     weight: bold,
     spacing: 0.2px,
     color: var(--hdd-color-font-color),
-    line-height: 100%,
+    line-height: 1,
     elements:(label)
   ),
   label-small: (
@@ -154,6 +170,6 @@ $typography: (
     weight: bold,
     spacing: 0px,
     color: var(--hdd-color-font-color),
-    line-height: 120%,
+    line-height: 1.2,
   )
 );

@@ -67,8 +67,7 @@ $card-actions-button-spacing: 25px;
   }
 
   &_subtitle {
-    // .is-p is font-properties, defined in typography.
-    @extend .is-p;
+    @include standard-text;
 
     display: block;
     color: var(--hdd-color-font-color);
@@ -80,7 +79,7 @@ $card-actions-button-spacing: 25px;
 
   &_content {
     // .is-p is font-properties, defined in typography.
-    @extend .is-p;
+    @include standard-text;
 
     display: block;
     margin-bottom: $card-padding-y;
@@ -102,7 +101,7 @@ $card-actions-button-spacing: 25px;
     
     &_action {
       // .is-p is font-properties, defined in typography.
-      @extend .is-p;
+      @include standard-text;
       
       flex-grow: 1;
       margin: calc(#{$card-padding-y} * -1) calc(#{$card-padding-x} * -1);

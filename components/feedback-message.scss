@@ -20,7 +20,7 @@ $feedback-message-gap: 10px;
   // .is-info is the default for any feedback-container
   
   @extend .is-info;
-  @extend .is-p;
+  @include standard-text;
 
   &.is-success {
     background: var(--hdd-color-safe);
@@ -63,8 +63,6 @@ $feedback-message-gap: 10px;
   &_message {
     flex: auto;
     margin-right: $feedback-message-gap;
-    font-size: font-size('p');
-    line-height: 1.125rem;
   }
 
   &_close-button {
