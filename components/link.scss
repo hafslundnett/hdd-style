@@ -1,5 +1,5 @@
 .hdd-link {
-  @include standard-text;
+  @extend .is-p;
 
   text-decoration: none;
   color: var(--hdd-color-blue);

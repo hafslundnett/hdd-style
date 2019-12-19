@@ -59,7 +59,7 @@ $card-actions-button-spacing: 25px;
 
   &_title {
     // .is-h2 is font-properties, defined in typography.
-    @extend .is-h2;
+    @extend .is-h3;
 
     display: flex;
     height: 100%;
@@ -67,7 +67,7 @@ $card-actions-button-spacing: 25px;
   }
 
   &_subtitle {
-    @include standard-text;
+    @include standard-text-small;
 
     display: block;
     color: var(--hdd-color-font-color);
@@ -78,7 +78,9 @@ $card-actions-button-spacing: 25px;
   }
 
   &_content {
-    @include standard-text;
+    p {
+      @include standard-text-small;
+    }
 
     display: block;
     margin-bottom: $card-padding-y;
