@@ -101,7 +101,7 @@ $card-actions-button-spacing: 25px;
     }
     
     &_action {
-      @include standard-text;
+      @include standard-text-small;
       
       flex-grow: 1;
       margin: calc(#{$card-padding-y} * -1) calc(#{$card-padding-x} * -1);
