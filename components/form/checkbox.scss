@@ -33,17 +33,17 @@ $form-checkbox-mark-border: 1px solid var(--hdd-color-primary);
       @extend %checkbox-mark;
     }
   }
+  // Removed for now, write new style for "invalid" when user has forgotten to check. just red border.  
+  // &.is-invalid {
+  //   input:checked ~ #{$this}_mark,
+  //   #{$this}_mark {
+  //     border-color: var(--hdd-color-signal-red);
 
-  &.is-invalid {
-    input:checked ~ #{$this}_mark,
-    #{$this}_mark {
-      border-color: var(--hdd-color-signal-red);
-
-      &::before {
-        color: var(--hdd-color-signal-red);
-      }
-    }
-  }
+  //     &::before {
+  //       color: var(--hdd-color-signal-red);
+  //     }
+  //   }
+  // }
 
   // Need to hide the original checkbox
   input {

@@ -1,5 +1,5 @@
-@import 'fontawesome/fontawesome';
-@import 'colors';
+@import "fontawesome/fontawesome";
+@import "colors";
 
 @function font-size($name) {
   $typography-map: null;
@@ -24,65 +24,152 @@
   @return map-get($typography-map, size);
 }
 
-$font-family: 'Roboto', Arial ;
- 
-// Klassene som legges på .is- i typography i utilities
+@mixin standard-text {
+  font-family: var(--hdd-font-family);
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 0.15px;
+  color: var(--hdd-color-font-color);
+}
+@mixin standard-text-small {
+  font-family: var(--hdd-font-family);
+  font-size: 0.875rem;
+  font-weight: normal;
+  letter-spacing: 0.15px;
+  color: var(--hdd-color-font-color);
+}
+
+
+$font-family: 'Roboto', Arial;
+
+:root {
+  --hdd-font-family: #{$font-family};
+}
+
 $typography: (
   h1: (
-    family: $font-family,
-    size: 1.25rem,
-    spacing: .21px,
+    family: var(--hdd-font-family),
+    size: 1.5rem,
     weight: 500,
+    spacing: 0.15px,
     color: var(--hdd-color-font-color),
-    elements: (h1)
+    line-height: 1.2,
+    elements: (
+      h1
+    )
   ),
   h2: (
-    family: $font-family,
-    size: 1rem,
-    spacing: .21px,
-    weight: 400,
+    family: var(--hdd-font-family),
+    size: 1.25rem,
+    spacing: 0.15px,
+    weight: normal,
     color: var(--hdd-color-font-color),
-    elements: (h2)
+    line-height: 1.2,
+    elements: (
+      h2
+    )
   ),
   h3: (
-    family: $font-family,
-    size: .875rem,
-    spacing: .21px,
+    family: var(--hdd-font-family),
+    size: 1rem,
     weight: 500,
+    spacing: 0.15px,
     color: var(--hdd-color-font-color),
-    elements: (h3)
+    line-height: 1.2,
+    elements: (
+      h3
+    )
+  ),
+  h4: (
+    family: var(--hdd-font-family),
+    size: 0.875rem,
+    weight: bold,
+    spacing: 0.5px,
+    color: var(--hdd-color-font-color),
+    line-height: 1.2,
+    elements: (
+      h4
+    )
   ),
   p: (
-    family: $font-family,
-    size: .875rem,
-    spacing: .21px,
-    weight: 400,
+    family: var(--hdd-font-family),
+    size: 1rem,
+    weight: normal,
+    spacing: 0.15px,
     color: var(--hdd-color-font-color),
-    elements: (p)
+    line-height: 1.5,
+    elements: (
+      p
+    )
   ),
   p-small: (
-    family: $font-family,
-    size: .675rem,
-    spacing: .21px,
-    weight: 400,
-    color: var(--hdd-color-font-color)
+    family: var(--hdd-font-family),
+    size: 0.875rem,
+    weight: normal,
+    spacing: 0.15px,
+    color: var(--hdd-color-font-color),
+    line-height: 1.5
   ),
+  /* icon sizing classes can be removed after svg icons are implemented */ 
   icon-small: (
-    family: 'Font Awesome 5 Pro',
-    size: 1.2rem,
-    weight: 300,
-    color: var(--hdd-color-font-color)
+      family: "Font Awesome 5 Pro",
+      size: 1.2rem,
+      weight: 300,
+      color: var(--hdd-color-font-color)
   ),
   icon-medium: (
-    family: 'Font Awesome 5 Pro',
+    family: "Font Awesome 5 Pro",
     size: 1.5rem,
     weight: 300,
     color: var(--hdd-color-font-color)
   ),
   icon-large: (
-    family: 'Font Awesome 5 Pro',
+    family: "Font Awesome 5 Pro",
     size: 2rem,
     weight: 300,
     color: var(--hdd-color-font-color)
+  ),
+  icon-text: (
+    family: var(--hdd-font-family),
+    size: 0.75rem,
+    weight: normal,
+    spacing: 0.2px,
+    color: var(--hdd-color-font-color),
+    line-height: 1.2,
+  ),
+  icon-text-italic: (
+    family: var(--hdd-font-family),
+    size: 0.75rem,
+    weight: normal,
+    style: italic,
+    spacing: 0.2px,
+    color: var(--hdd-color-font-color),
+    line-height: 1.2,
+  ),
+  button-text: (
+    family: var(--hdd-font-family),
+    size: 0.875rem,
+    weight: normal,
+    spacing: 0.5px,
+    color: var(--hdd-color-font-color),
+    line-height: 1,
+    elements:(button)
+  ),
+  label: (
+    family: var(--hdd-font-family),
+    size: 0.875rem,
+    weight: bold,
+    spacing: 0.2px,
+    color: var(--hdd-color-font-color),
+    line-height: 1,
+    elements:(label)
+  ),
+  label-small: (
+    family: var(--hdd-font-family),
+    size: 0.75rem,
+    weight: bold,
+    spacing: 0px,
+    color: var(--hdd-color-font-color),
+    line-height: 1.2,
   )
 );

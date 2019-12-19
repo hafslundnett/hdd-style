@@ -29,14 +29,11 @@ Only use `is-aligned-top` when there are enough room from the top and not enough
  
 ```dropdown-top.html
 <div style="margin:20px">
-  <p>Some content</p>
-  <p>Some content</p>
-  <p>Some content</p>
-  <p>Some content</p>
-  <p>Some content</p>
-  <p>Some content</p>
-  <p>Some content</p>
-  <p>Some content</p>
+  <p>Some Content</p>
+  <p>Some Content</p>
+  <p>Some Content</p>
+  <p>Some Content</p>
+  <p>Some Content</p>
 </div>
 <div class="hdd-form_input hdd-dropdown">
   <input value="Jer">

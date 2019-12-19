@@ -48,8 +48,7 @@ $form-input-border: 1px solid var(--hdd-color-grey);
   &_field,
   > input,
   > textarea {
-    // .is-p is font-properties, defined in typography
-    @extend .is-p;
+    @include standard-text;
 
     width: 100%;
     padding: 0;

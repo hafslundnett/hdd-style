@@ -1,9 +1,8 @@
 .hdd-link {
-  // .is-p is font-properties, defined in typography
   @extend .is-p;
 
   text-decoration: none;
-  color: var(--hdd-color-primary-dark);
+  color: var(--hdd-color-blue);
 
   &:hover:not(.no-hover),
   &.is-hovering,
