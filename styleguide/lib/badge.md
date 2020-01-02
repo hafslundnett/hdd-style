@@ -3,25 +3,23 @@ name: Badge
 category: Components
 ---
 
-Multiple colors can be used on `hdd-badge` and `hdd-badge-icon`. `signal-red` is used as the default color.
+Badges contain numeric values and indicate a number. Multiple colors can be used on `hdd-badge` and `hdd-badge-icon`. `signal-red` is used as the default color.
+
+### When to use: 
+Use badges to mark new, updated or removed content. Use badges with the item they represent, so it's clear which item is indicated.
+
+### When not to use:
+Badges should not be used alone. Do not display information status in a badge and to visually mark UI objects.
 
 ## Badge
 `hdd-badge`
 
 
 ```badge.html
-<div>
-  <span>Example 1 <span class="hdd-badge">5</span></span>
-</div>
-<div style="padding-top: 1rem;">
-  <span>Example 2 <span class="hdd-badge is-primary">8</span></span>
-</div>
-<div style="padding-top: 1rem;">
-  <span>Example 3 <span class="hdd-badge is-safe">10</span></span>
-</div>
-<div style="padding-top: 1rem;">
-  <span>Example 4 <span class="hdd-badge is-warn">10</span></span>
-</div>
+<span class="hdd-badge">5</span>
+<span class="hdd-badge is-primary">8</span>
+<span class="hdd-badge is-safe">31</span>
+<span class="hdd-badge is-warn">12 156</span>
 ```
 
 

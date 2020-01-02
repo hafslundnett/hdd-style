@@ -401,7 +401,9 @@ Below is a example of how to achieve this with sass.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">badge.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>Multiple colors can be used on <code>hdd-badge</code> and <code>hdd-badge-icon</code>. <code>signal-red</code> is used as the default color.</p>
+	<div class="theme-content-element-description"><p>Badges contain numeric values and indicate a number. Multiple colors can be used on <code>hdd-badge</code> and <code>hdd-badge-icon</code>. <code>signal-red</code> is used as the default color.</p>
+<h3>When to use:</h3><p>Use badges to mark new, updated or removed content. Use badges with the item they represent, so it&#39;s clear which item is indicated.</p>
+<h3>When not to use:</h3><p>Badges should not be used alone. Do not display information status in a badge and to visually mark UI objects.</p>
 <div id="badge" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#badge" class="icon-link i-section__link -heading"></a>Badge</h2></div><p><code>hdd-badge</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -432,30 +434,14 @@ Below is a example of how to achieve this with sass.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
-  &lt;span&gt;Example 1 &lt;span class=&quot;hdd-badge&quot;&gt;5&lt;/span&gt;&lt;/span&gt;
-&lt;/div&gt;
-&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
-  &lt;span&gt;Example 2 &lt;span class=&quot;hdd-badge is-primary&quot;&gt;8&lt;/span&gt;&lt;/span&gt;
-&lt;/div&gt;
-&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
-  &lt;span&gt;Example 3 &lt;span class=&quot;hdd-badge is-safe&quot;&gt;10&lt;/span&gt;&lt;/span&gt;
-&lt;/div&gt;
-&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
-  &lt;span&gt;Example 4 &lt;span class=&quot;hdd-badge is-warn&quot;&gt;10&lt;/span&gt;&lt;/span&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div&gt;
-  &lt;span&gt;Example 1 &lt;span class=&quot;hdd-badge&quot;&gt;5&lt;/span&gt;&lt;/span&gt;
-&lt;/div&gt;
-&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
-  &lt;span&gt;Example 2 &lt;span class=&quot;hdd-badge is-primary&quot;&gt;8&lt;/span&gt;&lt;/span&gt;
-&lt;/div&gt;
-&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
-  &lt;span&gt;Example 3 &lt;span class=&quot;hdd-badge is-safe&quot;&gt;10&lt;/span&gt;&lt;/span&gt;
-&lt;/div&gt;
-&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
-  &lt;span&gt;Example 4 &lt;span class=&quot;hdd-badge is-warn&quot;&gt;10&lt;/span&gt;&lt;/span&gt;
-&lt;/div&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;hdd-badge&quot;&gt;5&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-primary&quot;&gt;8&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-safe&quot;&gt;31&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-warn&quot;&gt;12 156&lt;/span&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;hdd-badge&quot;&gt;5&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-primary&quot;&gt;8&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-safe&quot;&gt;31&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-warn&quot;&gt;12 156&lt;/span&gt;</code></pre>
 	</div>
 </div><div id="icon-badge" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#icon-badge" class="icon-link i-section__link -heading"></a>Icon badge</h2></div><p><code>hdd-badge-icon</code></p>
 <p>Add a small red dot with a white border to the top right side of an icon.</p>
