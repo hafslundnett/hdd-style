@@ -9,25 +9,34 @@ A tooltip can give context to a given icon/piece of text. Tooltips are usually h
 `hdd-tooltip`
 
 ```tooltip.html
-<span class="hdd-tooltip" style="margin-right: 10px">
-  Hover me
-  <span class="hdd-tooltip_content is-leaning-right">Right Leaning Tooltip</span>
-</span>
-|
-<span class="hdd-tooltip" style="margin-right: 10px, margin-left: 10px;">
-  Hover me
-  <span class="hdd-tooltip_content">Centered Leaning Tooltip</span>
-</span>
-|
-<span class="hdd-tooltip" style="margin-left: 10px">
-  Hover me too
-  <span class="hdd-tooltip_content is-leaning-left">Left Leaning Tooltip</span>
-</span>
 
-<span class="hdd-tooltip" style="margin-left: 10px">
-  Hover on top
-  <span class="hdd-tooltip_content is-light is-left">Hover on top</span>
-</span>
+<div style="height:30px">
+<!-- margin for examples -->
+</div>
+<div style="display:flex; justify-content:center">
+<!-- Style in div is just for examples -->
+  <span class="hdd-tooltip" style="margin-right: 10px">
+    Hover Right
+    <span class="hdd-tooltip_content is-right">Right Hover</span>
+  </span>
+   
+  <span class="hdd-tooltip" style="margin-right: 10px, margin-left: 10px;">
+    Hover Left
+    <span class="hdd-tooltip_content is-left">Left Hover</span>
+  </span>
+   
+  <span class="hdd-tooltip" style="margin-left: 10px">
+    Hover bottom
+    <span class="hdd-tooltip_content is-bottom">Bottom</span>
+  </span>
+
+  <span class="hdd-tooltip" style="margin-left: 10px">
+    Hover on top
+    <span class="hdd-tooltip_content is-top is-light">Hover on top</span>
+  </span>
+</div>
+
+
 
 <!-- <table class="hdd-table is-striped has-shadow">
   <tr class="hdd-table_header">

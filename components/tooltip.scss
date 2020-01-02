@@ -6,96 +6,195 @@ $tooltip-menu-padding: 0.5rem 1rem;
 $tooltip-tip-right-offset: 1rem;
 $tooltip-tip-left-offset: 1rem;
 $tooltip-tip--offset: 1rem;
-$tooltip-border-radius: $border-radius;
 
 .hdd-tooltip {
-  // Variable containing '&' to jump to current parent inside a child class.
   $this: &;
-
   position: relative;
-  // display: inline-block;
+  display: inline-block;
 
-
-  &:hover:not(.no-hover) {
+  &:hover {
+    #{$this}_content {
+      @extend .hdd-tooltip_content, .is-active;
+    }
+  }
+  &:focus {
     #{$this}_content {
       @extend .hdd-tooltip_content, .is-active;
     }
   }
 
   &_content {
-    //.is-p is font-properties, defined in typography.
-    @extend .is-p;
-    $content-color: var(--hdd-color-grey-dark);
-    $content-text-color: var(--hdd-color-contrast-font-color);
-
-    display: inline-block;
-    position: absolute;
-    background: var(--hdd-color-grey-dark);
-    color: var(--hdd-color-contrast-font-color);
-    text-align: left;
-    box-shadow: $shadow-strong;
-    z-index: -1;
+    $this: &;
     opacity: 0;
-    top: calc(100% + #{$tooltip-tip-size});
-    right: 0;
-    left: 50%;
-    min-width: $tooltip-width;
-    width:fit-content;
-    margin: auto;
-    padding: 10px var(--hdd-spacing-2); 
-    border-radius: $tooltip-border-radius;
-    transform: translateX(-50%);
-    transition: opacity $medium-transition $transition-cubic, z-index $medium-transition step-end;
+    position: absolute;
+    min-width: 100px;
+    background-color: var(--hdd-color-grey-dark);
+    color: var(--hdd-color-contrast-font-color);
+    @extend .is-p-small;
+    padding: 10px var(--hdd-spacing-2);
+    border-radius: $border-radius;
+    z-index: -1;
+    box-shadow: $shadow-strong;
 
-
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: -$tooltip-tip-size;
-      right: 0;
-      left: 0;
-      width: 0;
-      height: 0;
-      margin: auto;
-      border-right: $tooltip-tip-size solid transparent;
-      border-bottom: $tooltip-tip-size solid $content-color;
-      border-left: $tooltip-tip-size solid transparent;
+    // Defaults to is-bottom tooltip if no direction class is applied.
+    &:not(.is-right):not(.is-left):not(.is-top) {
+      @extend .is-bottom;
     }
 
-    &.is-light {
-      background: var(--hdd-color-white);
-      color: var(--hdd-color-font-color);
+    &.is-right {
+      top: -10px;
+      left: 110%;
+      margin-left: 0;
 
-      &::before {
-      border-bottom: $tooltip-tip-size solid var(--hdd-color-white);
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        margin-top: -5px;
+        border: 5px solid;
+        border-color: transparent var(--hdd-color-grey-dark) transparent transparent;
+      }
+    }
+    &.is-left {
+      top: -10px;
+      right: 110%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        margin-top: -5px;
+        border: 5px solid;
+        border-color: transparent transparent transparent var(--hdd-color-grey-dark);
+      }
+    }
+    &.is-bottom {
+      top: 150%;
+      left: 50%;
+      margin-left: -60px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border: 5px solid;
+        border-color: transparent transparent var(--hdd-color-grey-dark) transparent;
       }
     }
 
+    &.is-top {
+      bottom: 150%;
+      left: 50%;
+      margin-left: -60px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border: 5px solid;
+        border-color: var(--hdd-color-grey-dark) transparent transparent transparent;
+      }
+    }
     &.is-active {
-      z-index: 90;
-      transition: opacity $medium-transition $transition-cubic, z-index $medium-transition step-start;
       opacity: 1;
-    }
-
-    &.is-leaning-left {
-      left: calc(50% + #{$tooltip-tip-left-offset} + #{$tooltip-tip-size});
-      transform: translateX(-100%);
-
-      &::before {
-        right: $tooltip-tip-right-offset;
-        left: auto;
-      }
-    }
-
-    &.is-leaning-right {
-      left: calc(50% - #{$tooltip-tip-left-offset} - #{$tooltip-tip-size});
-      transform: translateX(0);
-
-      &::before {
-        right: auto;
-        left: $tooltip-tip-left-offset;
-      }
+      z-index: 1;
     }
   }
 }
+
+// OLD SOLUTION
+// .hdd-tooltip {
+//   // Variable containing '&' to jump to current parent inside a child class.
+//   $this: &;
+
+//   position: relative;
+//   // display: inline-block;
+
+//   &:hover:not(.no-hover) {
+//     #{$this}_content {
+//       @extend .hdd-tooltip_content, .is-active;
+//     }
+//   }
+
+//   &_content {
+//     //.is-p is font-properties, defined in typography.
+//     @extend .is-p;
+//     $content-color: var(--hdd-color-grey-dark);
+//     $content-text-color: var(--hdd-color-contrast-font-color);
+
+//     display: inline-block;
+//     position: absolute;
+//     background: var(--hdd-color-grey-dark);
+//     color: var(--hdd-color-contrast-font-color);
+//     text-align: left;
+//     box-shadow: $shadow-strong;
+//     z-index: -1;
+//     opacity: 0;
+//     top: calc(100% + #{$tooltip-tip-size});
+//     right: 0;
+//     left: 50%;
+//     min-width: $tooltip-width;
+//     width:fit-content;
+//     margin: auto;
+//     padding: 10px var(--hdd-spacing-2);
+//     border-radius: $tooltip-border-radius;
+//     transform: translateX(-50%);
+//     transition: opacity $medium-transition $transition-cubic, z-index $medium-transition step-end;
+
+//     &::before {
+//       content: '';
+//       display: block;
+//       position: absolute;
+//       top: -$tooltip-tip-size;
+//       right: 0;
+//       left: 0;
+//       width: 0;
+//       height: 0;
+//       margin: auto;
+//       border-right: $tooltip-tip-size solid transparent;
+//       border-bottom: $tooltip-tip-size solid $content-color;
+//       border-left: $tooltip-tip-size solid transparent;
+//     }
+
+//     &.is-light {
+//       background: var(--hdd-color-white);
+//       color: var(--hdd-color-font-color);
+
+//       &::before {
+//       border-bottom: $tooltip-tip-size solid var(--hdd-color-white);
+//       }
+//     }
+
+//     &.is-active {
+//       z-index: 90;
+//       transition: opacity $medium-transition $transition-cubic, z-index $medium-transition step-start;
+//       opacity: 1;
+//     }
+
+//     &.is-leaning-left {
+//       left: calc(50% + #{$tooltip-tip-left-offset} + #{$tooltip-tip-size});
+//       transform: translateX(-100%);
+
+//       &::before {
+//         right: $tooltip-tip-right-offset;
+//         left: auto;
+//       }
+//     }
+
+//     &.is-leaning-right {
+//       left: calc(50% - #{$tooltip-tip-left-offset} - #{$tooltip-tip-size});
+//       transform: translateX(0);
+
+//       &::before {
+//         right: auto;
+//         left: $tooltip-tip-left-offset;
+//       }
+//     }
+//   }
+// }
