@@ -401,7 +401,9 @@ Below is a example of how to achieve this with sass.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">badge.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>Multiple colors can be used on <code>hdd-badge</code> and <code>hdd-badge-icon</code>. <code>signal-red</code> is used as the default color.</p>
+	<div class="theme-content-element-description"><p>Badges contain numeric values and indicate a number. Multiple colors can be used on <code>hdd-badge</code> and <code>hdd-badge-icon</code>. <code>signal-red</code> is used as the default color.</p>
+<h3>When to use:</h3><p>Use badges to mark new, updated or removed content. Use badges with the item they represent, so it&#39;s clear which item is indicated.</p>
+<h3>When not to use:</h3><p>Badges should not be used alone. Do not display information status in a badge and to visually mark UI objects.</p>
 <div id="badge" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#badge" class="icon-link i-section__link -heading"></a>Badge</h2></div><p><code>hdd-badge</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -690,7 +692,11 @@ Below is a example of how to achieve this with sass.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">cards.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>In component based services (especially internal systems), content can be structured using Cards.</p>
+	<div class="theme-content-element-description"><p>A card is composed of several elements (eg title, description, icon, illustration). Combined, these elements are related to a single theme or to a destination. A card does not have an active / selected state. Cards contain interactive content, like function or other action points. Since cards are the starting point for more detailed info, they should contain a limited number of actions.</p>
+<h3>When to use:</h3><p>Cards are used when you want to view content related to a theme. The text of the card is recommended to be kept at a maximum of 70 characters per line to improve the readability for the user. The content should be short and kept to a minimum. Padding inside the card is recommended to have spacing-3. If there are multiple cards in a row, the cards should have the same height. </p>
+<p>The card can have an icon in the label to improve the recognition of content in the top left corner. This should be inside a circle, aligned to the H1 element The icon should clearly be connected to the title, and be relevant to content </p>
+<p>A card can have an icon prompting the user to go to settings for this specific content. If a card is clickable, this should be displayed with a light border, view more and an arrow.</p>
+<h3>When not to use:</h3><p>Cards should not be used when the user does not directly compare images or text.</p>
 <div id="card" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#card" class="icon-link i-section__link -heading"></a>Card</h2></div><p><code>hdd-card</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -1639,7 +1645,9 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">tags.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>Tags can be grouped together and are useful for displaying metadata and filtering.</p>
+	<div class="theme-content-element-description"><p>Tags are interactive elements presented with a keyword or phrase that allows the user to move quickly to the selected point. Tags can be grouped together and are useful for filtering.</p>
+<h3>When to use:</h3><p>Tags are used to help the user find content in the same category.</p>
+<h3>When not to use:</h3><p>Badges should not be used alone.</p>
 <div id="tags" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#tags" class="icon-link i-section__link -heading"></a>Tags</h2></div><p><code>hdd-tags</code>, <code>hdd-tags_item</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -1690,7 +1698,9 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">tooltip.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>A tooltip can give context to a given icon/piece of text. Tooltips are usually hidden and become visible after an action or when hovering.</p>
+	<div class="theme-content-element-description"><p>A tooltip can give context to a given icon/piece of text. Tooltips are usually hidden and become visible on hovering, focus or on touch.</p>
+<h3>When to use:</h3><p>Tooltips can be used to provide the user with brief and useful information related to a feature.</p>
+<h3>When not to use:</h3><p>Tooltips should not contain necessary and critical information needed by the user to complete a task.</p>
 <div id="tooltip" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#tooltip" class="icon-link i-section__link -heading"></a>Tooltip</h2></div><p><code>hdd-tooltip</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
