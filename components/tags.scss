@@ -1,16 +1,16 @@
-$tag-font-size: 0.6875rem;
-$tag-padding: 0.4375rem 0.75rem;
-$tag-icon-spacing: 0.625rem;
+$tag-padding: 10px;
+$tag-icon-spacing: 8px;
 $tag-border-radius: $border-radius;
 $tag-spacing: 0.25rem;
 
 .hdd-tags {
   position: relative;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 
   &_icon,
   svg,
   i {
+    font-size: 1rem;
     display: inline-block;
     margin: 0;
     margin-left: $tag-icon-spacing;
@@ -18,11 +18,12 @@ $tag-spacing: 0.25rem;
     border: none;
     background: none;
     color: var(--hdd-color-font-color);
-    font-size: $tag-font-size;
     cursor: pointer;
   }
 
   &_item {
+    @extend .is-p-small;
+
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
@@ -32,9 +33,7 @@ $tag-spacing: 0.25rem;
     border-radius: $tag-border-radius;
     background: var(--hdd-color-blue-light3);
     color: var(--hdd-color-font-color);
-    font-size: $tag-font-size;
-    font-weight: 400;
-    letter-spacing: .1px;
+    letter-spacing: .15px;
     &:first-child {
       margin-left: 0;
     }
