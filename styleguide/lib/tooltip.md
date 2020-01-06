@@ -14,8 +14,10 @@ A tooltip can give context to a given icon/piece of text. Tooltips are usually h
 <!-- Margin for examples on top. -->
 </div>
 
-<h2 style="display:flex; justify-content:center;margin:20px">Standard tooltips</h2>
-<div style="display:flex; justify-content:space-between;margin:25px">
+<h2 class="hdd-tooltip" style="display:flex; justify-content:center;margin:25px">Standard tooltips
+  <span class="hdd-tooltip_content">Examples of tooltips</span>
+</h2>
+<div style="display:flex; justify-content:space-between;margin:30px">
 
   <span class="hdd-tooltip">
     Hover Right
@@ -38,7 +40,9 @@ A tooltip can give context to a given icon/piece of text. Tooltips are usually h
   </span>
 </div>
 
-<h2 style="display:flex; justify-content:center;margin:25px">Light tooltips</h2>
+<h2 class="hdd-tooltip" style="display:flex; justify-content:center;margin:25px">Light tooltips
+  <span class="hdd-tooltip_content is-light">Tooltips with is-light class</span>
+</h2>
 <div style="display:flex; justify-content:space-between;margin:30px">
 
   <span class="hdd-tooltip is-light">
