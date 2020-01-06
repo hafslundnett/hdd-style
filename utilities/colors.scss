@@ -1,10 +1,18 @@
 @import '../variables/colors';
 
+/**
+ * Generates the is-$color classes that can be included on components to make them available for users.
+ * A list of colors, either by name or label, or a map f.eks. $data-colors can be sent to this function.
+ */
 @mixin color-modifiers($list: ('primary', 'warn', 'danger', 'safe'), $main-property: 'background', $contrast-property: '', $selector: '', $color-set: $all-colors) {
-  @if($list == $all-colors) {
-    $list: map-keys($list);
-    $label-list: ('primary', 'warn', 'danger', 'safe');
-    $list: join($list, $label-list);
+  @if(type-of($list) == 'map') {
+    @if($list == $all-colors) {
+      $list: map-keys($list);
+      $label-list: ('primary', 'warn', 'danger', 'safe');
+      $list: join($list, $label-list);
+    } @else {
+      $list: map-keys($list);
+    }
   }
 
   @each $label in $list {

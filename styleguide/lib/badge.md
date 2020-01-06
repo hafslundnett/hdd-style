@@ -3,7 +3,9 @@ name: Badge
 category: Components
 ---
 
-Badges contain numeric values and indicate a number. All the colors in the design system can be used on `hdd-badge`. `signal-red` is the default color. The colors are used with the class `is-$color`.
+Badges contain numeric values and indicate a number. 
+
+All the colors in the design system can be used on `hdd-badge`. `signal-red` is the default color. The colors are used with the class `is-$color`. For example for primary: `<span class="hdd-badge is-primary"></span>`.
 
 ## Badge
 `hdd-badge`
