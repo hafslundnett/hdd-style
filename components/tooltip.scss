@@ -1,14 +1,4 @@
-$tooltip-tip-size: 10px;
-$tooltip-padding: 0.5rem 1rem;
-$tooltip-width: 150px;
-$tooltip-menu-side-padding: 0.75rem;
-$tooltip-menu-padding: 0.5rem 1rem;
-$tooltip-tip-right-offset: 1rem;
-$tooltip-tip-left-offset: 1rem;
-$tooltip-tip--offset: 1rem;
-
 .hdd-tooltip {
-
   $this: &;
   position: relative;
   display: inline-block;
@@ -23,41 +13,21 @@ $tooltip-tip--offset: 1rem;
       @extend .hdd-tooltip_content, .is-active;
     }
   }
-  // min-width som knapp: 90px
-  // max kan muligens settes til 70ch? Skal testets litt. Også maks to linker med text er anbefalt her.
-  // Husk å oppdater "When to/When not to use" tekstene med informajson om dette, og anbefal å vudere en popup om innhold er større.
-
-  &.is-light {
-      #{$this}_content { 
-          background-color: var(--hdd-color-white) !important;
-          color: var(--hdd-color-font-color) !important;        
-      }
-      #{$this}_content.is-right::after { 
-          border-color: transparent var(--hdd-color-white) transparent transparent !important;
-      }
-      #{$this}_content.is-left::after { 
-          border-color: transparent transparent transparent var(--hdd-color-white) !important;
-      }
-      #{$this}_content.is-top::after { 
-          border-color: var(--hdd-color-white) transparent transparent transparent !important;
-      }
-      #{$this}_content.is-bottom::after { 
-          border-color: transparent transparent var(--hdd-color-white) transparent !important;
-      }
-  }
 
   &_content {
-    opacity: 0;
+    @extend .is-p-small;
     position: absolute;
+    opacity: 0;
+    z-index: -1;
     min-width: 90px;
-    width: fit-content;
+    max-width: 70ch;
     background-color: var(--hdd-color-grey-dark);
     color: var(--hdd-color-contrast-font-color);
-    @extend .is-p-small;
     padding: 10px var(--hdd-spacing-2);
     border-radius: $border-radius;
-    z-index: -1;
     box-shadow: $shadow-strong;
+    transition: 150ms;
+    transform: scale(0.5);
 
     // Defaults to is-bottom tooltip if no direction class is applied.
     &:not(.is-right):not(.is-left):not(.is-top) {
@@ -127,97 +97,25 @@ $tooltip-tip--offset: 1rem;
     &.is-active {
       opacity: 1;
       z-index: 1;
+      transform: scale(1);
+    }
+  }
+    &.is-light {
+    #{$this}_content {
+      background-color: var(--hdd-color-white) !important;
+      color: var(--hdd-color-font-color) !important;
+    }
+    #{$this}_content.is-right::after {
+      border-color: transparent var(--hdd-color-white) transparent transparent !important;
+    }
+    #{$this}_content.is-left::after {
+      border-color: transparent transparent transparent var(--hdd-color-white) !important;
+    }
+    #{$this}_content.is-top::after {
+      border-color: var(--hdd-color-white) transparent transparent transparent !important;
+    }
+    #{$this}_content.is-bottom::after {
+      border-color: transparent transparent var(--hdd-color-white) transparent !important;
     }
   }
 }
-
-// OLD SOLUTION
-// .hdd-tooltip {
-//   // Variable containing '&' to jump to current parent inside a child class.
-//   $this: &;
-
-//   position: relative;
-//   // display: inline-block;
-
-//   &:hover:not(.no-hover) {
-//     #{$this}_content {
-//       @extend .hdd-tooltip_content, .is-active;
-//     }
-//   }
-
-//   &_content {
-//     //.is-p is font-properties, defined in typography.
-//     @extend .is-p;
-//     $content-color: var(--hdd-color-grey-dark);
-//     $content-text-color: var(--hdd-color-contrast-font-color);
-
-//     display: inline-block;
-//     position: absolute;
-//     background: var(--hdd-color-grey-dark);
-//     color: var(--hdd-color-contrast-font-color);
-//     text-align: left;
-//     box-shadow: $shadow-strong;
-//     z-index: -1;
-//     opacity: 0;
-//     top: calc(100% + #{$tooltip-tip-size});
-//     right: 0;
-//     left: 50%;
-//     min-width: $tooltip-width;
-//     width:fit-content;
-//     margin: auto;
-//     padding: 10px var(--hdd-spacing-2);
-//     border-radius: $tooltip-border-radius;
-//     transform: translateX(-50%);
-//     transition: opacity $medium-transition $transition-cubic, z-index $medium-transition step-end;
-
-//     &::before {
-//       content: '';
-//       display: block;
-//       position: absolute;
-//       top: -$tooltip-tip-size;
-//       right: 0;
-//       left: 0;
-//       width: 0;
-//       height: 0;
-//       margin: auto;
-//       border-right: $tooltip-tip-size solid transparent;
-//       border-bottom: $tooltip-tip-size solid $content-color;
-//       border-left: $tooltip-tip-size solid transparent;
-//     }
-
-//     &.is-light {
-//       background: var(--hdd-color-white);
-//       color: var(--hdd-color-font-color);
-
-//       &::before {
-//       border-bottom: $tooltip-tip-size solid var(--hdd-color-white);
-//       }
-//     }
-
-//     &.is-active {
-//       z-index: 90;
-//       transition: opacity $medium-transition $transition-cubic, z-index $medium-transition step-start;
-//       opacity: 1;
-//     }
-
-//     &.is-leaning-left {
-//       left: calc(50% + #{$tooltip-tip-left-offset} + #{$tooltip-tip-size});
-//       transform: translateX(-100%);
-
-//       &::before {
-//         right: $tooltip-tip-right-offset;
-//         left: auto;
-//       }
-//     }
-
-//     &.is-leaning-right {
-//       left: calc(50% - #{$tooltip-tip-left-offset} - #{$tooltip-tip-size});
-//       transform: translateX(0);
-
-//       &::before {
-//         right: auto;
-//         left: $tooltip-tip-left-offset;
-//       }
-//     }
-//   }
-// }

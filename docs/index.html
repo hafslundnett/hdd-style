@@ -1599,201 +1599,109 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="
 &lt;div style=&quot;height:30px&quot;&gt;
-&lt;!-- margin for examples --&gt;
+&lt;!-- Margin for examples on top. --&gt;
 &lt;/div&gt;
-&lt;div style=&quot;display:flex; justify-content:center&quot;&gt;
-&lt;!-- Style in div is just for examples --&gt;
-  &lt;span class=&quot;hdd-tooltip is-light&quot; style=&quot;margin-right: 10px&quot;&gt;
+
+&lt;h2 style=&quot;display:flex; justify-content:center;margin:20px&quot;&gt;Standard tooltips&lt;/h2&gt;
+&lt;div style=&quot;display:flex; justify-content:space-between;margin:25px&quot;&gt;
+
+  &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover Right
-    &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right Hover&lt;/span&gt;
+    &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip&lt;/span&gt;
   &lt;/span&gt;
 
-  &lt;span class=&quot;hdd-tooltip&quot; style=&quot;margin-right: 10px, margin-left: 10px;&quot;&gt;
+  &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover Left
     &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left Hover&lt;/span&gt;
   &lt;/span&gt;
 
-  &lt;span class=&quot;hdd-tooltip is-light&quot; style=&quot;margin-left: 10px&quot;&gt;
+  &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover bottom
     &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom&lt;/span&gt;
   &lt;/span&gt;
 
-  &lt;span class=&quot;hdd-tooltip&quot; style=&quot;margin-left: 10px&quot;&gt;
+  &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover on top
     &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Hover on top&lt;/span&gt;
   &lt;/span&gt;
-
-    &lt;span class=&quot;hdd-tooltip is-light&quot; style=&quot;margin-left: 10px&quot;&gt;
-    Hover on top
-    &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Hover me light!&lt;/span&gt;
-  &lt;/span&gt;
 &lt;/div&gt;
 
+&lt;h2 style=&quot;display:flex; justify-content:center;margin:25px&quot;&gt;Light tooltips&lt;/h2&gt;
+&lt;div style=&quot;display:flex; justify-content:space-between;margin:30px&quot;&gt;
 
+  &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
+    Hover Right
+    &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip&lt;/span&gt;
+  &lt;/span&gt;
 
-&lt;!-- &lt;table class=&quot;hdd-table is-striped has-shadow&quot;&gt;
-  &lt;tr class=&quot;hdd-table_header&quot;&gt;
-    &lt;th&gt;ID&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-    &lt;th&gt;Kundenr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-    &lt;th&gt;Personnr.&lt;/th&gt;
-    &lt;th&gt;Fakturanr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-    &lt;th&gt;Feil?&lt;/th&gt;
-    &lt;th&gt;Dobbel Feil?&lt;/th&gt;
-    &lt;th&gt;&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;1&lt;/td&gt;
-    &lt;td&gt;338472&lt;/td&gt;
-    &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;14&lt;/td&gt;
-    &lt;td&gt;&lt;i class=&quot;fal fa-times-circle hdd-tooltip&quot;&gt;
-    &lt;span class=&quot;hdd-tooltip_content&quot;&gt;Error message: hahahhahshahhahhhahahahha&lt;/span&gt;
-    &lt;/i&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;i class=&quot;fal fa-times-circle hdd-tooltip&quot;&gt;
-    &lt;span class=&quot;hdd-tooltip_content&quot;&gt;Error message: hahahhahshahhahhhahahahha&lt;/span&gt;
-    &lt;/i&gt;&lt;/td&gt;
-    &lt;td class=&quot;hdd-table_action&quot;&gt;
-      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;1&lt;/td&gt;
-    &lt;td&gt;338472&lt;/td&gt;
-    &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;14&lt;/td&gt;
-    &lt;td&gt;&lt;i class=&quot;fal fa-times-circle hdd-tooltip&quot;&gt;
-    &lt;span class=&quot;hdd-tooltip_content&quot;&gt;Error message: hahsd asdsa  asd&lt;/span&gt;
-    &lt;/i&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;i class=&quot;fal fa-times-circle hdd-tooltip&quot;&gt;
-    &lt;span class=&quot;hdd-tooltip_content&quot;&gt;Error message: a&lt;/span&gt;
-    &lt;/i&gt;&lt;/td&gt;
-    &lt;td class=&quot;hdd-table_action&quot;&gt;
-      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;1&lt;/td&gt;
-    &lt;td&gt;338472&lt;/td&gt;
-    &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;14&lt;/td&gt;
-    &lt;td&gt;&lt;i class=&quot;fal fa-times-circle hdd-tooltip&quot;&gt;
-    &lt;span class=&quot;hdd-tooltip_content&quot;&gt;Kjempefeil!&lt;/span&gt;
-    &lt;/i&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;i class=&quot;fal fa-times-circle hdd-tooltip&quot;&gt;
-    &lt;span class=&quot;hdd-tooltip_content&quot;&gt;Kjempefeil!&lt;/span&gt;
-    &lt;/i&gt;&lt;/td&gt;
-    &lt;td class=&quot;hdd-table_action&quot;&gt;
-      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
+  &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
+    Hover Left
+    &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left Hover&lt;/span&gt;
+  &lt;/span&gt;
 
-&lt;/table&gt; --&gt;
+  &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
+    Hover bottom
+    &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom&lt;/span&gt;
+  &lt;/span&gt;
 
+  &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
+    Hover on top
+    &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Hover on top&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
 ">Copy</button>
 		<pre class="mb-0"><code class="lang-">
 &lt;div style=&quot;height:30px&quot;&gt;
-&lt;!-- margin for examples --&gt;
+&lt;!-- Margin for examples on top. --&gt;
 &lt;/div&gt;
-&lt;div style=&quot;display:flex; justify-content:center&quot;&gt;
-&lt;!-- Style in div is just for examples --&gt;
-  &lt;span class=&quot;hdd-tooltip is-light&quot; style=&quot;margin-right: 10px&quot;&gt;
+
+&lt;h2 style=&quot;display:flex; justify-content:center;margin:20px&quot;&gt;Standard tooltips&lt;/h2&gt;
+&lt;div style=&quot;display:flex; justify-content:space-between;margin:25px&quot;&gt;
+
+  &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover Right
-    &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right Hover&lt;/span&gt;
+    &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip&lt;/span&gt;
   &lt;/span&gt;
 
-  &lt;span class=&quot;hdd-tooltip&quot; style=&quot;margin-right: 10px, margin-left: 10px;&quot;&gt;
+  &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover Left
     &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left Hover&lt;/span&gt;
   &lt;/span&gt;
 
-  &lt;span class=&quot;hdd-tooltip is-light&quot; style=&quot;margin-left: 10px&quot;&gt;
+  &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover bottom
     &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom&lt;/span&gt;
   &lt;/span&gt;
 
-  &lt;span class=&quot;hdd-tooltip&quot; style=&quot;margin-left: 10px&quot;&gt;
+  &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover on top
     &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Hover on top&lt;/span&gt;
   &lt;/span&gt;
-
-    &lt;span class=&quot;hdd-tooltip is-light&quot; style=&quot;margin-left: 10px&quot;&gt;
-    Hover on top
-    &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Hover me light!&lt;/span&gt;
-  &lt;/span&gt;
 &lt;/div&gt;
 
+&lt;h2 style=&quot;display:flex; justify-content:center;margin:25px&quot;&gt;Light tooltips&lt;/h2&gt;
+&lt;div style=&quot;display:flex; justify-content:space-between;margin:30px&quot;&gt;
 
+  &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
+    Hover Right
+    &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip&lt;/span&gt;
+  &lt;/span&gt;
 
-&lt;!-- &lt;table class=&quot;hdd-table is-striped has-shadow&quot;&gt;
-  &lt;tr class=&quot;hdd-table_header&quot;&gt;
-    &lt;th&gt;ID&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-    &lt;th&gt;Kundenr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-    &lt;th&gt;Personnr.&lt;/th&gt;
-    &lt;th&gt;Fakturanr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-    &lt;th&gt;Feil?&lt;/th&gt;
-    &lt;th&gt;Dobbel Feil?&lt;/th&gt;
-    &lt;th&gt;&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;1&lt;/td&gt;
-    &lt;td&gt;338472&lt;/td&gt;
-    &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;14&lt;/td&gt;
-    &lt;td&gt;&lt;i class=&quot;fal fa-times-circle hdd-tooltip&quot;&gt;
-    &lt;span class=&quot;hdd-tooltip_content&quot;&gt;Error message: hahahhahshahhahhhahahahha&lt;/span&gt;
-    &lt;/i&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;i class=&quot;fal fa-times-circle hdd-tooltip&quot;&gt;
-    &lt;span class=&quot;hdd-tooltip_content&quot;&gt;Error message: hahahhahshahhahhhahahahha&lt;/span&gt;
-    &lt;/i&gt;&lt;/td&gt;
-    &lt;td class=&quot;hdd-table_action&quot;&gt;
-      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;1&lt;/td&gt;
-    &lt;td&gt;338472&lt;/td&gt;
-    &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;14&lt;/td&gt;
-    &lt;td&gt;&lt;i class=&quot;fal fa-times-circle hdd-tooltip&quot;&gt;
-    &lt;span class=&quot;hdd-tooltip_content&quot;&gt;Error message: hahsd asdsa  asd&lt;/span&gt;
-    &lt;/i&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;i class=&quot;fal fa-times-circle hdd-tooltip&quot;&gt;
-    &lt;span class=&quot;hdd-tooltip_content&quot;&gt;Error message: a&lt;/span&gt;
-    &lt;/i&gt;&lt;/td&gt;
-    &lt;td class=&quot;hdd-table_action&quot;&gt;
-      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;1&lt;/td&gt;
-    &lt;td&gt;338472&lt;/td&gt;
-    &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;14&lt;/td&gt;
-    &lt;td&gt;&lt;i class=&quot;fal fa-times-circle hdd-tooltip&quot;&gt;
-    &lt;span class=&quot;hdd-tooltip_content&quot;&gt;Kjempefeil!&lt;/span&gt;
-    &lt;/i&gt;&lt;/td&gt;
-    &lt;td&gt;&lt;i class=&quot;fal fa-times-circle hdd-tooltip&quot;&gt;
-    &lt;span class=&quot;hdd-tooltip_content&quot;&gt;Kjempefeil!&lt;/span&gt;
-    &lt;/i&gt;&lt;/td&gt;
-    &lt;td class=&quot;hdd-table_action&quot;&gt;
-      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
+  &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
+    Hover Left
+    &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left Hover&lt;/span&gt;
+  &lt;/span&gt;
 
-&lt;/table&gt; --&gt;
+  &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
+    Hover bottom
+    &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom&lt;/span&gt;
+  &lt;/span&gt;
 
+  &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
+    Hover on top
+    &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Hover on top&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
 </code></pre>
 	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-tooltip</code>:</strong></p>
@@ -1802,8 +1710,8 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 <th style="text-align:left">description</th>
 </tr>
 </thead><tbody><tr>
-<td style="text-align:left"><code>no-hover</code></td>
-<td style="text-align:left">Disable the tooltip <code>:hover</code> state</td>
+<td style="text-align:left"><code>is-light</code></td>
+<td style="text-align:left">Tooltip with hdd-color-white background and standard font color</td>
 </tr>
 </tbody></table><p><strong><code>hdd-tooltip_content</code>:</strong></p>
 <table class="table"><thead><tr>
@@ -1811,16 +1719,20 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 <th style="text-align:left">description</th>
 </tr>
 </thead><tbody><tr>
-<td style="text-align:left"><code>is-active</code></td>
-<td style="text-align:left">Set the given tooltip to it&#39;s active state</td>
+<td style="text-align:left"><code>is-right</code></td>
+<td style="text-align:left">Set to tooltip to appear on the right side of the element</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>is-leaning-left</code></td>
-<td style="text-align:left">Let the tooltip lean to the left side of the element</td>
+<td style="text-align:left"><code>is-left</code></td>
+<td style="text-align:left">Set to tooltip to appear on the left side of the element</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>is-leaning-right</code></td>
-<td style="text-align:left">Let the tooltip lean to the right side of the element</td>
+<td style="text-align:left"><code>is-top</code></td>
+<td style="text-align:left">Set to tooltip to appear on the right side of the element</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-bottom</code></td>
+<td style="text-align:left">Set to tooltip to appear on the right side of the element. This is the default position for a tooltip with no direction class set to it</td>
 </tr>
 </tbody></table></div>
 </div>

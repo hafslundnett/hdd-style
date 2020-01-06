@@ -11,102 +11,56 @@ A tooltip can give context to a given icon/piece of text. Tooltips are usually h
 ```tooltip.html
 
 <div style="height:30px">
-<!-- margin for examples -->
+<!-- Margin for examples on top. -->
 </div>
-<div style="display:flex; justify-content:center">
-<!-- Style in div is just for examples -->
-  <span class="hdd-tooltip is-light" style="margin-right: 10px">
+
+<h2 style="display:flex; justify-content:center;margin:20px">Standard tooltips</h2>
+<div style="display:flex; justify-content:space-between;margin:25px">
+
+  <span class="hdd-tooltip">
     Hover Right
-    <span class="hdd-tooltip_content is-right">Right Hover</span>
+    <span class="hdd-tooltip_content is-right">Right tooltip</span>
   </span>
    
-  <span class="hdd-tooltip" style="margin-right: 10px, margin-left: 10px;">
+  <span class="hdd-tooltip">
     Hover Left
     <span class="hdd-tooltip_content is-left">Left Hover</span>
   </span>
    
-  <span class="hdd-tooltip is-light" style="margin-left: 10px">
+  <span class="hdd-tooltip">
     Hover bottom
     <span class="hdd-tooltip_content is-bottom">Bottom</span>
   </span>
 
-  <span class="hdd-tooltip" style="margin-left: 10px">
+  <span class="hdd-tooltip">
     Hover on top
     <span class="hdd-tooltip_content is-top">Hover on top</span>
   </span>
-
-    <span class="hdd-tooltip is-light" style="margin-left: 10px">
-    Hover on top
-    <span class="hdd-tooltip_content is-top">Hover me light!</span>
-  </span>
 </div>
 
+<h2 style="display:flex; justify-content:center;margin:25px">Light tooltips</h2>
+<div style="display:flex; justify-content:space-between;margin:30px">
 
+  <span class="hdd-tooltip is-light">
+    Hover Right
+    <span class="hdd-tooltip_content is-right">Right tooltip</span>
+  </span>
+   
+  <span class="hdd-tooltip is-light">
+    Hover Left
+    <span class="hdd-tooltip_content is-left">Left Hover</span>
+  </span>
+   
+  <span class="hdd-tooltip is-light">
+    Hover bottom
+    <span class="hdd-tooltip_content is-bottom">Bottom</span>
+  </span>
 
-<!-- <table class="hdd-table is-striped has-shadow">
-  <tr class="hdd-table_header">
-    <th>ID<i class="far fa-arrow-up"></i></th>
-    <th>Kundenr.<i class="far fa-arrow-up"></i></th>
-    <th>Personnr.</th>
-    <th>Fakturanr.<i class="far fa-arrow-up"></i></th>
-    <th>Feil?</th>
-    <th>Dobbel Feil?</th>
-    <th></th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>338472</td>
-    <td>123419384</td>
-    <td>14</td>
-    <td><i class="fal fa-times-circle hdd-tooltip">
-    <span class="hdd-tooltip_content">Error message: hahahhahshahhahhhahahahha</span>
-    </i></td>
-    <td><i class="fal fa-times-circle hdd-tooltip">
-    <span class="hdd-tooltip_content">Error message: hahahhahshahhahhhahahahha</span>
-    </i></td>
-    <td class="hdd-table_action">
-      <i class="far fa-angle-down"></i>
-      <i class="far fa-ellipsis-v"></i>
-      <button class="hdd-button is-small">Submit</button>
-    </td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>338472</td>
-    <td>123419384</td>
-    <td>14</td>
-    <td><i class="fal fa-times-circle hdd-tooltip">
-    <span class="hdd-tooltip_content">Error message: hahsd asdsa  asd</span>
-    </i></td>
-    <td><i class="fal fa-times-circle hdd-tooltip">
-    <span class="hdd-tooltip_content">Error message: a</span>
-    </i></td>
-    <td class="hdd-table_action">
-      <i class="far fa-angle-down"></i>
-      <i class="far fa-ellipsis-v"></i>
-      <button class="hdd-button is-small">Submit</button>
-    </td>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>338472</td>
-    <td>123419384</td>
-    <td>14</td>
-    <td><i class="fal fa-times-circle hdd-tooltip">
-    <span class="hdd-tooltip_content">Kjempefeil!</span>
-    </i></td>
-    <td><i class="fal fa-times-circle hdd-tooltip">
-    <span class="hdd-tooltip_content">Kjempefeil!</span>
-    </i></td>
-    <td class="hdd-table_action">
-      <i class="far fa-angle-down"></i>
-      <i class="far fa-ellipsis-v"></i>
-      <button class="hdd-button is-small">Submit</button>
-    </td>
-  </tr>
-
-</table> -->
-
+  <span class="hdd-tooltip is-light">
+    Hover on top
+    <span class="hdd-tooltip_content is-top">Hover on top</span>
+  </span>
+</div>
 
 ```
 
@@ -115,12 +69,13 @@ A tooltip can give context to a given icon/piece of text. Tooltips are usually h
 
 | class | description|
 | :--- | :--- |
-| `no-hover` | Disable the tooltip `:hover` state |
+| `is-light` | Tooltip with hdd-color-white background and standard font color|
 
 **`hdd-tooltip_content`:**
 
 | class | description|
 | :--- | :--- |
-| `is-active` | Set the given tooltip to it's active state |
-| `is-leaning-left` | Let the tooltip lean to the left side of the element |
-| `is-leaning-right` | Let the tooltip lean to the right side of the element |
+| `is-right` | Set to tooltip to appear on the right side of the element|
+| `is-left` | Set to tooltip to appear on the left side of the element |
+| `is-top` | Set to tooltip to appear on the right side of the element |
+| `is-bottom` | Set to tooltip to appear on the right side of the element. This is the default position for a tooltip with no direction class set to it |
