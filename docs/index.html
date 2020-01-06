@@ -3241,9 +3241,15 @@ Dropdown should be used if the user wants a recommended selection out of all the
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">icons.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>Icons, symbols indicating action, information or intention to the user. </p>
-<p>HDD-style uses Font Awesome icon library, and is implemented with the <code>&lt;i&gt; &lt;/i&gt;</code> tags, along with the corresponding class for an icon, see the examples for some of the icons that are available. A full list of all of Font Awesome icons can be found here: <a href="https://fontawesome.com/icons?d=gallery">https://fontawesome.com/icons?d=gallery</a></p>
-<p>The examples below are illustrated in an &quot;Action button&quot;, if there is no need for text, use the &quot;Icon button&quot;. </p>
+	<div class="theme-content-element-description"><p>HDD-style uses Font Awesome icon library, and is implemented with the <code>&lt;i&gt; &lt;/i&gt;</code> tags, along with the corresponding class for an icon, see the examples for some of the icons that are available. A full list of all of Font Awesome icons can be found here: <a href="https://fontawesome.com/icons?d=gallery">https://fontawesome.com/icons?d=gallery</a></p>
+<!--
+Erstatt når SVG blir tatt i bruk
+
+In the internal design system SVG files from Streamline light must be used.
+-->
+<p>Icons are visual symbols used to represent ideas, objects or actions. They convey messages at a glance, provide interactivity and draw attention to important information. The icons are recommended to be designed for between 20 and 24 dp to make the pixel perfect. See Google&#39;s Material Icon for details. Icons are usually placed to the left of the text, but can also be placed above and to the right if the special use case fits it.</p>
+<h3>When to use:</h3><p>Icons can be used in several contexts. In input fields they are used both to visually show what the user fills in and to show status (pass / fail). They should follow set spacing values.</p>
+<h3>When not to use:</h3><p>Icons should not be larger than 48px. It should also be avoided to have icons less than 8px. Also, icons should not be used alone in menus without text, as it may be difficult for the user to know what the icon should represent.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -3273,13 +3279,13 @@ Dropdown should be used if the user wants a recommended selection out of all the
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;!--Here some icons are illustrated with the &quot;Action button&quot;, if there is no need for text, use the &quot;Icon button&quot;.--&gt;
 &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt; Info Icon&lt;/button&gt;
 &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-user&quot;&gt;&lt;/i&gt; User Icon&lt;/button&gt;
 &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-bars&quot;&gt;&lt;/i&gt; Menubar Icon&lt;/button&gt;
 &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt; Search Icon&lt;/button&gt;
 ">Copy</button>
-		<pre class="mb-0"><code class="lang-">
+		<pre class="mb-0"><code class="lang-">&lt;!--Here some icons are illustrated with the &quot;Action button&quot;, if there is no need for text, use the &quot;Icon button&quot;.--&gt;
 &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt; Info Icon&lt;/button&gt;
 &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-user&quot;&gt;&lt;/i&gt; User Icon&lt;/button&gt;
 &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-bars&quot;&gt;&lt;/i&gt; Menubar Icon&lt;/button&gt;
