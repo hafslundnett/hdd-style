@@ -1,7 +1,5 @@
 $tag-padding: 10px;
-$tag-icon-spacing: 8px;
 $tag-border-radius: $border-radius;
-$tag-spacing: 0.25rem;
 
 .hdd-tags {
   position: relative;
@@ -13,7 +11,7 @@ $tag-spacing: 0.25rem;
     font-size: 1rem;
     display: inline-block;
     margin: 0;
-    margin-left: $tag-icon-spacing;
+    margin-left: 8px;
     padding: 0;
     border: none;
     background: none;
@@ -28,7 +26,7 @@ $tag-spacing: 0.25rem;
     align-items: center;
     justify-content: space-between;
     min-width: 45px;
-    margin-left: $tag-spacing;
+    margin-left: var(--hdd-spacing-2);
     padding: $tag-padding;
     border-radius: $tag-border-radius;
     background: var(--hdd-color-blue-light3);
