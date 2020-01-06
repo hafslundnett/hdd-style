@@ -3,3 +3,4 @@ scripts/
 showoff/
 *.md
 *.log
+.github

@@ -3,6 +3,21 @@
 
 	<head>
 		<style>
+					.grid-item-1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  background: purple;
+}
+.grid-item-2 {
+  grid-column: 3 / 5;
+  grid-row: 1 / 2;
+  background: red;
+}
+.grid-item-3 {
+  grid-column: 1 / 5;
+  grid-row: 2 / 4;
+  background: green;
+}
 		</style>
 
 		<style>
@@ -52,81 +67,21 @@
 		
 	</head>
 
-	<body>					<div style="padding: 20px;">
-    <div class="feedback-container" style="margin-bottom: 10px">
-  <i class="fal fa-info-circle feedback-container_icon"></i>
-  <p class="feedback-container_message">
-    This is just for info! Usage of icons should be kept to an absolute minimum. Long messages are also supported, the text will wrap to a new line. However, long feedbacks are not recommended.
-  </p>
-  <button class="feedback-container_close-button">
-    <i class="fal fa-times-circle"></i>
-  </button>
-</div>
-
-<div class="feedback-container is-success" style="margin-bottom: 10px">
-  <p class="feedback-container_message">
-    Something was a success!
-  </p>
-  <button class="feedback-container_close-button">
-   <i class="fal fa-times-circle"></i>
-  </button>
-</div>
-
-<div class="feedback-container is-warn" style="margin-bottom: 10px">
-  <p class="feedback-container_message">
-    There is something you might want to check out.
-  </p>
-  <button class="feedback-container_close-button">
-    <i class="fal fa-times-circle"></i>
-  </button>
-</div>
-
-<div class="feedback-container is-error">
-  <p class="feedback-container_message">
-    There is something seriously wrong going on!
-  </p>
-  <button class="feedback-container_close-button">
-    <i class="fal fa-times-circle"></i>
-  </button>
-</div>
-</div>
-
-			<script type="text/x-stylemark" data-language="html"><div class="feedback-container" style="margin-bottom: 10px">
-  <i class="fal fa-info-circle feedback-container_icon"></i>
-  <p class="feedback-container_message">
-    This is just for info! Usage of icons should be kept to an absolute minimum. Long messages are also supported, the text will wrap to a new line. However, long feedbacks are not recommended.
-  </p>
-  <button class="feedback-container_close-button">
-    <i class="fal fa-times-circle"></i>
-  </button>
-</div>
-
-<div class="feedback-container is-success" style="margin-bottom: 10px">
-  <p class="feedback-container_message">
-    Something was a success!
-  </p>
-  <button class="feedback-container_close-button">
-   <i class="fal fa-times-circle"></i>
-  </button>
-</div>
-
-<div class="feedback-container is-warn" style="margin-bottom: 10px">
-  <p class="feedback-container_message">
-    There is something you might want to check out.
-  </p>
-  <button class="feedback-container_close-button">
-    <i class="fal fa-times-circle"></i>
-  </button>
-</div>
-
-<div class="feedback-container is-error">
-  <p class="feedback-container_message">
-    There is something seriously wrong going on!
-  </p>
-  <button class="feedback-container_close-button">
-    <i class="fal fa-times-circle"></i>
-  </button>
-</div></script>
+	<body>			<script type="text/x-stylemark" data-language="css">.grid-item-1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  background: purple;
+}
+.grid-item-2 {
+  grid-column: 3 / 5;
+  grid-row: 1 / 2;
+  background: red;
+}
+.grid-item-3 {
+  grid-column: 1 / 5;
+  grid-row: 2 / 4;
+  background: green;
+}</script>
 
 		<!--
 			Vanilla JS
@@ -159,10 +114,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-feedback-message-feedbackmessage', []);
+						module = angular.module('stylemark-grid-primary-colors', []);
 					}
 
-					module.controller('stylemark-feedback-message-feedbackmessage-' + index, function($scope) {
+					module.controller('stylemark-grid-primary-colors-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

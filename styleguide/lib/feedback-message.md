@@ -18,7 +18,7 @@ Usage of icons in feedback messages should be kept to an absolute minimum, since
     This is just for info! Usage of icons should be kept to an absolute minimum. Long messages are also supported, the text will wrap to a new line. However, long feedbacks are not recommended.
   </p>
   <button class="feedback-container_close-button">
-    <i class="fal fa-times"></i>
+    <i class="fal fa-times-circle"></i>
   </button>
 </div>
 
@@ -27,7 +27,7 @@ Usage of icons in feedback messages should be kept to an absolute minimum, since
     Something was a success!
   </p>
   <button class="feedback-container_close-button">
-    <i class="fal fa-times"></i>
+   <i class="fal fa-times-circle"></i>
   </button>
 </div>
 
@@ -36,7 +36,7 @@ Usage of icons in feedback messages should be kept to an absolute minimum, since
     There is something you might want to check out.
   </p>
   <button class="feedback-container_close-button">
-    <i class="fal fa-times"></i>
+    <i class="fal fa-times-circle"></i>
   </button>
 </div>
 
@@ -45,7 +45,7 @@ Usage of icons in feedback messages should be kept to an absolute minimum, since
     There is something seriously wrong going on!
   </p>
   <button class="feedback-container_close-button">
-    <i class="fal fa-times"></i>
+    <i class="fal fa-times-circle"></i>
   </button>
 </div>
 ```

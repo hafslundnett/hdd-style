@@ -35,4 +35,4 @@ This will open the styleguide in your browser and refresh on changes.
 
 ## Changelog
 
-Please read the changelog [here](https://github.com/hafslundnett/blob/master/CHANGELOG.md) to keep up to date with breaking changes released with new updates. 
+Please read the changelog [here](https://github.com/hafslundnett/hdd-style/blob/master/CHANGELOG.md) to keep up to date with breaking changes released with new updates. 

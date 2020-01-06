@@ -7,14 +7,14 @@ Spatial system that follows multiplication of 0.5rem (1rem = 16px). This provide
 
 ## All spacing sizes
 
-- `--hdd-spacing-1` / `--hdd-spacing-primary`
-- `--hdd-spacing-2`
-- `--hdd-spacing-3`
-- `--hdd-spacing-4`
-- `--hdd-spacing-5`
-- `--hdd-spacing-6`
-- `--hdd-spacing-7`
-- `--hdd-spacing-8`
+- 0.5rem (8px):  `--hdd-spacing-1` / `--hdd-spacing-primary`
+- 1.0rem (16px): `--hdd-spacing-2`
+- 1.5rem (24px): `--hdd-spacing-3`
+- 2.0rem (32px): `--hdd-spacing-4`
+- 2.5rem (40px): `--hdd-spacing-5`
+- 3.0rem (48px): `--hdd-spacing-6`
+- 3.5rem (56px): `--hdd-spacing-7`
+- 4.0rem (64px): `--hdd-spacing-8`
 
 ```spacing.html
 <div>
