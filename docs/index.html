@@ -526,6 +526,8 @@ Below is a example of how to achieve this with sass.</p>
 	</span>
 	<div class="theme-content-element-description"><p>The buttons are to be used across the various internal systems. If there is only one button on the current screen, this should always be a primary button. When you use multiple buttons, the primary button appears on the right and any secondary buttons appear on the left. Secondary button should not be used alone on a screen. Action buttons are specially designed for the user to take an action that will affect something else.</p>
 <p>Changing the color of a button to convey purpose is not ideal as people with vision impairments may struggle. Usage of other colors should be properly discussed and the context clear.</p>
+<h3>When to use:</h3><p>The buttons should have a min left and right padding between text and border of 16 px (2 standard spacing). The minimum width of a button must be 90 px. The icon should be placed to the left of the text and the distance between text and icon should be 1 (default distance).</p>
+<h3>When not to use:</h3><p>When an action does not require a button. For example, during navigation a link should be used instead.</p>
 <div id="primary-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#primary-button" class="icon-link i-section__link -heading"></a>Primary button</h2></div><p><code>hdd-button</code></p>
 <p>If only one button exists on a page, it should always be a primary button. </p>
 <div class="i-example">
@@ -2112,7 +2114,9 @@ Dropdown should be used if the user wants a recommended selection out of all the
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">input-fields.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>An input should encourage action by the user. If the text / content cannot be changed, it should not appear in an input field of any kind (displayed as static text). An input should not stand alone, it should have a descriptive prompt.</p>
+	<div class="theme-content-element-description"><p>An input should encourage action by the user. If the text / content cannot be changed, it should not appear in an input field of any kind (displayed as static text). </p>
+<h3>When to use:</h3><p>An input should have a descriptive prompt and contain: container, label, placeholder/input text, error text/helper.</p>
+<h3>When not to use:</h3><p>An input should not stand alone.</p>
 <div id="input-fields" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#input-fields" class="icon-link i-section__link -heading"></a>Input fields</h2></div><p><code>hdd-form_input</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -2314,7 +2318,8 @@ Dropdown should be used if the user wants a recommended selection out of all the
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">searchfields.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>A search field should be used to give a user the ability to search for options.</p>
+	<div class="theme-content-element-description"><p>Search box allows the user to locate content quickly and efficiently and can be seen as a conversation between the user and the web page.</p>
+<h3>When to use:</h3><p>Smaller search fields are used on individual pages if they are to be searched within a specific area. It is important to set the user context for the search with the correct placeholder text.</p>
 <div id="search-field" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#search-field" class="icon-link i-section__link -heading"></a>Search field</h2></div><p><code>hdd-form_input</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
