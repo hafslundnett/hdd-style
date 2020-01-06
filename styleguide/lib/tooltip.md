@@ -5,10 +5,10 @@ category: Components
 
 A tooltip can give context to a given icon/piece of text. Tooltips are usually hidden and become visible on hovering, focus or on touch.
 
-### When to use: 
+### ✅ When to use: 
 Tooltips can be used to provide the user with brief and useful information related to a feature.
 
-### When not to use:
+### ⛔ When not to use:
 Tooltips should not contain necessary and critical information needed by the user to complete a task.
 
 ## Tooltip

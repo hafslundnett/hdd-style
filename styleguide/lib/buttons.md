@@ -7,10 +7,10 @@ The buttons are to be used across the various internal systems. If there is only
 
 Changing the color of a button to convey purpose is not ideal as people with vision impairments may struggle. Usage of other colors should be properly discussed and the context clear.
 
-### When to use: 
+### ✅ When to use: 
 The buttons should have a min left and right padding between text and border of 16 px (2 standard spacing). The minimum width of a button must be 90 px. The icon should be placed to the left of the text and the distance between text and icon should be 1 (default distance).
 
-### When not to use:
+### ⛔ When not to use:
 When an action does not require a button. For example, during navigation a link should be used instead.
 
 

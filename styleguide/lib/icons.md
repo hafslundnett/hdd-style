@@ -12,10 +12,10 @@ In the internal design system SVG files from Streamline light must be used.
 
 Icons are visual symbols used to represent ideas, objects or actions. They convey messages at a glance, provide interactivity and draw attention to important information. The icons are recommended to be designed for between 20 and 24 dp to make the pixel perfect. See Google's Material Icon for details. Icons are usually placed to the left of the text, but can also be placed above and to the right if the special use case fits it.
 
-### When to use: 
+### ✅ When to use: 
 Icons can be used in several contexts. In input fields they are used both to visually show what the user fills in and to show status (pass / fail). They should follow set spacing values.
 
-### When not to use:
+### ⛔ When not to use:
 Icons should not be larger than 48px. It should also be avoided to have icons less than 8px. Also, icons should not be used alone in menus without text, as it may be difficult for the user to know what the icon should represent.
 
 ```icons.html

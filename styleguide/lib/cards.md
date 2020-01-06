@@ -5,14 +5,14 @@ category: Components
 
 A card is composed of several elements (eg title, description, icon, illustration). Combined, these elements are related to a single theme or to a destination. A card does not have an active / selected state. Cards contain interactive content, like function or other action points. Since cards are the starting point for more detailed info, they should contain a limited number of actions.
 
-### When to use: 
+### ✅ When to use: 
 Cards are used when you want to view content related to a theme. The text of the card is recommended to be kept at a maximum of 70 characters per line to improve the readability for the user. The content should be short and kept to a minimum. Padding inside the card is recommended to have spacing-3. If there are multiple cards in a row, the cards should have the same height. 
 
 The card can have an icon in the label to improve the recognition of content in the top left corner. This should be inside a circle, aligned to the H1 element The icon should clearly be connected to the title, and be relevant to content 
 
 A card can have an icon prompting the user to go to settings for this specific content. If a card is clickable, this should be displayed with a light border, view more and an arrow.
 
-### When not to use:
+### ⛔ When not to use:
 Cards should not be used when the user does not directly compare images or text.
 
 ## Card 
