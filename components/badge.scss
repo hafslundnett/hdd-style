@@ -5,7 +5,7 @@ $badge-icon-border: 2px solid var(--hdd-color-white);
 
 .hdd-badge {
   // Colors available for badge
-  @include color-modifiers(('primary', 'warn', 'danger', 'safe'), 'background', 'color');
+  @include color-modifiers($all-colors, 'background', 'color');
 
   padding: $badge-padding;
   border-width: 0;

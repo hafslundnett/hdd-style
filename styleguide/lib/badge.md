@@ -10,10 +10,13 @@ Badges contain numeric values and indicate a number. All the colors in the desig
 
 
 ```badge.html
-<span class="hdd-badge">5</span>
-<span class="hdd-badge is-primary">8</span>
-<span class="hdd-badge is-safe">31</span>
-<span class="hdd-badge is-warn">12 156</span>
+<span class="hdd-badge">592</span>
+<span class="hdd-badge is-primary">82</span>
+<span class="hdd-badge is-safe">313</span>
+<span class="hdd-badge is-warn">18 196</span>
+<span class="hdd-badge is-blue-light1">37</span>
+<span class="hdd-badge is-data-navy">12 156</span>
+<span class="hdd-badge is-black">9 214</span>
 ```
 
 
