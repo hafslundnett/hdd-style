@@ -8,6 +8,7 @@ $tooltip-tip-left-offset: 1rem;
 $tooltip-tip--offset: 1rem;
 
 .hdd-tooltip {
+
   $this: &;
   position: relative;
   display: inline-block;
@@ -22,12 +23,34 @@ $tooltip-tip--offset: 1rem;
       @extend .hdd-tooltip_content, .is-active;
     }
   }
+  // min-width som knapp: 90px
+  // max kan muligens settes til 70ch? Skal testets litt. Også maks to linker med text er anbefalt her.
+  // Husk å oppdater "When to/When not to use" tekstene med informajson om dette, og anbefal å vudere en popup om innhold er større.
+
+  &.is-light {
+      #{$this}_content { 
+          background-color: var(--hdd-color-white) !important;
+          color: var(--hdd-color-font-color) !important;        
+      }
+      #{$this}_content.is-right::after { 
+          border-color: transparent var(--hdd-color-white) transparent transparent !important;
+      }
+      #{$this}_content.is-left::after { 
+          border-color: transparent transparent transparent var(--hdd-color-white) !important;
+      }
+      #{$this}_content.is-top::after { 
+          border-color: var(--hdd-color-white) transparent transparent transparent !important;
+      }
+      #{$this}_content.is-bottom::after { 
+          border-color: transparent transparent var(--hdd-color-white) transparent !important;
+      }
+  }
 
   &_content {
-    $this: &;
     opacity: 0;
     position: absolute;
-    min-width: 100px;
+    min-width: 90px;
+    width: fit-content;
     background-color: var(--hdd-color-grey-dark);
     color: var(--hdd-color-contrast-font-color);
     @extend .is-p-small;
