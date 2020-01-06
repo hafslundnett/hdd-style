@@ -2798,7 +2798,6 @@ Dropdown should be used if the user wants a recommended selection out of all the
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
-  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
   &lt;span style=&quot;background: var(--hdd-color-blue); height: 100px; width: 100px;&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-blue-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-blue-light1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
@@ -2806,17 +2805,31 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span style=&quot;background: var(--hdd-color-blue-light3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-blue-light4)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
-  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
+&lt;div style=&quot;padding: 0 15px 0 15px; background:white; display:flex;&quot;&gt;
+  &lt;span class=&quot;color-text&quot; style=&quot;width: 100px;&quot;&gt;blue&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;blue-dark&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;blue-light1&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;blue-light2&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;blue-light3&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;blue-light4&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 0 15px; background: white;&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue); height: 100px; width: 100px;&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light4)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 15px 15px; background:white; display:flex;&quot;&gt;
+  &lt;span class=&quot;color-text&quot; style=&quot;width: 100px;&quot;&gt;contrast-blue&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-blue-dark&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-blue-light1&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-blue-light2&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-blue-light3&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-blue-light4&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
-  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
   &lt;span style=&quot;background: var(--hdd-color-blue); height: 100px; width: 100px;&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-blue-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-blue-light1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
@@ -2824,14 +2837,29 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span style=&quot;background: var(--hdd-color-blue-light3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-blue-light4)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
-  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
+&lt;div style=&quot;padding: 0 15px 0 15px; background:white; display:flex;&quot;&gt;
+  &lt;span class=&quot;color-text&quot; style=&quot;width: 100px;&quot;&gt;blue&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;blue-dark&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;blue-light1&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;blue-light2&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;blue-light3&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;blue-light4&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 0 15px; background: white;&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue); height: 100px; width: 100px;&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light4)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 15px 15px; background:white; display:flex;&quot;&gt;
+  &lt;span class=&quot;color-text&quot; style=&quot;width: 100px;&quot;&gt;contrast-blue&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-blue-dark&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-blue-light1&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-blue-light2&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-blue-light3&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-blue-light4&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><div id="support-colors" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#support-colors" class="icon-link i-section__link -heading"></a>Support colors</h2></div><p>Support colors are all colors which are not considered primary colors. These colors include greys, signaling colors, data visualization colors, and shadows.</p>
@@ -2877,7 +2905,6 @@ Dropdown should be used if the user wants a recommended selection out of all the
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
-  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
   &lt;span style=&quot;background: var(--hdd-color-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-font-color)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-grey-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
@@ -2888,8 +2915,18 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span style=&quot;background: var(--hdd-color-grey-background)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
-  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
+&lt;div style=&quot;padding: 0 15px 0 15px; background:white; display:flex;&quot;&gt;
+  &lt;span class=&quot;color-text&quot;&gt;black&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;font-color&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-dark&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-medium&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-border&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-light&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-background&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;white&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 0 15px; background: white;&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-font-color)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-grey-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
@@ -2899,9 +2936,19 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span style=&quot;background: var(--hdd-color-contrast-grey-light)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-grey-background)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 15px 15px; background:white; display:flex;&quot;&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-black&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-font-color&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-dark&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-medium&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-border&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-light&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-background&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-white&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
-  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
   &lt;span style=&quot;background: var(--hdd-color-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-font-color)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-grey-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
@@ -2912,8 +2959,18 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span style=&quot;background: var(--hdd-color-grey-background)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
-  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
+&lt;div style=&quot;padding: 0 15px 0 15px; background:white; display:flex;&quot;&gt;
+  &lt;span class=&quot;color-text&quot;&gt;black&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;font-color&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-dark&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-medium&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-border&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-light&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-background&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;white&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 0 15px; background: white;&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-font-color)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-grey-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
@@ -2923,6 +2980,17 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span style=&quot;background: var(--hdd-color-contrast-grey-light)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-grey-background)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 15px 15px; background:white; display:flex;&quot;&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-black&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-font-color&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-dark&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-medium&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-border&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-light&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-background&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-white&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><h3>Signal colors</h3><p>Signal colors should only be used in meaningful (never being identity-bearing or the only color appearing on a screen) situations and should only mean one thing per platform.</p>
@@ -2961,28 +3029,44 @@ Dropdown should be used if the user wants a recommended selection out of all the
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
-  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
   &lt;span style=&quot;background: var(--hdd-color-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
-  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
+&lt;div style=&quot;padding: 0 15px 0 15px; background:white; display:flex;&quot;&gt;
+  &lt;span class=&quot;color-text&quot;&gt;signal-green&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;signal-yellow&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;signal-red&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 0 15px; background: white;&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 15px 15px; background:white; display:flex;&quot;&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-signal-green&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-signal-yellow&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-signal-red&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
-  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
   &lt;span style=&quot;background: var(--hdd-color-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
-  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
+&lt;div style=&quot;padding: 0 15px 0 15px; background:white; display:flex;&quot;&gt;
+  &lt;span class=&quot;color-text&quot;&gt;signal-green&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;signal-yellow&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;signal-red&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 0 15px; background: white;&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 15px 15px; background:white; display:flex;&quot;&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-signal-green&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-signal-yellow&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-signal-red&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><h3>Data visualization</h3><p>These colors are chosen to be used for infographics. If necessary, these colors can also be used in varying degrees of opacity (eg heat maps).</p>
@@ -3026,7 +3110,6 @@ Dropdown should be used if the user wants a recommended selection out of all the
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
-  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
   &lt;span style=&quot;background: var(--hdd-color-data-navy)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-data-marine)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-data-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
@@ -3036,8 +3119,17 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span style=&quot;background: var(--hdd-color-data-orange)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-data-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
-  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
+&lt;div style=&quot;padding: 0 15px 0 15px; background:white; display:flex;&quot;&gt;
+  &lt;span class=&quot;color-text&quot;&gt;data-navy&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;data-marine&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;data-blue&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;data-turquoise&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;data-seagreen&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;data-green&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;data-orange&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;data-yellow&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 0 15px; background: white;&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-navy)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-marine)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
@@ -3046,9 +3138,18 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-orange)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 15px 15px; background:white; display:flex;&quot;&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-data-navy&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-data-marine&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-data-blue&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-data-turquoise&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-data-seagreen&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-data-green&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-data-orange&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-data-yellow&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
-  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Color&lt;/h2&gt;
   &lt;span style=&quot;background: var(--hdd-color-data-navy)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-data-marine)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-data-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
@@ -3058,8 +3159,17 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span style=&quot;background: var(--hdd-color-data-orange)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-data-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 15px 15px; background: white;&quot;&gt;
-  &lt;h2 style=&quot;padding: 20px 10px;&quot;&gt;Contrast&lt;/h2&gt;
+&lt;div style=&quot;padding: 0 15px 0 15px; background:white; display:flex;&quot;&gt;
+  &lt;span class=&quot;color-text&quot;&gt;data-navy&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;data-marine&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;data-blue&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;data-turquoise&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;data-seagreen&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;data-green&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;data-orange&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;data-yellow&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 0 15px; background: white;&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-navy)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-marine)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
@@ -3068,6 +3178,16 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-orange)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div style=&quot;padding: 0 15px 15px 15px; background:white; display:flex;&quot;&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-data-navy&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-data-marine&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-data-blue&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-data-turquoise&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-data-seagreen&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-data-green&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-data-orange&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-data-yellow&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div></div>
