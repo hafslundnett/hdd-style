@@ -10,13 +10,6 @@ A tooltip can give context to a given icon/piece of text. Tooltips are usually h
 
 ```tooltip.html
 
-<div style="height:30px">
-<!-- Margin for examples on top. -->
-</div>
-
-<h2 class="hdd-tooltip" style="display:flex; justify-content:center;margin:25px">Standard tooltips
-  <span class="hdd-tooltip_content">Examples of tooltips</span>
-</h2>
 <div style="display:flex; justify-content:space-between;margin:30px">
 
   <span class="hdd-tooltip">
@@ -26,23 +19,21 @@ A tooltip can give context to a given icon/piece of text. Tooltips are usually h
    
   <span class="hdd-tooltip">
     Hover Left
-    <span class="hdd-tooltip_content is-left">Left Hover</span>
+    <span class="hdd-tooltip_content is-left">Left tooltip</span>
   </span>
    
   <span class="hdd-tooltip">
     Hover bottom
-    <span class="hdd-tooltip_content is-bottom">Bottom</span>
+    <span class="hdd-tooltip_content is-bottom">Bottom tooltip</span>
   </span>
 
   <span class="hdd-tooltip">
     Hover on top
-    <span class="hdd-tooltip_content is-top">Hover on top</span>
+    <span class="hdd-tooltip_content is-top">Top tooltip</span>
   </span>
+
 </div>
 
-<h2 class="hdd-tooltip" style="display:flex; justify-content:center;margin:25px">Light tooltips
-  <span class="hdd-tooltip_content is-light">Tooltips with is-light class</span>
-</h2>
 <div style="display:flex; justify-content:space-between;margin:30px">
 
   <span class="hdd-tooltip is-light">
@@ -52,18 +43,19 @@ A tooltip can give context to a given icon/piece of text. Tooltips are usually h
    
   <span class="hdd-tooltip is-light">
     Hover Left
-    <span class="hdd-tooltip_content is-left">Left Hover</span>
+    <span class="hdd-tooltip_content is-left">Left tooltip</span>
   </span>
    
   <span class="hdd-tooltip is-light">
     Hover bottom
-    <span class="hdd-tooltip_content is-bottom">Bottom</span>
+    <span class="hdd-tooltip_content is-bottom">Bottom tooltip</span>
   </span>
 
   <span class="hdd-tooltip is-light">
     Hover on top
-    <span class="hdd-tooltip_content is-top">Hover on top</span>
+    <span class="hdd-tooltip_content is-top">Top tooltip</span>
   </span>
+  
 </div>
 
 ```

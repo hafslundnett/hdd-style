@@ -1722,13 +1722,6 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="
-&lt;div style=&quot;height:30px&quot;&gt;
-&lt;!-- Margin for examples on top. --&gt;
-&lt;/div&gt;
-
-&lt;h2 class=&quot;hdd-tooltip&quot; style=&quot;display:flex; justify-content:center;margin:25px&quot;&gt;Standard tooltips
-  &lt;span class=&quot;hdd-tooltip_content&quot;&gt;Examples of tooltips&lt;/span&gt;
-&lt;/h2&gt;
 &lt;div style=&quot;display:flex; justify-content:space-between;margin:30px&quot;&gt;
 
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
@@ -1738,23 +1731,21 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover Left
-    &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left Hover&lt;/span&gt;
+    &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left tooltip&lt;/span&gt;
   &lt;/span&gt;
 
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover bottom
-    &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom&lt;/span&gt;
+    &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom tooltip&lt;/span&gt;
   &lt;/span&gt;
 
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover on top
-    &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Hover on top&lt;/span&gt;
+    &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Top tooltip&lt;/span&gt;
   &lt;/span&gt;
+
 &lt;/div&gt;
 
-&lt;h2 class=&quot;hdd-tooltip&quot; style=&quot;display:flex; justify-content:center;margin:25px&quot;&gt;Light tooltips
-  &lt;span class=&quot;hdd-tooltip_content is-light&quot;&gt;Tooltips with is-light class&lt;/span&gt;
-&lt;/h2&gt;
 &lt;div style=&quot;display:flex; justify-content:space-between;margin:30px&quot;&gt;
 
   &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
@@ -1764,28 +1755,22 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 
   &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
     Hover Left
-    &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left Hover&lt;/span&gt;
+    &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left tooltip&lt;/span&gt;
   &lt;/span&gt;
 
   &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
     Hover bottom
-    &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom&lt;/span&gt;
+    &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom tooltip&lt;/span&gt;
   &lt;/span&gt;
 
   &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
     Hover on top
-    &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Hover on top&lt;/span&gt;
+    &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Top tooltip&lt;/span&gt;
   &lt;/span&gt;
+
 &lt;/div&gt;
 ">Copy</button>
 		<pre class="mb-0"><code class="lang-">
-&lt;div style=&quot;height:30px&quot;&gt;
-&lt;!-- Margin for examples on top. --&gt;
-&lt;/div&gt;
-
-&lt;h2 class=&quot;hdd-tooltip&quot; style=&quot;display:flex; justify-content:center;margin:25px&quot;&gt;Standard tooltips
-  &lt;span class=&quot;hdd-tooltip_content&quot;&gt;Examples of tooltips&lt;/span&gt;
-&lt;/h2&gt;
 &lt;div style=&quot;display:flex; justify-content:space-between;margin:30px&quot;&gt;
 
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
@@ -1795,23 +1780,21 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover Left
-    &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left Hover&lt;/span&gt;
+    &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left tooltip&lt;/span&gt;
   &lt;/span&gt;
 
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover bottom
-    &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom&lt;/span&gt;
+    &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom tooltip&lt;/span&gt;
   &lt;/span&gt;
 
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover on top
-    &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Hover on top&lt;/span&gt;
+    &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Top tooltip&lt;/span&gt;
   &lt;/span&gt;
+
 &lt;/div&gt;
 
-&lt;h2 class=&quot;hdd-tooltip&quot; style=&quot;display:flex; justify-content:center;margin:25px&quot;&gt;Light tooltips
-  &lt;span class=&quot;hdd-tooltip_content is-light&quot;&gt;Tooltips with is-light class&lt;/span&gt;
-&lt;/h2&gt;
 &lt;div style=&quot;display:flex; justify-content:space-between;margin:30px&quot;&gt;
 
   &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
@@ -1821,18 +1804,19 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 
   &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
     Hover Left
-    &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left Hover&lt;/span&gt;
+    &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left tooltip&lt;/span&gt;
   &lt;/span&gt;
 
   &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
     Hover bottom
-    &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom&lt;/span&gt;
+    &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom tooltip&lt;/span&gt;
   &lt;/span&gt;
 
   &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
     Hover on top
-    &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Hover on top&lt;/span&gt;
+    &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Top tooltip&lt;/span&gt;
   &lt;/span&gt;
+
 &lt;/div&gt;
 </code></pre>
 	</div>
