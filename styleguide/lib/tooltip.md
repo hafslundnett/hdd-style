@@ -55,7 +55,7 @@ A tooltip can give context to a given icon/piece of text. Tooltips are usually h
     Hover on top
     <span class="hdd-tooltip_content is-top">Top tooltip</span>
   </span>
-  
+
 </div>
 
 ```
@@ -73,5 +73,5 @@ A tooltip can give context to a given icon/piece of text. Tooltips are usually h
 | :--- | :--- |
 | `is-right` | Set to tooltip to appear on the right side of the element|
 | `is-left` | Set to tooltip to appear on the left side of the element |
-| `is-top` | Set to tooltip to appear on the right side of the element |
-| `is-bottom` | Set to tooltip to appear on the right side of the element. This is the default position for a tooltip with no direction class set to it |
+| `is-top` | Set to tooltip to appear on top of the element |
+| `is-bottom` | Set to tooltip to appear on the bottom of the element. This is the default position for a tooltip with no direction class set to it |
