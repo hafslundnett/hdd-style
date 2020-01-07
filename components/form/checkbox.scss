@@ -1,5 +1,9 @@
+@use "./../../variables/shared-sizes.scss" as shared-sizes;
+@use "./../../variables/animations.scss" as animations;
+
+
 $form-checkbox-mark-size: 14px;
-$form-checkbox-mark-border-radius: $border-radius;
+$form-checkbox-mark-border-radius: shared-sizes.$border-radius;
 $form-checkbox-mark-border: 1px solid var(--hdd-color-primary);
 
 .hdd-form_checkbox {
@@ -65,7 +69,7 @@ $form-checkbox-mark-border: 1px solid var(--hdd-color-primary);
 
     width: $form-checkbox-mark-size;
     height: $form-checkbox-mark-size;
-    transition: background 0.3s $transition-cubic;
+    transition: background 0.3s animations.$transition-cubic;
     border: $form-checkbox-mark-border;
     border-radius: $form-checkbox-mark-border-radius;
     background: var(--hdd-color-white);

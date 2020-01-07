@@ -1,10 +1,14 @@
+@use "./../variables/shadows.scss" as shadows;
+@use "./../variables/shared-sizes.scss" as shared-sizes;
+@use "./../variables/animations.scss" as animations;
+
 $small-menu-tip-size: 5px;
 $small-menu-padding: 0.5rem 1rem;
 $small-menu-width: 150px;
 $small-menu-menu-padding: 0.75rem;
 $small-menu-tip-right-offset: 1rem;
 $small-menu-tip-left-offset: 1rem;
-$small-menu-border-radius: $border-radius;
+$small-menu-border-radius: shared-sizes.$border-radius;
 
 .hdd-small-menu {
   // Variable containing '&' to jump to current parent inside a child class.   
@@ -30,9 +34,9 @@ $small-menu-border-radius: $border-radius;
   }
 
   &_list {
-    filter: drop-shadow($shadow-light);
+    filter: drop-shadow(shadows.$shadow-light);
     
-    box-shadow: $shadow-light;
+    box-shadow: shadows.$shadow-light;
     display: table;
     visibility: hidden;
     
@@ -47,7 +51,7 @@ $small-menu-border-radius: $border-radius;
     min-width: $small-menu-width;
     
     transform: translateX(-50%);
-    transition: opacity $medium-transition $transition-cubic, visibility $medium-transition $transition-cubic;
+    transition: opacity animations.$medium-transition animations.$transition-cubic, visibility animations.$medium-transition animations.$transition-cubic;
     border-radius: $small-menu-border-radius;
     
     opacity: 0;

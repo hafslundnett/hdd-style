@@ -1,7 +1,9 @@
+@use "./../variables/shared-sizes.scss" as shared-sizes;
+
 $tag-font-size: 0.6875rem;
 $tag-padding: 0.4375rem 0.75rem;
 $tag-icon-spacing: 0.625rem;
-$tag-border-radius: $border-radius;
+$tag-border-radius: shared-sizes.$border-radius;
 $tag-spacing: 0.25rem;
 
 .hdd-tags {

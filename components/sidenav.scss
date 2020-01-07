@@ -1,22 +1,27 @@
-$sidenav-extended-width: 300px;
-$sidenav-z-index: 90;
+@use "./../variables/shadows.scss" as shadows;
+@use "./../variables/animations.scss" as animations;
+@use "./../variables/shared-sizes.scss" as shared-sizes;
+@use "./../variables/typography.scss" as typography;
+
+$_sidenav-extended-width: 300px;
+$_sidenav-z-index: 90;
 
 .hdd-sidenav {
   // Variable containing '&' to jump to current parent inside a child class.  
   $this: &;
 
-  transition: width $medium-transition $transition-cubic;
+  transition: width animations.$medium-transition animations.$transition-cubic;
 
-  box-shadow: $shadow-light;
+  box-shadow: shadows.$shadow-light;
   position: fixed;
-  z-index: $sidenav-z-index;
-  width: $sidenav-collapsed-width;
+  z-index: $_sidenav-z-index;
+  width: shared-sizes.$sidenav-collapsed-width;
   height: 100%;
   overflow: hidden;
   background: var(--hdd-color-white);
 
   &.is-active {
-    width: $sidenav-extended-width;
+    width: $_sidenav-extended-width;
 
     #{$this}_list {
       &_item {
@@ -37,7 +42,7 @@ $sidenav-z-index: 90;
   
   @at-root {
     .hdd-layout_sidenav {
-      min-width: $sidenav-collapsed-width;
+      min-width: shared-sizes.$sidenav-collapsed-width;
     }
   }
 
@@ -52,11 +57,11 @@ $sidenav-z-index: 90;
     &_item {
       // Variable containing '&' to jump to current parent inside a child class. 
       $this: &;
-      transition: all $short-transition $transition-cubic;
+      transition: all animations.$short-transition animations.$transition-cubic;
 
       display: flex;
       align-items: center;
-      width: $sidenav-extended-width;
+      width: $_sidenav-extended-width;
       background: var(--hdd-color-white);
 
       &:hover,
@@ -75,16 +80,16 @@ $sidenav-z-index: 90;
         align-items: center;
         justify-content: center;
 
-        width: $sidenav-collapsed-width;
-        height: $sidenav-collapsed-width;
+        width: shared-sizes.$sidenav-collapsed-width;
+        height: shared-sizes.$sidenav-collapsed-width;
 
         color: var(--hdd-color-grey);
-        font-size: font-size(icon-small);
+        font-size: typography.font-size(icon-small);
       }
 
       &_label {
         @extend .is-h2;
-        transition: all $short-transition $transition-cubic;
+        transition: all animations.$short-transition animations.$transition-cubic;
 
         flex-grow: 1;
         margin-left: -10px;

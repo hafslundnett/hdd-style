@@ -1,6 +1,10 @@
-$form-input-padding: $form-input-padding-left 0.9rem;
-$form-input-border-radius: $border-radius;
-$form-input-border: 1px solid var(--hdd-color-grey);
+@use "./../../variables/shared-sizes.scss" as shared-sizes;
+@use "./../../utilities/helpers.scss" as helpers;
+@use "./../../variables/animations.scss" as animations;
+@use "./../../variables/typography.scss" as typography;
+
+
+$_form-input-padding: shared-sizes.$form-input-padding-left 0.9rem;
 
 .hdd-form_input {
   // Variable containing '&' to jump to current parent inside a child class.
@@ -10,10 +14,10 @@ $form-input-border: 1px solid var(--hdd-color-grey);
   box-sizing: border-box;
 
   align-items: center;
-  padding: $form-input-padding;
-  transition: border-color $medium-transition $transition-cubic;
-  border: $form-input-border;
-  border-radius: $form-input-border-radius;
+  padding: $_form-input-padding;
+  transition: border-color animations.$medium-transition animations.$transition-cubic;
+  border: shared-sizes.$form-input-border;
+  border-radius: shared-sizes.$border-radius;
 
   background: var(--hdd-color-white);
 
@@ -56,7 +60,7 @@ $form-input-border: 1px solid var(--hdd-color-grey);
     border: none;
     background: transparent;
 
-    @include placeholder() {
+    @include helpers.placeholder() {
       color: var(--hdd-color-grey);
     }
   }
@@ -70,17 +74,17 @@ $form-input-border: 1px solid var(--hdd-color-grey);
   &_icon,
   > svg,
   > i {
-    transition: color $medium-transition $transition-cubic, opacity $medium-transition $transition-cubic;
+    transition: color animations.$medium-transition animations.$transition-cubic, opacity animations.$medium-transition animations.$transition-cubic;
     opacity: 0.44;
     color: var(--hdd-color-black);
-    font-size: font-size(h2);
+    font-size: typography.font-size(h2);
 
     &:first-child {
-      margin-right: $form-input-icon-margin;
+      margin-right: shared-sizes.$form-input-icon-margin;
     }
 
     &:last-child {
-      margin-left: $form-input-icon-margin;
+      margin-left: shared-sizes.$form-input-icon-margin;
     }
   }
 }

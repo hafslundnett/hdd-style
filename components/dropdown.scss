@@ -1,4 +1,6 @@
-$dropdown-border-radius: $border-radius;
+@use "./../variables/shared-sizes.scss" as shared-sizes;
+
+$dropdown-border-radius: shared-sizes.$border-radius;
 $dropdown-border: 1px solid var(--hdd-color-grey);
 $dropdown-margin: 20px;
 $dropdown-spacing-element: 4px;

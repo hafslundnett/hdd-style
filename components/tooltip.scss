@@ -1,3 +1,8 @@
+@use "./../variables/shared-sizes.scss" as shared-sizes;
+@use "./../variables/animations.scss" as animations;
+@use "./../variables/typography.scss" as typography;
+@use "./../utilities/typography.scss" as typographyU;
+
 $tooltip-tip-size: 10px;
 $tooltip-padding: 0.5rem 1rem;
 $tooltip-width: 150px;
@@ -5,7 +10,7 @@ $tooltip-menu-side-padding: 0.75rem;
 $tooltip-menu-padding: 0.5rem 1rem;
 $tooltip-tip-right-offset: 1rem;
 $tooltip-tip-left-offset: 1rem;
-$tooltip-border-radius: $border-radius;
+$tooltip-border-radius: shared-sizes.$border-radius;
 
 .hdd-tooltip {
   // Variable containing '&' to jump to current parent inside a child class.
@@ -21,7 +26,9 @@ $tooltip-border-radius: $border-radius;
 
   &_content {
     //.is-p is font-properties, defined in typography.
-    @extend .is-p;
+    @extend typographyU, .is-p;
+    // @extend typography, .is-p;
+    // @extend typography, .is-p
 
     $content-color: var(--hdd-color-grey-dark);
     $content-text-color: var(--hdd-color-white);
@@ -41,7 +48,7 @@ $tooltip-border-radius: $border-radius;
     padding: $tooltip-padding;
 
     transform: translateX(-50%);
-    transition: opacity $medium-transition $transition-cubic, z-index $medium-transition step-end;
+    transition: opacity animations.$medium-transition animations.$transition-cubic, z-index animations.$medium-transition step-end;
     border-radius: $tooltip-border-radius;
 
     opacity: 0;
@@ -71,7 +78,7 @@ $tooltip-border-radius: $border-radius;
 
     &.is-active {
       z-index: 90;
-      transition: opacity $medium-transition $transition-cubic, z-index $medium-transition step-start;
+      transition: opacity animations.$medium-transition animations.$transition-cubic, z-index animations.$medium-transition step-start;
       opacity: 1;
     }
 

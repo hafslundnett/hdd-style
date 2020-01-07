@@ -1,20 +1,20 @@
-@import '../variables/shadows';
+@use '../variables/shadows' as shadows;
 
 .hdd-shadow {
     &-light {
-        box-shadow: $shadow-light;
+        box-shadow: shadows.$shadow-light;
     }
     &-medium {
-        box-shadow: $shadow-medium;
+        box-shadow: shadows.$shadow-medium;
     } 
     &-strong {
-        box-shadow: $shadow-strong;
+        box-shadow: shadows.$shadow-strong;
     }
 } 
 
 // Making CSS-variables for all shadows
 :root {
-    --hdd-shadow-light: #{$shadow-light};
-    --hdd-shadow-medium: #{$shadow-medium};
-    --hdd-shadow-strong: #{$shadow-strong};
+    --hdd-shadow-light: #{shadows.$shadow-light};
+    --hdd-shadow-medium: #{shadows.$shadow-medium};
+    --hdd-shadow-strong: #{shadows.$shadow-strong};
 }

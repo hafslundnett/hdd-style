@@ -1,5 +1,8 @@
+@use "./../variables/shared-sizes.scss" as shared-sizes;
+@use "./../variables/typography.scss" as typography;
+
 $feedback-padding: 20px 30px;
-$feedback-border-radius: $border-radius;
+$feedback-border-radius: shared-sizes.$border-radius;
 $feedback-min-width: 260px;
 $feedback-icon-size: 24px;
 $feedback-icon-gap: 20px;
@@ -63,7 +66,7 @@ $feedback-message-gap: 10px;
   &_message {
     flex: auto;
     margin-right: $feedback-message-gap;
-    font-size: font-size('p');
+    font-size: typography.font-size('p');
     line-height: 1.125rem;
   }
 

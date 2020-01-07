@@ -1,10 +1,13 @@
-$navigation-height: $sidenav-collapsed-width;
+@use './../variables/shared-sizes.scss' as shared-sizes;
+@use "./../variables/shadows.scss" as shadows;
+
+$navigation-height: shared-sizes.$sidenav-collapsed-width;
 $navigation-z-index: 99;
 $navigation-padding: 0 0.5rem;
 $navigation-avatar-size: 0.7;
 
 .hdd-navigation {
-  box-shadow: $shadow-medium;
+  box-shadow: shadows.$shadow-medium;
   display: flex;
   z-index: $navigation-z-index;
   box-sizing: border-box;

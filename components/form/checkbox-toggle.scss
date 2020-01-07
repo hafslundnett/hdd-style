@@ -1,3 +1,5 @@
+@use "./../../utilities/helpers.scss" as helpers;
+
 .hdd-form_toggle {
   cursor: pointer;
   display: flex;
@@ -38,6 +40,6 @@
 
   input:checked + .slider:before {
     background-color: var(--hdd-color-white);
-    @include transform(translateX(0.9rem));
+    @include helpers.transform(translateX(0.9rem));
   }
 }

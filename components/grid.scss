@@ -1,3 +1,5 @@
+@use "./../utilities/breakpoints.scss" as breakpoints;
+
 // grid
 @mixin hdd-grid-small {
   display: grid;
@@ -22,11 +24,11 @@
 .hdd-grid {
   @include hdd-grid-small;
 
-  @include breakpoint-up(Earth) {
+  @include breakpoints.breakpoint-up(Earth) {
     @include hdd-grid-medium;
   }
 
-  @include breakpoint-up(Jupiter) {
+  @include breakpoints.breakpoint-up(Jupiter) {
     @include hdd-grid-big;
   }
 }
@@ -35,7 +37,7 @@
 .hdd-grid-desktop {
   @include hdd-grid-medium;
 
-  @include breakpoint-up(Jupiter) {
+  @include breakpoints.breakpoint-up(Jupiter) {
     @include hdd-grid-big;
   }
 }

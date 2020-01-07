@@ -1,3 +1,5 @@
+@use "../utilities/colors.scss" as color;
+
 $badge-padding: 0.2rem 0.6rem;
 $badge-radius: 2rem;
 $badge-icon-size: 6px;
@@ -7,7 +9,7 @@ $badge-icon-border: 2px solid var(--hdd-color-white);
   // .is-p-small is font-properties, defined in typography.
   @extend .is-p-small;
   // Colors available for badge
-  @include color-modifiers(('primary', 'warn', 'danger', 'safe'), 'background', 'color');
+  @include color.color-modifiers(('primary', 'warn', 'danger', 'safe'), 'background', 'color');
 
   padding: $badge-padding;
   border-width: 0;
@@ -19,7 +21,7 @@ $badge-icon-border: 2px solid var(--hdd-color-white);
 
   &-icon {
     // Colors available for badge-icon
-    @include color-modifiers(('primary', 'warn', 'danger', 'safe'), 'background', 'color');
+    @include color.color-modifiers(('primary', 'warn', 'danger', 'safe'), 'background', 'color');
     
     position: absolute;
     top: calc(#{$badge-icon-size}/-2);

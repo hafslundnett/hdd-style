@@ -1,7 +1,10 @@
-$table-header-padding: 1.2rem 1rem;
-$table-row-padding: 0.7rem 1rem;
-$table-first-column-padding: 1.5rem;
-$table-last-column-padding: 1.5rem;
+@use "./../variables/typography.scss" as typography;
+@use "./../variables/shadows.scss" as shadows;
+
+$_table-header-padding: 1.2rem 1rem;
+$_table-row-padding: 0.7rem 1rem;
+$_table-first-column-padding: 1.5rem;
+$_table-last-column-padding: 1.5rem;
 
 .hdd-table {
   //Creating variable containing '&' to jump to parent inside a child class.
@@ -16,13 +19,13 @@ $table-last-column-padding: 1.5rem;
   th,
   td {
     margin: 0;
-    padding: $table-row-padding;
+    padding: $_table-row-padding;
     text-align: left;
 
     &#{$this}_action {
       display: flex;
       float: right;
-      font-size: font-size(icon-small);
+      font-size: typography.font-size(icon-small);
       text-align: right;
 
       > * {
@@ -50,11 +53,11 @@ $table-last-column-padding: 1.5rem;
     &#{$this}_row,
     tr {
       > *:first-child {
-        padding-left: $table-first-column-padding;
+        padding-left: $_table-first-column-padding;
       }
 
       > *:last-child {
-        padding-right: $table-last-column-padding;
+        padding-right: $_table-last-column-padding;
       }
     }
   }
@@ -85,7 +88,7 @@ $table-last-column-padding: 1.5rem;
 
     th,
     td {
-      padding: $table-header-padding;
+      padding: $_table-header-padding;
 
       > i {
         margin-left: 0.3rem;
@@ -112,7 +115,7 @@ $table-last-column-padding: 1.5rem;
   }
 
   &.has-shadow {
-    box-shadow: $shadow-medium;
+    box-shadow: shadows.$shadow-medium;
     border-radius: 5px;
   }
 

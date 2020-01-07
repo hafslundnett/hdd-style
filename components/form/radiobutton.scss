@@ -1,3 +1,5 @@
+@use "./../../variables/animations.scss" as animations;
+
 $form-radiobutton-mark-size: 14px;
 $form-radiobutton-mark-border-radius: 14px;
 $form-radiobutton-mark-border: 1px solid var(--hdd-color-primary);
@@ -43,7 +45,7 @@ $form-radiobutton-mark-border: 1px solid var(--hdd-color-primary);
 
     width: $form-radiobutton-mark-size;
     height: $form-radiobutton-mark-size;
-    transition: background 0.3s $transition-cubic;
+    transition: background 0.3s animations.$transition-cubic;
     border: $form-radiobutton-mark-border;
     border-radius: $form-radiobutton-mark-border-radius;
     background: var(--hdd-color-white);

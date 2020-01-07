@@ -1,6 +1,11 @@
-$form-select-padding: $form-input-padding;
-$form-select-border-radius: $border-radius;
-$form-select-border: $form-input-border;
+@use "./../../variables/shared-sizes.scss" as shared-sizes;
+@use "./../../variables/animations.scss" as animations;
+@use "./../../variables/typography.scss" as typography;
+
+$_form-input-padding: shared-sizes.$form-input-padding-left 0.9rem;
+// $form-select-padding: $form-input-padding;
+// $form-select-border-radius: shared-sizes.$border-radius;
+// $form-select-border: shared-sizes.$form-input-border;
 $form-select-icon-margin: 0.9rem;
 
 .hdd-form_select {
@@ -13,15 +18,15 @@ $form-select-icon-margin: 0.9rem;
 
   width: 100%;
 
-  transition: border-color $medium-transition $transition-cubic;
-  border: $form-select-border;
-  border-radius: $form-select-border-radius;
+  transition: border-color animations.$medium-transition animations.$transition-cubic;
+  border: shared-sizes.$form-input-border;
+  border-radius: shared-sizes.$border-radius;
 
   background: var(--hdd-color-white);
 
   select {
     flex-grow: 1;
-    padding: $form-select-padding;
+    padding: $_form-input-padding;
 
     border: 0;
     background: none;
@@ -73,7 +78,7 @@ $form-select-icon-margin: 0.9rem;
 
   &.has-icon {
     select {
-      padding-left: calc(#{$form-input-icon-margin} + #{font-size(h2)} + #{$form-input-padding-left});
+      padding-left: calc(#{shared-sizes.$form-input-icon-margin} + #{typography.font-size(h2)} + #{shared-sizes.$form-input-padding-left});
     }
   }
 
@@ -81,10 +86,10 @@ $form-select-icon-margin: 0.9rem;
   > svg,
   > i {
     position: absolute;
-    transition: color $medium-transition $transition-cubic, opacity $medium-transition $transition-cubic;
+    transition: color animations.$medium-transition animations.$transition-cubic, opacity animations.$medium-transition animations.$transition-cubic;
     opacity: 0.44;
     color: var(--hdd-color-black);
-    font-size: font-size(h2);
+    font-size: typography.font-size(h2);
 
     &:first-child {
       left: $form-select-icon-margin;

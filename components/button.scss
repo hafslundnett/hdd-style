@@ -1,4 +1,7 @@
-$button-radius: $border-radius;
+@use "./../variables/shared-sizes.scss" as shared-sizes;
+@use "./../utilities/helpers.scss" as helpers;
+
+$button-radius: shared-sizes.$border-radius;
 $button-border-width: 1px;
 $button-padding: 10px 16px;
 $border-button-padding: (10px - $button-border-width) (16px - $button-border-width); // Subtract $button-border-width to match primary button size 
@@ -149,7 +152,7 @@ $icon-button-icon-size: 22px;
       font-weight: 300;
       content: "\F3F4"; // fa-spinner-third
 
-      @include animation(spinner, 0.5s, infinite, linear);
+      @include helpers.animation(spinner, 0.5s, infinite, linear);
       // .fal is icon-properties
       @extend .fal;
 
