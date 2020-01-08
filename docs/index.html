@@ -1936,7 +1936,8 @@ The toggle checkbox slider class are assigned to the corresponding span beneath 
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">dropdown.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>The dropdown lets the user search for and choose between a set of options. The dropdown aligns to the bottom by default.
+	<div class="theme-content-element-description"><p>⚠️ This is a low level building block, and should be automated in a component library, but can be used directly if you want full control.</p>
+<p>The dropdown lets the user search for and choose between a set of options. The dropdown aligns to the bottom by default.
 Dropdown should be used if the user wants a recommended selection out of all the options (then this choice should be the default), or if the list of choices is longer than 5 (then placeholder text should be used). In a long dropdown list, it must be possible for the user to start typing to filter.</p>
 <div id="dropdown" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#dropdown" class="icon-link i-section__link -heading"></a>Dropdown</h2></div><p><code>hdd-form_input</code>.<code>hdd-dropdown</code></p>
 <div class="i-example">
@@ -1977,7 +1978,16 @@ Dropdown should be used if the user wants a recommended selection out of all the
     &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Erik&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-">Copy</button>
+&lt;div style=&quot;margin:20px&quot;&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+&lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_input hdd-dropdown&quot;&gt;
   &lt;input value=&quot;Jer&quot;&gt;
 
@@ -1987,7 +1997,16 @@ Dropdown should be used if the user wants a recommended selection out of all the
     &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Erik&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-</code></pre>
+&lt;div style=&quot;margin:20px&quot;&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+&lt;/div&gt;</code></pre>
 	</div>
 </div><div id="dropdown-aligned-top" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#dropdown-aligned-top" class="icon-link i-section__link -heading"></a>Dropdown aligned top</h2></div><p><code>hdd-form_input</code>.<code>hdd-dropdown</code></p>
 <p>Only use <code>is-aligned-top</code> when there are enough room from the top and not enough from the bottom.</p>
@@ -2021,14 +2040,16 @@ Dropdown should be used if the user wants a recommended selection out of all the
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;margin:20px&quot;&gt;
-  &lt;p&gt;Some content&lt;/p&gt;
-  &lt;p&gt;Some content&lt;/p&gt;
-  &lt;p&gt;Some content&lt;/p&gt;
-  &lt;p&gt;Some content&lt;/p&gt;
-  &lt;p&gt;Some content&lt;/p&gt;
-  &lt;p&gt;Some content&lt;/p&gt;
-  &lt;p&gt;Some content&lt;/p&gt;
-  &lt;p&gt;Some content&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;hdd-form_input hdd-dropdown&quot;&gt;
   &lt;input value=&quot;Jer&quot;&gt;
@@ -2042,14 +2063,16 @@ Dropdown should be used if the user wants a recommended selection out of all the
 &lt;/div&gt;
 ">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;margin:20px&quot;&gt;
-  &lt;p&gt;Some content&lt;/p&gt;
-  &lt;p&gt;Some content&lt;/p&gt;
-  &lt;p&gt;Some content&lt;/p&gt;
-  &lt;p&gt;Some content&lt;/p&gt;
-  &lt;p&gt;Some content&lt;/p&gt;
-  &lt;p&gt;Some content&lt;/p&gt;
-  &lt;p&gt;Some content&lt;/p&gt;
-  &lt;p&gt;Some content&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;hdd-form_input hdd-dropdown&quot;&gt;
   &lt;input value=&quot;Jer&quot;&gt;
