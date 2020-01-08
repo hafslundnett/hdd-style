@@ -18,9 +18,6 @@ $badge-icon-border: 2px solid var(--hdd-color-white);
   color: var(--hdd-color-contrast-danger);
 
   &-icon {
-    // Colors available for badge-icon
-    @include color-modifiers(('primary', 'warn', 'danger', 'safe'), 'background', 'color');
-    
     position: absolute;
     top: calc(#{$badge-icon-size}/-2);
     right: calc(#{$badge-icon-size}/-2);
