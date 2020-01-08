@@ -1,7 +1,7 @@
 @use "./../variables/shared-sizes.scss" as shared-sizes;
 @use "./../variables/animations.scss" as animations;
 @use "./../variables/typography.scss" as typography;
-@use "./../utilities/typography.scss" as typographyU;
+@use "./../utilities/typography.scss" as typographyUtil;
 
 $tooltip-tip-size: 10px;
 $tooltip-padding: 0.5rem 1rem;
@@ -26,7 +26,7 @@ $tooltip-border-radius: shared-sizes.$border-radius;
 
   &_content {
     //.is-p is font-properties, defined in typography.
-    @extend typographyU, .is-p;
+    @extend .is-p;
     // @extend typography, .is-p;
     // @extend typography, .is-p
 

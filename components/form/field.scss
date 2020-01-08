@@ -1,3 +1,5 @@
+@use "./../../utilities/typography.scss" as typographyUtil;
+
 .hdd-form_field {
   // Variable containing '&' to jump to current parent inside a child class.
   $this: &;

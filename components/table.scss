@@ -1,5 +1,6 @@
 @use "./../variables/typography.scss" as typography;
 @use "./../variables/shadows.scss" as shadows;
+@use "./../utilities/typography.scss" as typographyUtil;
 
 $_table-header-padding: 1.2rem 1rem;
 $_table-row-padding: 0.7rem 1rem;

@@ -1,5 +1,6 @@
 @use "./../../variables/shared-sizes.scss" as shared-sizes;
 @use "./../../variables/animations.scss" as animations;
+@use "./../../utilities/typography.scss" as typographyUtil;
 
 
 $form-checkbox-mark-size: 14px;

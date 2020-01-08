@@ -1,5 +1,7 @@
 @use "./../variables/shared-sizes.scss" as shared-sizes;
 @use "./../variables/shadows.scss" as shadows;
+@use "./button.scss" as button;
+@use "./../utilities/typography.scss" as typographyUtil;
 
 $card-radius: shared-sizes.$border-radius;
 $card-padding-y: 1.375rem;

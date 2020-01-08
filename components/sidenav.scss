@@ -2,6 +2,7 @@
 @use "./../variables/animations.scss" as animations;
 @use "./../variables/shared-sizes.scss" as shared-sizes;
 @use "./../variables/typography.scss" as typography;
+@use "./../utilities/typography.scss" as typographyUtil;
 
 $_sidenav-extended-width: 300px;
 $_sidenav-z-index: 90;

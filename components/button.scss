@@ -1,5 +1,7 @@
 @use "./../variables/shared-sizes.scss" as shared-sizes;
 @use "./../utilities/helpers.scss" as helpers;
+@use "./../variables/typography.scss" as typography;
+@use "./../utilities/typography.scss" as typographyUtil;
 
 $button-radius: shared-sizes.$border-radius;
 $button-border-width: 1px;

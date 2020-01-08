@@ -1,4 +1,5 @@
 @use "../utilities/colors.scss" as color;
+@use "./../utilities/typography.scss" as typographyUtil;
 
 $badge-padding: 0.2rem 0.6rem;
 $badge-radius: 2rem;

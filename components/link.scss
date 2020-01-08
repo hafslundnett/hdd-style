@@ -1,3 +1,5 @@
+@use "./../utilities/typography.scss" as typographyUtil;
+
 .hdd-link {
   // .is-p is font-properties, defined in typography
   @extend .is-p;

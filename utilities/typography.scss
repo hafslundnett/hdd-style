@@ -7,10 +7,6 @@
  * Klassene som genereres: .is-h1, .is-h2, .is-h3, .is-p, .is-p-small, .is-icon-small, .is-icon-medium, .is-icon-large
  */
 
- .is-p {
-   color: red;
- }
-
 @each $label, $map in $typography {
   $family: map-get($map, family);
   $size: map-get($map, size);
@@ -53,8 +49,8 @@
   }
 }
 
-body {
-  @extend .is-p;
-}
+// body {
+//   @extend .is-p;
+// }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
