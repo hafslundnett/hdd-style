@@ -3,6 +3,8 @@ name: Dropdown
 category: Form-Components
 ---
 
+⚠️ This is a low level building block, and should be automated in a component library, but can be used directly if you want full control.
+
 The dropdown lets the user search for and choose between a set of options. The dropdown aligns to the bottom by default.
 Dropdown should be used if the user wants a recommended selection out of all the options (then this choice should be the default), or if the list of choices is longer than 5 (then placeholder text should be used). In a long dropdown list, it must be possible for the user to start typing to filter.
 
@@ -19,7 +21,16 @@ Dropdown should be used if the user wants a recommended selection out of all the
     <div class="hdd-dropdown_content_item no-hover">Erik</div>
   </div>
 </div>
-
+<div style="margin:20px">
+  <p>Some content behind</p>
+  <p>Some content behind</p>
+  <p>Some content behind</p>
+  <p>Some content behind</p>
+  <p>Some content behind</p>
+  <p>Some content behind</p>
+  <p>Some content behind</p>
+  <p>Some content behind</p>
+</div>
 ```
 
 ## Dropdown aligned top
@@ -29,14 +40,16 @@ Only use `is-aligned-top` when there are enough room from the top and not enough
  
 ```dropdown-top.html
 <div style="margin:20px">
-  <p>Some content</p>
-  <p>Some content</p>
-  <p>Some content</p>
-  <p>Some content</p>
-  <p>Some content</p>
-  <p>Some content</p>
-  <p>Some content</p>
-  <p>Some content</p>
+  <p>Some content behind</p>
+  <p>Some content behind</p>
+  <p>Some content behind</p>
+  <p>Some content behind</p>
+  <p>Some content behind</p>
+  <p>Some content behind</p>
+  <p>Some content behind</p>
+  <p>Some content behind</p>
+  <p>Some content behind</p>
+  <p>Some content behind</p>
 </div>
 <div class="hdd-form_input hdd-dropdown">
   <input value="Jer">
