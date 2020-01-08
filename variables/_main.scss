@@ -1,7 +1,7 @@
-@import 'animations';
-@import 'colors';
-@import 'material-colors';
-@import 'shadows';
-@import 'shared-sizes';
-@import 'spacing';
-@import 'typography';
+@forward 'animations';
+@forward 'colors';
+@forward 'material-colors';
+@forward 'shadows';
+@forward 'shared-sizes';
+@forward 'spacing';
+@forward 'typography';

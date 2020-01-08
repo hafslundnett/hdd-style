@@ -67,7 +67,7 @@
 
 // All colors as a list ready for iterations
 
-$colors: (
+$_colors: (
   'white': (
     color: #FFF,
     contrast: #444
@@ -147,7 +147,7 @@ $colors: (
   )
 );
 
-$data-colors: (
+$_data-colors: (
   'data-navy': (
     color: #24598C,
     contrast: #FFF
@@ -182,7 +182,7 @@ $data-colors: (
   )
 );
 
-$all-colors: map-merge($colors, $data-colors);
+$all-colors: map-merge($_colors, $_data-colors);
 
 $gradients: (
   'dusk': (
