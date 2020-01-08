@@ -13,9 +13,9 @@ Changing the color of a button to convey purpose is not ideal as people with vis
 If only one button exists on a page, it should always be a primary button. 
 
 ```primary-button.html
-<button class="hdd-button button-margin">Primary</button>
-<button class="hdd-button button-margin" disabled>Disabled</button>
-<button class="hdd-button is-loading button-margin">Loading</button>
+<button class="hdd-button">Primary</button>
+<button class="hdd-button" disabled>Disabled</button>
+<button class="hdd-button is-loading">Loading</button>
 <button class="hdd-button has-icon"><i class="fal fa-cog"></i>Icon button</button>
 ```
 
@@ -25,9 +25,9 @@ If only one button exists on a page, it should always be a primary button.
 The secondary button should never be used alone on a page.
 
 ```secondary-button.html
-<button class="hdd-button is-secondary button-margin">Secondary</button>
-<button class="hdd-button is-secondary button-margin" disabled>Disabled</button>
-<button class="hdd-button is-secondary is-loading button-margin">Loading</button>
+<button class="hdd-button is-secondary">Secondary</button>
+<button class="hdd-button is-secondary" disabled>Disabled</button>
+<button class="hdd-button is-secondary is-loading">Loading</button>
 <button class="hdd-button has-icon is-secondary"><i class="fal fa-cog"></i>Icon button</button>
 ```
 
@@ -36,26 +36,26 @@ The secondary button should never be used alone on a page.
 
 
 ```icon-button.html
-<button class="hdd-button-icon button-margin"><i class="fal fa-plus-circle"></i></button>
-<button class="hdd-button-icon button-margin" disabled><i class="fal fa-plus-circle"></i></button>
-<button class="hdd-button-icon button-margin"><i class="fal fa-arrow-right"></i></button>
-<button class="hdd-button-icon button-margin" disabled><i class="fal fa-arrow-right"></i></button>
-<button class="hdd-button-icon is-transparent button-margin"><i class="fal fa-cog"></i></button>
+<button class="hdd-button-icon"><i class="fal fa-plus-circle"></i></button>
+<button class="hdd-button-icon" disabled><i class="fal fa-plus-circle"></i></button>
+<button class="hdd-button-icon"><i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button-icon" disabled><i class="fal fa-arrow-right"></i></button>
+<button class="hdd-button-icon is-transparent"><i class="fal fa-cog"></i></button>
 <button class="hdd-button-icon is-transparent is-no-padding"><i class="fal fa-cog"></i></button>
 ```
 
 ```primary-button.css  hidden
-.button-margin {
+button {
   margin-right: var(--hdd-spacing-1)
 }
 ```
 ```secondary-button.css  hidden
-.button-margin {
+button {
   margin-right: var(--hdd-spacing-1)
 }
 ```
 ```icon-button.css  hidden
-.button-margin {
+button {
   margin-right: var(--hdd-spacing-1)
 }
 ```
