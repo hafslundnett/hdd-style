@@ -31,13 +31,4 @@ Add a small red dot with a white border to the top right side of an icon.
 <div>
   <i class="fal fa-cog"><span class="hdd-badge-icon"></span></i>
 </div>
-<div style="padding-top: 1rem;">
-  <i class="fal fa-cog"><span class="hdd-badge-icon is-primary"></span></i>
-</div>
-<div style="padding-top: 1rem;">
-  <i class="fal fa-cog"><span class="hdd-badge-icon is-safe"></span></i>
-</div>
-<div style="padding-top: 1rem;">
-  <i class="fal fa-cog"><span class="hdd-badge-icon is-warn"></span></i>
-</div>
 ```
