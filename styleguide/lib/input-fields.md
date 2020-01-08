@@ -9,7 +9,7 @@ An input should encourage action by the user. If the text / content cannot be ch
 An input should have a descriptive prompt and contain: container, label, placeholder/input text, error text/helper.
 
 ### ⛔ When not to use:
-An input should not stand alone.
+An input should not stand alone without a label or information about what is requested.
 
 ## Input fields
 `hdd-form_input`
