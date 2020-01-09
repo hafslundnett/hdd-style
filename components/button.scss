@@ -5,48 +5,6 @@ $border-button-padding: (10px - $button-border-width) (16px - $button-border-wid
 $icon-button-height: 36px;
 $icon-button-icon-size: 22px;
 
-// Ripple effect
-
-@mixin ripple {
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-
-  &::before {
-    display: none;
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    background-color: var(--hdd-color-blue-light1);
-    width: 30px;
-    height: 30px;
-    z-index: 1;
-    margin-top: -15px;
-    margin-left: -15px;
-    top: 50%;
-    left: 50%;
-    animation: ripple 1s cubic-bezier(0.3, 0.65, 0.47, 0.87);
-    opacity: 0;
-  }
-
-  @keyframes ripple {
-    from {
-      opacity: 0.5;
-      transform: scale(1);
-    }
-    to {
-      opacity: 0;
-      transform: scale(10);
-    }
-  }
-
-  &:not([disabled]){
-    &:focus:not(:active)::before {
-      display: block;
-    }
-  }
-}
-
 .hdd-button {
   // .is-p is font-properties, defined in typography.
   @extend .is-p;
@@ -54,7 +12,6 @@ $icon-button-icon-size: 22px;
   @extend .is-primary;
 
   &.is-primary {
-    @include ripple;
     display: inline-block;
     border: none;
     padding: $button-padding;
@@ -72,10 +29,14 @@ $icon-button-icon-size: 22px;
 
     // Changes button-text on hover/active/focus
     &:not([disabled]) {
-      &:hover,
-      &:focus,
+      &:hover:not(:focus) {
+        box-shadow: var(--hdd-shadow-strong);
+        outline: none;
+      }
+
       &:active {
         background: var(--hdd-color-blue-dark);
+        outline: none;
       }
     }
   }
@@ -164,7 +125,6 @@ $icon-button-icon-size: 22px;
 
   // Buttons with icons only
   &-icon {
-    @include ripple;
     border: $button-border-width solid var(--hdd-color-primary);
     color: var(--hdd-color-primary);
     border-radius: $button-radius;
