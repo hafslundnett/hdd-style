@@ -20,15 +20,3 @@ All the colors in the design system can be used on `hdd-badge`. `signal-red` is 
 <span class="hdd-badge is-data-navy">12 156</span>
 <span class="hdd-badge is-black">9 214</span>
 ```
-
-
-## Icon badge
-`hdd-badge-icon`
-
-Add a small red dot with a white border to the top right side of an icon.
-
-```badge-icon.html
-<div>
-  <i class="fal fa-cog"><span class="hdd-badge-icon"></span></i>
-</div>
-```
