@@ -1,5 +1,6 @@
 $badge-padding: 5px 10px;
 $badge-radius: 20px;
+$badge-font-size: 0.75rem;
 
 .hdd-badge {
   // Colors available for badge
@@ -8,7 +9,7 @@ $badge-radius: 20px;
   padding: $badge-padding;
   border-width: 0;
   border-radius: $badge-radius;
-  font-size: 12px;
+  font-size: $badge-font-size;
   font-weight: bold;
 
   // Default colors

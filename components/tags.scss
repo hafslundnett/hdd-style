@@ -11,7 +11,7 @@ $tag-border-radius: $border-radius;
     font-size: 1rem;
     display: inline-block;
     margin: 0;
-    margin-left: 8px;
+    margin-left: 0.5rem;
     padding: 0;
     border: none;
     background: none;
@@ -31,7 +31,7 @@ $tag-border-radius: $border-radius;
     border-radius: $tag-border-radius;
     background: var(--hdd-color-blue-light3);
     color: var(--hdd-color-font-color);
-    letter-spacing: .15px;
+    letter-spacing: 0.15px;
     &:first-child {
       margin-left: 0;
     }
