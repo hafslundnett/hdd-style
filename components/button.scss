@@ -3,7 +3,7 @@ $button-border-width: 1px;
 $button-padding: 10px 16px;
 $border-button-padding: (10px - $button-border-width) (16px - $button-border-width); // Subtract $button-border-width to match primary button size 
 $button-icon-font-size: 1.5rem;
-$button-icon-padding: calc(10px - 3px) calc(16px - 3px); // Subtract the difference in font-size to a button without icon
+$button-icon-padding: calc(10px - 3px) 16px; // Subtract the difference in font-size to a button without icon
 $icon-button-height: 36px;
 $icon-button-icon-size: 22px;
 $button-font-size: 1rem;
@@ -88,7 +88,7 @@ $button-font-size: 1rem;
     padding: $button-icon-padding;
     
     i {
-      padding-right: 9px;
+      padding-right: 8px;
       font-size: $button-icon-font-size;
     }
   }
