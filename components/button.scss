@@ -23,6 +23,7 @@ $button-font-size: 1rem;
     letter-spacing: 0.5px;
     background: var(--hdd-color-primary);
     color: var(--hdd-color-white);
+    min-width: 90px;
     cursor: pointer;
 
     &[disabled] {
