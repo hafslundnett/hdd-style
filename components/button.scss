@@ -2,8 +2,11 @@ $button-radius: $border-radius;
 $button-border-width: 1px;
 $button-padding: 10px 16px;
 $border-button-padding: (10px - $button-border-width) (16px - $button-border-width); // Subtract $button-border-width to match primary button size 
+$button-icon-font-size: 1.5rem;
+$button-icon-padding: calc(10px - 3px) calc(16px - 3px); // Subtract the difference in font-size to a button without icon
 $icon-button-height: 36px;
 $icon-button-icon-size: 22px;
+$button-font-size: 1rem;
 
 .hdd-button {
   // .is-p is font-properties, defined in typography.
@@ -14,9 +17,10 @@ $icon-button-icon-size: 22px;
   &.is-primary {
     display: inline-block;
     border: none;
-    padding: $button-padding;
-    letter-spacing: 0.5px;
     border-radius: $button-radius;
+    padding: $button-padding;
+    font-size: $button-font-size;
+    letter-spacing: 0.5px;
     background: var(--hdd-color-primary);
     color: var(--hdd-color-white);
     cursor: pointer;
@@ -55,12 +59,10 @@ $icon-button-icon-size: 22px;
     // Changes button-text on hover/active/focus
     &:not([disabled]) {
       &:hover {
-        background: var(--hdd-color-primary);
-        color: var(--hdd-color-white);
+        box-shadow: var(--hdd-shadow-medium);
       }
 
-      &:active,
-      &:focus {
+      &:active {
         background: var(--hdd-color-blue-dark);
         color: var(--hdd-color-white);
       }
@@ -71,9 +73,7 @@ $icon-button-icon-size: 22px;
       color: var(--hdd-color-primary) !important;
     }
     
-    &:hover,
-    &:active,
-    &:focus {
+    &:active {
       &.is-loading::after {
         color: var(--hdd-color-white) !important;
       }
@@ -85,9 +85,11 @@ $icon-button-icon-size: 22px;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
+    padding: $button-icon-padding;
     
     i {
       padding-right: 9px;
+      font-size: $button-icon-font-size;
     }
   }
 
@@ -101,7 +103,7 @@ $icon-button-icon-size: 22px;
     @extend .is-p;
 
     color: transparent !important;
-    font-size: 16px; // Makes button same size as rest
+    font-size: calc(#{$button-font-size} + 2px); // Makes button same size as rest, since icon takes less space
 
     &::after {
       // Should find a better solution

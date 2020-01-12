@@ -17,6 +17,7 @@ If only one button exists on a page, it should always be a primary button.
 <button class="hdd-button" disabled>Disabled</button>
 <button class="hdd-button is-loading">Loading</button>
 <button class="hdd-button has-icon"><i class="fal fa-cog"></i>Icon button</button>
+<button class="hdd-button has-icon"><i class="fal fa-check"></i>Icon button</button>
 ```
 
 ## Secondary button
@@ -45,18 +46,18 @@ The secondary button should never be used alone on a page.
 ```
 
 ```primary-button.css  hidden
-button {
-  margin-right: var(--hdd-spacing-1)
+.hdd-button {
+  margin: 4px;
 }
 ```
 ```secondary-button.css  hidden
-button {
-  margin-right: var(--hdd-spacing-1)
+.hdd-button {
+  margin: 4px;
 }
 ```
 ```icon-button.css  hidden
-button {
-  margin-right: var(--hdd-spacing-1)
+.hdd-button {
+  margin: 4px;
 }
 ```
 
