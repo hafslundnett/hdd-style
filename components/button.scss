@@ -158,7 +158,7 @@ $button-font-size: 1rem;
     // Changes button-text on hover/active/focus
     &:not([disabled]) {
       &:active {
-        background: var(--hdd-color-blue-dark);
+        background: var(--hdd-color-primary);
         color: var(--hdd-color-white);
         outline: none;
       }
@@ -173,6 +173,7 @@ $button-font-size: 1rem;
       border: none;
       background: transparent;
       color: var(--hdd-color-font-color);
+      height: $icon-button-height - $button-border-width;
 
       // Changes button-text on hover/active/focus
       &:not([disabled]) {
@@ -184,14 +185,19 @@ $button-font-size: 1rem;
 
         &:active,
         &:hover {
-          color: var(--hdd-color-blue-dark);
+          color: var(--hdd-color-primary);
           outline: none;
           border: none;
           box-shadow: none;
         }
 
         &:hover:not(:active) {
-          font-size: $icon-button-font-size+1px;
+          text-shadow: var(--hdd-shadow-strong);
+        }
+
+        &:active {
+          font-size: $icon-button-font-size - 1px;
+          padding: 0.5px;
         }
       }
     }

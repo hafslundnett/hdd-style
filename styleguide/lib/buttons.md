@@ -69,7 +69,7 @@ The secondary button should never be used alone on a page.
 ```
 ```icon-button.css  hidden
 .hdd-button-icon {
-  margin: 4px;
+  // margin: 4px;
 }
 ```
 
