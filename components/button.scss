@@ -13,6 +13,7 @@ $button-font-size: 1rem;
   @extend .is-p;
   // .is-primary is the default for any hdd-button
   @extend .is-primary;
+  font-size: 1rem;
 
   &.is-primary {
     display: inline-block;
@@ -36,7 +37,6 @@ $button-font-size: 1rem;
     &:not([disabled]) {
       &:hover:not(:focus) {
         box-shadow: var(--hdd-shadow-strong);
-        outline: none;
       }
 
       &:active {
@@ -138,9 +138,18 @@ $button-font-size: 1rem;
     cursor: pointer;
     padding: 0;
 
+    // Changes button-text on hover/active/focus
+    &:not([disabled]) {
+      &:active {
+        background: var(--hdd-color-blue-dark);
+        color: var(--hdd-color-white);
+        outline: none;
+      }
+    }
+
     &.is-transparent {
       border: none;
-      background: none;
+      background: transparent;
       color: var(--hdd-color-font-color);
 
       // Changes button-text on hover/active/focus
@@ -148,12 +157,17 @@ $button-font-size: 1rem;
         &:focus {
           color: var(--hdd-color-primary);
           outline: none;
+          background: transparent;
         }
 
         &:active,
         &:hover {
           color: var(--hdd-color-blue-dark);
           outline: none;
+        }
+
+        &:hover:not(:active) {
+          font-size: $icon-button-icon-size+1px;
         }
       }
     }
