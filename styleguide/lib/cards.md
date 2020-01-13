@@ -9,7 +9,7 @@ A card is composed of several elements (eg title, description, icon, illustratio
 Cards are used when you want to view content related to a theme. The text of the card is recommended to be kept at a maximum of 70 characters per line to improve the readability for the user. The content should be short and kept to a minimum. A header-icon in the top left corner can be used to improve the recognition of content. A card can also have an icon prompting the user to go to settings for this specific content. 
 
 ### ⛔ When not to use:
-Cards should not be used when the user does not directly compare images or text.
+A card should only encapsulate one type of content. 
 
 ### 🖋️For designer: 
 Padding inside the card is recommended to have spacing-3. If there are multiple cards in a row, the cards should have the same height. The icon in the label should be inside a circle, aligned to the H1 element. The icon should clearly be connected to the title, and be relevant to content. If a card is clickable, this should be displayed with a light border, view more and an arrow.
