@@ -1,10 +1,9 @@
 $button-radius: $border-radius;
 $button-border-width: 1px;
 $button-padding: 10px 16px;
-$button-icon-font-size: 1.5rem;
-$button-icon-padding: calc(10px - 3px) 16px; // Subtract the difference in font-size to a button without icon
+$button-with-icon-font-size: 1rem;
 $icon-button-height: 36px;
-$icon-button-icon-size: 22px;
+$icon-button-font-size: 22px;
 $button-font-size: 1rem;
 
 // Subtract $button-border-width to match primary button size 
@@ -18,6 +17,7 @@ $button-font-size: 1rem;
   // .is-primary is the default for any hdd-button
   @extend .is-primary;
   font-size: 1rem;
+  line-height: 1;
 
   &.is-primary {
     display: inline-block;
@@ -29,6 +29,7 @@ $button-font-size: 1rem;
     background: var(--hdd-color-primary);
     color: var(--hdd-color-white);
     min-width: 90px;
+    position: relative;
     cursor: pointer;
 
     &[disabled] {
@@ -92,11 +93,22 @@ $button-font-size: 1rem;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    padding: $button-icon-padding;
+    padding-left: calc(16px + 16px + var(--hdd-spacing-1)); // 16px padding, 16px width of icon, spacing between icon and text
     
     i {
-      padding-right: 8px;
-      font-size: $button-icon-font-size;
+      position: absolute;
+      left: 16px;
+      font-size: $button-with-icon-font-size;
+    }
+
+    &:not([disabled]) {
+      &:hover {
+        padding-left: calc(16px + 16px + var(--hdd-spacing-1) - 1px); // -1px extra hover-border
+        
+        i {
+          left: 16px - 1px; // -1px extra hover-border
+        }
+      }
     }
   }
 
@@ -110,7 +122,7 @@ $button-font-size: 1rem;
     @extend .is-p;
 
     color: transparent !important;
-    font-size: calc(#{$button-font-size} + 2px); // Makes button same size as rest, since icon takes less space
+    font-size: $button-font-size; 
 
     &::after {
       // Should find a better solution
@@ -128,7 +140,6 @@ $button-font-size: 1rem;
       left: calc(50% - (1em / 2));
 
       color: var(--hdd-color-white);
-      font-size: 1em;
     }
   }
 
@@ -140,7 +151,7 @@ $button-font-size: 1rem;
     background: transparent;
     height: $icon-button-height - $button-border-width; // Subtract $button-border-width to match primary button size 
     width: $icon-button-height - $button-border-width; // Subtract $button-border-width to match primary button size
-    font-size: $icon-button-icon-size;
+    font-size: $icon-button-font-size;
     cursor: pointer;
     padding: 0;
 
@@ -180,7 +191,7 @@ $button-font-size: 1rem;
         }
 
         &:hover:not(:active) {
-          font-size: $icon-button-icon-size+1px;
+          font-size: $icon-button-font-size+1px;
         }
       }
     }
