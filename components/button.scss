@@ -1,12 +1,16 @@
 $button-radius: $border-radius;
 $button-border-width: 1px;
 $button-padding: 10px 16px;
-$border-button-padding: (10px - $button-border-width) (16px - $button-border-width); // Subtract $button-border-width to match primary button size 
 $button-icon-font-size: 1.5rem;
 $button-icon-padding: calc(10px - 3px) 16px; // Subtract the difference in font-size to a button without icon
 $icon-button-height: 36px;
 $icon-button-icon-size: 22px;
 $button-font-size: 1rem;
+
+// Subtract $button-border-width to match primary button size 
+@function calculate-padding($border-width){
+  @return (10px - $border-width) (16px - $border-width);
+}
 
 .hdd-button {
   // .is-p is font-properties, defined in typography.
@@ -48,7 +52,7 @@ $button-font-size: 1rem;
 
   &.is-secondary {
     border: $button-border-width solid var(--hdd-color-primary);
-    padding: $border-button-padding;
+    padding: calculate-padding($button-border-width);
     background: transparent;
     color: var(--hdd-color-primary);
 
@@ -61,6 +65,8 @@ $button-font-size: 1rem;
     &:not([disabled]) {
       &:hover {
         box-shadow: var(--hdd-shadow-medium);
+        border: $button-border-width+1px solid var(--hdd-color-primary);
+        padding: calculate-padding($button-border-width+1px);
       }
 
       &:active {
@@ -145,6 +151,11 @@ $button-font-size: 1rem;
         color: var(--hdd-color-white);
         outline: none;
       }
+
+      &:hover {
+        box-shadow: var(--hdd-shadow-medium);
+        border: $button-border-width+1px solid var(--hdd-color-primary);
+      }
     }
 
     &.is-transparent {
@@ -164,6 +175,8 @@ $button-font-size: 1rem;
         &:hover {
           color: var(--hdd-color-blue-dark);
           outline: none;
+          border: none;
+          box-shadow: none;
         }
 
         &:hover:not(:active) {
