@@ -558,11 +558,21 @@ Below is a example of how to achieve this with sass.</p>
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button&quot;&gt;Primary&lt;/button&gt;
 &lt;button class=&quot;hdd-button&quot; disabled&gt;Disabled&lt;/button&gt;
 &lt;button class=&quot;hdd-button is-loading&quot;&gt;Loading&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;">Copy</button>
+&lt;button class=&quot;hdd-button is-loading&quot;&gt;Loading&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+
+&lt;button class=&quot;hdd-button&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-secondary&quot;&gt;Secondary&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-secondary is-loading&quot;&gt;Loading&lt;/button&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button&quot;&gt;Primary&lt;/button&gt;
 &lt;button class=&quot;hdd-button&quot; disabled&gt;Disabled&lt;/button&gt;
 &lt;button class=&quot;hdd-button is-loading&quot;&gt;Loading&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;</code></pre>
+&lt;button class=&quot;hdd-button is-loading&quot;&gt;Loading&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+
+&lt;button class=&quot;hdd-button&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-secondary&quot;&gt;Secondary&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-secondary is-loading&quot;&gt;Loading&lt;/button&gt;</code></pre>
 	</div>
 </div><div id="secondary-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#secondary-button" class="icon-link i-section__link -heading"></a>Secondary button</h2></div><p><code>hdd-button</code></p>
 <p>The secondary button should never be used alone on a page.</p>
@@ -596,12 +606,10 @@ Below is a example of how to achieve this with sass.</p>
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button is-secondary&quot;&gt;Secondary&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-secondary&quot;&gt;S&lt;/button&gt;
 &lt;button class=&quot;hdd-button is-secondary&quot; disabled&gt;Disabled&lt;/button&gt;
 &lt;button class=&quot;hdd-button is-secondary is-loading&quot;&gt;Loading&lt;/button&gt;
 &lt;button class=&quot;hdd-button has-icon is-secondary&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button is-secondary&quot;&gt;Secondary&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-secondary&quot;&gt;S&lt;/button&gt;
 &lt;button class=&quot;hdd-button is-secondary&quot; disabled&gt;Disabled&lt;/button&gt;
 &lt;button class=&quot;hdd-button is-secondary is-loading&quot;&gt;Loading&lt;/button&gt;
 &lt;button class=&quot;hdd-button has-icon is-secondary&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;</code></pre>
@@ -636,18 +644,30 @@ Below is a example of how to achieve this with sass.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
+  &lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:8px;&quot;&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div&gt;
+  &lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:8px;&quot;&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
 	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-button</code>:</strong></p>
 <table class="table"><thead><tr>

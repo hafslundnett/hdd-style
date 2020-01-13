@@ -138,40 +138,35 @@ $button-font-size: 1rem;
     cursor: pointer;
     padding: 0;
 
-    &[disabled] {
-      border-color: var(--hdd-color-grey);
-      color: var(--hdd-color-grey);
-      cursor: not-allowed;
-    }
-
-    &:not([disabled]) {
-      &:hover {
-        background: var(--hdd-color-blue);
-        color: var(--hdd-color-white);
-      }
-
-      &:focus,
-      &:active {
-        background: var(--hdd-color-blue-dark);
-        color: var(--hdd-color-white);
-      }
-    }
-
     &.is-transparent {
       border: none;
       background: none;
+      color: var(--hdd-color-font-color);
 
-      &:focus,
-      &:active,
-      &:hover {
-        background: none;
-        color: var(--hdd-color-primary);
+      // Changes button-text on hover/active/focus
+      &:not([disabled]) {
+        &:focus {
+          color: var(--hdd-color-primary);
+          outline: none;
+        }
+
+        &:active,
+        &:hover {
+          color: var(--hdd-color-blue-dark);
+          outline: none;
+        }
       }
     }
 
     &.is-no-padding {
       height: unset;
       width: unset;
+    }
+    
+    &[disabled] {
+      border-color: var(--hdd-color-grey);
+      color: var(--hdd-color-grey);
+      cursor: not-allowed;
     }
   }
 }
