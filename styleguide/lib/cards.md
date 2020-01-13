@@ -11,7 +11,7 @@ Cards are used when you want to view content related to a theme. The text of the
 ### ⛔ When not to use:
 A card should only encapsulate one type of content. 
 
-### 🖋️For designer: 
+### 🖋️ For designer: 
 Padding inside the card is recommended to have spacing-3. If there are multiple cards in a row, the cards should have the same height. The icon in the label should be inside a circle, aligned to the H1 element. The icon should clearly be connected to the title, and be relevant to content. If a card is clickable, this should be displayed with a light border, view more and an arrow.
 
 ## Card 
