@@ -3,7 +3,13 @@ name: Input fields
 category: Form-Components
 ---
 
-An input should encourage action by the user. If the text / content cannot be changed, it should not appear in an input field of any kind (displayed as static text). An input should not stand alone, it should have a descriptive prompt.
+An input should encourage action by the user. If the text / content cannot be changed, it should not appear in an input field of any kind (displayed as static text). 
+
+### ✅ When to use: 
+An input should have a descriptive prompt and contain: container, label, placeholder/input text, error text/helper.
+
+### ⛔ When not to use:
+An input should not stand alone without a label or information about what is requested.
 
 ## Input fields
 `hdd-form_input`

@@ -7,6 +7,13 @@ The buttons are to be used across the various internal systems. If there is only
 
 Changing the color of a button to convey purpose is not ideal as people with vision impairments may struggle. Usage of other colors should be properly discussed and the context clear.
 
+### ✅ When to use: 
+The buttons should be used for clickable actions. 
+
+### ⛔ When not to use:
+When an action does not require a button. For example, during navigation a link should be used instead.
+
+
 ## Primary button
 `hdd-button`
 

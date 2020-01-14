@@ -3,7 +3,11 @@ name: Search fields
 category: Form-Components
 ---
 
-A search field should be used to give a user the ability to search for options.
+Search box allows the user to locate content quickly and efficiently and can be seen as a conversation between the user and the web page.
+
+### ✅ When to use: 
+It is important to set the user context for the search with the correct placeholder text.
+
 
 ## Search field
 `hdd-form_input`
