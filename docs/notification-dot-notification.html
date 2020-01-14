@@ -3,6 +3,9 @@
 
 	<head>
 		<style>
+					.example-margin {
+  margin: 10px 0;
+}
 		</style>
 
 		<style>
@@ -53,14 +56,29 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div>
-  <i class="fal fa-cog"><span class="hdd-badge-icon"></span></i>
+    <div class="example-margin">
+  <i class="fal fa-cog"><span class="hdd-notification-dot"></span></i>
+</div>
+<div class="example-margin">
+  <i class="fal fa-user"><span class="hdd-notification-dot"></span></i>
+</div>
+<div class="example-margin">
+  <i class="fal fa-bars"><span class="hdd-notification-dot"></span></i>
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div>
-  <i class="fal fa-cog"><span class="hdd-badge-icon"></span></i>
+			<script type="text/x-stylemark" data-language="html"><div class="example-margin">
+  <i class="fal fa-cog"><span class="hdd-notification-dot"></span></i>
+</div>
+<div class="example-margin">
+  <i class="fal fa-user"><span class="hdd-notification-dot"></span></i>
+</div>
+<div class="example-margin">
+  <i class="fal fa-bars"><span class="hdd-notification-dot"></span></i>
 </div></script>
+			<script type="text/x-stylemark" data-language="css">.example-margin {
+  margin: 10px 0;
+}</script>
 
 		<!--
 			Vanilla JS
@@ -93,10 +111,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-badge-badge-icon', []);
+						module = angular.module('stylemark-notification-dot-notification', []);
 					}
 
-					module.controller('stylemark-badge-badge-icon-' + index, function($scope) {
+					module.controller('stylemark-notification-dot-notification-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

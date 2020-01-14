@@ -17,8 +17,7 @@ Tags should not be used alone.
 
 ```tags.html
 <div class="hdd-tags">
-  <span class="hdd-tags_item">2019<i class="fal fa-times"></i></span>
-  <span class="hdd-tags_item">2018<i class="fal fa-times"></i></span>
-  <span class="hdd-tags_item">2017<i class="fal fa-times"></i></span>
+  <span class="hdd-tags_item">707057500051628391<i class="fal fa-times-circle"></i></span>
+  <span class="hdd-tags_item">707057500051628391<i class="fal fa-times-circle"></i></span>
 </div>
 ```
