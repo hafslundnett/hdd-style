@@ -1,7 +1,7 @@
 $button-radius: $border-radius;
 $button-border-width: 1px;
 $button-padding: 10px 16px;
-$button-with-icon-font-size: 1rem;
+$button-with-icon-font-size: 1.5rem;
 $icon-button-height: 36px;
 $icon-button-font-size: 22px;
 $button-font-size: 1rem;
@@ -93,7 +93,7 @@ $button-font-size: 1rem;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: calc(16px + 16px + var(--hdd-spacing-1)); // 16px padding, 16px width of icon, spacing between icon and text
+    padding-left: calc(1rem + #{$button-with-icon-font-size} + var(--hdd-spacing-1)); // 1rem padding, 1.5rem width of icon, spacing between icon and text
     
     i {
       position: absolute;
@@ -104,7 +104,7 @@ $button-font-size: 1rem;
     &:not([disabled]) {
       &:hover {
         &.is-secondary {
-          padding-left: calc(16px + 16px + var(--hdd-spacing-1) - 1px); // -1px extra hover-border
+          padding-left: calc(1rem + #{$button-with-icon-font-size} + var(--hdd-spacing-1) - 1px); // -1px extra hover-border
 
           i {
             left: 16px - 1px; // -1px extra hover-border
