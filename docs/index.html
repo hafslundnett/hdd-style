@@ -1694,6 +1694,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 		<span class="theme-content-element-source-path">tooltip.md</span>
 	</span>
 	<div class="theme-content-element-description"><p>A tooltip can give context to a given icon/piece of text. Tooltips are usually hidden and become visible on hovering, focus or on touch.</p>
+<p>Attach the <code>hdd-tooltip</code> class to the element which the tooltip content should be relative to. Then within the attached element, add a <code>&lt;span&gt;</code> tag with the <code>hdd-tooltip_content</code> class. Fill inn the content of the tooltip within the <code>&lt;span&gt;</code> tag. Examples and mutation classes are described below:</p>
 <h3>✅ When to use:</h3><p>Tooltips can be used to provide the user with brief and useful information related to a feature as a hover over/mini popup</p>
 <h3>⛔ When not to use:</h3><p>Tooltips should not contain necessary and critical information needed by the user to complete a task. Tooltips does not work on mobile devices as they use the hover class, which only works with a mouse.</p>
 <div id="tooltip" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#tooltip" class="icon-link i-section__link -heading"></a>Tooltip</h2></div><p><code>hdd-tooltip</code></p>
@@ -1731,7 +1732,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover Right
-    &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip&lt;/span&gt;
+    &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip &lt;/span&gt;
   &lt;/span&gt;
 
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
@@ -1771,6 +1772,15 @@ menu.addEventListener(&#39;click&#39;, function(e) {
   &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
     Hover on top
     &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Top tooltip&lt;/span&gt;
+  &lt;/span&gt;
+
+&lt;/div&gt;
+
+&lt;div style=&quot;display:flex; justify-content:space-between;margin:30px&quot;&gt;
+
+  &lt;span class=&quot;hdd-tooltip&quot;&gt;
+    Hover Right
+    &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip Right tooltip Right tooltip Right tooltip Right tooltip &lt;/span&gt;
   &lt;/span&gt;
 
 &lt;/div&gt;
@@ -1780,7 +1790,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover Right
-    &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip&lt;/span&gt;
+    &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip &lt;/span&gt;
   &lt;/span&gt;
 
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
@@ -1820,6 +1830,15 @@ menu.addEventListener(&#39;click&#39;, function(e) {
   &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
     Hover on top
     &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Top tooltip&lt;/span&gt;
+  &lt;/span&gt;
+
+&lt;/div&gt;
+
+&lt;div style=&quot;display:flex; justify-content:space-between;margin:30px&quot;&gt;
+
+  &lt;span class=&quot;hdd-tooltip&quot;&gt;
+    Hover Right
+    &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip Right tooltip Right tooltip Right tooltip Right tooltip &lt;/span&gt;
   &lt;/span&gt;
 
 &lt;/div&gt;

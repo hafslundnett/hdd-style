@@ -5,6 +5,9 @@ category: Components
 
 A tooltip can give context to a given icon/piece of text. Tooltips are usually hidden and become visible on hovering, focus or on touch.
 
+Attach the `hdd-tooltip` class to the element which the tooltip content should be relative to. Then within the attached element, add a `<span>` tag with the `hdd-tooltip_content` class. Fill inn the content of the tooltip within the `<span>` tag. Examples and mutation classes are described below:
+
+
 ### ✅ When to use: 
 Tooltips can be used to provide the user with brief and useful information related to a feature as a hover over/mini popup
 
@@ -20,7 +23,7 @@ Tooltips should not contain necessary and critical information needed by the use
 
   <span class="hdd-tooltip">
     Hover Right
-    <span class="hdd-tooltip_content is-right">Right tooltip</span>
+    <span class="hdd-tooltip_content is-right">Right tooltip </span>
   </span>
    
   <span class="hdd-tooltip">
@@ -60,6 +63,15 @@ Tooltips should not contain necessary and critical information needed by the use
   <span class="hdd-tooltip is-light">
     Hover on top
     <span class="hdd-tooltip_content is-top">Top tooltip</span>
+  </span>
+
+</div>
+
+<div style="display:flex; justify-content:space-between;margin:30px">
+
+  <span class="hdd-tooltip">
+    Hover Right
+    <span class="hdd-tooltip_content is-right">Right tooltip Right tooltip Right tooltip Right tooltip Right tooltip </span>
   </span>
 
 </div>

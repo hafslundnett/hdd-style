@@ -1,17 +1,14 @@
-$horizontal-direction-top: -10px;
-$horizontal-direction-sides: 110%;
-$tooltip-border-style:5px solid;
-$tooltip-maring-offset: -5px;
+$tooltip-border-style: 5px solid;
+$tooltip-margin-offset: -5px;
 $tooltip-calculate-height: auto;
-
-
+$tooltip-vertical-transform: translate(-50%, 0);
+$tooltip-horizontal-transform: translate(0, -50%);
 
 .hdd-tooltip {
   // Variable containing '&' to jump to current parent inside a child class.
   $this: &;
   position: relative;
   display: inline-block;
-  cursor: help;
 
   &:hover {
     #{$this}_content {
@@ -25,19 +22,18 @@ $tooltip-calculate-height: auto;
   }
 
   &_content {
-    @extend .is-p-small;
+    @extend .is-p;
     position: absolute;
     opacity: 0;
     z-index: -1;
     min-width: 90px;
-    max-width: 70ch;
+    
     background-color: var(--hdd-color-grey-dark);
     color: var(--hdd-color-contrast-font-color);
     padding: 10px var(--hdd-spacing-2);
     border-radius: $border-radius;
     box-shadow: $shadow-strong;
     transition: $short-transition;
-    transform: scale(0.5);
 
     // Defaults to is-bottom tooltip if no direction class is applied.
     &:not(.is-right):not(.is-left):not(.is-top) {
@@ -45,30 +41,31 @@ $tooltip-calculate-height: auto;
     }
 
     &.is-right {
-      top: $horizontal-direction-top;
-      left: $horizontal-direction-sides;
-      margin-left: 0;
+      top: 50%;
+      left: 110%;
+      transform: $tooltip-horizontal-transform;
 
       &::after {
         content: "";
         position: absolute;
         top: 50%;
         right: 100%;
-        margin-top: $tooltip-maring-offset;
+        margin-top: $tooltip-margin-offset;
         border: $tooltip-border-style;
         border-color: transparent var(--hdd-color-grey-dark) transparent transparent;
       }
     }
     &.is-left {
-      top: $horizontal-direction-top;
-      right: $horizontal-direction-sides;
+      top: 50%;
+      right: 110%;
+      transform: $tooltip-horizontal-transform;
 
       &::after {
         content: "";
         position: absolute;
         top: 50%;
         left: 100%;
-        margin-top: $tooltip-maring-offset;
+        margin-top: $tooltip-margin-offset;
         border: $tooltip-border-style;
         border-color: transparent transparent transparent var(--hdd-color-grey-dark);
       }
@@ -76,14 +73,14 @@ $tooltip-calculate-height: auto;
     &.is-bottom {
       top: 150%;
       left: 50%;
-      margin-left: -60px;
+      transform: $tooltip-vertical-transform;
 
       &::after {
         content: "";
         position: absolute;
         bottom: 100%;
         left: 50%;
-        margin-left:$tooltip-maring-offset;
+        margin-left: $tooltip-margin-offset;
         border: $tooltip-border-style;
         border-color: transparent transparent var(--hdd-color-grey-dark) transparent;
       }
@@ -92,14 +89,14 @@ $tooltip-calculate-height: auto;
     &.is-top {
       bottom: 150%;
       left: 50%;
-      margin-left: -60px;
+      transform: $tooltip-vertical-transform;
 
       &::after {
         content: "";
         position: absolute;
         top: 100%;
         left: 50%;
-        margin-left: $tooltip-maring-offset;
+        margin-left: $tooltip-margin-offset;
         border: $tooltip-border-style;
         border-color: var(--hdd-color-grey-dark) transparent transparent transparent;
       }
@@ -107,10 +104,9 @@ $tooltip-calculate-height: auto;
     &.is-active {
       opacity: 1;
       z-index: 1;
-      transform: scale(1);
     }
   }
-    &.is-light {
+  &.is-light {
     #{$this}_content {
       background-color: var(--hdd-color-white) !important;
       color: var(--hdd-color-font-color) !important;
