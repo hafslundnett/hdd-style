@@ -1,7 +1,17 @@
+$horizontal-direction-top: -10px;
+$horizontal-direction-sides: 110%;
+$tooltip-border-style:5px solid;
+$tooltip-maring-offset: -5px;
+$tooltip-calculate-height: auto;
+
+
+
 .hdd-tooltip {
+  // Variable containing '&' to jump to current parent inside a child class.
   $this: &;
   position: relative;
   display: inline-block;
+  cursor: help;
 
   &:hover {
     #{$this}_content {
@@ -26,7 +36,7 @@
     padding: 10px var(--hdd-spacing-2);
     border-radius: $border-radius;
     box-shadow: $shadow-strong;
-    transition: 150ms;
+    transition: $short-transition;
     transform: scale(0.5);
 
     // Defaults to is-bottom tooltip if no direction class is applied.
@@ -35,8 +45,8 @@
     }
 
     &.is-right {
-      top: -10px;
-      left: 110%;
+      top: $horizontal-direction-top;
+      left: $horizontal-direction-sides;
       margin-left: 0;
 
       &::after {
@@ -44,22 +54,22 @@
         position: absolute;
         top: 50%;
         right: 100%;
-        margin-top: -5px;
-        border: 5px solid;
+        margin-top: $tooltip-maring-offset;
+        border: $tooltip-border-style;
         border-color: transparent var(--hdd-color-grey-dark) transparent transparent;
       }
     }
     &.is-left {
-      top: -10px;
-      right: 110%;
+      top: $horizontal-direction-top;
+      right: $horizontal-direction-sides;
 
       &::after {
         content: "";
         position: absolute;
         top: 50%;
         left: 100%;
-        margin-top: -5px;
-        border: 5px solid;
+        margin-top: $tooltip-maring-offset;
+        border: $tooltip-border-style;
         border-color: transparent transparent transparent var(--hdd-color-grey-dark);
       }
     }
@@ -73,8 +83,8 @@
         position: absolute;
         bottom: 100%;
         left: 50%;
-        margin-left: -5px;
-        border: 5px solid;
+        margin-left:$tooltip-maring-offset;
+        border: $tooltip-border-style;
         border-color: transparent transparent var(--hdd-color-grey-dark) transparent;
       }
     }
@@ -89,8 +99,8 @@
         position: absolute;
         top: 100%;
         left: 50%;
-        margin-left: -5px;
-        border: 5px solid;
+        margin-left: $tooltip-maring-offset;
+        border: $tooltip-border-style;
         border-color: var(--hdd-color-grey-dark) transparent transparent transparent;
       }
     }
