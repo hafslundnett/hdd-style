@@ -3,6 +3,9 @@
 
 	<head>
 		<style>
+					.example-margin {
+  margin: 10px 0;
+}
 		</style>
 
 		<style>
@@ -53,46 +56,29 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div class="hdd-form_input hdd-dropdown">
-  <input value="Jer">
-
-  <div class="hdd-dropdown_content is-active">
-    <div class="hdd-dropdown_content_item is-active"><b>Jer</b>oen</div>
-    <div class="hdd-dropdown_content_item">Stian</div>
-    <div class="hdd-dropdown_content_item no-hover">Erik</div>
-  </div>
+    <div class="example-margin">
+  <i class="fal fa-cog"><span class="hdd-notification"></span></i>
 </div>
-<div style="margin:20px">
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
+<div class="example-margin">
+  <i class="fal fa-user"><span class="hdd-notification"></span></i>
+</div>
+<div class="example-margin">
+  <i class="fal fa-bars"><span class="hdd-notification"></span></i>
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="hdd-form_input hdd-dropdown">
-  <input value="Jer">
-
-  <div class="hdd-dropdown_content is-active">
-    <div class="hdd-dropdown_content_item is-active"><b>Jer</b>oen</div>
-    <div class="hdd-dropdown_content_item">Stian</div>
-    <div class="hdd-dropdown_content_item no-hover">Erik</div>
-  </div>
+			<script type="text/x-stylemark" data-language="html"><div class="example-margin">
+  <i class="fal fa-cog"><span class="hdd-notification"></span></i>
 </div>
-<div style="margin:20px">
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
+<div class="example-margin">
+  <i class="fal fa-user"><span class="hdd-notification"></span></i>
+</div>
+<div class="example-margin">
+  <i class="fal fa-bars"><span class="hdd-notification"></span></i>
 </div></script>
+			<script type="text/x-stylemark" data-language="css">.example-margin {
+  margin: 10px 0;
+}</script>
 
 		<!--
 			Vanilla JS
@@ -125,10 +111,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-dropdown-dropdown', []);
+						module = angular.module('stylemark-notification-notification', []);
 					}
 
-					module.controller('stylemark-dropdown-dropdown-' + index, function($scope) {
+					module.controller('stylemark-notification-notification-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});
