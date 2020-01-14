@@ -1,3 +1,9 @@
+# Update [6.0.0]
+New header
+
+## Breaking changes
+Added new header and removed sidenav, navigation and layout. Either use HAL or the new sidenav.
+
 # Update [5.0.0]
 In this update the css-variables for colors are renamed to --hdd-color-$nameofcolor.
 
