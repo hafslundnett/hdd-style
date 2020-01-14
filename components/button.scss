@@ -16,7 +16,6 @@ $button-font-size: 1rem;
   @extend .is-p;
   // .is-primary is the default for any hdd-button
   @extend .is-primary;
-  font-size: 1rem;
   line-height: 1;
 
   &.is-primary {
@@ -31,6 +30,7 @@ $button-font-size: 1rem;
     min-width: 90px;
     position: relative;
     cursor: pointer;
+    outline-offset: -1px;
 
     &[disabled] {
       background: var(--hdd-color-grey);
@@ -120,7 +120,7 @@ $button-font-size: 1rem;
     @extend .fa-spinner-third;
     // .fal is icon-properties
     @extend .fal;
-    // .is-p is font-properties,  defined in typography.
+    // .is-p is font-properties, defined in typography.
     @extend .is-p;
 
     color: transparent !important;
@@ -156,6 +156,7 @@ $button-font-size: 1rem;
     font-size: $icon-button-font-size;
     cursor: pointer;
     padding: 0;
+    outline-offset: -1px;
 
     // Changes button-text on hover/active/focus
     &:not([disabled]) {
