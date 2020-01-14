@@ -103,10 +103,12 @@ $button-font-size: 1rem;
 
     &:not([disabled]) {
       &:hover {
-        padding-left: calc(16px + 16px + var(--hdd-spacing-1) - 1px); // -1px extra hover-border
-        
-        i {
-          left: 16px - 1px; // -1px extra hover-border
+        &.is-secondary {
+          padding-left: calc(16px + 16px + var(--hdd-spacing-1) - 1px); // -1px extra hover-border
+
+          i {
+            left: 16px - 1px; // -1px extra hover-border
+          }
         }
       }
     }
