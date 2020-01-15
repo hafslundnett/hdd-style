@@ -132,4 +132,5 @@ The buttons are all the same size.
 | :--- | :--- |
 | `is-transparent` | Sets background and border to transparent |
 | `is-no-padding` | Removes all padding from icon-button, should only used together with is-transparent |
+| `is-large` | A large icon-button in the primary colors |
 
