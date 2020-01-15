@@ -3,7 +3,7 @@ name: Header
 category: Components
 ---
 
-The header `hdd-header` should be used on each page, at the top before any content. It should cover the entire with of the screen. The header may contain the logo, page/site title and the active user if any. There are two header user alternatives, one with, and one without a user image.
+The header `hdd-header` should be used on each page, at the top before any content. It should cover the entire with of the screen. The header may contain the logo, page/site title and the active user if any. There are two header user alternatives, one with, and one without a user image. Remove the user part if the site has no login
 
 ## Header with image
 
@@ -15,15 +15,10 @@ The header `hdd-header` should be used on each page, at the top before any conte
   <h1 class="hdd-header_title">Overview</h1>
   <div class="hdd-header-user">
     <img class="hdd-header-user_icon-image" src="http://placekitten.com/150/150"/>
-
     <div class="hdd-header-user_name">
       Jan Greger Hemb
     </div>
-
-    <!-- <div class="hdd-header-user_login">
-    
-    </div> -->
-    
+    <button class="hdd-button has-icon is-transparent"><i class="fal fa-sign-out"></i>Sign out</button>
   </div>
 </header>
 ```
@@ -41,15 +36,10 @@ The header `hdd-header` should be used on each page, at the top before any conte
     <div class="hdd-header-user_icon-no-image">
       TT
     </div>
-
     <div class="hdd-header-user_name">
       Tim Tom
     </div>
-
-    <!-- <div class="hdd-header-user_login">
-    
-    </div> -->
-    
+    <button class="hdd-button has-icon is-transparent"><i class="fal fa-sign-out"></i>Sign out</button>
   </div>
 </header>
 ```

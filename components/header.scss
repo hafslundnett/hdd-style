@@ -37,18 +37,6 @@ $header-img-size: 40px;
     align-items: center;
     justify-content: flex-end;
 
-    &_name {
-      font-size: 1rem;
-			letter-spacing: 0.5px;
-			color: var(--hdd-color-black);
-
-      // hide when small screen
-      display: none;
-      @include breakpoint-up(Earth) {
-        display: inline-block;
-      }
-    }
-
     &_icon-image {
       width: $header-img-size;
       height: $header-img-size;
@@ -73,5 +61,24 @@ $header-img-size: 40px;
 			color: var(--hdd-color-white);
 			text-transform: uppercase;
     }
+
+    
+    &_name {
+      font-size: 1rem;
+			letter-spacing: 0.5px;
+      color: var(--hdd-color-black);
+
+      // give space for next if exist
+      &:not(:last-child) {
+        margin-right: var(--hdd-spacing-1);
+      }
+
+      // hide when small screen
+      display: none;
+      @include breakpoint-up(Earth) {
+        display: inline-block;
+      }
+    }
+
   }
 }

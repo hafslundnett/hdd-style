@@ -1,5 +1,5 @@
 ---
-name: User Menu
+name: User menu
 category: Components
 ---
 
@@ -13,23 +13,18 @@ This is the user menu to be shown when clicking on your image in the header. Thi
 ```user-menu.html
 <div class="hdd-user-menu">
   <img class="hdd-user-menu_image" src="http://placekitten.com/150/150"/>
-
   <div class="hdd-user-menu_name">
     Jan Greger Hemb
   </div>
-
   <div class="hdd-user-menu_email">
     jan.greger@elvia.no
   </div>
-
   <div class="hdd-user-menu_menu-element">
-    <i class="fal fa-cog"></i> Instillinger
+    <button class="hdd-button has-icon is-transparent"><i class="fal fa-cog"></i>Settings</button>
   </div>
-
   <div class="hdd-user-menu_menu-element">
-    <i class="fal fa-sign-out"></i> Logout
+    <button class="hdd-button has-icon is-transparent"><i class="fal fa-sign-out"></i>Sign out</button>
   </div>
-
 </div>
 ```
 
@@ -40,23 +35,18 @@ This is the user menu to be shown when clicking on your image in the header. Thi
   <div class="hdd-user-menu_initials">
     TT
   </div>
-
   <div class="hdd-user-menu_name">
     Tim Tom
   </div>
-
   <div class="hdd-user-menu_email">
     tt@elvia.no
   </div>
-
   <div class="hdd-user-menu_menu-element">
-    <i class="fal fa-cog"></i> Instillinger
+    <button class="hdd-button has-icon is-transparent"><i class="fal fa-cog"></i>Settings</button>
   </div>
-
   <div class="hdd-user-menu_menu-element">
-    <i class="fal fa-sign-out"></i> Logout
+    <button class="hdd-button has-icon is-transparent"><i class="fal fa-sign-out"></i>Sign out</button>
   </div>
-
 </div>
 ```
 

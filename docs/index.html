@@ -39,7 +39,7 @@
 									<option value="table">Table</option>
 									<option value="tags">Tags</option>
 									<option value="tooltip">Tooltip</option>
-									<option value="user-menu">User Menu</option>
+									<option value="user-menu">User menu</option>
 							</optgroup>
 							<optgroup label="Form-Components">
 									<option value="checkbox">Checkbox</option>
@@ -1000,7 +1000,7 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">header.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>The header <code>hdd-header</code> should be used on each page, at the top before any content. It should cover the entire with of the screen. The header may contain the logo, page/site title and the active user if any. There are two header user alternatives, one with, and one without a user image.</p>
+	<div class="theme-content-element-description"><p>The header <code>hdd-header</code> should be used on each page, at the top before any content. It should cover the entire with of the screen. The header may contain the logo, page/site title and the active user if any. There are two header user alternatives, one with, and one without a user image. Remove the user part if the site has no login</p>
 <div id="header-with-image" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#header-with-image" class="icon-link i-section__link -heading"></a>Header with image</h2></div><div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -1037,15 +1037,10 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
   &lt;h1 class=&quot;hdd-header_title&quot;&gt;Overview&lt;/h1&gt;
   &lt;div class=&quot;hdd-header-user&quot;&gt;
     &lt;img class=&quot;hdd-header-user_icon-image&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
-
     &lt;div class=&quot;hdd-header-user_name&quot;&gt;
       Jan Greger Hemb
     &lt;/div&gt;
-
-    &lt;!-- &lt;div class=&quot;hdd-header-user_login&quot;&gt;
-
-    &lt;/div&gt; --&gt;
-
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
   &lt;/div&gt;
 &lt;/header&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;header class=&quot;hdd-header&quot;&gt;
@@ -1055,15 +1050,10 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
   &lt;h1 class=&quot;hdd-header_title&quot;&gt;Overview&lt;/h1&gt;
   &lt;div class=&quot;hdd-header-user&quot;&gt;
     &lt;img class=&quot;hdd-header-user_icon-image&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
-
     &lt;div class=&quot;hdd-header-user_name&quot;&gt;
       Jan Greger Hemb
     &lt;/div&gt;
-
-    &lt;!-- &lt;div class=&quot;hdd-header-user_login&quot;&gt;
-
-    &lt;/div&gt; --&gt;
-
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
   &lt;/div&gt;
 &lt;/header&gt;</code></pre>
 	</div>
@@ -1106,15 +1096,10 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
     &lt;div class=&quot;hdd-header-user_icon-no-image&quot;&gt;
       TT
     &lt;/div&gt;
-
     &lt;div class=&quot;hdd-header-user_name&quot;&gt;
       Tim Tom
     &lt;/div&gt;
-
-    &lt;!-- &lt;div class=&quot;hdd-header-user_login&quot;&gt;
-
-    &lt;/div&gt; --&gt;
-
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
   &lt;/div&gt;
 &lt;/header&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">
@@ -1127,15 +1112,10 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
     &lt;div class=&quot;hdd-header-user_icon-no-image&quot;&gt;
       TT
     &lt;/div&gt;
-
     &lt;div class=&quot;hdd-header-user_name&quot;&gt;
       Tim Tom
     &lt;/div&gt;
-
-    &lt;!-- &lt;div class=&quot;hdd-header-user_login&quot;&gt;
-
-    &lt;/div&gt; --&gt;
-
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
   &lt;/div&gt;
 &lt;/header&gt;</code></pre>
 	</div>
@@ -1850,7 +1830,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 </div>
 
 						<div id="user-menu" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">User Menu</h1>
+	<h1 class="display-4 theme-content-element-title">User menu</h1>
 	<span class="theme-content-element-source">
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">user-menu.md</span>
@@ -1888,43 +1868,33 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-user-menu&quot;&gt;
   &lt;img class=&quot;hdd-user-menu_image&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
-
   &lt;div class=&quot;hdd-user-menu_name&quot;&gt;
     Jan Greger Hemb
   &lt;/div&gt;
-
   &lt;div class=&quot;hdd-user-menu_email&quot;&gt;
     jan.greger@elvia.no
   &lt;/div&gt;
-
   &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
-    &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt; Instillinger
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Settings&lt;/button&gt;
   &lt;/div&gt;
-
   &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
-    &lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt; Logout
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
   &lt;/div&gt;
-
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-user-menu&quot;&gt;
   &lt;img class=&quot;hdd-user-menu_image&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
-
   &lt;div class=&quot;hdd-user-menu_name&quot;&gt;
     Jan Greger Hemb
   &lt;/div&gt;
-
   &lt;div class=&quot;hdd-user-menu_email&quot;&gt;
     jan.greger@elvia.no
   &lt;/div&gt;
-
   &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
-    &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt; Instillinger
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Settings&lt;/button&gt;
   &lt;/div&gt;
-
   &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
-    &lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt; Logout
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
   &lt;/div&gt;
-
 &lt;/div&gt;</code></pre>
 	</div>
 </div><div id="user-menu-without-image" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#user-menu-without-image" class="icon-link i-section__link -heading"></a>User Menu without image</h2></div><div class="i-example">
@@ -1960,45 +1930,35 @@ menu.addEventListener(&#39;click&#39;, function(e) {
   &lt;div class=&quot;hdd-user-menu_initials&quot;&gt;
     TT
   &lt;/div&gt;
-
   &lt;div class=&quot;hdd-user-menu_name&quot;&gt;
     Tim Tom
   &lt;/div&gt;
-
   &lt;div class=&quot;hdd-user-menu_email&quot;&gt;
     tt@elvia.no
   &lt;/div&gt;
-
   &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
-    &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt; Instillinger
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Settings&lt;/button&gt;
   &lt;/div&gt;
-
   &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
-    &lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt; Logout
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
   &lt;/div&gt;
-
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-user-menu&quot;&gt;
   &lt;div class=&quot;hdd-user-menu_initials&quot;&gt;
     TT
   &lt;/div&gt;
-
   &lt;div class=&quot;hdd-user-menu_name&quot;&gt;
     Tim Tom
   &lt;/div&gt;
-
   &lt;div class=&quot;hdd-user-menu_email&quot;&gt;
     tt@elvia.no
   &lt;/div&gt;
-
   &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
-    &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt; Instillinger
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Settings&lt;/button&gt;
   &lt;/div&gt;
-
   &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
-    &lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt; Logout
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
   &lt;/div&gt;
-
 &lt;/div&gt;</code></pre>
 	</div>
 </div></div>
@@ -3748,7 +3708,7 @@ In the internal design system SVG files from Streamline light must be used.
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Badge  Button  Cards  Feedback message  Header  Links  Notification dot  Small menu  Table  Tags  Tooltip  User Menu "
+							data-filter-value=" Badge  Button  Cards  Feedback message  Header  Links  Notification dot  Small menu  Table  Tags  Tooltip  User menu "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -3836,9 +3796,9 @@ In the internal design system SVG files from Streamline light must be used.
 								<a
 									href="#user-menu"
 									class="i-sidebar-list-item theme-sidebar-element"
-									data-filter-value="User Menu"
+									data-filter-value="User menu"
 								>
-									<span>User Menu</span>
+									<span>User menu</span>
 								</a>
 						</div>
 			
