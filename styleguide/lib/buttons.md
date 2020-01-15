@@ -55,6 +55,26 @@ The secondary button should never be used alone on a page.
   <button class="hdd-button-icon is-transparent is-no-padding"><i class="fal fa-arrow-right"></i></button>
   <button class="hdd-button-icon is-transparent is-no-padding" disabled><i class="fal fa-arrow-right"></i></button>
 </div>
+<div style="margin-top:8px;">
+  <button class="hdd-button-icon is-large">
+    <i class="fal fa-comment"></i>
+    Kommentar
+  </button>
+  <button class="hdd-button-icon is-large" disabled>
+    <i class="fal fa-comment"></i>
+    Kommentar
+  </button>
+  <button class="hdd-button-icon is-large">
+    <i class="fal fa-comment"></i>
+    Kommentar
+    <span class="hdd-icon-badge">2</span>
+  </button>
+  <button class="hdd-button-icon is-large" disabled>
+    <i class="fal fa-comment"></i>
+    Kommentar
+    <span class="hdd-icon-badge">2</span>
+  </button>
+</div>
 ```
 
 ```primary-button.css  hidden
