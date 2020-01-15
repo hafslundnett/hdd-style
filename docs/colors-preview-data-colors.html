@@ -3,7 +3,19 @@
 
 	<head>
 		<style>
-					.color-example {
+					.example-container {
+  padding: 15px 15px 0 15px; background: white;
+}
+.example-container-2 {
+  padding: 0 15px 0 15px; background:white; display:flex;
+}
+.example-container-3 {
+  padding: 0 15px 0 15px; background: white;
+}
+.example-container-4 {
+  padding: 0 15px 15px 15px; background:white; display:flex;
+}
+.color-example {
   display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 14px; box-shadow: var(--hdd-shadow-strong);
 }
 .color-text {
@@ -59,7 +71,7 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div style="padding: 15px 15px 0 15px; background: white;">
+    <div class="example-container">
   <span style="background: var(--hdd-color-data-navy)" class="color-example"></span>
   <span style="background: var(--hdd-color-data-marine)" class="color-example"></span>
   <span style="background: var(--hdd-color-data-blue)" class="color-example"></span>
@@ -69,7 +81,7 @@
   <span style="background: var(--hdd-color-data-orange)" class="color-example"></span>
   <span style="background: var(--hdd-color-data-yellow)" class="color-example"></span>
 </div>
-<div style="padding: 0 15px 0 15px; background:white; display:flex;">
+<div class="example-container-2">
   <span class="color-text">data-navy</span>
   <span class="color-text">data-marine</span>
   <span class="color-text">data-blue</span>
@@ -79,7 +91,7 @@
   <span class="color-text">data-orange</span>
   <span class="color-text">data-yellow</span>
 </div>
-<div style="padding: 0 15px 0 15px; background: white;">
+<div class="example-container-3">
   <span style="background: var(--hdd-color-contrast-data-navy)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-data-marine)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-data-blue)" class="color-example"></span>
@@ -89,7 +101,7 @@
   <span style="background: var(--hdd-color-contrast-data-orange)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-data-yellow)" class="color-example"></span>
 </div>
-<div style="padding: 0 15px 15px 15px; background:white; display:flex;">
+<div class="example-container-4">
   <span class="color-text">contrast-data-navy</span>
   <span class="color-text">contrast-data-marine</span>
   <span class="color-text">contrast-data-blue</span>
@@ -101,7 +113,7 @@
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div style="padding: 15px 15px 0 15px; background: white;">
+			<script type="text/x-stylemark" data-language="html"><div class="example-container">
   <span style="background: var(--hdd-color-data-navy)" class="color-example"></span>
   <span style="background: var(--hdd-color-data-marine)" class="color-example"></span>
   <span style="background: var(--hdd-color-data-blue)" class="color-example"></span>
@@ -111,7 +123,7 @@
   <span style="background: var(--hdd-color-data-orange)" class="color-example"></span>
   <span style="background: var(--hdd-color-data-yellow)" class="color-example"></span>
 </div>
-<div style="padding: 0 15px 0 15px; background:white; display:flex;">
+<div class="example-container-2">
   <span class="color-text">data-navy</span>
   <span class="color-text">data-marine</span>
   <span class="color-text">data-blue</span>
@@ -121,7 +133,7 @@
   <span class="color-text">data-orange</span>
   <span class="color-text">data-yellow</span>
 </div>
-<div style="padding: 0 15px 0 15px; background: white;">
+<div class="example-container-3">
   <span style="background: var(--hdd-color-contrast-data-navy)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-data-marine)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-data-blue)" class="color-example"></span>
@@ -131,7 +143,7 @@
   <span style="background: var(--hdd-color-contrast-data-orange)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-data-yellow)" class="color-example"></span>
 </div>
-<div style="padding: 0 15px 15px 15px; background:white; display:flex;">
+<div class="example-container-4">
   <span class="color-text">contrast-data-navy</span>
   <span class="color-text">contrast-data-marine</span>
   <span class="color-text">contrast-data-blue</span>
@@ -141,7 +153,19 @@
   <span class="color-text">contrast-data-orange</span>
   <span class="color-text">contrast-data-yellow</span>
 </div></script>
-			<script type="text/x-stylemark" data-language="css">.color-example {
+			<script type="text/x-stylemark" data-language="css">.example-container {
+  padding: 15px 15px 0 15px; background: white;
+}
+.example-container-2 {
+  padding: 0 15px 0 15px; background:white; display:flex;
+}
+.example-container-3 {
+  padding: 0 15px 0 15px; background: white;
+}
+.example-container-4 {
+  padding: 0 15px 15px 15px; background:white; display:flex;
+}
+.color-example {
   display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 14px; box-shadow: var(--hdd-shadow-strong);
 }
 .color-text {

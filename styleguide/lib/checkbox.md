@@ -40,7 +40,7 @@ The toggle checkbox slider class are assigned to the corresponding span beneath 
 ```toggle.html
 <div class="hdd-form_field">
   <span class="hdd-form_field_title">Toggle Checkbox</span>
-  <label class="hdd-form_toggle" style="margin-bottom: 15px">
+  <label class="hdd-form_toggle">
     <input type="checkbox">
     <span class="hdd-form_toggle slider"></span>
   </label>
@@ -50,7 +50,11 @@ The toggle checkbox slider class are assigned to the corresponding span beneath 
   </label>
 </div>
 ```
-
+```toggle.css  hidden
+label {
+  margin-bottom: 15px;
+}
+```
 
 ## Mutations
 **`hdd-form_checkbox`:**

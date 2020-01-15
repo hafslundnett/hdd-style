@@ -38,7 +38,7 @@ It is advised to add the `hdd-layout` block around your project page. The `hdd-l
       </div>
     </header>
 
-    <div style="padding: 20px">
+    <div class="example-content">
       My content...
     </div>
   </div>
@@ -50,6 +50,9 @@ It is advised to add the `hdd-layout` block around your project page. The `hdd-l
 /* 100% height makes the iframe funky on hover*/
 .hdd-sidenav {
   height: 250px!important;
+}
+.example-content {
+  padding: 20px
 }
 ```
 

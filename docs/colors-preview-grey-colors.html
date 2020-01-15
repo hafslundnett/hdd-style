@@ -3,7 +3,19 @@
 
 	<head>
 		<style>
-					.color-example {
+					.example-container {
+  padding: 15px 15px 0 15px; background: white;
+}
+.example-container-2 {
+  padding: 0 15px 0 15px; background:white; display:flex;
+}
+.example-container-3 {
+  padding: 0 15px 0 15px; background: white;
+}
+.example-container-4 {
+  padding: 0 15px 15px 15px; background:white; display:flex;
+}
+.color-example {
   display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 14px; box-shadow: var(--hdd-shadow-strong);
 }
 .color-text {
@@ -59,7 +71,7 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div style="padding: 15px 15px 0 15px; background: white;">
+    <div class="example-container">
   <span style="background: var(--hdd-color-black)" class="color-example"></span>
   <span style="background: var(--hdd-color-font-color)" class="color-example"></span>
   <span style="background: var(--hdd-color-grey-dark)" class="color-example"></span>
@@ -70,7 +82,7 @@
   <span style="background: var(--hdd-color-grey-background)" class="color-example"></span>
   <span style="background: var(--hdd-color-white)" class="color-example"></span>
 </div>
-<div style="padding: 0 15px 0 15px; background:white; display:flex;">
+<div class="example-container-2">
   <span class="color-text">black</span>
   <span class="color-text">font-color</span>
   <span class="color-text">grey-dark</span>
@@ -81,7 +93,7 @@
   <span class="color-text">grey-background</span>
   <span class="color-text">white</span>
 </div>
-<div style="padding: 0 15px 0 15px; background: white;">
+<div class="example-container-3">
   <span style="background: var(--hdd-color-contrast-black)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-font-color)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-grey-dark)" class="color-example"></span>
@@ -92,7 +104,7 @@
   <span style="background: var(--hdd-color-contrast-grey-background)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-white)" class="color-example"></span>
 </div>
-<div style="padding: 0 15px 15px 15px; background:white; display:flex;">
+<div class="example-container-4">
   <span class="color-text">contrast-black</span>
   <span class="color-text">contrast-font-color</span>
   <span class="color-text">contrast-grey-dark</span>
@@ -105,7 +117,7 @@
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div style="padding: 15px 15px 0 15px; background: white;">
+			<script type="text/x-stylemark" data-language="html"><div class="example-container">
   <span style="background: var(--hdd-color-black)" class="color-example"></span>
   <span style="background: var(--hdd-color-font-color)" class="color-example"></span>
   <span style="background: var(--hdd-color-grey-dark)" class="color-example"></span>
@@ -116,7 +128,7 @@
   <span style="background: var(--hdd-color-grey-background)" class="color-example"></span>
   <span style="background: var(--hdd-color-white)" class="color-example"></span>
 </div>
-<div style="padding: 0 15px 0 15px; background:white; display:flex;">
+<div class="example-container-2">
   <span class="color-text">black</span>
   <span class="color-text">font-color</span>
   <span class="color-text">grey-dark</span>
@@ -127,7 +139,7 @@
   <span class="color-text">grey-background</span>
   <span class="color-text">white</span>
 </div>
-<div style="padding: 0 15px 0 15px; background: white;">
+<div class="example-container-3">
   <span style="background: var(--hdd-color-contrast-black)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-font-color)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-grey-dark)" class="color-example"></span>
@@ -138,7 +150,7 @@
   <span style="background: var(--hdd-color-contrast-grey-background)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-white)" class="color-example"></span>
 </div>
-<div style="padding: 0 15px 15px 15px; background:white; display:flex;">
+<div class="example-container-4">
   <span class="color-text">contrast-black</span>
   <span class="color-text">contrast-font-color</span>
   <span class="color-text">contrast-grey-dark</span>
@@ -149,7 +161,19 @@
   <span class="color-text">contrast-grey-background</span>
   <span class="color-text">contrast-white</span>
 </div></script>
-			<script type="text/x-stylemark" data-language="css">.color-example {
+			<script type="text/x-stylemark" data-language="css">.example-container {
+  padding: 15px 15px 0 15px; background: white;
+}
+.example-container-2 {
+  padding: 0 15px 0 15px; background:white; display:flex;
+}
+.example-container-3 {
+  padding: 0 15px 0 15px; background: white;
+}
+.example-container-4 {
+  padding: 0 15px 15px 15px; background:white; display:flex;
+}
+.color-example {
   display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 14px; box-shadow: var(--hdd-shadow-strong);
 }
 .color-text {

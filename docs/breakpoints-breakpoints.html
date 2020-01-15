@@ -3,12 +3,8 @@
 
 	<head>
 		<style>
-					/* 100% height makes the iframe funky on hover*/
-.hdd-sidenav {
-  height: 250px!important;
-}
-.example-content {
-  padding: 20px
+					.breakpointInfo {
+  margin-top: 6px;
 }
 		</style>
 
@@ -59,85 +55,8 @@
 		
 	</head>
 
-	<body>					<div style="padding: 20px;">
-    <div class="hdd-layout">
-
-  <nav class="hdd-layout_sidenav">
-    <div class="hdd-sidenav">
-      <a class="hdd-sidenav_logo" href="#">
-        <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
-      </a>
-      <ul class="hdd-sidenav_list">
-        <li>
-          <a href="#" class="hdd-sidenav_list_item ">
-            <span class="hdd-sidenav_list_item_icon">
-              <i class="fal fa-chart-pie"></i>
-            </span>
-            <span class="hdd-sidenav_list_item_label">
-              <span>Oversikt</span>
-            </span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="hdd-layout_content">
-    <header class="hdd-layout_navigation">
-      <div class="hdd-navigation">
-        <h1 class="hdd-navigation_title">Overview</h1>
-      </div>
-    </header>
-
-    <div class="example-content">
-      My content...
-    </div>
-  </div>
-  
-</div>
-</div>
-
-			<script type="text/x-stylemark" data-language="html"><div class="hdd-layout">
-
-  <nav class="hdd-layout_sidenav">
-    <div class="hdd-sidenav">
-      <a class="hdd-sidenav_logo" href="#">
-        <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
-      </a>
-      <ul class="hdd-sidenav_list">
-        <li>
-          <a href="#" class="hdd-sidenav_list_item ">
-            <span class="hdd-sidenav_list_item_icon">
-              <i class="fal fa-chart-pie"></i>
-            </span>
-            <span class="hdd-sidenav_list_item_label">
-              <span>Oversikt</span>
-            </span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="hdd-layout_content">
-    <header class="hdd-layout_navigation">
-      <div class="hdd-navigation">
-        <h1 class="hdd-navigation_title">Overview</h1>
-      </div>
-    </header>
-
-    <div class="example-content">
-      My content...
-    </div>
-  </div>
-  
-</div></script>
-			<script type="text/x-stylemark" data-language="css">/* 100% height makes the iframe funky on hover*/
-.hdd-sidenav {
-  height: 250px!important;
-}
-.example-content {
-  padding: 20px
+	<body>			<script type="text/x-stylemark" data-language="css">.breakpointInfo {
+  margin-top: 6px;
 }</script>
 
 		<!--
@@ -171,10 +90,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-layout-layout', []);
+						module = angular.module('stylemark-breakpoints-breakpoints', []);
 					}
 
-					module.controller('stylemark-layout-layout-' + index, function($scope) {
+					module.controller('stylemark-breakpoints-breakpoints-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

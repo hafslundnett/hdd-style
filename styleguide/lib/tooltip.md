@@ -19,7 +19,7 @@ Tooltips should not contain necessary and critical information needed by the use
 
 ```tooltip.html
 
-<div style="display:flex; justify-content:space-between;margin:30px">
+<div class="example-container">
 
   <span class="hdd-tooltip">
     Hover Right
@@ -43,7 +43,7 @@ Tooltips should not contain necessary and critical information needed by the use
 
 </div>
 
-<div style="display:flex; justify-content:space-between;margin:30px">
+<div class="example-container">
 
   <span class="hdd-tooltip is-light">
     Hover Right
@@ -66,7 +66,11 @@ Tooltips should not contain necessary and critical information needed by the use
   </span>
 
 </div>
-
+```
+```tooltip.css  hidden
+.example-container {
+  display:flex; justify-content:space-between;margin:30px
+}
 ```
 
 ## Mutations
