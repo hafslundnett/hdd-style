@@ -46,6 +46,45 @@ $extra-border-hover: 1px;
   }
 }
 
+%transparent-properties {
+  border: none;
+  background: transparent;
+  color: var(--hdd-color-font-color);
+
+  // Changes button-text on hover/active/focus
+  &:not([disabled]) {
+    &:focus {
+      color: var(--hdd-color-primary);
+      outline: none;
+      background: transparent;
+    }
+
+    &:active,
+    &:hover {
+      color: var(--hdd-color-primary);
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+
+    &:hover:not(:active) {
+      text-shadow: var(--hdd-shadow-strong);
+    }
+
+    &:active {
+      transform: scale(0.9, 0.9); // Click-effect
+    }
+  }
+}
+
+%secondary-disabled {
+  &[disabled] {
+    border-color: var(--hdd-color-grey);
+    color: var(--hdd-color-grey);
+    cursor: not-allowed;
+  }
+}
+
 .hdd-button {
   // .is-p is font-properties, defined in typography.
   @extend .is-p;
@@ -73,10 +112,7 @@ $extra-border-hover: 1px;
     background: transparent;
     color: var(--hdd-color-primary);
 
-    &[disabled] {
-      border: $button-border-width solid var(--hdd-color-grey);
-      color: var(--hdd-color-grey);
-    }
+    @extend %secondary-disabled;
 
     // Changes button-text on hover/active/focus
     &:not([disabled]) {
@@ -128,6 +164,11 @@ $extra-border-hover: 1px;
         }
       }
     }
+
+    &.is-transparent {
+      @extend %transparent-properties;
+      @extend %secondary-disabled;
+    }
   }
 
   // When button is loading
@@ -174,6 +215,8 @@ $extra-border-hover: 1px;
     padding: 0;
     outline-offset: -1px;
 
+    @extend %secondary-disabled;
+
     // Changes button-text on hover/active/focus
     &:not([disabled]) {
       &:active {
@@ -189,35 +232,9 @@ $extra-border-hover: 1px;
     }
 
     &.is-transparent {
-      border: none;
-      background: transparent;
-      color: var(--hdd-color-font-color);
+      @extend %transparent-properties;
+
       height: $icon-button-height; 
-
-      // Changes button-text on hover/active/focus
-      &:not([disabled]) {
-        &:focus {
-          color: var(--hdd-color-primary);
-          outline: none;
-          background: transparent;
-        }
-
-        &:active,
-        &:hover {
-          color: var(--hdd-color-primary);
-          outline: none;
-          box-shadow: none;
-          border: none;
-        }
-
-        &:hover:not(:active) {
-          text-shadow: var(--hdd-shadow-strong);
-        }
-
-        &:active {
-          transform: scale(0.9, 0.9); // Click-effect
-        }
-      }
     }
 
     &.is-large {

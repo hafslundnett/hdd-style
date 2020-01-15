@@ -1,98 +1,129 @@
-$tooltip-tip-size: 10px;
-$tooltip-padding: 0.5rem 1rem;
-$tooltip-width: 150px;
-$tooltip-menu-side-padding: 0.75rem;
-$tooltip-menu-padding: 0.5rem 1rem;
-$tooltip-tip-right-offset: 1rem;
-$tooltip-tip-left-offset: 1rem;
-$tooltip-border-radius: $border-radius;
+$tooltip-border-style: 5px solid;
+$tooltip-margin-offset: -5px;
+$tooltip-calculate-height: auto;
+$tooltip-vertical-transform: translate(-50%, 0);
+$tooltip-horizontal-transform: translate(0, -50%);
 
 .hdd-tooltip {
   // Variable containing '&' to jump to current parent inside a child class.
   $this: &;
-
   position: relative;
+  display: inline-block;
 
-  &:hover:not(.no-hover) {
+  &:hover {
+    #{$this}_content {
+      @extend .hdd-tooltip_content, .is-active;
+    }
+  }
+  &:focus {
     #{$this}_content {
       @extend .hdd-tooltip_content, .is-active;
     }
   }
 
   &_content {
-    //.is-p is font-properties, defined in typography.
     @extend .is-p;
-
-    $content-color: var(--hdd-color-grey-dark);
-    $content-text-color: var(--hdd-color-white);
-
-    display: table;
     position: absolute;
-    z-index: -1;
-
-    top: calc(100% + #{$tooltip-tip-size});
-    right: 0;
-    left: 50%;
-
-    box-sizing: border-box;
-    min-width: $tooltip-width;
-
-    margin: auto;
-    padding: $tooltip-padding;
-
-    transform: translateX(-50%);
-    transition: opacity $medium-transition $transition-cubic, z-index $medium-transition step-end;
-    border-radius: $tooltip-border-radius;
-
     opacity: 0;
-    background: $content-color;
-    color: $content-text-color;
-    text-align: left;
+    z-index: -1;
+    width: max-content;
+    max-width: 25ch;
+    pointer-events: none;
+    background-color: var(--hdd-color-grey-dark);
+    color: var(--hdd-color-contrast-font-color);
+    padding: 10px var(--hdd-spacing-2);
+    border-radius: $border-radius;
+    box-shadow: $shadow-strong;
+    transition: $short-transition;
 
-    &::before {
-      content: '';
-
-      display: block;
-      position: absolute;
-
-      top: -$tooltip-tip-size;
-      right: 0;
-      left: 0;
-
-      width: 0;
-      height: 0;
-
-      margin: auto;
-
-      border-right: $tooltip-tip-size solid transparent;
-      border-bottom: $tooltip-tip-size solid $content-color;
-      border-left: $tooltip-tip-size solid transparent;
+    // Defaults to is-bottom tooltip if no direction class is applied.
+    &:not(.is-right):not(.is-left):not(.is-top) {
+      @extend .is-bottom;
     }
 
+    &.is-right {
+      top: 50%;
+      left: 110%;
+      transform: $tooltip-horizontal-transform;
+  
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        margin-top: $tooltip-margin-offset;
+        border: $tooltip-border-style;
+        border-color: transparent var(--hdd-color-grey-dark) transparent transparent;
+      }
+    }
+    &.is-left {
+      top: 50%;
+      right: 110%;
+      transform: $tooltip-horizontal-transform;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        margin-top: $tooltip-margin-offset;
+        border: $tooltip-border-style;
+        border-color: transparent transparent transparent var(--hdd-color-grey-dark);
+      }
+    }
+    &.is-bottom {
+      top: 150%;
+      left: 50%;
+      transform: $tooltip-vertical-transform;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: $tooltip-margin-offset;
+        border: $tooltip-border-style;
+        border-color: transparent transparent var(--hdd-color-grey-dark) transparent;
+      }
+    }
+
+    &.is-top {
+      bottom: 150%;
+      left: 50%;
+      transform: $tooltip-vertical-transform;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: $tooltip-margin-offset;
+        border: $tooltip-border-style;
+        border-color: var(--hdd-color-grey-dark) transparent transparent transparent;
+      }
+    }
     &.is-active {
-      z-index: 90;
-      transition: opacity $medium-transition $transition-cubic, z-index $medium-transition step-start;
       opacity: 1;
+      z-index: 1;
     }
-
-    &.is-leaning-left {
-      left: calc(50% + #{$tooltip-tip-left-offset} + #{$tooltip-tip-size});
-      transform: translateX(-100%);
-
-      &::before {
-        right: $tooltip-tip-right-offset;
-        left: auto;
-      }
+  }
+  &.is-light {
+    #{$this}_content {
+      background-color: var(--hdd-color-white) !important;
+      color: var(--hdd-color-font-color) !important;
     }
-
-    &.is-leaning-right {
-      left: calc(50% - #{$tooltip-tip-left-offset} - #{$tooltip-tip-size});
-      transform: translateX(0);
-
-      &::before {
-        right: auto;
-        left: $tooltip-tip-left-offset;
-      }
+    #{$this}_content.is-right::after {
+      border-color: transparent var(--hdd-color-white) transparent transparent !important;
+    }
+    #{$this}_content.is-left::after {
+      border-color: transparent transparent transparent var(--hdd-color-white) !important;
+    }
+    #{$this}_content.is-top::after {
+      border-color: var(--hdd-color-white) transparent transparent transparent !important;
+    }
+    #{$this}_content.is-bottom::after {
+      border-color: transparent transparent var(--hdd-color-white) transparent !important;
     }
   }
 }
+
