@@ -87,11 +87,6 @@ The buttons are all the same size.
     Kommentar
     <span class="notification">2</span>
   </button>
-  <button class="hdd-button-icon is-large" disabled>
-    <i class="fal fa-comment"></i>
-    Kommentar
-    <span class="notification">2</span>
-  </button>
 </div>
 ```
 
