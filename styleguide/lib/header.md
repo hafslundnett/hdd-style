@@ -5,7 +5,7 @@ category: Components
 
 The header `hdd-header` should be used on each page, at the top before any content. It should cover the entire with of the screen. The header may contain the logo, page/site title and the active user if any. There are two header user alternatives, one with, and one without a user image.
 
-## Header
+## Header with image
 
 ```header.html
 <header class="hdd-header">
@@ -27,6 +27,8 @@ The header `hdd-header` should be used on each page, at the top before any conte
   </div>
 </header>
 ```
+
+## Header without image
 
 ```header-no-img.html
 
