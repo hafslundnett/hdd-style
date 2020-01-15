@@ -74,15 +74,15 @@ The buttons are all the same size.
   <button class="hdd-button-icon is-transparent is-no-padding" disabled><i class="fal fa-arrow-right"></i></button>
 </div>
 <div style="margin-top:8px;">
-  <button class="hdd-button-icon is-large">
+  <button class="hdd-button-icon is-xl">
     <i class="fal fa-comment"></i>
     Kommentar
   </button>
-  <button class="hdd-button-icon is-large" disabled>
+  <button class="hdd-button-icon is-xl" disabled>
     <i class="fal fa-comment"></i>
     Kommentar
   </button>
-  <button class="hdd-button-icon is-large">
+  <button class="hdd-button-icon is-xl">
     <i class="fal fa-comment"></i>
     Kommentar
     <span class="notification">2</span>
@@ -127,5 +127,5 @@ The buttons are all the same size.
 | :--- | :--- |
 | `is-transparent` | Sets background and border to transparent |
 | `is-no-padding` | Removes all padding from icon-button, should only used together with is-transparent |
-| `is-large` | A large icon-button in the primary colors |
+| `is-xl` | A large icon-button in the primary colors with text |
 
