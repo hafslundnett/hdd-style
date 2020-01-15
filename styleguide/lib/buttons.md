@@ -21,9 +21,8 @@ If only one button exists on a page, it should always be a primary button.
 
 ```primary-button.html
 <button class="hdd-button">Primary</button>
-<button class="hdd-button is-loading">Loading</button>
 <button class="hdd-button" disabled>Disabled</button>
-<button class="hdd-button has-icon"><i class="fal fa-cog"></i>Icon button</button>
+<button class="hdd-button is-loading">Loading</button>
 ```
 
 ## Secondary button
@@ -35,10 +34,29 @@ The secondary button should never be used alone on a page.
 <button class="hdd-button is-secondary">Secondary</button>
 <button class="hdd-button is-secondary" disabled>Disabled</button>
 <button class="hdd-button is-secondary is-loading">Loading</button>
-<button class="hdd-button has-icon is-secondary"><i class="fal fa-cog"></i>Icon button</button>
 ```
 
-## Icon buttons
+## Buttons with icon
+`hdd-button`
+
+The buttons are all the same size.
+
+```with-icon-button.html
+<div>
+  <button class="hdd-button has-icon"><i class="fal fa-cog"></i>Icon button</button>
+  <button class="hdd-button has-icon" disabled><i class="fal fa-cog"></i>Icon button</button>
+</div>
+<div style="margin-top:8px;">
+  <button class="hdd-button has-icon is-secondary"><i class="fal fa-cog"></i>Icon button</button>
+  <button class="hdd-button has-icon is-secondary" disabled><i class="fal fa-cog"></i>Icon button</button>
+</div>
+<div style="margin-top:8px;">
+  <button class="hdd-button has-icon is-transparent"><i class="fal fa-cog"></i>Icon button</button>
+  <button class="hdd-button has-icon is-transparent" disabled><i class="fal fa-cog"></i>Icon button</button>
+</div>
+```
+
+## Icon only buttons
 `hdd-button-icon`
 
 
@@ -63,6 +81,11 @@ The secondary button should never be used alone on a page.
 }
 ```
 ```secondary-button.css  hidden
+.hdd-button {
+  margin: 4px;
+}
+```
+```with-icon-button.css  hidden
 .hdd-button {
   margin: 4px;
 }
