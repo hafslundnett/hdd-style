@@ -3,6 +3,9 @@
 
 	<head>
 		<style>
+					.hdd-button {
+  margin: 4px;
+}
 		</style>
 
 		<style>
@@ -54,13 +57,34 @@
 
 	<body>					<div style="padding: 20px;">
     <div>
-  <i class="fal fa-cog"><span class="hdd-badge-icon"></span></i>
+  <button class="hdd-button has-icon"><i class="fal fa-cog"></i>Icon button</button>
+  <button class="hdd-button has-icon" disabled><i class="fal fa-cog"></i>Icon button</button>
+</div>
+<div style="margin-top:8px;">
+  <button class="hdd-button has-icon is-secondary"><i class="fal fa-cog"></i>Icon button</button>
+  <button class="hdd-button has-icon is-secondary" disabled><i class="fal fa-cog"></i>Icon button</button>
+</div>
+<div style="margin-top:8px;">
+  <button class="hdd-button has-icon is-transparent"><i class="fal fa-cog"></i>Icon button</button>
+  <button class="hdd-button has-icon is-transparent" disabled><i class="fal fa-cog"></i>Icon button</button>
 </div>
 </div>
 
 			<script type="text/x-stylemark" data-language="html"><div>
-  <i class="fal fa-cog"><span class="hdd-badge-icon"></span></i>
+  <button class="hdd-button has-icon"><i class="fal fa-cog"></i>Icon button</button>
+  <button class="hdd-button has-icon" disabled><i class="fal fa-cog"></i>Icon button</button>
+</div>
+<div style="margin-top:8px;">
+  <button class="hdd-button has-icon is-secondary"><i class="fal fa-cog"></i>Icon button</button>
+  <button class="hdd-button has-icon is-secondary" disabled><i class="fal fa-cog"></i>Icon button</button>
+</div>
+<div style="margin-top:8px;">
+  <button class="hdd-button has-icon is-transparent"><i class="fal fa-cog"></i>Icon button</button>
+  <button class="hdd-button has-icon is-transparent" disabled><i class="fal fa-cog"></i>Icon button</button>
 </div></script>
+			<script type="text/x-stylemark" data-language="css">.hdd-button {
+  margin: 4px;
+}</script>
 
 		<!--
 			Vanilla JS
@@ -93,10 +117,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-badge-badge-icon', []);
+						module = angular.module('stylemark-button-with-icon-button', []);
 					}
 
-					module.controller('stylemark-badge-badge-icon-' + index, function($scope) {
+					module.controller('stylemark-button-with-icon-button-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

@@ -1,8 +1,24 @@
 # Update [6.0.0]
-New header
+In this update the buttons have changed visually. 
+Also added new header and removed sidenav, navigation and layout. Either use HAL or the new sidenav.
+
 
 ## Breaking changes
-Added new header and removed sidenav, navigation and layout. Either use HAL or the new sidenav.
+
+### Buttons:
+
+* **New hover-states on all buttons**
+    * Active(click-effect) has changed
+    * Hover has changed
+    * Focus has changed
+* **Icon-buttons color**
+    * Changed from blue to black
+
+### Removed:
+* hdd-sidenav
+* hdd-navigation
+* hdd-layout
+
 
 # Update [5.0.0]
 In this update the css-variables for colors are renamed to --hdd-color-$nameofcolor.
@@ -10,7 +26,7 @@ In this update the css-variables for colors are renamed to --hdd-color-$nameofco
 ## Breaking changes
 
 ### Color variables:
-The small and normal buttons have been combined into one mid-sized button.
+
 * **New variables / Removed variables**
     * --hdd-nameofcolor => --hdd-color-nameofcolor
     * eks: --hdd-primary => --hdd-color-primary

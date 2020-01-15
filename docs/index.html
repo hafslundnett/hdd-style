@@ -34,6 +34,7 @@
 									<option value="feedback-message">Feedback message</option>
 									<option value="header">Header</option>
 									<option value="links">Links</option>
+									<option value="notification-dot">Notification dot</option>
 									<option value="small-menu">Small menu</option>
 									<option value="table">Table</option>
 									<option value="tags">Tags</option>
@@ -252,7 +253,9 @@
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">badge.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>Badges contain numeric values and indicate a number. Multiple colors can be used on <code>hdd-badge</code> and <code>hdd-badge-icon</code>. <code>signal-red</code> is used as the default color.</p>
+	<div class="theme-content-element-description"><p>Badges contain numeric values and indicate a number. </p>
+<p>All the colors in the design system can be used on <code>hdd-badge</code>. <code>signal-red</code> is the default color. The colors are used with the class <code>is-$color</code>. For example for primary: <code>&lt;span class=&quot;hdd-badge is-primary&quot;&gt;&lt;/span&gt;</code>.
+Badges contain numeric values and indicate a number. Multiple colors can be used on <code>hdd-badge</code> and <code>hdd-badge-icon</code>. <code>signal-red</code> is used as the default color.</p>
 <h3>✅ When to use:</h3><p>Use badges to mark new, updated or removed content. Use badges with the item they represent, so it&#39;s clear which item is indicated.</p>
 <h3>⛔ When not to use:</h3><p>Badges should not be used alone. Do not display information status in a badge and to visually mark UI objects.</p>
 <div id="badge" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#badge" class="icon-link i-section__link -heading"></a>Badge</h2></div><p><code>hdd-badge</code></p>
@@ -285,86 +288,20 @@
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
-  &lt;span&gt;Example 1 &lt;span class=&quot;hdd-badge&quot;&gt;5&lt;/span&gt;&lt;/span&gt;
-&lt;/div&gt;
-&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
-  &lt;span&gt;Example 2 &lt;span class=&quot;hdd-badge is-primary&quot;&gt;8&lt;/span&gt;&lt;/span&gt;
-&lt;/div&gt;
-&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
-  &lt;span&gt;Example 3 &lt;span class=&quot;hdd-badge is-safe&quot;&gt;10&lt;/span&gt;&lt;/span&gt;
-&lt;/div&gt;
-&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
-  &lt;span&gt;Example 4 &lt;span class=&quot;hdd-badge is-warn&quot;&gt;10&lt;/span&gt;&lt;/span&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div&gt;
-  &lt;span&gt;Example 1 &lt;span class=&quot;hdd-badge&quot;&gt;5&lt;/span&gt;&lt;/span&gt;
-&lt;/div&gt;
-&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
-  &lt;span&gt;Example 2 &lt;span class=&quot;hdd-badge is-primary&quot;&gt;8&lt;/span&gt;&lt;/span&gt;
-&lt;/div&gt;
-&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
-  &lt;span&gt;Example 3 &lt;span class=&quot;hdd-badge is-safe&quot;&gt;10&lt;/span&gt;&lt;/span&gt;
-&lt;/div&gt;
-&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
-  &lt;span&gt;Example 4 &lt;span class=&quot;hdd-badge is-warn&quot;&gt;10&lt;/span&gt;&lt;/span&gt;
-&lt;/div&gt;</code></pre>
-	</div>
-</div><div id="icon-badge" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#icon-badge" class="icon-link i-section__link -heading"></a>Icon badge</h2></div><p><code>hdd-badge-icon</code></p>
-<p>Add a small red dot with a white border to the top right side of an icon.</p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="badge-badge-icon.html"
-                            target="_blank"
-                            class="plain-link"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Open in a new window"
-                        >
-                            <i class="fa fa-external-link-square fa-fw"></i>
-                            Example
-                        </a>
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="badge-badge-icon.html"
-                            data-initinview="true"
-                            data-title="Loading..." 
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
-  &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon&quot;&gt;&lt;/span&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
-  &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon is-primary&quot;&gt;&lt;/span&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
-  &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon is-safe&quot;&gt;&lt;/span&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
-  &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon is-warn&quot;&gt;&lt;/span&gt;&lt;/i&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div&gt;
-  &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon&quot;&gt;&lt;/span&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
-  &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon is-primary&quot;&gt;&lt;/span&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
-  &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon is-safe&quot;&gt;&lt;/span&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;div style=&quot;padding-top: 1rem;&quot;&gt;
-  &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-badge-icon is-warn&quot;&gt;&lt;/span&gt;&lt;/i&gt;
-&lt;/div&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;hdd-badge&quot;&gt;592&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-primary&quot;&gt;82&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-safe&quot;&gt;313&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-warn&quot;&gt;18 196&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-blue-light1&quot;&gt;37&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-data-navy&quot;&gt;12 156&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-black&quot;&gt;9 214&lt;/span&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;hdd-badge&quot;&gt;592&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-primary&quot;&gt;82&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-safe&quot;&gt;313&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-warn&quot;&gt;18 196&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-blue-light1&quot;&gt;37&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-data-navy&quot;&gt;12 156&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-black&quot;&gt;9 214&lt;/span&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -412,12 +349,10 @@
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button&quot;&gt;Primary&lt;/button&gt;
 &lt;button class=&quot;hdd-button&quot; disabled&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-loading&quot;&gt;Loading&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;">Copy</button>
+&lt;button class=&quot;hdd-button is-loading&quot;&gt;Loading&lt;/button&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button&quot;&gt;Primary&lt;/button&gt;
 &lt;button class=&quot;hdd-button&quot; disabled&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-loading&quot;&gt;Loading&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;</code></pre>
+&lt;button class=&quot;hdd-button is-loading&quot;&gt;Loading&lt;/button&gt;</code></pre>
 	</div>
 </div><div id="secondary-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#secondary-button" class="icon-link i-section__link -heading"></a>Secondary button</h2></div><p><code>hdd-button</code></p>
 <p>The secondary button should never be used alone on a page.</p>
@@ -452,14 +387,68 @@
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button is-secondary&quot;&gt;Secondary&lt;/button&gt;
 &lt;button class=&quot;hdd-button is-secondary&quot; disabled&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-secondary is-loading&quot;&gt;Loading&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon is-secondary&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;">Copy</button>
+&lt;button class=&quot;hdd-button is-secondary is-loading&quot;&gt;Loading&lt;/button&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button is-secondary&quot;&gt;Secondary&lt;/button&gt;
 &lt;button class=&quot;hdd-button is-secondary&quot; disabled&gt;Disabled&lt;/button&gt;
-&lt;button class=&quot;hdd-button is-secondary is-loading&quot;&gt;Loading&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon is-secondary&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;</code></pre>
+&lt;button class=&quot;hdd-button is-secondary is-loading&quot;&gt;Loading&lt;/button&gt;</code></pre>
 	</div>
-</div><div id="icon-buttons" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#icon-buttons" class="icon-link i-section__link -heading"></a>Icon buttons</h2></div><p><code>hdd-button-icon</code></p>
+</div><div id="buttons-with-icon" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#buttons-with-icon" class="icon-link i-section__link -heading"></a>Buttons with icon</h2></div><p><code>hdd-button</code></p>
+<p>The buttons are all the same size.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-with-icon-button.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-with-icon-button.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
+  &lt;button class=&quot;hdd-button has-icon&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+  &lt;button class=&quot;hdd-button has-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:8px;&quot;&gt;
+  &lt;button class=&quot;hdd-button has-icon is-secondary&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+  &lt;button class=&quot;hdd-button has-icon is-secondary&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:8px;&quot;&gt;
+  &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+  &lt;button class=&quot;hdd-button has-icon is-transparent&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div&gt;
+  &lt;button class=&quot;hdd-button has-icon&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+  &lt;button class=&quot;hdd-button has-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:8px;&quot;&gt;
+  &lt;button class=&quot;hdd-button has-icon is-secondary&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+  &lt;button class=&quot;hdd-button has-icon is-secondary&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:8px;&quot;&gt;
+  &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+  &lt;button class=&quot;hdd-button has-icon is-transparent&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><div id="icon-only-buttons" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#icon-only-buttons" class="icon-link i-section__link -heading"></a>Icon only buttons</h2></div><p><code>hdd-button-icon</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -489,18 +478,30 @@
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-&lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
+  &lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:8px;&quot;&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div&gt;
+  &lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:8px;&quot;&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
 	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-button</code>:</strong></p>
 <table class="table"><thead><tr>
@@ -1219,6 +1220,65 @@
 </tbody></table></div>
 </div>
 
+						<div id="notification-dot" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Notification dot</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">notification-dot.md</span>
+	</span>
+	<div class="theme-content-element-description"><p>The <code>hdd-notification-dot</code> class adds a small red dot with a white border to the top right side of an icon to signalize notifications.</p>
+<div id="notification" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#notification" class="icon-link i-section__link -heading"></a>Notification</h2></div><p><code>hdd-notification-dot</code></p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="notification-dot-notification.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="notification-dot-notification.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-margin&quot;&gt;
+  &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-notification-dot&quot;&gt;&lt;/span&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;div class=&quot;example-margin&quot;&gt;
+  &lt;i class=&quot;fal fa-user&quot;&gt;&lt;span class=&quot;hdd-notification-dot&quot;&gt;&lt;/span&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;div class=&quot;example-margin&quot;&gt;
+  &lt;i class=&quot;fal fa-bars&quot;&gt;&lt;span class=&quot;hdd-notification-dot&quot;&gt;&lt;/span&gt;&lt;/i&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-margin&quot;&gt;
+  &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-notification-dot&quot;&gt;&lt;/span&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;div class=&quot;example-margin&quot;&gt;
+  &lt;i class=&quot;fal fa-user&quot;&gt;&lt;span class=&quot;hdd-notification-dot&quot;&gt;&lt;/span&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;div class=&quot;example-margin&quot;&gt;
+  &lt;i class=&quot;fal fa-bars&quot;&gt;&lt;span class=&quot;hdd-notification-dot&quot;&gt;&lt;/span&gt;&lt;/i&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="small-menu" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Small menu</h1>
 	<span class="theme-content-element-source">
@@ -1679,14 +1739,12 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-tags&quot;&gt;
-  &lt;span class=&quot;hdd-tags_item&quot;&gt;2019&lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-  &lt;span class=&quot;hdd-tags_item&quot;&gt;2018&lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-  &lt;span class=&quot;hdd-tags_item&quot;&gt;2017&lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-tags_item&quot;&gt;707057500051628391&lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-tags_item&quot;&gt;707057500051628391&lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-tags&quot;&gt;
-  &lt;span class=&quot;hdd-tags_item&quot;&gt;2019&lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-  &lt;span class=&quot;hdd-tags_item&quot;&gt;2018&lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-  &lt;span class=&quot;hdd-tags_item&quot;&gt;2017&lt;i class=&quot;fal fa-times&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-tags_item&quot;&gt;707057500051628391&lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-tags_item&quot;&gt;707057500051628391&lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div></div>
@@ -3690,7 +3748,7 @@ In the internal design system SVG files from Streamline light must be used.
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Badge  Button  Cards  Feedback message  Header  Links  Small menu  Table  Tags  Tooltip  User Menu "
+							data-filter-value=" Badge  Button  Cards  Feedback message  Header  Links  Notification dot  Small menu  Table  Tags  Tooltip  User Menu "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -3739,6 +3797,13 @@ In the internal design system SVG files from Streamline light must be used.
 									data-filter-value="Links"
 								>
 									<span>Links</span>
+								</a>
+								<a
+									href="#notification-dot"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Notification dot"
+								>
+									<span>Notification dot</span>
 								</a>
 								<a
 									href="#small-menu"
