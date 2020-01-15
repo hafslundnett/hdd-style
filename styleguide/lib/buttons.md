@@ -39,7 +39,7 @@ The secondary button should never be used alone on a page.
 ## Buttons with icon
 `hdd-button`
 
-The secondary button should never be used alone on a page.
+The buttons are all the same size.
 
 ```with-icon-button.html
 <div>
@@ -56,7 +56,7 @@ The secondary button should never be used alone on a page.
 </div>
 ```
 
-## Icon buttons
+## Icon only buttons
 `hdd-button-icon`
 
 
