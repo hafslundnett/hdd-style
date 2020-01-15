@@ -1,10 +1,25 @@
+# Update [6.0.0]
+In this update the buttons have changed visually. 
+
+## Breaking changes
+
+### Buttons:
+
+* **New hover-states on all buttons**
+    * Active(click-effect) has changed
+    * Hover has changed
+    * Focus has changed
+* **Icon-buttons color**
+    * Changed from blue to black
+
+
 # Update [5.0.0]
 In this update the css-variables for colors are renamed to --hdd-color-$nameofcolor.
 
 ## Breaking changes
 
 ### Color variables:
-The small and normal buttons have been combined into one mid-sized button.
+
 * **New variables / Removed variables**
     * --hdd-nameofcolor => --hdd-color-nameofcolor
     * eks: --hdd-primary => --hdd-color-primary
