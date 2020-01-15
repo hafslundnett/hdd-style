@@ -67,15 +67,6 @@ Tooltips should not contain necessary and critical information needed by the use
 
 </div>
 
-<div style="display:flex; justify-content:space-between;margin:30px">
-
-  <span class="hdd-tooltip">
-    Hover Right
-    <span class="hdd-tooltip_content is-right">Right tooltip Right tooltip Right tooltip Right tooltip Right tooltip </span>
-  </span>
-
-</div>
-
 ```
 
 ## Mutations
