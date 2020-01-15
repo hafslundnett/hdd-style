@@ -30,6 +30,10 @@ $extra-border-hover: 1px;
 
   // Changes button-text on hover/active/focus
   &:not([disabled]) {
+    &:hover {
+      border: none;
+    }
+
     &:hover:not(:focus) {
       box-shadow: var(--hdd-shadow-strong);
     }
@@ -221,24 +225,32 @@ $extra-border-hover: 1px;
       height: $icon-button-large-height; 
       width: $icon-button-large-height;
       font-size: 9px;
+      position: relative;
 
       i {
         font-size: 24px;
       }
 
-      .hdd-badge-icon {
+      .notification {
+        position: absolute;
         top: calc(#{$icon-badge-size}/-3);
         right: calc(#{$icon-badge-size}/-3);
+        width: $icon-badge-size;
+        height: $icon-badge-size;
+        padding: 0;
+        border-radius: 20px;
+
+        font-family: Helvetica Neue;
+        font-size: 0.75rem;
+        font-weight: bold;
+        line-height: 1.5;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: $icon-badge-size;
-        height: $icon-badge-size;
-        border: none;
-        font-size: 12px;
-        font-family: Helvetica Neue;
-        font-weight: bold;
-        line-height: 15px;
+
+        // Default colors
+        background: var(--hdd-color-danger);
+        color: var(--hdd-color-contrast-danger);
       }
     }
 
@@ -251,6 +263,11 @@ $extra-border-hover: 1px;
       border-color: var(--hdd-color-grey);
       color: var(--hdd-color-grey);
       cursor: not-allowed;
+      
+      .notification {
+        background-color: var(--hdd-color-grey-medium);
+        color: var(--hdd-color-white);
+      }
     }
   }
 }
