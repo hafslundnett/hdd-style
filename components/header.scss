@@ -1,6 +1,5 @@
 $header-height: 66px;
 $header-z-index: 99;
-$header-padding: 0 0.5rem;
 $header-img-size: 40px;
 
 .hdd-header {
@@ -8,10 +7,10 @@ $header-img-size: 40px;
   top: 0;
   height: $header-height;
   width: 100%;
-  padding: $header-padding;
+  padding: 0 var(--hdd-spacing-2);
 
-  background: white;
-  box-shadow: $shadow-medium;
+  background: var(--hdd-color-white);
+  box-shadow: var(--hdd-shadow-medium);
   z-index: $header-z-index;
 
   box-sizing: border-box;
@@ -21,8 +20,6 @@ $header-img-size: 40px;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-
-  padding: 0 var(--hdd-spacing-2);
 
   &_logo {
     flex: 1 1 0%;

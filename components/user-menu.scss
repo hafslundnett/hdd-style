@@ -1,5 +1,6 @@
 $header-img-size: 150px;
 $menu-width: 250px;
+$separator-line-size: 70%;
 
 .hdd-user-menu {
   display: flex;
@@ -10,9 +11,9 @@ $menu-width: 250px;
 
   height: auto;
   width: $menu-width;
-  border-radius: 4px;
+  border-radius: $border-radius;
   background: var(--hdd-color-white);
-  box-shadow: $shadow-strong;
+  box-shadow: var(--hdd-shadow-strong);
   padding: var(--hdd-spacing-3);
 
   &_image {
@@ -30,7 +31,6 @@ $menu-width: 250px;
     background-color: var(--hdd-color-blue);
     width: $header-img-size;
     height: $header-img-size;
-    margin-right: var(--hdd-spacing-1);
     border-radius: 100%;
 
     display: flex;
@@ -63,20 +63,20 @@ $menu-width: 250px;
     position: relative;
     text-align: left;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: var(--hdd-spacing-1) 0;
     &:last-child {
       padding-bottom: 0px;
-    }
-    button {
-      width: 100%;
     }
     &:before {
       content: "";
       display: block;
       position: absolute;
       top: 0;
-      width: 70%;
-      left: 15%;
+      width: $separator-line-size;
+      left: (100% - $separator-line-size) / 2;
       border-top: 1px solid var(--hdd-color-grey-border);
     }
   }

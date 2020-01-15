@@ -14,10 +14,10 @@ This is the user menu to be shown when clicking on your image in the header. Thi
 <div class="hdd-user-menu">
   <img class="hdd-user-menu_image" src="http://placekitten.com/150/150"/>
   <div class="hdd-user-menu_name">
-    Jan Greger Hemb
+    Kevin Martin Haugen
   </div>
   <div class="hdd-user-menu_email">
-    jan.greger@elvia.no
+    kevin.martin@elvia.no
   </div>
   <div class="hdd-user-menu_menu-element">
     <button class="hdd-button has-icon is-transparent"><i class="fal fa-cog"></i>Settings</button>
@@ -49,12 +49,3 @@ This is the user menu to be shown when clicking on your image in the header. Thi
   </div>
 </div>
 ```
-
-
-```user-menu.css hidden
-
-```
-```user-menu-no-img.css hidden
-
-```
-

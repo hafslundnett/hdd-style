@@ -121,7 +121,7 @@ $table-last-column-padding: 1.5rem;
     th {
       position: sticky;
       top: 0; // set this higher if it overlaps with another sticky
-      background: white;
+      background: var(--hdd-color-white);
       z-index: 1;
     }
   }

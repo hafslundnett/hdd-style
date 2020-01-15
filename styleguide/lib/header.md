@@ -3,7 +3,13 @@ name: Header
 category: Components
 ---
 
-The header `hdd-header` should be used on each page, at the top before any content. It should cover the entire with of the screen. The header may contain the logo, page/site title and the active user if any. There are two header user alternatives, one with, and one without a user image. Remove the user part if the site has no login
+The header `hdd-header` should be used on each page, at the top before any content. It should cover the entire with of the screen. The header may contain the logo, page/site title and the active user if any. There are two header user alternatives, one with, and one without a user image. Remove the user part if the site has no login. Clicking on the user image should open the `hdd-user-menu` if possible.
+
+### ✅ When to use: 
+When not using a component library.
+
+### ⛔ When not to use:
+The sign out button should only be used if the user menu can't be used.
 
 ## Header with image
 
@@ -16,7 +22,7 @@ The header `hdd-header` should be used on each page, at the top before any conte
   <div class="hdd-header-user">
     <img class="hdd-header-user_icon-image" src="http://placekitten.com/150/150"/>
     <div class="hdd-header-user_name">
-      Jan Greger Hemb
+      Kevin Martin Haugen
     </div>
     <button class="hdd-button has-icon is-transparent"><i class="fal fa-sign-out"></i>Sign out</button>
   </div>
