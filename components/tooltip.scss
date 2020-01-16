@@ -33,7 +33,7 @@ $tooltip-horizontal-transform: translate(0, -50%);
     color: var(--hdd-color-contrast-font-color);
     padding: 10px var(--hdd-spacing-2);
     border-radius: $border-radius;
-    box-shadow: $shadow-strong;
+    box-shadow: var(--hdd-shadow-strong);
     transition: $short-transition;
 
     // Defaults to is-bottom tooltip if no direction class is applied.
@@ -45,7 +45,7 @@ $tooltip-horizontal-transform: translate(0, -50%);
       top: 50%;
       left: 110%;
       transform: $tooltip-horizontal-transform;
-  
+
       &::after {
         content: "";
         position: absolute;
@@ -126,4 +126,3 @@ $tooltip-horizontal-transform: translate(0, -50%);
     }
   }
 }
-
