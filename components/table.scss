@@ -61,7 +61,6 @@ $table-last-column-padding: 1.5rem;
 
   &_row,
   tr {
-
     &.is-stripe {
       background: var(--hdd-color-blue-light4);
     }
@@ -116,7 +115,6 @@ $table-last-column-padding: 1.5rem;
     border-radius: 5px;
   }
 
-  
   &.is-sticky-header {
     th {
       position: sticky;

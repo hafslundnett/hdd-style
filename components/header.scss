@@ -50,19 +50,18 @@ $header-img-size: 40px;
       height: $header-img-size;
       margin-right: var(--hdd-spacing-1);
       border-radius: 100%;
-			
+
       display: flex;
       align-items: center;
       justify-content: center;
-			
-			color: var(--hdd-color-white);
-			text-transform: uppercase;
+
+      color: var(--hdd-color-white);
+      text-transform: uppercase;
     }
 
-    
     &_name {
       font-size: 1rem;
-			letter-spacing: 0.5px;
+      letter-spacing: 0.5px;
       color: var(--hdd-color-black);
 
       // give space for next if exist
@@ -76,6 +75,5 @@ $header-img-size: 40px;
         display: inline-block;
       }
     }
-
   }
 }
