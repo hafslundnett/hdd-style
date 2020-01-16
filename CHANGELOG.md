@@ -1,6 +1,7 @@
 # Update [6.0.0]
-In this update the buttons have changed visually. 
-Also added new header and removed sidenav, navigation and layout. Either use HAL or the new sidenav.
+In this update the buttons and tooltip have changed visually. 
+
+Also added a new header and removed the sidenav, navigation and layout. Either use the HAL shell or the new header.
 
 
 ## Breaking changes
@@ -14,7 +15,10 @@ Also added new header and removed sidenav, navigation and layout. Either use HAL
 * **Icon-buttons color**
     * Changed from blue to black
 
-### Removed:
+### Tooltip:
+The tooltip has gotten a new design. It has also lost the modifiers `is-leaning-right` and `is-leaning-left`.
+
+### Removed due to new shell:
 * hdd-sidenav
 * hdd-navigation
 * hdd-layout
