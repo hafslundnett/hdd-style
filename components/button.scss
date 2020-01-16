@@ -1,49 +1,56 @@
 $button-radius: $border-radius;
 $button-border-width: 1px;
-$button-padding: 10px 16px;
-$border-button-padding: (10px - $button-border-width) (16px - $button-border-width); // Subtract $button-border-width to match primary button size 
+$extra-border-hover: 1px;
+$button-padding-top-bottom: 10px;
+$button-padding-left-right: 16px;
+$button-padding: $button-padding-top-bottom $button-padding-left-right;
+$button-with-icon-font-size: 1.5rem;
 $icon-button-height: 36px;
-$icon-button-icon-size: 22px;
+$icon-button-font-size: 22px;
+$icon-button-height-with-border: $icon-button-height - $button-border-width; // Subtract width of border to match size of buttons without border 
+$button-font-size: 1rem;
 
-// Ripple effect
+// Subtract width of border to match size of buttons without border 
+@function calculate-padding($border-width){
+  @return (10px - $border-width) (16px - $border-width);
+}
 
-@mixin ripple {
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
+%transparent-properties {
+  border: none;
+  background: transparent;
+  color: var(--hdd-color-font-color);
 
-  &::before {
-    display: none;
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    background-color: var(--hdd-color-blue-light1);
-    width: 30px;
-    height: 30px;
-    z-index: 1;
-    margin-top: -15px;
-    margin-left: -15px;
-    top: 50%;
-    left: 50%;
-    animation: ripple 1s cubic-bezier(0.3, 0.65, 0.47, 0.87);
-    opacity: 0;
+  // Changes button-text on hover/active/focus
+  &:not([disabled]) {
+    &:focus {
+      color: var(--hdd-color-primary);
+      outline: none;
+      background: transparent;
+    }
+
+    &:active,
+    &:hover {
+      color: var(--hdd-color-primary);
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+
+    &:hover:not(:active) {
+      text-shadow: var(--hdd-shadow-strong);
+    }
+
+    &:active {
+      transform: scale(0.9, 0.9); // Click-effect
+    }
   }
+}
 
-  @keyframes ripple {
-    from {
-      opacity: 0.5;
-      transform: scale(1);
-    }
-    to {
-      opacity: 0;
-      transform: scale(10);
-    }
-  }
-
-  &:not([disabled]){
-    &:focus:not(:active)::before {
-      display: block;
-    }
+%secondary-disabled {
+  &[disabled] {
+    border-color: var(--hdd-color-grey);
+    color: var(--hdd-color-grey);
+    cursor: not-allowed;
   }
 }
 
@@ -54,15 +61,18 @@ $icon-button-icon-size: 22px;
   @extend .is-primary;
 
   &.is-primary {
-    @include ripple;
     display: inline-block;
     border: none;
-    padding: $button-padding;
-    letter-spacing: 0.5px;
     border-radius: $button-radius;
+    padding: $button-padding;
+    font-size: $button-font-size;
+    letter-spacing: 0.5px;
     background: var(--hdd-color-primary);
     color: var(--hdd-color-white);
+    min-width: 90px;
+    position: relative;
     cursor: pointer;
+    outline-offset: -1px;
 
     &[disabled] {
       background: var(--hdd-color-grey);
@@ -72,34 +82,34 @@ $icon-button-icon-size: 22px;
 
     // Changes button-text on hover/active/focus
     &:not([disabled]) {
-      &:hover,
-      &:focus,
+      &:hover:not(:focus) {
+        box-shadow: var(--hdd-shadow-strong);
+      }
+
       &:active {
         background: var(--hdd-color-blue-dark);
+        outline: none;
       }
     }
   }
 
   &.is-secondary {
     border: $button-border-width solid var(--hdd-color-primary);
-    padding: $border-button-padding;
+    padding: calculate-padding($button-border-width);
     background: transparent;
     color: var(--hdd-color-primary);
 
-    &[disabled] {
-      border: $button-border-width solid var(--hdd-color-grey);
-      color: var(--hdd-color-grey);
-    }
+    @extend %secondary-disabled;
 
     // Changes button-text on hover/active/focus
     &:not([disabled]) {
       &:hover {
-        background: var(--hdd-color-primary);
-        color: var(--hdd-color-white);
+        box-shadow: var(--hdd-shadow-medium);
+        border: $button-border-width + $extra-border-hover solid var(--hdd-color-primary); // 
+        padding: calculate-padding($button-border-width + $extra-border-hover);
       }
 
-      &:active,
-      &:focus {
+      &:active {
         background: var(--hdd-color-blue-dark);
         color: var(--hdd-color-white);
       }
@@ -110,9 +120,7 @@ $icon-button-icon-size: 22px;
       color: var(--hdd-color-primary) !important;
     }
     
-    &:hover,
-    &:active,
-    &:focus {
+    &:active {
       &.is-loading::after {
         color: var(--hdd-color-white) !important;
       }
@@ -124,9 +132,29 @@ $icon-button-icon-size: 22px;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: calc(1rem + #{$button-with-icon-font-size} + var(--hdd-spacing-1)); // 1rem padding, 1.5rem width of icon, spacing between icon and text
     
     i {
-      padding-right: 9px;
+      position: absolute;
+      left: $button-padding-left-right;
+      font-size: $button-with-icon-font-size;
+    }
+
+    &:not([disabled]) {
+      &:hover {
+        &.is-secondary {
+          padding-left: calc(1rem + #{$button-with-icon-font-size} + var(--hdd-spacing-1) - #{$extra-border-hover}); // Subtract size of extra hover-border
+
+          i {
+            left: $button-padding-left-right - $extra-border-hover; // Subtract size of extra hover-border
+          }
+        }
+      }
+    }
+
+    &.is-transparent {
+      @extend %transparent-properties;
+      @extend %secondary-disabled;
     }
   }
 
@@ -136,11 +164,11 @@ $icon-button-icon-size: 22px;
     @extend .fa-spinner-third;
     // .fal is icon-properties
     @extend .fal;
-    // .is-p is font-properties,  defined in typography.
+    // .is-p is font-properties, defined in typography.
     @extend .is-p;
 
     color: transparent !important;
-    font-size: 16px; // Makes button same size as rest
+    font-size: $button-font-size; 
 
     &::after {
       // Should find a better solution
@@ -158,52 +186,42 @@ $icon-button-icon-size: 22px;
       left: calc(50% - (1em / 2));
 
       color: var(--hdd-color-white);
-      font-size: 1em;
     }
   }
 
   // Buttons with icons only
   &-icon {
-    @include ripple;
     border: $button-border-width solid var(--hdd-color-primary);
     color: var(--hdd-color-primary);
     border-radius: $button-radius;
     background: transparent;
-    height: $icon-button-height - $button-border-width; // Subtract $button-border-width to match primary button size 
-    width: $icon-button-height - $button-border-width; // Subtract $button-border-width to match primary button size
-    font-size: $icon-button-icon-size;
+    height: $icon-button-height-with-border; 
+    width: $icon-button-height-with-border; 
+    font-size: $icon-button-font-size;
     cursor: pointer;
     padding: 0;
+    outline-offset: -1px;
 
-    &[disabled] {
-      border-color: var(--hdd-color-grey);
-      color: var(--hdd-color-grey);
-      cursor: not-allowed;
-    }
+    @extend %secondary-disabled;
 
+    // Changes button-text on hover/active/focus
     &:not([disabled]) {
-      &:hover {
-        background: var(--hdd-color-blue);
+      &:active {
+        background: var(--hdd-color-primary);
         color: var(--hdd-color-white);
+        outline: none;
       }
 
-      &:focus,
-      &:active {
-        background: var(--hdd-color-blue-dark);
-        color: var(--hdd-color-white);
+      &:hover {
+        box-shadow: var(--hdd-shadow-medium);
+        border: $button-border-width + $extra-border-hover solid var(--hdd-color-primary); 
       }
     }
 
     &.is-transparent {
-      border: none;
-      background: none;
+      @extend %transparent-properties;
 
-      &:focus,
-      &:active,
-      &:hover {
-        background: none;
-        color: var(--hdd-color-primary);
-      }
+      height: $icon-button-height; 
     }
 
     &.is-no-padding {

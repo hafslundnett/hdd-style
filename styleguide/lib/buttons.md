@@ -7,16 +7,22 @@ The buttons are to be used across the various internal systems. If there is only
 
 Changing the color of a button to convey purpose is not ideal as people with vision impairments may struggle. Usage of other colors should be properly discussed and the context clear.
 
+### ✅ When to use: 
+The buttons should be used for clickable actions. 
+
+### ⛔ When not to use:
+When an action does not require a button. For example, during navigation a link should be used instead.
+
+
 ## Primary button
 `hdd-button`
 
 If only one button exists on a page, it should always be a primary button. 
 
 ```primary-button.html
-<button class="hdd-button button-margin">Primary</button>
-<button class="hdd-button button-margin" disabled>Disabled</button>
-<button class="hdd-button is-loading button-margin">Loading</button>
-<button class="hdd-button has-icon"><i class="fal fa-cog"></i>Icon button</button>
+<button class="hdd-button">Primary</button>
+<button class="hdd-button" disabled>Disabled</button>
+<button class="hdd-button is-loading">Loading</button>
 ```
 
 ## Secondary button
@@ -25,38 +31,68 @@ If only one button exists on a page, it should always be a primary button.
 The secondary button should never be used alone on a page.
 
 ```secondary-button.html
-<button class="hdd-button is-secondary button-margin">Secondary</button>
-<button class="hdd-button is-secondary button-margin" disabled>Disabled</button>
-<button class="hdd-button is-secondary is-loading button-margin">Loading</button>
-<button class="hdd-button has-icon is-secondary"><i class="fal fa-cog"></i>Icon button</button>
+<button class="hdd-button is-secondary">Secondary</button>
+<button class="hdd-button is-secondary" disabled>Disabled</button>
+<button class="hdd-button is-secondary is-loading">Loading</button>
 ```
 
-## Icon buttons
+## Buttons with icon
+`hdd-button`
+
+The buttons are all the same size.
+
+```with-icon-button.html
+<div>
+  <button class="hdd-button has-icon"><i class="fal fa-cog"></i>Icon button</button>
+  <button class="hdd-button has-icon" disabled><i class="fal fa-cog"></i>Icon button</button>
+</div>
+<div style="margin-top:8px;">
+  <button class="hdd-button has-icon is-secondary"><i class="fal fa-cog"></i>Icon button</button>
+  <button class="hdd-button has-icon is-secondary" disabled><i class="fal fa-cog"></i>Icon button</button>
+</div>
+<div style="margin-top:8px;">
+  <button class="hdd-button has-icon is-transparent"><i class="fal fa-cog"></i>Icon button</button>
+  <button class="hdd-button has-icon is-transparent" disabled><i class="fal fa-cog"></i>Icon button</button>
+</div>
+```
+
+## Icon only buttons
 `hdd-button-icon`
 
 
 ```icon-button.html
-<button class="hdd-button-icon button-margin"><i class="fal fa-plus-circle"></i></button>
-<button class="hdd-button-icon button-margin" disabled><i class="fal fa-plus-circle"></i></button>
-<button class="hdd-button-icon button-margin"><i class="fal fa-arrow-right"></i></button>
-<button class="hdd-button-icon button-margin" disabled><i class="fal fa-arrow-right"></i></button>
-<button class="hdd-button-icon is-transparent button-margin"><i class="fal fa-cog"></i></button>
-<button class="hdd-button-icon is-transparent is-no-padding"><i class="fal fa-cog"></i></button>
+<div>
+  <button class="hdd-button-icon"><i class="fal fa-plus-circle"></i></button>
+  <button class="hdd-button-icon" disabled><i class="fal fa-plus-circle"></i></button>
+  <button class="hdd-button-icon"><i class="fal fa-arrow-right"></i></button>
+  <button class="hdd-button-icon" disabled><i class="fal fa-arrow-right"></i></button>
+</div>
+<div style="margin-top:8px;">
+  <button class="hdd-button-icon is-transparent"><i class="fal fa-cog"></i></button>
+  <button class="hdd-button-icon is-transparent" disabled><i class="fal fa-cog"></i></button>
+  <button class="hdd-button-icon is-transparent is-no-padding"><i class="fal fa-arrow-right"></i></button>
+  <button class="hdd-button-icon is-transparent is-no-padding" disabled><i class="fal fa-arrow-right"></i></button>
+</div>
 ```
 
 ```primary-button.css  hidden
-.button-margin {
-  margin-right: var(--hdd-spacing-1)
+.hdd-button {
+  margin: 4px; 
 }
 ```
 ```secondary-button.css  hidden
-.button-margin {
-  margin-right: var(--hdd-spacing-1)
+.hdd-button {
+  margin: 4px;
+}
+```
+```with-icon-button.css  hidden
+.hdd-button {
+  margin: 4px;
 }
 ```
 ```icon-button.css  hidden
-.button-margin {
-  margin-right: var(--hdd-spacing-1)
+.hdd-button-icon {
+  margin: 4px;
 }
 ```
 

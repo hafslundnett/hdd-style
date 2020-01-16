@@ -1,0 +1,28 @@
+// breakpoints are not variables on purpose
+@mixin breakpoint-up($size) {
+  @if $size == Venus {
+    @media (min-width: 576px) {
+      @content;
+    }
+  } @else if $size == Earth {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $size == Mars {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  } @else if $size == Jupiter {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $size == Saturn {
+    @media (min-width: 1440px) {
+      @content;
+    }
+  } @else if $size == Uranus {
+    @media (min-width: 1920px) {
+      @content;
+    } // or 1880?
+  }
+}
