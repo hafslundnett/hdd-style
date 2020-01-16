@@ -57,7 +57,7 @@ A table can consist out of data, buttons and icons. A table row can also have a 
 `hdd-table`
 
 ```table-sticky-header.html
-<div class="example-container">
+<div class="example-container-to-force-scroll">
   <table class="hdd-table is-striped has-shadow is-sticky-header">
     <tr class="hdd-table_header">
       <th>ID<i class="far fa-arrow-up"></i></th>
@@ -126,7 +126,7 @@ A table can consist out of data, buttons and icons. A table row can also have a 
 ```
 
 ```table-sticky-header.css  hidden
-.example-container {
+.example-container-to-force-scroll {
   height: 200px; 
   overflow: auto;
 }
