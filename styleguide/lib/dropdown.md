@@ -18,7 +18,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
   <div class="hdd-dropdown_content is-active">
     <div class="hdd-dropdown_content_item is-active"><b>Jer</b>oen</div>
     <div class="hdd-dropdown_content_item">Stian</div>
-    <div class="hdd-dropdown_content_item no-hover">Erik</div>
+    <div class="hdd-dropdown_content_item">Erik</div>
   </div>
 </div>
 <div style="margin:20px">
