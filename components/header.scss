@@ -1,0 +1,83 @@
+$header-height: 66px;
+$header-z-index: 99;
+$header-img-size: 40px;
+
+.hdd-header {
+  position: sticky;
+  top: 0;
+  height: $header-height;
+  width: 100%;
+  padding: 0 var(--hdd-spacing-2);
+
+  background: var(--hdd-color-white);
+  box-shadow: var(--hdd-shadow-medium);
+  z-index: $header-z-index;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+  &_logo {
+    flex: 1 1 0%;
+    display: flex;
+    align-items: center;
+  }
+  &_title {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0px 1rem;
+  }
+  &-user {
+    flex: 1 1 0%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &_icon-image {
+      width: $header-img-size;
+      height: $header-img-size;
+      margin-right: var(--hdd-spacing-1);
+      border-radius: 100%;
+
+      background: var(--hdd-color-grey-light);
+      background-position: center;
+    }
+
+    &_icon-no-image {
+      background-color: var(--hdd-color-blue);
+      width: $header-img-size;
+      height: $header-img-size;
+      margin-right: var(--hdd-spacing-1);
+      border-radius: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: var(--hdd-color-white);
+      text-transform: uppercase;
+    }
+
+    &_name {
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+      color: var(--hdd-color-black);
+
+      // give space for next if exist
+      &:not(:last-child) {
+        margin-right: var(--hdd-spacing-1);
+      }
+
+      // hide when small screen
+      display: none;
+      @include breakpoint-up(Earth) {
+        display: inline-block;
+      }
+    }
+  }
+}

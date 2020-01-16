@@ -64,12 +64,12 @@ The buttons are all the same size.
 <div>
   <button class="hdd-button-icon"><i class="fal fa-plus-circle"></i></button>
   <button class="hdd-button-icon" disabled><i class="fal fa-plus-circle"></i></button>
-  <button class="hdd-button-icon"><i class="fal fa-arrow-right"></i></button>
-  <button class="hdd-button-icon" disabled><i class="fal fa-arrow-right"></i></button>
 </div>
 <div style="margin-top:8px;">
   <button class="hdd-button-icon is-transparent"><i class="fal fa-cog"></i></button>
   <button class="hdd-button-icon is-transparent" disabled><i class="fal fa-cog"></i></button>
+</div>
+<div style="margin-top:8px;">
   <button class="hdd-button-icon is-transparent is-no-padding"><i class="fal fa-arrow-right"></i></button>
   <button class="hdd-button-icon is-transparent is-no-padding" disabled><i class="fal fa-arrow-right"></i></button>
 </div>

@@ -3,8 +3,8 @@
 
 	<head>
 		<style>
-					.hdd-button-icon {
-  margin: 4px;
+					header {
+  margin-bottom: 30px;
 }
 		</style>
 
@@ -56,64 +56,42 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div>
-  <button class="hdd-button-icon"><i class="fal fa-plus-circle"></i></button>
-  <button class="hdd-button-icon" disabled><i class="fal fa-plus-circle"></i></button>
-</div>
-<div style="margin-top:8px;">
-  <button class="hdd-button-icon is-transparent"><i class="fal fa-cog"></i></button>
-  <button class="hdd-button-icon is-transparent" disabled><i class="fal fa-cog"></i></button>
-</div>
-<div style="margin-top:8px;">
-  <button class="hdd-button-icon is-transparent is-no-padding"><i class="fal fa-arrow-right"></i></button>
-  <button class="hdd-button-icon is-transparent is-no-padding" disabled><i class="fal fa-arrow-right"></i></button>
-</div>
-<div style="margin-top:8px;">
-  <button class="hdd-button-icon is-xl">
-    <i class="fal fa-comment"></i>
-    Kommentar
-  </button>
-  <button class="hdd-button-icon is-xl" disabled>
-    <i class="fal fa-comment"></i>
-    Kommentar
-  </button>
-  <button class="hdd-button-icon is-xl">
-    <i class="fal fa-comment"></i>
-    Kommentar
-    <span class="notification">2</span>
-  </button>
-</div>
+    
+<header class="hdd-header">
+  <a class="hdd-header_logo" href="#">
+    <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
+  </a>
+  <h1 class="hdd-header_title">Overview</h1>
+  <div class="hdd-header-user">
+    <div class="hdd-header-user_icon-no-image">
+      TT
+    </div>
+    <div class="hdd-header-user_name">
+      Tim Tom
+    </div>
+    <button class="hdd-button has-icon is-transparent"><i class="fal fa-sign-out"></i>Sign out</button>
+  </div>
+</header>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div>
-  <button class="hdd-button-icon"><i class="fal fa-plus-circle"></i></button>
-  <button class="hdd-button-icon" disabled><i class="fal fa-plus-circle"></i></button>
-</div>
-<div style="margin-top:8px;">
-  <button class="hdd-button-icon is-transparent"><i class="fal fa-cog"></i></button>
-  <button class="hdd-button-icon is-transparent" disabled><i class="fal fa-cog"></i></button>
-</div>
-<div style="margin-top:8px;">
-  <button class="hdd-button-icon is-transparent is-no-padding"><i class="fal fa-arrow-right"></i></button>
-  <button class="hdd-button-icon is-transparent is-no-padding" disabled><i class="fal fa-arrow-right"></i></button>
-</div>
-<div style="margin-top:8px;">
-  <button class="hdd-button-icon is-xl">
-    <i class="fal fa-comment"></i>
-    Kommentar
-  </button>
-  <button class="hdd-button-icon is-xl" disabled>
-    <i class="fal fa-comment"></i>
-    Kommentar
-  </button>
-  <button class="hdd-button-icon is-xl">
-    <i class="fal fa-comment"></i>
-    Kommentar
-    <span class="notification">2</span>
-  </button>
-</div></script>
-			<script type="text/x-stylemark" data-language="css">.hdd-button-icon {
-  margin: 4px;
+			<script type="text/x-stylemark" data-language="html">
+<header class="hdd-header">
+  <a class="hdd-header_logo" href="#">
+    <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
+  </a>
+  <h1 class="hdd-header_title">Overview</h1>
+  <div class="hdd-header-user">
+    <div class="hdd-header-user_icon-no-image">
+      TT
+    </div>
+    <div class="hdd-header-user_name">
+      Tim Tom
+    </div>
+    <button class="hdd-button has-icon is-transparent"><i class="fal fa-sign-out"></i>Sign out</button>
+  </div>
+</header></script>
+			<script type="text/x-stylemark" data-language="css">header {
+  margin-bottom: 30px;
 }</script>
 
 		<!--
@@ -147,10 +125,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-button-icon-button', []);
+						module = angular.module('stylemark-header-header-no-img', []);
 					}
 
-					module.controller('stylemark-button-icon-button-' + index, function($scope) {
+					module.controller('stylemark-header-header-no-img-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

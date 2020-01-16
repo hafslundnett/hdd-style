@@ -24,7 +24,6 @@
 						<option disabled selected>Go to…</option>
 							<optgroup label="Getting started">
 									<option value="introduction">Introduction</option>
-									<option value="layout">Layout</option>
 									<option value="layout-grid">Layout Grid</option>
 									<option value="naming-guidelines">Naming guidelines</option>
 							</optgroup>
@@ -33,12 +32,14 @@
 									<option value="button">Button</option>
 									<option value="cards">Cards</option>
 									<option value="feedback-message">Feedback message</option>
+									<option value="header">Header</option>
 									<option value="links">Links</option>
 									<option value="notification-dot">Notification dot</option>
 									<option value="small-menu">Small menu</option>
 									<option value="table">Table</option>
 									<option value="tags">Tags</option>
 									<option value="tooltip">Tooltip</option>
+									<option value="user-menu">User menu</option>
 							</optgroup>
 							<optgroup label="Form-Components">
 									<option value="checkbox">Checkbox</option>
@@ -47,10 +48,6 @@
 									<option value="radio-button">Radio button</option>
 									<option value="search-fields">Search fields</option>
 									<option value="select">Select</option>
-							</optgroup>
-							<optgroup label="Layout-Components">
-									<option value="navigation">Navigation</option>
-									<option value="sidenav">Sidenav</option>
 							</optgroup>
 							<optgroup label="Colors">
 									<option value="colors">Colors</option>
@@ -110,152 +107,6 @@
 <p>This will open the styleguide in your browser and refresh on changes.</p>
 <div id="changelog" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#changelog" class="icon-link i-section__link -heading"></a>Changelog</h2></div><p>Please read the changelog <a href="https://github.com/hafslundnett/hdd-style/blob/master/CHANGELOG.md">here</a> to keep up to date with breaking changes released with new updates. </p>
 </div>
-</div>
-
-						<div id="layout" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">Layout</h1>
-	<span class="theme-content-element-source">
-		<span class="theme-content-element-source-label">Source:</span>
-		<span class="theme-content-element-source-path">layout.md</span>
-	</span>
-	<div class="theme-content-element-description"><p>It is advised to add the <code>hdd-layout</code> block around your project page. The <code>hdd-layout</code> block can help you save space around your content container for elements like sidebars or navigation. <code>hdd-layout</code> has one default child element which is called <code>content</code>. This element should contain the content that you want to show on the page. The <code>content</code> child element fill the remaining free space on the page by default.</p>
-<div id="layout" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#layout" class="icon-link i-section__link -heading"></a>Layout</h2></div><p><code>hdd-layout</code>, <code>hdd-layout_sidenav</code>, <code>hdd-layout_content</code>, <code>hdd-layout_navigation</code></p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="layout-layout.html"
-                            target="_blank"
-                            class="plain-link"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Open in a new window"
-                        >
-                            <i class="fa fa-external-link-square fa-fw"></i>
-                            Example
-                        </a>
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="layout-layout.html"
-                            data-initinview="true"
-                            data-title="Loading..." 
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-layout&quot;&gt;
-
-  &lt;nav class=&quot;hdd-layout_sidenav&quot;&gt;
-    &lt;div class=&quot;hdd-sidenav&quot;&gt;
-      &lt;a class=&quot;hdd-sidenav_logo&quot; href=&quot;#&quot;&gt;
-        &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
-      &lt;/a&gt;
-      &lt;ul class=&quot;hdd-sidenav_list&quot;&gt;
-        &lt;li&gt;
-          &lt;a href=&quot;#&quot; class=&quot;hdd-sidenav_list_item &quot;&gt;
-            &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
-              &lt;i class=&quot;fal fa-chart-pie&quot;&gt;&lt;/i&gt;
-            &lt;/span&gt;
-            &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
-              &lt;span&gt;Oversikt&lt;/span&gt;
-            &lt;/span&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/nav&gt;
-
-  &lt;div class=&quot;hdd-layout_content&quot;&gt;
-    &lt;header class=&quot;hdd-layout_navigation&quot;&gt;
-      &lt;div class=&quot;hdd-navigation&quot;&gt;
-        &lt;h1 class=&quot;hdd-navigation_title&quot;&gt;Overview&lt;/h1&gt;
-      &lt;/div&gt;
-    &lt;/header&gt;
-
-    &lt;div style=&quot;padding: 20px&quot;&gt;
-      My content...
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-layout&quot;&gt;
-
-  &lt;nav class=&quot;hdd-layout_sidenav&quot;&gt;
-    &lt;div class=&quot;hdd-sidenav&quot;&gt;
-      &lt;a class=&quot;hdd-sidenav_logo&quot; href=&quot;#&quot;&gt;
-        &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
-      &lt;/a&gt;
-      &lt;ul class=&quot;hdd-sidenav_list&quot;&gt;
-        &lt;li&gt;
-          &lt;a href=&quot;#&quot; class=&quot;hdd-sidenav_list_item &quot;&gt;
-            &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
-              &lt;i class=&quot;fal fa-chart-pie&quot;&gt;&lt;/i&gt;
-            &lt;/span&gt;
-            &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
-              &lt;span&gt;Oversikt&lt;/span&gt;
-            &lt;/span&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/nav&gt;
-
-  &lt;div class=&quot;hdd-layout_content&quot;&gt;
-    &lt;header class=&quot;hdd-layout_navigation&quot;&gt;
-      &lt;div class=&quot;hdd-navigation&quot;&gt;
-        &lt;h1 class=&quot;hdd-navigation_title&quot;&gt;Overview&lt;/h1&gt;
-      &lt;/div&gt;
-    &lt;/header&gt;
-
-    &lt;div style=&quot;padding: 20px&quot;&gt;
-      My content...
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;/div&gt;</code></pre>
-	</div>
-</div><div id="extending-hdd-layout" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#extending-hdd-layout" class="icon-link i-section__link -heading"></a>Extending hdd-layout</h2></div><p>When wanting to add your block to the <code>hdd-layout</code> block please extend the <code>hdd-layout</code> class in your own block.
-Below is a example of how to achieve this with sass.</p>
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang "> sass</button>
-	<div class="i-code-block__content ">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".hdd-block {
-  $width: 100px;
-  width: $width;
-
-  @at-root {
-    .hdd-layout_block {
-      width: $width;
-    }
-  }
-
-  &amp;:hover {
-    width: $width + 50px;
-  }
-}">Copy</button>
-		<pre class="mb-0"><code class="lang-">.hdd-block {
-  $width: 100px;
-  width: $width;
-
-  @at-root {
-    .hdd-layout_block {
-      width: $width;
-    }
-  }
-
-  &amp;:hover {
-    width: $width + 50px;
-  }
-}</code></pre>
-	</div>
-</div></div>
 </div>
 
 						<div id="layout-grid" class="i-library theme-content-element">
@@ -630,12 +481,12 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
   &lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
   &lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-  &lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-  &lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;/div&gt;
 &lt;div style=&quot;margin-top:8px;&quot;&gt;
   &lt;button class=&quot;hdd-button-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
   &lt;button class=&quot;hdd-button-icon is-transparent&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:8px;&quot;&gt;
   &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
   &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;/div&gt;
@@ -657,12 +508,12 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 		<pre class="mb-0"><code class="lang-">&lt;div&gt;
   &lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
   &lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-  &lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-  &lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;/div&gt;
 &lt;div style=&quot;margin-top:8px;&quot;&gt;
   &lt;button class=&quot;hdd-button-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
   &lt;button class=&quot;hdd-button-icon is-transparent&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:8px;&quot;&gt;
   &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
   &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;/div&gt;
@@ -1175,6 +1026,136 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <td style="text-align:left">Sets the given feedback to the error state</td>
 </tr>
 </tbody></table></div>
+</div>
+
+						<div id="header" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Header</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">header.md</span>
+	</span>
+	<div class="theme-content-element-description"><p>The header <code>hdd-header</code> should be used on each page, at the top before any content. It should cover the entire with of the screen. The header may contain the logo, page/site title and the active user if any. There are two header user alternatives, one with, and one without a user image. Remove the user part if the site has no login. Clicking on the user image should open the <code>hdd-user-menu</code> if possible.</p>
+<h3>✅ When to use:</h3><p>When not using a component library.</p>
+<h3>⛔ When not to use:</h3><p>The sign out button should only be used if the user menu can&#39;t be used.</p>
+<div id="header-with-image" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#header-with-image" class="icon-link i-section__link -heading"></a>Header with image</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="header-header.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="header-header.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;header class=&quot;hdd-header&quot;&gt;
+  &lt;a class=&quot;hdd-header_logo&quot; href=&quot;#&quot;&gt;
+    &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
+  &lt;/a&gt;
+  &lt;h1 class=&quot;hdd-header_title&quot;&gt;Overview&lt;/h1&gt;
+  &lt;div class=&quot;hdd-header-user&quot;&gt;
+    &lt;img class=&quot;hdd-header-user_icon-image&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
+    &lt;div class=&quot;hdd-header-user_name&quot;&gt;
+      Kevin Martin Haugen
+    &lt;/div&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/header&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;header class=&quot;hdd-header&quot;&gt;
+  &lt;a class=&quot;hdd-header_logo&quot; href=&quot;#&quot;&gt;
+    &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
+  &lt;/a&gt;
+  &lt;h1 class=&quot;hdd-header_title&quot;&gt;Overview&lt;/h1&gt;
+  &lt;div class=&quot;hdd-header-user&quot;&gt;
+    &lt;img class=&quot;hdd-header-user_icon-image&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
+    &lt;div class=&quot;hdd-header-user_name&quot;&gt;
+      Kevin Martin Haugen
+    &lt;/div&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+	</div>
+</div><div id="header-without-image" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#header-without-image" class="icon-link i-section__link -heading"></a>Header without image</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="header-header-no-img.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="header-header-no-img.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="
+&lt;header class=&quot;hdd-header&quot;&gt;
+  &lt;a class=&quot;hdd-header_logo&quot; href=&quot;#&quot;&gt;
+    &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
+  &lt;/a&gt;
+  &lt;h1 class=&quot;hdd-header_title&quot;&gt;Overview&lt;/h1&gt;
+  &lt;div class=&quot;hdd-header-user&quot;&gt;
+    &lt;div class=&quot;hdd-header-user_icon-no-image&quot;&gt;
+      TT
+    &lt;/div&gt;
+    &lt;div class=&quot;hdd-header-user_name&quot;&gt;
+      Tim Tom
+    &lt;/div&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/header&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">
+&lt;header class=&quot;hdd-header&quot;&gt;
+  &lt;a class=&quot;hdd-header_logo&quot; href=&quot;#&quot;&gt;
+    &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
+  &lt;/a&gt;
+  &lt;h1 class=&quot;hdd-header_title&quot;&gt;Overview&lt;/h1&gt;
+  &lt;div class=&quot;hdd-header-user&quot;&gt;
+    &lt;div class=&quot;hdd-header-user_icon-no-image&quot;&gt;
+      TT
+    &lt;/div&gt;
+    &lt;div class=&quot;hdd-header-user_name&quot;&gt;
+      Tim Tom
+    &lt;/div&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+	</div>
+</div></div>
 </div>
 
 						<div id="links" class="i-library theme-content-element">
@@ -1957,6 +1938,141 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 </tbody></table></div>
 </div>
 
+						<div id="user-menu" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">User menu</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">user-menu.md</span>
+	</span>
+	<div class="theme-content-element-description"><p>⚠️ This is a low level building block, and should be automated in a component library, but can be used directly if you want full control.</p>
+<p>This is the user menu to be shown when clicking on your image in the header. This component should be linked to the header in a component library.</p>
+<div id="user-menu-with-image" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#user-menu-with-image" class="icon-link i-section__link -heading"></a>User Menu with image</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="user-menu-user-menu.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="user-menu-user-menu.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-user-menu&quot;&gt;
+  &lt;img class=&quot;hdd-user-menu_image&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
+  &lt;div class=&quot;hdd-user-menu_name&quot;&gt;
+    Kevin Martin Haugen
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_email&quot;&gt;
+    kevin.martin@elvia.no
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Settings&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-user-menu&quot;&gt;
+  &lt;img class=&quot;hdd-user-menu_image&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
+  &lt;div class=&quot;hdd-user-menu_name&quot;&gt;
+    Kevin Martin Haugen
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_email&quot;&gt;
+    kevin.martin@elvia.no
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Settings&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><div id="user-menu-without-image" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#user-menu-without-image" class="icon-link i-section__link -heading"></a>User Menu without image</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="user-menu-user-menu-no-img.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="user-menu-user-menu-no-img.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-user-menu&quot;&gt;
+  &lt;div class=&quot;hdd-user-menu_initials&quot;&gt;
+    TT
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_name&quot;&gt;
+    Tim Tom
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_email&quot;&gt;
+    tt@elvia.no
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Settings&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-user-menu&quot;&gt;
+  &lt;div class=&quot;hdd-user-menu_initials&quot;&gt;
+    TT
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_name&quot;&gt;
+    Tim Tom
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_email&quot;&gt;
+    tt@elvia.no
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Settings&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 				</div>
 				<div id="category-form-components" class="theme-content-category">
 						<div id="checkbox" class="i-library theme-content-element">
@@ -2689,237 +2805,6 @@ Dropdown should be used if the user wants a recommended selection out of all the
 <tr>
 <td style="text-align:left"><code>is-invalid</code></td>
 <td style="text-align:left">Set the select to it&#39;s invalid state</td>
-</tr>
-</tbody></table></div>
-</div>
-
-				</div>
-				<div id="category-layout-components" class="theme-content-category">
-						<div id="navigation" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">Navigation</h1>
-	<span class="theme-content-element-source">
-		<span class="theme-content-element-source-label">Source:</span>
-		<span class="theme-content-element-source-path">navigation.md</span>
-	</span>
-	<div class="theme-content-element-description"><blockquote>
-<p>🚧 It is advised to place the <code>hdd-navigation</code> in the <code>hdd-layout</code> block wrapped as an <code>hdd-layout_navigation</code> element. </p>
-</blockquote>
-<div id="navigation" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#navigation" class="icon-link i-section__link -heading"></a>Navigation</h2></div><p><code>hdd-layout_navigation</code></p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="navigation-navigation.html"
-                            target="_blank"
-                            class="plain-link"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Open in a new window"
-                        >
-                            <i class="fa fa-external-link-square fa-fw"></i>
-                            Example
-                        </a>
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="navigation-navigation.html"
-                            data-initinview="true"
-                            data-title="Loading..." 
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;header class=&quot;hdd-layout_navigation&quot;&gt;
-  &lt;div class=&quot;hdd-navigation&quot;&gt;
-    &lt;a class=&quot;hdd-navigation_logo&quot; href=&quot;#&quot;&gt;
-      &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
-    &lt;/a&gt;
-    &lt;h1 class=&quot;hdd-navigation_title&quot;&gt;Overview&lt;/h1&gt;
-
-    &lt;div class=&quot;hdd-navigation_user&quot;&gt;
-      &lt;div class=&quot;hdd-small-menu&quot;&gt;
-        &lt;span class=&quot;hdd-small-menu_title&quot;&gt;Kari Nordmann&lt;/span&gt;
-        &lt;ul class=&quot;hdd-small-menu_list is-active has-arrow-right&quot;&gt;
-          &lt;li class=&quot;hdd-small-menu_list_item&quot;&gt;&lt;i class=&quot;fal fa-user&quot;&gt;&lt;/i&gt;Profile&lt;/li&gt;
-          &lt;li class=&quot;hdd-small-menu_list_item&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Logout&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;img class=&quot;hdd-navigation_avatar&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/header&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;header class=&quot;hdd-layout_navigation&quot;&gt;
-  &lt;div class=&quot;hdd-navigation&quot;&gt;
-    &lt;a class=&quot;hdd-navigation_logo&quot; href=&quot;#&quot;&gt;
-      &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
-    &lt;/a&gt;
-    &lt;h1 class=&quot;hdd-navigation_title&quot;&gt;Overview&lt;/h1&gt;
-
-    &lt;div class=&quot;hdd-navigation_user&quot;&gt;
-      &lt;div class=&quot;hdd-small-menu&quot;&gt;
-        &lt;span class=&quot;hdd-small-menu_title&quot;&gt;Kari Nordmann&lt;/span&gt;
-        &lt;ul class=&quot;hdd-small-menu_list is-active has-arrow-right&quot;&gt;
-          &lt;li class=&quot;hdd-small-menu_list_item&quot;&gt;&lt;i class=&quot;fal fa-user&quot;&gt;&lt;/i&gt;Profile&lt;/li&gt;
-          &lt;li class=&quot;hdd-small-menu_list_item&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Logout&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;img class=&quot;hdd-navigation_avatar&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/header&gt;</code></pre>
-	</div>
-</div></div>
-</div>
-
-						<div id="sidenav" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">Sidenav</h1>
-	<span class="theme-content-element-source">
-		<span class="theme-content-element-source-label">Source:</span>
-		<span class="theme-content-element-source-path">navbar.md</span>
-	</span>
-	<div class="theme-content-element-description"><p>The navigation floats on top of all elements with a z-index of 99. The z-index value is defined in the sizes variable file. When the navigation is hovered or the hover trigger class is added will the navigation expand and show the assigned label text to each list element.</p>
-<blockquote>
-<p>🚧 It is advised to place the <code>hdd-sidenav</code> in the <code>hdd-layout</code> block wrapped as an <code>hdd-layout_sidenav</code> element. </p>
-</blockquote>
-<div id="sidenav" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#sidenav" class="icon-link i-section__link -heading"></a>Sidenav</h2></div><p><code>hdd-layout_sidenav</code></p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="sidenav-nav.html"
-                            target="_blank"
-                            class="plain-link"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Open in a new window"
-                        >
-                            <i class="fa fa-external-link-square fa-fw"></i>
-                            Example
-                        </a>
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="sidenav-nav.html"
-                            data-initinview="true"
-                            data-title="Loading..." 
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;nav class=&quot;hdd-layout_sidenav&quot;&gt;
-  &lt;div class=&quot;hdd-sidenav&quot;&gt;
-    &lt;a class=&quot;hdd-sidenav_logo&quot; href=&quot;#&quot;&gt;
-      &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
-    &lt;/a&gt;
-
-    &lt;ul class=&quot;hdd-sidenav_list&quot;&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#&quot; class=&quot;hdd-sidenav_list_item&quot; accesskey=&quot;s&quot;&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
-            &lt;i class=&quot;fal fa-chart-pie&quot;&gt;&lt;span class=&quot;hdd-badge-icon&quot;&gt;&lt;/span&gt;&lt;/i&gt;
-          &lt;/span&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
-            &lt;span&gt;Oversikt&lt;/span&gt;
-            &lt;span class=&quot;hdd-badge&quot;&gt;2&lt;/span&gt;
-          &lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/li&gt;
-
-      &lt;li&gt;
-        &lt;a class=&quot;hdd-sidenav_list_item&quot; href=&quot;#&quot;&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
-            &lt;i class=&quot;fal fa-clipboard-list&quot;&gt;&lt;/i&gt;
-          &lt;/span&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
-            &lt;span&gt;Mine åpne saker&lt;/span&gt;
-          &lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/li&gt;
-
-      &lt;li&gt;
-        &lt;a class=&quot;hdd-sidenav_list_item&quot; href=&quot;#&quot;&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
-            &lt;i class=&quot;fal fa-map-pin&quot;&gt;&lt;/i&gt;
-          &lt;/span&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
-            &lt;span&gt;Kart&lt;/span&gt;
-          &lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-&lt;/nav&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;nav class=&quot;hdd-layout_sidenav&quot;&gt;
-  &lt;div class=&quot;hdd-sidenav&quot;&gt;
-    &lt;a class=&quot;hdd-sidenav_logo&quot; href=&quot;#&quot;&gt;
-      &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
-    &lt;/a&gt;
-
-    &lt;ul class=&quot;hdd-sidenav_list&quot;&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#&quot; class=&quot;hdd-sidenav_list_item&quot; accesskey=&quot;s&quot;&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
-            &lt;i class=&quot;fal fa-chart-pie&quot;&gt;&lt;span class=&quot;hdd-badge-icon&quot;&gt;&lt;/span&gt;&lt;/i&gt;
-          &lt;/span&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
-            &lt;span&gt;Oversikt&lt;/span&gt;
-            &lt;span class=&quot;hdd-badge&quot;&gt;2&lt;/span&gt;
-          &lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/li&gt;
-
-      &lt;li&gt;
-        &lt;a class=&quot;hdd-sidenav_list_item&quot; href=&quot;#&quot;&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
-            &lt;i class=&quot;fal fa-clipboard-list&quot;&gt;&lt;/i&gt;
-          &lt;/span&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
-            &lt;span&gt;Mine åpne saker&lt;/span&gt;
-          &lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/li&gt;
-
-      &lt;li&gt;
-        &lt;a class=&quot;hdd-sidenav_list_item&quot; href=&quot;#&quot;&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
-            &lt;i class=&quot;fal fa-map-pin&quot;&gt;&lt;/i&gt;
-          &lt;/span&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
-            &lt;span&gt;Kart&lt;/span&gt;
-          &lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-&lt;/nav&gt;</code></pre>
-	</div>
-</div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-sidenav</code>:</strong></p>
-<table class="table"><thead><tr>
-<th style="text-align:left">class</th>
-<th style="text-align:left">description</th>
-</tr>
-</thead><tbody><tr>
-<td style="text-align:left"><code>no-hover</code></td>
-<td style="text-align:left">Disable the <code>:hover</code> state</td>
-</tr>
-</tbody></table><p><strong><code>hdd-sidenav_list_item</code>:</strong></p>
-<table class="table"><thead><tr>
-<th style="text-align:left">class</th>
-<th style="text-align:left">description</th>
-</tr>
-</thead><tbody><tr>
-<td style="text-align:left"><code>is-active</code></td>
-<td style="text-align:left">Set the given hdd-sidenav_list_item to it&#39;s active state</td>
 </tr>
 </tbody></table></div>
 </div>
@@ -3896,7 +3781,7 @@ In the internal design system SVG files from Streamline light must be used.
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Introduction  Layout  Layout Grid  Naming guidelines "
+							data-filter-value=" Introduction  Layout Grid  Naming guidelines "
 						>
 							<a href="#category-getting started" class="i-sidebar-list-item">
 								<b>Getting started</b>
@@ -3910,13 +3795,6 @@ In the internal design system SVG files from Streamline light must be used.
 									data-filter-value="Introduction"
 								>
 									<span>Introduction</span>
-								</a>
-								<a
-									href="#layout"
-									class="i-sidebar-list-item theme-sidebar-element"
-									data-filter-value="Layout"
-								>
-									<span>Layout</span>
 								</a>
 								<a
 									href="#layout-grid"
@@ -3939,7 +3817,7 @@ In the internal design system SVG files from Streamline light must be used.
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Badge  Button  Cards  Feedback message  Links  Notification dot  Small menu  Table  Tags  Tooltip "
+							data-filter-value=" Badge  Button  Cards  Feedback message  Header  Links  Notification dot  Small menu  Table  Tags  Tooltip  User menu "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -3974,6 +3852,13 @@ In the internal design system SVG files from Streamline light must be used.
 									data-filter-value="Feedback message"
 								>
 									<span>Feedback message</span>
+								</a>
+								<a
+									href="#header"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Header"
+								>
+									<span>Header</span>
 								</a>
 								<a
 									href="#links"
@@ -4016,6 +3901,13 @@ In the internal design system SVG files from Streamline light must be used.
 									data-filter-value="Tooltip"
 								>
 									<span>Tooltip</span>
+								</a>
+								<a
+									href="#user-menu"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="User menu"
+								>
+									<span>User menu</span>
 								</a>
 						</div>
 			
@@ -4073,35 +3965,6 @@ In the internal design system SVG files from Streamline light must be used.
 									data-filter-value="Select"
 								>
 									<span>Select</span>
-								</a>
-						</div>
-			
-					</div>
-					<div class="i-sidebar-list-group theme-sidebar-category">
-			
-						<h5
-							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Navigation  Sidenav "
-						>
-							<a href="#category-layout-components" class="i-sidebar-list-item">
-								<b>Layout-Components</b>
-							</a>
-						</h5>
-			
-						<div>
-								<a
-									href="#navigation"
-									class="i-sidebar-list-item theme-sidebar-element"
-									data-filter-value="Navigation"
-								>
-									<span>Navigation</span>
-								</a>
-								<a
-									href="#sidenav"
-									class="i-sidebar-list-item theme-sidebar-element"
-									data-filter-value="Sidenav"
-								>
-									<span>Sidenav</span>
 								</a>
 						</div>
 			
