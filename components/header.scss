@@ -23,9 +23,13 @@ $header-img-size: 40px;
 
   &_logo {
     flex: 1 1 0%;
+    display: flex;
+    align-items: center;
   }
   &_title {
     text-align: center;
+    display: flex;
+    align-items: center;
     padding: 0px 1rem;
   }
   &-user {
