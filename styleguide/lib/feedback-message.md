@@ -3,7 +3,7 @@ name: Feedback message
 category: Components
 ---
 
-A feedback message is messages convey information that is important or urgent. This could be an informational, warning, sucess or error message. 
+A feedback message convey information that is important or urgent. I HDD this could be an informational, warning, sucess or error message.  
 
 ### ✅ When to use: 
 Feedback message should be used to guide or inform the user of critical information. For an error the message should inform the user of what went wrong and why.
@@ -17,7 +17,6 @@ A feedback message should not be used unnecessarily
 Usage of icons in feedback messages should be kept to an absolute minimum, since they usually don't serve any purpose and may be considered as visual "noise".
 
 ```feedbackmessage.html
-<div class="example-container">
   <div class="feedback-container">
     <i class="fal fa-info-circle feedback-container_icon"></i>
     <p class="feedback-container_message">
@@ -27,9 +26,7 @@ Usage of icons in feedback messages should be kept to an absolute minimum, since
       <i class="fal fa-times-circle"></i>
     </button>
   </div>
-</div>
 
-<div class="example-container">
   <div class="feedback-container is-success">
     <p class="feedback-container_message">
       Something was a success!
@@ -38,9 +35,7 @@ Usage of icons in feedback messages should be kept to an absolute minimum, since
     <i class="fal fa-times-circle"></i>
     </button>
   </div>
-</div>
 
-<div class="example-container">
   <div class="feedback-container is-warn">
     <p class="feedback-container_message">
       There is something you might want to check out.
@@ -49,7 +44,6 @@ Usage of icons in feedback messages should be kept to an absolute minimum, since
       <i class="fal fa-times-circle"></i>
     </button>
   </div>
-</div>
 
 <div class="feedback-container is-error">
   <p class="feedback-container_message">
@@ -61,7 +55,7 @@ Usage of icons in feedback messages should be kept to an absolute minimum, since
 </div>
 ```
 ```feedbackmessage.css  hidden
-.example-container {
+.feedback-container {
   margin-bottom: 10px;
 }
 ```

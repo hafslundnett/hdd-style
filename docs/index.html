@@ -95,7 +95,7 @@
 </tbody></table><div id="getting-started" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#getting-started" class="icon-link i-section__link -heading"></a>Getting started</h2></div><p>There are multiple ways of using HDD:</p>
 <ul>
 <li>Cloning the git repository: <code>git clone git@github.com:hafslundnett/hdd-style.git</code></li>
-<li>Add it as an npm dependency: <code>yarn add @hafslundnett/hal-components</code> <ul>
+<li>Add it as an npm dependency: <code>yarn add @hafslundnett/hdd-style</code> <ul>
 <li>Import main.sass in your stylesheet: <code>@import &#39;~@hafslundnett/hdd-style/main&#39;;</code></li>
 <li>Use the bundled and minified file: <code>dist/bundle.min.css</code></li>
 </ul>
@@ -1014,7 +1014,7 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">feedback-message.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>A feedback message is messages convey information that is important or urgent. This could be an informational, warning, sucess or error message. </p>
+	<div class="theme-content-element-description"><p>A feedback message convey information that is important or urgent. I HDD this could be an informational, warning, sucess or error message.  </p>
 <h3>✅ When to use:</h3><p>Feedback message should be used to guide or inform the user of critical information. For an error the message should inform the user of what went wrong and why.</p>
 <h3>⛔ When not to use:</h3><p>A feedback message should not be used unnecessarily</p>
 <div id="info-feedback" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#info-feedback" class="icon-link i-section__link -heading"></a>Info feedback</h2></div><p><code>feedback-container</code>,  <code>is-info</code>, <code>is-success</code>, <code>is-warn</code>, <code>is-error</code></p>
@@ -1048,8 +1048,7 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-container&quot;&gt;
-  &lt;div class=&quot;feedback-container&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="  &lt;div class=&quot;feedback-container&quot;&gt;
     &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
     &lt;p class=&quot;feedback-container_message&quot;&gt;
       This is just for info! Usage of icons should be kept to an absolute minimum. Long messages are also supported, the text will wrap to a new line. However, long feedbacks are not recommended.
@@ -1058,9 +1057,7 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
       &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
     &lt;/button&gt;
   &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;example-container&quot;&gt;
   &lt;div class=&quot;feedback-container is-success&quot;&gt;
     &lt;p class=&quot;feedback-container_message&quot;&gt;
       Something was a success!
@@ -1069,9 +1066,7 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
     &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
     &lt;/button&gt;
   &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;example-container&quot;&gt;
   &lt;div class=&quot;feedback-container is-warn&quot;&gt;
     &lt;p class=&quot;feedback-container_message&quot;&gt;
       There is something you might want to check out.
@@ -1080,7 +1075,6 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
       &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
     &lt;/button&gt;
   &lt;/div&gt;
-&lt;/div&gt;
 
 &lt;div class=&quot;feedback-container is-error&quot;&gt;
   &lt;p class=&quot;feedback-container_message&quot;&gt;
@@ -1090,8 +1084,7 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
     &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
   &lt;/button&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-container&quot;&gt;
-  &lt;div class=&quot;feedback-container&quot;&gt;
+		<pre class="mb-0"><code class="lang-">  &lt;div class=&quot;feedback-container&quot;&gt;
     &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
     &lt;p class=&quot;feedback-container_message&quot;&gt;
       This is just for info! Usage of icons should be kept to an absolute minimum. Long messages are also supported, the text will wrap to a new line. However, long feedbacks are not recommended.
@@ -1100,9 +1093,7 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
       &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
     &lt;/button&gt;
   &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;example-container&quot;&gt;
   &lt;div class=&quot;feedback-container is-success&quot;&gt;
     &lt;p class=&quot;feedback-container_message&quot;&gt;
       Something was a success!
@@ -1111,9 +1102,7 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
     &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
     &lt;/button&gt;
   &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;example-container&quot;&gt;
   &lt;div class=&quot;feedback-container is-warn&quot;&gt;
     &lt;p class=&quot;feedback-container_message&quot;&gt;
       There is something you might want to check out.
@@ -1122,7 +1111,6 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
       &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
     &lt;/button&gt;
   &lt;/div&gt;
-&lt;/div&gt;
 
 &lt;div class=&quot;feedback-container is-error&quot;&gt;
   &lt;p class=&quot;feedback-container_message&quot;&gt;
