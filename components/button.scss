@@ -1,18 +1,52 @@
+$button-font-size: 1rem;
 $button-radius: $border-radius;
 $button-border-width: 1px;
-$extra-border-hover: 1px;
 $button-padding-top-bottom: 10px;
 $button-padding-left-right: 16px;
 $button-padding: $button-padding-top-bottom $button-padding-left-right;
+
 $button-with-icon-font-size: 1.5rem;
+
 $icon-button-height: 36px;
 $icon-button-font-size: 22px;
 $icon-button-height-with-border: $icon-button-height - $button-border-width; // Subtract width of border to match size of buttons without border 
-$button-font-size: 1rem;
+$icon-button-xl-height: 56px;
+$icon-button-notification-size: 18px;
+$icon-button-notification-radius: 20px;
+
+$extra-border-hover: 1px;
 
 // Subtract width of border to match size of buttons without border 
 @function calculate-padding($border-width){
   @return (10px - $border-width) (16px - $border-width);
+}
+
+%primary-properties {
+  background: var(--hdd-color-primary);
+  color: var(--hdd-color-white);
+  border: none;
+
+  &[disabled] {
+    background: var(--hdd-color-grey);
+    color: var(--hdd-color-white);
+    cursor: not-allowed;
+  }
+
+  // Changes button-text on hover/active/focus
+  &:not([disabled]) {
+    &:hover {
+      border: none;
+    }
+
+    &:hover:not(:focus) {
+      box-shadow: var(--hdd-shadow-strong);
+    }
+
+    &:active {
+      background: var(--hdd-color-blue-dark);
+      outline: none;
+    }
+  }
 }
 
 %transparent-properties {
@@ -61,36 +95,18 @@ $button-font-size: 1rem;
   @extend .is-primary;
 
   &.is-primary {
+    @extend %primary-properties;
+
     display: inline-block;
-    border: none;
     border-radius: $button-radius;
     padding: $button-padding;
     font-size: $button-font-size;
     letter-spacing: 0.5px;
-    background: var(--hdd-color-primary);
-    color: var(--hdd-color-white);
+
     min-width: 90px;
     position: relative;
     cursor: pointer;
     outline-offset: -1px;
-
-    &[disabled] {
-      background: var(--hdd-color-grey);
-      color: var(--hdd-color-white);
-      cursor: not-allowed;
-    }
-
-    // Changes button-text on hover/active/focus
-    &:not([disabled]) {
-      &:hover:not(:focus) {
-        box-shadow: var(--hdd-shadow-strong);
-      }
-
-      &:active {
-        background: var(--hdd-color-blue-dark);
-        outline: none;
-      }
-    }
   }
 
   &.is-secondary {
@@ -224,9 +240,54 @@ $button-font-size: 1rem;
       height: $icon-button-height; 
     }
 
+    &.is-xl {
+      @extend %primary-properties;
+      overflow: visible;
+      height: $icon-button-xl-height; 
+      width: $icon-button-xl-height;
+      font-size: 0.5625rem;
+      position: relative;
+
+      i {
+        font-size: 24px;
+      }
+
+      .notification {
+        position: absolute;
+        top: calc(#{$icon-button-notification-size}/-3);
+        right: calc(#{$icon-button-notification-size}/-3);
+        width: $icon-button-notification-size;
+        height: $icon-button-notification-size;
+        padding: 0;
+        border-radius: $icon-button-notification-radius;
+
+        font-family: Helvetica Neue;
+        font-size: 0.75rem;
+        font-weight: bold;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: var(--hdd-color-danger);
+        color: var(--hdd-color-contrast-danger);
+      }
+    }
+
     &.is-no-padding {
       height: unset;
       width: unset;
+    }
+    
+    &[disabled] {
+      border-color: var(--hdd-color-grey);
+      color: var(--hdd-color-grey);
+      cursor: not-allowed;
+      
+      .notification {
+        background-color: var(--hdd-color-grey-medium);
+        color: var(--hdd-color-white);
+      }
     }
   }
 }
