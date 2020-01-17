@@ -54,7 +54,7 @@ $typography: (
   ),
   p: (
     family: $font-family,
-    size: 0.875rem,
+    size: .875rem,
     spacing: .21px,
     weight: 400,
     color: var(--hdd-color-font-color),
@@ -62,7 +62,7 @@ $typography: (
   ),
   p-small: (
     family: $font-family,
-    size: .875rem,
+    size: .675rem,
     spacing: .21px,
     weight: 400,
     color: var(--hdd-color-font-color)

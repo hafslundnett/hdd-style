@@ -5,7 +5,7 @@ category: Form-Components
 
 An input should encourage action by the user. If the text / content cannot be changed, it should not appear in an input field of any kind (displayed as static text). 
 
-Input fields should alway be placed within a `hdd-form_field`, along with a descriptive `hdd-form_field_label`.
+Input fields should always be placed within a `hdd-form_field`, along with a descriptive `hdd-form_field_label`.
 
 ### ✅ When to use: 
 An input should have a descriptive prompt and contain: container, label, placeholder/input text, error text/helper.

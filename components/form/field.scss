@@ -8,13 +8,11 @@
   text-align: left;
 
   &_label {
-    // update to is-p-small, after typo is done, and adjust line height.
-    font-size: 0.875rem;
+     // .is-p is font-properties, defined in typography.
+    @extend .is-p;
     font-weight: bold;
-    line-height: 16px;
-    display: flex;
-    letter-spacing: 0.2px;
-    margin-bottom: var(--hdd-spacing-1);
+    display: inline-block;
+    margin-bottom: 0.2rem;
   }
 
   &_title {
@@ -30,11 +28,9 @@
     position: absolute;
     margin-top: 0.2rem;
     font-size: 0.8rem;
-    align-items: center;
 
     &.is-active {
-      display: inline-flex;
-      align-items: center;
+      display: block;
     }
   }
 

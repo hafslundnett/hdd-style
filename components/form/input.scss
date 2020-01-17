@@ -70,7 +70,7 @@ $form-input-padding-bottom: 9px;
   > svg,
   > i {
     transition: color $medium-transition $transition-cubic;
-    font-size: font-size(h2);
+    font-size: font-size(icon-small);
     color: var(--hdd-color-blue-dark);
     margin-right: var(--hdd-spacing-1);
   }
