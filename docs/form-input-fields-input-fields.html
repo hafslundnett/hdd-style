@@ -82,14 +82,6 @@
   </div>
 </div>
 
-<div class="hdd-form_field">
-  <label class="hdd-form_field_label" for="search">Normal input field with icon/Search field</label>
-  <div class="hdd-form_input">
-    <i class="fal fa-search"></i>
-    <input id="search" placeholder="Placeholdertext">
-  </div>
-</div>
-
 </div>
 
 			<script type="text/x-stylemark" data-language="html"><div class="hdd-form_field">
@@ -118,14 +110,6 @@
   <label class="hdd-form_field_label" for="disabled">Disabled input field </label>
   <div class="hdd-form_input is-disabled">
     <input id="disabled" placeholder="Disabled Field" disabled>
-  </div>
-</div>
-
-<div class="hdd-form_field">
-  <label class="hdd-form_field_label" for="search">Normal input field with icon/Search field</label>
-  <div class="hdd-form_input">
-    <i class="fal fa-search"></i>
-    <input id="search" placeholder="Placeholdertext">
   </div>
 </div>
 </script>
@@ -161,10 +145,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-input-fields-input-fields', []);
+						module = angular.module('stylemark-form-input-fields-input-fields', []);
 					}
 
-					module.controller('stylemark-input-fields-input-fields-' + index, function($scope) {
+					module.controller('stylemark-form-input-fields-input-fields-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

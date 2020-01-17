@@ -3,7 +3,7 @@ name: Search fields
 category: Form-Components
 ---
 
-Search box allows the user to locate content quickly and efficiently and can be seen as a conversation between the user and the web page.
+Search boxes allows the user to locate content quickly and efficiently and can be seen as a conversation between the user and the web page.
 
 ### ✅ When to use: 
 It is important to set the user context for the search with the correct placeholder text.
