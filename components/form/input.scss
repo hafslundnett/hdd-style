@@ -29,7 +29,7 @@ $form-input-padding-bottom: 9px;
     &:disabled {
       border-color: var(--hdd-color-grey);
       color: var(--hdd-color-grey);
-      cursor: no-drop;
+      cursor: not-allowed;
     }
 
     &:focus {
@@ -57,7 +57,7 @@ $form-input-padding-bottom: 9px;
     border-color: var(--hdd-color-grey);
     input {
       color: var(--hdd-color-grey);
-      cursor: no-drop;
+      cursor: not-allowed;
     }
     &#{$this}_icon,
     &#{$this} svg,
