@@ -30,6 +30,7 @@ $button-font-size: 1rem;
 
     &:active,
     &:hover {
+      background: transparent;
       color: var(--hdd-color-primary);
       outline: none;
       box-shadow: none;
