@@ -1,7 +1,6 @@
 .hdd-form_field {
   // Variable containing '&' to jump to current parent inside a child class.
   $this: &;
-
   display: block;
   position: relative;
   margin-bottom: 2rem;
@@ -10,7 +9,7 @@
   &_label {
     // .is-p is font-properties, defined in typography.
     @extend .is-p;
-    
+
     display: inline-block;
     margin-bottom: 0.2rem;
     font-weight: bold;
