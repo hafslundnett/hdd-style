@@ -8,11 +8,12 @@
   text-align: left;
 
   &_label {
-     // .is-p is font-properties, defined in typography.
+    // .is-p is font-properties, defined in typography.
     @extend .is-p;
-    font-weight: bold;
+    
     display: inline-block;
     margin-bottom: 0.2rem;
+    font-weight: bold;
   }
 
   &_title {
