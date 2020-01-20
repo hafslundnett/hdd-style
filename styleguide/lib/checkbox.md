@@ -51,7 +51,10 @@ The toggle checkbox slider class are assigned to the corresponding span beneath 
 </div>
 ```
 ```toggle.css  hidden
-label {
+.hdd-form_field {
+  margin-bottom: 0 !important;
+}
+.hdd-form_toggle:not(:last-child) {
   margin-bottom: 15px;
 }
 ```

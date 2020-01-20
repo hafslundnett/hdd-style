@@ -3,7 +3,7 @@ name: Feedback message
 category: Components
 ---
 
-A feedback message convey information that is important or urgent. I HDD this could be an informational, warning, sucess or error message.  
+A feedback message convey information that is important or urgent.
 
 ### ✅ When to use: 
 Feedback message should be used to guide or inform the user of critical information. For an error the message should inform the user of what went wrong and why.

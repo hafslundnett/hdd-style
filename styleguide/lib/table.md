@@ -125,7 +125,7 @@ A table can consist out of data, buttons and icons. A table row can also have a 
 </div>
 ```
 
-```table-sticky-header.css  hidden
+```table-sticky-header.css 
 .example-container-to-force-scroll {
   height: 200px; 
   overflow: auto;

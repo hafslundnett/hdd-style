@@ -69,7 +69,9 @@ Tooltips should not contain necessary and critical information needed by the use
 ```
 ```tooltip.css  hidden
 .example-container {
-  display:flex; justify-content:space-between;margin:30px
+  display:flex; 
+  justify-content:space-between;
+  margin:30px
 }
 ```
 
