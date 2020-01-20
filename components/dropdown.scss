@@ -1,8 +1,5 @@
-$dropdown-border-radius: $border-radius;
-$dropdown-border: 1px solid var(--hdd-color-blue);
+$dropdown-border: 1px solid var(--hdd-color-blue-dark);
 $dropdown-margin: 20px;
-$dropdown-spacing-element: 4px;
-$dropdown-content-padding: 0.5rem 0;
 $dropdown-item-padding: 10px 12px;
 
 .hdd-dropdown {
@@ -10,29 +7,28 @@ $dropdown-item-padding: 10px 12px;
 
   &_content {
     @extend .is-aligned-bottom;
-
     display: none;
     position: absolute;
-
     z-index: 90;
-    left: 0;
-    min-width: 100%;
-
+    /*
+    Left and min-width calculation is to correct pixel error where dropdown is 1 px
+    to the left of relative search field;
+    */
+    left: -1px;
+    min-width: calc(100% + 1px);
     border: $dropdown-border;
-    border-radius: 0px 0px $dropdown-border-radius $dropdown-border-radius;
-
+    border-radius: $border-radius;
     background: var(--hdd-color-white);
 
     // Alignes the dropdown on top of the search field. 
     &.is-aligned-top {
       top: initial;
-      // 18px is the overlap that was between the input field and the elements
-      bottom: 18px + $dropdown-spacing-element;
+      // 18px is the overlap that was between the input field and the dropdown element.
+      bottom: calc(var(--hdd-spacing-2) + 2px);
     }
 
     &.is-aligned-bottom {
       top:100%;
-      bottom: 0;
       margin-bottom: $dropdown-margin;
     }
 
