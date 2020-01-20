@@ -24,17 +24,7 @@ $form-input-padding-bottom: 9px;
 
     &::placeholder {
       color: var(--hdd-color-grey);
-    }
-
-    &:disabled {
-      border-color: var(--hdd-color-grey);
-      color: var(--hdd-color-grey);
-      cursor: not-allowed;
-    }
-
-    &:focus {
-      border-color: var(--hdd-color-blue-dark);
-    }
+    }  
   }
 
   &:not(.is-invalid):focus-within {
@@ -48,7 +38,9 @@ $form-input-padding-bottom: 9px;
   &.is-invalid {
     border-color: var(--hdd-color-signal-red);
 
-    i {
+    &#{$this}_icon,
+    &#{$this} svg,
+    &#{$this} i {
       color: var(--hdd-color-signal-red);
     }
   }
