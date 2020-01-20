@@ -24,7 +24,6 @@
 						<option disabled selected>Go to…</option>
 							<optgroup label="Getting started">
 									<option value="introduction">Introduction</option>
-									<option value="layout">Layout</option>
 									<option value="layout-grid">Layout Grid</option>
 									<option value="naming-guidelines">Naming guidelines</option>
 							</optgroup>
@@ -108,152 +107,6 @@
 <p>This will open the styleguide in your browser and refresh on changes.</p>
 <div id="changelog" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#changelog" class="icon-link i-section__link -heading"></a>Changelog</h2></div><p>Please read the changelog <a href="https://github.com/hafslundnett/hdd-style/blob/master/CHANGELOG.md">here</a> to keep up to date with breaking changes released with new updates. </p>
 </div>
-</div>
-
-						<div id="layout" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">Layout</h1>
-	<span class="theme-content-element-source">
-		<span class="theme-content-element-source-label">Source:</span>
-		<span class="theme-content-element-source-path">layout.md</span>
-	</span>
-	<div class="theme-content-element-description"><p>It is advised to add the <code>hdd-layout</code> block around your project page. The <code>hdd-layout</code> block can help you save space around your content container for elements like sidebars or navigation. <code>hdd-layout</code> has one default child element which is called <code>content</code>. This element should contain the content that you want to show on the page. The <code>content</code> child element fill the remaining free space on the page by default.</p>
-<div id="layout" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#layout" class="icon-link i-section__link -heading"></a>Layout</h2></div><p><code>hdd-layout</code>, <code>hdd-layout_sidenav</code>, <code>hdd-layout_content</code>, <code>hdd-layout_navigation</code></p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="layout-layout.html"
-                            target="_blank"
-                            class="plain-link"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Open in a new window"
-                        >
-                            <i class="fa fa-external-link-square fa-fw"></i>
-                            Example
-                        </a>
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="layout-layout.html"
-                            data-initinview="true"
-                            data-title="Loading..." 
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-layout&quot;&gt;
-
-  &lt;nav class=&quot;hdd-layout_sidenav&quot;&gt;
-    &lt;div class=&quot;hdd-sidenav&quot;&gt;
-      &lt;a class=&quot;hdd-sidenav_logo&quot; href=&quot;#&quot;&gt;
-        &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
-      &lt;/a&gt;
-      &lt;ul class=&quot;hdd-sidenav_list&quot;&gt;
-        &lt;li&gt;
-          &lt;a href=&quot;#&quot; class=&quot;hdd-sidenav_list_item &quot;&gt;
-            &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
-              &lt;i class=&quot;fal fa-chart-pie&quot;&gt;&lt;/i&gt;
-            &lt;/span&gt;
-            &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
-              &lt;span&gt;Oversikt&lt;/span&gt;
-            &lt;/span&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/nav&gt;
-
-  &lt;div class=&quot;hdd-layout_content&quot;&gt;
-    &lt;header class=&quot;hdd-layout_navigation&quot;&gt;
-      &lt;div class=&quot;hdd-navigation&quot;&gt;
-        &lt;h1 class=&quot;hdd-navigation_title&quot;&gt;Overview&lt;/h1&gt;
-      &lt;/div&gt;
-    &lt;/header&gt;
-
-    &lt;div class=&quot;example-content&quot;&gt;
-      My content...
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-layout&quot;&gt;
-
-  &lt;nav class=&quot;hdd-layout_sidenav&quot;&gt;
-    &lt;div class=&quot;hdd-sidenav&quot;&gt;
-      &lt;a class=&quot;hdd-sidenav_logo&quot; href=&quot;#&quot;&gt;
-        &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
-      &lt;/a&gt;
-      &lt;ul class=&quot;hdd-sidenav_list&quot;&gt;
-        &lt;li&gt;
-          &lt;a href=&quot;#&quot; class=&quot;hdd-sidenav_list_item &quot;&gt;
-            &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
-              &lt;i class=&quot;fal fa-chart-pie&quot;&gt;&lt;/i&gt;
-            &lt;/span&gt;
-            &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
-              &lt;span&gt;Oversikt&lt;/span&gt;
-            &lt;/span&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/nav&gt;
-
-  &lt;div class=&quot;hdd-layout_content&quot;&gt;
-    &lt;header class=&quot;hdd-layout_navigation&quot;&gt;
-      &lt;div class=&quot;hdd-navigation&quot;&gt;
-        &lt;h1 class=&quot;hdd-navigation_title&quot;&gt;Overview&lt;/h1&gt;
-      &lt;/div&gt;
-    &lt;/header&gt;
-
-    &lt;div class=&quot;example-content&quot;&gt;
-      My content...
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;/div&gt;</code></pre>
-	</div>
-</div><div id="extending-hdd-layout" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#extending-hdd-layout" class="icon-link i-section__link -heading"></a>Extending hdd-layout</h2></div><p>When wanting to add your block to the <code>hdd-layout</code> block please extend the <code>hdd-layout</code> class in your own block.
-Below is a example of how to achieve this with sass.</p>
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang "> sass</button>
-	<div class="i-code-block__content ">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".hdd-block {
-  $width: 100px;
-  width: $width;
-
-  @at-root {
-    .hdd-layout_block {
-      width: $width;
-    }
-  }
-
-  &amp;:hover {
-    width: $width + 50px;
-  }
-}">Copy</button>
-		<pre class="mb-0"><code class="lang-">.hdd-block {
-  $width: 100px;
-  width: $width;
-
-  @at-root {
-    .hdd-layout_block {
-      width: $width;
-    }
-  }
-
-  &amp;:hover {
-    width: $width + 50px;
-  }
-}</code></pre>
-	</div>
-</div></div>
 </div>
 
 						<div id="layout-grid" class="i-library theme-content-element">
@@ -3901,7 +3754,7 @@ In the internal design system SVG files from Streamline light must be used.
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Introduction  Layout  Layout Grid  Naming guidelines "
+							data-filter-value=" Introduction  Layout Grid  Naming guidelines "
 						>
 							<a href="#category-getting started" class="i-sidebar-list-item">
 								<b>Getting started</b>
@@ -3915,13 +3768,6 @@ In the internal design system SVG files from Streamline light must be used.
 									data-filter-value="Introduction"
 								>
 									<span>Introduction</span>
-								</a>
-								<a
-									href="#layout"
-									class="i-sidebar-list-item theme-sidebar-element"
-									data-filter-value="Layout"
-								>
-									<span>Layout</span>
 								</a>
 								<a
 									href="#layout-grid"
