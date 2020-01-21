@@ -37,9 +37,14 @@ Setting the shadow attribute directly on elements are also possible with the fol
 
 ```shadow-colors.css  hidden
 .color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 10px;
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  border-radius: 100%; 
+  margin: 10px;
 }
 .example-container {
-  padding: 15px; background: white;
+  padding: 15px; 
+  background: white;
 }
 ```

@@ -201,87 +201,155 @@ These colors are chosen to be used for infographics. If necessary, these colors 
 
 ```primary-colors.css  hidden
 .example-container {
-  padding: 15px 15px 0 15px; background: white;
+  padding: 15px 15px 0 15px; 
+  background: white;
 }
 .example-container-2 {
-  padding: 0 15px 0 15px; background:white; display:flex;
+  padding: 0 15px 0 15px; 
+  background:white; 
+  display:flex;
 }
 .example-container-3 {
-  padding: 0 15px 0 15px; background: white;
+  padding: 0 15px 0 15px; 
+  background: white;
 }
 .example-container-4 {
-  padding: 0 15px 15px 15px; background:white; display:flex;
+  padding: 0 15px 15px 15px; 
+  background:white; 
+  display:flex;
 }
 .color-example-big {
-  height: 100px; width: 100px; display: inline-block; border-radius: 100%; margin: 14px; box-shadow: var(--hdd-shadow-strong);
+  height: 100px; 
+  width: 100px; 
+  display: inline-block; 
+  border-radius: 100%; 
+  margin: 14px; 
+  box-shadow: var(--hdd-shadow-strong);
 }
 .color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 14px; box-shadow: var(--hdd-shadow-strong); 
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  border-radius: 100%; 
+  margin: 14px; 
+  box-shadow: var(--hdd-shadow-strong); 
 }
 .color-text-first {
-  display: inline-block; height: 50px; width: 100px; margin: 15.7px; text-align: center;
+  display: inline-block; 
+  height: 50px; 
+  width: 100px; 
+  margin: 15.7px; 
+  text-align: center;
 }
 .color-text {
-  display: inline-block; height: 50px; width: 50px; margin: 15.7px; text-align: center;
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  margin: 15.7px; 
+  text-align: center;
 }
 ```
 ```grey-colors.css  hidden
 .example-container {
-  padding: 15px 15px 0 15px; background: white;
+  padding: 15px 15px 0 15px; 
+  background: white;
 }
 .example-container-2 {
-  padding: 0 15px 0 15px; background:white; display:flex;
+  padding: 0 15px 0 15px; 
+  background:white; display:flex;
 }
 .example-container-3 {
-  padding: 0 15px 0 15px; background: white;
+  padding: 0 15px 0 15px; 
+  background: white;
 }
 .example-container-4 {
-  padding: 0 15px 15px 15px; background:white; display:flex;
+  padding: 0 15px 15px 15px; 
+  background:white; 
+  display:flex;
 }
 .color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 14px; box-shadow: var(--hdd-shadow-strong);
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  border-radius: 100%; 
+  margin: 14px; 
+  box-shadow: var(--hdd-shadow-strong);
 }
 .color-text {
-  display: inline-block; height: 50px; width: 50px; margin: 15.7px; text-align: center;
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  margin: 15.7px; 
+  text-align: center;
 }
 ```
 ```signal-colors.css  hidden
 .example-container {
-  padding: 15px 15px 0 15px; background: white;
+  padding: 15px 15px 0 15px; 
+  background: white;
 }
 .example-container-2 {
-  padding: 0 15px 0 15px; background:white; display:flex;
+  padding: 0 15px 0 15px; 
+  background:white; 
+  display:flex;
 }
 .example-container-3 {
-  padding: 0 15px 0 15px; background: white;
+  padding: 0 15px 0 15px;
+  background: white;
 }
 .example-container-4 {
-  padding: 0 15px 15px 15px; background:white; display:flex;
+  padding: 0 15px 15px 15px; 
+  background:white; 
+  display:flex;
 }
 .color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 14px; box-shadow: var(--hdd-shadow-strong);
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  border-radius: 100%; 
+  margin: 14px; 
+  box-shadow: var(--hdd-shadow-strong);
 }
 .color-text {
-  display: inline-block; height: 50px; width: 50px; margin: 15.7px; text-align: center;
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  margin: 15.7px; 
+  text-align: center;
 }
 ```
 ```data-colors.css  hidden
 .example-container {
-  padding: 15px 15px 0 15px; background: white;
+  padding: 15px 15px 0 15px; 
+  background: white;
 }
 .example-container-2 {
-  padding: 0 15px 0 15px; background:white; display:flex;
+  padding: 0 15px 0 15px; 
+  background:white; 
+  display:flex;
 }
 .example-container-3 {
-  padding: 0 15px 0 15px; background: white;
+  padding: 0 15px 0 15px; 
+  background: white;
 }
 .example-container-4 {
-  padding: 0 15px 15px 15px; background:white; display:flex;
+  padding: 0 15px 15px 15px; 
+  background:white; 
+  display:flex;
 }
 .color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 14px; box-shadow: var(--hdd-shadow-strong);
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  border-radius: 100%; 
+  margin: 14px; 
+  box-shadow: var(--hdd-shadow-strong);
 }
 .color-text {
-  display: inline-block; height: 50px; width: 50px; margin: 15.7px; text-align: center;
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  margin: 15.7px; 
+  text-align: center;
 }
 ```

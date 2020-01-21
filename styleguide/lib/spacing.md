@@ -53,10 +53,19 @@ Spatial system that follows multiplication of 0.5rem (1rem = 16px). This provide
 
 ```spacing.css	hidden
 .spacing-circle {
-	display: inline-block; border-radius: 100%; background: var(--hdd-color-white); box-shadow: var(--hdd-color-shadow-strong); margin: var(--hdd-spacing-1); vertical-align: middle;
+	display: inline-block; 
+	border-radius: 100%; 
+	background: var(--hdd-color-white); 
+	box-shadow: var(--hdd-color-shadow-strong); 
+	margin: var(--hdd-spacing-1); 
+	vertical-align: middle;
 }
 .spacing-circle-mini {
-	display: block; height: 8px; width: 8px; border-radius: 100%; background: var(--hdd-color-grey-medium); 
+	display: block; 
+	height: 8px; 
+	width: 8px; 
+	border-radius: 100%; 
+	background: var(--hdd-color-grey-medium); 
 }
 ```
 
