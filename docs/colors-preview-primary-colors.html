@@ -3,11 +3,53 @@
 
 	<head>
 		<style>
-					.color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 14px; box-shadow: var(--hdd-shadow-strong); 
+					.example-container {
+  padding: 15px 15px 0 15px; 
+  background: white;
+}
+.example-container-2 {
+  padding: 0 15px 0 15px; 
+  background:white; 
+  display:flex;
+}
+.example-container-3 {
+  padding: 0 15px 0 15px; 
+  background: white;
+}
+.example-container-4 {
+  padding: 0 15px 15px 15px; 
+  background:white; 
+  display:flex;
+}
+.color-example-big {
+  height: 100px; 
+  width: 100px; 
+  display: inline-block; 
+  border-radius: 100%; 
+  margin: 14px; 
+  box-shadow: var(--hdd-shadow-strong);
+}
+.color-example {
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  border-radius: 100%; 
+  margin: 14px; 
+  box-shadow: var(--hdd-shadow-strong); 
+}
+.color-text-first {
+  display: inline-block; 
+  height: 50px; 
+  width: 100px; 
+  margin: 15.7px; 
+  text-align: center;
 }
 .color-text {
-  display: inline-block; height: 50px; width: 50px; margin: 15.7px; text-align: center;
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  margin: 15.7px; 
+  text-align: center;
 }
 		</style>
 
@@ -59,32 +101,32 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div style="padding: 15px 15px 0 15px; background: white;">
-  <span style="background: var(--hdd-color-blue); height: 100px; width: 100px;" class="color-example"></span>
+    <div class="example-container">
+  <span style="background: var(--hdd-color-blue)" class="color-example-big"></span>
   <span style="background: var(--hdd-color-blue-dark)" class="color-example"></span>
   <span style="background: var(--hdd-color-blue-light1)" class="color-example"></span>
   <span style="background: var(--hdd-color-blue-light2)" class="color-example"></span>
   <span style="background: var(--hdd-color-blue-light3)" class="color-example"></span>
   <span style="background: var(--hdd-color-blue-light4)" class="color-example"></span>
 </div>
-<div style="padding: 0 15px 0 15px; background:white; display:flex;">
-  <span class="color-text" style="width: 100px;">blue</span>
+<div class="example-container-2">
+  <span class="color-text-first">blue</span>
   <span class="color-text">blue-dark</span>
   <span class="color-text">blue-light1</span>
   <span class="color-text">blue-light2</span>
   <span class="color-text">blue-light3</span>
   <span class="color-text">blue-light4</span>
 </div>
-<div style="padding: 0 15px 0 15px; background: white;">
-  <span style="background: var(--hdd-color-contrast-blue); height: 100px; width: 100px;" class="color-example"></span>
+<div class="example-container-3">
+  <span style="background: var(--hdd-color-contrast-blue)" class="color-example-big""></span>
   <span style="background: var(--hdd-color-contrast-blue-dark)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-blue-light1)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-blue-light2)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-blue-light3)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-blue-light4)" class="color-example"></span>
 </div>
-<div style="padding: 0 15px 15px 15px; background:white; display:flex;">
-  <span class="color-text" style="width: 100px;">contrast-blue</span>
+<div class="example-container-4">
+  <span class="color-text-first">contrast-blue</span>
   <span class="color-text">contrast-blue-dark</span>
   <span class="color-text">contrast-blue-light1</span>
   <span class="color-text">contrast-blue-light2</span>
@@ -93,43 +135,85 @@
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div style="padding: 15px 15px 0 15px; background: white;">
-  <span style="background: var(--hdd-color-blue); height: 100px; width: 100px;" class="color-example"></span>
+			<script type="text/x-stylemark" data-language="html"><div class="example-container">
+  <span style="background: var(--hdd-color-blue)" class="color-example-big"></span>
   <span style="background: var(--hdd-color-blue-dark)" class="color-example"></span>
   <span style="background: var(--hdd-color-blue-light1)" class="color-example"></span>
   <span style="background: var(--hdd-color-blue-light2)" class="color-example"></span>
   <span style="background: var(--hdd-color-blue-light3)" class="color-example"></span>
   <span style="background: var(--hdd-color-blue-light4)" class="color-example"></span>
 </div>
-<div style="padding: 0 15px 0 15px; background:white; display:flex;">
-  <span class="color-text" style="width: 100px;">blue</span>
+<div class="example-container-2">
+  <span class="color-text-first">blue</span>
   <span class="color-text">blue-dark</span>
   <span class="color-text">blue-light1</span>
   <span class="color-text">blue-light2</span>
   <span class="color-text">blue-light3</span>
   <span class="color-text">blue-light4</span>
 </div>
-<div style="padding: 0 15px 0 15px; background: white;">
-  <span style="background: var(--hdd-color-contrast-blue); height: 100px; width: 100px;" class="color-example"></span>
+<div class="example-container-3">
+  <span style="background: var(--hdd-color-contrast-blue)" class="color-example-big""></span>
   <span style="background: var(--hdd-color-contrast-blue-dark)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-blue-light1)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-blue-light2)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-blue-light3)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-blue-light4)" class="color-example"></span>
 </div>
-<div style="padding: 0 15px 15px 15px; background:white; display:flex;">
-  <span class="color-text" style="width: 100px;">contrast-blue</span>
+<div class="example-container-4">
+  <span class="color-text-first">contrast-blue</span>
   <span class="color-text">contrast-blue-dark</span>
   <span class="color-text">contrast-blue-light1</span>
   <span class="color-text">contrast-blue-light2</span>
   <span class="color-text">contrast-blue-light3</span>
   <span class="color-text">contrast-blue-light4</span>
 </div></script>
-			<script type="text/x-stylemark" data-language="css">.color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 14px; box-shadow: var(--hdd-shadow-strong); 
+			<script type="text/x-stylemark" data-language="css">.example-container {
+  padding: 15px 15px 0 15px; 
+  background: white;
+}
+.example-container-2 {
+  padding: 0 15px 0 15px; 
+  background:white; 
+  display:flex;
+}
+.example-container-3 {
+  padding: 0 15px 0 15px; 
+  background: white;
+}
+.example-container-4 {
+  padding: 0 15px 15px 15px; 
+  background:white; 
+  display:flex;
+}
+.color-example-big {
+  height: 100px; 
+  width: 100px; 
+  display: inline-block; 
+  border-radius: 100%; 
+  margin: 14px; 
+  box-shadow: var(--hdd-shadow-strong);
+}
+.color-example {
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  border-radius: 100%; 
+  margin: 14px; 
+  box-shadow: var(--hdd-shadow-strong); 
+}
+.color-text-first {
+  display: inline-block; 
+  height: 50px; 
+  width: 100px; 
+  margin: 15.7px; 
+  text-align: center;
 }
 .color-text {
-  display: inline-block; height: 50px; width: 50px; margin: 15.7px; text-align: center;
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  margin: 15.7px; 
+  text-align: center;
 }</script>
 
 		<!--
