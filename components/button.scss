@@ -208,7 +208,7 @@ $button-font-size: 1rem;
     // Changes button-text on hover/active/focus
     &:not([disabled]) {
       &:active {
-        background: var(--hdd-color-primary);
+        background: var(--hdd-color-blue-dark);
         color: var(--hdd-color-white);
         outline: none;
       }
