@@ -2,6 +2,18 @@ $header-img-size: 150px;
 $menu-width: 250px;
 $separator-line-size: 70%;
 
+:root {
+  --user-menu-background-color: var(--hdd-color-white);
+  --user-menu-text-color: var(--hdd-color-black);
+}
+// Dark-theme
+@media (prefers-color-scheme: dark) {
+  :root {
+    --user-menu-background-color: var(--hdd-color-black);
+    --user-menu-text-color: var(--hdd-color-white);
+  }
+}
+
 .hdd-user-menu {
   display: flex;
   flex-direction: column;
@@ -11,7 +23,8 @@ $separator-line-size: 70%;
   height: auto;
   width: $menu-width;
   border-radius: $border-radius;
-  background: var(--hdd-color-white);
+  background: var(--user-menu-background-color);
+  color: var(--user-menu-text-color);
   box-shadow: var(--hdd-shadow-strong);
   padding: var(--hdd-spacing-3);
 
@@ -36,7 +49,7 @@ $separator-line-size: 70%;
     align-items: center;
     justify-content: center;
 
-    color: var(--hdd-color-white);
+    color: var(--hdd-color-contrast-blue);
     text-transform: uppercase;
     font-size: 2rem;
   }
@@ -45,7 +58,7 @@ $separator-line-size: 70%;
     margin: var(--hdd-spacing-1) 0;
     font-size: 1.25rem;
     letter-spacing: 0.15px;
-    color: var(--hdd-color-black);
+    //color: var(--hdd-color-black);
     text-align: center;
   }
 
@@ -55,7 +68,7 @@ $separator-line-size: 70%;
     letter-spacing: 0.15px;
     font-size: 1rem;
     text-align: center;
-    color: var(--hdd-color-black);
+    //color: var(--hdd-color-black);
   }
 
   &_menu-element {
