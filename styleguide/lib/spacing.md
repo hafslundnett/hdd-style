@@ -53,10 +53,19 @@ Spatial system that follows multiplication of 0.5rem (1rem = 16px). This provide
 
 ```spacing.css	hidden
 .spacing-circle {
-	display: inline-block; border-radius: 100%; background: var(--hdd-color-white); box-shadow: var(--hdd-color-shadow-strong); margin: var(--hdd-spacing-1); vertical-align: middle;
+	display: inline-block; 
+	border-radius: 100%; 
+	background: var(--hdd-color-white); 
+	box-shadow: var(--hdd-color-shadow-strong); 
+	margin: var(--hdd-spacing-1); 
+	vertical-align: middle;
 }
 .spacing-circle-mini {
-	display: block; height: 8px; width: 8px; border-radius: 100%; background: var(--hdd-color-grey-medium); 
+	display: block; 
+	height: 8px; 
+	width: 8px; 
+	border-radius: 100%; 
+	background: var(--hdd-color-grey-medium); 
 }
 ```
 
@@ -64,6 +73,7 @@ Spatial system that follows multiplication of 0.5rem (1rem = 16px). This provide
 Standard spacing should be used when possible to standardized the separation between elements, as seen in the example below. Exceptions from this should be pre-approved by designer.
 
 ```spacing-realistic.html
+<!--NB! Style tags are only applied here to illustrate the use of spacing variables. -->
 <div style="padding: var(--hdd-spacing-3); background: var(--hdd-color-white); border-radius: 5px;">
 	<h1 style="margin-bottom: var(--hdd-spacing-3);">
 		Gjennomfør handling for ticket #8
