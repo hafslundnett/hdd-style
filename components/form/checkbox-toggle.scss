@@ -12,7 +12,7 @@
   }
 
   &.slider {
-    background-color: var(--hdd-color-white);
+    background-color: var(--hdd-color-contrast-blue);
     border: 1px solid var(--hdd-color-blue);
     border-radius: 2rem;
     position: absolute;
@@ -37,7 +37,7 @@
   }
 
   input:checked + .slider:before {
-    background-color: var(--hdd-color-white);
+    background-color: var(--hdd-color-contrast-blue);
     @include transform(translateX(0.9rem));
   }
 }
