@@ -6,6 +6,8 @@ $notification-dot-border: 2px solid var(--hdd-color-white);
   top: calc(#{$notification-dot-size}/ -2);
   right: calc(#{$notification-dot-size}/ -2);
 
+  box-sizing: content-box;
+
   width: $notification-dot-size;
   height: $notification-dot-size;
 
