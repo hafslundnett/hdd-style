@@ -3,16 +3,8 @@
 
 	<head>
 		<style>
-					.color-example {
-  display: inline-block; 
-  height: 50px; 
-  width: 50px; 
-  border-radius: 100%; 
-  margin: 10px;
-}
-.example-container {
-  padding: 15px; 
-  background: white;
+					.breakpointInfo {
+  margin-top: 6px;
 }
 		</style>
 
@@ -63,29 +55,8 @@
 		
 	</head>
 
-	<body>					<div style="padding: 20px;">
-    <div class="example-container">
-  <span class="hdd-shadow-light color-example"></span>
-  <span class="hdd-shadow-medium color-example"></span>
-  <span class="hdd-shadow-strong color-example"></span>
-</div>
-</div>
-
-			<script type="text/x-stylemark" data-language="html"><div class="example-container">
-  <span class="hdd-shadow-light color-example"></span>
-  <span class="hdd-shadow-medium color-example"></span>
-  <span class="hdd-shadow-strong color-example"></span>
-</div></script>
-			<script type="text/x-stylemark" data-language="css">.color-example {
-  display: inline-block; 
-  height: 50px; 
-  width: 50px; 
-  border-radius: 100%; 
-  margin: 10px;
-}
-.example-container {
-  padding: 15px; 
-  background: white;
+	<body>			<script type="text/x-stylemark" data-language="css">.breakpointInfo {
+  margin-top: 6px;
 }</script>
 
 		<!--
@@ -119,10 +90,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-shadows-shadow-colors', []);
+						module = angular.module('stylemark-breakpoints-breakpoints', []);
 					}
 
-					module.controller('stylemark-shadows-shadow-colors-' + index, function($scope) {
+					module.controller('stylemark-breakpoints-breakpoints-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

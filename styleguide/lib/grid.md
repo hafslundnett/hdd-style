@@ -3,7 +3,7 @@ name: Layout Grid
 category: Getting started
 ---
 
-We provide two grid's you can use. The first (`.hdd-grid`) is meant for sites that support mobile + desktop, and the second (`.hdd-grid-desktop`) is for websites that only support desktop. The grid uses a 12 or less point/column system that changes based on windows size. Rows have no inherit min or max height, as can be seen in the example.
+We provide two grids you can use. The first (`.hdd-grid`) is meant for sites that support mobile + desktop, and the second (`.hdd-grid-desktop`) is for websites that only support desktop. The grid uses a 12 or less point/column system that changes based on windows size. Rows have no inherit min or max height, as can be seen in the example.
 
 ### Columns for `.hdd-grid` (mobile and desktop)
 - 4 for small-size (< Earth)
