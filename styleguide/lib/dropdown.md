@@ -38,6 +38,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
 }
 @media (prefers-color-scheme: dark) {
   .dark-mode {
+    margin: -20px;
     padding: 20px;
     background: var(--primary-background-color);
   }
