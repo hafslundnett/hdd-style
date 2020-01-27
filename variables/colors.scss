@@ -196,6 +196,7 @@ $gradients: (
 // Light-theme standard colors
 :root {
   --primary-background-color: var(--hdd-color-grey-background);
+  --primary-text-color: var(--hdd-color-font-color);
 
   --user-menu-background-color: var(--hdd-color-white);
   --user-menu-text-color: var(--hdd-color-black);
@@ -209,6 +210,7 @@ $gradients: (
 @media (prefers-color-scheme: dark) {
   :root {
     --primary-background-color: var(--hdd-color-font-color);
+    --primary-text-color: var(--hdd-color-white);
 
     --user-menu-background-color: var(--hdd-color-black);
     --user-menu-text-color: var(--hdd-color-white);

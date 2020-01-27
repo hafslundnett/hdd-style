@@ -4,6 +4,10 @@
   .i-library {
     padding: 50px 150px;
   }
+  /* For å hindre at dark theme overkjører fargen */
+  .theme-content, .theme-content-element  p, .theme-content-element h1, .theme-content-element h2, .theme-content-element h3 {
+    color: var(--hdd-color-font-color) !important; 
+  }
 }
 
 .theme-content-element-description h2 {
