@@ -3,6 +3,13 @@
 
 	<head>
 		<style>
+					@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
+}
 		</style>
 
 		<style>
@@ -53,36 +60,47 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div class="hdd-card">
-  <div class="hdd-card_header">
-    <div class="hdd-card_header_text">
-      <div class="hdd-card_title">Title</div>
-      <div class="hdd-card_subtitle">Subtitle</div>
+    <div class="dark-mode">
+  <div class="hdd-card">
+    <div class="hdd-card_header">
+      <div class="hdd-card_header_text">
+        <div class="hdd-card_title">Title</div>
+        <div class="hdd-card_subtitle">Subtitle</div>
+      </div>
     </div>
-  </div>
-  <div class="hdd-card_content">
-    <p>Any content can be placed within the card body.</p>
-  </div>
-  <div class="hdd-card_actions">
-    <button class="hdd-card_actions_action">View more</button>
+    <div class="hdd-card_content">
+      <p>Any content can be placed within the card body.</p>
+    </div>
+    <div class="hdd-card_actions">
+      <button class="hdd-card_actions_action">View more</button>
+    </div>
   </div>
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="hdd-card">
-  <div class="hdd-card_header">
-    <div class="hdd-card_header_text">
-      <div class="hdd-card_title">Title</div>
-      <div class="hdd-card_subtitle">Subtitle</div>
+			<script type="text/x-stylemark" data-language="html"><div class="dark-mode">
+  <div class="hdd-card">
+    <div class="hdd-card_header">
+      <div class="hdd-card_header_text">
+        <div class="hdd-card_title">Title</div>
+        <div class="hdd-card_subtitle">Subtitle</div>
+      </div>
+    </div>
+    <div class="hdd-card_content">
+      <p>Any content can be placed within the card body.</p>
+    </div>
+    <div class="hdd-card_actions">
+      <button class="hdd-card_actions_action">View more</button>
     </div>
   </div>
-  <div class="hdd-card_content">
-    <p>Any content can be placed within the card body.</p>
-  </div>
-  <div class="hdd-card_actions">
-    <button class="hdd-card_actions_action">View more</button>
-  </div>
 </div></script>
+			<script type="text/x-stylemark" data-language="css">@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
+}</script>
 
 		<!--
 			Vanilla JS

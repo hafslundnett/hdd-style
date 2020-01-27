@@ -6,6 +6,12 @@
 					.example-fill {
   margin: 20px;
 }
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
+}
 		</style>
 
 		<style>
@@ -56,44 +62,54 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div class="hdd-form_input hdd-dropdown">
-  <input value="Jer">
+    <div class="dark-mode">
+  <div class="hdd-form_input hdd-dropdown">
+    <input value="Jer">
 
-  <div class="hdd-dropdown_content is-active">
-    <div class="hdd-dropdown_content_item is-active"><b>Jer</b>oen</div>
-    <div class="hdd-dropdown_content_item">Stian</div>
-    <div class="hdd-dropdown_content_item no-hover">Erik</div>
+    <div class="hdd-dropdown_content is-active">
+      <div class="hdd-dropdown_content_item is-active"><b>Jer</b>oen</div>
+      <div class="hdd-dropdown_content_item">Stian</div>
+      <div class="hdd-dropdown_content_item no-hover">Erik</div>
+    </div>
+  </div>
+  <div class="example-fill">
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+    <p>Some content behind</p>
   </div>
 </div>
-<div class="example-fill">
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-</div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="hdd-form_input hdd-dropdown">
-  <input value="Jer">
+			<script type="text/x-stylemark" data-language="html"><div class="dark-mode">
+  <div class="hdd-form_input hdd-dropdown">
+    <input value="Jer">
 
-  <div class="hdd-dropdown_content is-active">
-    <div class="hdd-dropdown_content_item is-active"><b>Jer</b>oen</div>
-    <div class="hdd-dropdown_content_item">Stian</div>
-    <div class="hdd-dropdown_content_item no-hover">Erik</div>
+    <div class="hdd-dropdown_content is-active">
+      <div class="hdd-dropdown_content_item is-active"><b>Jer</b>oen</div>
+      <div class="hdd-dropdown_content_item">Stian</div>
+      <div class="hdd-dropdown_content_item no-hover">Erik</div>
+    </div>
   </div>
-</div>
-<div class="example-fill">
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
+  <div class="example-fill">
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+  </div>
 </div></script>
 			<script type="text/x-stylemark" data-language="css">.example-fill {
   margin: 20px;
+}
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
 }</script>
 
 		<!--

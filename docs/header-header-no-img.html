@@ -6,6 +6,13 @@
 					header {
   margin-bottom: 30px;
 }
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
+}
 		</style>
 
 		<style>
@@ -56,42 +63,51 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    
-<header class="hdd-header">
-  <a class="hdd-header_logo" href="#">
-    <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
-  </a>
-  <h1 class="hdd-header_title">Overview</h1>
-  <div class="hdd-header-user">
-    <div class="hdd-header-user_icon-no-image">
-      TT
+    <div class="dark-mode">
+  <header class="hdd-header">
+    <a class="hdd-header_logo" href="#">
+      <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
+    </a>
+    <h1 class="hdd-header_title">Overview</h1>
+    <div class="hdd-header-user">
+      <div class="hdd-header-user_icon-no-image">
+        TT
+      </div>
+      <div class="hdd-header-user_name">
+        Tim Tom
+      </div>
+      <button class="hdd-button has-icon is-transparent"><i class="fal fa-sign-out"></i>Sign out</button>
     </div>
-    <div class="hdd-header-user_name">
-      Tim Tom
-    </div>
-    <button class="hdd-button has-icon is-transparent"><i class="fal fa-sign-out"></i>Sign out</button>
-  </div>
-</header>
+  </header>
+</div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html">
-<header class="hdd-header">
-  <a class="hdd-header_logo" href="#">
-    <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
-  </a>
-  <h1 class="hdd-header_title">Overview</h1>
-  <div class="hdd-header-user">
-    <div class="hdd-header-user_icon-no-image">
-      TT
+			<script type="text/x-stylemark" data-language="html"><div class="dark-mode">
+  <header class="hdd-header">
+    <a class="hdd-header_logo" href="#">
+      <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
+    </a>
+    <h1 class="hdd-header_title">Overview</h1>
+    <div class="hdd-header-user">
+      <div class="hdd-header-user_icon-no-image">
+        TT
+      </div>
+      <div class="hdd-header-user_name">
+        Tim Tom
+      </div>
+      <button class="hdd-button has-icon is-transparent"><i class="fal fa-sign-out"></i>Sign out</button>
     </div>
-    <div class="hdd-header-user_name">
-      Tim Tom
-    </div>
-    <button class="hdd-button has-icon is-transparent"><i class="fal fa-sign-out"></i>Sign out</button>
-  </div>
-</header></script>
+  </header>
+</div></script>
 			<script type="text/x-stylemark" data-language="css">header {
   margin-bottom: 30px;
+}
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
 }</script>
 
 		<!--

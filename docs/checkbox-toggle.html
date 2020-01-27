@@ -9,6 +9,13 @@
 .hdd-form_toggle:not(:last-child) {
   margin-bottom: 15px;
 }
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
+}
 		</style>
 
 		<style>
@@ -59,35 +66,46 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div class="hdd-form_field">
-  <span class="hdd-form_field_title">Toggle Checkbox</span>
-  <label class="hdd-form_toggle">
-    <input type="checkbox">
-    <span class="hdd-form_toggle slider"></span>
-  </label>
-  <label class="hdd-form_toggle">
-    <input type="checkbox" checked>
-    <span class="hdd-form_toggle slider"></span>
-  </label>
+    <div class="dark-mode">
+  <div class="hdd-form_field">
+    <span class="hdd-form_field_title">Toggle Checkbox</span>
+    <label class="hdd-form_toggle">
+      <input type="checkbox">
+      <span class="hdd-form_toggle slider"></span>
+    </label>
+    <label class="hdd-form_toggle">
+      <input type="checkbox" checked>
+      <span class="hdd-form_toggle slider"></span>
+    </label>
+  </div>
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="hdd-form_field">
-  <span class="hdd-form_field_title">Toggle Checkbox</span>
-  <label class="hdd-form_toggle">
-    <input type="checkbox">
-    <span class="hdd-form_toggle slider"></span>
-  </label>
-  <label class="hdd-form_toggle">
-    <input type="checkbox" checked>
-    <span class="hdd-form_toggle slider"></span>
-  </label>
+			<script type="text/x-stylemark" data-language="html"><div class="dark-mode">
+  <div class="hdd-form_field">
+    <span class="hdd-form_field_title">Toggle Checkbox</span>
+    <label class="hdd-form_toggle">
+      <input type="checkbox">
+      <span class="hdd-form_toggle slider"></span>
+    </label>
+    <label class="hdd-form_toggle">
+      <input type="checkbox" checked>
+      <span class="hdd-form_toggle slider"></span>
+    </label>
+  </div>
 </div></script>
 			<script type="text/x-stylemark" data-language="css">.hdd-form_field {
   margin-bottom: 0 !important;
 }
 .hdd-form_toggle:not(:last-child) {
   margin-bottom: 15px;
+}
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
 }</script>
 
 		<!--

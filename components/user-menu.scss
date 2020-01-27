@@ -2,18 +2,6 @@ $header-img-size: 150px;
 $menu-width: 250px;
 $separator-line-size: 70%;
 
-:root {
-  --user-menu-background-color: var(--hdd-color-white);
-  --user-menu-text-color: var(--hdd-color-black);
-}
-// Dark-theme
-@media (prefers-color-scheme: dark) {
-  :root {
-    --user-menu-background-color: var(--hdd-color-black);
-    --user-menu-text-color: var(--hdd-color-white);
-  }
-}
-
 .hdd-user-menu {
   display: flex;
   flex-direction: column;

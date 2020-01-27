@@ -3,6 +3,13 @@
 
 	<head>
 		<style>
+					@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
+}
 		</style>
 
 		<style>
@@ -53,44 +60,55 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div class="hdd-form_field">
-  <span class="hdd-form_field_title">Checkboxes</span>
-  <label class="hdd-form_checkbox">
-    <input type="checkbox" checked="">
-    <span class="hdd-form_checkbox_mark"></span>
-    <span class="hdd-form_checkbox_label">Picked checkbox</span>
-  </label>
-  <label class="hdd-form_checkbox">
-    <input type="checkbox">
-    <span class="hdd-form_checkbox_mark"></span>
-    <span class="hdd-form_checkbox_label">Unpicked checkbox</span>
-  </label>
-  <label class="hdd-form_checkbox is-invalid">
-    <input type="checkbox">
-    <span class="hdd-form_checkbox_mark"></span>
-    <span class="hdd-form_checkbox_label">Invalid checkbox</span>
-  </label>
+    <div class="dark-mode">
+  <div class="hdd-form_field">
+    <span class="hdd-form_field_title">Checkboxes</span>
+    <label class="hdd-form_checkbox">
+      <input type="checkbox" checked="">
+      <span class="hdd-form_checkbox_mark"></span>
+      <span class="hdd-form_checkbox_label">Picked checkbox</span>
+    </label>
+    <label class="hdd-form_checkbox">
+      <input type="checkbox">
+      <span class="hdd-form_checkbox_mark"></span>
+      <span class="hdd-form_checkbox_label">Unpicked checkbox</span>
+    </label>
+    <label class="hdd-form_checkbox is-invalid">
+      <input type="checkbox">
+      <span class="hdd-form_checkbox_mark"></span>
+      <span class="hdd-form_checkbox_label">Invalid checkbox</span>
+    </label>
+  </div>
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="hdd-form_field">
-  <span class="hdd-form_field_title">Checkboxes</span>
-  <label class="hdd-form_checkbox">
-    <input type="checkbox" checked="">
-    <span class="hdd-form_checkbox_mark"></span>
-    <span class="hdd-form_checkbox_label">Picked checkbox</span>
-  </label>
-  <label class="hdd-form_checkbox">
-    <input type="checkbox">
-    <span class="hdd-form_checkbox_mark"></span>
-    <span class="hdd-form_checkbox_label">Unpicked checkbox</span>
-  </label>
-  <label class="hdd-form_checkbox is-invalid">
-    <input type="checkbox">
-    <span class="hdd-form_checkbox_mark"></span>
-    <span class="hdd-form_checkbox_label">Invalid checkbox</span>
-  </label>
+			<script type="text/x-stylemark" data-language="html"><div class="dark-mode">
+  <div class="hdd-form_field">
+    <span class="hdd-form_field_title">Checkboxes</span>
+    <label class="hdd-form_checkbox">
+      <input type="checkbox" checked="">
+      <span class="hdd-form_checkbox_mark"></span>
+      <span class="hdd-form_checkbox_label">Picked checkbox</span>
+    </label>
+    <label class="hdd-form_checkbox">
+      <input type="checkbox">
+      <span class="hdd-form_checkbox_mark"></span>
+      <span class="hdd-form_checkbox_label">Unpicked checkbox</span>
+    </label>
+    <label class="hdd-form_checkbox is-invalid">
+      <input type="checkbox">
+      <span class="hdd-form_checkbox_mark"></span>
+      <span class="hdd-form_checkbox_label">Invalid checkbox</span>
+    </label>
+  </div>
 </div></script>
+			<script type="text/x-stylemark" data-language="css">@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
+}</script>
 
 		<!--
 			Vanilla JS

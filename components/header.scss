@@ -2,19 +2,6 @@ $header-height: 66px;
 $header-z-index: 99;
 $header-img-size: 40px;
 
-:root {
-  --header-background-color: var(--hdd-color-white);
-  --header-text-color: var(--hdd-color-black);
-}
-
-// Dark-theme
-@media (prefers-color-scheme: dark) {
-  :root {
-    --header-background-color: var(--hdd-color-black);
-    --header-text-color: var(--hdd-color-grey-light);
-  } 
-}
-
 .hdd-header {
   position: sticky;
   top: 0;

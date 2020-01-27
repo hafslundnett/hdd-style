@@ -192,3 +192,29 @@ $gradients: (
   )
 );
 
+
+// Light-theme standard colors
+:root {
+  --primary-background-color: var(--hdd-color-grey-background);
+
+  --user-menu-background-color: var(--hdd-color-white);
+  --user-menu-text-color: var(--hdd-color-black);
+  --header-background-color: var(--hdd-color-white);
+  --header-text-color: var(--hdd-color-black);
+
+  --transparent-button-text-color: var(--hdd-color-font-color);
+}
+
+// Dark-theme standard colors
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-background-color: var(--hdd-color-font-color);
+
+    --user-menu-background-color: var(--hdd-color-black);
+    --user-menu-text-color: var(--hdd-color-white);
+    --header-background-color: var(--hdd-color-black);
+    --header-text-color: var(--hdd-color-grey-light);
+
+    --transparent-button-text-color: var(--hdd-color-grey);
+  }
+}

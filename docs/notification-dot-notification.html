@@ -6,6 +6,13 @@
 					.example-margin {
   margin: 10px 0;
 }
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
+}
 		</style>
 
 		<style>
@@ -56,28 +63,39 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div class="example-margin">
-  <i class="fal fa-cog"><span class="hdd-notification-dot"></span></i>
-</div>
-<div class="example-margin">
-  <i class="fal fa-user"><span class="hdd-notification-dot"></span></i>
-</div>
-<div class="example-margin">
-  <i class="fal fa-bars"><span class="hdd-notification-dot"></span></i>
+    <div class="dark-mode">
+  <div class="example-margin">
+    <i class="fal fa-cog"><span class="hdd-notification-dot"></span></i>
+  </div>
+  <div class="example-margin">
+    <i class="fal fa-user"><span class="hdd-notification-dot"></span></i>
+  </div>
+  <div class="example-margin">
+    <i class="fal fa-bars"><span class="hdd-notification-dot"></span></i>
+  </div>
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="example-margin">
-  <i class="fal fa-cog"><span class="hdd-notification-dot"></span></i>
-</div>
-<div class="example-margin">
-  <i class="fal fa-user"><span class="hdd-notification-dot"></span></i>
-</div>
-<div class="example-margin">
-  <i class="fal fa-bars"><span class="hdd-notification-dot"></span></i>
+			<script type="text/x-stylemark" data-language="html"><div class="dark-mode">
+  <div class="example-margin">
+    <i class="fal fa-cog"><span class="hdd-notification-dot"></span></i>
+  </div>
+  <div class="example-margin">
+    <i class="fal fa-user"><span class="hdd-notification-dot"></span></i>
+  </div>
+  <div class="example-margin">
+    <i class="fal fa-bars"><span class="hdd-notification-dot"></span></i>
+  </div>
 </div></script>
 			<script type="text/x-stylemark" data-language="css">.example-margin {
   margin: 10px 0;
+}
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
 }</script>
 
 		<!--

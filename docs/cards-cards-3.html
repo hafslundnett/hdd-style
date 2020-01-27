@@ -3,6 +3,13 @@
 
 	<head>
 		<style>
+					@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
+}
 		</style>
 
 		<style>
@@ -53,50 +60,61 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div class="hdd-card">
-  <div class="hdd-card_header">
-    <div class="hdd-card_header_icon">
-      <i class="fal fa-info"></i>
+    <div class="dark-mode">
+  <div class="hdd-card">
+    <div class="hdd-card_header">
+      <div class="hdd-card_header_icon">
+        <i class="fal fa-info"></i>
+      </div>
+      <div class="hdd-card_header_text">
+        <div class="hdd-card_title">Title</div>
+        <div class="hdd-card_subtitle">Subtitle</div>
+      </div>
+      <button class="hdd-card_header_action">
+        <i class="fal fa-cog"></i>
+      </button>
     </div>
-    <div class="hdd-card_header_text">
-      <div class="hdd-card_title">Title</div>
-      <div class="hdd-card_subtitle">Subtitle</div>
+    <div class="hdd-card_content">
+      <p>Example-content</p>
     </div>
-    <button class="hdd-card_header_action">
-      <i class="fal fa-cog"></i>
-    </button>
-  </div>
-  <div class="hdd-card_content">
-    <p>Example-content</p>
-  </div>
-  <div class="hdd-card_actions">
-    <button class="hdd-button">Cancel action</button>
-    <button class="hdd-button">Complete action</button>
+    <div class="hdd-card_actions">
+      <button class="hdd-button">Cancel action</button>
+      <button class="hdd-button">Complete action</button>
+    </div>
   </div>
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="hdd-card">
-  <div class="hdd-card_header">
-    <div class="hdd-card_header_icon">
-      <i class="fal fa-info"></i>
+			<script type="text/x-stylemark" data-language="html"><div class="dark-mode">
+  <div class="hdd-card">
+    <div class="hdd-card_header">
+      <div class="hdd-card_header_icon">
+        <i class="fal fa-info"></i>
+      </div>
+      <div class="hdd-card_header_text">
+        <div class="hdd-card_title">Title</div>
+        <div class="hdd-card_subtitle">Subtitle</div>
+      </div>
+      <button class="hdd-card_header_action">
+        <i class="fal fa-cog"></i>
+      </button>
     </div>
-    <div class="hdd-card_header_text">
-      <div class="hdd-card_title">Title</div>
-      <div class="hdd-card_subtitle">Subtitle</div>
+    <div class="hdd-card_content">
+      <p>Example-content</p>
     </div>
-    <button class="hdd-card_header_action">
-      <i class="fal fa-cog"></i>
-    </button>
-  </div>
-  <div class="hdd-card_content">
-    <p>Example-content</p>
-  </div>
-  <div class="hdd-card_actions">
-    <button class="hdd-button">Cancel action</button>
-    <button class="hdd-button">Complete action</button>
+    <div class="hdd-card_actions">
+      <button class="hdd-button">Cancel action</button>
+      <button class="hdd-button">Complete action</button>
+    </div>
   </div>
 </div></script>
+			<script type="text/x-stylemark" data-language="css">@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
+}</script>
 
 		<!--
 			Vanilla JS

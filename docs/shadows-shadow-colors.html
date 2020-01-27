@@ -12,7 +12,13 @@
 }
 .example-container {
   padding: 15px; 
-  background: white;
+}
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
 }
 		</style>
 
@@ -64,14 +70,14 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div class="example-container">
+    <div class="example-container dark-mode">
   <span class="hdd-shadow-light color-example"></span>
   <span class="hdd-shadow-medium color-example"></span>
   <span class="hdd-shadow-strong color-example"></span>
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="example-container">
+			<script type="text/x-stylemark" data-language="html"><div class="example-container dark-mode">
   <span class="hdd-shadow-light color-example"></span>
   <span class="hdd-shadow-medium color-example"></span>
   <span class="hdd-shadow-strong color-example"></span>
@@ -85,7 +91,13 @@
 }
 .example-container {
   padding: 15px; 
-  background: white;
+}
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
 }</script>
 
 		<!--

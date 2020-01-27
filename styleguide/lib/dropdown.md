@@ -12,27 +12,35 @@ Dropdown should be used if the user wants a recommended selection out of all the
 `hdd-form_input`.`hdd-dropdown`
 
 ```dropdown.html
-<div class="hdd-form_input hdd-dropdown">
-  <input value="Jer">
+<div class="dark-mode">
+  <div class="hdd-form_input hdd-dropdown">
+    <input value="Jer">
 
-  <div class="hdd-dropdown_content is-active">
-    <div class="hdd-dropdown_content_item is-active"><b>Jer</b>oen</div>
-    <div class="hdd-dropdown_content_item">Stian</div>
-    <div class="hdd-dropdown_content_item no-hover">Erik</div>
+    <div class="hdd-dropdown_content is-active">
+      <div class="hdd-dropdown_content_item is-active"><b>Jer</b>oen</div>
+      <div class="hdd-dropdown_content_item">Stian</div>
+      <div class="hdd-dropdown_content_item no-hover">Erik</div>
+    </div>
   </div>
-</div>
-<div class="example-fill">
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
+  <div class="example-fill">
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+  </div>
 </div>
 ```
 ```dropdown.css  hidden
 .example-fill {
   margin: 20px;
+}
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
 }
 ```
 
@@ -42,30 +50,39 @@ Dropdown should be used if the user wants a recommended selection out of all the
 Only use `is-aligned-top` when there are enough room from the top and not enough from the bottom.
  
 ```dropdown-top.html
-<div class="example-fill">
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-  <p>Some content behind</p>
-</div>
-<div class="hdd-form_input hdd-dropdown">
-  <input value="Jer">
- 
-  <div class="hdd-dropdown_content is-active is-aligned-top">
-    <div class="hdd-dropdown_content_item is-active"><b>Jer</b>oen</div>
-    <div class="hdd-dropdown_content_item">Stian</div>
-    <div class="hdd-dropdown_content_item">Rune</div>
-    <div class="hdd-dropdown_content_item no-hover">Erik</div>
+<div class="dark-mode">
+  <div class="example-fill">
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+    <p>Some content behind</p>
+  </div>
+  <div class="hdd-form_input hdd-dropdown">
+    <input value="Jer">
+  
+    <div class="hdd-dropdown_content is-active is-aligned-top">
+      <div class="hdd-dropdown_content_item is-active"><b>Jer</b>oen</div>
+      <div class="hdd-dropdown_content_item">Stian</div>
+      <div class="hdd-dropdown_content_item">Rune</div>
+      <div class="hdd-dropdown_content_item no-hover">Erik</div>
+    </div>
   </div>
 </div>
 ```
 ```dropdown-top.css  hidden
 .example-fill {
   margin: 20px;
+}
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
 }
 ```
 

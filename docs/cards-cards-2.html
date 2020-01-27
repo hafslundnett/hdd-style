@@ -3,6 +3,13 @@
 
 	<head>
 		<style>
+					@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
+}
 		</style>
 
 		<style>
@@ -53,40 +60,51 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div class="hdd-card">
-  <div class="hdd-card_header">
-    <div class="hdd-card_header_icon">
-      <i class="fal fa-info"></i>
+    <div class="dark-mode">
+  <div class="hdd-card">
+    <div class="hdd-card_header">
+      <div class="hdd-card_header_icon">
+        <i class="fal fa-info"></i>
+      </div>
+      <div class="hdd-card_header_text">
+        <div class="hdd-card_title">Title</div>
+      </div>
     </div>
-    <div class="hdd-card_header_text">
-      <div class="hdd-card_title">Title</div>
+    <div class="hdd-card_content">
+      <p>The different pieces of a card can be combined as desired.</p>
     </div>
-  </div>
-  <div class="hdd-card_content">
-    <p>The different pieces of a card can be combined as desired.</p>
-  </div>
-  <div class="hdd-card_actions">
-    <button class="hdd-button">Full width button</button>
+    <div class="hdd-card_actions">
+      <button class="hdd-button">Full width button</button>
+    </div>
   </div>
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="hdd-card">
-  <div class="hdd-card_header">
-    <div class="hdd-card_header_icon">
-      <i class="fal fa-info"></i>
+			<script type="text/x-stylemark" data-language="html"><div class="dark-mode">
+  <div class="hdd-card">
+    <div class="hdd-card_header">
+      <div class="hdd-card_header_icon">
+        <i class="fal fa-info"></i>
+      </div>
+      <div class="hdd-card_header_text">
+        <div class="hdd-card_title">Title</div>
+      </div>
     </div>
-    <div class="hdd-card_header_text">
-      <div class="hdd-card_title">Title</div>
+    <div class="hdd-card_content">
+      <p>The different pieces of a card can be combined as desired.</p>
     </div>
-  </div>
-  <div class="hdd-card_content">
-    <p>The different pieces of a card can be combined as desired.</p>
-  </div>
-  <div class="hdd-card_actions">
-    <button class="hdd-button">Full width button</button>
+    <div class="hdd-card_actions">
+      <button class="hdd-button">Full width button</button>
+    </div>
   </div>
 </div></script>
+			<script type="text/x-stylemark" data-language="css">@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
+}</script>
 
 		<!--
 			Vanilla JS

@@ -3,45 +3,11 @@
 
 	<head>
 		<style>
-					.example-container {
-  padding: 15px 15px 0 15px; 
-  background: white;
-}
-.example-container-2 {
-  padding: 0 15px 0 15px; 
-  background:white; 
-  display:flex;
-}
-.example-container-3 {
-  padding: 0 15px 0 15px;
-  background: white;
-}
-.example-container-4 {
-  padding: 0 15px 15px 15px; 
-  background:white; 
-  display:flex;
-}
-.color-example {
-  display: inline-block; 
-  height: 50px; 
-  width: 50px; 
-  border-radius: 100%; 
-  margin: 14px; 
-  box-shadow: var(--hdd-shadow-strong);
-}
-.color-text {
-  display: inline-block; 
-  height: 50px; 
-  width: 50px; 
-  margin: 15.7px; 
-  text-align: center;
-}
-@media (prefers-color-scheme: dark) {
-  .example-container, .example-container-2, .example-container-3, .example-container-4 {
-    padding: 20px;
-    background: var(--primary-background-color);
-    color: var(--hdd-color-white);
-  }
+					@media (prefers-color-scheme: dark) {
+    .dark-mode {
+        padding: 20px;
+        background: var(--hdd-color-font-color);
+    }
 }
 		</style>
 
@@ -92,88 +58,11 @@
 		
 	</head>
 
-	<body>					<div style="padding: 20px;">
-    <div class="example-container">
-  <span style="background: var(--hdd-color-signal-green)" class="color-example"></span>
-  <span style="background: var(--hdd-color-signal-yellow)" class="color-example"></span>
-  <span style="background: var(--hdd-color-signal-red)" class="color-example"></span>
-</div>
-<div class="example-container-2">
-  <span class="color-text">signal-green</span>
-  <span class="color-text">signal-yellow</span>
-  <span class="color-text">signal-red</span>
-</div>
-<div class="example-container-3">
-  <span style="background: var(--hdd-color-contrast-signal-green)" class="color-example"></span>
-  <span style="background: var(--hdd-color-contrast-signal-yellow)" class="color-example"></span>
-  <span style="background: var(--hdd-color-contrast-signal-red)" class="color-example"></span>
-</div>
-<div class="example-container-4">
-  <span class="color-text">contrast-signal-green</span>
-  <span class="color-text">contrast-signal-yellow</span>
-  <span class="color-text">contrast-signal-red</span>
-</div>
-</div>
-
-			<script type="text/x-stylemark" data-language="html"><div class="example-container">
-  <span style="background: var(--hdd-color-signal-green)" class="color-example"></span>
-  <span style="background: var(--hdd-color-signal-yellow)" class="color-example"></span>
-  <span style="background: var(--hdd-color-signal-red)" class="color-example"></span>
-</div>
-<div class="example-container-2">
-  <span class="color-text">signal-green</span>
-  <span class="color-text">signal-yellow</span>
-  <span class="color-text">signal-red</span>
-</div>
-<div class="example-container-3">
-  <span style="background: var(--hdd-color-contrast-signal-green)" class="color-example"></span>
-  <span style="background: var(--hdd-color-contrast-signal-yellow)" class="color-example"></span>
-  <span style="background: var(--hdd-color-contrast-signal-red)" class="color-example"></span>
-</div>
-<div class="example-container-4">
-  <span class="color-text">contrast-signal-green</span>
-  <span class="color-text">contrast-signal-yellow</span>
-  <span class="color-text">contrast-signal-red</span>
-</div></script>
-			<script type="text/x-stylemark" data-language="css">.example-container {
-  padding: 15px 15px 0 15px; 
-  background: white;
-}
-.example-container-2 {
-  padding: 0 15px 0 15px; 
-  background:white; 
-  display:flex;
-}
-.example-container-3 {
-  padding: 0 15px 0 15px;
-  background: white;
-}
-.example-container-4 {
-  padding: 0 15px 15px 15px; 
-  background:white; 
-  display:flex;
-}
-.color-example {
-  display: inline-block; 
-  height: 50px; 
-  width: 50px; 
-  border-radius: 100%; 
-  margin: 14px; 
-  box-shadow: var(--hdd-shadow-strong);
-}
-.color-text {
-  display: inline-block; 
-  height: 50px; 
-  width: 50px; 
-  margin: 15.7px; 
-  text-align: center;
-}
-@media (prefers-color-scheme: dark) {
-  .example-container, .example-container-2, .example-container-3, .example-container-4 {
-    padding: 20px;
-    background: var(--primary-background-color);
-    color: var(--hdd-color-white);
-  }
+	<body>			<script type="text/x-stylemark" data-language="css">@media (prefers-color-scheme: dark) {
+    .dark-mode {
+        padding: 20px;
+        background: var(--hdd-color-font-color);
+    }
 }</script>
 
 		<!--
@@ -207,10 +96,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-colors-preview-signal-colors', []);
+						module = angular.module('stylemark-button-badge', []);
 					}
 
-					module.controller('stylemark-colors-preview-signal-colors-' + index, function($scope) {
+					module.controller('stylemark-button-badge-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

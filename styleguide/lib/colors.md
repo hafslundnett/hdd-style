@@ -248,6 +248,13 @@ These colors are chosen to be used for infographics. If necessary, these colors 
   margin: 15.7px; 
   text-align: center;
 }
+@media (prefers-color-scheme: dark) {
+  .example-container, .example-container-2, .example-container-3, .example-container-4 {
+    padding: 20px;
+    background: var(--primary-background-color);
+    color: var(--hdd-color-white);
+  }
+}
 ```
 ```grey-colors.css  hidden
 .example-container {
@@ -281,6 +288,13 @@ These colors are chosen to be used for infographics. If necessary, these colors 
   width: 50px; 
   margin: 15.7px; 
   text-align: center;
+}
+@media (prefers-color-scheme: dark) {
+  .example-container, .example-container-2, .example-container-3, .example-container-4 {
+    padding: 20px;
+    background: var(--primary-background-color);
+    color: var(--hdd-color-white);
+  }
 }
 ```
 ```signal-colors.css  hidden
@@ -317,6 +331,13 @@ These colors are chosen to be used for infographics. If necessary, these colors 
   margin: 15.7px; 
   text-align: center;
 }
+@media (prefers-color-scheme: dark) {
+  .example-container, .example-container-2, .example-container-3, .example-container-4 {
+    padding: 20px;
+    background: var(--primary-background-color);
+    color: var(--hdd-color-white);
+  }
+}
 ```
 ```data-colors.css  hidden
 .example-container {
@@ -351,5 +372,13 @@ These colors are chosen to be used for infographics. If necessary, these colors 
   width: 50px; 
   margin: 15.7px; 
   text-align: center;
+}
+@media (prefers-color-scheme: dark) {
+  .example-container, .example-container-2, .example-container-3, .example-container-4 {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+    color: var(--hdd-color-white);
+  }
 }
 ```

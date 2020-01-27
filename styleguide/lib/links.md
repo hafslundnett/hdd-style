@@ -9,10 +9,23 @@ Links are for prompting a user action that will affect another part.
 `hdd-link`
 
 ```links.html
-<a href="https://google.com" class="hdd-link">Normal</a> <br>
-<a href="https://hafslundnett.no" class="hdd-link is-active">Active</a><br>
-<a href="https://hafslundnett.no" class="hdd-link is-hovering">Hovered</a><br>
-<a href="https://hafslundnett.no" class="hdd-link no-hover">Disabled hover state</a><br>
+<div class="dark-mode">
+    <a href="https://google.com" class="hdd-link">Normal</a> <br>
+    <a href="https://hafslundnett.no" class="hdd-link is-active">Active</a><br>
+    <a href="https://hafslundnett.no" class="hdd-link is-hovering">Hovered</a><br>
+    <a href="https://hafslundnett.no" class="hdd-link no-hover">Disabled hover state</a><br>
+</div>
+```
+
+
+```links.css hidden
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
+}
 ```
 
 ## Mutations
