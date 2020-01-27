@@ -154,31 +154,35 @@
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;h1&gt;For mobile and desktop (.hdd-grid)&lt;/h1&gt;
-&lt;div class=&quot;hdd-grid&quot;&gt;
-  &lt;div class=&quot;grid-item-1&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;grid-item-2&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;grid-item-3&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;dark-mode&quot;&gt;
+  &lt;h1&gt;For mobile and desktop (.hdd-grid)&lt;/h1&gt;
+  &lt;div class=&quot;hdd-grid&quot;&gt;
+    &lt;div class=&quot;grid-item-1&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid-item-2&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid-item-3&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
 
-&lt;h1&gt;For desktop (.hdd-grid-desktop)&lt;/h1&gt;
-&lt;div class=&quot;hdd-grid-desktop&quot;&gt;
-  &lt;div class=&quot;grid-item-1&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;grid-item-2&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;grid-item-3&quot;&gt;&lt;/div&gt;
+  &lt;h1&gt;For desktop (.hdd-grid-desktop)&lt;/h1&gt;
+  &lt;div class=&quot;hdd-grid-desktop&quot;&gt;
+    &lt;div class=&quot;grid-item-1&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid-item-2&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid-item-3&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;h1&gt;For mobile and desktop (.hdd-grid)&lt;/h1&gt;
-&lt;div class=&quot;hdd-grid&quot;&gt;
-  &lt;div class=&quot;grid-item-1&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;grid-item-2&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;grid-item-3&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;dark-mode&quot;&gt;
+  &lt;h1&gt;For mobile and desktop (.hdd-grid)&lt;/h1&gt;
+  &lt;div class=&quot;hdd-grid&quot;&gt;
+    &lt;div class=&quot;grid-item-1&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid-item-2&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid-item-3&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
 
-&lt;h1&gt;For desktop (.hdd-grid-desktop)&lt;/h1&gt;
-&lt;div class=&quot;hdd-grid-desktop&quot;&gt;
-  &lt;div class=&quot;grid-item-1&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;grid-item-2&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;grid-item-3&quot;&gt;&lt;/div&gt;
+  &lt;h1&gt;For desktop (.hdd-grid-desktop)&lt;/h1&gt;
+  &lt;div class=&quot;hdd-grid-desktop&quot;&gt;
+    &lt;div class=&quot;grid-item-1&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid-item-2&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid-item-3&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><p>You should use grid-column and grid-row to position your elements on the grid. Remember to add new positions for the breakpoints. Elements will have a width based on the grid, but no height as rows have no default height.</p>
@@ -206,6 +210,13 @@
 }
 .hdd-grid {
   margin-bottom: var(--hdd-spacing-3);
+}
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
 }">Copy</button>
 		<pre class="mb-0"><code class="lang-">.grid-item-1 {
   grid-column: 1 / 3;
@@ -227,6 +238,13 @@
 }
 .hdd-grid {
   margin-bottom: var(--hdd-spacing-3);
+}
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
 }</code></pre>
 	</div>
 </div></div>
@@ -3622,68 +3640,72 @@ In the internal design system SVG files from Streamline light must be used.
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
-    &lt;div style=&quot;padding: var(--hdd-spacing-1)&quot; class=&quot;spacing-circle&quot;&gt;
-        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;dark-mode&quot;&gt;
+    &lt;div&gt;
+        &lt;div style=&quot;padding: var(--hdd-spacing-1)&quot; class=&quot;spacing-circle&quot;&gt;
+            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;padding: var(--hdd-spacing-2)&quot; class=&quot;spacing-circle&quot;&gt;
+            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div style=&quot;padding: var(--hdd-spacing-2)&quot; class=&quot;spacing-circle&quot;&gt;
-        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+    &lt;div&gt;
+        &lt;div style=&quot;padding: var(--hdd-spacing-3)&quot; class=&quot;spacing-circle&quot;&gt;
+            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;padding: var(--hdd-spacing-4)&quot; class=&quot;spacing-circle&quot;&gt;
+            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;div style=&quot;padding: var(--hdd-spacing-3)&quot; class=&quot;spacing-circle&quot;&gt;
-        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+    &lt;div&gt;
+        &lt;div style=&quot;padding: var(--hdd-spacing-5)&quot; class=&quot;spacing-circle&quot;&gt;
+            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;padding: var(--hdd-spacing-6)&quot; class=&quot;spacing-circle&quot;&gt;
+            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div style=&quot;padding: var(--hdd-spacing-4)&quot; class=&quot;spacing-circle&quot;&gt;
-        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;div style=&quot;padding: var(--hdd-spacing-5)&quot; class=&quot;spacing-circle&quot;&gt;
-        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div style=&quot;padding: var(--hdd-spacing-6)&quot; class=&quot;spacing-circle&quot;&gt;
-        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;div style=&quot;padding: var(--hdd-spacing-7)&quot; class=&quot;spacing-circle&quot;&gt;
-        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div style=&quot;padding: var(--hdd-spacing-8)&quot; class=&quot;spacing-circle&quot;&gt;
-        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+    &lt;div&gt;
+        &lt;div style=&quot;padding: var(--hdd-spacing-7)&quot; class=&quot;spacing-circle&quot;&gt;
+            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;padding: var(--hdd-spacing-8)&quot; class=&quot;spacing-circle&quot;&gt;
+            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div&gt;
-    &lt;div style=&quot;padding: var(--hdd-spacing-1)&quot; class=&quot;spacing-circle&quot;&gt;
-        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;dark-mode&quot;&gt;
+    &lt;div&gt;
+        &lt;div style=&quot;padding: var(--hdd-spacing-1)&quot; class=&quot;spacing-circle&quot;&gt;
+            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;padding: var(--hdd-spacing-2)&quot; class=&quot;spacing-circle&quot;&gt;
+            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div style=&quot;padding: var(--hdd-spacing-2)&quot; class=&quot;spacing-circle&quot;&gt;
-        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+    &lt;div&gt;
+        &lt;div style=&quot;padding: var(--hdd-spacing-3)&quot; class=&quot;spacing-circle&quot;&gt;
+            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;padding: var(--hdd-spacing-4)&quot; class=&quot;spacing-circle&quot;&gt;
+            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;div style=&quot;padding: var(--hdd-spacing-3)&quot; class=&quot;spacing-circle&quot;&gt;
-        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+    &lt;div&gt;
+        &lt;div style=&quot;padding: var(--hdd-spacing-5)&quot; class=&quot;spacing-circle&quot;&gt;
+            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;padding: var(--hdd-spacing-6)&quot; class=&quot;spacing-circle&quot;&gt;
+            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div style=&quot;padding: var(--hdd-spacing-4)&quot; class=&quot;spacing-circle&quot;&gt;
-        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;div style=&quot;padding: var(--hdd-spacing-5)&quot; class=&quot;spacing-circle&quot;&gt;
-        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div style=&quot;padding: var(--hdd-spacing-6)&quot; class=&quot;spacing-circle&quot;&gt;
-        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;div style=&quot;padding: var(--hdd-spacing-7)&quot; class=&quot;spacing-circle&quot;&gt;
-        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div style=&quot;padding: var(--hdd-spacing-8)&quot; class=&quot;spacing-circle&quot;&gt;
-        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+    &lt;div&gt;
+        &lt;div style=&quot;padding: var(--hdd-spacing-7)&quot; class=&quot;spacing-circle&quot;&gt;
+            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;padding: var(--hdd-spacing-8)&quot; class=&quot;spacing-circle&quot;&gt;
+            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
@@ -3827,44 +3849,48 @@ In the internal design system SVG files from Streamline light must be used.
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;h1&gt;Heading 1&lt;/h1&gt;
-&lt;h1&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h1&gt;
-&lt;h1&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h1&gt;
-&lt;h1&gt;0123456789&lt;/h1&gt;
-&lt;br /&gt;
-&lt;h2&gt;Heading 2&lt;/h2&gt;
-&lt;h2&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h2&gt;
-&lt;h2&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h2&gt;
-&lt;h2&gt;0123456789&lt;/h2&gt;
-&lt;br /&gt;
-&lt;h3&gt;Heading 3&lt;/h3&gt;
-&lt;h3&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h3&gt;
-&lt;h3&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h3&gt;
-&lt;h3&gt;0123456789&lt;/h3&gt;
-&lt;br /&gt;
-&lt;p&gt;paragraph&lt;/p&gt;
-&lt;p&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/p&gt;
-&lt;p&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/p&gt;
-&lt;p&gt;0123456789&lt;/p&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;h1&gt;Heading 1&lt;/h1&gt;
-&lt;h1&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h1&gt;
-&lt;h1&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h1&gt;
-&lt;h1&gt;0123456789&lt;/h1&gt;
-&lt;br /&gt;
-&lt;h2&gt;Heading 2&lt;/h2&gt;
-&lt;h2&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h2&gt;
-&lt;h2&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h2&gt;
-&lt;h2&gt;0123456789&lt;/h2&gt;
-&lt;br /&gt;
-&lt;h3&gt;Heading 3&lt;/h3&gt;
-&lt;h3&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h3&gt;
-&lt;h3&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h3&gt;
-&lt;h3&gt;0123456789&lt;/h3&gt;
-&lt;br /&gt;
-&lt;p&gt;paragraph&lt;/p&gt;
-&lt;p&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/p&gt;
-&lt;p&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/p&gt;
-&lt;p&gt;0123456789&lt;/p&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;dark-mode&quot;&gt;
+    &lt;h1&gt;Heading 1&lt;/h1&gt;
+    &lt;h1&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h1&gt;
+    &lt;h1&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h1&gt;
+    &lt;h1&gt;0123456789&lt;/h1&gt;
+    &lt;br /&gt;
+    &lt;h2&gt;Heading 2&lt;/h2&gt;
+    &lt;h2&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h2&gt;
+    &lt;h2&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h2&gt;
+    &lt;h2&gt;0123456789&lt;/h2&gt;
+    &lt;br /&gt;
+    &lt;h3&gt;Heading 3&lt;/h3&gt;
+    &lt;h3&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h3&gt;
+    &lt;h3&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h3&gt;
+    &lt;h3&gt;0123456789&lt;/h3&gt;
+    &lt;br /&gt;
+    &lt;p&gt;paragraph&lt;/p&gt;
+    &lt;p&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/p&gt;
+    &lt;p&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/p&gt;
+    &lt;p&gt;0123456789&lt;/p&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;dark-mode&quot;&gt;
+    &lt;h1&gt;Heading 1&lt;/h1&gt;
+    &lt;h1&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h1&gt;
+    &lt;h1&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h1&gt;
+    &lt;h1&gt;0123456789&lt;/h1&gt;
+    &lt;br /&gt;
+    &lt;h2&gt;Heading 2&lt;/h2&gt;
+    &lt;h2&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h2&gt;
+    &lt;h2&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h2&gt;
+    &lt;h2&gt;0123456789&lt;/h2&gt;
+    &lt;br /&gt;
+    &lt;h3&gt;Heading 3&lt;/h3&gt;
+    &lt;h3&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h3&gt;
+    &lt;h3&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h3&gt;
+    &lt;h3&gt;0123456789&lt;/h3&gt;
+    &lt;br /&gt;
+    &lt;p&gt;paragraph&lt;/p&gt;
+    &lt;p&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/p&gt;
+    &lt;p&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/p&gt;
+    &lt;p&gt;0123456789&lt;/p&gt;
+&lt;/div&gt;</code></pre>
 	</div>
 </div></div>
 </div>

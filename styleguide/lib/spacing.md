@@ -17,36 +17,38 @@ Spatial system that follows multiplication of 0.5rem (1rem = 16px). This provide
 - 4.0rem (64px): `--hdd-spacing-8`
 
 ```spacing.html
-<div>
-	<div style="padding: var(--hdd-spacing-1)" class="spacing-circle">
-		<span class="spacing-circle-mini"></span>
+<div class="dark-mode">
+	<div>
+		<div style="padding: var(--hdd-spacing-1)" class="spacing-circle">
+			<span class="spacing-circle-mini"></span>
+		</div>
+		<div style="padding: var(--hdd-spacing-2)" class="spacing-circle">
+			<span class="spacing-circle-mini"></span>
+		</div>
 	</div>
-	<div style="padding: var(--hdd-spacing-2)" class="spacing-circle">
-		<span class="spacing-circle-mini"></span>
+	<div>
+		<div style="padding: var(--hdd-spacing-3)" class="spacing-circle">
+			<span class="spacing-circle-mini"></span>
+		</div>
+		<div style="padding: var(--hdd-spacing-4)" class="spacing-circle">
+			<span class="spacing-circle-mini"></span>
+		</div>
 	</div>
-</div>
-<div>
-	<div style="padding: var(--hdd-spacing-3)" class="spacing-circle">
-		<span class="spacing-circle-mini"></span>
+	<div>
+		<div style="padding: var(--hdd-spacing-5)" class="spacing-circle">
+			<span class="spacing-circle-mini"></span>
+		</div>
+		<div style="padding: var(--hdd-spacing-6)" class="spacing-circle">
+			<span class="spacing-circle-mini"></span>
+		</div>
 	</div>
-	<div style="padding: var(--hdd-spacing-4)" class="spacing-circle">
-		<span class="spacing-circle-mini"></span>
-	</div>
-</div>
-<div>
-	<div style="padding: var(--hdd-spacing-5)" class="spacing-circle">
-		<span class="spacing-circle-mini"></span>
-	</div>
-	<div style="padding: var(--hdd-spacing-6)" class="spacing-circle">
-		<span class="spacing-circle-mini"></span>
-	</div>
-</div>
-<div>
-	<div style="padding: var(--hdd-spacing-7)" class="spacing-circle">
-		<span class="spacing-circle-mini"></span>
-	</div>
-	<div style="padding: var(--hdd-spacing-8)" class="spacing-circle">
-		<span class="spacing-circle-mini"></span>
+	<div>
+		<div style="padding: var(--hdd-spacing-7)" class="spacing-circle">
+			<span class="spacing-circle-mini"></span>
+		</div>
+		<div style="padding: var(--hdd-spacing-8)" class="spacing-circle">
+			<span class="spacing-circle-mini"></span>
+		</div>
 	</div>
 </div>
 ```
@@ -66,6 +68,13 @@ Spatial system that follows multiplication of 0.5rem (1rem = 16px). This provide
 	width: 8px; 
 	border-radius: 100%; 
 	background: var(--hdd-color-grey-medium); 
+}
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
 }
 ```
 

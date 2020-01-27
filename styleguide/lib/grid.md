@@ -15,18 +15,20 @@ We provide two grids you can use. The first (`.hdd-grid`) is meant for sites tha
 - 12 for big-size (> Jupiter)
 
 ```grid.html
-<h1>For mobile and desktop (.hdd-grid)</h1>
-<div class="hdd-grid">
-  <div class="grid-item-1"></div>
-  <div class="grid-item-2"></div>
-  <div class="grid-item-3"></div>
-</div>
+<div class="dark-mode">
+  <h1>For mobile and desktop (.hdd-grid)</h1>
+  <div class="hdd-grid">
+    <div class="grid-item-1"></div>
+    <div class="grid-item-2"></div>
+    <div class="grid-item-3"></div>
+  </div>
 
-<h1>For desktop (.hdd-grid-desktop)</h1>
-<div class="hdd-grid-desktop">
-  <div class="grid-item-1"></div>
-  <div class="grid-item-2"></div>
-  <div class="grid-item-3"></div>
+  <h1>For desktop (.hdd-grid-desktop)</h1>
+  <div class="hdd-grid-desktop">
+    <div class="grid-item-1"></div>
+    <div class="grid-item-2"></div>
+    <div class="grid-item-3"></div>
+  </div>
 </div>
 ```
 
@@ -53,5 +55,12 @@ You should use grid-column and grid-row to position your elements on the grid. R
 }
 .hdd-grid {
   margin-bottom: var(--hdd-spacing-3);
+}
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--primary-background-color);
+  }
 }
 ```
