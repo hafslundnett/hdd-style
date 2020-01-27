@@ -16,7 +16,7 @@ For every used front-end framework a separate 'components' library should be cre
 
 There are multiple ways of using HDD:
 * Cloning the git repository: `git clone git@github.com:hafslundnett/hdd-style.git`
-* Add it as an npm dependency: `npm install @hafslundnett/hdd-style` 
+* Add it as an npm dependency: `yarn add @hafslundnett/hdd-style` 
   * Import main.sass in your stylesheet: `@import '~@hafslundnett/hdd-style/main';`
   * Use the bundled and minified file: `dist/bundle.min.css`
 

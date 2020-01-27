@@ -1,3 +1,13 @@
+# Update [7.0.0]
+In this update the default `box-sizing` has been set to `border-box` everywhere.
+
+## Breaking changes
+
+### Box-Sizing:
+* With `border-box` as the new universal `box-sizing` all elements will inherit this style. 
+* If style is breaking, either the `box-sizing` attribute can be set to `content-box` or the element itself needs to change.
+
+
 # Update [6.0.0]
 In this update the buttons and tooltip have changed visually. 
 
@@ -33,7 +43,7 @@ In this update the css-variables for colors are renamed to --hdd-color-$nameofco
 
 * **New variables / Removed variables**
     * --hdd-nameofcolor => --hdd-color-nameofcolor
-    * eks: --hdd-primary => --hdd-color-primary
+    * eks: `--hdd-primary` => `--hdd-color-primary`
 
 
 # Update [4.0.0]
@@ -44,12 +54,12 @@ In this update buttons have been redesigned completely and there are some breaki
 ### Buttons:
 The small and normal buttons have been combined into one mid-sized button.
 * **Removed classes**
-    * On hdd-button
+    * On `hdd-button`
         * **is-small** is removed
         * **has-icon-left**, **has-icon-right** is removed
         * **no-hover**, **no-active**, **no-focus** is removed
         * **is-hovering**, **is-active**, **is-focus** is removed
-    * On hdd-button-icon
+    * On `hdd-button-icon`
         * **no-hover**, **no-active**, **no-focus** is removed
         * **is-hovering**, **is-active**, **is-focus** is removed
 * **Sizing**:

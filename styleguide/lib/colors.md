@@ -16,32 +16,32 @@ The primary color is blue and work as an important element for building the iden
 - `--hdd-color-blue-light4` `--hdd-color-contrast-blue-light4`
 
 ```primary-colors.html
-<div style="padding: 15px 15px 0 15px; background: white;">
-  <span style="background: var(--hdd-color-blue); height: 100px; width: 100px;" class="color-example"></span>
+<div class="example-container">
+  <span style="background: var(--hdd-color-blue)" class="color-example-big"></span>
   <span style="background: var(--hdd-color-blue-dark)" class="color-example"></span>
   <span style="background: var(--hdd-color-blue-light1)" class="color-example"></span>
   <span style="background: var(--hdd-color-blue-light2)" class="color-example"></span>
   <span style="background: var(--hdd-color-blue-light3)" class="color-example"></span>
   <span style="background: var(--hdd-color-blue-light4)" class="color-example"></span>
 </div>
-<div style="padding: 0 15px 0 15px; background:white; display:flex;">
-  <span class="color-text" style="width: 100px;">blue</span>
+<div class="example-container-2">
+  <span class="color-text-first">blue</span>
   <span class="color-text">blue-dark</span>
   <span class="color-text">blue-light1</span>
   <span class="color-text">blue-light2</span>
   <span class="color-text">blue-light3</span>
   <span class="color-text">blue-light4</span>
 </div>
-<div style="padding: 0 15px 0 15px; background: white;">
-  <span style="background: var(--hdd-color-contrast-blue); height: 100px; width: 100px;" class="color-example"></span>
+<div class="example-container-3">
+  <span style="background: var(--hdd-color-contrast-blue)" class="color-example-big""></span>
   <span style="background: var(--hdd-color-contrast-blue-dark)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-blue-light1)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-blue-light2)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-blue-light3)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-blue-light4)" class="color-example"></span>
 </div>
-<div style="padding: 0 15px 15px 15px; background:white; display:flex;">
-  <span class="color-text" style="width: 100px;">contrast-blue</span>
+<div class="example-container-4">
+  <span class="color-text-first">contrast-blue</span>
   <span class="color-text">contrast-blue-dark</span>
   <span class="color-text">contrast-blue-light1</span>
   <span class="color-text">contrast-blue-light2</span>
@@ -67,7 +67,7 @@ The grayscale should be used in addition to the primary colors of non-printable 
 - `--hdd-color-white` `--hdd-color-contrast-white` 
 
 ```grey-colors.html
-<div style="padding: 15px 15px 0 15px; background: white;">
+<div class="example-container">
   <span style="background: var(--hdd-color-black)" class="color-example"></span>
   <span style="background: var(--hdd-color-font-color)" class="color-example"></span>
   <span style="background: var(--hdd-color-grey-dark)" class="color-example"></span>
@@ -78,7 +78,7 @@ The grayscale should be used in addition to the primary colors of non-printable 
   <span style="background: var(--hdd-color-grey-background)" class="color-example"></span>
   <span style="background: var(--hdd-color-white)" class="color-example"></span>
 </div>
-<div style="padding: 0 15px 0 15px; background:white; display:flex;">
+<div class="example-container-2">
   <span class="color-text">black</span>
   <span class="color-text">font-color</span>
   <span class="color-text">grey-dark</span>
@@ -89,7 +89,7 @@ The grayscale should be used in addition to the primary colors of non-printable 
   <span class="color-text">grey-background</span>
   <span class="color-text">white</span>
 </div>
-<div style="padding: 0 15px 0 15px; background: white;">
+<div class="example-container-3">
   <span style="background: var(--hdd-color-contrast-black)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-font-color)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-grey-dark)" class="color-example"></span>
@@ -100,7 +100,7 @@ The grayscale should be used in addition to the primary colors of non-printable 
   <span style="background: var(--hdd-color-contrast-grey-background)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-white)" class="color-example"></span>
 </div>
-<div style="padding: 0 15px 15px 15px; background:white; display:flex;">
+<div class="example-container-4">
   <span class="color-text">contrast-black</span>
   <span class="color-text">contrast-font-color</span>
   <span class="color-text">contrast-grey-dark</span>
@@ -121,22 +121,22 @@ Signal colors should only be used in meaningful (never being identity-bearing or
 - `--hdd-color-signal-red`      `--hdd-color-contrast-signal-red`
 
 ```signal-colors.html
-<div style="padding: 15px 15px 0 15px; background: white;">
+<div class="example-container">
   <span style="background: var(--hdd-color-signal-green)" class="color-example"></span>
   <span style="background: var(--hdd-color-signal-yellow)" class="color-example"></span>
   <span style="background: var(--hdd-color-signal-red)" class="color-example"></span>
 </div>
-<div style="padding: 0 15px 0 15px; background:white; display:flex;">
+<div class="example-container-2">
   <span class="color-text">signal-green</span>
   <span class="color-text">signal-yellow</span>
   <span class="color-text">signal-red</span>
 </div>
-<div style="padding: 0 15px 0 15px; background: white;">
+<div class="example-container-3">
   <span style="background: var(--hdd-color-contrast-signal-green)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-signal-yellow)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-signal-red)" class="color-example"></span>
 </div>
-<div style="padding: 0 15px 15px 15px; background:white; display:flex;">
+<div class="example-container-4">
   <span class="color-text">contrast-signal-green</span>
   <span class="color-text">contrast-signal-yellow</span>
   <span class="color-text">contrast-signal-red</span>
@@ -156,7 +156,7 @@ These colors are chosen to be used for infographics. If necessary, these colors 
 - `--hdd-color-data-yellow`   `--hdd-color-contrast-data-yellow`
 
 ```data-colors.html
-<div style="padding: 15px 15px 0 15px; background: white;">
+<div class="example-container">
   <span style="background: var(--hdd-color-data-navy)" class="color-example"></span>
   <span style="background: var(--hdd-color-data-marine)" class="color-example"></span>
   <span style="background: var(--hdd-color-data-blue)" class="color-example"></span>
@@ -166,7 +166,7 @@ These colors are chosen to be used for infographics. If necessary, these colors 
   <span style="background: var(--hdd-color-data-orange)" class="color-example"></span>
   <span style="background: var(--hdd-color-data-yellow)" class="color-example"></span>
 </div>
-<div style="padding: 0 15px 0 15px; background:white; display:flex;">
+<div class="example-container-2">
   <span class="color-text">data-navy</span>
   <span class="color-text">data-marine</span>
   <span class="color-text">data-blue</span>
@@ -176,7 +176,7 @@ These colors are chosen to be used for infographics. If necessary, these colors 
   <span class="color-text">data-orange</span>
   <span class="color-text">data-yellow</span>
 </div>
-<div style="padding: 0 15px 0 15px; background: white;">
+<div class="example-container-3">
   <span style="background: var(--hdd-color-contrast-data-navy)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-data-marine)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-data-blue)" class="color-example"></span>
@@ -186,7 +186,7 @@ These colors are chosen to be used for infographics. If necessary, these colors 
   <span style="background: var(--hdd-color-contrast-data-orange)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-data-yellow)" class="color-example"></span>
 </div>
-<div style="padding: 0 15px 15px 15px; background:white; display:flex;">
+<div class="example-container-4">
   <span class="color-text">contrast-data-navy</span>
   <span class="color-text">contrast-data-marine</span>
   <span class="color-text">contrast-data-blue</span>
@@ -200,36 +200,156 @@ These colors are chosen to be used for infographics. If necessary, these colors 
 
 
 ```primary-colors.css  hidden
+.example-container {
+  padding: 15px 15px 0 15px; 
+  background: white;
+}
+.example-container-2 {
+  padding: 0 15px 0 15px; 
+  background:white; 
+  display:flex;
+}
+.example-container-3 {
+  padding: 0 15px 0 15px; 
+  background: white;
+}
+.example-container-4 {
+  padding: 0 15px 15px 15px; 
+  background:white; 
+  display:flex;
+}
+.color-example-big {
+  height: 100px; 
+  width: 100px; 
+  display: inline-block; 
+  border-radius: 100%; 
+  margin: 14px; 
+  box-shadow: var(--hdd-shadow-strong);
+}
 .color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 14px; box-shadow: var(--hdd-shadow-strong); 
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  border-radius: 100%; 
+  margin: 14px; 
+  box-shadow: var(--hdd-shadow-strong); 
+}
+.color-text-first {
+  display: inline-block; 
+  height: 50px; 
+  width: 100px; 
+  margin: 15.7px; 
+  text-align: center;
 }
 .color-text {
-  display: inline-block; height: 50px; width: 50px; margin: 15.7px; text-align: center;
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  margin: 15.7px; 
+  text-align: center;
 }
 ```
 ```grey-colors.css  hidden
+.example-container {
+  padding: 15px 15px 0 15px; 
+  background: white;
+}
+.example-container-2 {
+  padding: 0 15px 0 15px; 
+  background:white; display:flex;
+}
+.example-container-3 {
+  padding: 0 15px 0 15px; 
+  background: white;
+}
+.example-container-4 {
+  padding: 0 15px 15px 15px; 
+  background:white; 
+  display:flex;
+}
 .color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 14px; box-shadow: var(--hdd-shadow-strong);
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  border-radius: 100%; 
+  margin: 14px; 
+  box-shadow: var(--hdd-shadow-strong);
 }
 .color-text {
-  display: inline-block; height: 50px; width: 50px; margin: 15.7px; text-align: center;
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  margin: 15.7px; 
+  text-align: center;
 }
 ```
 ```signal-colors.css  hidden
+.example-container {
+  padding: 15px 15px 0 15px; 
+  background: white;
+}
+.example-container-2 {
+  padding: 0 15px 0 15px; 
+  background:white; 
+  display:flex;
+}
+.example-container-3 {
+  padding: 0 15px 0 15px;
+  background: white;
+}
+.example-container-4 {
+  padding: 0 15px 15px 15px; 
+  background:white; 
+  display:flex;
+}
 .color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 14px; box-shadow: var(--hdd-shadow-strong);
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  border-radius: 100%; 
+  margin: 14px; 
+  box-shadow: var(--hdd-shadow-strong);
 }
 .color-text {
-  display: inline-block; height: 50px; width: 50px; margin: 15.7px; text-align: center;
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  margin: 15.7px; 
+  text-align: center;
 }
 ```
 ```data-colors.css  hidden
+.example-container {
+  padding: 15px 15px 0 15px; 
+  background: white;
+}
+.example-container-2 {
+  padding: 0 15px 0 15px; 
+  background:white; 
+  display:flex;
+}
+.example-container-3 {
+  padding: 0 15px 0 15px; 
+  background: white;
+}
+.example-container-4 {
+  padding: 0 15px 15px 15px; 
+  background:white; 
+  display:flex;
+}
 .color-example {
-  display: inline-block; height: 50px; width: 50px; border-radius: 100%; margin: 14px; box-shadow: var(--hdd-shadow-strong);
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  border-radius: 100%; 
+  margin: 14px; 
+  box-shadow: var(--hdd-shadow-strong);
 }
 .color-text {
-  display: inline-block; height: 50px; width: 50px; margin: 15.7px; text-align: center;
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  margin: 15.7px; 
+  text-align: center;
 }
 ```
-
-
