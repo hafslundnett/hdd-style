@@ -8,10 +8,12 @@
   &:hover:not(.no-hover),
   &.is-hovering,
   &:focus:not(.no-focus),
-  &.is-focusing,
+  &.is-focusing {
+    text-decoration: underline;
+  }
   &:active:not(.no-active),
   &.is-active {
+    color: var(--hdd-color-blue-dark);
     text-decoration: underline;
-    cursor: pointer;
   }
 }

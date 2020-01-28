@@ -224,8 +224,8 @@ $gradients: (
     --hdd-background-primary: var(--hdd-color-grey-dark2);
     --hdd-background-secondary: var(--hdd-color-grey-dark3);
     --hdd-background-marker: var(--hdd-color-blue-dark);
-    --hdd-background-accent-color: #20506d;
-    --hdd-background-disabled: #6d6e71;
+    --hdd-background-accent-color: #20506d; // New color needed / suggestion
+    --hdd-background-disabled: #6d6e71; // New color needed / suggestion
 
     --hdd-text-primary: var(--hdd-color-white);
     --hdd-text-secondary: var(--hdd-color-grey-light1);
@@ -235,6 +235,6 @@ $gradients: (
     --hdd-background-radio: var(--hdd-color-grey);
     --hdd-background-tags: var(--hdd-color-blue);
     --hdd-tooltip-background-dark: var(--hdd-color-grey-dark3);
-    --hdd-form-buttons-background: #232222;
+    --hdd-form-buttons-background: #232222; // New color needed / suggestion
   }
 }
