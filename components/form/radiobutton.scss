@@ -1,13 +1,14 @@
 $form-radiobutton-mark-size: 14px;
 $form-radiobutton-mark-border-radius: 14px;
 $form-radiobutton-mark-border: 1px solid var(--hdd-color-dynamic-primary);
-$radiobutton-background: color(background-secondary);
-
-@include is-dark-theme() {
-  $radiobutton-background: #232222;
-}
 
 .hdd-form_radiobutton {
+  --hdd-color-radiobutton-background: var(--hdd-color-background-secondary);
+  
+  @include is-dark-theme() {
+    --hdd-color-radiobutton-background: #232222;
+  }
+
   // Variable containing '&' to jump to current parent inside a child class.
   $this: &;
 
@@ -25,7 +26,7 @@ $radiobutton-background: color(background-secondary);
       content: "";
       display: inline-block;
       padding: 5px;
-      border: 2px solid $radiobutton-background;
+      border: 2px solid var(--hdd-color-radiobutton-background);
       border-radius: 14px;
     }
   }
@@ -52,7 +53,7 @@ $radiobutton-background: color(background-secondary);
     transition: background 0.3s $transition-cubic;
     border: $form-radiobutton-mark-border;
     border-radius: $form-radiobutton-mark-border-radius;
-    background: $radiobutton-background;
+    background: var(--hdd-color-radiobutton-background);
   }
 
   &_label {

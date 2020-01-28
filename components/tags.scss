@@ -1,12 +1,13 @@
 $tag-padding: 10px;
 $tag-border-radius: $border-radius;
-$tags-background: color(blue-light3);
-
-@include is-dark-theme() {
-  $tags-background: color(primary);
-}
 
 .hdd-tags {
+  --hdd-color-tags-background: var(--hdd-color-blue-light3);
+
+  @include is-dark-theme() {
+    --hdd-color-tags-background: var(--hdd-color-primary);
+  }
+
   position: relative;
   margin-top: 0.5rem;
 
@@ -33,7 +34,7 @@ $tags-background: color(blue-light3);
     margin-left: var(--hdd-spacing-2);
     padding: $tag-padding;
     border-radius: $tag-border-radius;
-    background: $tags-background;
+    background: var(--hdd-color-tags-background);
     letter-spacing: 0.15px;
     &:first-child {
       margin-left: 0;

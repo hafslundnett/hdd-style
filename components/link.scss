@@ -1,15 +1,15 @@
-$link-color: color(blue-dark);
-
-@include is-dark-theme() {
-  $link-color: color(blue-light2);
-}
-
 .hdd-link {
+  --hdd-color-link-color: var(--hdd-color-blue-dark);
+
+  @include is-dark-theme() {
+    --hdd-color-link-color: var(--hdd-color-blue-light2);
+  }
+
   // .is-p is font-properties, defined in typography
   @extend .is-p;
 
   text-decoration: none;
-  color: $link-color;
+  color: var(--hdd-color-link-color);
 
   &:hover:not(.no-hover),
   &.is-hovering,
