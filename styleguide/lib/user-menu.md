@@ -55,20 +55,16 @@ This is the user menu to be shown when clicking on your image in the header. Thi
 ```
 
 ```user-menu.css hidden {
-@media (prefers-color-scheme: dark) {
-  .dark-mode {
-    margin: -20px;
-    padding: 20px;
-    background: var(--hdd-background-primary);
-  }
+.dark-mode {
+  margin: -20px;
+  padding: 20px;
+  background: var(--hdd-background-primary);
 }
 ```
 ```user-menu-no-img.css hidden
-@media (prefers-color-scheme: dark) {
-  .dark-mode {
-    margin: -20px;
-    padding: 20px;
-    background: var(--hdd-background-primary);
-  }
+.dark-mode {
+  margin: -20px;
+  padding: 20px;
+  background: var(--hdd-background-primary);
 }
 ```

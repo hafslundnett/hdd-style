@@ -87,48 +87,40 @@ The buttons are all the same size.
 .hdd-button {
   margin: 4px; 
 }
-@media (prefers-color-scheme: dark) {
-  .dark-mode {
-    margin: -20px;
-    padding: 20px;
-    background: var(--hdd-background-primary);
-  }
+.dark-mode {
+  margin: -20px;
+  padding: 20px;
+  background: var(--hdd-background-primary);
 }
 ```
 ```secondary-button.css  hidden
 .hdd-button {
   margin: 4px;
 }
-@media (prefers-color-scheme: dark) {
-  .dark-mode {
-    margin: -20px;
-    padding: 20px;
-    background: var(--hdd-background-primary);
-  }
+.dark-mode {
+  margin: -20px;
+  padding: 20px;
+  background: var(--hdd-background-primary);
 }
 ```
 ```with-icon-button.css  hidden
 .hdd-button {
   margin: 4px;
 }
-@media (prefers-color-scheme: dark) {
-  .dark-mode {
-    margin: -20px;
-    padding: 20px;
-    background: var(--hdd-background-primary);
-  }
+.dark-mode {
+  margin: -20px;
+  padding: 20px;
+  background: var(--hdd-background-primary);
 }
 ```
 ```icon-button.css  hidden
 .hdd-button-icon {
   margin: 4px;
 }
-@media (prefers-color-scheme: dark) {
-  .dark-mode {
-    margin: -20px;
-    padding: 20px;
-    background: var(--hdd-background-primary);
-  }
+.dark-mode {
+  margin: -20px;
+  padding: 20px;
+  background: var(--hdd-background-primary);
 }
 ```
 

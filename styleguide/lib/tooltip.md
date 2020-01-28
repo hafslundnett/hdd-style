@@ -64,12 +64,10 @@ Tooltips should not contain necessary and critical information needed by the use
   justify-content:space-between;
   margin:30px
 }
-@media (prefers-color-scheme: dark) {
-  .dark-mode {
-    margin: -20px;
-    padding: 20px;
-    background: var(--hdd-background-primary);
-  }
+.dark-mode {
+  margin: -20px;
+  padding: 20px;
+  background: var(--hdd-background-primary);
 }
 ```
 

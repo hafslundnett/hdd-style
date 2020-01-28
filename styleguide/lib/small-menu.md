@@ -31,13 +31,11 @@ Clicking the icon toggles the is-active state of the small menu.
   width: 20px;
   margin: 0 auto;
 } 
-@media (prefers-color-scheme: dark) {
-  .dark-mode {
-    margin: -20px;
-    padding: 20px;
-    height: 230px;
-    background: var(--hdd-background-primary);
-  }
+.dark-mode {
+  margin: -20px;
+  padding: 20px;
+  height: 230px;
+  background: var(--hdd-background-primary);
 }
 ```
 

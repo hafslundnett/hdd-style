@@ -29,7 +29,7 @@ $tooltip-horizontal-transform: translate(0, -50%);
     width: max-content;
     max-width: 25ch;
     pointer-events: none;
-    background-color: var(--hdd-color-grey-dark);
+    background: var(--hdd-tooltip-background-dark);
     color: var(--hdd-color-contrast-font-color);
     padding: 10px var(--hdd-spacing-2);
     border-radius: $border-radius;
@@ -53,7 +53,7 @@ $tooltip-horizontal-transform: translate(0, -50%);
         right: 100%;
         margin-top: $tooltip-margin-offset;
         border: $tooltip-border-style;
-        border-color: transparent var(--hdd-color-grey-dark) transparent transparent;
+        border-color: transparent var(--hdd-tooltip-background-dark) transparent transparent;
       }
     }
     &.is-left {
@@ -68,7 +68,7 @@ $tooltip-horizontal-transform: translate(0, -50%);
         left: 100%;
         margin-top: $tooltip-margin-offset;
         border: $tooltip-border-style;
-        border-color: transparent transparent transparent var(--hdd-color-grey-dark);
+        border-color: transparent transparent transparent var(--hdd-tooltip-background-dark);
       }
     }
     &.is-bottom {
@@ -83,7 +83,7 @@ $tooltip-horizontal-transform: translate(0, -50%);
         left: 50%;
         margin-left: $tooltip-margin-offset;
         border: $tooltip-border-style;
-        border-color: transparent transparent var(--hdd-color-grey-dark) transparent;
+        border-color: transparent transparent var(--hdd-tooltip-background-dark) transparent;
       }
     }
 
@@ -99,7 +99,7 @@ $tooltip-horizontal-transform: translate(0, -50%);
         left: 50%;
         margin-left: $tooltip-margin-offset;
         border: $tooltip-border-style;
-        border-color: var(--hdd-color-grey-dark) transparent transparent transparent;
+        border-color: var(--hdd-tooltip-background-dark) transparent transparent transparent;
       }
     }
     &.is-active {
@@ -109,7 +109,7 @@ $tooltip-horizontal-transform: translate(0, -50%);
   }
   &.is-light {
     #{$this}_content {
-      background-color: var(--hdd-color-white) !important;
+      background: var(--hdd-color-white) !important;
       color: var(--hdd-color-font-color) !important;
     }
     #{$this}_content.is-right::after {

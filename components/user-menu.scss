@@ -27,7 +27,7 @@ $separator-line-size: 70%;
 
   &_initials {
     margin: var(--hdd-spacing-1) 0;
-    background-color: var(--hdd-color-blue);
+    background: var(--hdd-color-blue);
     width: $header-img-size;
     height: $header-img-size;
     border-radius: 100%;

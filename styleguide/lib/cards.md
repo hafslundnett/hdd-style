@@ -120,39 +120,31 @@ Padding inside the card is recommended to have spacing-3. If there are multiple 
 ```
 
 ```cards-1.css hidden
-@media (prefers-color-scheme: dark) {
-  .dark-mode {
-    margin: -20px;
-    padding: 20px;
-    background: var(--hdd-background-primary);
-  }
+.dark-mode {
+  margin: -20px;
+  padding: 20px;
+  background: var(--hdd-background-primary);
 }
 ```
 ```cards-2.css hidden
-@media (prefers-color-scheme: dark) {
-  .dark-mode {
-    margin: -20px;
-    padding: 20px;
-    background: var(--hdd-background-primary);
-  }
+.dark-mode {
+  margin: -20px;
+  padding: 20px;
+  background: var(--hdd-background-primary);
 }
 ```
 ```cards-3.css hidden
-@media (prefers-color-scheme: dark) {
-  .dark-mode {
-    margin: -20px;
-    padding: 20px;
-    background: var(--hdd-background-primary);
-  }
+.dark-mode {
+  margin: -20px;
+  padding: 20px;
+  background: var(--hdd-background-primary);
 }
 ```
 ```cards-4.css hidden
-@media (prefers-color-scheme: dark) {
-  .dark-mode {
-    margin: -20px;
-    padding: 20px;
-    background: var(--hdd-background-primary);
-  }
+.dark-mode {
+  margin: -20px;
+  padding: 20px;
+  background: var(--hdd-background-primary);
 }
 ```
 

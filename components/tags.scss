@@ -15,7 +15,6 @@ $tag-border-radius: $border-radius;
     padding: 0;
     border: none;
     background: none;
-    color: var(--hdd-color-font-color);
     cursor: pointer;
   }
 
@@ -29,8 +28,7 @@ $tag-border-radius: $border-radius;
     margin-left: var(--hdd-spacing-2);
     padding: $tag-padding;
     border-radius: $tag-border-radius;
-    background: var(--hdd-color-blue-light3);
-    color: var(--hdd-color-font-color);
+    background: var(--hdd-background-tags);
     letter-spacing: 0.15px;
     &:first-child {
       margin-left: 0;

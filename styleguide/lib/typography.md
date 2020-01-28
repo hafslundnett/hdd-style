@@ -32,11 +32,9 @@ Roboto is default font for all text. These tags are automatically styled: h1, h2
 ```
 
 ```roboto.css hidden
-@media (prefers-color-scheme: dark) {
-  .dark-mode {
-    margin: -20px;
-    padding: 20px;
-    background: var(--hdd-background-primary);
-  }
+.dark-mode {
+  margin: -20px;
+  padding: 20px;
+  background: var(--hdd-background-primary);
 }
 ```

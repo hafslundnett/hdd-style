@@ -26,11 +26,9 @@ The `hdd-notification-dot` class adds a small red dot with a white border to the
 .example-margin {
   margin: 10px 0;
 }
-@media (prefers-color-scheme: dark) {
-  .dark-mode {
-    margin: -20px;
-    padding: 20px;
-    background: var(--hdd-background-primary);
-  }
+.dark-mode {
+  margin: -20px;
+  padding: 20px;
+  background: var(--hdd-background-primary);
 }
 ```

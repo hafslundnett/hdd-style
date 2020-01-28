@@ -69,12 +69,10 @@ Spatial system that follows multiplication of 0.5rem (1rem = 16px). This provide
 	border-radius: 100%; 
 	background: var(--hdd-color-grey-medium); 
 }
-@media (prefers-color-scheme: dark) {
-  .dark-mode {
-    margin: -20px;
+.dark-mode {
+	margin: -20px;
     padding: 20px;
     background: var(--hdd-background-primary);
-  }
 }
 ```
 
@@ -84,7 +82,7 @@ Standard spacing should be used when possible to standardized the separation bet
 ```spacing-realistic.html
 <!--NB! Style tags are only applied here to illustrate the use of spacing variables. -->
 <div class="dark-mode">
-	<div style="padding: var(--hdd-spacing-3); background: var(--hdd-color-white); border-radius: 5px;">
+	<div style="padding: var(--hdd-spacing-3); background: var(--hdd-background-secondary); border-radius: 5px;">
 		<h1 style="margin-bottom: var(--hdd-spacing-3);">
 			Gjennomfør handling for ticket #8
 		</h1>
@@ -110,11 +108,9 @@ Standard spacing should be used when possible to standardized the separation bet
 ```
 
 ```spacing-realistic.css
-@media (prefers-color-scheme: dark) {
-  .dark-mode {
-    margin: -20px;
-    padding: 20px;
-    background: var(--hdd-background-primary);
-  }
+.dark-mode {
+	margin: -20px;
+	padding: 20px;
+	background: var(--hdd-background-primary);
 }
 ```

@@ -13,8 +13,8 @@
   }
 
   &.slider {
-    background-color: var(--hdd-color-white);
-    border: 1px solid var(--hdd-color-blue);
+    background: var(--hdd-form-buttons-background);
+    border: 1px solid var(--hdd-theme-primary-color);
     border-radius: 2rem;
     position: absolute;
     transition: 0.1s;
@@ -28,17 +28,17 @@
     right: 0.2rem;
     left: 0.2rem;
     bottom: 0.15rem;
-    background-color: var(--hdd-color-blue);
+    background: var(--hdd-theme-primary-color);
     transition: 0.1s;
     border-radius: 50%;
   }
 
   input:checked + .slider {
-    background-color: var(--hdd-color-blue);
+    background: var(--hdd-theme-primary-color);
   }
 
   input:checked + .slider:before {
-    background-color: var(--hdd-color-white);
+    background: var(--hdd-form-buttons-background);
     @include transform(translateX(0.9rem));
   }
 }

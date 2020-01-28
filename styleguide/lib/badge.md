@@ -31,11 +31,9 @@ Badges should not be used alone. Do not display information status in a badge an
 ```
 
 ```badge.css  hidden
-@media (prefers-color-scheme: dark) {
-    .dark-mode {
-        margin: -20px;
-        padding: 20px;
-        background: var(--hdd-background-primary);
-    }
+.dark-mode {
+    margin: -20px;
+    padding: 20px;
+    background: var(--hdd-background-primary);
 }
 ```

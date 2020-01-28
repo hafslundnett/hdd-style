@@ -3,7 +3,7 @@
   @extend .is-p;
 
   text-decoration: none;
-  color: var(--hdd-color-primary-dark);
+  color: var(--hdd-link-color);
 
   &:hover:not(.no-hover),
   &.is-hovering,
