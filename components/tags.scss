@@ -3,7 +3,7 @@ $tag-border-radius: $border-radius;
 $tags-background: color(blue-light3);
 
 @include is-dark-theme() {
-  $tags-background: color(blue);
+  $tags-background: color(primary);
 }
 
 .hdd-tags {

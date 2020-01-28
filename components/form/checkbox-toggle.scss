@@ -1,4 +1,4 @@
-$checkbox-background: color(white);
+$checkbox-toggle-background: color(background-secondary);
 
 @include is-dark-theme() {
   $checkbox-toggle-background: #232222;

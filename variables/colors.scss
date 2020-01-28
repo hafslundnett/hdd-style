@@ -88,7 +88,7 @@ $colors: (
   'blue': (
     color: #1164A4,
     contrast: #FFF,
-    dark-theme: #50A9D8 // --hdd-color-blue-light1
+    dark-theme: #50A9D8, // --hdd-color-blue-light1
     alt-labels: (primary)
   ),
   'blue-light1': (
@@ -114,7 +114,7 @@ $colors: (
   'grey-dark3': (
     color: #444444,
     contrast: #FFF,
-    dark-theme: #FFF
+    dark-theme: #FFF,
     alt-labels: (text-primary, font-color)
   ),
   'grey-dark2': (

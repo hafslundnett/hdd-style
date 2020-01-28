@@ -1,7 +1,7 @@
 $form-radiobutton-mark-size: 14px;
 $form-radiobutton-mark-border-radius: 14px;
 $form-radiobutton-mark-border: 1px solid var(--hdd-color-dynamic-primary);
-$radiobutton-background: color(white);
+$radiobutton-background: color(background-secondary);
 
 @include is-dark-theme() {
   $radiobutton-background: #232222;
