@@ -3,10 +3,10 @@ body {
 }
 
 *::selection {
-  background: var(--hdd-background-accent-color);
+  background: var(--hdd-color-dynamic-marker);
   color: var(--hdd-color-white);
 }
 
 *:focus {
-  outline-color: var(--hdd-background-marker);
+  outline-color: var(--hdd-color-dynamic-outline);
 }

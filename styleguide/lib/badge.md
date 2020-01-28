@@ -34,6 +34,6 @@ Badges should not be used alone. Do not display information status in a badge an
 .dark-mode {
     margin: -20px;
     padding: 20px;
-    background: var(--hdd-background-primary);
+    background: var(--hdd-color-dynamic-background-primary);
 }
 ```

@@ -61,7 +61,7 @@ A select component lets a user choose between a set of options.
 .dark-mode {
   margin: -20px;
   padding: 20px;
-  background: var(--hdd-background-primary);
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 

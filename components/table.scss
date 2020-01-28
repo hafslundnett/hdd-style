@@ -11,7 +11,7 @@ $table-last-column-padding: 1.5rem;
   overflow: scroll;
   border-spacing: 0;
   border-collapse: collapse;
-  background: var(--hdd-background-secondary);
+  background: var(--hdd-color-dynamic-background-secondary);
 
   th,
   td {
@@ -62,7 +62,7 @@ $table-last-column-padding: 1.5rem;
   &_row,
   tr {
     &.is-stripe {
-      background: var(--hdd-background-accent-color);
+      background: var(--hdd-color-dynamic-marker);
     }
 
     &.is-selected {
@@ -119,7 +119,7 @@ $table-last-column-padding: 1.5rem;
     th {
       position: sticky;
       top: 0; // set this higher if it overlaps with another sticky
-      background: var(--hdd-background-secondary);
+      background: var(--hdd-color-dynamic-background-secondary);
       z-index: 1;
     }
   }

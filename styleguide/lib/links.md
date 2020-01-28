@@ -22,7 +22,7 @@ Links are for prompting a user action that will affect another part.
 .dark-mode {
   margin: -20px;
   padding: 20px;
-  background: var(--hdd-background-primary);
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 

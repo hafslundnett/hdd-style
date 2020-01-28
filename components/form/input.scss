@@ -14,20 +14,20 @@ $form-input-border: 1px solid var(--hdd-color-grey);
   border: $form-input-border;
   border-radius: $form-input-border-radius;
 
-  background: var(--hdd-background-secondary);
+  background: var(--hdd-color-dynamic-background-secondary);
 
   &:not(.is-invalid):focus-within {
     @extend .hdd-form_input, .is-focus;
   }
 
   &.is-focus {
-    border-color: var(--hdd-theme-primary-color);
+    border-color: var(--hdd-color-dynamic-primary);
 
     #{$this}_icon,
     svg,
     i {
       opacity: 1;
-      color: var(--hdd-theme-primary-color);
+      color: var(--hdd-color-dynamic-primary);
     }
   }
 
@@ -40,7 +40,7 @@ $form-input-border: 1px solid var(--hdd-color-grey);
   }
 
   &.is-disabled {
-    background: var(--hdd-background-disabled);
+    background: var(--hdd-color-dynamic-field-disabled);
     cursor: default;
   }
 
@@ -71,7 +71,7 @@ $form-input-border: 1px solid var(--hdd-color-grey);
   > i {
     transition: color $medium-transition $transition-cubic, opacity $medium-transition $transition-cubic;
     opacity: 0.44;
-    color: var(--hdd-text-secondary);
+    color: var(--hdd-color-dynamic-text-secondary);
     font-size: font-size(h2);
 
     &:first-child {

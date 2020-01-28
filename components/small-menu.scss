@@ -50,7 +50,7 @@ $small-menu-border-radius: $border-radius;
     border-radius: $small-menu-border-radius;
     
     opacity: 0;
-    background: var(--hdd-background-secondary);
+    background: var(--hdd-color-dynamic-background-secondary);
 
     &.is-active {
       visibility: visible;
@@ -79,7 +79,7 @@ $small-menu-border-radius: $border-radius;
       }
       
       &.is-active {
-        background: var(--hdd-background-accent-color);
+        background: var(--hdd-color-dynamic-marker);
       }
 
       // Overflow fix since we cannot use overflow hidden

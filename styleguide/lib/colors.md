@@ -251,7 +251,7 @@ These colors are chosen to be used for infographics. If necessary, these colors 
 .example-container, .example-container-2, .example-container-3, .example-container-4 {
   margin: -20px;
   padding: 20px;
-  background: var(--hdd-background-primary);
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 ```grey-colors.css  hidden
@@ -290,7 +290,7 @@ These colors are chosen to be used for infographics. If necessary, these colors 
 .example-container, .example-container-2, .example-container-3, .example-container-4 {
   margin: -20px;
   padding: 20px;
-  background: var(--hdd-background-primary);
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 ```signal-colors.css  hidden
@@ -330,7 +330,7 @@ These colors are chosen to be used for infographics. If necessary, these colors 
 .example-container, .example-container-2, .example-container-3, .example-container-4 {
   margin: -20px;
   padding: 20px;
-  background: var(--hdd-background-primary);
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 ```data-colors.css  hidden
@@ -370,6 +370,6 @@ These colors are chosen to be used for infographics. If necessary, these colors 
 .example-container, .example-container-2, .example-container-3, .example-container-4 {
   margin: -20px;
   padding: 20px;
-  background: var(--hdd-background-primary);
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```

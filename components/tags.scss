@@ -1,5 +1,10 @@
 $tag-padding: 10px;
 $tag-border-radius: $border-radius;
+$tags-background: color(blue-light3);
+
+@include is-dark-theme() {
+  $tags-background: color(blue);
+}
 
 .hdd-tags {
   position: relative;
@@ -28,7 +33,7 @@ $tag-border-radius: $border-radius;
     margin-left: var(--hdd-spacing-2);
     padding: $tag-padding;
     border-radius: $tag-border-radius;
-    background: var(--hdd-background-tags);
+    background: $tags-background;
     letter-spacing: 0.15px;
     &:first-child {
       margin-left: 0;

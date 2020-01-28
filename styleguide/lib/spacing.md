@@ -72,7 +72,7 @@ Spatial system that follows multiplication of 0.5rem (1rem = 16px). This provide
 .dark-mode {
 	margin: -20px;
     padding: 20px;
-    background: var(--hdd-background-primary);
+    background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 
@@ -82,7 +82,7 @@ Standard spacing should be used when possible to standardized the separation bet
 ```spacing-realistic.html
 <!--NB! Style tags are only applied here to illustrate the use of spacing variables. -->
 <div class="dark-mode">
-	<div style="padding: var(--hdd-spacing-3); background: var(--hdd-background-secondary); border-radius: 5px;">
+	<div style="padding: var(--hdd-spacing-3); background: var(--hdd-color-dynamic-background-secondary); border-radius: 5px;">
 		<h1 style="margin-bottom: var(--hdd-spacing-3);">
 			Gjennomfør handling for ticket #8
 		</h1>
@@ -111,6 +111,6 @@ Standard spacing should be used when possible to standardized the separation bet
 .dark-mode {
 	margin: -20px;
 	padding: 20px;
-	background: var(--hdd-background-primary);
+	background: var(--hdd-color-dynamic-background-primary);
 }
 ```

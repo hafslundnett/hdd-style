@@ -62,7 +62,7 @@ header {
 .dark-mode {
   margin: -20px;
   padding: 20px;
-  background: var(--hdd-background-primary);
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 ```header-no-img.css hidden
@@ -72,6 +72,6 @@ header {
 .dark-mode {
   margin: -20px;
   padding: 20px;
-  background: var(--hdd-background-primary);
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```

@@ -13,7 +13,7 @@ $card-actions-button-spacing: 25px;
   display: inline-flex;
   width: 100%;
   flex-direction: column;
-  background: var(--hdd-background-secondary);
+  background: var(--hdd-color-dynamic-background-secondary);
 
   &.is-full-height {
     height: 100%;
@@ -30,7 +30,7 @@ $card-actions-button-spacing: 25px;
       display: inline-flex;
       align-self: center;
       margin-right: $card-header-icon-margin;
-      color: var(--hdd-theme-primary-color);
+      color: var(--hdd-color-dynamic-primary);
       line-height: $card-header-icon-height;
       vertical-align: top;
     }
@@ -110,14 +110,14 @@ $card-actions-button-spacing: 25px;
       border-radius: 0;
       background: transparent;
 
-      color: var(--hdd-theme-primary-color);
+      color: var(--hdd-color-dynamic-primary);
       font-weight: 500;
       text-align: center;
       cursor: pointer;
       
       &:hover:not(.no-hover),
       &.is-hovering {
-        background: var(--hdd-background-accent-color);
+        background: var(--hdd-color-dynamic-marker);
       }
     }
   }

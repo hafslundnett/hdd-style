@@ -17,7 +17,7 @@ $form-select-icon-margin: 0.9rem;
   border: $form-select-border;
   border-radius: $form-select-border-radius;
 
-  background: var(--hdd-background-secondary);
+  background: var(--hdd-color-dynamic-background-secondary);
 
   select {
     flex-grow: 1;
@@ -25,7 +25,7 @@ $form-select-icon-margin: 0.9rem;
 
     border: 0;
     background: none;
-    color: var(--hdd-text-primary);
+    color: var(--hdd-color-dynamic-text-primary);
 
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -40,17 +40,17 @@ $form-select-icon-margin: 0.9rem;
   }
 
   &.is-focus {
-    border-color: var(--hdd-theme-primary-color);
+    border-color: var(--hdd-color-dynamic-primary);
 
     select {
-      color: var(--hdd-theme-primary-color);
+      color: var(--hdd-color-dynamic-primary);
     }
 
     #{$this}_icon,
     > svg,
     > i {
       opacity: 1;
-      color: var(--hdd-theme-primary-color);
+      color: var(--hdd-color-dynamic-primary);
     }
   }
 
@@ -68,7 +68,7 @@ $form-select-icon-margin: 0.9rem;
   }
 
   &.is-disabled {
-    background: var(--hdd-background-disabled);
+    background: var(--hdd-color-dynamic-field-disabled);
     cursor: default;
   }
 
@@ -84,7 +84,7 @@ $form-select-icon-margin: 0.9rem;
     position: absolute;
     transition: color $medium-transition $transition-cubic, opacity $medium-transition $transition-cubic;
     opacity: 0.44;
-    color: var(--hdd-text-secondary);
+    color: var(--hdd-color-dynamic-text-secondary);
     font-size: font-size(h2);
 
     &:first-child {

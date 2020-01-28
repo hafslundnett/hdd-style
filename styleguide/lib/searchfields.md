@@ -26,6 +26,6 @@ It is important to set the user context for the search with the correct placehol
 .dark-mode {
   margin: -20px;
   padding: 20px;
-  background: var(--hdd-background-primary);
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```

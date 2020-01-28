@@ -90,7 +90,7 @@ The buttons are all the same size.
 .dark-mode {
   margin: -20px;
   padding: 20px;
-  background: var(--hdd-background-primary);
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 ```secondary-button.css  hidden
@@ -100,7 +100,7 @@ The buttons are all the same size.
 .dark-mode {
   margin: -20px;
   padding: 20px;
-  background: var(--hdd-background-primary);
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 ```with-icon-button.css  hidden
@@ -110,7 +110,7 @@ The buttons are all the same size.
 .dark-mode {
   margin: -20px;
   padding: 20px;
-  background: var(--hdd-background-primary);
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 ```icon-button.css  hidden
@@ -120,7 +120,7 @@ The buttons are all the same size.
 .dark-mode {
   margin: -20px;
   padding: 20px;
-  background: var(--hdd-background-primary);
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 

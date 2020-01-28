@@ -49,6 +49,6 @@ Setting the shadow attribute directly on elements are also possible with the fol
 .dark-mode {
   margin: -20px;
   padding: 20px;
-  background: var(--hdd-background-primary);
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```

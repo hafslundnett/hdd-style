@@ -94,7 +94,7 @@ $colors: (
   'blue-light1': (
     color: #50A9D8,
     contrast: #444,
-    dark-theme: #00446F, // --hdd-color-blue-dark
+    dark-theme: #EEF0F4, // --hdd-color-grey-light2,
     alt-labels: (outline)
   ),
   'blue-light2': (
@@ -212,40 +212,8 @@ $gradients: (
 );
 
 
-// Light-theme standard colors
-:root {
-  --hdd-background-primary: var(--hdd-color-grey-light3); // GREY-LIGHT3 ✅ (hdd-color-dynamic-background-primary)
-  --hdd-background-secondary: var(--hdd-color-white); // WHITE ✅ (hdd-color-dynamic-background-secondary)
-  --hdd-background-marker: var(--hdd-color-blue-light1); // ✅ BLUE-LIGHT1 (hdd-color-dynamic-outline)
-  --hdd-background-accent-color: var(--hdd-color-blue-light3); // ✅ BLUE-LIGHT3 (hdd-color-dynamic-marker)
-  --hdd-background-disabled: var(--hdd-color-grey-light2); // ✅ GREY-LIGHT2 (hdd-color-dynamic-field-disabled)
-  --hdd-text-primary: var(--hdd-color-grey-dark3); // ✅ GREY-DARK3 (hdd-color-dynamic-text-primary)
-  --hdd-text-secondary: var(--hdd-color-black); // ✅ BLACK
-  --hdd-theme-primary-color: var(--hdd-color-blue); // ✅ BLUE (hdd-color-dynamic-primary)
-
-  --hdd-link-color: var(--hdd-color-blue); // BLUE ⭕
-  --hdd-background-radio: var(--hdd-color-white); // WHITE ⭕
-  --hdd-background-tags: var(--hdd-color-blue-light3); // BLUE-LIGHT3 ⭕
-  --hdd-tooltip-background-dark: var(--hdd-color-grey-dark2); // ✅ GREY-DARK2 (hdd-color-dynamic-grey-dark)
-  --hdd-form-buttons-background: var(-hdd-color-white); // WHITE ⭕
-}
-
-// Dark-theme standard colors
-@media (prefers-color-scheme: dark) {
-  :root {
-    --hdd-background-primary: var(--hdd-color-grey-dark2); // ✅
-    --hdd-background-secondary: var(--hdd-color-grey-dark3); // ✅
-    --hdd-background-marker: var(--hdd-color-blue-dark); // ✅
-    --hdd-background-accent-color: #20506d; // ✅ New color needed / suggestion
-    --hdd-background-disabled: #6d6e71; // ✅ New color needed / suggestion
-    --hdd-text-primary: var(--hdd-color-white); // ✅
-    --hdd-text-secondary: var(--hdd-color-grey-light1); // ✅
-    --hdd-theme-primary-color: var(--hdd-color-blue-light1); // ✅
-
-    --hdd-link-color: var(--hdd-color-blue-light2);
-    --hdd-background-radio: var(--hdd-color-grey);
-    --hdd-background-tags: var(--hdd-color-blue);
-    --hdd-tooltip-background-dark: var(--hdd-color-grey-dark3); // ✅
-    --hdd-form-buttons-background: #232222; // New color needed / suggestion
+@mixin is-dark-theme() {
+  @media (prefers-color-scheme: dark) {
+    @content;
   }
 }
