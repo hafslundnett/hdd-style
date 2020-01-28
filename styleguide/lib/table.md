@@ -134,14 +134,14 @@ A table can consist out of data, buttons and icons. A table row can also have a 
   height: 200px; 
   overflow: auto;
   @media (prefers-color-scheme: dark) {
-    background: var(--primary-background-color);
+    background: var(--hdd-background-primary);
   }
 }
 @media (prefers-color-scheme: dark) {
   .dark-mode {
     margin: -20px;
     padding: 20px;
-    background: var(--primary-background-color);
+    background: var(--hdd-background-primary);
   }
 }
 ```
@@ -150,7 +150,7 @@ A table can consist out of data, buttons and icons. A table row can also have a 
   .dark-mode {
     margin: -20px;
     padding: 20px;
-    background: var(--primary-background-color);
+    background: var(--hdd-background-primary);
   }
 }
 ```

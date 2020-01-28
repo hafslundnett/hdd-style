@@ -68,7 +68,7 @@ Tooltips should not contain necessary and critical information needed by the use
   .dark-mode {
     margin: -20px;
     padding: 20px;
-    background: var(--primary-background-color);
+    background: var(--hdd-background-primary);
   }
 }
 ```

@@ -60,7 +60,7 @@ You should use grid-column and grid-row to position your elements on the grid. R
   .dark-mode {
     margin: -20px;
     padding: 20px;
-    background: var(--primary-background-color);
+    background: var(--hdd-background-primary);
   }
 }
 ```

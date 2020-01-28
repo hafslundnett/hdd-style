@@ -73,7 +73,7 @@ Spatial system that follows multiplication of 0.5rem (1rem = 16px). This provide
   .dark-mode {
     margin: -20px;
     padding: 20px;
-    background: var(--primary-background-color);
+    background: var(--hdd-background-primary);
   }
 }
 ```
@@ -114,7 +114,7 @@ Standard spacing should be used when possible to standardized the separation bet
   .dark-mode {
     margin: -20px;
     padding: 20px;
-    background: var(--primary-background-color);
+    background: var(--hdd-background-primary);
   }
 }
 ```

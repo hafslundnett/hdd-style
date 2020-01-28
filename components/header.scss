@@ -9,7 +9,7 @@ $header-img-size: 40px;
   width: 100%;
   padding: 0 var(--hdd-spacing-2);
 
-  background: var(--header-background-color);
+  background: var(--hdd-background-secondary);
   box-shadow: var(--hdd-shadow-medium);
   z-index: $header-z-index;
 
@@ -29,7 +29,6 @@ $header-img-size: 40px;
     display: flex;
     align-items: center;
     padding: 0px 1rem;
-    color: var(--header-text-color);
   }
   &-user {
     flex: 1 1 0%;
@@ -65,7 +64,6 @@ $header-img-size: 40px;
     &_name {
       font-size: 1rem;
       letter-spacing: 0.5px;
-      color: var(--header-text-color);
 
       // give space for next if exist
       &:not(:last-child) {

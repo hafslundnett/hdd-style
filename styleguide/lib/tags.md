@@ -29,7 +29,7 @@ Tags should not be used alone.
   .dark-mode {
     margin: -20px;
     padding: 20px;
-    background: var(--primary-background-color);
+    background: var(--hdd-background-primary);
   }
 }
 ```

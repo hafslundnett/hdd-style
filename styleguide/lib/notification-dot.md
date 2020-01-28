@@ -30,7 +30,7 @@ The `hdd-notification-dot` class adds a small red dot with a white border to the
   .dark-mode {
     margin: -20px;
     padding: 20px;
-    background: var(--primary-background-color);
+    background: var(--hdd-background-primary);
   }
 }
 ```

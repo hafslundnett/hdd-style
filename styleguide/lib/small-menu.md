@@ -36,7 +36,7 @@ Clicking the icon toggles the is-active state of the small menu.
     margin: -20px;
     padding: 20px;
     height: 230px;
-    background: var(--primary-background-color);
+    background: var(--hdd-background-primary);
   }
 }
 ```

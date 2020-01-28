@@ -104,31 +104,37 @@ $colors: (
   ),
   'font-color': (
     color: #444444,
-    contrast: #FFF
+    contrast: #FFF,
+    alt-labels: (grey-dark-3)
+  ),
+  'grey-dark': (
+    color: #57585A,
+    contrast: #000,
+    alt-labels: (grey-dark-2)
+  ),
+  'grey-medium': (
+    color: #8F9599,
+    contrast: #000,
+    alt-labels: (grey-dark-1)
   ),
   'grey': (
     color: #ADB0B6,
     contrast: #000
   ),
-  'grey-dark': (
-    color: #57585A,
-    contrast: #000
-  ),
-  'grey-medium': (
-    color: #8F9599,
-    contrast: #000
+  'grey-border': (
+    color: #D3DBE0,
+    contrast: #444,
+    alt-labels: (grey-light-1)
   ),
   'grey-light': (
     color: #EEF0F4,
-    contrast: #444
+    contrast: #444,
+    alt-labels: (grey-light-2)
   ),
   'grey-background': (
     color: #F3F4F6,
-    contrast: #444
-  ),
-  'grey-border': (
-    color: #D3DBE0,
-    contrast: #444
+    contrast: #444,
+    alt-labels: (grey-light-3)
   ),
   'signal-green': (
     color: #5A7E2C,
@@ -195,28 +201,20 @@ $gradients: (
 
 // Light-theme standard colors
 :root {
-  --primary-background-color: var(--hdd-color-grey-background);
-  --primary-text-color: var(--hdd-color-font-color);
+  --hdd-background-primary: var(--hdd-color-grey-light-3);
+  --hdd-background-secondary: var(--hdd-color-white);
 
-  --user-menu-background-color: var(--hdd-color-white);
-  --user-menu-text-color: var(--hdd-color-black);
-  --header-background-color: var(--hdd-color-white);
-  --header-text-color: var(--hdd-color-black);
-
-  --transparent-button-text-color: var(--hdd-color-font-color);
+  --hdd-text-primary: var(--hdd-color-grey-dark-3);
+  --hdd-text-secondary: var(--hdd-color-black);
 }
 
 // Dark-theme standard colors
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary-background-color: var(--hdd-color-font-color);
-    --primary-text-color: var(--hdd-color-white);
+    --hdd-background-primary: var(--hdd-color-grey-dark-2);
+    --hdd-background-secondary: var(--hdd-color-grey-dark-3);
 
-    --user-menu-background-color: var(--hdd-color-black);
-    --user-menu-text-color: var(--hdd-color-white);
-    --header-background-color: var(--hdd-color-black);
-    --header-text-color: var(--hdd-color-grey-light);
-
-    --transparent-button-text-color: var(--hdd-color-grey);
+    --hdd-text-primary: var(--hdd-color-white);
+    --hdd-text-secondary: var(--hdd-color-grey-light-1);
   }
 }

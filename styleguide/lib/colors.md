@@ -252,7 +252,7 @@ These colors are chosen to be used for infographics. If necessary, these colors 
   .example-container, .example-container-2, .example-container-3, .example-container-4 {
     margin: -20px;
     padding: 20px;
-    background: var(--primary-background-color);
+    background: var(--hdd-background-primary);
     color: var(--hdd-color-white);
   }
 }
@@ -294,7 +294,7 @@ These colors are chosen to be used for infographics. If necessary, these colors 
   .example-container, .example-container-2, .example-container-3, .example-container-4 {
     margin: -20px;
     padding: 20px;
-    background: var(--primary-background-color);
+    background: var(--hdd-background-primary);
     color: var(--hdd-color-white);
   }
 }
@@ -337,7 +337,7 @@ These colors are chosen to be used for infographics. If necessary, these colors 
   .example-container, .example-container-2, .example-container-3, .example-container-4 {
     margin: -20px;
     padding: 20px;
-    background: var(--primary-background-color);
+    background: var(--hdd-background-primary);
     color: var(--hdd-color-white);
   }
 }
@@ -380,7 +380,7 @@ These colors are chosen to be used for infographics. If necessary, these colors 
   .example-container, .example-container-2, .example-container-3, .example-container-4 {
     margin: -20px;
     padding: 20px;
-    background: var(--primary-background-color);
+    background: var(--hdd-background-primary);
     color: var(--hdd-color-white);
   }
 }

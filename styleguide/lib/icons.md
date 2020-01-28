@@ -36,7 +36,7 @@ Icons should not be larger than 48px. It should also be avoided to have icons le
   .dark-mode {
     margin: -20px;
     padding: 20px;
-    background: var(--primary-background-color);
+    background: var(--hdd-background-primary);
   }
 }
 ```

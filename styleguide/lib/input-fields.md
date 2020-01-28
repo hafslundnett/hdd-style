@@ -60,7 +60,7 @@ An input should not stand alone without a label or information about what is req
   .dark-mode {
     margin: -20px;
     padding: 20px;
-    background: var(--primary-background-color);
+    background: var(--hdd-background-primary);
   }
 }
 ```

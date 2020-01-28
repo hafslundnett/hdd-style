@@ -11,8 +11,7 @@ $separator-line-size: 70%;
   height: auto;
   width: $menu-width;
   border-radius: $border-radius;
-  background: var(--user-menu-background-color);
-  color: var(--user-menu-text-color);
+  background: var(--hdd-background-secondary);
   box-shadow: var(--hdd-shadow-strong);
   padding: var(--hdd-spacing-3);
 
@@ -46,7 +45,6 @@ $separator-line-size: 70%;
     margin: var(--hdd-spacing-1) 0;
     font-size: 1.25rem;
     letter-spacing: 0.15px;
-    //color: var(--hdd-color-black);
     text-align: center;
   }
 
@@ -56,7 +54,6 @@ $separator-line-size: 70%;
     letter-spacing: 0.15px;
     font-size: 1rem;
     text-align: center;
-    //color: var(--hdd-color-black);
   }
 
   &_menu-element {

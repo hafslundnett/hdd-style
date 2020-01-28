@@ -65,7 +65,7 @@ The toggle checkbox slider class are assigned to the corresponding span beneath 
   .dark-mode {
     margin: -20px;
     padding: 20px;
-    background: var(--primary-background-color);
+    background: var(--hdd-background-primary);
   }
 }
 ```
@@ -75,7 +75,7 @@ The toggle checkbox slider class are assigned to the corresponding span beneath 
   .dark-mode {
     margin: -20px;
     padding: 20px;
-    background: var(--primary-background-color);
+    background: var(--hdd-background-primary);
   }
 }
 ```

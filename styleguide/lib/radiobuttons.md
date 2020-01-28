@@ -32,7 +32,7 @@ A radiobutton component lets a user select only one of a limited number of choic
   .dark-mode {
     margin: -20px;
     padding: 20px;
-    background: var(--primary-background-color);
+    background: var(--hdd-background-primary);
   }
 }
 ```

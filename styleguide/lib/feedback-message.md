@@ -64,7 +64,7 @@ Usage of icons in feedback messages should be kept to an absolute minimum, since
   .dark-mode {
     margin: -20px;
     padding: 20px;
-    background: var(--primary-background-color);
+    background: var(--hdd-background-primary);
   }
 }
 ```
