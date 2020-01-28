@@ -70,25 +70,32 @@
 $colors: (
   'white': (
     color: #FFF,
-    contrast: #444
+    contrast: #444,
+    dark-theme: #444, // --hdd-color-grey-dark3
+    alt-labels: (background-secondary)
   ),
   'black': (
     color: #000,
-    contrast: #FFF
-  ),
-  'blue': (
-    color: #1164A4,
     contrast: #FFF,
-    alt-labels: (primary)
+    dark-theme: #D3DBE0, // --hdd-color-grey-light1
+    alt-labels: (text-secondary)
   ),
   'blue-dark': (
     color: #00446F,
     contrast: #FFF,
     alt-labels: (primary-dark)
   ),
+  'blue': (
+    color: #1164A4,
+    contrast: #FFF,
+    dark-theme: #50A9D8 // --hdd-color-blue-light1
+    alt-labels: (primary)
+  ),
   'blue-light1': (
     color: #50A9D8,
-    contrast: #444
+    contrast: #444,
+    dark-theme: #00446F, // --hdd-color-blue-dark
+    alt-labels: (outline)
   ),
   'blue-light2': (
     color: #A2DBFF,
@@ -96,45 +103,51 @@ $colors: (
   ),
   'blue-light3': (
     color: #D2EFFE,
-    contrast: #444
+    contrast: #444,
+    dark-theme: #20506d, // New color needed / suggestion,
+    alt-labels: (marker)
   ),
   'blue-light4': (
     color: #EFF9FF,
     contrast: #444
   ),
-  'font-color': (
+  'grey-dark3': (
     color: #444444,
     contrast: #FFF,
-    alt-labels: (grey-dark3)
+    dark-theme: #FFF
+    alt-labels: (text-primary, font-color)
   ),
-  'grey-dark': (
+  'grey-dark2': (
     color: #57585A,
     contrast: #000,
-    alt-labels: (grey-dark2)
+    dark-theme: #444444, // --hdd-color-grey-dark3
+    alt-labels: (grey-dark)
   ),
-  'grey-medium': (
+  'grey-dark1': (
     color: #8F9599,
     contrast: #000,
-    alt-labels: (grey-dark1)
+    alt-labels: (grey-medium)
   ),
   'grey': (
     color: #ADB0B6,
     contrast: #000
   ),
-  'grey-border': (
+  'grey-light1': (
     color: #D3DBE0,
     contrast: #444,
-    alt-labels: (grey-light1)
+    alt-labels: (grey-border)
   ),
-  'grey-light': (
+  'grey-light2': (
     color: #EEF0F4,
     contrast: #444,
-    alt-labels: (grey-light2)
+    dark-theme: #6d6e71, // New color needed / suggestion
+    alt-labels: (field-disabled, grey-light)
   ),
-  'grey-background': (
+  'grey-light3': (
     color: #F3F4F6,
     contrast: #444,
-    alt-labels: (grey-light3)
+    dark-theme: #57585A,
+    alt-labels: (background-primary, grey-background)
   ),
   'signal-green': (
     color: #5A7E2C,
@@ -201,40 +214,38 @@ $gradients: (
 
 // Light-theme standard colors
 :root {
-  --hdd-background-primary: var(--hdd-color-grey-light3);
-  --hdd-background-secondary: var(--hdd-color-white);
-  --hdd-background-marker: var(--hdd-color-blue-light1);
-  --hdd-background-accent-color: var(--hdd-color-blue-light3);
-  --hdd-background-disabled: var(--hdd-color-grey-light);
+  --hdd-background-primary: var(--hdd-color-grey-light3); // GREY-LIGHT3 ✅ (hdd-color-dynamic-background-primary)
+  --hdd-background-secondary: var(--hdd-color-white); // WHITE ✅ (hdd-color-dynamic-background-secondary)
+  --hdd-background-marker: var(--hdd-color-blue-light1); // ✅ BLUE-LIGHT1 (hdd-color-dynamic-outline)
+  --hdd-background-accent-color: var(--hdd-color-blue-light3); // ✅ BLUE-LIGHT3 (hdd-color-dynamic-marker)
+  --hdd-background-disabled: var(--hdd-color-grey-light2); // ✅ GREY-LIGHT2 (hdd-color-dynamic-field-disabled)
+  --hdd-text-primary: var(--hdd-color-grey-dark3); // ✅ GREY-DARK3 (hdd-color-dynamic-text-primary)
+  --hdd-text-secondary: var(--hdd-color-black); // ✅ BLACK
+  --hdd-theme-primary-color: var(--hdd-color-blue); // ✅ BLUE (hdd-color-dynamic-primary)
 
-  --hdd-text-primary: var(--hdd-color-grey-dark3);
-  --hdd-text-secondary: var(--hdd-color-black);
-  
-  --hdd-theme-primary-color: var(--hdd-color-blue);
-  --hdd-link-color: var(--hdd-color-blue-dark);
-  --hdd-background-radio: var(--hdd-color-white);
-  --hdd-background-tags: var(--hdd-color-blue-light3);
-  --hdd-tooltip-background-dark: var(--hdd-color-grey-dark2);
-  --hdd-form-buttons-background: var(-hdd-color-white);
+  --hdd-link-color: var(--hdd-color-blue); // BLUE ⭕
+  --hdd-background-radio: var(--hdd-color-white); // WHITE ⭕
+  --hdd-background-tags: var(--hdd-color-blue-light3); // BLUE-LIGHT3 ⭕
+  --hdd-tooltip-background-dark: var(--hdd-color-grey-dark2); // ✅ GREY-DARK2 (hdd-color-dynamic-grey-dark)
+  --hdd-form-buttons-background: var(-hdd-color-white); // WHITE ⭕
 }
 
 // Dark-theme standard colors
 @media (prefers-color-scheme: dark) {
   :root {
-    --hdd-background-primary: var(--hdd-color-grey-dark2);
-    --hdd-background-secondary: var(--hdd-color-grey-dark3);
-    --hdd-background-marker: var(--hdd-color-blue-dark);
-    --hdd-background-accent-color: #20506d; // New color needed / suggestion
-    --hdd-background-disabled: #6d6e71; // New color needed / suggestion
+    --hdd-background-primary: var(--hdd-color-grey-dark2); // ✅
+    --hdd-background-secondary: var(--hdd-color-grey-dark3); // ✅
+    --hdd-background-marker: var(--hdd-color-blue-dark); // ✅
+    --hdd-background-accent-color: #20506d; // ✅ New color needed / suggestion
+    --hdd-background-disabled: #6d6e71; // ✅ New color needed / suggestion
+    --hdd-text-primary: var(--hdd-color-white); // ✅
+    --hdd-text-secondary: var(--hdd-color-grey-light1); // ✅
+    --hdd-theme-primary-color: var(--hdd-color-blue-light1); // ✅
 
-    --hdd-text-primary: var(--hdd-color-white);
-    --hdd-text-secondary: var(--hdd-color-grey-light1);
-
-    --hdd-theme-primary-color: var(--hdd-color-blue-light1);
     --hdd-link-color: var(--hdd-color-blue-light2);
     --hdd-background-radio: var(--hdd-color-grey);
     --hdd-background-tags: var(--hdd-color-blue);
-    --hdd-tooltip-background-dark: var(--hdd-color-grey-dark3);
+    --hdd-tooltip-background-dark: var(--hdd-color-grey-dark3); // ✅
     --hdd-form-buttons-background: #232222; // New color needed / suggestion
   }
 }

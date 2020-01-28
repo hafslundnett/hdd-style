@@ -4,7 +4,7 @@
   .i-library {
     padding: 50px 150px;
   }
-  /* For å hindre at dark theme overkjører fargen */
+  /* To prevent dark theme from overriding the color */
   .theme-content, .theme-content-element  p, .theme-content-element h1, .theme-content-element h2, .theme-content-element h3 {
     color: var(--hdd-color-font-color) !important; 
   }

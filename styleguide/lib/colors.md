@@ -252,7 +252,6 @@ These colors are chosen to be used for infographics. If necessary, these colors 
   margin: -20px;
   padding: 20px;
   background: var(--hdd-background-primary);
-  color: var(--hdd-color-white);
 }
 ```
 ```grey-colors.css  hidden
@@ -292,7 +291,6 @@ These colors are chosen to be used for infographics. If necessary, these colors 
   margin: -20px;
   padding: 20px;
   background: var(--hdd-background-primary);
-  color: var(--hdd-color-white);
 }
 ```
 ```signal-colors.css  hidden
@@ -333,7 +331,6 @@ These colors are chosen to be used for infographics. If necessary, these colors 
   margin: -20px;
   padding: 20px;
   background: var(--hdd-background-primary);
-  color: var(--hdd-color-white);
 }
 ```
 ```data-colors.css  hidden
@@ -374,6 +371,5 @@ These colors are chosen to be used for infographics. If necessary, these colors 
   margin: -20px;
   padding: 20px;
   background: var(--hdd-background-primary);
-  color: var(--hdd-color-white);
 }
 ```

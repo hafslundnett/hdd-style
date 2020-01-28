@@ -23,13 +23,11 @@
 
   @return map-get($typography-map, size);
 }
-
-$font-family: 'Roboto', Arial ;
  
 // Klassene som legges på .is- i typography i utilities
 $typography: (
   h1: (
-    family: $font-family,
+    family: var(--hdd-font-family),
     size: 1.25rem,
     spacing: .21px,
     weight: 500,
@@ -37,7 +35,7 @@ $typography: (
     elements: (h1)
   ),
   h2: (
-    family: $font-family,
+    family: var(--hdd-font-family),
     size: 1rem,
     spacing: .21px,
     weight: 400,
@@ -45,7 +43,7 @@ $typography: (
     elements: (h2)
   ),
   h3: (
-    family: $font-family,
+    family: var(--hdd-font-family),
     size: .875rem,
     spacing: .21px,
     weight: 500,
@@ -53,7 +51,7 @@ $typography: (
     elements: (h3)
   ),
   p: (
-    family: $font-family,
+    family: var(--hdd-font-family),
     size: .875rem,
     spacing: .21px,
     weight: 400,
@@ -61,7 +59,7 @@ $typography: (
     elements: (p)
   ),
   p-small: (
-    family: $font-family,
+    family: var(--hdd-font-family),
     size: .675rem,
     spacing: .21px,
     weight: 400,
@@ -86,3 +84,7 @@ $typography: (
     color: var(--hdd-text-primary)
   )
 );
+
+:root {
+  --hdd-font-family: 'Roboto', Arial; 
+}
