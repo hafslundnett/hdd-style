@@ -62,7 +62,7 @@ $table-last-column-padding: 1.5rem;
   &_row,
   tr {
     &.is-stripe {
-      background: var(--hdd-color-dynamic-marker);
+      background: var(--hdd-color-dynamic-marker-color);
     }
 
     &.is-selected {

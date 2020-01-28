@@ -94,8 +94,8 @@ $colors: (
   'blue-light1': (
     color: #50A9D8,
     contrast: #444,
-    dark-theme: #EEF0F4, // --hdd-color-grey-light2,
-    alt-labels: (outline)
+    dark-theme: #EEF0F4, // --hdd-color-grey-light2
+    alt-labels: (outline-line)
   ),
   'blue-light2': (
     color: #A2DBFF,
@@ -104,8 +104,8 @@ $colors: (
   'blue-light3': (
     color: #D2EFFE,
     contrast: #444,
-    dark-theme: #20506d, // New color needed / suggestion,
-    alt-labels: (marker)
+    dark-theme: #20506d, // New color needed / suggestion
+    alt-labels: (marker-color)
   ),
   'blue-light4': (
     color: #EFF9FF,
