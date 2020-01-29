@@ -14,6 +14,7 @@ $card-actions-button-spacing: 25px;
   width: 100%;
   flex-direction: column;
   background: var(--hdd-color-white);
+  box-sizing: border-box;
 
   &.is-full-height {
     height: 100%;
