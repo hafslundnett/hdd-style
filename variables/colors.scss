@@ -66,6 +66,7 @@
 }
 
 // All colors as a list ready for iterations
+// all dark-theme hsla colors are based on the original just more saturated/lighter
 
 $colors: (
   'white': (
@@ -83,33 +84,36 @@ $colors: (
   'blue-dark': (
     color: #00446F,
     contrast: #FFF,
+    dark-theme: hsla(203, 100%, 46%, 1),
     alt-labels: (primary-dark)
   ),
   'blue': (
     color: #1164A4,
     contrast: #FFF,
-    dark-theme: #50A9D8, // --hdd-color-blue-light1
+    dark-theme: hsla(206, 100%, 58%, 1),
     alt-labels: (primary)
   ),
   'blue-light1': (
     color: #50A9D8,
     contrast: #444,
-    dark-theme: #EEF0F4, // --hdd-color-grey-light2
+    dark-theme: hsla(201, 64%, 79%, 1),
     alt-labels: (outline-line)
   ),
   'blue-light2': (
     color: #A2DBFF,
-    contrast: #444
+    contrast: #444,
+    dark-theme: #A2DBFF
   ),
   'blue-light3': (
     color: #D2EFFE,
     contrast: #444,
-    dark-theme: #20506d, // New color needed / suggestion
+    dark-theme: hsla(200, 96%, 20%, 1),
     alt-labels: (marker-color)
   ),
   'blue-light4': (
     color: #EFF9FF,
-    contrast: #444
+    contrast: #444,
+    dark-theme: #EFF9FF
   ),
   'grey-dark3': (
     color: #444444,
@@ -126,42 +130,48 @@ $colors: (
   'grey-dark1': (
     color: #8F9599,
     contrast: #000,
+    dark-theme: #8F9599,
     alt-labels: (grey-medium)
   ),
   'grey': (
     color: #ADB0B6,
-    contrast: #000
+    contrast: #000,
+    dark-theme: #ADB0B6
   ),
   'grey-light1': (
     color: #D3DBE0,
     contrast: #444,
+    dark-theme: #D3DBE0,
     alt-labels: (grey-border)
   ),
   'grey-light2': (
     color: #EEF0F4,
     contrast: #444,
-    dark-theme: #6d6e71, // New color needed / suggestion
+    dark-theme: hsla(225, 2%, 44%, 1)
     alt-labels: (field-disabled, grey-light)
   ),
   'grey-light3': (
     color: #F3F4F6,
     contrast: #444,
-    dark-theme: #57585A,
+    dark-theme: #57585A, // --hdd-color-grey-dark2
     alt-labels: (background-primary, grey-background)
   ),
   'signal-green': (
     color: #5A7E2C,
     contrast: #FFF,
+    dark-theme: hsla(86, 53%, 37%, 1),
     alt-labels: (safe)
   ),
   'signal-yellow': (
     color: #F9C642,
     contrast: #000,
+    dark-theme: hsla(43, 100%, 69%, 1), 
     alt-labels: (warn)
   ),
   'signal-red': (
     color: #DC3500,
     contrast: #FFF,
+    dark-theme: hsla(14, 100%, 56%, 1),
     alt-labels: (danger)
   )
 );
@@ -169,35 +179,43 @@ $colors: (
 $data-colors: (
   'data-navy': (
     color: #24598C,
-    contrast: #FFF
+    contrast: #FFF,
+    dark-theme: hsla(209, 100%, 35%, 1)
   ),
   'data-marine': (
     color: #116FCA,
-    contrast: #FFF
+    contrast: #FFF,
+    dark-theme: hsla(210, 100%, 43%, 1)
   ),
   'data-blue': (
     color: #4CA8FF,
-    contrast: #000
+    contrast: #000,
+    dark-theme: hsla(209, 100%, 71%, 1)
   ),
   'data-turquoise': (
     color: #25D2EF,
-    contrast: #000
+    contrast: #000,
+    dark-theme: hsla(189, 100%, 54%, 1)
   ),
   'data-seagreen': (
     color: #46B5AB,
-    contrast: #000
+    contrast: #000,
+    dark-theme: hsla(175, 77%, 49%, 1)
   ),
   'data-green': (
     color: #70E9AA,
-    contrast: #000
+    contrast: #000,
+    dark-theme: hsla(149, 85%, 68%, 1)
   ),
   'data-orange': (
     color: #F1832D,
-    contrast: #000
+    contrast: #000,
+    dark-theme: hsla(26, 98%, 56%, 1)
   ),
   'data-yellow': (
     color: #FFD20D,
-    contrast: #000
+    contrast: #000,
+    dark-theme: hsla(49, 100%, 62%, 1)
   )
 );
 
@@ -215,5 +233,15 @@ $gradients: (
 @mixin is-dark-theme() {
   @media (prefers-color-scheme: dark) {
     @content;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  img {
+    opacity: .75;
+    transition: opacity .5s ease-in-out;
+  }
+  img:hover {
+    opacity: 1;
   }
 }

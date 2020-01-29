@@ -19,7 +19,7 @@
   }
   &:active:not(.no-active),
   &.is-active {
-    color: var(--hdd-color-blue-dark);
+    color: var(--hdd-color-dynamic-primary-dark);
     text-decoration: underline;
   }
 }

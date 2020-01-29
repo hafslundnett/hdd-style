@@ -2,12 +2,6 @@ $tag-padding: 10px;
 $tag-border-radius: $border-radius;
 
 .hdd-tags {
-  --hdd-color-tags-background: var(--hdd-color-blue-light3);
-
-  @include is-dark-theme() {
-    --hdd-color-tags-background: var(--hdd-color-primary);
-  }
-
   position: relative;
   margin-top: 0.5rem;
 
@@ -34,7 +28,7 @@ $tag-border-radius: $border-radius;
     margin-left: var(--hdd-spacing-2);
     padding: $tag-padding;
     border-radius: $tag-border-radius;
-    background: var(--hdd-color-tags-background);
+    background: var(--hdd-color-dynamic-marker-color);
     letter-spacing: 0.15px;
     &:first-child {
       margin-left: 0;
