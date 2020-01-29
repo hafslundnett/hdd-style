@@ -6,10 +6,11 @@ category: Form-Components
 An input should encourage action by the user. If the text / content cannot be changed, it should not appear in an input field of any kind (displayed as static text). 
 
 ### ✅ When to use: 
-An input should have a descriptive prompt and contain: container, label, placeholder/input text, error text/helper.
+An input should have a descriptive prompt and contain: container, label, placeholder/input text, error text/helper. An text-area should be used if a longer text is needed.
 
 ### ⛔ When not to use:
 An input should not stand alone without a label or information about what is requested.
+An textarea should not be used if there no need for a longer text.
 
 ## Input fields
 `hdd-form_input`
