@@ -15,7 +15,7 @@ An input should not stand alone without a label or information about what is req
 `hdd-form_input`
 
 ```input-fields.html
-<div class="dark-mode">
+<div class="example-background">
   <div class="hdd-form_field">
     <label class="hdd-form_field_label" for="title">Normal input field </label>
     <div class="hdd-form_input">
@@ -56,7 +56,7 @@ An input should not stand alone without a label or information about what is req
 ```
 
 ```input-fields.css hidden
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);

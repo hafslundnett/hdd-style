@@ -13,7 +13,7 @@ It is important to set the user context for the search with the correct placehol
 `hdd-form_input`
 
 ```search-fields.html
-<div class="dark-mode">
+<div class="example-background">
   <div class="hdd-form_input">
     <i class="fal fa-search"></i>
     <input placeholder="Placeholder text" />
@@ -23,7 +23,7 @@ It is important to set the user context for the search with the correct placehol
 ```
 
 ```search-fields.css hidden
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);

@@ -22,7 +22,7 @@ Icons can be used in several contexts. In input fields they are used both to vis
 Icons should not be larger than 48px. It should also be avoided to have icons less than 8px. Also, icons should not be used alone in menus without text, as it may be difficult for the user to know what the icon should represent.
 
 ```icons.html
-<div class="dark-mode">
+<div class="example-background">
     <!--Here some icons are illustrated with the "Action button", if there is no need for text, use the "Icon button".-->
     <button class="hdd-button has-icon-left"><i class="fal fa-info-circle"></i> Info Icon</button>
     <button class="hdd-button has-icon-left"><i class="fal fa-user"></i> User Icon</button>
@@ -32,7 +32,7 @@ Icons should not be larger than 48px. It should also be avoided to have icons le
 ```
 
 ```icons.css hidden
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);

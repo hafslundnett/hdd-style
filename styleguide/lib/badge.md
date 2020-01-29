@@ -19,7 +19,7 @@ Badges should not be used alone. Do not display information status in a badge an
 
 
 ```badge.html
-<div class="dark-mode">
+<div class="example-background">
     <span class="hdd-badge">592</span>
     <span class="hdd-badge is-primary">82</span>
     <span class="hdd-badge is-safe">313</span>
@@ -31,7 +31,7 @@ Badges should not be used alone. Do not display information status in a badge an
 ```
 
 ```badge.css  hidden
-.dark-mode {
+.example-background {
     margin: -20px;
     padding: 20px;
     background: var(--hdd-color-dynamic-background-primary);

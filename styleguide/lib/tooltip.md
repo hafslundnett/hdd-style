@@ -18,7 +18,7 @@ Tooltips should not contain necessary and critical information needed by the use
 `hdd-tooltip`
 
 ```tooltip.html
-<div class="dark-mode">
+<div class="example-background">
   <div class="example-container">
     <span class="hdd-tooltip">
       Hover Right
@@ -64,7 +64,7 @@ Tooltips should not contain necessary and critical information needed by the use
   justify-content:space-between;
   margin:30px
 }
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);

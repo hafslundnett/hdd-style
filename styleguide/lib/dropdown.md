@@ -12,7 +12,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
 `hdd-form_input`.`hdd-dropdown`
 
 ```dropdown.html
-<div class="dark-mode">
+<div class="example-background">
   <div class="hdd-form_input hdd-dropdown">
     <input value="Jer">
 
@@ -36,7 +36,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
 .example-fill {
   margin: 20px;
 }
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
@@ -49,7 +49,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
 Only use `is-aligned-top` when there are enough room from the top and not enough from the bottom.
  
 ```dropdown-top.html
-<div class="dark-mode">
+<div class="example-background">
   <div class="example-fill">
     <p>Some content behind</p>
     <p>Some content behind</p>
@@ -76,7 +76,7 @@ Only use `is-aligned-top` when there are enough room from the top and not enough
 .example-fill {
   margin: 20px;
 }
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);

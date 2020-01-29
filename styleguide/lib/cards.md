@@ -18,7 +18,7 @@ Padding inside the card is recommended to have spacing-3. If there are multiple 
 `hdd-card`
  
 ```cards-1.html
-<div class="dark-mode">
+<div class="example-background">
   <div class="hdd-card">
     <div class="hdd-card_header">
       <div class="hdd-card_header_text">
@@ -48,7 +48,7 @@ Padding inside the card is recommended to have spacing-3. If there are multiple 
 `hdd-card`
  
 ```cards-2.html
-<div class="dark-mode">
+<div class="example-background">
   <div class="hdd-card">
     <div class="hdd-card_header">
       <div class="hdd-card_header_icon">
@@ -72,7 +72,7 @@ Padding inside the card is recommended to have spacing-3. If there are multiple 
 `hdd-card`
 
 ```cards-3.html
-<div class="dark-mode">
+<div class="example-background">
   <div class="hdd-card">
     <div class="hdd-card_header">
       <div class="hdd-card_header_icon">
@@ -101,7 +101,7 @@ Padding inside the card is recommended to have spacing-3. If there are multiple 
 `hdd-card`
 
 ```cards-4.html
-<div class="dark-mode">
+<div class="example-background">
   <div class="hdd-card">
     <div class="hdd-card_header">
       <div class="hdd-card_header_text">
@@ -120,28 +120,28 @@ Padding inside the card is recommended to have spacing-3. If there are multiple 
 ```
 
 ```cards-1.css hidden
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 ```cards-2.css hidden
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 ```cards-3.css hidden
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 ```cards-4.css hidden
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);

@@ -10,7 +10,7 @@ A radiobutton component lets a user select only one of a limited number of choic
 `hdd-form_radiobutton`
 
 ```radiobutton.html
-<div class="dark-mode">
+<div class="example-background">
     <form class="hdd-form_field">
         <span class="hdd-form_field_title">Radio buttons</span>
         <label class="hdd-form_radiobutton">
@@ -28,7 +28,7 @@ A radiobutton component lets a user select only one of a limited number of choic
 ```
 
 ```radiobutton.css hidden
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);

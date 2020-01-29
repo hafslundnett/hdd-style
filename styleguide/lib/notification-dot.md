@@ -9,7 +9,7 @@ The `hdd-notification-dot` class adds a small red dot with a white border to the
 `hdd-notification-dot`
 
 ```notification.html
-<div class="dark-mode">
+<div class="example-background">
   <div class="example-margin">
     <i class="fal fa-cog"><span class="hdd-notification-dot"></span></i>
   </div>
@@ -26,7 +26,7 @@ The `hdd-notification-dot` class adds a small red dot with a white border to the
 .example-margin {
   margin: 10px 0;
 }
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);

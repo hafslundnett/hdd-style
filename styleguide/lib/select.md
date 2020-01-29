@@ -9,7 +9,7 @@ A select component lets a user choose between a set of options.
 `hdd-form_select`
 
 ```select.html
-<div class="dark-mode">
+<div class="example-background">
   <div class="hdd-form_field">
     <label class="hdd-form_field_label" for="select-alt1">Select Option</label>
     <div class="hdd-form_select">
@@ -58,7 +58,7 @@ A select component lets a user choose between a set of options.
 ```
 
 ```select.css hidden
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);

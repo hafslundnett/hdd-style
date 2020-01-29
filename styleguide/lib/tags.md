@@ -16,7 +16,7 @@ Tags should not be used alone.
 `hdd-tags`, `hdd-tags_item`
 
 ```tags.html
-<div class="dark-mode">
+<div class="example-background">
   <div class="hdd-tags">
     <span class="hdd-tags_item">707057500051628391<i class="fal fa-times-circle"></i></span>
     <span class="hdd-tags_item">707057500051628391<i class="fal fa-times-circle"></i></span>
@@ -25,7 +25,7 @@ Tags should not be used alone.
 ```
 
 ```tags.css hidden
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);

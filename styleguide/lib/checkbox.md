@@ -10,7 +10,7 @@ Checkbox classes are assigned to the corresponding checkbox label.
 `hdd-form_checkbox`
 
 ```checkbox.html
-<div class="dark-mode">
+<div class="example-background">
   <div class="hdd-form_field">
     <span class="hdd-form_field_title">Checkboxes</span>
     <label class="hdd-form_checkbox">
@@ -40,7 +40,7 @@ The toggle checkbox slider class are assigned to the corresponding span beneath 
 
 `hdd-form_toggle` & `hdd-form_toggle slider`
 ```toggle.html
-<div class="dark-mode">
+<div class="example-background">
   <div class="hdd-form_field">
     <span class="hdd-form_field_title">Toggle Checkbox</span>
     <label class="hdd-form_toggle">
@@ -61,7 +61,7 @@ The toggle checkbox slider class are assigned to the corresponding span beneath 
 .hdd-form_toggle:not(:last-child) {
   margin-bottom: 15px;
 }
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
@@ -69,7 +69,7 @@ The toggle checkbox slider class are assigned to the corresponding span beneath 
 ```
 
 ```checkbox.css hidden
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);

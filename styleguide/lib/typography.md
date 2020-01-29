@@ -8,7 +8,7 @@ The typeface should be kept consistent in all mediums, physical and digital. The
 Roboto is default font for all text. These tags are automatically styled: h1, h2, h3 and p.
 
 ```roboto.html
-<div class="dark-mode">
+<div class="example-background">
     <h1>Heading 1</h1>
     <h1>ABCDEFHILMNOPQRSTVXÆØÅ</h1>
     <h1>abcdefghijklmnopqrstuvwxyzæøå</h1>
@@ -32,7 +32,7 @@ Roboto is default font for all text. These tags are automatically styled: h1, h2
 ```
 
 ```roboto.css hidden
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);

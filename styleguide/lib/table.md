@@ -9,7 +9,7 @@ A table can consist out of data, buttons and icons. A table row can also have a 
 `hdd-table`
 
 ```table.html
-<div class="dark-mode">
+<div class="example-background">
   <table class="hdd-table is-striped has-shadow">
     <tr class="hdd-table_header">
       <th>ID<i class="far fa-arrow-up"></i></th>
@@ -59,7 +59,7 @@ A table can consist out of data, buttons and icons. A table row can also have a 
 `hdd-table`
 
 ```table-sticky-header.html
-<div class="dark-mode">
+<div class="example-background">
   <div class="example-container-to-force-scroll">
     <table class="hdd-table is-striped has-shadow is-sticky-header">
       <tr class="hdd-table_header">
@@ -135,14 +135,14 @@ A table can consist out of data, buttons and icons. A table row can also have a 
   overflow: auto;
   background: var(--hdd-color-dynamic-background-primary);
 }
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 ```table.css hidden
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);

@@ -9,7 +9,7 @@ Links are for prompting a user action that will affect another part.
 `hdd-link`
 
 ```links.html
-<div class="dark-mode">
+<div class="example-background">
     <a href="https://google.com" class="hdd-link">Normal</a> <br>
     <a href="https://hafslundnett.no" class="hdd-link is-active">Active</a><br>
     <a href="https://hafslundnett.no" class="hdd-link is-hovering">Hovered</a><br>
@@ -19,7 +19,7 @@ Links are for prompting a user action that will affect another part.
 
 
 ```links.css hidden
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);

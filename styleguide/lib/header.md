@@ -14,7 +14,7 @@ The sign out button should only be used if the user menu can't be used.
 ## Header with image
 
 ```header.html
-<div class="dark-mode">
+<div class="example-background">
   <header class="hdd-header">
     <a class="hdd-header_logo" href="#">
       <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
@@ -34,7 +34,7 @@ The sign out button should only be used if the user menu can't be used.
 ## Header without image
 
 ```header-no-img.html
-<div class="dark-mode">
+<div class="example-background">
   <header class="hdd-header">
     <a class="hdd-header_logo" href="#">
       <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
@@ -59,7 +59,7 @@ The sign out button should only be used if the user menu can't be used.
 header {
   margin-bottom: 30px;
 }
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
@@ -69,7 +69,7 @@ header {
 header {
   margin-bottom: 30px;
 }
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);

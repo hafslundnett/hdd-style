@@ -11,7 +11,7 @@ This is the user menu to be shown when clicking on your image in the header. Thi
 ## User Menu with image
 
 ```user-menu.html
-<div class="dark-mode">
+<div class="example-background">
   <div class="hdd-user-menu">
     <img class="hdd-user-menu_image" src="http://placekitten.com/150/150"/>
     <div class="hdd-user-menu_name">
@@ -33,7 +33,7 @@ This is the user menu to be shown when clicking on your image in the header. Thi
 ## User Menu without image
 
 ```user-menu-no-img.html
-<div class="dark-mode">
+<div class="example-background">
   <div class="hdd-user-menu">
     <div class="hdd-user-menu_initials">
       TT
@@ -55,14 +55,14 @@ This is the user menu to be shown when clicking on your image in the header. Thi
 ```
 
 ```user-menu.css hidden {
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 ```user-menu-no-img.css hidden
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);

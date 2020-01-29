@@ -15,7 +15,7 @@ We provide two grids you can use. The first (`.hdd-grid`) is meant for sites tha
 - 12 for big-size (> Jupiter)
 
 ```grid.html
-<div class="dark-mode">
+<div class="example-background">
   <h1>For mobile and desktop (.hdd-grid)</h1>
   <div class="hdd-grid">
     <div class="grid-item-1"></div>
@@ -56,7 +56,7 @@ You should use grid-column and grid-row to position your elements on the grid. R
 .hdd-grid {
   margin-bottom: var(--hdd-spacing-3);
 }
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);

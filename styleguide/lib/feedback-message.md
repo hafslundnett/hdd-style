@@ -17,7 +17,7 @@ A feedback message should not be used unnecessarily
 Usage of icons in feedback messages should be kept to an absolute minimum, since they usually don't serve any purpose and may be considered as visual "noise".
 
 ```feedbackmessage.html
-<div class="dark-mode">
+<div class="example-background">
   <div class="feedback-container">
     <i class="fal fa-info-circle feedback-container_icon"></i>
     <p class="feedback-container_message">
@@ -60,7 +60,7 @@ Usage of icons in feedback messages should be kept to an absolute minimum, since
 .feedback-container {
   margin-bottom: 10px;
 }
-.dark-mode {
+.example-background {
   margin: -20px;
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
