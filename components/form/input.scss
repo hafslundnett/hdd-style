@@ -65,7 +65,7 @@ $form-input-border: 1px solid var(--hdd-color-grey);
     min-height: 16px;
     height: 91px;
     resize: vertical;
-    overflow: auto;
+    overflow-y: auto;
   }
 
   &_icon,
