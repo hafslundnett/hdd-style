@@ -4,6 +4,7 @@
 
   text-decoration: none;
   color: var(--hdd-color-blue);
+  box-sizing: border-box;
 
   &:hover:not(.no-hover),
   &.is-hovering,
