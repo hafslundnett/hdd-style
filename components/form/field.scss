@@ -6,6 +6,7 @@
   position: relative;
   margin-bottom: 2rem;
   text-align: left;
+  box-sizing: border-box;
 
   &_label {
     // .is-p is font-properties, defined in typography.
