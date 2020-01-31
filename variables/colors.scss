@@ -218,8 +218,6 @@ $data-colors: (
   )
 );
 
-$checkbox-background-dark-theme: #232222;
-
 $all-colors: map-merge($colors, $data-colors);
 
 $gradients: (

@@ -3,12 +3,6 @@ $form-checkbox-mark-border-radius: $border-radius;
 $form-checkbox-mark-border: 1px solid var(--hdd-color-dynamic-primary);
 
 .hdd-form_checkbox {
-  --hdd-color-checkbox-background: var(--hdd-color-background-secondary);
-
-  @include is-dark-theme() {
-    --hdd-color-checkbox-background: #232222;
-  }
-
   // Variable containing '&' to jump to current parent inside a child class.
   $this: &;
 
@@ -75,7 +69,7 @@ $form-checkbox-mark-border: 1px solid var(--hdd-color-dynamic-primary);
     transition: background 0.3s $transition-cubic;
     border: $form-checkbox-mark-border;
     border-radius: $form-checkbox-mark-border-radius;
-    background: var(--hdd-color-checkbox-background);
+    background: var(--hdd-color-dynamic-background-secondary);
   }
 
   &_label {

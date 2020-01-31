@@ -52,6 +52,7 @@
 							<optgroup label="Colors">
 									<option value="colors">Colors</option>
 									<option value="colors-preview">Colors preview</option>
+									<option value="dark-theme">Dark Theme</option>
 									<option value="shadows">Shadows</option>
 							</optgroup>
 							<optgroup label="Utilities">
@@ -3249,6 +3250,121 @@ Dropdown should be used if the user wants a recommended selection out of all the
 </div></div>
 </div>
 
+						<div id="dark-theme" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Dark Theme</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">dark-theme.md</span>
+	</span>
+	<div class="theme-content-element-description"><h5>⚠️ Experimental, not available outside hdd yet!</h5><p>The dark-theme colors are right now in experimental mode, meaning there will be changes to these colors. </p>
+<p>Every color can be used directly by using the css-variable for a color: <code>var(--hdd-color-dynamic-$name)</code>. For example for primary: <code>color: var(--hdd-color-dynamic-primary)</code>.</p>
+<div id="using-the-dark-mode-css-variables" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#using-the-dark-mode-css-variables" class="icon-link i-section__link -heading"></a>Using the dark-mode CSS-variables</h2></div><p>By using the &#39;dynamic&#39;-colors the color will switch between a dark-mode color and a light-mode color depending on the theme chosen on your computer. If you don´t want to use dark-mode use the regular colors, without the &#39;dynamic&#39;-name. The css-variables can be accessed anywhere when importing hdd into your application. The dark-pallet does noe support contrast-colors yet. A color can be selected by it&#39;s color name or label.</p>
+<ul>
+<li><code>var(--hdd-color-dynamic-$name)</code></li>
+</ul>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> scss</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".hdd-element {
+  background: var(--hdd-color-primary); // using the primary color, blue
+  color: var(--hdd-color-contrast-primary); // using the contrast color of primary 
+}">Copy</button>
+		<pre class="mb-0"><code class="lang-">.hdd-element {
+  background: var(--hdd-color-primary); // using the primary color, blue
+  color: var(--hdd-color-contrast-primary); // using the contrast color of primary 
+}</code></pre>
+	</div>
+</div><div id="light-vs-dark-colors" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#light-vs-dark-colors" class="icon-link i-section__link -heading"></a>Light vs Dark Colors</h2></div><p>Almost every dark-mode-color has changes to some extent. The light colors have become dark and vice versa, while most of the distinct colors, like the signal-colors, have become clearer to contrast the other colors.</p>
+<ul>
+<li><code>--hdd-color-black</code> -&gt; <code>--hdd-color-dynamic-black</code></li>
+<li><code>--hdd-color-white</code> -&gt; <code>--hdd-color-dynamic-white</code></li>
+<li><code>--hdd-color-blue</code> -&gt; <code>--hdd-color-dynamic-blue</code></li>
+<li><code>--hdd-color-signal-green</code> -&gt; <code>--hdd-color-signal-green</code></li>
+<li><code>--hdd-color-signal-yellow</code> -&gt; <code>--hdd-color-signal-yellow</code></li>
+<li><code>--hdd-color-signal-red</code> -&gt; <code>--hdd-color-signal-red</code></li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="dark-theme-dark-theme-colors.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="dark-theme-dark-theme-colors.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="shadows" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Shadows</h1>
 	<span class="theme-content-element-source">
@@ -3951,7 +4067,7 @@ In the internal design system SVG files from Streamline light must be used.
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Colors  Colors preview  Shadows "
+							data-filter-value=" Colors  Colors preview  Dark Theme  Shadows "
 						>
 							<a href="#category-colors" class="i-sidebar-list-item">
 								<b>Colors</b>
@@ -3972,6 +4088,13 @@ In the internal design system SVG files from Streamline light must be used.
 									data-filter-value="Colors preview"
 								>
 									<span>Colors preview</span>
+								</a>
+								<a
+									href="#dark-theme"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Dark Theme"
+								>
+									<span>Dark Theme</span>
 								</a>
 								<a
 									href="#shadows"

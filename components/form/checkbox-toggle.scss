@@ -1,10 +1,4 @@
 .hdd-form_toggle {
-  --hdd-color-checkbox-toggle-background: var(--hdd-color-background-secondary);
-
-  @include is-dark-theme() {
-    --hdd-color-checkbox-toggle-background: #232222;
-  }
-
   cursor: pointer;
   display: flex;
   height: 1rem;
@@ -19,7 +13,7 @@
   }
 
   &.slider {
-    background: var(--hdd-color-checkbox-toggle-background);
+    background: var(--hdd-color-dynamic-background-secondary);
     border: 1px solid var(--hdd-color-dynamic-primary);
     border-radius: 2rem;
     position: absolute;
@@ -44,7 +38,7 @@
   }
 
   input:checked + .slider:before {
-    background: var(--hdd-color-checkbox-toggle-background);
+    background: var(--hdd-color-dynamic-background-secondary);
     @include transform(translateX(0.9rem));
   }
 }
