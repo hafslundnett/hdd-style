@@ -16,8 +16,9 @@ $feedback-message-gap: 10px;
   padding: $feedback-padding;
   border: none;
   border-radius: $feedback-border-radius;
-  // .is-info is the default for any feedback-container
+  box-sizing: border-box;
   
+  // .is-info is the default for any feedback-container
   @extend .is-info;
   @extend .is-p;
 

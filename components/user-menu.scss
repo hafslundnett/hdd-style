@@ -14,6 +14,7 @@ $separator-line-size: 70%;
   background: var(--hdd-color-dynamic-background-secondary);
   box-shadow: var(--hdd-shadow-strong);
   padding: var(--hdd-spacing-3);
+  box-sizing: border-box;
 
   &_image {
     width: $header-img-size;

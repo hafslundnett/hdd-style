@@ -12,6 +12,7 @@ $small-menu-border-radius: $border-radius;
 
   display: inline-block;
   position: relative;
+  box-sizing: border-box;
 
   &:hover {
     #{$this}_content:not(.no-hover):not(:hover) {

@@ -8,6 +8,7 @@ $header-img-size: 40px;
   height: $header-height;
   width: 100%;
   padding: 0 var(--hdd-spacing-2);
+  box-sizing: border-box;
 
   background: var(--hdd-color-dynamic-background-secondary);
   box-shadow: var(--hdd-shadow-medium);

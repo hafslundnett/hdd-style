@@ -4,6 +4,7 @@ $tag-border-radius: $border-radius;
 .hdd-tags {
   position: relative;
   margin-top: 0.5rem;
+  box-sizing: border-box;
 
   &_icon,
   svg,

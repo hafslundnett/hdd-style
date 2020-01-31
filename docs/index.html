@@ -2387,9 +2387,10 @@ Dropdown should be used if the user wants a recommended selection out of all the
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">input-fields.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>An input should encourage action by the user. If the text / content cannot be changed, it should not appear in an input field of any kind (displayed as static text). </p>
-<h3>✅ When to use:</h3><p>An input should have a descriptive prompt and contain: container, label, placeholder/input text, error text/helper.</p>
-<h3>⛔ When not to use:</h3><p>An input should not stand alone without a label or information about what is requested.</p>
+	<div class="theme-content-element-description"><p>An input should encourage action by the user. If the text / content cannot be changed, it should not appear in an input field of any kind (displayed as static text). For text-areas min-height is set to standard input-field height. The height is adjustable for the user, while the width is not.</p>
+<h3>✅ When to use:</h3><p>An input should have a descriptive prompt and contain: container, label, placeholder/input text, error text/helper. An textarea should be used if a longer text is needed. </p>
+<h3>⛔ When not to use:</h3><p>An input should not stand alone without a label or information about what is requested.
+An textarea should not be used if there no need for a longer text.</p>
 <div id="input-fields" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#input-fields" class="icon-link i-section__link -heading"></a>Input fields</h2></div><p><code>hdd-form_input</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -3460,7 +3461,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
 		<span class="theme-content-element-source-path">breakpoints.md</span>
 	</span>
 	<div class="theme-content-element-description"><p>The breakpoints uses the names of the planets in the solar system. This is done on purpose as opposed to names like &quot;phone&quot; and &quot;desktop&quot;. This is due to the changing nature of screen sizes and we don&#39;t want to have a strong link between our sizes and real devices.</p>
-<div id="using-the-sizes" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#using-the-sizes" class="icon-link i-section__link -heading"></a>Using the sizes</h2></div><p>We are using a mobile first philosophy which means you first create the styling for the smallest supported screen size. Then you add breakpoints for larger screens (a given size and up) where further changes are specified.</p>
+<h5>@import &quot;~@hafslundnett/hdd-style/utilities/breakpoints&quot;;</h5><div id="using-the-sizes" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#using-the-sizes" class="icon-link i-section__link -heading"></a>Using the sizes</h2></div><p>We are using a mobile first philosophy which means you first create the styling for the smallest supported screen size. Then you add breakpoints for larger screens (a given size and up) where further changes are specified.</p>
 
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang "> scss</button>
