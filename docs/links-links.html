@@ -3,8 +3,7 @@
 
 	<head>
 		<style>
-					.example-background {
-  margin: -20px;
+					body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }
@@ -58,22 +57,17 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div class="example-background">
     <a href="https://google.com" class="hdd-link">Normal</a> <br>
-    <a href="https://hafslundnett.no" class="hdd-link is-active">Active</a><br>
-    <a href="https://hafslundnett.no" class="hdd-link is-hovering">Hovered</a><br>
-    <a href="https://hafslundnett.no" class="hdd-link no-hover">Disabled hover state</a><br>
-</div>
+<a href="https://hafslundnett.no" class="hdd-link is-active">Active</a><br>
+<a href="https://hafslundnett.no" class="hdd-link is-hovering">Hovered</a><br>
+<a href="https://hafslundnett.no" class="hdd-link no-hover">Disabled hover state</a><br>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="example-background">
-    <a href="https://google.com" class="hdd-link">Normal</a> <br>
-    <a href="https://hafslundnett.no" class="hdd-link is-active">Active</a><br>
-    <a href="https://hafslundnett.no" class="hdd-link is-hovering">Hovered</a><br>
-    <a href="https://hafslundnett.no" class="hdd-link no-hover">Disabled hover state</a><br>
-</div></script>
-			<script type="text/x-stylemark" data-language="css">.example-background {
-  margin: -20px;
+			<script type="text/x-stylemark" data-language="html"><a href="https://google.com" class="hdd-link">Normal</a> <br>
+<a href="https://hafslundnett.no" class="hdd-link is-active">Active</a><br>
+<a href="https://hafslundnett.no" class="hdd-link is-hovering">Hovered</a><br>
+<a href="https://hafslundnett.no" class="hdd-link no-hover">Disabled hover state</a><br></script>
+			<script type="text/x-stylemark" data-language="css">body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }</script>

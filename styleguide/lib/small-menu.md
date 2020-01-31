@@ -11,7 +11,6 @@ A small menu can hold a list of choices. It can be hidden and shown on the hover
 Clicking the icon toggles the is-active state of the small menu.
 
 ```small-menu.html
-<div class="example-background">
   <div class="small-menu-container">
     <div class="hdd-small-menu">
       <span class="hdd-small-menu_title"><i class="fal fa-cog"></i></span>
@@ -23,7 +22,6 @@ Clicking the icon toggles the is-active state of the small menu.
       </ul>
     </div>
   </div>
-</div>
 ```
 
 ```small-menu.css hidden
@@ -31,8 +29,7 @@ Clicking the icon toggles the is-active state of the small menu.
   width: 20px;
   margin: 0 auto;
 } 
-.example-background {
-  margin: -20px;
+body > div:first-of-type {
   padding: 20px;
   height: 230px;
   background: var(--hdd-color-dynamic-background-primary);

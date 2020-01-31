@@ -3,8 +3,7 @@
 
 	<head>
 		<style>
-					.example-background {
-  margin: -20px;
+					body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }
@@ -58,40 +57,35 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div class="example-background">
     <form class="hdd-form_field">
-        <span class="hdd-form_field_title">Radio buttons</span>
-        <label class="hdd-form_radiobutton">
-            <input type="radio" name="formname" checked />
-            <span class="hdd-form_radiobutton_mark"></span>
-            <span class="hdd-form_radiobutton_label">Picked</span>
-        </label>
-        <label class="hdd-form_radiobutton">
-            <input type="radio" name="formname" />
-            <span class="hdd-form_radiobutton_mark"></span>
-            <span class="hdd-form_radiobutton_label">Unpicked</span>
-        </label>
-    </form>
-</div>
+    <span class="hdd-form_field_title">Radio buttons</span>
+    <label class="hdd-form_radiobutton">
+        <input type="radio" name="formname" checked />
+        <span class="hdd-form_radiobutton_mark"></span>
+        <span class="hdd-form_radiobutton_label">Picked</span>
+    </label>
+    <label class="hdd-form_radiobutton">
+        <input type="radio" name="formname" />
+        <span class="hdd-form_radiobutton_mark"></span>
+        <span class="hdd-form_radiobutton_label">Unpicked</span>
+    </label>
+</form>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="example-background">
-    <form class="hdd-form_field">
-        <span class="hdd-form_field_title">Radio buttons</span>
-        <label class="hdd-form_radiobutton">
-            <input type="radio" name="formname" checked />
-            <span class="hdd-form_radiobutton_mark"></span>
-            <span class="hdd-form_radiobutton_label">Picked</span>
-        </label>
-        <label class="hdd-form_radiobutton">
-            <input type="radio" name="formname" />
-            <span class="hdd-form_radiobutton_mark"></span>
-            <span class="hdd-form_radiobutton_label">Unpicked</span>
-        </label>
-    </form>
-</div></script>
-			<script type="text/x-stylemark" data-language="css">.example-background {
-  margin: -20px;
+			<script type="text/x-stylemark" data-language="html"><form class="hdd-form_field">
+    <span class="hdd-form_field_title">Radio buttons</span>
+    <label class="hdd-form_radiobutton">
+        <input type="radio" name="formname" checked />
+        <span class="hdd-form_radiobutton_mark"></span>
+        <span class="hdd-form_radiobutton_label">Picked</span>
+    </label>
+    <label class="hdd-form_radiobutton">
+        <input type="radio" name="formname" />
+        <span class="hdd-form_radiobutton_mark"></span>
+        <span class="hdd-form_radiobutton_label">Unpicked</span>
+    </label>
+</form></script>
+			<script type="text/x-stylemark" data-language="css">body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }</script>

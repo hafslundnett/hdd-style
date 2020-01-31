@@ -154,35 +154,31 @@
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;h1&gt;For mobile and desktop (.hdd-grid)&lt;/h1&gt;
-  &lt;div class=&quot;hdd-grid&quot;&gt;
-    &lt;div class=&quot;grid-item-1&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;grid-item-2&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;grid-item-3&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;h1&gt;For mobile and desktop (.hdd-grid)&lt;/h1&gt;
+&lt;div class=&quot;hdd-grid&quot;&gt;
+  &lt;div class=&quot;grid-item-1&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;grid-item-2&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;grid-item-3&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
 
-  &lt;h1&gt;For desktop (.hdd-grid-desktop)&lt;/h1&gt;
-  &lt;div class=&quot;hdd-grid-desktop&quot;&gt;
-    &lt;div class=&quot;grid-item-1&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;grid-item-2&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;grid-item-3&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
+&lt;h1&gt;For desktop (.hdd-grid-desktop)&lt;/h1&gt;
+&lt;div class=&quot;hdd-grid-desktop&quot;&gt;
+  &lt;div class=&quot;grid-item-1&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;grid-item-2&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;grid-item-3&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;h1&gt;For mobile and desktop (.hdd-grid)&lt;/h1&gt;
-  &lt;div class=&quot;hdd-grid&quot;&gt;
-    &lt;div class=&quot;grid-item-1&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;grid-item-2&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;grid-item-3&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
+		<pre class="mb-0"><code class="lang-">&lt;h1&gt;For mobile and desktop (.hdd-grid)&lt;/h1&gt;
+&lt;div class=&quot;hdd-grid&quot;&gt;
+  &lt;div class=&quot;grid-item-1&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;grid-item-2&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;grid-item-3&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
 
-  &lt;h1&gt;For desktop (.hdd-grid-desktop)&lt;/h1&gt;
-  &lt;div class=&quot;hdd-grid-desktop&quot;&gt;
-    &lt;div class=&quot;grid-item-1&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;grid-item-2&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;grid-item-3&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
+&lt;h1&gt;For desktop (.hdd-grid-desktop)&lt;/h1&gt;
+&lt;div class=&quot;hdd-grid-desktop&quot;&gt;
+  &lt;div class=&quot;grid-item-1&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;grid-item-2&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;grid-item-3&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><p>You should use grid-column and grid-row to position your elements on the grid. Remember to add new positions for the breakpoints. Elements will have a width based on the grid, but no height as rows have no default height.</p>
@@ -211,8 +207,7 @@
 .hdd-grid {
   margin-bottom: var(--hdd-spacing-3);
 }
-.example-background {
-  margin: -20px;
+body &gt; div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }">Copy</button>
@@ -237,8 +232,7 @@
 .hdd-grid {
   margin-bottom: var(--hdd-spacing-3);
 }
-.example-background {
-  margin: -20px;
+body &gt; div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }</code></pre>
@@ -302,24 +296,20 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-    &lt;span class=&quot;hdd-badge&quot;&gt;592&lt;/span&gt;
-    &lt;span class=&quot;hdd-badge is-primary&quot;&gt;82&lt;/span&gt;
-    &lt;span class=&quot;hdd-badge is-safe&quot;&gt;313&lt;/span&gt;
-    &lt;span class=&quot;hdd-badge is-warn&quot;&gt;18 196&lt;/span&gt;
-    &lt;span class=&quot;hdd-badge is-blue-light1&quot;&gt;37&lt;/span&gt;
-    &lt;span class=&quot;hdd-badge is-data-navy&quot;&gt;12 156&lt;/span&gt;
-    &lt;span class=&quot;hdd-badge is-black&quot;&gt;9 214&lt;/span&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-    &lt;span class=&quot;hdd-badge&quot;&gt;592&lt;/span&gt;
-    &lt;span class=&quot;hdd-badge is-primary&quot;&gt;82&lt;/span&gt;
-    &lt;span class=&quot;hdd-badge is-safe&quot;&gt;313&lt;/span&gt;
-    &lt;span class=&quot;hdd-badge is-warn&quot;&gt;18 196&lt;/span&gt;
-    &lt;span class=&quot;hdd-badge is-blue-light1&quot;&gt;37&lt;/span&gt;
-    &lt;span class=&quot;hdd-badge is-data-navy&quot;&gt;12 156&lt;/span&gt;
-    &lt;span class=&quot;hdd-badge is-black&quot;&gt;9 214&lt;/span&gt;
-&lt;/div&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;hdd-badge&quot;&gt;592&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-primary&quot;&gt;82&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-safe&quot;&gt;313&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-warn&quot;&gt;18 196&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-blue-light1&quot;&gt;37&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-data-navy&quot;&gt;12 156&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-black&quot;&gt;9 214&lt;/span&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;hdd-badge&quot;&gt;592&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-primary&quot;&gt;82&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-safe&quot;&gt;313&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-warn&quot;&gt;18 196&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-blue-light1&quot;&gt;37&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-data-navy&quot;&gt;12 156&lt;/span&gt;
+&lt;span class=&quot;hdd-badge is-black&quot;&gt;9 214&lt;/span&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -365,16 +355,12 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;button class=&quot;hdd-button&quot;&gt;Primary&lt;/button&gt;
-  &lt;button class=&quot;hdd-button&quot; disabled&gt;Disabled&lt;/button&gt;
-  &lt;button class=&quot;hdd-button is-loading&quot;&gt;Loading&lt;/button&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;button class=&quot;hdd-button&quot;&gt;Primary&lt;/button&gt;
-  &lt;button class=&quot;hdd-button&quot; disabled&gt;Disabled&lt;/button&gt;
-  &lt;button class=&quot;hdd-button is-loading&quot;&gt;Loading&lt;/button&gt;
-&lt;/div&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;hdd-button&quot; disabled&gt;Disabled&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-loading&quot;&gt;Loading&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button&quot;&gt;Primary&lt;/button&gt;
+&lt;button class=&quot;hdd-button&quot; disabled&gt;Disabled&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-loading&quot;&gt;Loading&lt;/button&gt;</code></pre>
 	</div>
 </div><div id="secondary-button" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#secondary-button" class="icon-link i-section__link -heading"></a>Secondary button</h2></div><p><code>hdd-button</code></p>
 <p>The secondary button should never be used alone on a page.</p>
@@ -407,16 +393,12 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;button class=&quot;hdd-button is-secondary&quot;&gt;Secondary&lt;/button&gt;
-  &lt;button class=&quot;hdd-button is-secondary&quot; disabled&gt;Disabled&lt;/button&gt;
-  &lt;button class=&quot;hdd-button is-secondary is-loading&quot;&gt;Loading&lt;/button&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;button class=&quot;hdd-button is-secondary&quot;&gt;Secondary&lt;/button&gt;
-  &lt;button class=&quot;hdd-button is-secondary&quot; disabled&gt;Disabled&lt;/button&gt;
-  &lt;button class=&quot;hdd-button is-secondary is-loading&quot;&gt;Loading&lt;/button&gt;
-&lt;/div&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;hdd-button is-secondary&quot;&gt;Secondary&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-secondary&quot; disabled&gt;Disabled&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-secondary is-loading&quot;&gt;Loading&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;hdd-button is-secondary&quot;&gt;Secondary&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-secondary&quot; disabled&gt;Disabled&lt;/button&gt;
+&lt;button class=&quot;hdd-button is-secondary is-loading&quot;&gt;Loading&lt;/button&gt;</code></pre>
 	</div>
 </div><div id="buttons-with-icon" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#buttons-with-icon" class="icon-link i-section__link -heading"></a>Buttons with icon</h2></div><p><code>hdd-button</code></p>
 <p>The buttons are all the same size.</p>
@@ -449,33 +431,29 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div&gt;
-    &lt;button class=&quot;hdd-button has-icon&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
-    &lt;button class=&quot;hdd-button has-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
-  &lt;/div&gt;
-  &lt;div style=&quot;margin-top:8px;&quot;&gt;
-    &lt;button class=&quot;hdd-button has-icon is-secondary&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
-    &lt;button class=&quot;hdd-button has-icon is-secondary&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
-  &lt;/div&gt;
-  &lt;div style=&quot;margin-top:8px;&quot;&gt;
-    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
-    &lt;button class=&quot;hdd-button has-icon is-transparent&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
-  &lt;/div&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
+  &lt;button class=&quot;hdd-button has-icon&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+  &lt;button class=&quot;hdd-button has-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:8px;&quot;&gt;
+  &lt;button class=&quot;hdd-button has-icon is-secondary&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+  &lt;button class=&quot;hdd-button has-icon is-secondary&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:8px;&quot;&gt;
+  &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+  &lt;button class=&quot;hdd-button has-icon is-transparent&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div&gt;
-    &lt;button class=&quot;hdd-button has-icon&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
-    &lt;button class=&quot;hdd-button has-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
-  &lt;/div&gt;
-  &lt;div style=&quot;margin-top:8px;&quot;&gt;
-    &lt;button class=&quot;hdd-button has-icon is-secondary&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
-    &lt;button class=&quot;hdd-button has-icon is-secondary&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
-  &lt;/div&gt;
-  &lt;div style=&quot;margin-top:8px;&quot;&gt;
-    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
-    &lt;button class=&quot;hdd-button has-icon is-transparent&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
-  &lt;/div&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div&gt;
+  &lt;button class=&quot;hdd-button has-icon&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+  &lt;button class=&quot;hdd-button has-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:8px;&quot;&gt;
+  &lt;button class=&quot;hdd-button has-icon is-secondary&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+  &lt;button class=&quot;hdd-button has-icon is-secondary&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:8px;&quot;&gt;
+  &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
+  &lt;button class=&quot;hdd-button has-icon is-transparent&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Icon button&lt;/button&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><div id="icon-only-buttons" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#icon-only-buttons" class="icon-link i-section__link -heading"></a>Icon only buttons</h2></div><p><code>hdd-button-icon</code></p>
@@ -508,33 +486,29 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div&gt;
-    &lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-    &lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-  &lt;/div&gt;
-  &lt;div style=&quot;margin-top:8px;&quot;&gt;
-    &lt;button class=&quot;hdd-button-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-    &lt;button class=&quot;hdd-button-icon is-transparent&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-  &lt;/div&gt;
-  &lt;div style=&quot;margin-top:8px;&quot;&gt;
-    &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-    &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-  &lt;/div&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
+  &lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:8px;&quot;&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:8px;&quot;&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div&gt;
-    &lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-    &lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-  &lt;/div&gt;
-  &lt;div style=&quot;margin-top:8px;&quot;&gt;
-    &lt;button class=&quot;hdd-button-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-    &lt;button class=&quot;hdd-button-icon is-transparent&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-  &lt;/div&gt;
-  &lt;div style=&quot;margin-top:8px;&quot;&gt;
-    &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-    &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-  &lt;/div&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div&gt;
+  &lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:8px;&quot;&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:8px;&quot;&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-button</code>:</strong></p>
@@ -614,52 +588,48 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-card&quot;&gt;
-    &lt;div class=&quot;hdd-card_header&quot;&gt;
-      &lt;div class=&quot;hdd-card_header_text&quot;&gt;
-        &lt;div class=&quot;hdd-card_title is-center&quot;&gt;A card should have a title&lt;/div&gt;
-        &lt;div class=&quot;hdd-card_subtitle is-center&quot;&gt;And a subtitle&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-card_content&quot;&gt;
-      &lt;p&gt;A card consist of some content.&lt;/p&gt;
-      &lt;p&gt;The card can have multiple lines of content.&lt;/p&gt;
-      &lt;p&gt;Cards are useful for displaying some kind of information&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-card_header&quot;&gt;
-      &lt;div class=&quot;hdd-card_header_text&quot;&gt;
-        &lt;div class=&quot;hdd-card_title&quot;&gt;A card can have more than one title&lt;/div&gt;
-        &lt;div class=&quot;hdd-card_subtitle&quot;&gt;And a subtitle&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-card_content&quot;&gt;
-      &lt;p&gt;And more content.&lt;/p&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-card&quot;&gt;
+  &lt;div class=&quot;hdd-card_header&quot;&gt;
+    &lt;div class=&quot;hdd-card_header_text&quot;&gt;
+      &lt;div class=&quot;hdd-card_title is-center&quot;&gt;A card should have a title&lt;/div&gt;
+      &lt;div class=&quot;hdd-card_subtitle is-center&quot;&gt;And a subtitle&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_content&quot;&gt;
+    &lt;p&gt;A card consist of some content.&lt;/p&gt;
+    &lt;p&gt;The card can have multiple lines of content.&lt;/p&gt;
+    &lt;p&gt;Cards are useful for displaying some kind of information&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_header&quot;&gt;
+    &lt;div class=&quot;hdd-card_header_text&quot;&gt;
+      &lt;div class=&quot;hdd-card_title&quot;&gt;A card can have more than one title&lt;/div&gt;
+      &lt;div class=&quot;hdd-card_subtitle&quot;&gt;And a subtitle&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_content&quot;&gt;
+    &lt;p&gt;And more content.&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-card&quot;&gt;
-    &lt;div class=&quot;hdd-card_header&quot;&gt;
-      &lt;div class=&quot;hdd-card_header_text&quot;&gt;
-        &lt;div class=&quot;hdd-card_title is-center&quot;&gt;A card should have a title&lt;/div&gt;
-        &lt;div class=&quot;hdd-card_subtitle is-center&quot;&gt;And a subtitle&lt;/div&gt;
-      &lt;/div&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-card&quot;&gt;
+  &lt;div class=&quot;hdd-card_header&quot;&gt;
+    &lt;div class=&quot;hdd-card_header_text&quot;&gt;
+      &lt;div class=&quot;hdd-card_title is-center&quot;&gt;A card should have a title&lt;/div&gt;
+      &lt;div class=&quot;hdd-card_subtitle is-center&quot;&gt;And a subtitle&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;hdd-card_content&quot;&gt;
-      &lt;p&gt;A card consist of some content.&lt;/p&gt;
-      &lt;p&gt;The card can have multiple lines of content.&lt;/p&gt;
-      &lt;p&gt;Cards are useful for displaying some kind of information&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_content&quot;&gt;
+    &lt;p&gt;A card consist of some content.&lt;/p&gt;
+    &lt;p&gt;The card can have multiple lines of content.&lt;/p&gt;
+    &lt;p&gt;Cards are useful for displaying some kind of information&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_header&quot;&gt;
+    &lt;div class=&quot;hdd-card_header_text&quot;&gt;
+      &lt;div class=&quot;hdd-card_title&quot;&gt;A card can have more than one title&lt;/div&gt;
+      &lt;div class=&quot;hdd-card_subtitle&quot;&gt;And a subtitle&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;hdd-card_header&quot;&gt;
-      &lt;div class=&quot;hdd-card_header_text&quot;&gt;
-        &lt;div class=&quot;hdd-card_title&quot;&gt;A card can have more than one title&lt;/div&gt;
-        &lt;div class=&quot;hdd-card_subtitle&quot;&gt;And a subtitle&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-card_content&quot;&gt;
-      &lt;p&gt;And more content.&lt;/p&gt;
-    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_content&quot;&gt;
+    &lt;p&gt;And more content.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
@@ -693,40 +663,36 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-card&quot;&gt;
-    &lt;div class=&quot;hdd-card_header&quot;&gt;
-      &lt;div class=&quot;hdd-card_header_icon&quot;&gt;
-        &lt;i class=&quot;fal fa-info&quot;&gt;&lt;/i&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;hdd-card_header_text&quot;&gt;
-        &lt;div class=&quot;hdd-card_title&quot;&gt;Title&lt;/div&gt;
-      &lt;/div&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-card&quot;&gt;
+  &lt;div class=&quot;hdd-card_header&quot;&gt;
+    &lt;div class=&quot;hdd-card_header_icon&quot;&gt;
+      &lt;i class=&quot;fal fa-info&quot;&gt;&lt;/i&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;hdd-card_content&quot;&gt;
-      &lt;p&gt;The different pieces of a card can be combined as desired.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-card_actions&quot;&gt;
-      &lt;button class=&quot;hdd-button&quot;&gt;Full width button&lt;/button&gt;
+    &lt;div class=&quot;hdd-card_header_text&quot;&gt;
+      &lt;div class=&quot;hdd-card_title&quot;&gt;Title&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_content&quot;&gt;
+    &lt;p&gt;The different pieces of a card can be combined as desired.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_actions&quot;&gt;
+    &lt;button class=&quot;hdd-button&quot;&gt;Full width button&lt;/button&gt;
+  &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-card&quot;&gt;
-    &lt;div class=&quot;hdd-card_header&quot;&gt;
-      &lt;div class=&quot;hdd-card_header_icon&quot;&gt;
-        &lt;i class=&quot;fal fa-info&quot;&gt;&lt;/i&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;hdd-card_header_text&quot;&gt;
-        &lt;div class=&quot;hdd-card_title&quot;&gt;Title&lt;/div&gt;
-      &lt;/div&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-card&quot;&gt;
+  &lt;div class=&quot;hdd-card_header&quot;&gt;
+    &lt;div class=&quot;hdd-card_header_icon&quot;&gt;
+      &lt;i class=&quot;fal fa-info&quot;&gt;&lt;/i&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;hdd-card_content&quot;&gt;
-      &lt;p&gt;The different pieces of a card can be combined as desired.&lt;/p&gt;
+    &lt;div class=&quot;hdd-card_header_text&quot;&gt;
+      &lt;div class=&quot;hdd-card_title&quot;&gt;Title&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;hdd-card_actions&quot;&gt;
-      &lt;button class=&quot;hdd-button&quot;&gt;Full width button&lt;/button&gt;
-    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_content&quot;&gt;
+    &lt;p&gt;The different pieces of a card can be combined as desired.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_actions&quot;&gt;
+    &lt;button class=&quot;hdd-button&quot;&gt;Full width button&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
@@ -760,50 +726,46 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-card&quot;&gt;
-    &lt;div class=&quot;hdd-card_header&quot;&gt;
-      &lt;div class=&quot;hdd-card_header_icon&quot;&gt;
-        &lt;i class=&quot;fal fa-info&quot;&gt;&lt;/i&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;hdd-card_header_text&quot;&gt;
-        &lt;div class=&quot;hdd-card_title&quot;&gt;Title&lt;/div&gt;
-        &lt;div class=&quot;hdd-card_subtitle&quot;&gt;Subtitle&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;button class=&quot;hdd-card_header_action&quot;&gt;
-        &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;
-      &lt;/button&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-card&quot;&gt;
+  &lt;div class=&quot;hdd-card_header&quot;&gt;
+    &lt;div class=&quot;hdd-card_header_icon&quot;&gt;
+      &lt;i class=&quot;fal fa-info&quot;&gt;&lt;/i&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;hdd-card_content&quot;&gt;
-      &lt;p&gt;Example-content&lt;/p&gt;
+    &lt;div class=&quot;hdd-card_header_text&quot;&gt;
+      &lt;div class=&quot;hdd-card_title&quot;&gt;Title&lt;/div&gt;
+      &lt;div class=&quot;hdd-card_subtitle&quot;&gt;Subtitle&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;hdd-card_actions&quot;&gt;
-      &lt;button class=&quot;hdd-button&quot;&gt;Cancel action&lt;/button&gt;
-      &lt;button class=&quot;hdd-button&quot;&gt;Complete action&lt;/button&gt;
-    &lt;/div&gt;
+    &lt;button class=&quot;hdd-card_header_action&quot;&gt;
+      &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_content&quot;&gt;
+    &lt;p&gt;Example-content&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_actions&quot;&gt;
+    &lt;button class=&quot;hdd-button&quot;&gt;Cancel action&lt;/button&gt;
+    &lt;button class=&quot;hdd-button&quot;&gt;Complete action&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-card&quot;&gt;
-    &lt;div class=&quot;hdd-card_header&quot;&gt;
-      &lt;div class=&quot;hdd-card_header_icon&quot;&gt;
-        &lt;i class=&quot;fal fa-info&quot;&gt;&lt;/i&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;hdd-card_header_text&quot;&gt;
-        &lt;div class=&quot;hdd-card_title&quot;&gt;Title&lt;/div&gt;
-        &lt;div class=&quot;hdd-card_subtitle&quot;&gt;Subtitle&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;button class=&quot;hdd-card_header_action&quot;&gt;
-        &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;
-      &lt;/button&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-card&quot;&gt;
+  &lt;div class=&quot;hdd-card_header&quot;&gt;
+    &lt;div class=&quot;hdd-card_header_icon&quot;&gt;
+      &lt;i class=&quot;fal fa-info&quot;&gt;&lt;/i&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;hdd-card_content&quot;&gt;
-      &lt;p&gt;Example-content&lt;/p&gt;
+    &lt;div class=&quot;hdd-card_header_text&quot;&gt;
+      &lt;div class=&quot;hdd-card_title&quot;&gt;Title&lt;/div&gt;
+      &lt;div class=&quot;hdd-card_subtitle&quot;&gt;Subtitle&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;hdd-card_actions&quot;&gt;
-      &lt;button class=&quot;hdd-button&quot;&gt;Cancel action&lt;/button&gt;
-      &lt;button class=&quot;hdd-button&quot;&gt;Complete action&lt;/button&gt;
-    &lt;/div&gt;
+    &lt;button class=&quot;hdd-card_header_action&quot;&gt;
+      &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_content&quot;&gt;
+    &lt;p&gt;Example-content&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_actions&quot;&gt;
+    &lt;button class=&quot;hdd-button&quot;&gt;Cancel action&lt;/button&gt;
+    &lt;button class=&quot;hdd-button&quot;&gt;Complete action&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
@@ -837,36 +799,32 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-card&quot;&gt;
-    &lt;div class=&quot;hdd-card_header&quot;&gt;
-      &lt;div class=&quot;hdd-card_header_text&quot;&gt;
-        &lt;div class=&quot;hdd-card_title&quot;&gt;Title&lt;/div&gt;
-        &lt;div class=&quot;hdd-card_subtitle&quot;&gt;Subtitle&lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-card_content&quot;&gt;
-      &lt;p&gt;Any content can be placed within the card body.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-card_actions&quot;&gt;
-      &lt;button class=&quot;hdd-card_actions_action&quot;&gt;View more&lt;/button&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-card&quot;&gt;
+  &lt;div class=&quot;hdd-card_header&quot;&gt;
+    &lt;div class=&quot;hdd-card_header_text&quot;&gt;
+      &lt;div class=&quot;hdd-card_title&quot;&gt;Title&lt;/div&gt;
+      &lt;div class=&quot;hdd-card_subtitle&quot;&gt;Subtitle&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_content&quot;&gt;
+    &lt;p&gt;Any content can be placed within the card body.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_actions&quot;&gt;
+    &lt;button class=&quot;hdd-card_actions_action&quot;&gt;View more&lt;/button&gt;
+  &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-card&quot;&gt;
-    &lt;div class=&quot;hdd-card_header&quot;&gt;
-      &lt;div class=&quot;hdd-card_header_text&quot;&gt;
-        &lt;div class=&quot;hdd-card_title&quot;&gt;Title&lt;/div&gt;
-        &lt;div class=&quot;hdd-card_subtitle&quot;&gt;Subtitle&lt;/div&gt;
-      &lt;/div&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-card&quot;&gt;
+  &lt;div class=&quot;hdd-card_header&quot;&gt;
+    &lt;div class=&quot;hdd-card_header_text&quot;&gt;
+      &lt;div class=&quot;hdd-card_title&quot;&gt;Title&lt;/div&gt;
+      &lt;div class=&quot;hdd-card_subtitle&quot;&gt;Subtitle&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;hdd-card_content&quot;&gt;
-      &lt;p&gt;Any content can be placed within the card body.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-card_actions&quot;&gt;
-      &lt;button class=&quot;hdd-card_actions_action&quot;&gt;View more&lt;/button&gt;
-    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_content&quot;&gt;
+    &lt;p&gt;Any content can be placed within the card body.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-card_actions&quot;&gt;
+    &lt;button class=&quot;hdd-card_actions_action&quot;&gt;View more&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
@@ -949,81 +907,77 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;feedback-container&quot;&gt;
-    &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
-    &lt;p class=&quot;feedback-container_message&quot;&gt;
-      This is just for info! Usage of icons should be kept to an absolute minimum. Long messages are also supported, the text will wrap to a new line. However, long feedbacks are not recommended.
-    &lt;/p&gt;
-    &lt;button class=&quot;feedback-container_close-button&quot;&gt;
-      &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;feedback-container is-success&quot;&gt;
-    &lt;p class=&quot;feedback-container_message&quot;&gt;
-      Something was a success!
-    &lt;/p&gt;
-    &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;feedback-container&quot;&gt;
+  &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    This is just for info! Usage of icons should be kept to an absolute minimum. Long messages are also supported, the text will wrap to a new line. However, long feedbacks are not recommended.
+  &lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
     &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;feedback-container is-warn&quot;&gt;
-    &lt;p class=&quot;feedback-container_message&quot;&gt;
-      There is something you might want to check out.
-    &lt;/p&gt;
-    &lt;button class=&quot;feedback-container_close-button&quot;&gt;
-      &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;div class=&quot;feedback-container is-success&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    Something was a success!
+  &lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+  &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;feedback-container is-error&quot;&gt;
-    &lt;p class=&quot;feedback-container_message&quot;&gt;
-      There is something seriously wrong going on!
-    &lt;/p&gt;
-    &lt;button class=&quot;feedback-container_close-button&quot;&gt;
-      &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;div class=&quot;feedback-container is-warn&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    There is something you might want to check out.
+  &lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+    &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-error&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    There is something seriously wrong going on!
+  &lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+    &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;feedback-container&quot;&gt;
-    &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
-    &lt;p class=&quot;feedback-container_message&quot;&gt;
-      This is just for info! Usage of icons should be kept to an absolute minimum. Long messages are also supported, the text will wrap to a new line. However, long feedbacks are not recommended.
-    &lt;/p&gt;
-    &lt;button class=&quot;feedback-container_close-button&quot;&gt;
-      &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;feedback-container is-success&quot;&gt;
-    &lt;p class=&quot;feedback-container_message&quot;&gt;
-      Something was a success!
-    &lt;/p&gt;
-    &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;feedback-container&quot;&gt;
+  &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    This is just for info! Usage of icons should be kept to an absolute minimum. Long messages are also supported, the text will wrap to a new line. However, long feedbacks are not recommended.
+  &lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
     &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;feedback-container is-warn&quot;&gt;
-    &lt;p class=&quot;feedback-container_message&quot;&gt;
-      There is something you might want to check out.
-    &lt;/p&gt;
-    &lt;button class=&quot;feedback-container_close-button&quot;&gt;
-      &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;div class=&quot;feedback-container is-success&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    Something was a success!
+  &lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+  &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;feedback-container is-error&quot;&gt;
-    &lt;p class=&quot;feedback-container_message&quot;&gt;
-      There is something seriously wrong going on!
-    &lt;/p&gt;
-    &lt;button class=&quot;feedback-container_close-button&quot;&gt;
-      &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;div class=&quot;feedback-container is-warn&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    There is something you might want to check out.
+  &lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+    &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-error&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    There is something seriously wrong going on!
+  &lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+    &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>feedback-container</code>:</strong></p>
@@ -1088,36 +1042,32 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;header class=&quot;hdd-header&quot;&gt;
-    &lt;a class=&quot;hdd-header_logo&quot; href=&quot;#&quot;&gt;
-      &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
-    &lt;/a&gt;
-    &lt;h1 class=&quot;hdd-header_title&quot;&gt;Overview&lt;/h1&gt;
-    &lt;div class=&quot;hdd-header-user&quot;&gt;
-      &lt;img class=&quot;hdd-header-user_icon-image&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
-      &lt;div class=&quot;hdd-header-user_name&quot;&gt;
-        Kevin Martin Haugen
-      &lt;/div&gt;
-      &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;header class=&quot;hdd-header&quot;&gt;
+  &lt;a class=&quot;hdd-header_logo&quot; href=&quot;#&quot;&gt;
+    &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
+  &lt;/a&gt;
+  &lt;h1 class=&quot;hdd-header_title&quot;&gt;Overview&lt;/h1&gt;
+  &lt;div class=&quot;hdd-header-user&quot;&gt;
+    &lt;img class=&quot;hdd-header-user_icon-image&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
+    &lt;div class=&quot;hdd-header-user_name&quot;&gt;
+      Kevin Martin Haugen
     &lt;/div&gt;
-  &lt;/header&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;header class=&quot;hdd-header&quot;&gt;
-    &lt;a class=&quot;hdd-header_logo&quot; href=&quot;#&quot;&gt;
-      &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
-    &lt;/a&gt;
-    &lt;h1 class=&quot;hdd-header_title&quot;&gt;Overview&lt;/h1&gt;
-    &lt;div class=&quot;hdd-header-user&quot;&gt;
-      &lt;img class=&quot;hdd-header-user_icon-image&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
-      &lt;div class=&quot;hdd-header-user_name&quot;&gt;
-        Kevin Martin Haugen
-      &lt;/div&gt;
-      &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/header&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;header class=&quot;hdd-header&quot;&gt;
+  &lt;a class=&quot;hdd-header_logo&quot; href=&quot;#&quot;&gt;
+    &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
+  &lt;/a&gt;
+  &lt;h1 class=&quot;hdd-header_title&quot;&gt;Overview&lt;/h1&gt;
+  &lt;div class=&quot;hdd-header-user&quot;&gt;
+    &lt;img class=&quot;hdd-header-user_icon-image&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
+    &lt;div class=&quot;hdd-header-user_name&quot;&gt;
+      Kevin Martin Haugen
     &lt;/div&gt;
-  &lt;/header&gt;
-&lt;/div&gt;</code></pre>
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
 	</div>
 </div><div id="header-without-image" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#header-without-image" class="icon-link i-section__link -heading"></a>Header without image</h2></div><div class="i-example">
                     <h5 class="i-example__heading">
@@ -1148,40 +1098,36 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;header class=&quot;hdd-header&quot;&gt;
-    &lt;a class=&quot;hdd-header_logo&quot; href=&quot;#&quot;&gt;
-      &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
-    &lt;/a&gt;
-    &lt;h1 class=&quot;hdd-header_title&quot;&gt;Overview&lt;/h1&gt;
-    &lt;div class=&quot;hdd-header-user&quot;&gt;
-      &lt;div class=&quot;hdd-header-user_icon-no-image&quot;&gt;
-        TT
-      &lt;/div&gt;
-      &lt;div class=&quot;hdd-header-user_name&quot;&gt;
-        Tim Tom
-      &lt;/div&gt;
-      &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;header class=&quot;hdd-header&quot;&gt;
+  &lt;a class=&quot;hdd-header_logo&quot; href=&quot;#&quot;&gt;
+    &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
+  &lt;/a&gt;
+  &lt;h1 class=&quot;hdd-header_title&quot;&gt;Overview&lt;/h1&gt;
+  &lt;div class=&quot;hdd-header-user&quot;&gt;
+    &lt;div class=&quot;hdd-header-user_icon-no-image&quot;&gt;
+      TT
     &lt;/div&gt;
-  &lt;/header&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;header class=&quot;hdd-header&quot;&gt;
-    &lt;a class=&quot;hdd-header_logo&quot; href=&quot;#&quot;&gt;
-      &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
-    &lt;/a&gt;
-    &lt;h1 class=&quot;hdd-header_title&quot;&gt;Overview&lt;/h1&gt;
-    &lt;div class=&quot;hdd-header-user&quot;&gt;
-      &lt;div class=&quot;hdd-header-user_icon-no-image&quot;&gt;
-        TT
-      &lt;/div&gt;
-      &lt;div class=&quot;hdd-header-user_name&quot;&gt;
-        Tim Tom
-      &lt;/div&gt;
-      &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+    &lt;div class=&quot;hdd-header-user_name&quot;&gt;
+      Tim Tom
     &lt;/div&gt;
-  &lt;/header&gt;
-&lt;/div&gt;</code></pre>
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/header&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;header class=&quot;hdd-header&quot;&gt;
+  &lt;a class=&quot;hdd-header_logo&quot; href=&quot;#&quot;&gt;
+    &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
+  &lt;/a&gt;
+  &lt;h1 class=&quot;hdd-header_title&quot;&gt;Overview&lt;/h1&gt;
+  &lt;div class=&quot;hdd-header-user&quot;&gt;
+    &lt;div class=&quot;hdd-header-user_icon-no-image&quot;&gt;
+      TT
+    &lt;/div&gt;
+    &lt;div class=&quot;hdd-header-user_name&quot;&gt;
+      Tim Tom
+    &lt;/div&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -1223,18 +1169,14 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-    &lt;a href=&quot;https://google.com&quot; class=&quot;hdd-link&quot;&gt;Normal&lt;/a&gt; &lt;br&gt;
-    &lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-active&quot;&gt;Active&lt;/a&gt;&lt;br&gt;
-    &lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-hovering&quot;&gt;Hovered&lt;/a&gt;&lt;br&gt;
-    &lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link no-hover&quot;&gt;Disabled hover state&lt;/a&gt;&lt;br&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-    &lt;a href=&quot;https://google.com&quot; class=&quot;hdd-link&quot;&gt;Normal&lt;/a&gt; &lt;br&gt;
-    &lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-active&quot;&gt;Active&lt;/a&gt;&lt;br&gt;
-    &lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-hovering&quot;&gt;Hovered&lt;/a&gt;&lt;br&gt;
-    &lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link no-hover&quot;&gt;Disabled hover state&lt;/a&gt;&lt;br&gt;
-&lt;/div&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;a href=&quot;https://google.com&quot; class=&quot;hdd-link&quot;&gt;Normal&lt;/a&gt; &lt;br&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-active&quot;&gt;Active&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-hovering&quot;&gt;Hovered&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link no-hover&quot;&gt;Disabled hover state&lt;/a&gt;&lt;br&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;a href=&quot;https://google.com&quot; class=&quot;hdd-link&quot;&gt;Normal&lt;/a&gt; &lt;br&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-active&quot;&gt;Active&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link is-hovering&quot;&gt;Hovered&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://hafslundnett.no&quot; class=&quot;hdd-link no-hover&quot;&gt;Disabled hover state&lt;/a&gt;&lt;br&gt;</code></pre>
 	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-link</code>:</strong></p>
 <table class="table"><thead><tr>
@@ -1305,27 +1247,23 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;example-margin&quot;&gt;
-    &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-notification-dot&quot;&gt;&lt;/span&gt;&lt;/i&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;example-margin&quot;&gt;
-    &lt;i class=&quot;fal fa-user&quot;&gt;&lt;span class=&quot;hdd-notification-dot&quot;&gt;&lt;/span&gt;&lt;/i&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;example-margin&quot;&gt;
-    &lt;i class=&quot;fal fa-bars&quot;&gt;&lt;span class=&quot;hdd-notification-dot&quot;&gt;&lt;/span&gt;&lt;/i&gt;
-  &lt;/div&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-margin&quot;&gt;
+  &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-notification-dot&quot;&gt;&lt;/span&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;div class=&quot;example-margin&quot;&gt;
+  &lt;i class=&quot;fal fa-user&quot;&gt;&lt;span class=&quot;hdd-notification-dot&quot;&gt;&lt;/span&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;div class=&quot;example-margin&quot;&gt;
+  &lt;i class=&quot;fal fa-bars&quot;&gt;&lt;span class=&quot;hdd-notification-dot&quot;&gt;&lt;/span&gt;&lt;/i&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;example-margin&quot;&gt;
-    &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-notification-dot&quot;&gt;&lt;/span&gt;&lt;/i&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;example-margin&quot;&gt;
-    &lt;i class=&quot;fal fa-user&quot;&gt;&lt;span class=&quot;hdd-notification-dot&quot;&gt;&lt;/span&gt;&lt;/i&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;example-margin&quot;&gt;
-    &lt;i class=&quot;fal fa-bars&quot;&gt;&lt;span class=&quot;hdd-notification-dot&quot;&gt;&lt;/span&gt;&lt;/i&gt;
-  &lt;/div&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-margin&quot;&gt;
+  &lt;i class=&quot;fal fa-cog&quot;&gt;&lt;span class=&quot;hdd-notification-dot&quot;&gt;&lt;/span&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;div class=&quot;example-margin&quot;&gt;
+  &lt;i class=&quot;fal fa-user&quot;&gt;&lt;span class=&quot;hdd-notification-dot&quot;&gt;&lt;/span&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;div class=&quot;example-margin&quot;&gt;
+  &lt;i class=&quot;fal fa-bars&quot;&gt;&lt;span class=&quot;hdd-notification-dot&quot;&gt;&lt;/span&gt;&lt;/i&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div></div>
@@ -1369,8 +1307,7 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;small-menu-container&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="  &lt;div class=&quot;small-menu-container&quot;&gt;
     &lt;div class=&quot;hdd-small-menu&quot;&gt;
       &lt;span class=&quot;hdd-small-menu_title&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/span&gt;
       &lt;ul class=&quot;hdd-small-menu_list is-active&quot;&gt;
@@ -1380,10 +1317,8 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
         &lt;li class=&quot;hdd-small-menu_list_item&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Logout&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;small-menu-container&quot;&gt;
+  &lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">  &lt;div class=&quot;small-menu-container&quot;&gt;
     &lt;div class=&quot;hdd-small-menu&quot;&gt;
       &lt;span class=&quot;hdd-small-menu_title&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/span&gt;
       &lt;ul class=&quot;hdd-small-menu_list is-active&quot;&gt;
@@ -1393,8 +1328,7 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
         &lt;li class=&quot;hdd-small-menu_list_item&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Logout&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+  &lt;/div&gt;</code></pre>
 	</div>
 </div>
 <div class="i-code-block">
@@ -1464,94 +1398,90 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;table class=&quot;hdd-table is-striped has-shadow&quot;&gt;
-    &lt;tr class=&quot;hdd-table_header&quot;&gt;
-      &lt;th&gt;ID&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-      &lt;th&gt;Kundenr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-      &lt;th&gt;Personnr.&lt;/th&gt;
-      &lt;th&gt;Fakturanr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-      &lt;th&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;338472&lt;/td&gt;
-      &lt;td&gt;123419384&lt;/td&gt;
-      &lt;td&gt;14&lt;/td&gt;
-      &lt;td class=&quot;hdd-table_action&quot;&gt;
-        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-      &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;2&lt;/td&gt;
-      &lt;td&gt;338472&lt;/td&gt;
-      &lt;td&gt;123419384&lt;/td&gt;
-      &lt;td&gt;14&lt;/td&gt;
-      &lt;td class=&quot;hdd-table_action&quot;&gt;
-        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-      &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;3&lt;/td&gt;
-      &lt;td&gt;338472&lt;/td&gt;
-      &lt;td&gt;123419384&lt;/td&gt;
-      &lt;td&gt;14&lt;/td&gt;
-      &lt;td class=&quot;hdd-table_action&quot;&gt;
-        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-      &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/table&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;table class=&quot;hdd-table is-striped has-shadow&quot;&gt;
-    &lt;tr class=&quot;hdd-table_header&quot;&gt;
-      &lt;th&gt;ID&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-      &lt;th&gt;Kundenr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-      &lt;th&gt;Personnr.&lt;/th&gt;
-      &lt;th&gt;Fakturanr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-      &lt;th&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;338472&lt;/td&gt;
-      &lt;td&gt;123419384&lt;/td&gt;
-      &lt;td&gt;14&lt;/td&gt;
-      &lt;td class=&quot;hdd-table_action&quot;&gt;
-        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-      &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;2&lt;/td&gt;
-      &lt;td&gt;338472&lt;/td&gt;
-      &lt;td&gt;123419384&lt;/td&gt;
-      &lt;td&gt;14&lt;/td&gt;
-      &lt;td class=&quot;hdd-table_action&quot;&gt;
-        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-      &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;3&lt;/td&gt;
-      &lt;td&gt;338472&lt;/td&gt;
-      &lt;td&gt;123419384&lt;/td&gt;
-      &lt;td&gt;14&lt;/td&gt;
-      &lt;td class=&quot;hdd-table_action&quot;&gt;
-        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-      &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/table&gt;
-&lt;/div&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;table class=&quot;hdd-table is-striped has-shadow&quot;&gt;
+  &lt;tr class=&quot;hdd-table_header&quot;&gt;
+    &lt;th&gt;ID&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+    &lt;th&gt;Kundenr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+    &lt;th&gt;Personnr.&lt;/th&gt;
+    &lt;th&gt;Fakturanr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+    &lt;th&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;338472&lt;/td&gt;
+    &lt;td&gt;123419384&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+    &lt;td class=&quot;hdd-table_action&quot;&gt;
+      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;338472&lt;/td&gt;
+    &lt;td&gt;123419384&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+    &lt;td class=&quot;hdd-table_action&quot;&gt;
+      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;338472&lt;/td&gt;
+    &lt;td&gt;123419384&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+    &lt;td class=&quot;hdd-table_action&quot;&gt;
+      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;table class=&quot;hdd-table is-striped has-shadow&quot;&gt;
+  &lt;tr class=&quot;hdd-table_header&quot;&gt;
+    &lt;th&gt;ID&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+    &lt;th&gt;Kundenr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+    &lt;th&gt;Personnr.&lt;/th&gt;
+    &lt;th&gt;Fakturanr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+    &lt;th&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;338472&lt;/td&gt;
+    &lt;td&gt;123419384&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+    &lt;td class=&quot;hdd-table_action&quot;&gt;
+      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;338472&lt;/td&gt;
+    &lt;td&gt;123419384&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+    &lt;td class=&quot;hdd-table_action&quot;&gt;
+      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;338472&lt;/td&gt;
+    &lt;td&gt;123419384&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+    &lt;td class=&quot;hdd-table_action&quot;&gt;
+      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
 	</div>
 </div><div id="table-width-sticky-header" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#table-width-sticky-header" class="icon-link i-section__link -heading"></a>Table width sticky header</h2></div><p><code>hdd-table</code></p>
 <div class="i-example">
@@ -1583,141 +1513,137 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;example-container-to-force-scroll&quot;&gt;
-    &lt;table class=&quot;hdd-table is-striped has-shadow is-sticky-header&quot;&gt;
-      &lt;tr class=&quot;hdd-table_header&quot;&gt;
-        &lt;th&gt;ID&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-        &lt;th&gt;Kundenr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-        &lt;th&gt;Personnr.&lt;/th&gt;
-        &lt;th&gt;Fakturanr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-        &lt;th&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;1&lt;/td&gt;
-        &lt;td&gt;338472&lt;/td&gt;
-        &lt;td&gt;123419384&lt;/td&gt;
-        &lt;td&gt;14&lt;/td&gt;
-        &lt;td class=&quot;hdd-table_action&quot;&gt;
-          &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-          &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-          &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;2&lt;/td&gt;
-        &lt;td&gt;338472&lt;/td&gt;
-        &lt;td&gt;123419384&lt;/td&gt;
-        &lt;td&gt;14&lt;/td&gt;
-        &lt;td class=&quot;hdd-table_action&quot;&gt;
-          &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-          &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-          &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;338472&lt;/td&gt;
-        &lt;td&gt;123419384&lt;/td&gt;
-        &lt;td&gt;14&lt;/td&gt;
-        &lt;td class=&quot;hdd-table_action&quot;&gt;
-          &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-          &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-          &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;338472&lt;/td&gt;
-        &lt;td&gt;123419384&lt;/td&gt;
-        &lt;td&gt;14&lt;/td&gt;
-        &lt;td class=&quot;hdd-table_action&quot;&gt;
-          &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-          &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-          &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;338472&lt;/td&gt;
-        &lt;td&gt;123419384&lt;/td&gt;
-        &lt;td&gt;14&lt;/td&gt;
-        &lt;td class=&quot;hdd-table_action&quot;&gt;
-          &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-          &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-          &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/table&gt;
-  &lt;/div&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-container-to-force-scroll&quot;&gt;
+  &lt;table class=&quot;hdd-table is-striped has-shadow is-sticky-header&quot;&gt;
+    &lt;tr class=&quot;hdd-table_header&quot;&gt;
+      &lt;th&gt;ID&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+      &lt;th&gt;Kundenr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+      &lt;th&gt;Personnr.&lt;/th&gt;
+      &lt;th&gt;Fakturanr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;338472&lt;/td&gt;
+      &lt;td&gt;123419384&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td class=&quot;hdd-table_action&quot;&gt;
+        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;338472&lt;/td&gt;
+      &lt;td&gt;123419384&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td class=&quot;hdd-table_action&quot;&gt;
+        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;338472&lt;/td&gt;
+      &lt;td&gt;123419384&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td class=&quot;hdd-table_action&quot;&gt;
+        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;338472&lt;/td&gt;
+      &lt;td&gt;123419384&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td class=&quot;hdd-table_action&quot;&gt;
+        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;338472&lt;/td&gt;
+      &lt;td&gt;123419384&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td class=&quot;hdd-table_action&quot;&gt;
+        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;example-container-to-force-scroll&quot;&gt;
-    &lt;table class=&quot;hdd-table is-striped has-shadow is-sticky-header&quot;&gt;
-      &lt;tr class=&quot;hdd-table_header&quot;&gt;
-        &lt;th&gt;ID&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-        &lt;th&gt;Kundenr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-        &lt;th&gt;Personnr.&lt;/th&gt;
-        &lt;th&gt;Fakturanr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-        &lt;th&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;1&lt;/td&gt;
-        &lt;td&gt;338472&lt;/td&gt;
-        &lt;td&gt;123419384&lt;/td&gt;
-        &lt;td&gt;14&lt;/td&gt;
-        &lt;td class=&quot;hdd-table_action&quot;&gt;
-          &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-          &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-          &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;2&lt;/td&gt;
-        &lt;td&gt;338472&lt;/td&gt;
-        &lt;td&gt;123419384&lt;/td&gt;
-        &lt;td&gt;14&lt;/td&gt;
-        &lt;td class=&quot;hdd-table_action&quot;&gt;
-          &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-          &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-          &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;338472&lt;/td&gt;
-        &lt;td&gt;123419384&lt;/td&gt;
-        &lt;td&gt;14&lt;/td&gt;
-        &lt;td class=&quot;hdd-table_action&quot;&gt;
-          &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-          &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-          &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;338472&lt;/td&gt;
-        &lt;td&gt;123419384&lt;/td&gt;
-        &lt;td&gt;14&lt;/td&gt;
-        &lt;td class=&quot;hdd-table_action&quot;&gt;
-          &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-          &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-          &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;338472&lt;/td&gt;
-        &lt;td&gt;123419384&lt;/td&gt;
-        &lt;td&gt;14&lt;/td&gt;
-        &lt;td class=&quot;hdd-table_action&quot;&gt;
-          &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-          &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-          &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/table&gt;
-  &lt;/div&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-container-to-force-scroll&quot;&gt;
+  &lt;table class=&quot;hdd-table is-striped has-shadow is-sticky-header&quot;&gt;
+    &lt;tr class=&quot;hdd-table_header&quot;&gt;
+      &lt;th&gt;ID&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+      &lt;th&gt;Kundenr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+      &lt;th&gt;Personnr.&lt;/th&gt;
+      &lt;th&gt;Fakturanr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;338472&lt;/td&gt;
+      &lt;td&gt;123419384&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td class=&quot;hdd-table_action&quot;&gt;
+        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;338472&lt;/td&gt;
+      &lt;td&gt;123419384&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td class=&quot;hdd-table_action&quot;&gt;
+        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;338472&lt;/td&gt;
+      &lt;td&gt;123419384&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td class=&quot;hdd-table_action&quot;&gt;
+        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;338472&lt;/td&gt;
+      &lt;td&gt;123419384&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td class=&quot;hdd-table_action&quot;&gt;
+        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;338472&lt;/td&gt;
+      &lt;td&gt;123419384&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td class=&quot;hdd-table_action&quot;&gt;
+        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div>
@@ -1729,8 +1655,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
   overflow: auto;
   background: var(--hdd-color-dynamic-background-primary);
 }
-.example-background {
-  margin: -20px;
+body &gt; div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }">Copy</button>
@@ -1739,8 +1664,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
   overflow: auto;
   background: var(--hdd-color-dynamic-background-primary);
 }
-.example-background {
-  margin: -20px;
+body &gt; div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }</code></pre>
@@ -1833,17 +1757,13 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-tags&quot;&gt;
-    &lt;span class=&quot;hdd-tags_item&quot;&gt;707057500051628391&lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-    &lt;span class=&quot;hdd-tags_item&quot;&gt;707057500051628391&lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-  &lt;/div&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-tags&quot;&gt;
+  &lt;span class=&quot;hdd-tags_item&quot;&gt;707057500051628391&lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-tags_item&quot;&gt;707057500051628391&lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-tags&quot;&gt;
-    &lt;span class=&quot;hdd-tags_item&quot;&gt;707057500051628391&lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-    &lt;span class=&quot;hdd-tags_item&quot;&gt;707057500051628391&lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-  &lt;/div&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-tags&quot;&gt;
+  &lt;span class=&quot;hdd-tags_item&quot;&gt;707057500051628391&lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;span class=&quot;hdd-tags_item&quot;&gt;707057500051628391&lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div></div>
@@ -1889,83 +1809,79 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;example-container&quot;&gt;
-    &lt;span class=&quot;hdd-tooltip&quot;&gt;
-      Hover Right
-      &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip &lt;/span&gt;
-    &lt;/span&gt;
-    &lt;span class=&quot;hdd-tooltip&quot;&gt;
-      Hover Left
-      &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left tooltip&lt;/span&gt;
-    &lt;/span&gt;
-    &lt;span class=&quot;hdd-tooltip&quot;&gt;
-      Hover bottom
-      &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom tooltip&lt;/span&gt;
-    &lt;/span&gt;
-    &lt;span class=&quot;hdd-tooltip&quot;&gt;
-      Hover on top
-      &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Top tooltip&lt;/span&gt;
-    &lt;/span&gt;
-  &lt;/div&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-container&quot;&gt;
+  &lt;span class=&quot;hdd-tooltip&quot;&gt;
+    Hover Right
+    &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip &lt;/span&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;hdd-tooltip&quot;&gt;
+    Hover Left
+    &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left tooltip&lt;/span&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;hdd-tooltip&quot;&gt;
+    Hover bottom
+    &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom tooltip&lt;/span&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;hdd-tooltip&quot;&gt;
+    Hover on top
+    &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Top tooltip&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;example-container&quot;&gt;
-    &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
-      Hover Right
-      &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip&lt;/span&gt;
-    &lt;/span&gt;
-    &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
-      Hover Left
-      &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left tooltip&lt;/span&gt;
-    &lt;/span&gt;
-    &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
-      Hover bottom
-      &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom tooltip&lt;/span&gt;
-    &lt;/span&gt;
-    &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
-      Hover on top
-      &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Top tooltip&lt;/span&gt;
-    &lt;/span&gt;
-  &lt;/div&gt;
+&lt;div class=&quot;example-container&quot;&gt;
+  &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
+    Hover Right
+    &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip&lt;/span&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
+    Hover Left
+    &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left tooltip&lt;/span&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
+    Hover bottom
+    &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom tooltip&lt;/span&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
+    Hover on top
+    &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Top tooltip&lt;/span&gt;
+  &lt;/span&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;example-container&quot;&gt;
-    &lt;span class=&quot;hdd-tooltip&quot;&gt;
-      Hover Right
-      &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip &lt;/span&gt;
-    &lt;/span&gt;
-    &lt;span class=&quot;hdd-tooltip&quot;&gt;
-      Hover Left
-      &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left tooltip&lt;/span&gt;
-    &lt;/span&gt;
-    &lt;span class=&quot;hdd-tooltip&quot;&gt;
-      Hover bottom
-      &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom tooltip&lt;/span&gt;
-    &lt;/span&gt;
-    &lt;span class=&quot;hdd-tooltip&quot;&gt;
-      Hover on top
-      &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Top tooltip&lt;/span&gt;
-    &lt;/span&gt;
-  &lt;/div&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-container&quot;&gt;
+  &lt;span class=&quot;hdd-tooltip&quot;&gt;
+    Hover Right
+    &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip &lt;/span&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;hdd-tooltip&quot;&gt;
+    Hover Left
+    &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left tooltip&lt;/span&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;hdd-tooltip&quot;&gt;
+    Hover bottom
+    &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom tooltip&lt;/span&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;hdd-tooltip&quot;&gt;
+    Hover on top
+    &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Top tooltip&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;example-container&quot;&gt;
-    &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
-      Hover Right
-      &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip&lt;/span&gt;
-    &lt;/span&gt;
-    &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
-      Hover Left
-      &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left tooltip&lt;/span&gt;
-    &lt;/span&gt;
-    &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
-      Hover bottom
-      &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom tooltip&lt;/span&gt;
-    &lt;/span&gt;
-    &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
-      Hover on top
-      &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Top tooltip&lt;/span&gt;
-    &lt;/span&gt;
-  &lt;/div&gt;
+&lt;div class=&quot;example-container&quot;&gt;
+  &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
+    Hover Right
+    &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip&lt;/span&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
+    Hover Left
+    &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left tooltip&lt;/span&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
+    Hover bottom
+    &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom tooltip&lt;/span&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
+    Hover on top
+    &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Top tooltip&lt;/span&gt;
+  &lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-tooltip</code>:</strong></p>
@@ -2038,38 +1954,34 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-user-menu&quot;&gt;
-    &lt;img class=&quot;hdd-user-menu_image&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
-    &lt;div class=&quot;hdd-user-menu_name&quot;&gt;
-      Kevin Martin Haugen
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-user-menu_email&quot;&gt;
-      kevin.martin@elvia.no
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
-      &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Settings&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
-      &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
-    &lt;/div&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-user-menu&quot;&gt;
+  &lt;img class=&quot;hdd-user-menu_image&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
+  &lt;div class=&quot;hdd-user-menu_name&quot;&gt;
+    Kevin Martin Haugen
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_email&quot;&gt;
+    kevin.martin@elvia.no
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Settings&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-user-menu&quot;&gt;
-    &lt;img class=&quot;hdd-user-menu_image&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
-    &lt;div class=&quot;hdd-user-menu_name&quot;&gt;
-      Kevin Martin Haugen
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-user-menu_email&quot;&gt;
-      kevin.martin@elvia.no
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
-      &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Settings&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
-      &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
-    &lt;/div&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-user-menu&quot;&gt;
+  &lt;img class=&quot;hdd-user-menu_image&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
+  &lt;div class=&quot;hdd-user-menu_name&quot;&gt;
+    Kevin Martin Haugen
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_email&quot;&gt;
+    kevin.martin@elvia.no
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Settings&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
@@ -2102,42 +2014,38 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-user-menu&quot;&gt;
-    &lt;div class=&quot;hdd-user-menu_initials&quot;&gt;
-      TT
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-user-menu_name&quot;&gt;
-      Tim Tom
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-user-menu_email&quot;&gt;
-      tt@elvia.no
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
-      &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Settings&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
-      &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
-    &lt;/div&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-user-menu&quot;&gt;
+  &lt;div class=&quot;hdd-user-menu_initials&quot;&gt;
+    TT
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_name&quot;&gt;
+    Tim Tom
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_email&quot;&gt;
+    tt@elvia.no
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Settings&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-user-menu&quot;&gt;
-    &lt;div class=&quot;hdd-user-menu_initials&quot;&gt;
-      TT
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-user-menu_name&quot;&gt;
-      Tim Tom
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-user-menu_email&quot;&gt;
-      tt@elvia.no
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
-      &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Settings&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
-      &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
-    &lt;/div&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-user-menu&quot;&gt;
+  &lt;div class=&quot;hdd-user-menu_initials&quot;&gt;
+    TT
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_name&quot;&gt;
+    Tim Tom
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_email&quot;&gt;
+    tt@elvia.no
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Settings&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
@@ -2184,45 +2092,41 @@ Checkbox classes are assigned to the corresponding checkbox label.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;span class=&quot;hdd-form_field_title&quot;&gt;Checkboxes&lt;/span&gt;
-    &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
-      &lt;input type=&quot;checkbox&quot; checked=&quot;&quot;&gt;
-      &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
-      &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Picked checkbox&lt;/span&gt;
-    &lt;/label&gt;
-    &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
-      &lt;input type=&quot;checkbox&quot;&gt;
-      &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
-      &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Unpicked checkbox&lt;/span&gt;
-    &lt;/label&gt;
-    &lt;label class=&quot;hdd-form_checkbox is-invalid&quot;&gt;
-      &lt;input type=&quot;checkbox&quot;&gt;
-      &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
-      &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Invalid checkbox&lt;/span&gt;
-    &lt;/label&gt;
-  &lt;/div&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;span class=&quot;hdd-form_field_title&quot;&gt;Checkboxes&lt;/span&gt;
+  &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot;&gt;
+    &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Picked checkbox&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot;&gt;
+    &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Unpicked checkbox&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;hdd-form_checkbox is-invalid&quot;&gt;
+    &lt;input type=&quot;checkbox&quot;&gt;
+    &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Invalid checkbox&lt;/span&gt;
+  &lt;/label&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;span class=&quot;hdd-form_field_title&quot;&gt;Checkboxes&lt;/span&gt;
-    &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
-      &lt;input type=&quot;checkbox&quot; checked=&quot;&quot;&gt;
-      &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
-      &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Picked checkbox&lt;/span&gt;
-    &lt;/label&gt;
-    &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
-      &lt;input type=&quot;checkbox&quot;&gt;
-      &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
-      &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Unpicked checkbox&lt;/span&gt;
-    &lt;/label&gt;
-    &lt;label class=&quot;hdd-form_checkbox is-invalid&quot;&gt;
-      &lt;input type=&quot;checkbox&quot;&gt;
-      &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
-      &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Invalid checkbox&lt;/span&gt;
-    &lt;/label&gt;
-  &lt;/div&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;span class=&quot;hdd-form_field_title&quot;&gt;Checkboxes&lt;/span&gt;
+  &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot;&gt;
+    &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Picked checkbox&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot;&gt;
+    &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Unpicked checkbox&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;hdd-form_checkbox is-invalid&quot;&gt;
+    &lt;input type=&quot;checkbox&quot;&gt;
+    &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Invalid checkbox&lt;/span&gt;
+  &lt;/label&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><div id="toggle-checkbox" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#toggle-checkbox" class="icon-link i-section__link -heading"></a>Toggle Checkbox</h2></div><p>A toggle checkbox component lets a user toggle between true or false state.
@@ -2258,31 +2162,27 @@ The toggle checkbox slider class are assigned to the corresponding span beneath 
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;span class=&quot;hdd-form_field_title&quot;&gt;Toggle Checkbox&lt;/span&gt;
-    &lt;label class=&quot;hdd-form_toggle&quot;&gt;
-      &lt;input type=&quot;checkbox&quot;&gt;
-      &lt;span class=&quot;hdd-form_toggle slider&quot;&gt;&lt;/span&gt;
-    &lt;/label&gt;
-    &lt;label class=&quot;hdd-form_toggle&quot;&gt;
-      &lt;input type=&quot;checkbox&quot; checked&gt;
-      &lt;span class=&quot;hdd-form_toggle slider&quot;&gt;&lt;/span&gt;
-    &lt;/label&gt;
-  &lt;/div&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;span class=&quot;hdd-form_field_title&quot;&gt;Toggle Checkbox&lt;/span&gt;
+  &lt;label class=&quot;hdd-form_toggle&quot;&gt;
+    &lt;input type=&quot;checkbox&quot;&gt;
+    &lt;span class=&quot;hdd-form_toggle slider&quot;&gt;&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;hdd-form_toggle&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; checked&gt;
+    &lt;span class=&quot;hdd-form_toggle slider&quot;&gt;&lt;/span&gt;
+  &lt;/label&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;span class=&quot;hdd-form_field_title&quot;&gt;Toggle Checkbox&lt;/span&gt;
-    &lt;label class=&quot;hdd-form_toggle&quot;&gt;
-      &lt;input type=&quot;checkbox&quot;&gt;
-      &lt;span class=&quot;hdd-form_toggle slider&quot;&gt;&lt;/span&gt;
-    &lt;/label&gt;
-    &lt;label class=&quot;hdd-form_toggle&quot;&gt;
-      &lt;input type=&quot;checkbox&quot; checked&gt;
-      &lt;span class=&quot;hdd-form_toggle slider&quot;&gt;&lt;/span&gt;
-    &lt;/label&gt;
-  &lt;/div&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;span class=&quot;hdd-form_field_title&quot;&gt;Toggle Checkbox&lt;/span&gt;
+  &lt;label class=&quot;hdd-form_toggle&quot;&gt;
+    &lt;input type=&quot;checkbox&quot;&gt;
+    &lt;span class=&quot;hdd-form_toggle slider&quot;&gt;&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;hdd-form_toggle&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; checked&gt;
+    &lt;span class=&quot;hdd-form_toggle slider&quot;&gt;&lt;/span&gt;
+  &lt;/label&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-form_checkbox</code>:</strong></p>
@@ -2340,43 +2240,39 @@ Dropdown should be used if the user wants a recommended selection out of all the
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-form_input hdd-dropdown&quot;&gt;
-    &lt;input value=&quot;Jer&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_input hdd-dropdown&quot;&gt;
+  &lt;input value=&quot;Jer&quot;&gt;
 
-    &lt;div class=&quot;hdd-dropdown_content is-active&quot;&gt;
-      &lt;div class=&quot;hdd-dropdown_content_item is-active&quot;&gt;&lt;b&gt;Jer&lt;/b&gt;oen&lt;/div&gt;
-      &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Stian&lt;/div&gt;
-      &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Erik&lt;/div&gt;
-    &lt;/div&gt;
+  &lt;div class=&quot;hdd-dropdown_content is-active&quot;&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item is-active&quot;&gt;&lt;b&gt;Jer&lt;/b&gt;oen&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Stian&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Erik&lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;example-fill&quot;&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;example-fill&quot;&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-form_input hdd-dropdown&quot;&gt;
-    &lt;input value=&quot;Jer&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_input hdd-dropdown&quot;&gt;
+  &lt;input value=&quot;Jer&quot;&gt;
 
-    &lt;div class=&quot;hdd-dropdown_content is-active&quot;&gt;
-      &lt;div class=&quot;hdd-dropdown_content_item is-active&quot;&gt;&lt;b&gt;Jer&lt;/b&gt;oen&lt;/div&gt;
-      &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Stian&lt;/div&gt;
-      &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Erik&lt;/div&gt;
-    &lt;/div&gt;
+  &lt;div class=&quot;hdd-dropdown_content is-active&quot;&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item is-active&quot;&gt;&lt;b&gt;Jer&lt;/b&gt;oen&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Stian&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Erik&lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;example-fill&quot;&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;example-fill&quot;&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div><div id="dropdown-aligned-top" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#dropdown-aligned-top" class="icon-link i-section__link -heading"></a>Dropdown aligned top</h2></div><p><code>hdd-form_input</code>.<code>hdd-dropdown</code></p>
@@ -2410,48 +2306,44 @@ Dropdown should be used if the user wants a recommended selection out of all the
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;example-fill&quot;&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;hdd-form_input hdd-dropdown&quot;&gt;
-    &lt;input value=&quot;Jer&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-fill&quot;&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;hdd-form_input hdd-dropdown&quot;&gt;
+  &lt;input value=&quot;Jer&quot;&gt;
 
-    &lt;div class=&quot;hdd-dropdown_content is-active is-aligned-top&quot;&gt;
-      &lt;div class=&quot;hdd-dropdown_content_item is-active&quot;&gt;&lt;b&gt;Jer&lt;/b&gt;oen&lt;/div&gt;
-      &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Stian&lt;/div&gt;
-      &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Rune&lt;/div&gt;
-      &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Erik&lt;/div&gt;
-    &lt;/div&gt;
+  &lt;div class=&quot;hdd-dropdown_content is-active is-aligned-top&quot;&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item is-active&quot;&gt;&lt;b&gt;Jer&lt;/b&gt;oen&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Stian&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Rune&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Erik&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;example-fill&quot;&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-    &lt;p&gt;Some content behind&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;hdd-form_input hdd-dropdown&quot;&gt;
-    &lt;input value=&quot;Jer&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-fill&quot;&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;hdd-form_input hdd-dropdown&quot;&gt;
+  &lt;input value=&quot;Jer&quot;&gt;
 
-    &lt;div class=&quot;hdd-dropdown_content is-active is-aligned-top&quot;&gt;
-      &lt;div class=&quot;hdd-dropdown_content_item is-active&quot;&gt;&lt;b&gt;Jer&lt;/b&gt;oen&lt;/div&gt;
-      &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Stian&lt;/div&gt;
-      &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Rune&lt;/div&gt;
-      &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Erik&lt;/div&gt;
-    &lt;/div&gt;
+  &lt;div class=&quot;hdd-dropdown_content is-active is-aligned-top&quot;&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item is-active&quot;&gt;&lt;b&gt;Jer&lt;/b&gt;oen&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Stian&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Rune&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Erik&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
@@ -2527,80 +2419,76 @@ Dropdown should be used if the user wants a recommended selection out of all the
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal input field &lt;/label&gt;
-    &lt;div class=&quot;hdd-form_input&quot;&gt;
-      &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
-    &lt;/div&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal input field &lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
   &lt;/div&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal input field with icon&lt;/label&gt;
-    &lt;div class=&quot;hdd-form_input&quot;&gt;
-      &lt;i class=&quot;fal fa-info-circle hdd-form_input_icon&quot;&gt;&lt;/i&gt;
-      &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal input field with icon&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;i class=&quot;fal fa-info-circle hdd-form_input_icon&quot;&gt;&lt;/i&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
   &lt;/div&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Disabled input field&lt;/label&gt;
-    &lt;div class=&quot;hdd-form_input is-disabled&quot;&gt;
-      &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Disabled input field&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input is-disabled&quot;&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
   &lt;/div&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Invalid input field with field errormessage&lt;/label&gt;
-    &lt;div class=&quot;hdd-form_input is-invalid&quot;&gt;
-      &lt;input id=&quot;title&quot; value=&quot;ola.hafslund.no&quot;&gt;
-    &lt;/div&gt;
-    &lt;span class=&quot;hdd-form_field_error is-active&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt;The email must contain @&lt;/span&gt;
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Invalid input field with field errormessage&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input is-invalid&quot;&gt;
+    &lt;input id=&quot;title&quot; value=&quot;ola.hafslund.no&quot;&gt;
   &lt;/div&gt;
+  &lt;span class=&quot;hdd-form_field_error is-active&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt;The email must contain @&lt;/span&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Textarea&lt;/label&gt;
-    &lt;div class=&quot;hdd-form_input&quot;&gt;
-      &lt;textarea placeholder=&quot;Placeholdertext&quot;&gt;&lt;/textarea&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Textarea&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;textarea placeholder=&quot;Placeholdertext&quot;&gt;&lt;/textarea&gt;
   &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal input field &lt;/label&gt;
-    &lt;div class=&quot;hdd-form_input&quot;&gt;
-      &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
-    &lt;/div&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal input field &lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
   &lt;/div&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal input field with icon&lt;/label&gt;
-    &lt;div class=&quot;hdd-form_input&quot;&gt;
-      &lt;i class=&quot;fal fa-info-circle hdd-form_input_icon&quot;&gt;&lt;/i&gt;
-      &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal input field with icon&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;i class=&quot;fal fa-info-circle hdd-form_input_icon&quot;&gt;&lt;/i&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
   &lt;/div&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Disabled input field&lt;/label&gt;
-    &lt;div class=&quot;hdd-form_input is-disabled&quot;&gt;
-      &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Disabled input field&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input is-disabled&quot;&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
   &lt;/div&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Invalid input field with field errormessage&lt;/label&gt;
-    &lt;div class=&quot;hdd-form_input is-invalid&quot;&gt;
-      &lt;input id=&quot;title&quot; value=&quot;ola.hafslund.no&quot;&gt;
-    &lt;/div&gt;
-    &lt;span class=&quot;hdd-form_field_error is-active&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt;The email must contain @&lt;/span&gt;
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Invalid input field with field errormessage&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input is-invalid&quot;&gt;
+    &lt;input id=&quot;title&quot; value=&quot;ola.hafslund.no&quot;&gt;
   &lt;/div&gt;
+  &lt;span class=&quot;hdd-form_field_error is-active&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt;The email must contain @&lt;/span&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Textarea&lt;/label&gt;
-    &lt;div class=&quot;hdd-form_input&quot;&gt;
-      &lt;textarea placeholder=&quot;Placeholdertext&quot;&gt;&lt;/textarea&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Textarea&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;textarea placeholder=&quot;Placeholdertext&quot;&gt;&lt;/textarea&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
@@ -2657,36 +2545,32 @@ Dropdown should be used if the user wants a recommended selection out of all the
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-    &lt;form class=&quot;hdd-form_field&quot;&gt;
-        &lt;span class=&quot;hdd-form_field_title&quot;&gt;Radio buttons&lt;/span&gt;
-        &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
-            &lt;input type=&quot;radio&quot; name=&quot;formname&quot; checked /&gt;
-            &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
-            &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Picked&lt;/span&gt;
-        &lt;/label&gt;
-        &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
-            &lt;input type=&quot;radio&quot; name=&quot;formname&quot; /&gt;
-            &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
-            &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Unpicked&lt;/span&gt;
-        &lt;/label&gt;
-    &lt;/form&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-    &lt;form class=&quot;hdd-form_field&quot;&gt;
-        &lt;span class=&quot;hdd-form_field_title&quot;&gt;Radio buttons&lt;/span&gt;
-        &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
-            &lt;input type=&quot;radio&quot; name=&quot;formname&quot; checked /&gt;
-            &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
-            &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Picked&lt;/span&gt;
-        &lt;/label&gt;
-        &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
-            &lt;input type=&quot;radio&quot; name=&quot;formname&quot; /&gt;
-            &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
-            &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Unpicked&lt;/span&gt;
-        &lt;/label&gt;
-    &lt;/form&gt;
-&lt;/div&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;form class=&quot;hdd-form_field&quot;&gt;
+    &lt;span class=&quot;hdd-form_field_title&quot;&gt;Radio buttons&lt;/span&gt;
+    &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;formname&quot; checked /&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Picked&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;formname&quot; /&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Unpicked&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;form class=&quot;hdd-form_field&quot;&gt;
+    &lt;span class=&quot;hdd-form_field_title&quot;&gt;Radio buttons&lt;/span&gt;
+    &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;formname&quot; checked /&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Picked&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;formname&quot; /&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Unpicked&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/form&gt;</code></pre>
 	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-form_radiobutton</code>:</strong></p>
 <table class="table"><thead><tr>
@@ -2738,19 +2622,15 @@ Dropdown should be used if the user wants a recommended selection out of all the
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-form_input&quot;&gt;
-    &lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt;
-    &lt;input placeholder=&quot;Placeholder text&quot; /&gt;
-    &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
-  &lt;/div&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_input&quot;&gt;
+  &lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt;
+  &lt;input placeholder=&quot;Placeholder text&quot; /&gt;
+  &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-form_input&quot;&gt;
-    &lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt;
-    &lt;input placeholder=&quot;Placeholder text&quot; /&gt;
-    &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
-  &lt;/div&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_input&quot;&gt;
+  &lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt;
+  &lt;input placeholder=&quot;Placeholder text&quot; /&gt;
+  &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div></div>
@@ -2793,96 +2673,92 @@ Dropdown should be used if the user wants a recommended selection out of all the
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Select Option&lt;/label&gt;
-    &lt;div class=&quot;hdd-form_select&quot;&gt;
-      &lt;select id=&quot;select-alt1&quot; placeholder=&quot;Placeholder text&quot;&gt;
-        &lt;option&gt;Alternative 1&lt;/option&gt;
-        &lt;option&gt;Alternative 2&lt;/option&gt;
-      &lt;/select&gt;
-      &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
-    &lt;/div&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Select Option&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_select&quot;&gt;
+    &lt;select id=&quot;select-alt1&quot; placeholder=&quot;Placeholder text&quot;&gt;
+      &lt;option&gt;Alternative 1&lt;/option&gt;
+      &lt;option&gt;Alternative 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Select Option with icon&lt;/label&gt;
-    &lt;div class=&quot;hdd-form_select has-icon&quot;&gt;
-      &lt;i class=&quot;fal fa-info-circle hdd-form_select_icon&quot;&gt;&lt;/i&gt;
-      &lt;select id=&quot;select-alt1&quot; placeholder=&quot;Placeholder text&quot;&gt;
-        &lt;option&gt;Alternative 1&lt;/option&gt;
-        &lt;option&gt;Alternative 2&lt;/option&gt;
-      &lt;/select&gt;
-      &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Select Option with icon&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_select has-icon&quot;&gt;
+    &lt;i class=&quot;fal fa-info-circle hdd-form_select_icon&quot;&gt;&lt;/i&gt;
+    &lt;select id=&quot;select-alt1&quot; placeholder=&quot;Placeholder text&quot;&gt;
+      &lt;option&gt;Alternative 1&lt;/option&gt;
+      &lt;option&gt;Alternative 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Select Option (Disabled)&lt;/label&gt;
-    &lt;div class=&quot;hdd-form_select is-disabled&quot;&gt;
-      &lt;select id=&quot;select-alt2&quot; placeholder=&quot;Placeholder text&quot; disabled&gt;
-        &lt;option&gt;Alternative 1&lt;/option&gt;
-        &lt;option&gt;Alternative 2&lt;/option&gt;
-      &lt;/select&gt;
-      &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Select Option (Disabled)&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_select is-disabled&quot;&gt;
+    &lt;select id=&quot;select-alt2&quot; placeholder=&quot;Placeholder text&quot; disabled&gt;
+      &lt;option&gt;Alternative 1&lt;/option&gt;
+      &lt;option&gt;Alternative 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Select Option (Invalid)&lt;/label&gt;
-    &lt;div class=&quot;hdd-form_select is-invalid&quot;&gt;
-      &lt;select id=&quot;select-alt2&quot; placeholder=&quot;Placeholder text&quot;&gt;
-        &lt;option&gt;Alternative 1&lt;/option&gt;
-        &lt;option&gt;Alternative 2&lt;/option&gt;
-      &lt;/select&gt;
-      &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Select Option (Invalid)&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_select is-invalid&quot;&gt;
+    &lt;select id=&quot;select-alt2&quot; placeholder=&quot;Placeholder text&quot;&gt;
+      &lt;option&gt;Alternative 1&lt;/option&gt;
+      &lt;option&gt;Alternative 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Select Option&lt;/label&gt;
-    &lt;div class=&quot;hdd-form_select&quot;&gt;
-      &lt;select id=&quot;select-alt1&quot; placeholder=&quot;Placeholder text&quot;&gt;
-        &lt;option&gt;Alternative 1&lt;/option&gt;
-        &lt;option&gt;Alternative 2&lt;/option&gt;
-      &lt;/select&gt;
-      &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
-    &lt;/div&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Select Option&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_select&quot;&gt;
+    &lt;select id=&quot;select-alt1&quot; placeholder=&quot;Placeholder text&quot;&gt;
+      &lt;option&gt;Alternative 1&lt;/option&gt;
+      &lt;option&gt;Alternative 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Select Option with icon&lt;/label&gt;
-    &lt;div class=&quot;hdd-form_select has-icon&quot;&gt;
-      &lt;i class=&quot;fal fa-info-circle hdd-form_select_icon&quot;&gt;&lt;/i&gt;
-      &lt;select id=&quot;select-alt1&quot; placeholder=&quot;Placeholder text&quot;&gt;
-        &lt;option&gt;Alternative 1&lt;/option&gt;
-        &lt;option&gt;Alternative 2&lt;/option&gt;
-      &lt;/select&gt;
-      &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Select Option with icon&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_select has-icon&quot;&gt;
+    &lt;i class=&quot;fal fa-info-circle hdd-form_select_icon&quot;&gt;&lt;/i&gt;
+    &lt;select id=&quot;select-alt1&quot; placeholder=&quot;Placeholder text&quot;&gt;
+      &lt;option&gt;Alternative 1&lt;/option&gt;
+      &lt;option&gt;Alternative 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Select Option (Disabled)&lt;/label&gt;
-    &lt;div class=&quot;hdd-form_select is-disabled&quot;&gt;
-      &lt;select id=&quot;select-alt2&quot; placeholder=&quot;Placeholder text&quot; disabled&gt;
-        &lt;option&gt;Alternative 1&lt;/option&gt;
-        &lt;option&gt;Alternative 2&lt;/option&gt;
-      &lt;/select&gt;
-      &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Select Option (Disabled)&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_select is-disabled&quot;&gt;
+    &lt;select id=&quot;select-alt2&quot; placeholder=&quot;Placeholder text&quot; disabled&gt;
+      &lt;option&gt;Alternative 1&lt;/option&gt;
+      &lt;option&gt;Alternative 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;hdd-form_field&quot;&gt;
-    &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Select Option (Invalid)&lt;/label&gt;
-    &lt;div class=&quot;hdd-form_select is-invalid&quot;&gt;
-      &lt;select id=&quot;select-alt2&quot; placeholder=&quot;Placeholder text&quot;&gt;
-        &lt;option&gt;Alternative 1&lt;/option&gt;
-        &lt;option&gt;Alternative 2&lt;/option&gt;
-      &lt;/select&gt;
-      &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
-    &lt;/div&gt;
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt2&quot;&gt;Select Option (Invalid)&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_select is-invalid&quot;&gt;
+    &lt;select id=&quot;select-alt2&quot; placeholder=&quot;Placeholder text&quot;&gt;
+      &lt;option&gt;Alternative 1&lt;/option&gt;
+      &lt;option&gt;Alternative 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
@@ -3436,16 +3312,12 @@ Dropdown should be used if the user wants a recommended selection out of all the
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-container dark-mode&quot;&gt;
-  &lt;span class=&quot;hdd-shadow-light color-example&quot;&gt;&lt;/span&gt;
-  &lt;span class=&quot;hdd-shadow-medium color-example&quot;&gt;&lt;/span&gt;
-  &lt;span class=&quot;hdd-shadow-strong color-example&quot;&gt;&lt;/span&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-container dark-mode&quot;&gt;
-  &lt;span class=&quot;hdd-shadow-light color-example&quot;&gt;&lt;/span&gt;
-  &lt;span class=&quot;hdd-shadow-medium color-example&quot;&gt;&lt;/span&gt;
-  &lt;span class=&quot;hdd-shadow-strong color-example&quot;&gt;&lt;/span&gt;
-&lt;/div&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;hdd-shadow-light color-example&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;hdd-shadow-medium color-example&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;hdd-shadow-strong color-example&quot;&gt;&lt;/span&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;hdd-shadow-light color-example&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;hdd-shadow-medium color-example&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;hdd-shadow-strong color-example&quot;&gt;&lt;/span&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -3564,20 +3436,16 @@ In the internal design system SVG files from Streamline light must be used.
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-    &lt;!--Here some icons are illustrated with the &quot;Action button&quot;, if there is no need for text, use the &quot;Icon button&quot;.--&gt;
-    &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt; Info Icon&lt;/button&gt;
-    &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-user&quot;&gt;&lt;/i&gt; User Icon&lt;/button&gt;
-    &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-bars&quot;&gt;&lt;/i&gt; Menubar Icon&lt;/button&gt;
-    &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt; Search Icon&lt;/button&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-    &lt;!--Here some icons are illustrated with the &quot;Action button&quot;, if there is no need for text, use the &quot;Icon button&quot;.--&gt;
-    &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt; Info Icon&lt;/button&gt;
-    &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-user&quot;&gt;&lt;/i&gt; User Icon&lt;/button&gt;
-    &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-bars&quot;&gt;&lt;/i&gt; Menubar Icon&lt;/button&gt;
-    &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt; Search Icon&lt;/button&gt;
-&lt;/div&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;!--Here some icons are illustrated with the &quot;Action button&quot;, if there is no need for text, use the &quot;Icon button&quot;.--&gt;
+&lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt; Info Icon&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-user&quot;&gt;&lt;/i&gt; User Icon&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-bars&quot;&gt;&lt;/i&gt; Menubar Icon&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt; Search Icon&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;!--Here some icons are illustrated with the &quot;Action button&quot;, if there is no need for text, use the &quot;Icon button&quot;.--&gt;
+&lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt; Info Icon&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-user&quot;&gt;&lt;/i&gt; User Icon&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-bars&quot;&gt;&lt;/i&gt; Menubar Icon&lt;/button&gt;
+&lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt; Search Icon&lt;/button&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -3628,72 +3496,68 @@ In the internal design system SVG files from Streamline light must be used.
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-    &lt;div&gt;
-        &lt;div style=&quot;padding: var(--hdd-spacing-1)&quot; class=&quot;spacing-circle&quot;&gt;
-            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div style=&quot;padding: var(--hdd-spacing-2)&quot; class=&quot;spacing-circle&quot;&gt;
-            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-        &lt;/div&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
+    &lt;div style=&quot;padding: var(--hdd-spacing-1)&quot; class=&quot;spacing-circle&quot;&gt;
+        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
     &lt;/div&gt;
-    &lt;div&gt;
-        &lt;div style=&quot;padding: var(--hdd-spacing-3)&quot; class=&quot;spacing-circle&quot;&gt;
-            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div style=&quot;padding: var(--hdd-spacing-4)&quot; class=&quot;spacing-circle&quot;&gt;
-            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-        &lt;/div&gt;
+    &lt;div style=&quot;padding: var(--hdd-spacing-2)&quot; class=&quot;spacing-circle&quot;&gt;
+        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
     &lt;/div&gt;
-    &lt;div&gt;
-        &lt;div style=&quot;padding: var(--hdd-spacing-5)&quot; class=&quot;spacing-circle&quot;&gt;
-            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div style=&quot;padding: var(--hdd-spacing-6)&quot; class=&quot;spacing-circle&quot;&gt;
-            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;div style=&quot;padding: var(--hdd-spacing-3)&quot; class=&quot;spacing-circle&quot;&gt;
+        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
     &lt;/div&gt;
-    &lt;div&gt;
-        &lt;div style=&quot;padding: var(--hdd-spacing-7)&quot; class=&quot;spacing-circle&quot;&gt;
-            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div style=&quot;padding: var(--hdd-spacing-8)&quot; class=&quot;spacing-circle&quot;&gt;
-            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-        &lt;/div&gt;
+    &lt;div style=&quot;padding: var(--hdd-spacing-4)&quot; class=&quot;spacing-circle&quot;&gt;
+        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;div style=&quot;padding: var(--hdd-spacing-5)&quot; class=&quot;spacing-circle&quot;&gt;
+        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;padding: var(--hdd-spacing-6)&quot; class=&quot;spacing-circle&quot;&gt;
+        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;div style=&quot;padding: var(--hdd-spacing-7)&quot; class=&quot;spacing-circle&quot;&gt;
+        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;padding: var(--hdd-spacing-8)&quot; class=&quot;spacing-circle&quot;&gt;
+        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
     &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-    &lt;div&gt;
-        &lt;div style=&quot;padding: var(--hdd-spacing-1)&quot; class=&quot;spacing-circle&quot;&gt;
-            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div style=&quot;padding: var(--hdd-spacing-2)&quot; class=&quot;spacing-circle&quot;&gt;
-            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-        &lt;/div&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div&gt;
+    &lt;div style=&quot;padding: var(--hdd-spacing-1)&quot; class=&quot;spacing-circle&quot;&gt;
+        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
     &lt;/div&gt;
-    &lt;div&gt;
-        &lt;div style=&quot;padding: var(--hdd-spacing-3)&quot; class=&quot;spacing-circle&quot;&gt;
-            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div style=&quot;padding: var(--hdd-spacing-4)&quot; class=&quot;spacing-circle&quot;&gt;
-            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-        &lt;/div&gt;
+    &lt;div style=&quot;padding: var(--hdd-spacing-2)&quot; class=&quot;spacing-circle&quot;&gt;
+        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
     &lt;/div&gt;
-    &lt;div&gt;
-        &lt;div style=&quot;padding: var(--hdd-spacing-5)&quot; class=&quot;spacing-circle&quot;&gt;
-            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div style=&quot;padding: var(--hdd-spacing-6)&quot; class=&quot;spacing-circle&quot;&gt;
-            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-        &lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;div style=&quot;padding: var(--hdd-spacing-3)&quot; class=&quot;spacing-circle&quot;&gt;
+        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
     &lt;/div&gt;
-    &lt;div&gt;
-        &lt;div style=&quot;padding: var(--hdd-spacing-7)&quot; class=&quot;spacing-circle&quot;&gt;
-            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-        &lt;/div&gt;
-        &lt;div style=&quot;padding: var(--hdd-spacing-8)&quot; class=&quot;spacing-circle&quot;&gt;
-            &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
-        &lt;/div&gt;
+    &lt;div style=&quot;padding: var(--hdd-spacing-4)&quot; class=&quot;spacing-circle&quot;&gt;
+        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;div style=&quot;padding: var(--hdd-spacing-5)&quot; class=&quot;spacing-circle&quot;&gt;
+        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;padding: var(--hdd-spacing-6)&quot; class=&quot;spacing-circle&quot;&gt;
+        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;div style=&quot;padding: var(--hdd-spacing-7)&quot; class=&quot;spacing-circle&quot;&gt;
+        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;padding: var(--hdd-spacing-8)&quot; class=&quot;spacing-circle&quot;&gt;
+        &lt;span class=&quot;spacing-circle-mini&quot;&gt;&lt;/span&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
@@ -3728,53 +3592,49 @@ In the internal design system SVG files from Streamline light must be used.
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;!--NB! Style tags are only applied here to illustrate the use of spacing variables. --&gt;
-&lt;div class=&quot;example-background&quot;&gt;
-    &lt;div style=&quot;padding: var(--hdd-spacing-3); background: var(--hdd-color-dynamic-background-secondary); border-radius: 5px;&quot;&gt;
-        &lt;h1 style=&quot;margin-bottom: var(--hdd-spacing-3);&quot;&gt;
-            Gjennomfør handling for ticket #8
-        &lt;/h1&gt;
+&lt;div style=&quot;padding: var(--hdd-spacing-3); background: var(--hdd-color-dynamic-background-secondary); border-radius: 5px;&quot;&gt;
+    &lt;h1 style=&quot;margin-bottom: var(--hdd-spacing-3);&quot;&gt;
+        Gjennomfør handling for ticket #8
+    &lt;/h1&gt;
 
-        &lt;div class=&quot;hdd-form_field&quot; style=&quot;margin-bottom: var(--hdd-spacing-2)&quot;&gt;
-            &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Målepunkt&lt;/label&gt;
-            &lt;div class=&quot;hdd-form_select&quot;&gt;
-                &lt;select id=&quot;select-alt2&quot;&gt;
-                    &lt;option default&gt;Velg handling&lt;/option&gt;
-                    &lt;option&gt;Alternative 1&lt;/option&gt;
-                    &lt;option&gt;Alternative 2&lt;/option&gt;
-                &lt;/select&gt;
-                &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
-            &lt;/div&gt;
+    &lt;div class=&quot;hdd-form_field&quot; style=&quot;margin-bottom: var(--hdd-spacing-2)&quot;&gt;
+        &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Målepunkt&lt;/label&gt;
+        &lt;div class=&quot;hdd-form_select&quot;&gt;
+            &lt;select id=&quot;select-alt2&quot;&gt;
+                &lt;option default&gt;Velg handling&lt;/option&gt;
+                &lt;option&gt;Alternative 1&lt;/option&gt;
+                &lt;option&gt;Alternative 2&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
         &lt;/div&gt;
+    &lt;/div&gt;
 
-        &lt;div&gt;
-            &lt;button class=&quot;hdd-button is-secondary&quot; style=&quot;margin-right: var(--hdd-spacing-2);&quot;&gt;Avbryt&lt;/button&gt;
-            &lt;button class=&quot;hdd-button&quot;&gt;Gjennomfør handling&lt;/button&gt;
-        &lt;/div&gt;
+    &lt;div&gt;
+        &lt;button class=&quot;hdd-button is-secondary&quot; style=&quot;margin-right: var(--hdd-spacing-2);&quot;&gt;Avbryt&lt;/button&gt;
+        &lt;button class=&quot;hdd-button&quot;&gt;Gjennomfør handling&lt;/button&gt;
     &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;!--NB! Style tags are only applied here to illustrate the use of spacing variables. --&gt;
-&lt;div class=&quot;example-background&quot;&gt;
-    &lt;div style=&quot;padding: var(--hdd-spacing-3); background: var(--hdd-color-dynamic-background-secondary); border-radius: 5px;&quot;&gt;
-        &lt;h1 style=&quot;margin-bottom: var(--hdd-spacing-3);&quot;&gt;
-            Gjennomfør handling for ticket #8
-        &lt;/h1&gt;
+&lt;div style=&quot;padding: var(--hdd-spacing-3); background: var(--hdd-color-dynamic-background-secondary); border-radius: 5px;&quot;&gt;
+    &lt;h1 style=&quot;margin-bottom: var(--hdd-spacing-3);&quot;&gt;
+        Gjennomfør handling for ticket #8
+    &lt;/h1&gt;
 
-        &lt;div class=&quot;hdd-form_field&quot; style=&quot;margin-bottom: var(--hdd-spacing-2)&quot;&gt;
-            &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Målepunkt&lt;/label&gt;
-            &lt;div class=&quot;hdd-form_select&quot;&gt;
-                &lt;select id=&quot;select-alt2&quot;&gt;
-                    &lt;option default&gt;Velg handling&lt;/option&gt;
-                    &lt;option&gt;Alternative 1&lt;/option&gt;
-                    &lt;option&gt;Alternative 2&lt;/option&gt;
-                &lt;/select&gt;
-                &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
-            &lt;/div&gt;
+    &lt;div class=&quot;hdd-form_field&quot; style=&quot;margin-bottom: var(--hdd-spacing-2)&quot;&gt;
+        &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Målepunkt&lt;/label&gt;
+        &lt;div class=&quot;hdd-form_select&quot;&gt;
+            &lt;select id=&quot;select-alt2&quot;&gt;
+                &lt;option default&gt;Velg handling&lt;/option&gt;
+                &lt;option&gt;Alternative 1&lt;/option&gt;
+                &lt;option&gt;Alternative 2&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
         &lt;/div&gt;
+    &lt;/div&gt;
 
-        &lt;div&gt;
-            &lt;button class=&quot;hdd-button is-secondary&quot; style=&quot;margin-right: var(--hdd-spacing-2);&quot;&gt;Avbryt&lt;/button&gt;
-            &lt;button class=&quot;hdd-button&quot;&gt;Gjennomfør handling&lt;/button&gt;
-        &lt;/div&gt;
+    &lt;div&gt;
+        &lt;button class=&quot;hdd-button is-secondary&quot; style=&quot;margin-right: var(--hdd-spacing-2);&quot;&gt;Avbryt&lt;/button&gt;
+        &lt;button class=&quot;hdd-button&quot;&gt;Gjennomfør handling&lt;/button&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
@@ -3782,13 +3642,11 @@ In the internal design system SVG files from Streamline light must be used.
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> css</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".example-background {
-    margin: -20px;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="body &gt; div:first-of-type {
     padding: 20px;
     background: var(--hdd-color-dynamic-background-primary);
 }">Copy</button>
-		<pre class="mb-0"><code class="lang-">.example-background {
-    margin: -20px;
+		<pre class="mb-0"><code class="lang-">body &gt; div:first-of-type {
     padding: 20px;
     background: var(--hdd-color-dynamic-background-primary);
 }</code></pre>
@@ -3833,48 +3691,44 @@ In the internal design system SVG files from Streamline light must be used.
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-background&quot;&gt;
-    &lt;h1&gt;Heading 1&lt;/h1&gt;
-    &lt;h1&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h1&gt;
-    &lt;h1&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h1&gt;
-    &lt;h1&gt;0123456789&lt;/h1&gt;
-    &lt;br /&gt;
-    &lt;h2&gt;Heading 2&lt;/h2&gt;
-    &lt;h2&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h2&gt;
-    &lt;h2&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h2&gt;
-    &lt;h2&gt;0123456789&lt;/h2&gt;
-    &lt;br /&gt;
-    &lt;h3&gt;Heading 3&lt;/h3&gt;
-    &lt;h3&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h3&gt;
-    &lt;h3&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h3&gt;
-    &lt;h3&gt;0123456789&lt;/h3&gt;
-    &lt;br /&gt;
-    &lt;p&gt;paragraph&lt;/p&gt;
-    &lt;p&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/p&gt;
-    &lt;p&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/p&gt;
-    &lt;p&gt;0123456789&lt;/p&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-background&quot;&gt;
-    &lt;h1&gt;Heading 1&lt;/h1&gt;
-    &lt;h1&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h1&gt;
-    &lt;h1&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h1&gt;
-    &lt;h1&gt;0123456789&lt;/h1&gt;
-    &lt;br /&gt;
-    &lt;h2&gt;Heading 2&lt;/h2&gt;
-    &lt;h2&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h2&gt;
-    &lt;h2&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h2&gt;
-    &lt;h2&gt;0123456789&lt;/h2&gt;
-    &lt;br /&gt;
-    &lt;h3&gt;Heading 3&lt;/h3&gt;
-    &lt;h3&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h3&gt;
-    &lt;h3&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h3&gt;
-    &lt;h3&gt;0123456789&lt;/h3&gt;
-    &lt;br /&gt;
-    &lt;p&gt;paragraph&lt;/p&gt;
-    &lt;p&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/p&gt;
-    &lt;p&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/p&gt;
-    &lt;p&gt;0123456789&lt;/p&gt;
-&lt;/div&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h1&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h1&gt;
+&lt;h1&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h1&gt;
+&lt;h1&gt;0123456789&lt;/h1&gt;
+&lt;br /&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h2&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h2&gt;
+&lt;h2&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h2&gt;
+&lt;h2&gt;0123456789&lt;/h2&gt;
+&lt;br /&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h3&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h3&gt;
+&lt;h3&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h3&gt;
+&lt;h3&gt;0123456789&lt;/h3&gt;
+&lt;br /&gt;
+&lt;p&gt;paragraph&lt;/p&gt;
+&lt;p&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/p&gt;
+&lt;p&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/p&gt;
+&lt;p&gt;0123456789&lt;/p&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h1&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h1&gt;
+&lt;h1&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h1&gt;
+&lt;h1&gt;0123456789&lt;/h1&gt;
+&lt;br /&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h2&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h2&gt;
+&lt;h2&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h2&gt;
+&lt;h2&gt;0123456789&lt;/h2&gt;
+&lt;br /&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h3&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/h3&gt;
+&lt;h3&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/h3&gt;
+&lt;h3&gt;0123456789&lt;/h3&gt;
+&lt;br /&gt;
+&lt;p&gt;paragraph&lt;/p&gt;
+&lt;p&gt;ABCDEFHILMNOPQRSTVXÆØÅ&lt;/p&gt;
+&lt;p&gt;abcdefghijklmnopqrstuvwxyzæøå&lt;/p&gt;
+&lt;p&gt;0123456789&lt;/p&gt;</code></pre>
 	</div>
 </div></div>
 </div>

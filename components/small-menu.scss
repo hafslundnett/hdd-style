@@ -51,6 +51,7 @@ $small-menu-border-radius: $border-radius;
     
     opacity: 0;
     background: var(--hdd-color-dynamic-background-secondary);
+    color: var(--hdd-color-dynamic-primary);
 
     &.is-active {
       visibility: visible;

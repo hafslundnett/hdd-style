@@ -18,28 +18,26 @@ Padding inside the card is recommended to have spacing-3. If there are multiple 
 `hdd-card`
  
 ```cards-1.html
-<div class="example-background">
-  <div class="hdd-card">
-    <div class="hdd-card_header">
-      <div class="hdd-card_header_text">
-        <div class="hdd-card_title is-center">A card should have a title</div>
-        <div class="hdd-card_subtitle is-center">And a subtitle</div>
-      </div>
+<div class="hdd-card">
+  <div class="hdd-card_header">
+    <div class="hdd-card_header_text">
+      <div class="hdd-card_title is-center">A card should have a title</div>
+      <div class="hdd-card_subtitle is-center">And a subtitle</div>
     </div>
-    <div class="hdd-card_content">
-      <p>A card consist of some content.</p>
-      <p>The card can have multiple lines of content.</p>
-      <p>Cards are useful for displaying some kind of information</p>
+  </div>
+  <div class="hdd-card_content">
+    <p>A card consist of some content.</p>
+    <p>The card can have multiple lines of content.</p>
+    <p>Cards are useful for displaying some kind of information</p>
+  </div>
+  <div class="hdd-card_header">
+    <div class="hdd-card_header_text">
+      <div class="hdd-card_title">A card can have more than one title</div>
+      <div class="hdd-card_subtitle">And a subtitle</div>
     </div>
-    <div class="hdd-card_header">
-      <div class="hdd-card_header_text">
-        <div class="hdd-card_title">A card can have more than one title</div>
-        <div class="hdd-card_subtitle">And a subtitle</div>
-      </div>
-    </div>
-    <div class="hdd-card_content">
-      <p>And more content.</p>
-    </div>
+  </div>
+  <div class="hdd-card_content">
+    <p>And more content.</p>
   </div>
 </div>
 ```
@@ -48,22 +46,20 @@ Padding inside the card is recommended to have spacing-3. If there are multiple 
 `hdd-card`
  
 ```cards-2.html
-<div class="example-background">
-  <div class="hdd-card">
-    <div class="hdd-card_header">
-      <div class="hdd-card_header_icon">
-        <i class="fal fa-info"></i>
-      </div>
-      <div class="hdd-card_header_text">
-        <div class="hdd-card_title">Title</div>
-      </div>
+<div class="hdd-card">
+  <div class="hdd-card_header">
+    <div class="hdd-card_header_icon">
+      <i class="fal fa-info"></i>
     </div>
-    <div class="hdd-card_content">
-      <p>The different pieces of a card can be combined as desired.</p>
+    <div class="hdd-card_header_text">
+      <div class="hdd-card_title">Title</div>
     </div>
-    <div class="hdd-card_actions">
-      <button class="hdd-button">Full width button</button>
-    </div>
+  </div>
+  <div class="hdd-card_content">
+    <p>The different pieces of a card can be combined as desired.</p>
+  </div>
+  <div class="hdd-card_actions">
+    <button class="hdd-button">Full width button</button>
   </div>
 </div>
 ```
@@ -72,27 +68,25 @@ Padding inside the card is recommended to have spacing-3. If there are multiple 
 `hdd-card`
 
 ```cards-3.html
-<div class="example-background">
-  <div class="hdd-card">
-    <div class="hdd-card_header">
-      <div class="hdd-card_header_icon">
-        <i class="fal fa-info"></i>
-      </div>
-      <div class="hdd-card_header_text">
-        <div class="hdd-card_title">Title</div>
-        <div class="hdd-card_subtitle">Subtitle</div>
-      </div>
-      <button class="hdd-card_header_action">
-        <i class="fal fa-cog"></i>
-      </button>
+<div class="hdd-card">
+  <div class="hdd-card_header">
+    <div class="hdd-card_header_icon">
+      <i class="fal fa-info"></i>
     </div>
-    <div class="hdd-card_content">
-      <p>Example-content</p>
+    <div class="hdd-card_header_text">
+      <div class="hdd-card_title">Title</div>
+      <div class="hdd-card_subtitle">Subtitle</div>
     </div>
-    <div class="hdd-card_actions">
-      <button class="hdd-button">Cancel action</button>
-      <button class="hdd-button">Complete action</button>
-    </div>
+    <button class="hdd-card_header_action">
+      <i class="fal fa-cog"></i>
+    </button>
+  </div>
+  <div class="hdd-card_content">
+    <p>Example-content</p>
+  </div>
+  <div class="hdd-card_actions">
+    <button class="hdd-button">Cancel action</button>
+    <button class="hdd-button">Complete action</button>
   </div>
 </div>
 ```
@@ -101,48 +95,42 @@ Padding inside the card is recommended to have spacing-3. If there are multiple 
 `hdd-card`
 
 ```cards-4.html
-<div class="example-background">
-  <div class="hdd-card">
-    <div class="hdd-card_header">
-      <div class="hdd-card_header_text">
-        <div class="hdd-card_title">Title</div>
-        <div class="hdd-card_subtitle">Subtitle</div>
-      </div>
+<div class="hdd-card">
+  <div class="hdd-card_header">
+    <div class="hdd-card_header_text">
+      <div class="hdd-card_title">Title</div>
+      <div class="hdd-card_subtitle">Subtitle</div>
     </div>
-    <div class="hdd-card_content">
-      <p>Any content can be placed within the card body.</p>
-    </div>
-    <div class="hdd-card_actions">
-      <button class="hdd-card_actions_action">View more</button>
-    </div>
+  </div>
+  <div class="hdd-card_content">
+    <p>Any content can be placed within the card body.</p>
+  </div>
+  <div class="hdd-card_actions">
+    <button class="hdd-card_actions_action">View more</button>
   </div>
 </div>
 ```
 
 ```cards-1.css hidden
-.example-background {
-  margin: -20px;
+body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 ```cards-2.css hidden
-.example-background {
-  margin: -20px;
+body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 ```cards-3.css hidden
-.example-background {
-  margin: -20px;
+body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 ```cards-4.css hidden
-.example-background {
-  margin: -20px;
+body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }

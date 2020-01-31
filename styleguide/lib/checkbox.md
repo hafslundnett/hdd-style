@@ -10,25 +10,23 @@ Checkbox classes are assigned to the corresponding checkbox label.
 `hdd-form_checkbox`
 
 ```checkbox.html
-<div class="example-background">
-  <div class="hdd-form_field">
-    <span class="hdd-form_field_title">Checkboxes</span>
-    <label class="hdd-form_checkbox">
-      <input type="checkbox" checked="">
-      <span class="hdd-form_checkbox_mark"></span>
-      <span class="hdd-form_checkbox_label">Picked checkbox</span>
-    </label>
-    <label class="hdd-form_checkbox">
-      <input type="checkbox">
-      <span class="hdd-form_checkbox_mark"></span>
-      <span class="hdd-form_checkbox_label">Unpicked checkbox</span>
-    </label>
-    <label class="hdd-form_checkbox is-invalid">
-      <input type="checkbox">
-      <span class="hdd-form_checkbox_mark"></span>
-      <span class="hdd-form_checkbox_label">Invalid checkbox</span>
-    </label>
-  </div>
+<div class="hdd-form_field">
+  <span class="hdd-form_field_title">Checkboxes</span>
+  <label class="hdd-form_checkbox">
+    <input type="checkbox" checked="">
+    <span class="hdd-form_checkbox_mark"></span>
+    <span class="hdd-form_checkbox_label">Picked checkbox</span>
+  </label>
+  <label class="hdd-form_checkbox">
+    <input type="checkbox">
+    <span class="hdd-form_checkbox_mark"></span>
+    <span class="hdd-form_checkbox_label">Unpicked checkbox</span>
+  </label>
+  <label class="hdd-form_checkbox is-invalid">
+    <input type="checkbox">
+    <span class="hdd-form_checkbox_mark"></span>
+    <span class="hdd-form_checkbox_label">Invalid checkbox</span>
+  </label>
 </div>
 ```
 
@@ -40,18 +38,16 @@ The toggle checkbox slider class are assigned to the corresponding span beneath 
 
 `hdd-form_toggle` & `hdd-form_toggle slider`
 ```toggle.html
-<div class="example-background">
-  <div class="hdd-form_field">
-    <span class="hdd-form_field_title">Toggle Checkbox</span>
-    <label class="hdd-form_toggle">
-      <input type="checkbox">
-      <span class="hdd-form_toggle slider"></span>
-    </label>
-    <label class="hdd-form_toggle">
-      <input type="checkbox" checked>
-      <span class="hdd-form_toggle slider"></span>
-    </label>
-  </div>
+<div class="hdd-form_field">
+  <span class="hdd-form_field_title">Toggle Checkbox</span>
+  <label class="hdd-form_toggle">
+    <input type="checkbox">
+    <span class="hdd-form_toggle slider"></span>
+  </label>
+  <label class="hdd-form_toggle">
+    <input type="checkbox" checked>
+    <span class="hdd-form_toggle slider"></span>
+  </label>
 </div>
 ```
 ```toggle.css  hidden
@@ -61,16 +57,14 @@ The toggle checkbox slider class are assigned to the corresponding span beneath 
 .hdd-form_toggle:not(:last-child) {
   margin-bottom: 15px;
 }
-.example-background {
-  margin: -20px;
+body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 
 ```checkbox.css hidden
-.example-background {
-  margin: -20px;
+body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }

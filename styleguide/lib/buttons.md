@@ -20,11 +20,9 @@ When an action does not require a button. For example, during navigation a link 
 If only one button exists on a page, it should always be a primary button. 
 
 ```primary-button.html
-<div class="example-background">
-  <button class="hdd-button">Primary</button>
-  <button class="hdd-button" disabled>Disabled</button>
-  <button class="hdd-button is-loading">Loading</button>
-</div>
+<button class="hdd-button">Primary</button>
+<button class="hdd-button" disabled>Disabled</button>
+<button class="hdd-button is-loading">Loading</button>
 ```
 
 ## Secondary button
@@ -33,11 +31,9 @@ If only one button exists on a page, it should always be a primary button.
 The secondary button should never be used alone on a page.
 
 ```secondary-button.html
-<div class="example-background">
-  <button class="hdd-button is-secondary">Secondary</button>
-  <button class="hdd-button is-secondary" disabled>Disabled</button>
-  <button class="hdd-button is-secondary is-loading">Loading</button>
-</div>
+<button class="hdd-button is-secondary">Secondary</button>
+<button class="hdd-button is-secondary" disabled>Disabled</button>
+<button class="hdd-button is-secondary is-loading">Loading</button>
 ```
 
 ## Buttons with icon
@@ -46,19 +42,17 @@ The secondary button should never be used alone on a page.
 The buttons are all the same size.
 
 ```with-icon-button.html
-<div class="example-background">
-  <div>
-    <button class="hdd-button has-icon"><i class="fal fa-cog"></i>Icon button</button>
-    <button class="hdd-button has-icon" disabled><i class="fal fa-cog"></i>Icon button</button>
-  </div>
-  <div style="margin-top:8px;">
-    <button class="hdd-button has-icon is-secondary"><i class="fal fa-cog"></i>Icon button</button>
-    <button class="hdd-button has-icon is-secondary" disabled><i class="fal fa-cog"></i>Icon button</button>
-  </div>
-  <div style="margin-top:8px;">
-    <button class="hdd-button has-icon is-transparent"><i class="fal fa-cog"></i>Icon button</button>
-    <button class="hdd-button has-icon is-transparent" disabled><i class="fal fa-cog"></i>Icon button</button>
-  </div>
+<div>
+  <button class="hdd-button has-icon"><i class="fal fa-cog"></i>Icon button</button>
+  <button class="hdd-button has-icon" disabled><i class="fal fa-cog"></i>Icon button</button>
+</div>
+<div style="margin-top:8px;">
+  <button class="hdd-button has-icon is-secondary"><i class="fal fa-cog"></i>Icon button</button>
+  <button class="hdd-button has-icon is-secondary" disabled><i class="fal fa-cog"></i>Icon button</button>
+</div>
+<div style="margin-top:8px;">
+  <button class="hdd-button has-icon is-transparent"><i class="fal fa-cog"></i>Icon button</button>
+  <button class="hdd-button has-icon is-transparent" disabled><i class="fal fa-cog"></i>Icon button</button>
 </div>
 ```
 
@@ -67,19 +61,17 @@ The buttons are all the same size.
 
 
 ```icon-button.html
-<div class="example-background">
-  <div>
-    <button class="hdd-button-icon"><i class="fal fa-plus-circle"></i></button>
-    <button class="hdd-button-icon" disabled><i class="fal fa-plus-circle"></i></button>
-  </div>
-  <div style="margin-top:8px;">
-    <button class="hdd-button-icon is-transparent"><i class="fal fa-cog"></i></button>
-    <button class="hdd-button-icon is-transparent" disabled><i class="fal fa-cog"></i></button>
-  </div>
-  <div style="margin-top:8px;">
-    <button class="hdd-button-icon is-transparent is-no-padding"><i class="fal fa-arrow-right"></i></button>
-    <button class="hdd-button-icon is-transparent is-no-padding" disabled><i class="fal fa-arrow-right"></i></button>
-  </div>
+<div>
+  <button class="hdd-button-icon"><i class="fal fa-plus-circle"></i></button>
+  <button class="hdd-button-icon" disabled><i class="fal fa-plus-circle"></i></button>
+</div>
+<div style="margin-top:8px;">
+  <button class="hdd-button-icon is-transparent"><i class="fal fa-cog"></i></button>
+  <button class="hdd-button-icon is-transparent" disabled><i class="fal fa-cog"></i></button>
+</div>
+<div style="margin-top:8px;">
+  <button class="hdd-button-icon is-transparent is-no-padding"><i class="fal fa-arrow-right"></i></button>
+  <button class="hdd-button-icon is-transparent is-no-padding" disabled><i class="fal fa-arrow-right"></i></button>
 </div>
 ```
 
@@ -87,8 +79,7 @@ The buttons are all the same size.
 .hdd-button {
   margin: 4px; 
 }
-.example-background {
-  margin: -20px;
+body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }
@@ -97,8 +88,7 @@ The buttons are all the same size.
 .hdd-button {
   margin: 4px;
 }
-.example-background {
-  margin: -20px;
+body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }
@@ -107,8 +97,7 @@ The buttons are all the same size.
 .hdd-button {
   margin: 4px;
 }
-.example-background {
-  margin: -20px;
+body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }
@@ -117,8 +106,7 @@ The buttons are all the same size.
 .hdd-button-icon {
   margin: 4px;
 }
-.example-background {
-  margin: -20px;
+body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }

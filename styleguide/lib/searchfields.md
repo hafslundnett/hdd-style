@@ -13,18 +13,15 @@ It is important to set the user context for the search with the correct placehol
 `hdd-form_input`
 
 ```search-fields.html
-<div class="example-background">
-  <div class="hdd-form_input">
-    <i class="fal fa-search"></i>
-    <input placeholder="Placeholder text" />
-    <i class="fal fa-times" aria-label="Clear text"></i>
-  </div>
+<div class="hdd-form_input">
+  <i class="fal fa-search"></i>
+  <input placeholder="Placeholder text" />
+  <i class="fal fa-times" aria-label="Clear text"></i>
 </div>
 ```
 
 ```search-fields.css hidden
-.example-background {
-  margin: -20px;
+body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }

@@ -6,8 +6,7 @@
 					.hdd-button {
   margin: 4px; 
 }
-.example-background {
-  margin: -20px;
+body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }
@@ -61,23 +60,18 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div class="example-background">
-  <button class="hdd-button">Primary</button>
-  <button class="hdd-button" disabled>Disabled</button>
-  <button class="hdd-button is-loading">Loading</button>
-</div>
+    <button class="hdd-button">Primary</button>
+<button class="hdd-button" disabled>Disabled</button>
+<button class="hdd-button is-loading">Loading</button>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="example-background">
-  <button class="hdd-button">Primary</button>
-  <button class="hdd-button" disabled>Disabled</button>
-  <button class="hdd-button is-loading">Loading</button>
-</div></script>
+			<script type="text/x-stylemark" data-language="html"><button class="hdd-button">Primary</button>
+<button class="hdd-button" disabled>Disabled</button>
+<button class="hdd-button is-loading">Loading</button></script>
 			<script type="text/x-stylemark" data-language="css">.hdd-button {
   margin: 4px; 
 }
-.example-background {
-  margin: -20px;
+body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }</script>

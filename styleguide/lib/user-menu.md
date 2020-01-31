@@ -11,21 +11,19 @@ This is the user menu to be shown when clicking on your image in the header. Thi
 ## User Menu with image
 
 ```user-menu.html
-<div class="example-background">
-  <div class="hdd-user-menu">
-    <img class="hdd-user-menu_image" src="http://placekitten.com/150/150"/>
-    <div class="hdd-user-menu_name">
-      Kevin Martin Haugen
-    </div>
-    <div class="hdd-user-menu_email">
-      kevin.martin@elvia.no
-    </div>
-    <div class="hdd-user-menu_menu-element">
-      <button class="hdd-button has-icon is-transparent"><i class="fal fa-cog"></i>Settings</button>
-    </div>
-    <div class="hdd-user-menu_menu-element">
-      <button class="hdd-button has-icon is-transparent"><i class="fal fa-sign-out"></i>Sign out</button>
-    </div>
+<div class="hdd-user-menu">
+  <img class="hdd-user-menu_image" src="http://placekitten.com/150/150"/>
+  <div class="hdd-user-menu_name">
+    Kevin Martin Haugen
+  </div>
+  <div class="hdd-user-menu_email">
+    kevin.martin@elvia.no
+  </div>
+  <div class="hdd-user-menu_menu-element">
+    <button class="hdd-button has-icon is-transparent"><i class="fal fa-cog"></i>Settings</button>
+  </div>
+  <div class="hdd-user-menu_menu-element">
+    <button class="hdd-button has-icon is-transparent"><i class="fal fa-sign-out"></i>Sign out</button>
   </div>
 </div>
 ```
@@ -33,37 +31,33 @@ This is the user menu to be shown when clicking on your image in the header. Thi
 ## User Menu without image
 
 ```user-menu-no-img.html
-<div class="example-background">
-  <div class="hdd-user-menu">
-    <div class="hdd-user-menu_initials">
-      TT
-    </div>
-    <div class="hdd-user-menu_name">
-      Tim Tom
-    </div>
-    <div class="hdd-user-menu_email">
-      tt@elvia.no
-    </div>
-    <div class="hdd-user-menu_menu-element">
-      <button class="hdd-button has-icon is-transparent"><i class="fal fa-cog"></i>Settings</button>
-    </div>
-    <div class="hdd-user-menu_menu-element">
-      <button class="hdd-button has-icon is-transparent"><i class="fal fa-sign-out"></i>Sign out</button>
-    </div>
+<div class="hdd-user-menu">
+  <div class="hdd-user-menu_initials">
+    TT
+  </div>
+  <div class="hdd-user-menu_name">
+    Tim Tom
+  </div>
+  <div class="hdd-user-menu_email">
+    tt@elvia.no
+  </div>
+  <div class="hdd-user-menu_menu-element">
+    <button class="hdd-button has-icon is-transparent"><i class="fal fa-cog"></i>Settings</button>
+  </div>
+  <div class="hdd-user-menu_menu-element">
+    <button class="hdd-button has-icon is-transparent"><i class="fal fa-sign-out"></i>Sign out</button>
   </div>
 </div>
 ```
 
 ```user-menu.css hidden {
-.example-background {
-  margin: -20px;
+body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 ```user-menu-no-img.css hidden
-.example-background {
-  margin: -20px;
+body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }

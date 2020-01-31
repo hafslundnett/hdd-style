@@ -19,20 +19,17 @@ Badges should not be used alone. Do not display information status in a badge an
 
 
 ```badge.html
-<div class="example-background">
-    <span class="hdd-badge">592</span>
-    <span class="hdd-badge is-primary">82</span>
-    <span class="hdd-badge is-safe">313</span>
-    <span class="hdd-badge is-warn">18 196</span>
-    <span class="hdd-badge is-blue-light1">37</span>
-    <span class="hdd-badge is-data-navy">12 156</span>
-    <span class="hdd-badge is-black">9 214</span>
-</div>
+<span class="hdd-badge">592</span>
+<span class="hdd-badge is-primary">82</span>
+<span class="hdd-badge is-safe">313</span>
+<span class="hdd-badge is-warn">18 196</span>
+<span class="hdd-badge is-blue-light1">37</span>
+<span class="hdd-badge is-data-navy">12 156</span>
+<span class="hdd-badge is-black">9 214</span>
 ```
 
 ```badge.css  hidden
-.example-background {
-    margin: -20px;
+body > div:first-of-type {
     padding: 20px;
     background: var(--hdd-color-dynamic-background-primary);
 }

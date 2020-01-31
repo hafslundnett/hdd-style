@@ -48,10 +48,8 @@
       --hdd-color-#{$label}: #{$color};
       --hdd-color-contrast-#{$label}: #{$contrast};
       --hdd-color-dynamic-#{$label}: #{$color};
-    }
-    // Dark-theme standard colors
-    @media (prefers-color-scheme: dark) {
-      :root {
+      // Dark-theme standard colors
+      @include is-dark-theme() {
         --hdd-color-dynamic-#{$label}: #{$dark-theme};
       }
     }

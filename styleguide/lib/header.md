@@ -14,43 +14,39 @@ The sign out button should only be used if the user menu can't be used.
 ## Header with image
 
 ```header.html
-<div class="example-background">
-  <header class="hdd-header">
-    <a class="hdd-header_logo" href="#">
-      <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
-    </a>
-    <h1 class="hdd-header_title">Overview</h1>
-    <div class="hdd-header-user">
-      <img class="hdd-header-user_icon-image" src="http://placekitten.com/150/150"/>
-      <div class="hdd-header-user_name">
-        Kevin Martin Haugen
-      </div>
-      <button class="hdd-button has-icon is-transparent"><i class="fal fa-sign-out"></i>Sign out</button>
+<header class="hdd-header">
+  <a class="hdd-header_logo" href="#">
+    <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
+  </a>
+  <h1 class="hdd-header_title">Overview</h1>
+  <div class="hdd-header-user">
+    <img class="hdd-header-user_icon-image" src="http://placekitten.com/150/150"/>
+    <div class="hdd-header-user_name">
+      Kevin Martin Haugen
     </div>
-  </header>
-</div>
+    <button class="hdd-button has-icon is-transparent"><i class="fal fa-sign-out"></i>Sign out</button>
+  </div>
+</header>
 ```
 
 ## Header without image
 
 ```header-no-img.html
-<div class="example-background">
-  <header class="hdd-header">
-    <a class="hdd-header_logo" href="#">
-      <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
-    </a>
-    <h1 class="hdd-header_title">Overview</h1>
-    <div class="hdd-header-user">
-      <div class="hdd-header-user_icon-no-image">
-        TT
-      </div>
-      <div class="hdd-header-user_name">
-        Tim Tom
-      </div>
-      <button class="hdd-button has-icon is-transparent"><i class="fal fa-sign-out"></i>Sign out</button>
+<header class="hdd-header">
+  <a class="hdd-header_logo" href="#">
+    <img src="styleguide/lib/logo.svg" alt="Hafslund logo">
+  </a>
+  <h1 class="hdd-header_title">Overview</h1>
+  <div class="hdd-header-user">
+    <div class="hdd-header-user_icon-no-image">
+      TT
     </div>
-  </header>
-</div>
+    <div class="hdd-header-user_name">
+      Tim Tom
+    </div>
+    <button class="hdd-button has-icon is-transparent"><i class="fal fa-sign-out"></i>Sign out</button>
+  </div>
+</header>
 ```
 
 
@@ -59,8 +55,7 @@ The sign out button should only be used if the user menu can't be used.
 header {
   margin-bottom: 30px;
 }
-.example-background {
-  margin: -20px;
+body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }
@@ -69,8 +64,7 @@ header {
 header {
   margin-bottom: 30px;
 }
-.example-background {
-  margin: -20px;
+body > div:first-of-type {
   padding: 20px;
   background: var(--hdd-color-dynamic-background-primary);
 }
