@@ -67,7 +67,6 @@
 
 // All colors as a list ready for iterations
 // all dark-theme hsla colors are based on the original just more saturated/lighter
-
 $colors: (
   'white': (
     color: #FFF,
@@ -236,7 +235,14 @@ $gradients: (
   }
 }
 
-@media (prefers-color-scheme: dark) {
+@mixin is-dark-theme-images() {
+  @media (prefers-color-scheme: dark) {
+    @content;
+  }
+}
+
+// Makes images less clear to make the contrast in dark-mode not ass hard on the eyes
+@include is-dark-theme-images() {
   img {
     opacity: .75;
     transition: opacity .5s ease-in-out;

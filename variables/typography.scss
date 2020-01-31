@@ -23,6 +23,11 @@
 
   @return map-get($typography-map, size);
 }
+
+$font-family: 'Roboto', Arial ;
+:root {
+  --hdd-font-family: 'Roboto', Arial; 
+}
  
 // Klassene som legges på .is- i typography i utilities
 $typography: (
@@ -85,6 +90,3 @@ $typography: (
   )
 );
 
-:root {
-  --hdd-font-family: 'Roboto', Arial; 
-}
