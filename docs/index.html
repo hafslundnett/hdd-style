@@ -2389,6 +2389,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
 		<span class="theme-content-element-source-path">input-fields.md</span>
 	</span>
 	<div class="theme-content-element-description"><p>An input should encourage action by the user. If the text / content cannot be changed, it should not appear in an input field of any kind (displayed as static text). For text-areas min-height is set to standard input-field height. The height is adjustable for the user, while the width is not.</p>
+<p>Input fields should always be placed within a <code>hdd-form_field</code>, along with a descriptive <code>hdd-form_field_label</code>.</p>
 <h3>✅ When to use:</h3><p>An input should have a descriptive prompt and contain: container, label, placeholder/input text, error text/helper. An textarea should be used if a longer text is needed. </p>
 <h3>⛔ When not to use:</h3><p>An input should not stand alone without a label or information about what is requested.
 An textarea should not be used if there no need for a longer text.</p>
@@ -2522,6 +2523,40 @@ An textarea should not be used if there no need for a longer text.</p>
 <td style="text-align:left"><code>is-invalid</code></td>
 <td style="text-align:left">Set the input field to it&#39;s invalid state</td>
 </tr>
+</tbody></table><p><strong><code>hdd-form_field</code>:</strong></p>
+<table class="table"><thead><tr>
+<th style="text-align:left">class</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead><tbody><tr>
+<td style="text-align:left"><code>hdd-form_field_label</code></td>
+<td style="text-align:left">Set style for a form field label</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>hdd-form_field_title</code></td>
+<td style="text-align:left">Set style for title above the form field</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>hdd-form_field_error</code></td>
+<td style="text-align:left">Set style for an error message below the input field</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>hdd-form_field_info</code></td>
+<td style="text-align:left">Set style for an info message below the input field</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-line</code></td>
+<td style="text-align:left">Sets the form field to <code>display: block</code>, default display for all form-fields</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-inline</code></td>
+<td style="text-align:left">Sets the form field to <code>display: inline-block</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-active</code></td>
+<td style="text-align:left">Activates the form fields error and info blocks</td>
+</tr>
 </tbody></table></div>
 </div>
 
@@ -2639,16 +2674,44 @@ An textarea should not be used if there no need for a longer text.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_input&quot;&gt;
-  &lt;i class=&quot;fal fa-search hdd-form_input_icon&quot;&gt;&lt;/i&gt;
-  &lt;input placeholder=&quot;Placeholder text&quot; /&gt;
-  &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_input&quot;&gt;
-  &lt;i class=&quot;fal fa-search hdd-form_input_icon&quot;&gt;&lt;/i&gt;
-  &lt;input placeholder=&quot;Placeholder text&quot; /&gt;
-  &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
-&lt;/div&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal search field&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;i class=&quot;fal fa-search hdd-form_input_icon&quot;&gt;&lt;/i&gt;
+    &lt;input placeholder=&quot;Placeholder text&quot; /&gt;
+    &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Active search field&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input is-focus&quot;&gt;
+    &lt;i class=&quot;fal fa-search hdd-form_input_icon&quot;&gt;&lt;/i&gt;
+    &lt;input placeholder=&quot;Placeholder text&quot; value=&quot;Kari Nordmann&quot; /&gt;
+    &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+">Copy</button>
+		<pre class="mb-0"><code class="lang-">
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal search field&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;i class=&quot;fal fa-search hdd-form_input_icon&quot;&gt;&lt;/i&gt;
+    &lt;input placeholder=&quot;Placeholder text&quot; /&gt;
+    &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Active search field&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input is-focus&quot;&gt;
+    &lt;i class=&quot;fal fa-search hdd-form_input_icon&quot;&gt;&lt;/i&gt;
+    &lt;input placeholder=&quot;Placeholder text&quot; value=&quot;Kari Nordmann&quot; /&gt;
+    &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 	</div>
 </div></div>
 </div>

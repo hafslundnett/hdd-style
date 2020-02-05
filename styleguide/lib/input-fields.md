@@ -5,6 +5,8 @@ category: Form-Components
 
 An input should encourage action by the user. If the text / content cannot be changed, it should not appear in an input field of any kind (displayed as static text). For text-areas min-height is set to standard input-field height. The height is adjustable for the user, while the width is not.
 
+Input fields should always be placed within a `hdd-form_field`, along with a descriptive `hdd-form_field_label`.
+
 ### ✅ When to use: 
 An input should have a descriptive prompt and contain: container, label, placeholder/input text, error text/helper. An textarea should be used if a longer text is needed. 
 
@@ -61,7 +63,6 @@ An textarea should not be used if there no need for a longer text.
 </div>
 ```
 
-
 ## Mutations
 **`hdd-form_input`:**
 
@@ -69,6 +70,18 @@ An textarea should not be used if there no need for a longer text.
 | :--- | :--- |
 | `is-disabled` | Set the input field to it's disabled state |
 | `is-invalid` | Set the input field to it's invalid state |
+
+**`hdd-form_field`:**
+
+| class | description|
+| :--- | :--- |
+| `hdd-form_field_label` | Set style for a form field label |
+| `hdd-form_field_title` | Set style for title above the form field|
+| `hdd-form_field_error` | Set style for an error message below the input field|
+| `hdd-form_field_info` | Set style for an info message below the input field| |
+| `is-line` | Sets the form field to `display: block`, default display for all form-fields |
+| `is-inline` | Sets the form field to `display: inline-block` |
+| `is-active` | Activates the form fields error and info blocks |
 
 
 
