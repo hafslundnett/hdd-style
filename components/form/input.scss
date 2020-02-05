@@ -39,7 +39,7 @@ $form-input-border: 1px solid var(--hdd-color-grey);
   }
 
   &.is-disabled {
-    background: #F7F7F7;
+    background: var(--hdd-color-grey-light4);
     cursor: default;
   }
 
