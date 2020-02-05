@@ -8,7 +8,7 @@
   box-sizing: border-box;
 
   &:not(:last-child) {
-    margin-bottom: var(--hdd-spacing-3);
+    margin-bottom: 2rem;
   }
 
   &_label {
