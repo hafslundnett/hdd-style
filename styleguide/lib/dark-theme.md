@@ -25,9 +25,9 @@ Almost every dark-mode-color has changes to some extent. The light colors have b
 - `--hdd-color-black` -> `--hdd-color-dynamic-black`
 - `--hdd-color-white` -> `--hdd-color-dynamic-white`
 - `--hdd-color-blue` -> `--hdd-color-dynamic-blue`
-- `--hdd-color-signal-green` -> `--hdd-color-signal-green`
-- `--hdd-color-signal-yellow` -> `--hdd-color-signal-yellow`
-- `--hdd-color-signal-red` -> `--hdd-color-signal-red`
+- `--hdd-color-signal-green` -> `--hdd-color-dynamic-signal-green`
+- `--hdd-color-signal-yellow` -> `--hdd-color-dynamic-signal-yellow`
+- `--hdd-color-signal-red` -> `--hdd-color-dynamic-signal-red`
 
 
 ```dark-theme-colors.html
