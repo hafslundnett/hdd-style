@@ -68,20 +68,9 @@ An textarea should not be used if there no need for a longer text.
 
 | class | description|
 | :--- | :--- |
-| `is-disabled` | Set the input field to it's disabled state |
-| `is-invalid` | Set the input field to it's invalid state |
-
-**`hdd-form_field`:**
-
-| class | description|
-| :--- | :--- |
-| `hdd-form_field_label` | Set style for a form field label |
-| `hdd-form_field_title` | Set style for title above the form field|
-| `hdd-form_field_error` | Set style for an error message below the input field|
-| `hdd-form_field_info` | Set style for an info message below the input field| |
-| `is-line` | Sets the form field to `display: block`, default display for all form-fields |
-| `is-inline` | Sets the form field to `display: inline-block` |
-| `is-active` | Activates the form fields error and info blocks |
+| `is-focus` | Set the input field to its active state |
+| `is-disabled` | Set the input field to its disabled state |
+| `is-invalid` | Set the input field to its invalid state |
 
 
 

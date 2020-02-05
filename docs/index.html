@@ -44,6 +44,7 @@
 							<optgroup label="Form-Components">
 									<option value="checkbox">Checkbox</option>
 									<option value="dropdown">Dropdown</option>
+									<option value="form-fields">Form fields</option>
 									<option value="input-fields">Input fields</option>
 									<option value="radio-button">Radio button</option>
 									<option value="search-fields">Search fields</option>
@@ -2382,6 +2383,185 @@ Dropdown should be used if the user wants a recommended selection out of all the
 </tbody></table></div>
 </div>
 
+						<div id="form-fields" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Form fields</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">form-fields.md</span>
+	</span>
+	<div class="theme-content-element-description"><p>Form fields is a component used to wrap several HDD components, such as input fields, checkboxes, radio and select. Form elements should be wrapped within a <code>hdd-form_field</code>, along with a descriptive <code>hdd-form_field_label</code>, or <code>hdd-form_field_title</code> for checkboxes and radio buttons. </p>
+<div id="form-fields" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#form-fields" class="icon-link i-section__link -heading"></a>Form fields</h2></div><p><code>hdd-form_field</code></p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="form-fields-form-fields.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="form-fields-form-fields.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal input field &lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
+  &lt;/div&gt;
+   &lt;span class=&quot;hdd-form_field_info is-active&quot;&gt; Informational text&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Invalid input field with field errormessage&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input is-invalid&quot;&gt;
+    &lt;input id=&quot;title&quot; value=&quot;ola.hafslund.no&quot;&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;hdd-form_field_error is-active&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt;The email must contain @&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Textarea&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;textarea placeholder=&quot;Placeholdertext&quot;&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;span class=&quot;hdd-form_field_title&quot;&gt;Checkboxes&lt;/span&gt;
+  &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot;&gt;
+    &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Picked checkbox&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt; 
+    &lt;span class=&quot;hdd-form_field_title&quot;&gt;Radio buttons&lt;/span&gt;
+    &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;formname&quot;/&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Picked&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Select Option&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_select&quot;&gt;
+    &lt;select id=&quot;select-alt1&quot; placeholder=&quot;Placeholder text&quot;&gt;
+      &lt;option&gt;Alternative 1&lt;/option&gt;
+      &lt;option&gt;Alternative 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal input field &lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
+  &lt;/div&gt;
+   &lt;span class=&quot;hdd-form_field_info is-active&quot;&gt; Informational text&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Invalid input field with field errormessage&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input is-invalid&quot;&gt;
+    &lt;input id=&quot;title&quot; value=&quot;ola.hafslund.no&quot;&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;hdd-form_field_error is-active&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt;The email must contain @&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Textarea&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;textarea placeholder=&quot;Placeholdertext&quot;&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;span class=&quot;hdd-form_field_title&quot;&gt;Checkboxes&lt;/span&gt;
+  &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot;&gt;
+    &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Picked checkbox&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt; 
+    &lt;span class=&quot;hdd-form_field_title&quot;&gt;Radio buttons&lt;/span&gt;
+    &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;formname&quot;/&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Picked&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Select Option&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_select&quot;&gt;
+    &lt;select id=&quot;select-alt1&quot; placeholder=&quot;Placeholder text&quot;&gt;
+      &lt;option&gt;Alternative 1&lt;/option&gt;
+      &lt;option&gt;Alternative 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+	</div>
+</div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-form_field</code>:</strong></p>
+<table class="table"><thead><tr>
+<th style="text-align:left">class</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead><tbody><tr>
+<td style="text-align:left"><code>hdd-form_field_label</code></td>
+<td style="text-align:left">Set style for a form field label</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>hdd-form_field_title</code></td>
+<td style="text-align:left">Set style for title above the form field</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>hdd-form_field_error</code></td>
+<td style="text-align:left">Set style for an error message below the input field</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>hdd-form_field_info</code></td>
+<td style="text-align:left">Set style for an info message below the input field</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-line</code></td>
+<td style="text-align:left">Sets the form field to <code>display: block</code>, default display for all form-fields</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-inline</code></td>
+<td style="text-align:left">Sets the form field to <code>display: inline-block</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-active</code></td>
+<td style="text-align:left">Activates the form fields error and info blocks</td>
+</tr>
+</tbody></table></div>
+</div>
+
 						<div id="input-fields" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Input fields</h1>
 	<span class="theme-content-element-source">
@@ -2516,46 +2696,16 @@ An textarea should not be used if there no need for a longer text.</p>
 <th style="text-align:left">description</th>
 </tr>
 </thead><tbody><tr>
+<td style="text-align:left"><code>is-focus</code></td>
+<td style="text-align:left">Set the input field to its active state</td>
+</tr>
+<tr>
 <td style="text-align:left"><code>is-disabled</code></td>
-<td style="text-align:left">Set the input field to it&#39;s disabled state</td>
+<td style="text-align:left">Set the input field to its disabled state</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>is-invalid</code></td>
-<td style="text-align:left">Set the input field to it&#39;s invalid state</td>
-</tr>
-</tbody></table><p><strong><code>hdd-form_field</code>:</strong></p>
-<table class="table"><thead><tr>
-<th style="text-align:left">class</th>
-<th style="text-align:left">description</th>
-</tr>
-</thead><tbody><tr>
-<td style="text-align:left"><code>hdd-form_field_label</code></td>
-<td style="text-align:left">Set style for a form field label</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>hdd-form_field_title</code></td>
-<td style="text-align:left">Set style for title above the form field</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>hdd-form_field_error</code></td>
-<td style="text-align:left">Set style for an error message below the input field</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>hdd-form_field_info</code></td>
-<td style="text-align:left">Set style for an info message below the input field</td>
-<td></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>is-line</code></td>
-<td style="text-align:left">Sets the form field to <code>display: block</code>, default display for all form-fields</td>
-</tr>
-<tr>
-<td style="text-align:left"><code>is-inline</code></td>
-<td style="text-align:left">Sets the form field to <code>display: inline-block</code></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>is-active</code></td>
-<td style="text-align:left">Activates the form fields error and info blocks</td>
+<td style="text-align:left">Set the input field to its invalid state</td>
 </tr>
 </tbody></table></div>
 </div>
@@ -3967,7 +4117,7 @@ In the internal design system SVG files from Streamline light must be used.
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Checkbox  Dropdown  Input fields  Radio button  Search fields  Select "
+							data-filter-value=" Checkbox  Dropdown  Form fields  Input fields  Radio button  Search fields  Select "
 						>
 							<a href="#category-form-components" class="i-sidebar-list-item">
 								<b>Form-Components</b>
@@ -3988,6 +4138,13 @@ In the internal design system SVG files from Streamline light must be used.
 									data-filter-value="Dropdown"
 								>
 									<span>Dropdown</span>
+								</a>
+								<a
+									href="#form-fields"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Form fields"
+								>
+									<span>Form fields</span>
 								</a>
 								<a
 									href="#input-fields"
