@@ -218,6 +218,12 @@ $data-colors: (
   )
 );
 
+
+// Dark-theme colors
+:root {
+  --hdd-color-grey-dark4: #333333;
+}
+
 $all-colors: map-merge($colors, $data-colors);
 
 $gradients: (
