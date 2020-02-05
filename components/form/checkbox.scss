@@ -65,8 +65,10 @@ $form-checkbox-mark-border: 1px solid var(--hdd-color-primary);
   &_mark {
     display: inline-block;
 
-    width: $form-checkbox-mark-size;
-    height: $form-checkbox-mark-size;
+    min-width: $form-checkbox-mark-size;
+    min-height: $form-checkbox-mark-size;
+    max-width: $form-checkbox-mark-size;
+    max-height: $form-checkbox-mark-size;
     transition: background 0.3s $transition-cubic;
     border: $form-checkbox-mark-border;
     border-radius: $form-checkbox-mark-border-radius;
