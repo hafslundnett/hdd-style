@@ -107,7 +107,7 @@ $card-actions-button-spacing: 25px;
       margin: calc(#{$card-padding-y} * -1) calc(#{$card-padding-x} * -1);
       padding: $card-actions-action-padding;
       border: 0;
-      border-top: 1px solid var(--hdd-color-grey-light);
+      border-top: 1px solid var(--hdd-color-dynamic-grey-border);
       border-radius: 0;
       background: transparent;
 
