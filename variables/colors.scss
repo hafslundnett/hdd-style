@@ -236,7 +236,9 @@ $gradients: (
 
 
 @mixin is-dark-theme() {
-  @media (prefers-color-scheme: dark) {
+
+  // Remove min-width to enable dark-theme
+  @media (min-width: 600000px) and (prefers-color-scheme: dark) {
     @content;
   }
 }
