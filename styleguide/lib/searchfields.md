@@ -14,7 +14,7 @@ It is important to set the user context for the search with the correct placehol
 
 ```search-fields.html
 <div class="hdd-form_input">
-  <i class="fal fa-search"></i>
+  <i class="fal fa-search hdd-form_input_icon"></i>
   <input placeholder="Placeholder text" />
   <i class="fal fa-times" aria-label="Clear text"></i>
 </div>

@@ -32,9 +32,16 @@ An textarea should not be used if there no need for a longer text.
 </div>
 
 <div class="hdd-form_field">
+  <label class="hdd-form_field_label" for="title">Active input field </label>
+  <div class="hdd-form_input is-focus">
+    <input id="title" placeholder="Placeholdertext" value="Kari Nordmenn">
+  </div>
+</div>
+
+<div class="hdd-form_field">
   <label class="hdd-form_field_label" for="title">Disabled input field</label>
   <div class="hdd-form_input is-disabled">
-    <input id="title" placeholder="Placeholdertext">
+    <input id="title" placeholder="Placeholdertext" disabled>
   </div>
 </div>
 
