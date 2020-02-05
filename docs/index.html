@@ -31,6 +31,7 @@
 									<option value="badge">Badge</option>
 									<option value="button">Button</option>
 									<option value="cards">Cards</option>
+									<option value="divider">Divider</option>
 									<option value="feedback-message">Feedback message</option>
 									<option value="header">Header</option>
 									<option value="links">Links</option>
@@ -857,6 +858,53 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <td style="text-align:left">Disable the <code>:hover</code> state</td>
 </tr>
 </tbody></table></div>
+</div>
+
+						<div id="divider" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Divider</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">divider.md</span>
+	</span>
+	<div class="theme-content-element-description"><p>Divider to seperate content from each other. Apply the <code>hdd-divider</code> class to a horizontal row <code>&lt;hr&gt;</code> tag.</p>
+<div id="divider" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#divider" class="icon-link i-section__link -heading"></a>Divider</h2></div><p><code>hdd-divider</code></p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="divider-divider.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="divider-divider.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;p style=&quot;margin-bottom: var(--hdd-spacing-1);&quot;&gt;Some content&lt;/p&gt;
+&lt;hr class=&quot;hdd-divider&quot;&gt;
+&lt;p style=&quot;margin-top: var(--hdd-spacing-1);&quot;&gt;Other content&lt;/p&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;p style=&quot;margin-bottom: var(--hdd-spacing-1);&quot;&gt;Some content&lt;/p&gt;
+&lt;hr class=&quot;hdd-divider&quot;&gt;
+&lt;p style=&quot;margin-top: var(--hdd-spacing-1);&quot;&gt;Other content&lt;/p&gt;</code></pre>
+	</div>
+</div></div>
 </div>
 
 						<div id="feedback-message" class="i-library theme-content-element">
@@ -3791,7 +3839,7 @@ In the internal design system SVG files from Streamline light must be used.
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Badge  Button  Cards  Feedback message  Header  Links  Notification dot  Small menu  Table  Tags  Tooltip  User menu "
+							data-filter-value=" Badge  Button  Cards  Divider  Feedback message  Header  Links  Notification dot  Small menu  Table  Tags  Tooltip  User menu "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -3819,6 +3867,13 @@ In the internal design system SVG files from Streamline light must be used.
 									data-filter-value="Cards"
 								>
 									<span>Cards</span>
+								</a>
+								<a
+									href="#divider"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Divider"
+								>
+									<span>Divider</span>
 								</a>
 								<a
 									href="#feedback-message"
