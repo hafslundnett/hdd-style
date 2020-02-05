@@ -11,27 +11,29 @@ A small menu can hold a list of choices. It can be hidden and shown on the hover
 Clicking the icon toggles the is-active state of the small menu.
 
 ```small-menu.html
-  <div class="small-menu-container">
-    <div class="hdd-small-menu">
-      <span class="hdd-small-menu_title"><i class="fal fa-cog"></i></span>
-      <ul class="hdd-small-menu_list is-active">
-        <li class="hdd-small-menu_list_item">Profile</li>
-        <li class="hdd-small-menu_list_item no-hover">No hover</li>
-        <li class="hdd-small-menu_list_item is-active">Active tab</li>
-        <li class="hdd-small-menu_list_item"><i class="fal fa-sign-out"></i>Logout</li>
-      </ul>
-    </div>
-  </div>
+<div class="hdd-small-menu">
+  <span class="hdd-small-menu_title"><i class="fal fa-cog"></i></span>
+  <ul class="hdd-small-menu_list is-active">
+    <li class="hdd-small-menu_list_item">Profile</li>
+    <li class="hdd-small-menu_list_item no-hover">No hover</li>
+    <li class="hdd-small-menu_list_item is-active">Active tab</li>
+    <li class="hdd-small-menu_list_item"><i class="fal fa-sign-out"></i>Logout</li>
+  </ul>
+</div>
 ```
 
 ```small-menu.css hidden
-.small-menu-container {
+div {
   width: 20px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 } 
 body > div:first-of-type {
   padding: 20px;
   height: 230px;
+  min-width: 100%;
   background: var(--hdd-color-dynamic-background-primary);
 }
 ```

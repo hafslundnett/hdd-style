@@ -3,13 +3,17 @@
 
 	<head>
 		<style>
-					.small-menu-container {
+					div {
   width: 20px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 } 
 body > div:first-of-type {
   padding: 20px;
   height: 230px;
+  min-width: 100%;
   background: var(--hdd-color-dynamic-background-primary);
 }
 		</style>
@@ -62,37 +66,37 @@ body > div:first-of-type {
 	</head>
 
 	<body>					<div style="padding: 20px;">
-      <div class="small-menu-container">
     <div class="hdd-small-menu">
-      <span class="hdd-small-menu_title"><i class="fal fa-cog"></i></span>
-      <ul class="hdd-small-menu_list is-active">
-        <li class="hdd-small-menu_list_item">Profile</li>
-        <li class="hdd-small-menu_list_item no-hover">No hover</li>
-        <li class="hdd-small-menu_list_item is-active">Active tab</li>
-        <li class="hdd-small-menu_list_item"><i class="fal fa-sign-out"></i>Logout</li>
-      </ul>
-    </div>
-  </div>
+  <span class="hdd-small-menu_title"><i class="fal fa-cog"></i></span>
+  <ul class="hdd-small-menu_list is-active">
+    <li class="hdd-small-menu_list_item">Profile</li>
+    <li class="hdd-small-menu_list_item no-hover">No hover</li>
+    <li class="hdd-small-menu_list_item is-active">Active tab</li>
+    <li class="hdd-small-menu_list_item"><i class="fal fa-sign-out"></i>Logout</li>
+  </ul>
+</div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html">  <div class="small-menu-container">
-    <div class="hdd-small-menu">
-      <span class="hdd-small-menu_title"><i class="fal fa-cog"></i></span>
-      <ul class="hdd-small-menu_list is-active">
-        <li class="hdd-small-menu_list_item">Profile</li>
-        <li class="hdd-small-menu_list_item no-hover">No hover</li>
-        <li class="hdd-small-menu_list_item is-active">Active tab</li>
-        <li class="hdd-small-menu_list_item"><i class="fal fa-sign-out"></i>Logout</li>
-      </ul>
-    </div>
-  </div></script>
-			<script type="text/x-stylemark" data-language="css">.small-menu-container {
+			<script type="text/x-stylemark" data-language="html"><div class="hdd-small-menu">
+  <span class="hdd-small-menu_title"><i class="fal fa-cog"></i></span>
+  <ul class="hdd-small-menu_list is-active">
+    <li class="hdd-small-menu_list_item">Profile</li>
+    <li class="hdd-small-menu_list_item no-hover">No hover</li>
+    <li class="hdd-small-menu_list_item is-active">Active tab</li>
+    <li class="hdd-small-menu_list_item"><i class="fal fa-sign-out"></i>Logout</li>
+  </ul>
+</div></script>
+			<script type="text/x-stylemark" data-language="css">div {
   width: 20px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 } 
 body > div:first-of-type {
   padding: 20px;
   height: 230px;
+  min-width: 100%;
   background: var(--hdd-color-dynamic-background-primary);
 }</script>
 			<script type="text/x-stylemark" data-language="js">const menu = document.querySelector(".hdd-small-menu")

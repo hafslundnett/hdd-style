@@ -18,7 +18,7 @@ $button-font-size: 1rem;
 %transparent-properties {
   border: none;
   background: transparent;
-  color: var(--hdd-color-dynamic-text-primary);
+  color: var(--hdd-color-dynamic-font-color);
 
   // Changes button-text on hover/active/focus
   &:not([disabled]) {

@@ -36,7 +36,7 @@ $typography: (
     size: 1.25rem,
     spacing: .21px,
     weight: 500,
-    color: var(--hdd-color-dynamic-text-primary),
+    color: var(--hdd-color-dynamic-font-color),
     elements: (h1)
   ),
   h2: (
@@ -44,7 +44,7 @@ $typography: (
     size: 1rem,
     spacing: .21px,
     weight: 400,
-    color: var(--hdd-color-dynamic-text-primary),
+    color: var(--hdd-color-dynamic-font-color),
     elements: (h2)
   ),
   h3: (
@@ -52,7 +52,7 @@ $typography: (
     size: .875rem,
     spacing: .21px,
     weight: 500,
-    color: var(--hdd-color-dynamic-text-primary),
+    color: var(--hdd-color-dynamic-font-color),
     elements: (h3)
   ),
   p: (
@@ -60,7 +60,7 @@ $typography: (
     size: .875rem,
     spacing: .21px,
     weight: 400,
-    color: var(--hdd-color-dynamic-text-primary),
+    color: var(--hdd-color-dynamic-font-color),
     elements: (p)
   ),
   p-small: (
@@ -68,25 +68,25 @@ $typography: (
     size: .675rem,
     spacing: .21px,
     weight: 400,
-    color: var(--hdd-color-dynamic-text-primary)
+    color: var(--hdd-color-dynamic-font-color)
   ),
   icon-small: (
     family: 'Font Awesome 5 Pro',
     size: 1.2rem,
     weight: 300,
-    color: var(--hdd-color-dynamic-text-primary)
+    color: var(--hdd-color-dynamic-font-color)
   ),
   icon-medium: (
     family: 'Font Awesome 5 Pro',
     size: 1.5rem,
     weight: 300,
-    color: var(--hdd-color-dynamic-text-primary)
+    color: var(--hdd-color-dynamic-font-color)
   ),
   icon-large: (
     family: 'Font Awesome 5 Pro',
     size: 2rem,
     weight: 300,
-    color: var(--hdd-color-dynamic-text-primary)
+    color: var(--hdd-color-dynamic-font-color)
   )
 );
 
