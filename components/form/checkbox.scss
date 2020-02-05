@@ -8,9 +8,11 @@ $form-checkbox-mark-border: 1px solid var(--hdd-color-primary);
 
   display: flex;
   align-items: center;
-  margin-bottom: 0.75rem;
   cursor: pointer;
   box-sizing: content-box;
+  &:not(:last-child) {
+    margin-bottom: var(--hdd-spacing-1);
+  }
 
   // Creating placeholder to inject style into checkbox mutations.
   // We have to seperate the checkbox marked styling because of the checked state

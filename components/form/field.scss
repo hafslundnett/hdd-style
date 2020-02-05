@@ -4,9 +4,12 @@
 
   display: block;
   position: relative;
-  margin-bottom: 2rem;
   text-align: left;
   box-sizing: border-box;
+
+  &:not(:last-child) {
+    margin-bottom: var(--hdd-spacing-3);
+  }
 
   &_label {
     // .is-p is font-properties, defined in typography.
