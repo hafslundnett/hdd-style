@@ -3,7 +3,7 @@ In this update the default forms-compoentent have some breaking changes that fix
 
 ## Breaking changes
 
-### Removed margin-bottom for last element in form_fields, checkboxs and radiobuttons
+### Removed spacing below last element in form_fields, checkboxs and radiobuttons
 ##### What can break! 
 Can affect spacing between `.hdd-form_field` elements and other elements.
 ##### How to fix!
@@ -19,7 +19,7 @@ Add your own spacing between elements with the hdd-spacing standards!
 ##### What can break! 
 Will affect the checkboxes if custom styling has been added to make the checkboxes smaller og bigger.
 ##### How to fix!
-Overwrite the min + max width and height in your own component! Check with designer if the change is needed. 
+Overwrite the min + max width and height in your own component! Check with a designer if the change is needed. 
 
 * `.hdd-form_checkbox_mark` has now min + max width and height set to same height so that the size will never change.
 
