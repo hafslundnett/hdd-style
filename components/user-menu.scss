@@ -4,8 +4,10 @@ $separator-line-size: 70%;
 
 .hdd-user-menu {
   // When the user menu is opened the background is darker so to match this this color also need to be darker
+  --user-menu-background: var(--hdd-color-background-secondary);
+
   @include is-dark-theme() {
-    --hdd-color-background-secondary: var(--hdd-color-grey-dark4);
+    --user-menu-background: var(--hdd-color-grey-dark4);
   }
 
   display: flex;
@@ -16,7 +18,7 @@ $separator-line-size: 70%;
   height: auto;
   width: $menu-width;
   border-radius: $border-radius;
-  background: var(--hdd-color-background-secondary);
+  background: var(--user-menu-background);
   box-shadow: var(--hdd-shadow-strong);
   padding: var(--hdd-spacing-3);
   box-sizing: border-box;

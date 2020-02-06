@@ -242,11 +242,3 @@ $gradients: (
     @content;
   }
 }
-
-// // Makes images less clear to make the contrast in dark-mode not ass hard on the eyes
-// @include is-dark-theme() {
-//   img {
-//     opacity: .75;
-//     transition: opacity .5s ease-in-out;
-//   }
-// }
