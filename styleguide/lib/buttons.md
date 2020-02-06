@@ -75,6 +75,38 @@ The buttons are all the same size.
 </div>
 ```
 
+```app-menu-button.html
+<div>
+  <button class="hdd-app-button">
+  D
+  <span class="hdd-app-button_title">DROPS</span>
+  </button>
+  <button class="hdd-app-button is-light">
+  O
+  <span class="hdd-app-button_title">ORBIT</span>
+  </i></button>
+  <button class="hdd-app-button is-dark">
+  J
+  <span class="hdd-app-button_title">Jordfeil</span>
+  </button>
+</div>
+
+<div style="margin-top:30px;">
+  <button class="hdd-app-button is-light-2">
+  D
+  <span class="hdd-app-button_title">DIKO</span>
+  </button>
+  <button class="hdd-app-button is-light-3">
+  A
+  <span class="hdd-app-button_title">ADLS</span>
+  </button>
+  <button class="hdd-app-button is-dusk">
+  S
+  <span class="hdd-app-button_title">SV</span>
+  </button>
+</div>
+```
+
 ```primary-button.css  hidden
 .hdd-button {
   margin: 4px; 

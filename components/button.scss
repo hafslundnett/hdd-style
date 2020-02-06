@@ -7,11 +7,11 @@ $button-padding: $button-padding-top-bottom $button-padding-left-right;
 $button-with-icon-font-size: 1.5rem;
 $icon-button-height: 36px;
 $icon-button-font-size: 22px;
-$icon-button-height-with-border: $icon-button-height - $button-border-width; // Subtract width of border to match size of buttons without border 
+$icon-button-height-with-border: $icon-button-height - $button-border-width; // Subtract width of border to match size of buttons without border
 $button-font-size: 1rem;
 
-// Subtract width of border to match size of buttons without border 
-@function calculate-padding($border-width){
+// Subtract width of border to match size of buttons without border
+@function calculate-padding($border-width) {
   @return (10px - $border-width) (16px - $border-width);
 }
 
@@ -52,6 +52,84 @@ $button-font-size: 1rem;
     border-color: var(--hdd-color-grey);
     color: var(--hdd-color-grey);
     cursor: not-allowed;
+  }
+}
+
+.hdd-app-button {
+  @extend .is-primary;
+  outline: none;
+
+  &.is-primary {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background: var(--hdd-color-blue);
+    color: var(--hdd-color-white);
+    font-size: 1.25rem;
+  }
+
+  &.is-light {
+    background: var(--hdd-color-blue-light1);
+  }
+
+  &.is-light-2 {
+    background: var(--hdd-color-blue-light2);
+    color: var(--hdd-color-font-color);
+  }
+
+  &.is-light-3 {
+    background: var(--hdd-color-blue-light3);
+    color: var(--hdd-color-font-color);
+  }
+
+  &.is-dark {
+    background: var(--hdd-color-font-color);
+  }
+
+  &.is-dusk {
+    background: linear-gradient(180deg, #279dd1 0%, #0063a2 100%);
+  }
+
+  &_title {
+    position: absolute;
+    font-size: 0.875rem;
+    color: var(--hdd-color-font-color);
+    text-align: center;
+    margin-top: var(--hdd-spacing-5);
+  }
+
+  &:not([disabled]) {
+    &:active {
+      background: var(--hdd-color-data-green);
+      color: var(--hdd-color-white);
+    }
+
+    &:before {
+      content: " ";
+      width: 0;
+      height: 0;
+      position: absolute;
+      transition: all 500ms;
+    }
+    &:before {
+      border: 3px solid transparent;
+      border-radius: 50%;
+    }
+    &:hover {
+      &:before,
+      &:after {
+        box-shadow: var(--hdd-shadow-strong);
+        border-radius: 50%;
+        border-color: var(--hdd-color-white);
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
 
@@ -107,7 +185,7 @@ $button-font-size: 1rem;
     &:not([disabled]) {
       &:hover {
         box-shadow: var(--hdd-shadow-medium);
-        border: $button-border-width + $extra-border-hover solid var(--hdd-color-primary); // 
+        border: $button-border-width + $extra-border-hover solid var(--hdd-color-primary); //
         padding: calculate-padding($button-border-width + $extra-border-hover);
       }
 
@@ -121,7 +199,7 @@ $button-font-size: 1rem;
     &.is-loading::after {
       color: var(--hdd-color-primary) !important;
     }
-    
+
     &:active {
       &.is-loading::after {
         color: var(--hdd-color-white) !important;
@@ -134,8 +212,10 @@ $button-font-size: 1rem;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: calc(1rem + #{$button-with-icon-font-size} + var(--hdd-spacing-1)); // 1rem padding, 1.5rem width of icon, spacing between icon and text
-    
+    padding-left: calc(
+      1rem + #{$button-with-icon-font-size} + var(--hdd-spacing-1)
+    ); // 1rem padding, 1.5rem width of icon, spacing between icon and text
+
     i {
       position: absolute;
       left: $button-padding-left-right;
@@ -145,7 +225,9 @@ $button-font-size: 1rem;
     &:not([disabled]) {
       &:hover {
         &.is-secondary {
-          padding-left: calc(1rem + #{$button-with-icon-font-size} + var(--hdd-spacing-1) - #{$extra-border-hover}); // Subtract size of extra hover-border
+          padding-left: calc(
+            1rem + #{$button-with-icon-font-size} + var(--hdd-spacing-1) - #{$extra-border-hover}
+          ); // Subtract size of extra hover-border
 
           i {
             left: $button-padding-left-right - $extra-border-hover; // Subtract size of extra hover-border
@@ -170,7 +252,7 @@ $button-font-size: 1rem;
     @extend .is-p;
 
     color: transparent !important;
-    font-size: $button-font-size; 
+    font-size: $button-font-size;
 
     &::after {
       // Should find a better solution
@@ -197,8 +279,8 @@ $button-font-size: 1rem;
     color: var(--hdd-color-primary);
     border-radius: $button-radius;
     background: transparent;
-    height: $icon-button-height-with-border; 
-    width: $icon-button-height-with-border; 
+    height: $icon-button-height-with-border;
+    width: $icon-button-height-with-border;
     font-size: $icon-button-font-size;
     cursor: pointer;
     padding: 0;
@@ -213,17 +295,17 @@ $button-font-size: 1rem;
         color: var(--hdd-color-white);
         outline: none;
       }
-      
+
       &:hover {
         box-shadow: var(--hdd-shadow-medium);
-        border: $button-border-width + $extra-border-hover solid var(--hdd-color-primary); 
+        border: $button-border-width + $extra-border-hover solid var(--hdd-color-primary);
       }
     }
 
     &.is-transparent {
       @extend %transparent-properties;
 
-      height: $icon-button-height; 
+      height: $icon-button-height;
     }
 
     &.is-no-padding {
@@ -232,4 +314,3 @@ $button-font-size: 1rem;
     }
   }
 }
-
