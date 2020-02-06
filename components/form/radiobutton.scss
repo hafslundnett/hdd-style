@@ -8,9 +8,11 @@ $form-radiobutton-mark-border: 1px solid var(--hdd-color-primary);
 
   display: flex;
   align-items: center;
-  margin-bottom: 0.75rem;
   cursor: pointer;
   box-sizing: content-box;
+  &:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
 
   // Creating placeholder to inject style into radiobutton mutations.
   %radiobutton-mark {

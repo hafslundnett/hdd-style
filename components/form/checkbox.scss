@@ -8,9 +8,11 @@ $form-checkbox-mark-border: 1px solid var(--hdd-color-primary);
 
   display: flex;
   align-items: center;
-  margin-bottom: 0.75rem;
   cursor: pointer;
   box-sizing: content-box;
+  &:not(:last-child) {
+    margin-bottom: 0.75rem;
+  }
 
   // Creating placeholder to inject style into checkbox mutations.
   // We have to seperate the checkbox marked styling because of the checked state
@@ -55,7 +57,6 @@ $form-checkbox-mark-border: 1px solid var(--hdd-color-primary);
     }
   }
 
-  // currently not in use
   .hdd-badge {
     margin-left: 0.5rem;
     float: right;
@@ -64,8 +65,10 @@ $form-checkbox-mark-border: 1px solid var(--hdd-color-primary);
   &_mark {
     display: inline-block;
 
-    width: $form-checkbox-mark-size;
-    height: $form-checkbox-mark-size;
+    min-width: $form-checkbox-mark-size;
+    min-height: $form-checkbox-mark-size;
+    max-width: $form-checkbox-mark-size;
+    max-height: $form-checkbox-mark-size;
     transition: background 0.3s $transition-cubic;
     border: $form-checkbox-mark-border;
     border-radius: $form-checkbox-mark-border-radius;
