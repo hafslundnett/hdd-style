@@ -2,8 +2,8 @@
 
 [![npm version](https://img.shields.io/npm/v/@hafslundnett/hdd-style.svg)](https://www.npmjs.com/package/@hafslundnett/hdd-style)
 [![npm size](https://badgen.net/bundlephobia/minzip/@hafslundnett/hdd-style)](https://bundlephobia.com/result?p=@hafslundnett/hdd-style)
-
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+![githubActions](https://github.com/hafslundnett/hdd-style/workflows/PublishNPM/badge.svg)
 
 
 'Hafslund digital designsystem' is a design system that can be used across projects while maintaining consistancy. The project follows strict naming guidlines, your can read more about them in the [wiki](https://github.com/hafslundnett/hdd-theme/wiki/Naming-guidelines). Every component should be able to run in an isolated environment without depending on parent classes/elements.
