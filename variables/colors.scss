@@ -218,12 +218,6 @@ $data-colors: (
   )
 );
 
-
-// Dark-theme colors
-:root {
-  --hdd-color-grey-dark4: #333333;
-}
-
 $all-colors: map-merge($colors, $data-colors);
 
 $gradients: (
@@ -238,7 +232,7 @@ $gradients: (
 @mixin is-dark-theme() {
 
   // Remove min-width to enable dark-theme
-  @media (min-width: 600000px) and (prefers-color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
     @content;
   }
 }
