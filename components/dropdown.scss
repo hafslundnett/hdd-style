@@ -1,4 +1,4 @@
-$dropdown-border: 1px solid var(--hdd-color-blue-dark);
+$dropdown-border: 1px solid var(--hdd-color-blue);
 $dropdown-margin: 20px;
 $dropdown-item-padding: 10px 12px;
 
@@ -8,9 +8,15 @@ $dropdown-item-padding: 10px 12px;
 
   &_content {
     @extend .is-aligned-bottom;
-    display: none;
+    display: none;    
     position: absolute;
     z-index: 90;
+    height: fit-content;
+    max-height: 150px;
+    overflow-y: auto;
+    // TODO: removes white line from top of dropdown, find better solution. 
+    margin-top: 1px;
+
     /*
     Left and min-width calculation is to correct pixel error where dropdown is 1 px
     to the left of relative search field;
@@ -24,8 +30,9 @@ $dropdown-item-padding: 10px 12px;
     // Alignes the dropdown on top of the search field. 
     &.is-aligned-top {
       top: initial;
-      // 18px is the overlap that was between the input field and the dropdown element.
-      bottom: calc(var(--hdd-spacing-2) + 2px);
+      // 18px is the overlap that was between the input field and the dropdown element. 
+      // + 1 px from margin-top on content element.
+      bottom: calc(var(--hdd-spacing-2) + 1px);
     }
 
     &.is-aligned-bottom {
@@ -34,7 +41,7 @@ $dropdown-item-padding: 10px 12px;
     }
 
     &.is-active {
-      display: inline-table;
+      display: block;
     }
 
     &_item {
