@@ -3,6 +3,11 @@
 
 	<head>
 		<style>
+					.example-container {
+  display:flex; 
+  justify-content:space-between;
+  margin:30px
+}
 		</style>
 
 		<style>
@@ -54,7 +59,7 @@
 
 	<body>					<div style="padding: 20px;">
     
-<div style="display:flex; justify-content:space-between;margin:30px">
+<div class="example-container">
 
   <span class="hdd-tooltip">
     Hover Right
@@ -78,7 +83,7 @@
 
 </div>
 
-<div style="display:flex; justify-content:space-between;margin:30px">
+<div class="example-container">
 
   <span class="hdd-tooltip is-light">
     Hover Right
@@ -101,11 +106,10 @@
   </span>
 
 </div>
-
 </div>
 
 			<script type="text/x-stylemark" data-language="html">
-<div style="display:flex; justify-content:space-between;margin:30px">
+<div class="example-container">
 
   <span class="hdd-tooltip">
     Hover Right
@@ -129,7 +133,7 @@
 
 </div>
 
-<div style="display:flex; justify-content:space-between;margin:30px">
+<div class="example-container">
 
   <span class="hdd-tooltip is-light">
     Hover Right
@@ -151,8 +155,12 @@
     <span class="hdd-tooltip_content is-top">Top tooltip</span>
   </span>
 
-</div>
-</script>
+</div></script>
+			<script type="text/x-stylemark" data-language="css">.example-container {
+  display:flex; 
+  justify-content:space-between;
+  margin:30px
+}</script>
 
 		<!--
 			Vanilla JS

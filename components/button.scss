@@ -30,6 +30,7 @@ $button-font-size: 1rem;
 
     &:active,
     &:hover {
+      background: transparent;
       color: var(--hdd-color-primary);
       outline: none;
       box-shadow: none;
@@ -73,6 +74,7 @@ $button-font-size: 1rem;
     position: relative;
     cursor: pointer;
     outline-offset: -1px;
+    box-sizing: border-box;
 
     &[disabled] {
       background: var(--hdd-color-grey);
@@ -207,11 +209,11 @@ $button-font-size: 1rem;
     // Changes button-text on hover/active/focus
     &:not([disabled]) {
       &:active {
-        background: var(--hdd-color-primary);
+        background: var(--hdd-color-blue-dark);
         color: var(--hdd-color-white);
         outline: none;
       }
-
+      
       &:hover {
         box-shadow: var(--hdd-shadow-medium);
         border: $button-border-width + $extra-border-hover solid var(--hdd-color-primary); 

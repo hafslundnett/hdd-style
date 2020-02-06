@@ -3,7 +3,7 @@ name: Button
 category: Components
 ---
 
-The buttons are to be used across the various internal systems. If there is only one button on the current screen, this should always be a primary button. When you use multiple buttons, the primary button appears on the right and any secondary buttons appear on the left. Secondary button should not be used alone on a screen. Action buttons are specially designed for the user to take an action that will affect something else.
+The buttons are to be used across the various internal systems. If there is only one button on the current screen, this should always be a primary button. When you use multiple buttons, the primary button appears on the right and any secondary buttons appear on the left. Secondary buttons should not be used alone on a screen. Action buttons are specially designed for the user to take an action that will affect something else.
 
 Changing the color of a button to convey purpose is not ideal as people with vision impairments may struggle. Usage of other colors should be properly discussed and the context clear.
 
@@ -64,12 +64,12 @@ The buttons are all the same size.
 <div>
   <button class="hdd-button-icon"><i class="fal fa-plus-circle"></i></button>
   <button class="hdd-button-icon" disabled><i class="fal fa-plus-circle"></i></button>
-  <button class="hdd-button-icon"><i class="fal fa-arrow-right"></i></button>
-  <button class="hdd-button-icon" disabled><i class="fal fa-arrow-right"></i></button>
 </div>
 <div style="margin-top:8px;">
   <button class="hdd-button-icon is-transparent"><i class="fal fa-cog"></i></button>
   <button class="hdd-button-icon is-transparent" disabled><i class="fal fa-cog"></i></button>
+</div>
+<div style="margin-top:8px;">
   <button class="hdd-button-icon is-transparent is-no-padding"><i class="fal fa-arrow-right"></i></button>
   <button class="hdd-button-icon is-transparent is-no-padding" disabled><i class="fal fa-arrow-right"></i></button>
 </div>

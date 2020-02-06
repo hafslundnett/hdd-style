@@ -10,15 +10,15 @@ $feedback-message-gap: 10px;
   // Variable containing '&' to jump to current parent inside a child class.
   $this: &;
   display: flex;
-  box-sizing: border-box;
   align-items: center;
   justify-content: space-between;
   min-width: $feedback-min-width;
   padding: $feedback-padding;
   border: none;
   border-radius: $feedback-border-radius;
-  // .is-info is the default for any feedback-container
+  box-sizing: border-box;
   
+  // .is-info is the default for any feedback-container
   @extend .is-info;
   @extend .is-p;
 

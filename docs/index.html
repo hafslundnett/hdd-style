@@ -24,7 +24,6 @@
 						<option disabled selected>Go to…</option>
 							<optgroup label="Getting started">
 									<option value="introduction">Introduction</option>
-									<option value="layout">Layout</option>
 									<option value="layout-grid">Layout Grid</option>
 									<option value="naming-guidelines">Naming guidelines</option>
 							</optgroup>
@@ -32,25 +31,25 @@
 									<option value="badge">Badge</option>
 									<option value="button">Button</option>
 									<option value="cards">Cards</option>
+									<option value="divider">Divider</option>
 									<option value="feedback-message">Feedback message</option>
+									<option value="header">Header</option>
 									<option value="links">Links</option>
 									<option value="notification-dot">Notification dot</option>
 									<option value="small-menu">Small menu</option>
 									<option value="table">Table</option>
 									<option value="tags">Tags</option>
 									<option value="tooltip">Tooltip</option>
+									<option value="user-menu">User menu</option>
 							</optgroup>
 							<optgroup label="Form-Components">
 									<option value="checkbox">Checkbox</option>
 									<option value="dropdown">Dropdown</option>
+									<option value="form-fields">Form fields</option>
 									<option value="input-fields">Input fields</option>
 									<option value="radio-button">Radio button</option>
 									<option value="search-fields">Search fields</option>
 									<option value="select">Select</option>
-							</optgroup>
-							<optgroup label="Layout-Components">
-									<option value="navigation">Navigation</option>
-									<option value="sidenav">Sidenav</option>
 							</optgroup>
 							<optgroup label="Colors">
 									<option value="colors">Colors</option>
@@ -95,7 +94,7 @@
 </tbody></table><div id="getting-started" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#getting-started" class="icon-link i-section__link -heading"></a>Getting started</h2></div><p>There are multiple ways of using HDD:</p>
 <ul>
 <li>Cloning the git repository: <code>git clone git@github.com:hafslundnett/hdd-style.git</code></li>
-<li>Add it as an npm dependency: <code>npm install @hafslundnett/hdd-style</code> <ul>
+<li>Add it as an npm dependency: <code>yarn add @hafslundnett/hdd-style</code> <ul>
 <li>Import main.sass in your stylesheet: <code>@import &#39;~@hafslundnett/hdd-style/main&#39;;</code></li>
 <li>Use the bundled and minified file: <code>dist/bundle.min.css</code></li>
 </ul>
@@ -112,159 +111,13 @@
 </div>
 </div>
 
-						<div id="layout" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">Layout</h1>
-	<span class="theme-content-element-source">
-		<span class="theme-content-element-source-label">Source:</span>
-		<span class="theme-content-element-source-path">layout.md</span>
-	</span>
-	<div class="theme-content-element-description"><p>It is advised to add the <code>hdd-layout</code> block around your project page. The <code>hdd-layout</code> block can help you save space around your content container for elements like sidebars or navigation. <code>hdd-layout</code> has one default child element which is called <code>content</code>. This element should contain the content that you want to show on the page. The <code>content</code> child element fill the remaining free space on the page by default.</p>
-<div id="layout" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#layout" class="icon-link i-section__link -heading"></a>Layout</h2></div><p><code>hdd-layout</code>, <code>hdd-layout_sidenav</code>, <code>hdd-layout_content</code>, <code>hdd-layout_navigation</code></p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="layout-layout.html"
-                            target="_blank"
-                            class="plain-link"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Open in a new window"
-                        >
-                            <i class="fa fa-external-link-square fa-fw"></i>
-                            Example
-                        </a>
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="layout-layout.html"
-                            data-initinview="true"
-                            data-title="Loading..." 
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-layout&quot;&gt;
-
-  &lt;nav class=&quot;hdd-layout_sidenav&quot;&gt;
-    &lt;div class=&quot;hdd-sidenav&quot;&gt;
-      &lt;a class=&quot;hdd-sidenav_logo&quot; href=&quot;#&quot;&gt;
-        &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
-      &lt;/a&gt;
-      &lt;ul class=&quot;hdd-sidenav_list&quot;&gt;
-        &lt;li&gt;
-          &lt;a href=&quot;#&quot; class=&quot;hdd-sidenav_list_item &quot;&gt;
-            &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
-              &lt;i class=&quot;fal fa-chart-pie&quot;&gt;&lt;/i&gt;
-            &lt;/span&gt;
-            &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
-              &lt;span&gt;Oversikt&lt;/span&gt;
-            &lt;/span&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/nav&gt;
-
-  &lt;div class=&quot;hdd-layout_content&quot;&gt;
-    &lt;header class=&quot;hdd-layout_navigation&quot;&gt;
-      &lt;div class=&quot;hdd-navigation&quot;&gt;
-        &lt;h1 class=&quot;hdd-navigation_title&quot;&gt;Overview&lt;/h1&gt;
-      &lt;/div&gt;
-    &lt;/header&gt;
-
-    &lt;div style=&quot;padding: 20px&quot;&gt;
-      My content...
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-layout&quot;&gt;
-
-  &lt;nav class=&quot;hdd-layout_sidenav&quot;&gt;
-    &lt;div class=&quot;hdd-sidenav&quot;&gt;
-      &lt;a class=&quot;hdd-sidenav_logo&quot; href=&quot;#&quot;&gt;
-        &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
-      &lt;/a&gt;
-      &lt;ul class=&quot;hdd-sidenav_list&quot;&gt;
-        &lt;li&gt;
-          &lt;a href=&quot;#&quot; class=&quot;hdd-sidenav_list_item &quot;&gt;
-            &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
-              &lt;i class=&quot;fal fa-chart-pie&quot;&gt;&lt;/i&gt;
-            &lt;/span&gt;
-            &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
-              &lt;span&gt;Oversikt&lt;/span&gt;
-            &lt;/span&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/nav&gt;
-
-  &lt;div class=&quot;hdd-layout_content&quot;&gt;
-    &lt;header class=&quot;hdd-layout_navigation&quot;&gt;
-      &lt;div class=&quot;hdd-navigation&quot;&gt;
-        &lt;h1 class=&quot;hdd-navigation_title&quot;&gt;Overview&lt;/h1&gt;
-      &lt;/div&gt;
-    &lt;/header&gt;
-
-    &lt;div style=&quot;padding: 20px&quot;&gt;
-      My content...
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;/div&gt;</code></pre>
-	</div>
-</div><div id="extending-hdd-layout" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#extending-hdd-layout" class="icon-link i-section__link -heading"></a>Extending hdd-layout</h2></div><p>When wanting to add your block to the <code>hdd-layout</code> block please extend the <code>hdd-layout</code> class in your own block.
-Below is a example of how to achieve this with sass.</p>
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang "> sass</button>
-	<div class="i-code-block__content ">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".hdd-block {
-  $width: 100px;
-  width: $width;
-
-  @at-root {
-    .hdd-layout_block {
-      width: $width;
-    }
-  }
-
-  &amp;:hover {
-    width: $width + 50px;
-  }
-}">Copy</button>
-		<pre class="mb-0"><code class="lang-">.hdd-block {
-  $width: 100px;
-  width: $width;
-
-  @at-root {
-    .hdd-layout_block {
-      width: $width;
-    }
-  }
-
-  &amp;:hover {
-    width: $width + 50px;
-  }
-}</code></pre>
-	</div>
-</div></div>
-</div>
-
 						<div id="layout-grid" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Layout Grid</h1>
 	<span class="theme-content-element-source">
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">grid.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>We provide two grid&#39;s you can use. The first (<code>.hdd-grid</code>) is meant for sites that support mobile + desktop, and the second (<code>.hdd-grid-desktop</code>) is for websites that only support desktop. The grid uses a 12 or less point/column system that changes based on windows size. Rows have no inherit min or max height, as can be seen in the example.</p>
+	<div class="theme-content-element-description"><p>We provide two grids you can use. The first (<code>.hdd-grid</code>) is meant for sites that support mobile + desktop, and the second (<code>.hdd-grid-desktop</code>) is for websites that only support desktop. The grid uses a 12 or less point/column system that changes based on windows size. Rows have no inherit min or max height, as can be seen in the example.</p>
 <h3>Columns for <code>.hdd-grid</code> (mobile and desktop)</h3><ul>
 <li>4 for small-size (&lt; Earth)</li>
 <li>8 for mid-size (&gt; Earth &lt; Jupiter)</li>
@@ -461,7 +314,7 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">buttons.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>The buttons are to be used across the various internal systems. If there is only one button on the current screen, this should always be a primary button. When you use multiple buttons, the primary button appears on the right and any secondary buttons appear on the left. Secondary button should not be used alone on a screen. Action buttons are specially designed for the user to take an action that will affect something else.</p>
+	<div class="theme-content-element-description"><p>The buttons are to be used across the various internal systems. If there is only one button on the current screen, this should always be a primary button. When you use multiple buttons, the primary button appears on the right and any secondary buttons appear on the left. Secondary buttons should not be used alone on a screen. Action buttons are specially designed for the user to take an action that will affect something else.</p>
 <p>Changing the color of a button to convey purpose is not ideal as people with vision impairments may struggle. Usage of other colors should be properly discussed and the context clear.</p>
 <h3>✅ When to use:</h3><p>The buttons should be used for clickable actions. </p>
 <h3>⛔ When not to use:</h3><p>When an action does not require a button. For example, during navigation a link should be used instead.</p>
@@ -630,24 +483,24 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
   &lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
   &lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-  &lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-  &lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;/div&gt;
 &lt;div style=&quot;margin-top:8px;&quot;&gt;
   &lt;button class=&quot;hdd-button-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
   &lt;button class=&quot;hdd-button-icon is-transparent&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:8px;&quot;&gt;
   &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
   &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div&gt;
   &lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
   &lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-plus-circle&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-  &lt;button class=&quot;hdd-button-icon&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-  &lt;button class=&quot;hdd-button-icon&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;/div&gt;
 &lt;div style=&quot;margin-top:8px;&quot;&gt;
   &lt;button class=&quot;hdd-button-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
   &lt;button class=&quot;hdd-button-icon is-transparent&quot; disabled&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div style=&quot;margin-top:8px;&quot;&gt;
   &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot;&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
   &lt;button class=&quot;hdd-button-icon is-transparent is-no-padding&quot; disabled&gt;&lt;i class=&quot;fal fa-arrow-right&quot;&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;/div&gt;</code></pre>
@@ -1008,13 +861,62 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 </tbody></table></div>
 </div>
 
+						<div id="divider" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Divider</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">divider.md</span>
+	</span>
+	<div class="theme-content-element-description"><p>Divider to seperate content from each other. Apply the <code>hdd-divider</code> class to a horizontal row <code>&lt;hr&gt;</code> tag.</p>
+<div id="divider" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#divider" class="icon-link i-section__link -heading"></a>Divider</h2></div><p><code>hdd-divider</code></p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="divider-divider.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="divider-divider.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;p style=&quot;margin-bottom: var(--hdd-spacing-1);&quot;&gt;Some content&lt;/p&gt;
+&lt;hr class=&quot;hdd-divider&quot;&gt;
+&lt;p style=&quot;margin-top: var(--hdd-spacing-1);&quot;&gt;Other content&lt;/p&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;p style=&quot;margin-bottom: var(--hdd-spacing-1);&quot;&gt;Some content&lt;/p&gt;
+&lt;hr class=&quot;hdd-divider&quot;&gt;
+&lt;p style=&quot;margin-top: var(--hdd-spacing-1);&quot;&gt;Other content&lt;/p&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="feedback-message" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Feedback message</h1>
 	<span class="theme-content-element-source">
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">feedback-message.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>A feedback message could be an info, warning or error. Feedback messages should be displayed in the lower right corner and act like a &quot;snackbar&quot; that pops up and disappears after approximately 8 seconds. </p>
+	<div class="theme-content-element-description"><p>A feedback message convey information that is important or urgent.</p>
+<h3>✅ When to use:</h3><p>Feedback message should be used to guide or inform the user of critical information. For an error the message should inform the user of what went wrong and why.</p>
+<h3>⛔ When not to use:</h3><p>A feedback message should not be used unnecessarily</p>
 <div id="info-feedback" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#info-feedback" class="icon-link i-section__link -heading"></a>Info feedback</h2></div><p><code>feedback-container</code>,  <code>is-info</code>, <code>is-success</code>, <code>is-warn</code>, <code>is-error</code></p>
 <p>Usage of icons in feedback messages should be kept to an absolute minimum, since they usually don&#39;t serve any purpose and may be considered as visual &quot;noise&quot;.</p>
 <div class="i-example">
@@ -1046,33 +948,33 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;feedback-container&quot; style=&quot;margin-bottom: 10px&quot;&gt;
-  &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
-  &lt;p class=&quot;feedback-container_message&quot;&gt;
-    This is just for info! Usage of icons should be kept to an absolute minimum. Long messages are also supported, the text will wrap to a new line. However, long feedbacks are not recommended.
-  &lt;/p&gt;
-  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
-    &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="  &lt;div class=&quot;feedback-container&quot;&gt;
+    &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
+    &lt;p class=&quot;feedback-container_message&quot;&gt;
+      This is just for info! Usage of icons should be kept to an absolute minimum. Long messages are also supported, the text will wrap to a new line. However, long feedbacks are not recommended.
+    &lt;/p&gt;
+    &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+      &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
 
-&lt;div class=&quot;feedback-container is-success&quot; style=&quot;margin-bottom: 10px&quot;&gt;
-  &lt;p class=&quot;feedback-container_message&quot;&gt;
-    Something was a success!
-  &lt;/p&gt;
-  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
-   &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;feedback-container is-warn&quot; style=&quot;margin-bottom: 10px&quot;&gt;
-  &lt;p class=&quot;feedback-container_message&quot;&gt;
-    There is something you might want to check out.
-  &lt;/p&gt;
-  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+  &lt;div class=&quot;feedback-container is-success&quot;&gt;
+    &lt;p class=&quot;feedback-container_message&quot;&gt;
+      Something was a success!
+    &lt;/p&gt;
+    &lt;button class=&quot;feedback-container_close-button&quot;&gt;
     &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;feedback-container is-warn&quot;&gt;
+    &lt;p class=&quot;feedback-container_message&quot;&gt;
+      There is something you might want to check out.
+    &lt;/p&gt;
+    &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+      &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
 
 &lt;div class=&quot;feedback-container is-error&quot;&gt;
   &lt;p class=&quot;feedback-container_message&quot;&gt;
@@ -1082,33 +984,33 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
     &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
   &lt;/button&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;feedback-container&quot; style=&quot;margin-bottom: 10px&quot;&gt;
-  &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
-  &lt;p class=&quot;feedback-container_message&quot;&gt;
-    This is just for info! Usage of icons should be kept to an absolute minimum. Long messages are also supported, the text will wrap to a new line. However, long feedbacks are not recommended.
-  &lt;/p&gt;
-  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
-    &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
+		<pre class="mb-0"><code class="lang-">  &lt;div class=&quot;feedback-container&quot;&gt;
+    &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
+    &lt;p class=&quot;feedback-container_message&quot;&gt;
+      This is just for info! Usage of icons should be kept to an absolute minimum. Long messages are also supported, the text will wrap to a new line. However, long feedbacks are not recommended.
+    &lt;/p&gt;
+    &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+      &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
 
-&lt;div class=&quot;feedback-container is-success&quot; style=&quot;margin-bottom: 10px&quot;&gt;
-  &lt;p class=&quot;feedback-container_message&quot;&gt;
-    Something was a success!
-  &lt;/p&gt;
-  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
-   &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;feedback-container is-warn&quot; style=&quot;margin-bottom: 10px&quot;&gt;
-  &lt;p class=&quot;feedback-container_message&quot;&gt;
-    There is something you might want to check out.
-  &lt;/p&gt;
-  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+  &lt;div class=&quot;feedback-container is-success&quot;&gt;
+    &lt;p class=&quot;feedback-container_message&quot;&gt;
+      Something was a success!
+    &lt;/p&gt;
+    &lt;button class=&quot;feedback-container_close-button&quot;&gt;
     &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;feedback-container is-warn&quot;&gt;
+    &lt;p class=&quot;feedback-container_message&quot;&gt;
+      There is something you might want to check out.
+    &lt;/p&gt;
+    &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+      &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
 
 &lt;div class=&quot;feedback-container is-error&quot;&gt;
   &lt;p class=&quot;feedback-container_message&quot;&gt;
@@ -1141,6 +1043,136 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <td style="text-align:left">Sets the given feedback to the error state</td>
 </tr>
 </tbody></table></div>
+</div>
+
+						<div id="header" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Header</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">header.md</span>
+	</span>
+	<div class="theme-content-element-description"><p>The header <code>hdd-header</code> should be used on each page, at the top before any content. It should cover the entire with of the screen. The header may contain the logo, page/site title and the active user if any. There are two header user alternatives, one with, and one without a user image. Remove the user part if the site has no login. Clicking on the user image should open the <code>hdd-user-menu</code> if possible.</p>
+<h3>✅ When to use:</h3><p>When not using a component library.</p>
+<h3>⛔ When not to use:</h3><p>The sign out button should only be used if the user menu can&#39;t be used.</p>
+<div id="header-with-image" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#header-with-image" class="icon-link i-section__link -heading"></a>Header with image</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="header-header.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="header-header.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;header class=&quot;hdd-header&quot;&gt;
+  &lt;a class=&quot;hdd-header_logo&quot; href=&quot;#&quot;&gt;
+    &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
+  &lt;/a&gt;
+  &lt;h1 class=&quot;hdd-header_title&quot;&gt;Overview&lt;/h1&gt;
+  &lt;div class=&quot;hdd-header-user&quot;&gt;
+    &lt;img class=&quot;hdd-header-user_icon-image&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
+    &lt;div class=&quot;hdd-header-user_name&quot;&gt;
+      Kevin Martin Haugen
+    &lt;/div&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/header&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;header class=&quot;hdd-header&quot;&gt;
+  &lt;a class=&quot;hdd-header_logo&quot; href=&quot;#&quot;&gt;
+    &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
+  &lt;/a&gt;
+  &lt;h1 class=&quot;hdd-header_title&quot;&gt;Overview&lt;/h1&gt;
+  &lt;div class=&quot;hdd-header-user&quot;&gt;
+    &lt;img class=&quot;hdd-header-user_icon-image&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
+    &lt;div class=&quot;hdd-header-user_name&quot;&gt;
+      Kevin Martin Haugen
+    &lt;/div&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+	</div>
+</div><div id="header-without-image" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#header-without-image" class="icon-link i-section__link -heading"></a>Header without image</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="header-header-no-img.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="header-header-no-img.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="
+&lt;header class=&quot;hdd-header&quot;&gt;
+  &lt;a class=&quot;hdd-header_logo&quot; href=&quot;#&quot;&gt;
+    &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
+  &lt;/a&gt;
+  &lt;h1 class=&quot;hdd-header_title&quot;&gt;Overview&lt;/h1&gt;
+  &lt;div class=&quot;hdd-header-user&quot;&gt;
+    &lt;div class=&quot;hdd-header-user_icon-no-image&quot;&gt;
+      TT
+    &lt;/div&gt;
+    &lt;div class=&quot;hdd-header-user_name&quot;&gt;
+      Tim Tom
+    &lt;/div&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/header&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">
+&lt;header class=&quot;hdd-header&quot;&gt;
+  &lt;a class=&quot;hdd-header_logo&quot; href=&quot;#&quot;&gt;
+    &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
+  &lt;/a&gt;
+  &lt;h1 class=&quot;hdd-header_title&quot;&gt;Overview&lt;/h1&gt;
+  &lt;div class=&quot;hdd-header-user&quot;&gt;
+    &lt;div class=&quot;hdd-header-user_icon-no-image&quot;&gt;
+      TT
+    &lt;/div&gt;
+    &lt;div class=&quot;hdd-header-user_name&quot;&gt;
+      Tim Tom
+    &lt;/div&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+	</div>
+</div></div>
 </div>
 
 						<div id="links" class="i-library theme-content-element">
@@ -1520,136 +1552,151 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;height: 200px; overflow: auto;&quot;&gt;
-&lt;table class=&quot;hdd-table is-striped has-shadow is-sticky-header&quot;&gt;
-  &lt;tr class=&quot;hdd-table_header&quot;&gt;
-    &lt;th&gt;ID&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-    &lt;th&gt;Kundenr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-    &lt;th&gt;Personnr.&lt;/th&gt;
-    &lt;th&gt;Fakturanr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-    &lt;th&gt;&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;1&lt;/td&gt;
-    &lt;td&gt;338472&lt;/td&gt;
-    &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;14&lt;/td&gt;
-    &lt;td class=&quot;hdd-table_action&quot;&gt;
-      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;2&lt;/td&gt;
-    &lt;td&gt;338472&lt;/td&gt;
-    &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;14&lt;/td&gt;
-    &lt;td class=&quot;hdd-table_action&quot;&gt;
-      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;3&lt;/td&gt;
-    &lt;td&gt;338472&lt;/td&gt;
-    &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;14&lt;/td&gt;
-    &lt;td class=&quot;hdd-table_action&quot;&gt;
-      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;4&lt;/td&gt;
-    &lt;td&gt;338472&lt;/td&gt;
-    &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;14&lt;/td&gt;
-    &lt;td class=&quot;hdd-table_action&quot;&gt;
-      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;5&lt;/td&gt;
-    &lt;td&gt;338472&lt;/td&gt;
-    &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;14&lt;/td&gt;
-    &lt;td class=&quot;hdd-table_action&quot;&gt;
-      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;height: 200px; overflow: auto;&quot;&gt;
-&lt;table class=&quot;hdd-table is-striped has-shadow is-sticky-header&quot;&gt;
-  &lt;tr class=&quot;hdd-table_header&quot;&gt;
-    &lt;th&gt;ID&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-    &lt;th&gt;Kundenr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-    &lt;th&gt;Personnr.&lt;/th&gt;
-    &lt;th&gt;Fakturanr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
-    &lt;th&gt;&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;1&lt;/td&gt;
-    &lt;td&gt;338472&lt;/td&gt;
-    &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;14&lt;/td&gt;
-    &lt;td class=&quot;hdd-table_action&quot;&gt;
-      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;2&lt;/td&gt;
-    &lt;td&gt;338472&lt;/td&gt;
-    &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;14&lt;/td&gt;
-    &lt;td class=&quot;hdd-table_action&quot;&gt;
-      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;3&lt;/td&gt;
-    &lt;td&gt;338472&lt;/td&gt;
-    &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;14&lt;/td&gt;
-    &lt;td class=&quot;hdd-table_action&quot;&gt;
-      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;4&lt;/td&gt;
-    &lt;td&gt;338472&lt;/td&gt;
-    &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;14&lt;/td&gt;
-    &lt;td class=&quot;hdd-table_action&quot;&gt;
-      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;5&lt;/td&gt;
-    &lt;td&gt;338472&lt;/td&gt;
-    &lt;td&gt;123419384&lt;/td&gt;
-    &lt;td&gt;14&lt;/td&gt;
-    &lt;td class=&quot;hdd-table_action&quot;&gt;
-      &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
-      &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
-      &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
-    &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-container-to-force-scroll&quot;&gt;
+  &lt;table class=&quot;hdd-table is-striped has-shadow is-sticky-header&quot;&gt;
+    &lt;tr class=&quot;hdd-table_header&quot;&gt;
+      &lt;th&gt;ID&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+      &lt;th&gt;Kundenr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+      &lt;th&gt;Personnr.&lt;/th&gt;
+      &lt;th&gt;Fakturanr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;338472&lt;/td&gt;
+      &lt;td&gt;123419384&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td class=&quot;hdd-table_action&quot;&gt;
+        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;338472&lt;/td&gt;
+      &lt;td&gt;123419384&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td class=&quot;hdd-table_action&quot;&gt;
+        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;338472&lt;/td&gt;
+      &lt;td&gt;123419384&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td class=&quot;hdd-table_action&quot;&gt;
+        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;338472&lt;/td&gt;
+      &lt;td&gt;123419384&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td class=&quot;hdd-table_action&quot;&gt;
+        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;338472&lt;/td&gt;
+      &lt;td&gt;123419384&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td class=&quot;hdd-table_action&quot;&gt;
+        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-container-to-force-scroll&quot;&gt;
+  &lt;table class=&quot;hdd-table is-striped has-shadow is-sticky-header&quot;&gt;
+    &lt;tr class=&quot;hdd-table_header&quot;&gt;
+      &lt;th&gt;ID&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+      &lt;th&gt;Kundenr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+      &lt;th&gt;Personnr.&lt;/th&gt;
+      &lt;th&gt;Fakturanr.&lt;i class=&quot;far fa-arrow-up&quot;&gt;&lt;/i&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;338472&lt;/td&gt;
+      &lt;td&gt;123419384&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td class=&quot;hdd-table_action&quot;&gt;
+        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;338472&lt;/td&gt;
+      &lt;td&gt;123419384&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td class=&quot;hdd-table_action&quot;&gt;
+        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;338472&lt;/td&gt;
+      &lt;td&gt;123419384&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td class=&quot;hdd-table_action&quot;&gt;
+        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;338472&lt;/td&gt;
+      &lt;td&gt;123419384&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td class=&quot;hdd-table_action&quot;&gt;
+        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;338472&lt;/td&gt;
+      &lt;td&gt;123419384&lt;/td&gt;
+      &lt;td&gt;14&lt;/td&gt;
+      &lt;td class=&quot;hdd-table_action&quot;&gt;
+        &lt;i class=&quot;far fa-angle-down&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-ellipsis-v&quot;&gt;&lt;/i&gt;
+        &lt;button class=&quot;hdd-button is-small&quot;&gt;Submit&lt;/button&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div>
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> css</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".example-container-to-force-scroll {
+  height: 200px; 
+  overflow: auto;
+}">Copy</button>
+		<pre class="mb-0"><code class="lang-">.example-container-to-force-scroll {
+  height: 200px; 
+  overflow: auto;
+}</code></pre>
 	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-table</code>:</strong></p>
 <table class="table"><thead><tr>
@@ -1792,7 +1839,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="
-&lt;div style=&quot;display:flex; justify-content:space-between;margin:30px&quot;&gt;
+&lt;div class=&quot;example-container&quot;&gt;
 
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover Right
@@ -1816,7 +1863,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 
 &lt;/div&gt;
 
-&lt;div style=&quot;display:flex; justify-content:space-between;margin:30px&quot;&gt;
+&lt;div class=&quot;example-container&quot;&gt;
 
   &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
     Hover Right
@@ -1838,10 +1885,9 @@ menu.addEventListener(&#39;click&#39;, function(e) {
     &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Top tooltip&lt;/span&gt;
   &lt;/span&gt;
 
-&lt;/div&gt;
-">Copy</button>
+&lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">
-&lt;div style=&quot;display:flex; justify-content:space-between;margin:30px&quot;&gt;
+&lt;div class=&quot;example-container&quot;&gt;
 
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover Right
@@ -1865,7 +1911,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 
 &lt;/div&gt;
 
-&lt;div style=&quot;display:flex; justify-content:space-between;margin:30px&quot;&gt;
+&lt;div class=&quot;example-container&quot;&gt;
 
   &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
     Hover Right
@@ -1887,8 +1933,7 @@ menu.addEventListener(&#39;click&#39;, function(e) {
     &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Top tooltip&lt;/span&gt;
   &lt;/span&gt;
 
-&lt;/div&gt;
-</code></pre>
+&lt;/div&gt;</code></pre>
 	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-tooltip</code>:</strong></p>
 <table class="table"><thead><tr>
@@ -1921,6 +1966,141 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 <td style="text-align:left">Set to tooltip to appear on the bottom of the element. This is the default position for a tooltip with no direction class set to it</td>
 </tr>
 </tbody></table></div>
+</div>
+
+						<div id="user-menu" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">User menu</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">user-menu.md</span>
+	</span>
+	<div class="theme-content-element-description"><p>⚠️ This is a low level building block, and should be automated in a component library, but can be used directly if you want full control.</p>
+<p>This is the user menu to be shown when clicking on your image in the header. This component should be linked to the header in a component library.</p>
+<div id="user-menu-with-image" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#user-menu-with-image" class="icon-link i-section__link -heading"></a>User Menu with image</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="user-menu-user-menu.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="user-menu-user-menu.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-user-menu&quot;&gt;
+  &lt;img class=&quot;hdd-user-menu_image&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
+  &lt;div class=&quot;hdd-user-menu_name&quot;&gt;
+    Kevin Martin Haugen
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_email&quot;&gt;
+    kevin.martin@elvia.no
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Settings&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-user-menu&quot;&gt;
+  &lt;img class=&quot;hdd-user-menu_image&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
+  &lt;div class=&quot;hdd-user-menu_name&quot;&gt;
+    Kevin Martin Haugen
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_email&quot;&gt;
+    kevin.martin@elvia.no
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Settings&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><div id="user-menu-without-image" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#user-menu-without-image" class="icon-link i-section__link -heading"></a>User Menu without image</h2></div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="user-menu-user-menu-no-img.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="user-menu-user-menu-no-img.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-user-menu&quot;&gt;
+  &lt;div class=&quot;hdd-user-menu_initials&quot;&gt;
+    TT
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_name&quot;&gt;
+    Tim Tom
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_email&quot;&gt;
+    tt@elvia.no
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Settings&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-user-menu&quot;&gt;
+  &lt;div class=&quot;hdd-user-menu_initials&quot;&gt;
+    TT
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_name&quot;&gt;
+    Tim Tom
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_email&quot;&gt;
+    tt@elvia.no
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-cog&quot;&gt;&lt;/i&gt;Settings&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hdd-user-menu_menu-element&quot;&gt;
+    &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
 </div>
 
 				</div>
@@ -2035,7 +2215,7 @@ The toggle checkbox slider class are assigned to the corresponding span beneath 
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_field&quot;&gt;
   &lt;span class=&quot;hdd-form_field_title&quot;&gt;Toggle Checkbox&lt;/span&gt;
-  &lt;label class=&quot;hdd-form_toggle&quot; style=&quot;margin-bottom: 15px&quot;&gt;
+  &lt;label class=&quot;hdd-form_toggle&quot;&gt;
     &lt;input type=&quot;checkbox&quot;&gt;
     &lt;span class=&quot;hdd-form_toggle slider&quot;&gt;&lt;/span&gt;
   &lt;/label&gt;
@@ -2046,7 +2226,7 @@ The toggle checkbox slider class are assigned to the corresponding span beneath 
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_field&quot;&gt;
   &lt;span class=&quot;hdd-form_field_title&quot;&gt;Toggle Checkbox&lt;/span&gt;
-  &lt;label class=&quot;hdd-form_toggle&quot; style=&quot;margin-bottom: 15px&quot;&gt;
+  &lt;label class=&quot;hdd-form_toggle&quot;&gt;
     &lt;input type=&quot;checkbox&quot;&gt;
     &lt;span class=&quot;hdd-form_toggle slider&quot;&gt;&lt;/span&gt;
   &lt;/label&gt;
@@ -2120,9 +2300,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
     &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Erik&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div style=&quot;margin:20px&quot;&gt;
-  &lt;p&gt;Some content behind&lt;/p&gt;
-  &lt;p&gt;Some content behind&lt;/p&gt;
+&lt;div class=&quot;example-fill&quot;&gt;
   &lt;p&gt;Some content behind&lt;/p&gt;
   &lt;p&gt;Some content behind&lt;/p&gt;
   &lt;p&gt;Some content behind&lt;/p&gt;
@@ -2139,9 +2317,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
     &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Erik&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div style=&quot;margin:20px&quot;&gt;
-  &lt;p&gt;Some content behind&lt;/p&gt;
-  &lt;p&gt;Some content behind&lt;/p&gt;
+&lt;div class=&quot;example-fill&quot;&gt;
   &lt;p&gt;Some content behind&lt;/p&gt;
   &lt;p&gt;Some content behind&lt;/p&gt;
   &lt;p&gt;Some content behind&lt;/p&gt;
@@ -2181,32 +2357,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;margin:20px&quot;&gt;
-  &lt;p&gt;Some content behind&lt;/p&gt;
-  &lt;p&gt;Some content behind&lt;/p&gt;
-  &lt;p&gt;Some content behind&lt;/p&gt;
-  &lt;p&gt;Some content behind&lt;/p&gt;
-  &lt;p&gt;Some content behind&lt;/p&gt;
-  &lt;p&gt;Some content behind&lt;/p&gt;
-  &lt;p&gt;Some content behind&lt;/p&gt;
-  &lt;p&gt;Some content behind&lt;/p&gt;
-  &lt;p&gt;Some content behind&lt;/p&gt;
-  &lt;p&gt;Some content behind&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;hdd-form_input hdd-dropdown&quot;&gt;
-  &lt;input value=&quot;Jer&quot;&gt;
-
-  &lt;div class=&quot;hdd-dropdown_content is-active is-aligned-top&quot;&gt;
-    &lt;div class=&quot;hdd-dropdown_content_item is-active&quot;&gt;&lt;b&gt;Jer&lt;/b&gt;oen&lt;/div&gt;
-    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Stian&lt;/div&gt;
-    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Rune&lt;/div&gt;
-    &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Erik&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;margin:20px&quot;&gt;
-  &lt;p&gt;Some content behind&lt;/p&gt;
-  &lt;p&gt;Some content behind&lt;/p&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-fill&quot;&gt;
   &lt;p&gt;Some content behind&lt;/p&gt;
   &lt;p&gt;Some content behind&lt;/p&gt;
   &lt;p&gt;Some content behind&lt;/p&gt;
@@ -2225,8 +2376,27 @@ Dropdown should be used if the user wants a recommended selection out of all the
     &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Rune&lt;/div&gt;
     &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Erik&lt;/div&gt;
   &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-fill&quot;&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
+  &lt;p&gt;Some content behind&lt;/p&gt;
 &lt;/div&gt;
-</code></pre>
+&lt;div class=&quot;hdd-form_input hdd-dropdown&quot;&gt;
+  &lt;input value=&quot;Jer&quot;&gt;
+
+  &lt;div class=&quot;hdd-dropdown_content is-active is-aligned-top&quot;&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item is-active&quot;&gt;&lt;b&gt;Jer&lt;/b&gt;oen&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Stian&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item&quot;&gt;Rune&lt;/div&gt;
+    &lt;div class=&quot;hdd-dropdown_content_item no-hover&quot;&gt;Erik&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-dropdown_content</code>:</strong></p>
 <table class="table"><thead><tr>
@@ -2261,15 +2431,196 @@ Dropdown should be used if the user wants a recommended selection out of all the
 </tbody></table></div>
 </div>
 
+						<div id="form-fields" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Form fields</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">form-fields.md</span>
+	</span>
+	<div class="theme-content-element-description"><p>Form fields is a component used to wrap several HDD components, such as input fields, checkboxes, radio and select. Form elements should be wrapped within a <code>hdd-form_field</code>, along with a descriptive <code>hdd-form_field_label</code>, or <code>hdd-form_field_title</code> for checkboxes and radio buttons. </p>
+<div id="form-fields" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#form-fields" class="icon-link i-section__link -heading"></a>Form fields</h2></div><p><code>hdd-form_field</code></p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="form-fields-form-fields.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="form-fields-form-fields.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal input field &lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
+  &lt;/div&gt;
+   &lt;span class=&quot;hdd-form_field_info is-active&quot;&gt; Informational text&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Invalid input field with field errormessage&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input is-invalid&quot;&gt;
+    &lt;input id=&quot;title&quot; value=&quot;ola.hafslund.no&quot;&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;hdd-form_field_error is-active&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt;The email must contain @&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Textarea&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;textarea placeholder=&quot;Placeholdertext&quot;&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;span class=&quot;hdd-form_field_title&quot;&gt;Checkboxes&lt;/span&gt;
+  &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot;&gt;
+    &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Picked checkbox&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt; 
+    &lt;span class=&quot;hdd-form_field_title&quot;&gt;Radio buttons&lt;/span&gt;
+    &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;formname&quot;/&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Picked&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Select Option&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_select&quot;&gt;
+    &lt;select id=&quot;select-alt1&quot; placeholder=&quot;Placeholder text&quot;&gt;
+      &lt;option&gt;Alternative 1&lt;/option&gt;
+      &lt;option&gt;Alternative 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal input field &lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
+  &lt;/div&gt;
+   &lt;span class=&quot;hdd-form_field_info is-active&quot;&gt; Informational text&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Invalid input field with field errormessage&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input is-invalid&quot;&gt;
+    &lt;input id=&quot;title&quot; value=&quot;ola.hafslund.no&quot;&gt;
+  &lt;/div&gt;
+  &lt;span class=&quot;hdd-form_field_error is-active&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt;The email must contain @&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Textarea&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;textarea placeholder=&quot;Placeholdertext&quot;&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;span class=&quot;hdd-form_field_title&quot;&gt;Checkboxes&lt;/span&gt;
+  &lt;label class=&quot;hdd-form_checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; checked=&quot;&quot;&gt;
+    &lt;span class=&quot;hdd-form_checkbox_mark&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;hdd-form_checkbox_label&quot;&gt;Picked checkbox&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt; 
+    &lt;span class=&quot;hdd-form_field_title&quot;&gt;Radio buttons&lt;/span&gt;
+    &lt;label class=&quot;hdd-form_radiobutton&quot;&gt;
+        &lt;input type=&quot;radio&quot; name=&quot;formname&quot;/&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_mark&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;hdd-form_radiobutton_label&quot;&gt;Picked&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;select-alt1&quot;&gt;Select Option&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_select&quot;&gt;
+    &lt;select id=&quot;select-alt1&quot; placeholder=&quot;Placeholder text&quot;&gt;
+      &lt;option&gt;Alternative 1&lt;/option&gt;
+      &lt;option&gt;Alternative 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;i class=&quot;fal fa-angle-down&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+	</div>
+</div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-form_field</code>:</strong></p>
+<table class="table"><thead><tr>
+<th style="text-align:left">class</th>
+<th style="text-align:left">description</th>
+</tr>
+</thead><tbody><tr>
+<td style="text-align:left"><code>hdd-form_field_label</code></td>
+<td style="text-align:left">Set style for a form field label</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>hdd-form_field_title</code></td>
+<td style="text-align:left">Set style for title above the form field</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>hdd-form_field_error</code></td>
+<td style="text-align:left">Set style for an error message below the input field</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>hdd-form_field_info</code></td>
+<td style="text-align:left">Set style for an info message below the input field</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-line</code></td>
+<td style="text-align:left">Sets the form field to <code>display: block</code>, default display for all form-fields</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-inline</code></td>
+<td style="text-align:left">Sets the form field to <code>display: inline-block</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-active</code></td>
+<td style="text-align:left">Activates the form fields error and info blocks</td>
+</tr>
+</tbody></table></div>
+</div>
+
 						<div id="input-fields" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Input fields</h1>
 	<span class="theme-content-element-source">
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">input-fields.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>An input should encourage action by the user. If the text / content cannot be changed, it should not appear in an input field of any kind (displayed as static text). </p>
-<h3>✅ When to use:</h3><p>An input should have a descriptive prompt and contain: container, label, placeholder/input text, error text/helper.</p>
-<h3>⛔ When not to use:</h3><p>An input should not stand alone without a label or information about what is requested.</p>
+	<div class="theme-content-element-description"><p>An input should encourage action by the user. If the text / content cannot be changed, it should not appear in an input field of any kind (displayed as static text). For text-areas min-height is set to standard input-field height. The height is adjustable for the user, while the width is not.</p>
+<p>Input fields should always be placed within a <code>hdd-form_field</code>, along with a descriptive <code>hdd-form_field_label</code>.</p>
+<h3>✅ When to use:</h3><p>An input should have a descriptive prompt and contain: container, label, placeholder/input text, error text/helper. An textarea should be used if a longer text is needed. </p>
+<h3>⛔ When not to use:</h3><p>An input should not stand alone without a label or information about what is requested.
+An textarea should not be used if there no need for a longer text.</p>
 <div id="input-fields" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#input-fields" class="icon-link i-section__link -heading"></a>Input fields</h2></div><p><code>hdd-form_input</code></p>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -2316,9 +2667,16 @@ Dropdown should be used if the user wants a recommended selection out of all the
 &lt;/div&gt;
 
 &lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Active input field &lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input is-focus&quot;&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot; value=&quot;Kari Nordmenn&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
   &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Disabled input field&lt;/label&gt;
   &lt;div class=&quot;hdd-form_input is-disabled&quot;&gt;
-    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot; disabled&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2352,9 +2710,16 @@ Dropdown should be used if the user wants a recommended selection out of all the
 &lt;/div&gt;
 
 &lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Active input field &lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input is-focus&quot;&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot; value=&quot;Kari Nordmenn&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
   &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Disabled input field&lt;/label&gt;
   &lt;div class=&quot;hdd-form_input is-disabled&quot;&gt;
-    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot;&gt;
+    &lt;input id=&quot;title&quot; placeholder=&quot;Placeholdertext&quot; disabled&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -2379,12 +2744,16 @@ Dropdown should be used if the user wants a recommended selection out of all the
 <th style="text-align:left">description</th>
 </tr>
 </thead><tbody><tr>
+<td style="text-align:left"><code>is-focus</code></td>
+<td style="text-align:left">Set the input field to its active state</td>
+</tr>
+<tr>
 <td style="text-align:left"><code>is-disabled</code></td>
-<td style="text-align:left">Set the input field to it&#39;s disabled state</td>
+<td style="text-align:left">Set the input field to its disabled state</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>is-invalid</code></td>
-<td style="text-align:left">Set the input field to it&#39;s invalid state</td>
+<td style="text-align:left">Set the input field to its invalid state</td>
 </tr>
 </tbody></table></div>
 </div>
@@ -2503,16 +2872,44 @@ Dropdown should be used if the user wants a recommended selection out of all the
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;hdd-form_input&quot;&gt;
-  &lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt;
-  &lt;input placeholder=&quot;Placeholder text&quot; /&gt;
-  &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;hdd-form_input&quot;&gt;
-  &lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt;
-  &lt;input placeholder=&quot;Placeholder text&quot; /&gt;
-  &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
-&lt;/div&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal search field&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;i class=&quot;fal fa-search hdd-form_input_icon&quot;&gt;&lt;/i&gt;
+    &lt;input placeholder=&quot;Placeholder text&quot; /&gt;
+    &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Active search field&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input is-focus&quot;&gt;
+    &lt;i class=&quot;fal fa-search hdd-form_input_icon&quot;&gt;&lt;/i&gt;
+    &lt;input placeholder=&quot;Placeholder text&quot; value=&quot;Kari Nordmann&quot; /&gt;
+    &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+">Copy</button>
+		<pre class="mb-0"><code class="lang-">
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal search field&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input&quot;&gt;
+    &lt;i class=&quot;fal fa-search hdd-form_input_icon&quot;&gt;&lt;/i&gt;
+    &lt;input placeholder=&quot;Placeholder text&quot; /&gt;
+    &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;hdd-form_field&quot;&gt;
+  &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Active search field&lt;/label&gt;
+  &lt;div class=&quot;hdd-form_input is-focus&quot;&gt;
+    &lt;i class=&quot;fal fa-search hdd-form_input_icon&quot;&gt;&lt;/i&gt;
+    &lt;input placeholder=&quot;Placeholder text&quot; value=&quot;Kari Nordmann&quot; /&gt;
+    &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 	</div>
 </div></div>
 </div>
@@ -2660,237 +3057,6 @@ Dropdown should be used if the user wants a recommended selection out of all the
 </div>
 
 				</div>
-				<div id="category-layout-components" class="theme-content-category">
-						<div id="navigation" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">Navigation</h1>
-	<span class="theme-content-element-source">
-		<span class="theme-content-element-source-label">Source:</span>
-		<span class="theme-content-element-source-path">navigation.md</span>
-	</span>
-	<div class="theme-content-element-description"><blockquote>
-<p>🚧 It is advised to place the <code>hdd-navigation</code> in the <code>hdd-layout</code> block wrapped as an <code>hdd-layout_navigation</code> element. </p>
-</blockquote>
-<div id="navigation" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#navigation" class="icon-link i-section__link -heading"></a>Navigation</h2></div><p><code>hdd-layout_navigation</code></p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="navigation-navigation.html"
-                            target="_blank"
-                            class="plain-link"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Open in a new window"
-                        >
-                            <i class="fa fa-external-link-square fa-fw"></i>
-                            Example
-                        </a>
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="navigation-navigation.html"
-                            data-initinview="true"
-                            data-title="Loading..." 
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;header class=&quot;hdd-layout_navigation&quot;&gt;
-  &lt;div class=&quot;hdd-navigation&quot;&gt;
-    &lt;a class=&quot;hdd-navigation_logo&quot; href=&quot;#&quot;&gt;
-      &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
-    &lt;/a&gt;
-    &lt;h1 class=&quot;hdd-navigation_title&quot;&gt;Overview&lt;/h1&gt;
-
-    &lt;div class=&quot;hdd-navigation_user&quot;&gt;
-      &lt;div class=&quot;hdd-small-menu&quot;&gt;
-        &lt;span class=&quot;hdd-small-menu_title&quot;&gt;Kari Nordmann&lt;/span&gt;
-        &lt;ul class=&quot;hdd-small-menu_list is-active has-arrow-right&quot;&gt;
-          &lt;li class=&quot;hdd-small-menu_list_item&quot;&gt;&lt;i class=&quot;fal fa-user&quot;&gt;&lt;/i&gt;Profile&lt;/li&gt;
-          &lt;li class=&quot;hdd-small-menu_list_item&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Logout&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;img class=&quot;hdd-navigation_avatar&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/header&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;header class=&quot;hdd-layout_navigation&quot;&gt;
-  &lt;div class=&quot;hdd-navigation&quot;&gt;
-    &lt;a class=&quot;hdd-navigation_logo&quot; href=&quot;#&quot;&gt;
-      &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
-    &lt;/a&gt;
-    &lt;h1 class=&quot;hdd-navigation_title&quot;&gt;Overview&lt;/h1&gt;
-
-    &lt;div class=&quot;hdd-navigation_user&quot;&gt;
-      &lt;div class=&quot;hdd-small-menu&quot;&gt;
-        &lt;span class=&quot;hdd-small-menu_title&quot;&gt;Kari Nordmann&lt;/span&gt;
-        &lt;ul class=&quot;hdd-small-menu_list is-active has-arrow-right&quot;&gt;
-          &lt;li class=&quot;hdd-small-menu_list_item&quot;&gt;&lt;i class=&quot;fal fa-user&quot;&gt;&lt;/i&gt;Profile&lt;/li&gt;
-          &lt;li class=&quot;hdd-small-menu_list_item&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Logout&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;img class=&quot;hdd-navigation_avatar&quot; src=&quot;http://placekitten.com/150/150&quot;/&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/header&gt;</code></pre>
-	</div>
-</div></div>
-</div>
-
-						<div id="sidenav" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">Sidenav</h1>
-	<span class="theme-content-element-source">
-		<span class="theme-content-element-source-label">Source:</span>
-		<span class="theme-content-element-source-path">navbar.md</span>
-	</span>
-	<div class="theme-content-element-description"><p>The navigation floats on top of all elements with a z-index of 99. The z-index value is defined in the sizes variable file. When the navigation is hovered or the hover trigger class is added will the navigation expand and show the assigned label text to each list element.</p>
-<blockquote>
-<p>🚧 It is advised to place the <code>hdd-sidenav</code> in the <code>hdd-layout</code> block wrapped as an <code>hdd-layout_sidenav</code> element. </p>
-</blockquote>
-<div id="sidenav" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#sidenav" class="icon-link i-section__link -heading"></a>Sidenav</h2></div><p><code>hdd-layout_sidenav</code></p>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="sidenav-nav.html"
-                            target="_blank"
-                            class="plain-link"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Open in a new window"
-                        >
-                            <i class="fa fa-external-link-square fa-fw"></i>
-                            Example
-                        </a>
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="sidenav-nav.html"
-                            data-initinview="true"
-                            data-title="Loading..." 
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;nav class=&quot;hdd-layout_sidenav&quot;&gt;
-  &lt;div class=&quot;hdd-sidenav&quot;&gt;
-    &lt;a class=&quot;hdd-sidenav_logo&quot; href=&quot;#&quot;&gt;
-      &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
-    &lt;/a&gt;
-
-    &lt;ul class=&quot;hdd-sidenav_list&quot;&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#&quot; class=&quot;hdd-sidenav_list_item&quot; accesskey=&quot;s&quot;&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
-            &lt;i class=&quot;fal fa-chart-pie&quot;&gt;&lt;span class=&quot;hdd-badge-icon&quot;&gt;&lt;/span&gt;&lt;/i&gt;
-          &lt;/span&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
-            &lt;span&gt;Oversikt&lt;/span&gt;
-            &lt;span class=&quot;hdd-badge&quot;&gt;2&lt;/span&gt;
-          &lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/li&gt;
-
-      &lt;li&gt;
-        &lt;a class=&quot;hdd-sidenav_list_item&quot; href=&quot;#&quot;&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
-            &lt;i class=&quot;fal fa-clipboard-list&quot;&gt;&lt;/i&gt;
-          &lt;/span&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
-            &lt;span&gt;Mine åpne saker&lt;/span&gt;
-          &lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/li&gt;
-
-      &lt;li&gt;
-        &lt;a class=&quot;hdd-sidenav_list_item&quot; href=&quot;#&quot;&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
-            &lt;i class=&quot;fal fa-map-pin&quot;&gt;&lt;/i&gt;
-          &lt;/span&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
-            &lt;span&gt;Kart&lt;/span&gt;
-          &lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-&lt;/nav&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;nav class=&quot;hdd-layout_sidenav&quot;&gt;
-  &lt;div class=&quot;hdd-sidenav&quot;&gt;
-    &lt;a class=&quot;hdd-sidenav_logo&quot; href=&quot;#&quot;&gt;
-      &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
-    &lt;/a&gt;
-
-    &lt;ul class=&quot;hdd-sidenav_list&quot;&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#&quot; class=&quot;hdd-sidenav_list_item&quot; accesskey=&quot;s&quot;&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
-            &lt;i class=&quot;fal fa-chart-pie&quot;&gt;&lt;span class=&quot;hdd-badge-icon&quot;&gt;&lt;/span&gt;&lt;/i&gt;
-          &lt;/span&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
-            &lt;span&gt;Oversikt&lt;/span&gt;
-            &lt;span class=&quot;hdd-badge&quot;&gt;2&lt;/span&gt;
-          &lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/li&gt;
-
-      &lt;li&gt;
-        &lt;a class=&quot;hdd-sidenav_list_item&quot; href=&quot;#&quot;&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
-            &lt;i class=&quot;fal fa-clipboard-list&quot;&gt;&lt;/i&gt;
-          &lt;/span&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
-            &lt;span&gt;Mine åpne saker&lt;/span&gt;
-          &lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/li&gt;
-
-      &lt;li&gt;
-        &lt;a class=&quot;hdd-sidenav_list_item&quot; href=&quot;#&quot;&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_icon&quot;&gt;
-            &lt;i class=&quot;fal fa-map-pin&quot;&gt;&lt;/i&gt;
-          &lt;/span&gt;
-          &lt;span class=&quot;hdd-sidenav_list_item_label&quot;&gt;
-            &lt;span&gt;Kart&lt;/span&gt;
-          &lt;/span&gt;
-        &lt;/a&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-&lt;/nav&gt;</code></pre>
-	</div>
-</div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-sidenav</code>:</strong></p>
-<table class="table"><thead><tr>
-<th style="text-align:left">class</th>
-<th style="text-align:left">description</th>
-</tr>
-</thead><tbody><tr>
-<td style="text-align:left"><code>no-hover</code></td>
-<td style="text-align:left">Disable the <code>:hover</code> state</td>
-</tr>
-</tbody></table><p><strong><code>hdd-sidenav_list_item</code>:</strong></p>
-<table class="table"><thead><tr>
-<th style="text-align:left">class</th>
-<th style="text-align:left">description</th>
-</tr>
-</thead><tbody><tr>
-<td style="text-align:left"><code>is-active</code></td>
-<td style="text-align:left">Set the given hdd-sidenav_list_item to it&#39;s active state</td>
-</tr>
-</tbody></table></div>
-</div>
-
-				</div>
 				<div id="category-colors" class="theme-content-category">
 						<div id="colors" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Colors</h1>
@@ -2965,64 +3131,64 @@ Dropdown should be used if the user wants a recommended selection out of all the
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
-  &lt;span style=&quot;background: var(--hdd-color-blue); height: 100px; width: 100px;&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-container&quot;&gt;
+  &lt;span style=&quot;background: var(--hdd-color-blue)&quot; class=&quot;color-example-big&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-blue-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-blue-light1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-blue-light2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-blue-light3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-blue-light4)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 0 15px; background:white; display:flex;&quot;&gt;
-  &lt;span class=&quot;color-text&quot; style=&quot;width: 100px;&quot;&gt;blue&lt;/span&gt;
+&lt;div class=&quot;example-container-2&quot;&gt;
+  &lt;span class=&quot;color-text-first&quot;&gt;blue&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;blue-dark&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;blue-light1&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;blue-light2&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;blue-light3&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;blue-light4&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 0 15px; background: white;&quot;&gt;
-  &lt;span style=&quot;background: var(--hdd-color-contrast-blue); height: 100px; width: 100px;&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;div class=&quot;example-container-3&quot;&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-blue)&quot; class=&quot;color-example-big&quot;&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light4)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 15px 15px; background:white; display:flex;&quot;&gt;
-  &lt;span class=&quot;color-text&quot; style=&quot;width: 100px;&quot;&gt;contrast-blue&lt;/span&gt;
+&lt;div class=&quot;example-container-4&quot;&gt;
+  &lt;span class=&quot;color-text-first&quot;&gt;contrast-blue&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-blue-dark&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-blue-light1&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-blue-light2&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-blue-light3&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-blue-light4&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
-  &lt;span style=&quot;background: var(--hdd-color-blue); height: 100px; width: 100px;&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-container&quot;&gt;
+  &lt;span style=&quot;background: var(--hdd-color-blue)&quot; class=&quot;color-example-big&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-blue-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-blue-light1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-blue-light2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-blue-light3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-blue-light4)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 0 15px; background:white; display:flex;&quot;&gt;
-  &lt;span class=&quot;color-text&quot; style=&quot;width: 100px;&quot;&gt;blue&lt;/span&gt;
+&lt;div class=&quot;example-container-2&quot;&gt;
+  &lt;span class=&quot;color-text-first&quot;&gt;blue&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;blue-dark&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;blue-light1&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;blue-light2&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;blue-light3&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;blue-light4&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 0 15px; background: white;&quot;&gt;
-  &lt;span style=&quot;background: var(--hdd-color-contrast-blue); height: 100px; width: 100px;&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;div class=&quot;example-container-3&quot;&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-blue)&quot; class=&quot;color-example-big&quot;&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-blue-light4)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 15px 15px; background:white; display:flex;&quot;&gt;
-  &lt;span class=&quot;color-text&quot; style=&quot;width: 100px;&quot;&gt;contrast-blue&lt;/span&gt;
+&lt;div class=&quot;example-container-4&quot;&gt;
+  &lt;span class=&quot;color-text-first&quot;&gt;contrast-blue&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-blue-dark&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-blue-light1&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-blue-light2&lt;/span&gt;
@@ -3072,7 +3238,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-container&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-font-color)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-grey-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
@@ -3083,7 +3249,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span style=&quot;background: var(--hdd-color-grey-background)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 0 15px; background:white; display:flex;&quot;&gt;
+&lt;div class=&quot;example-container-2&quot;&gt;
   &lt;span class=&quot;color-text&quot;&gt;black&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;font-color&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;grey-dark&lt;/span&gt;
@@ -3094,7 +3260,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span class=&quot;color-text&quot;&gt;grey-background&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;white&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 0 15px; background: white;&quot;&gt;
+&lt;div class=&quot;example-container-3&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-font-color)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-grey-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
@@ -3105,7 +3271,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span style=&quot;background: var(--hdd-color-contrast-grey-background)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 15px 15px; background:white; display:flex;&quot;&gt;
+&lt;div class=&quot;example-container-4&quot;&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-black&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-font-color&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-grey-dark&lt;/span&gt;
@@ -3116,7 +3282,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span class=&quot;color-text&quot;&gt;contrast-grey-background&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-white&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-container&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-font-color)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-grey-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
@@ -3127,7 +3293,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span style=&quot;background: var(--hdd-color-grey-background)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 0 15px; background:white; display:flex;&quot;&gt;
+&lt;div class=&quot;example-container-2&quot;&gt;
   &lt;span class=&quot;color-text&quot;&gt;black&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;font-color&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;grey-dark&lt;/span&gt;
@@ -3138,7 +3304,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span class=&quot;color-text&quot;&gt;grey-background&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;white&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 0 15px; background: white;&quot;&gt;
+&lt;div class=&quot;example-container-3&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-font-color)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-grey-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
@@ -3149,7 +3315,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span style=&quot;background: var(--hdd-color-contrast-grey-background)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 15px 15px; background:white; display:flex;&quot;&gt;
+&lt;div class=&quot;example-container-4&quot;&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-black&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-font-color&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-grey-dark&lt;/span&gt;
@@ -3196,42 +3362,42 @@ Dropdown should be used if the user wants a recommended selection out of all the
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-container&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 0 15px; background:white; display:flex;&quot;&gt;
+&lt;div class=&quot;example-container-2&quot;&gt;
   &lt;span class=&quot;color-text&quot;&gt;signal-green&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;signal-yellow&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;signal-red&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 0 15px; background: white;&quot;&gt;
+&lt;div class=&quot;example-container-3&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 15px 15px; background:white; display:flex;&quot;&gt;
+&lt;div class=&quot;example-container-4&quot;&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-signal-green&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-signal-yellow&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-signal-red&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-container&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 0 15px; background:white; display:flex;&quot;&gt;
+&lt;div class=&quot;example-container-2&quot;&gt;
   &lt;span class=&quot;color-text&quot;&gt;signal-green&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;signal-yellow&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;signal-red&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 0 15px; background: white;&quot;&gt;
+&lt;div class=&quot;example-container-3&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 15px 15px; background:white; display:flex;&quot;&gt;
+&lt;div class=&quot;example-container-4&quot;&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-signal-green&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-signal-yellow&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-signal-red&lt;/span&gt;
@@ -3277,7 +3443,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-container&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-data-navy)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-data-marine)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-data-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
@@ -3287,7 +3453,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span style=&quot;background: var(--hdd-color-data-orange)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-data-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 0 15px; background:white; display:flex;&quot;&gt;
+&lt;div class=&quot;example-container-2&quot;&gt;
   &lt;span class=&quot;color-text&quot;&gt;data-navy&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;data-marine&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;data-blue&lt;/span&gt;
@@ -3297,7 +3463,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span class=&quot;color-text&quot;&gt;data-orange&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;data-yellow&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 0 15px; background: white;&quot;&gt;
+&lt;div class=&quot;example-container-3&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-navy)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-marine)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
@@ -3307,7 +3473,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-orange)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 15px 15px; background:white; display:flex;&quot;&gt;
+&lt;div class=&quot;example-container-4&quot;&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-data-navy&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-data-marine&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-data-blue&lt;/span&gt;
@@ -3317,7 +3483,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span class=&quot;color-text&quot;&gt;contrast-data-orange&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-data-yellow&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px 15px 0 15px; background: white;&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-container&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-data-navy)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-data-marine)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-data-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
@@ -3327,7 +3493,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span style=&quot;background: var(--hdd-color-data-orange)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-data-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 0 15px; background:white; display:flex;&quot;&gt;
+&lt;div class=&quot;example-container-2&quot;&gt;
   &lt;span class=&quot;color-text&quot;&gt;data-navy&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;data-marine&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;data-blue&lt;/span&gt;
@@ -3337,7 +3503,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span class=&quot;color-text&quot;&gt;data-orange&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;data-yellow&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 0 15px; background: white;&quot;&gt;
+&lt;div class=&quot;example-container-3&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-navy)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-marine)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
@@ -3347,7 +3513,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-orange)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-data-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
-&lt;div style=&quot;padding: 0 15px 15px 15px; background:white; display:flex;&quot;&gt;
+&lt;div class=&quot;example-container-4&quot;&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-data-navy&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-data-marine&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-data-blue&lt;/span&gt;
@@ -3424,12 +3590,12 @@ Dropdown should be used if the user wants a recommended selection out of all the
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: 15px; background: white;&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-container&quot;&gt;
   &lt;span class=&quot;hdd-shadow-light color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-shadow-medium color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-shadow-strong color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: 15px; background: white;&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-container&quot;&gt;
   &lt;span class=&quot;hdd-shadow-light color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-shadow-medium color-example&quot;&gt;&lt;/span&gt;
   &lt;span class=&quot;hdd-shadow-strong color-example&quot;&gt;&lt;/span&gt;
@@ -3446,7 +3612,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">a11y.md</span>
 	</span>
-	<div class="theme-content-element-description"><div id="visibility" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#visibility" class="icon-link i-section__link -heading"></a>Visibility</h2></div><p>Sometimes there is a need to hide content on a page for various reasons. It is importat that it still conveys the correct meaning to people who use screen readers. We should follow these principles regarding on the situation to keep everything accessible, wether you are visually impaired or not:</p>
+	<div class="theme-content-element-description"><div id="visibility" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#visibility" class="icon-link i-section__link -heading"></a>Visibility</h2></div><p>Sometimes there is a need to hide content on a page for various reasons. It is important that it still conveys the correct meaning to people who use screen readers. We should follow these principles regarding the situation to keep everything accessible, whether you are visually impaired or not:</p>
 <h3>Hide from everyone</h3><p>Use the <a href="https://developer.mozilla.org/en/docs/Web/HTML/Global_attributes/hidden"><code>hidden</code> attribute</a> to hide content from everyone.</p>
 <h3>Hide from screen readers</h3><p>Use the attribute <code>aria-hidden=&quot;true&quot;</code> to hide content from screen readers. It will still appear visually on the page.</p>
 <h3>Hide visually only</h3><p>Use the class <code>.is-visually-hidden</code> to hide content visually only. This will still be read by screen readers.</p>
@@ -3459,8 +3625,8 @@ Dropdown should be used if the user wants a recommended selection out of all the
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">breakpoints.md</span>
 	</span>
-	<div class="theme-content-element-description"><p>The breakpoints uses the names of the planets in the solar system. This is done on purpose as opposed to names like phone and desktop. This is due to the changing nature of screen sizes and we don&#39;t want to have a strong link between our sizes and real devices.</p>
-<div id="using-the-sizes" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#using-the-sizes" class="icon-link i-section__link -heading"></a>Using the sizes</h2></div><p>We are using a mobile first philosophy which means you first create the styling for the smallest supported screen size. Then you add breakpoints for larger screens (a given size and up) where further changes are specified.</p>
+	<div class="theme-content-element-description"><p>The breakpoints uses the names of the planets in the solar system. This is done on purpose as opposed to names like &quot;phone&quot; and &quot;desktop&quot;. This is due to the changing nature of screen sizes and we don&#39;t want to have a strong link between our sizes and real devices.</p>
+<h5>@import &quot;~@hafslundnett/hdd-style/utilities/breakpoints&quot;;</h5><div id="using-the-sizes" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#using-the-sizes" class="icon-link i-section__link -heading"></a>Using the sizes</h2></div><p>We are using a mobile first philosophy which means you first create the styling for the smallest supported screen size. Then you add breakpoints for larger screens (a given size and up) where further changes are specified.</p>
 
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang "> scss</button>
@@ -3709,7 +3875,8 @@ In the internal design system SVG files from Streamline light must be used.
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;padding: var(--hdd-spacing-3); background: var(--hdd-color-white); border-radius: 5px;&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;!--NB! Style tags are only applied here to illustrate the use of spacing variables. --&gt;
+&lt;div style=&quot;padding: var(--hdd-spacing-3); background: var(--hdd-color-white); border-radius: 5px;&quot;&gt;
     &lt;h1 style=&quot;margin-bottom: var(--hdd-spacing-3);&quot;&gt;
         Gjennomfør handling for ticket #8
     &lt;/h1&gt;
@@ -3731,7 +3898,8 @@ In the internal design system SVG files from Streamline light must be used.
         &lt;button class=&quot;hdd-button&quot;&gt;Gjennomfør handling&lt;/button&gt;
     &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;padding: var(--hdd-spacing-3); background: var(--hdd-color-white); border-radius: 5px;&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;!--NB! Style tags are only applied here to illustrate the use of spacing variables. --&gt;
+&lt;div style=&quot;padding: var(--hdd-spacing-3); background: var(--hdd-color-white); border-radius: 5px;&quot;&gt;
     &lt;h1 style=&quot;margin-bottom: var(--hdd-spacing-3);&quot;&gt;
         Gjennomfør handling for ticket #8
     &lt;/h1&gt;
@@ -3862,7 +4030,7 @@ In the internal design system SVG files from Streamline light must be used.
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Introduction  Layout  Layout Grid  Naming guidelines "
+							data-filter-value=" Introduction  Layout Grid  Naming guidelines "
 						>
 							<a href="#category-getting started" class="i-sidebar-list-item">
 								<b>Getting started</b>
@@ -3876,13 +4044,6 @@ In the internal design system SVG files from Streamline light must be used.
 									data-filter-value="Introduction"
 								>
 									<span>Introduction</span>
-								</a>
-								<a
-									href="#layout"
-									class="i-sidebar-list-item theme-sidebar-element"
-									data-filter-value="Layout"
-								>
-									<span>Layout</span>
 								</a>
 								<a
 									href="#layout-grid"
@@ -3905,7 +4066,7 @@ In the internal design system SVG files from Streamline light must be used.
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Badge  Button  Cards  Feedback message  Links  Notification dot  Small menu  Table  Tags  Tooltip "
+							data-filter-value=" Badge  Button  Cards  Divider  Feedback message  Header  Links  Notification dot  Small menu  Table  Tags  Tooltip  User menu "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -3935,11 +4096,25 @@ In the internal design system SVG files from Streamline light must be used.
 									<span>Cards</span>
 								</a>
 								<a
+									href="#divider"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Divider"
+								>
+									<span>Divider</span>
+								</a>
+								<a
 									href="#feedback-message"
 									class="i-sidebar-list-item theme-sidebar-element"
 									data-filter-value="Feedback message"
 								>
 									<span>Feedback message</span>
+								</a>
+								<a
+									href="#header"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Header"
+								>
+									<span>Header</span>
 								</a>
 								<a
 									href="#links"
@@ -3983,6 +4158,13 @@ In the internal design system SVG files from Streamline light must be used.
 								>
 									<span>Tooltip</span>
 								</a>
+								<a
+									href="#user-menu"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="User menu"
+								>
+									<span>User menu</span>
+								</a>
 						</div>
 			
 					</div>
@@ -3990,7 +4172,7 @@ In the internal design system SVG files from Streamline light must be used.
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Checkbox  Dropdown  Input fields  Radio button  Search fields  Select "
+							data-filter-value=" Checkbox  Dropdown  Form fields  Input fields  Radio button  Search fields  Select "
 						>
 							<a href="#category-form-components" class="i-sidebar-list-item">
 								<b>Form-Components</b>
@@ -4011,6 +4193,13 @@ In the internal design system SVG files from Streamline light must be used.
 									data-filter-value="Dropdown"
 								>
 									<span>Dropdown</span>
+								</a>
+								<a
+									href="#form-fields"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Form fields"
+								>
+									<span>Form fields</span>
 								</a>
 								<a
 									href="#input-fields"
@@ -4039,35 +4228,6 @@ In the internal design system SVG files from Streamline light must be used.
 									data-filter-value="Select"
 								>
 									<span>Select</span>
-								</a>
-						</div>
-			
-					</div>
-					<div class="i-sidebar-list-group theme-sidebar-category">
-			
-						<h5
-							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Navigation  Sidenav "
-						>
-							<a href="#category-layout-components" class="i-sidebar-list-item">
-								<b>Layout-Components</b>
-							</a>
-						</h5>
-			
-						<div>
-								<a
-									href="#navigation"
-									class="i-sidebar-list-item theme-sidebar-element"
-									data-filter-value="Navigation"
-								>
-									<span>Navigation</span>
-								</a>
-								<a
-									href="#sidenav"
-									class="i-sidebar-list-item theme-sidebar-element"
-									data-filter-value="Sidenav"
-								>
-									<span>Sidenav</span>
 								</a>
 						</div>
 			

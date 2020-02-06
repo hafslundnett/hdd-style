@@ -21,9 +21,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
     <div class="hdd-dropdown_content_item">Erik</div>
   </div>
 </div>
-<div style="margin:20px">
-  <p>Some content behind</p>
-  <p>Some content behind</p>
+<div class="example-fill">
   <p>Some content behind</p>
   <p>Some content behind</p>
   <p>Some content behind</p>
@@ -32,6 +30,11 @@ Dropdown should be used if the user wants a recommended selection out of all the
   <p>Some content behind</p>
 </div>
 ```
+```dropdown.css  hidden
+.example-fill {
+  margin: 20px;
+}
+```
 
 ## Dropdown aligned top
 `hdd-form_input`.`hdd-dropdown`
@@ -39,9 +42,7 @@ Dropdown should be used if the user wants a recommended selection out of all the
 Only use `is-aligned-top` when there are enough room from the top and not enough from the bottom.
  
 ```dropdown-top.html
-<div style="margin:20px">
-  <p>Some content behind</p>
-  <p>Some content behind</p>
+<div class="example-fill">
   <p>Some content behind</p>
   <p>Some content behind</p>
   <p>Some content behind</p>
@@ -61,7 +62,11 @@ Only use `is-aligned-top` when there are enough room from the top and not enough
     <div class="hdd-dropdown_content_item no-hover">Erik</div>
   </div>
 </div>
- 
+```
+```dropdown-top.css  hidden
+.example-fill {
+  margin: 20px;
+}
 ```
 
 

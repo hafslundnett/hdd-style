@@ -130,6 +130,11 @@ $colors: (
     color: #D3DBE0,
     contrast: #444
   ),
+  'grey-light4': (
+    color: #F7F7F7,
+    contrast: #444,
+    alt-labels: (input-disabled)
+  ),
   'signal-green': (
     color: #5A7E2C,
     contrast: #FFF,

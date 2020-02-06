@@ -12,6 +12,7 @@ $table-last-column-padding: 1.5rem;
   border-spacing: 0;
   border-collapse: collapse;
   background: var(--hdd-color-white);
+  box-sizing: border-box;
 
   th,
   td {
@@ -61,7 +62,6 @@ $table-last-column-padding: 1.5rem;
 
   &_row,
   tr {
-
     &.is-stripe {
       background: var(--hdd-color-blue-light4);
     }
@@ -116,12 +116,11 @@ $table-last-column-padding: 1.5rem;
     border-radius: 5px;
   }
 
-  
   &.is-sticky-header {
     th {
       position: sticky;
       top: 0; // set this higher if it overlaps with another sticky
-      background: white;
+      background: var(--hdd-color-white);
       z-index: 1;
     }
   }

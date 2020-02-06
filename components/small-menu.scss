@@ -12,6 +12,7 @@ $small-menu-border-radius: $border-radius;
 
   display: inline-block;
   position: relative;
+  box-sizing: border-box;
 
   &:hover {
     #{$this}_content:not(.no-hover):not(:hover) {
@@ -43,7 +44,6 @@ $small-menu-border-radius: $border-radius;
     right: 0;
     left: 50%;
     
-    box-sizing: border-box;
     min-width: $small-menu-width;
     
     transform: translateX(-50%);
@@ -61,7 +61,6 @@ $small-menu-border-radius: $border-radius;
 
     &_item {
       display: flex;
-      box-sizing: border-box;
       align-items: center;
       width: 100%;
       padding: $small-menu-menu-padding;
