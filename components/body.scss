@@ -1,5 +1,6 @@
 body {
   background-color: #f3f4f6;
+  overflow: scroll;
 }
 
 *::selection {
@@ -11,24 +12,5 @@ body {
   outline-color: var(--hdd-color-blue-light1);
 }
 
-::-webkit-scrollbar {
-  width: 11px;
-}
 
-::-webkit-scrollbar-track {
-  background: var(--hdd-color-grey-light);
-}
-
-::-webkit-scrollbar-thumb {
-  width: 11px;
-  border-radius: 5px;
-  background: var(--hdd-color-grey);
-  border-left: 2px solid var(--hdd-color-grey-light);
-  border-right: 2px solid var(--hdd-color-grey-light);
-}
-
-@mixin show-scroll() {
-  ::-webkit-scrollbar {
-    appearance: none;
-  }
-}
+@include show-custom-scroll();

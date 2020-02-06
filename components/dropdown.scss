@@ -1,49 +1,57 @@
-$dropdown-border: 1px solid var(--hdd-color-blue);
+$dropdown-border-radius: $border-radius;
+$dropdown-border: 1px solid var(--hdd-color-grey);
 $dropdown-margin: 20px;
-$dropdown-item-padding: 10px 12px;
+$dropdown-spacing-element: 4px;
+$dropdown-content-padding: 0.5rem 0;
+$dropdown-item-padding: 0.5rem 0 0.5rem 1rem;
+
 .hdd-dropdown {
   position: relative;
   box-sizing: border-box;
+
   &_content {
-    @include show-scroll();
     @extend .is-aligned-bottom;
+
     display: none;
     position: absolute;
+
     z-index: 90;
-    height: fit-content;
-    max-height: 150px;
-    overflow-y: auto;
-    /*
-    Left and min-width calculation is to correct pixel error where dropdown is 1 px
-    to the left of relative search field;
-    */
-    left: -1px;
-    min-width: calc(100% + 1px);
+    left: 0;
+    min-width: 100%;
+
+    padding: $dropdown-content-padding;
     border: $dropdown-border;
-    border-radius: $border-radius;
+    border-radius: $dropdown-border-radius;
+
     background: var(--hdd-color-white);
+
     // Alignes the dropdown on top of the search field. 
     &.is-aligned-top {
       top: initial;
-      // 18px is the overlap that was between the input field and the dropdown element.
-      bottom: calc(var(--hdd-spacing-2) + 2px);
+      // 18px is the overlap that was between the input field and the elements
+      bottom: 18px + $dropdown-spacing-element;
     }
+
     &.is-aligned-bottom {
-      top:100%;
+      top: calc(100% + #{$dropdown-spacing-element});
+      bottom: 0;
       margin-bottom: $dropdown-margin;
     }
+
     &.is-active {
-      display: block;
+      display: inline-table;
     }
+
     &_item {
       padding: $dropdown-item-padding;
       cursor: pointer;
+
       &:hover:not(.no-hover) {
         @extend .is-active;
       }
+
       &.is-active {
-        background: var(--hdd-color-blue);
-        color: var(--hdd-color-contrast-font-color);
+        background: var(--hdd-color-blue-light4);
       }
     }
   }
