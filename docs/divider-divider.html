@@ -3,13 +3,6 @@
 
 	<head>
 		<style>
-					.hdd-form_toggle:not(:last-child) {
-  margin-bottom: var(--hdd-spacing-1)
-}
-body > div:first-of-type {
-  padding: 20px;
-  background: var(--hdd-color-dynamic-background-primary);
-}
 		</style>
 
 		<style>
@@ -60,37 +53,14 @@ body > div:first-of-type {
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div class="hdd-form_field">
-  <span class="hdd-form_field_title">Toggle Checkbox</span>
-  <label class="hdd-form_toggle">
-    <input type="checkbox">
-    <span class="hdd-form_toggle slider"></span>
-  </label>
-  <label class="hdd-form_toggle">
-    <input type="checkbox" checked>
-    <span class="hdd-form_toggle slider"></span>
-  </label>
-</div>
+    <p style="margin-bottom: var(--hdd-spacing-1);">Some content</p>
+<hr class="hdd-divider">
+<p style="margin-top: var(--hdd-spacing-1);">Other content</p>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="hdd-form_field">
-  <span class="hdd-form_field_title">Toggle Checkbox</span>
-  <label class="hdd-form_toggle">
-    <input type="checkbox">
-    <span class="hdd-form_toggle slider"></span>
-  </label>
-  <label class="hdd-form_toggle">
-    <input type="checkbox" checked>
-    <span class="hdd-form_toggle slider"></span>
-  </label>
-</div></script>
-			<script type="text/x-stylemark" data-language="css">.hdd-form_toggle:not(:last-child) {
-  margin-bottom: var(--hdd-spacing-1)
-}
-body > div:first-of-type {
-  padding: 20px;
-  background: var(--hdd-color-dynamic-background-primary);
-}</script>
+			<script type="text/x-stylemark" data-language="html"><p style="margin-bottom: var(--hdd-spacing-1);">Some content</p>
+<hr class="hdd-divider">
+<p style="margin-top: var(--hdd-spacing-1);">Other content</p></script>
 
 		<!--
 			Vanilla JS
@@ -123,10 +93,10 @@ body > div:first-of-type {
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-checkbox-toggle', []);
+						module = angular.module('stylemark-divider-divider', []);
 					}
 
-					module.controller('stylemark-checkbox-toggle-' + index, function($scope) {
+					module.controller('stylemark-divider-divider-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

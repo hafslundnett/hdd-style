@@ -85,7 +85,7 @@ $form-select-icon-margin: 0.9rem;
     position: absolute;
     transition: color $medium-transition $transition-cubic, opacity $medium-transition $transition-cubic;
     opacity: 0.44;
-    color: var(--hdd-color-dynamic-text-secondary);
+    color: var(--hdd-color-dynamic-font-secondary);
     font-size: font-size(h2);
 
     &:first-child {

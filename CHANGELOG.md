@@ -1,3 +1,32 @@
+# Update [8.0.0]
+In this update the default forms-compoentent have some breaking changes that fixes some styling-bugs.
+
+## Breaking changes
+
+### Removed spacing below last element in form_fields, checkboxs and radiobuttons
+##### What can break! 
+Can affect spacing between `.hdd-form_field` elements and other elements.
+##### How to fix!
+Add your own spacing between elements with the hdd-spacing standards!
+
+* `.hdd-form_field` - standard spacing between elements is the same, but spacing will not be added to the last element. 
+* `.hdd-form_checkbox` - standard spacing between elements is the same, but spacing will not be added to the last element.
+* `.hdd-form_radiobutton` - standard spacing between elements is the same, but spacing will not be added to the last element.
+* With `border-box` as the new universal `box-sizing` all elements will inherit this style. 
+* If style is breaking, either the `box-sizing` attribute can be set to `content-box` or the element itself needs to change.
+
+### Min + max width and height on the checkbox-mark
+##### What can break! 
+Will affect the checkboxes if custom styling has been added to make the checkboxes smaller og bigger.
+##### How to fix!
+Overwrite the min + max width and height in your own component! Check with a designer if the change is needed. 
+
+* `.hdd-form_checkbox_mark` has now min + max width and height set to same height so that the size will never change.
+
+### Bold title for checkboxs, radiobuttons in form_fields
+* `.hdd-form_field_title` has now the attribute `font-weight: bold`.
+
+
 # Update [7.0.0]
 In this update the default `box-sizing` has been set to `border-box` everywhere.
 

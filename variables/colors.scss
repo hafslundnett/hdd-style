@@ -78,7 +78,7 @@ $colors: (
     color: #000,
     contrast: var(--hdd-color-white),
     dark-theme: var(--hdd-color-grey-light1),
-    alt-labels: (text-secondary)
+    alt-labels: (font-secondary)
   ),
   'blue-dark': (
     color: #00446F,
@@ -147,13 +147,19 @@ $colors: (
     color: #EEF0F4,
     contrast: var(--hdd-color-grey-dark3),
     dark-theme: hsla(225, 2%, 44%, 1),
-    alt-labels: (field-disabled, grey-light)
+    alt-labels: (grey-light)
   ),
   'grey-light3': (
     color: #F3F4F6,
     contrast: var(--hdd-color-grey-dark3),
     dark-theme: var(--hdd-color-grey-dark2), 
     alt-labels: (background-primary, grey-background)
+  ),
+  'grey-light4': (
+    color: #F7F7F7,
+    contrast: #444,
+    dark-theme: hsla(225, 2%, 44%, 1),
+    alt-labels: (field-disabled)
   ),
   'signal-green': (
     color: #5A7E2C,
@@ -232,7 +238,7 @@ $gradients: (
 @mixin is-dark-theme() {
 
   // Remove min-width to enable dark-theme
-  @media (min-width: 600000px) and (prefers-color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
     @content;
   }
 }

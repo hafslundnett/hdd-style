@@ -7,14 +7,12 @@ $form-input-border: 1px solid var(--hdd-color-grey);
   $this: &;
 
   display: flex;
-
   align-items: center;
   padding: $form-input-padding;
   transition: border-color $medium-transition $transition-cubic;
   border: $form-input-border;
   border-radius: $form-input-border-radius;
   box-sizing: border-box;
-
   background: var(--hdd-color-dynamic-background-secondary);
 
   &:not(.is-invalid):focus-within {
@@ -22,13 +20,13 @@ $form-input-border: 1px solid var(--hdd-color-grey);
   }
 
   &.is-focus {
-    border-color: var(--hdd-color-dynamic-primary);
+    border-color: var(--hdd-color-dynamic-primary-dark);
 
     #{$this}_icon,
     svg,
     i {
       opacity: 1;
-      color: var(--hdd-color-dynamic-primary);
+      color: var(--hdd-color-dynamic-primary-dark);
     }
   }
 
@@ -73,8 +71,8 @@ $form-input-border: 1px solid var(--hdd-color-grey);
   > i {
     transition: color $medium-transition $transition-cubic, opacity $medium-transition $transition-cubic;
     opacity: 0.44;
-    color: var(--hdd-color-dynamic-text-secondary);
-    font-size: font-size(h2);
+    color: var(--hdd-color-dynamic-font-secondary);
+    font-size: 1rem;
 
     &:first-child {
       margin-right: $form-input-icon-margin;
