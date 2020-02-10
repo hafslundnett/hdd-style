@@ -1,4 +1,4 @@
-$form-radiobutton-mark-size: 18px;
+$form-radiobutton-mark-size: 1.125rem;
 $form-radiobutton-mark-border-radius: 14px;
 $form-radiobutton-mark-border: 1px solid var(--hdd-color-primary);
 
@@ -20,7 +20,7 @@ $form-radiobutton-mark-border: 1px solid var(--hdd-color-primary);
     &:before {
       content: "";
       display: inline-block;
-      padding: 6px;
+      padding: 0.25rem;
       border: 2px solid var(--hdd-color-white);
       border-radius: 14px;
     }
