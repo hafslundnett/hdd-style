@@ -161,23 +161,23 @@ $colors: (
     dark-theme: hsla(225, 2%, 44%, 1),
     alt-labels: (field-disabled)
   ),
-  'signal-green': (
+  'green': (
     color: #5A7E2C,
     contrast: var(--hdd-color-white),
     dark-theme: hsla(86, 53%, 37%, 1),
-    alt-labels: (safe)
+    alt-labels: (safe, signal-green)
   ),
-  'signal-yellow': (
+  'yellow': (
     color: #F9C642,
     contrast: var(--hdd-color-black),
     dark-theme: hsla(43, 100%, 69%, 1), 
-    alt-labels: (warn)
+    alt-labels: (warn, signal-yellow)
   ),
-  'signal-red': (
+  'red': (
     color: #DC3500,
     contrast: var(--hdd-color-white),
     dark-theme: hsla(14, 100%, 56%, 1),
-    alt-labels: (danger)
+    alt-labels: (danger, signal-red)
   )
 );
 
