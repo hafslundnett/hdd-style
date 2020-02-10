@@ -75,6 +75,8 @@ The buttons are all the same size.
 </div>
 ```
 
+## App menu buttons
+`hdd-app-button`
 ```app-menu-button.html
 <div>
   <button class="hdd-app-button">
@@ -102,7 +104,7 @@ The buttons are all the same size.
   </button>
   <button class="hdd-app-button is-dusk">
   S
-  <span class="hdd-app-button_title">SV</span>
+  <span class="hdd-app-button_title">Smartvann</span>
   </button>
 </div>
 ```
