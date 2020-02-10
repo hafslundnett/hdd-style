@@ -1,3 +1,17 @@
+# Update [9.0.0]
+In this update the default scrollbar is customized to look similar on both Windows and Mac. The new scrollbar will now be visible by default on all scrollable elements, having the same behavior on Mac as on Windows.
+
+## Breaking changes
+
+### The new scrollbar size has changed.
+##### What can break! 
+Can affect the look of all elements with scroll. 
+##### How to fix!
+Should not require any fix.
+
+* The scrollbar has become a bit thinner than the old one on Windows and a bit wider than the old one on Mac. 
+
+
 # Update [8.0.0]
 In this update the default forms-compoentent have some breaking changes that fixes some styling-bugs.
 
