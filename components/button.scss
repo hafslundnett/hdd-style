@@ -158,6 +158,15 @@ $button-font-size: 1rem;
       @extend %transparent-properties;
       @extend %secondary-disabled;
     }
+
+    &.is-delete {
+      &:not([disabled]) {
+        background: var(--hdd-color-signal-red);
+        &:active {
+          background: var(--hdd-color-red-dark1);
+        }
+      }
+    }
   }
 
   // When button is loading
@@ -224,6 +233,21 @@ $button-font-size: 1rem;
       @extend %transparent-properties;
 
       height: $icon-button-height; 
+    }
+
+    &.is-delete {
+      &:not([disabled]) {
+        border: $button-border-width solid var(--hdd-color-signal-red);
+        color: var(--hdd-color-signal-red);
+        &:active {
+          background: var(--hdd-color-red-dark1);
+          color: var(--hdd-color-white);
+        }
+        &:hover {
+          box-shadow: var(--hdd-shadow-medium);
+          border: $button-border-width + $extra-border-hover solid var(--hdd-color-signal-red); 
+        }
+      }
     }
 
     &.is-no-padding {

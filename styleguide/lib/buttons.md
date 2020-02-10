@@ -39,12 +39,17 @@ The secondary button should never be used alone on a page.
 ## Buttons with icon
 `hdd-button`
 
-The buttons are all the same size.
+The buttons are all the same size. 
+###### NB! The delete buttons should only be used for deleting/removing purposes.
 
 ```with-icon-button.html
 <div>
   <button class="hdd-button has-icon"><i class="fal fa-cog"></i>Icon button</button>
   <button class="hdd-button has-icon" disabled><i class="fal fa-cog"></i>Icon button</button>
+</div>
+<div style="margin-top:8px;">
+  <button class="hdd-button has-icon is-delete"><i class="fal fa-trash-alt"></i>Slett button</button>
+  <button class="hdd-button has-icon is-delete" disabled><i class="fal fa-trash-alt"></i>Slett button</button>
 </div>
 <div style="margin-top:8px;">
   <button class="hdd-button has-icon is-secondary"><i class="fal fa-cog"></i>Icon button</button>
@@ -59,11 +64,16 @@ The buttons are all the same size.
 ## Icon only buttons
 `hdd-button-icon`
 
+###### NB! The delete buttons should only be used for deleting/removing purposes.
 
 ```icon-button.html
 <div>
   <button class="hdd-button-icon"><i class="fal fa-plus-circle"></i></button>
   <button class="hdd-button-icon" disabled><i class="fal fa-plus-circle"></i></button>
+</div>
+<div style="margin-top:8px;">
+  <button class="hdd-button-icon is-delete"><i class="fal fa-trash-alt"></i></button>
+  <button class="hdd-button-icon is-delete" disabled><i class="fal fa-trash-alt"></i></button>
 </div>
 <div style="margin-top:8px;">
   <button class="hdd-button-icon is-transparent"><i class="fal fa-cog"></i></button>
