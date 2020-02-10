@@ -1,6 +1,5 @@
 body {
   background-color: #f3f4f6;
-  overflow: scroll;
 }
 
 *::selection {
@@ -12,4 +11,4 @@ body {
   outline-color: var(--hdd-color-blue-light1);
 }
 
-@include show-custom-scroll();
+@include custom-scroll();

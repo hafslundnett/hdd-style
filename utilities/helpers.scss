@@ -1,3 +1,5 @@
+$scroll-bar-width: 11px;
+
 @mixin linear-gradient($angle, $gradient1, $gradient2) {
   background-color: $gradient2;
   /* Fallback Color */
@@ -91,9 +93,9 @@
   color: $color;
 }
 
-@mixin show-custom-scroll() {
+@mixin custom-scroll() {
   ::-webkit-scrollbar {
-    width: 11px;
+    width: $scroll-bar-width;
   }
   
   ::-webkit-scrollbar-track {
@@ -101,7 +103,7 @@
   }
   
   ::-webkit-scrollbar-thumb {
-    width: 11px;
+    width: $scroll-bar-width;
     border-radius: 5px;
     background: var(--hdd-color-grey);
     border-left: 2px solid var(--hdd-color-grey-light);
