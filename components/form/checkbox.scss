@@ -20,12 +20,13 @@ $form-checkbox-mark-border: 1px solid var(--hdd-color-primary);
     background-color: var(--hdd-color-primary);
     &::before {
       @extend .fal, .fa-check, :before;
-
+      
+      top: -1px;
       left: 50%;
       transform: translateX(-50%);
 
       color: var(--hdd-color-white);
-      font-size: 0.85rem;
+      font-size: 0.75rem;
     }
   }
 
