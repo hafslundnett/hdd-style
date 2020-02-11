@@ -1,17 +1,3 @@
-# Update [9.0.0]
-In this update the size of `.hdd-form_checkbox`, `.hdd-form_checkbox-toggle` and `.hdd-form_radiobutton` has increased from 16px to 18px.
-
-## Breaking changes
-
-### Removed spacing below last element in form_fields, checkboxs and radiobuttons
-##### What can break! 
-Can affect the proportions in comparison to other elements.
-
-* `hdd-form_checkbox` - size of element has changed from 16px to 18px. 
-* `.hdd-form_checkbox-toggle` - size of element has changed from 38px X 18px to 40px X 20px. 
-* `.hdd-form_radiobutton` - size of element has changed from 16px to 18px. 
-
-
 # Update [8.0.0]
 In this update the default forms-compoentent have some breaking changes that fixes some styling-bugs.
 
