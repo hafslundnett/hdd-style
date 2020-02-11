@@ -1,6 +1,6 @@
 $dropdown-border: 1px solid var(--hdd-color-blue);
 $dropdown-margin: 20px;
-$dropdown-item-padding: 10px 12px;
+$dropdown-item-padding: 0.625rem 0.75rem;
 
 .hdd-dropdown {
   position: relative;
@@ -12,7 +12,6 @@ $dropdown-item-padding: 10px 12px;
     position: absolute;
     z-index: 90;
     min-width: 100%;
-    height: fit-content;
     max-height: 150px;
     overflow-y: auto;
     // TODO: removes white line from top of dropdown, find better solution. 
