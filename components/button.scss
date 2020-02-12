@@ -159,7 +159,7 @@ $button-font-size: 1rem;
       @extend %secondary-disabled;
     }
 
-    &.is-delete {
+    &.is-danger {
       &:not([disabled]) {
         background: var(--hdd-color-signal-red);
         &:active {
@@ -235,7 +235,7 @@ $button-font-size: 1rem;
       height: $icon-button-height; 
     }
 
-    &.is-delete {
+    &.is-danger {
       &:not([disabled]) {
         border: $button-border-width solid var(--hdd-color-signal-red);
         color: var(--hdd-color-signal-red);
