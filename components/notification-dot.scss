@@ -1,12 +1,10 @@
-$notification-dot-size: 0.375rem;
+$notification-dot-size: 0.625rem;
 $notification-dot-border: 2px solid var(--hdd-color-white);
 
 .hdd-notification-dot {
   position: absolute;
   top: calc(#{$notification-dot-size}/ -2);
   right: calc(#{$notification-dot-size}/ -2);
-
-  box-sizing: content-box;
 
   width: $notification-dot-size;
   height: $notification-dot-size;
