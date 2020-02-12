@@ -40,7 +40,7 @@ The secondary button should never be used alone on a page.
 `hdd-button`
 
 The buttons are all the same size. 
-###### NB! The delete buttons should only be used for deleting/removing purposes.
+###### NB! The danger buttons should only be used for deleting/removing purposes.
 
 ```with-icon-button.html
 <div>
@@ -64,7 +64,7 @@ The buttons are all the same size.
 ## Icon only buttons
 `hdd-button-icon`
 
-###### NB! The delete buttons should only be used for deleting/removing purposes.
+###### NB! The danger buttons should only be used for deleting/removing purposes.
 
 ```icon-button.html
 <div>
