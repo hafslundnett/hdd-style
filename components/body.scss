@@ -10,3 +10,5 @@ body {
 *:focus {
   outline-color: var(--hdd-color-blue-light1);
 }
+
+@include custom-scroll();
