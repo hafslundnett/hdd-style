@@ -61,7 +61,7 @@ Only use `is-aligned-top` when there are enough room from the top and not enough
     <div class="hdd-dropdown_content_item is-active"><b>Jer</b>oen</div>
     <div class="hdd-dropdown_content_item">Stian</div>
     <div class="hdd-dropdown_content_item">Rune</div>
-    <div class="hdd-dropdown_content_item no-hover">Erik</div>
+    <div class="hdd-dropdown_content_item">Erik</div>
   </div>
 </div>
 ```

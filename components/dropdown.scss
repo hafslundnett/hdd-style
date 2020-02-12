@@ -14,8 +14,6 @@ $dropdown-item-padding: 0.625rem 0.75rem;
     min-width: 100%;
     max-height: 150px;
     overflow-y: auto;
-    // TODO: removes white line from top of dropdown, find better solution. 
-    margin-top: 1px;
 
     /*
     Left and min-width calculation is to correct pixel error where dropdown is 1 px
@@ -32,7 +30,7 @@ $dropdown-item-padding: 0.625rem 0.75rem;
       top: initial;
       // 18px is the overlap that was between the input field and the dropdown element. 
       // + 1 px from margin-top on content element.
-      bottom: calc(var(--hdd-spacing-2) + 1px);
+      bottom: calc(var(--hdd-spacing-2) + 2px);
     }
 
     &.is-aligned-bottom {
