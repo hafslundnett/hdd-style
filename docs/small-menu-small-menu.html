@@ -6,6 +6,15 @@
 					div {
   width: 20px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+} 
+body > div:first-of-type {
+  padding: 20px;
+  height: 230px;
+  min-width: 100%;
+  background: var(--hdd-color-dynamic-background-primary);
 }
 		</style>
 
@@ -80,6 +89,15 @@
 			<script type="text/x-stylemark" data-language="css">div {
   width: 20px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+} 
+body > div:first-of-type {
+  padding: 20px;
+  height: 230px;
+  min-width: 100%;
+  background: var(--hdd-color-dynamic-background-primary);
 }</script>
 			<script type="text/x-stylemark" data-language="js">const menu = document.querySelector(".hdd-small-menu")
 menu.addEventListener('click', function(e) {

@@ -3,8 +3,27 @@
 
 	<head>
 		<style>
-					.example-margin {
-  margin: 10px 0;
+					.color-example {
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  border-radius: 100%; 
+  margin: 14px; 
+  box-shadow: var(--hdd-shadow-strong); 
+}
+.color-text-first {
+  display: inline-block; 
+  height: 50px; 
+  width: 100px; 
+  margin: 15.7px; 
+  text-align: center;
+}
+.color-text {
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  margin: 15.7px; 
+  text-align: center;
 }
 body > div:first-of-type {
   padding: 20px;
@@ -60,28 +79,77 @@ body > div:first-of-type {
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div class="example-margin">
-  <i class="fal fa-cog"><span class="hdd-notification-dot"></span></i>
+    <div>
+  <span style="background: var(--hdd-color-black)" class="color-example"></span>
+  <span style="background: var(--hdd-color-dynamic-black)" class="color-example"></span>
 </div>
-<div class="example-margin">
-  <i class="fal fa-user"><span class="hdd-notification-dot"></span></i>
+<div>
+  <span style="background: var(--hdd-color-white)" class="color-example"></span>
+  <span style="background: var(--hdd-color-dynamic-white)" class="color-example"></span>
 </div>
-<div class="example-margin">
-  <i class="fal fa-bars"><span class="hdd-notification-dot"></span></i>
+<div>
+  <span style="background: var(--hdd-color-blue)" class="color-example"></span>
+  <span style="background: var(--hdd-color-dynamic-blue)" class="color-example"></span>
+</div>
+<div>
+  <span style="background: var(--hdd-color-signal-green)" class="color-example"></span>
+  <span style="background: var(--hdd-color-dynamic-signal-green)" class="color-example"></span>
+</div>
+<div>
+  <span style="background: var(--hdd-color-signal-yellow)" class="color-example"></span>
+  <span style="background: var(--hdd-color-dynamic-signal-yellow)" class="color-example"></span>
+</div>
+<div>
+  <span style="background: var(--hdd-color-signal-red)" class="color-example"></span>
+  <span style="background: var(--hdd-color-dynamic-signal-red)" class="color-example"></span>
 </div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="example-margin">
-  <i class="fal fa-cog"><span class="hdd-notification-dot"></span></i>
+			<script type="text/x-stylemark" data-language="html"><div>
+  <span style="background: var(--hdd-color-black)" class="color-example"></span>
+  <span style="background: var(--hdd-color-dynamic-black)" class="color-example"></span>
 </div>
-<div class="example-margin">
-  <i class="fal fa-user"><span class="hdd-notification-dot"></span></i>
+<div>
+  <span style="background: var(--hdd-color-white)" class="color-example"></span>
+  <span style="background: var(--hdd-color-dynamic-white)" class="color-example"></span>
 </div>
-<div class="example-margin">
-  <i class="fal fa-bars"><span class="hdd-notification-dot"></span></i>
+<div>
+  <span style="background: var(--hdd-color-blue)" class="color-example"></span>
+  <span style="background: var(--hdd-color-dynamic-blue)" class="color-example"></span>
+</div>
+<div>
+  <span style="background: var(--hdd-color-signal-green)" class="color-example"></span>
+  <span style="background: var(--hdd-color-dynamic-signal-green)" class="color-example"></span>
+</div>
+<div>
+  <span style="background: var(--hdd-color-signal-yellow)" class="color-example"></span>
+  <span style="background: var(--hdd-color-dynamic-signal-yellow)" class="color-example"></span>
+</div>
+<div>
+  <span style="background: var(--hdd-color-signal-red)" class="color-example"></span>
+  <span style="background: var(--hdd-color-dynamic-signal-red)" class="color-example"></span>
 </div></script>
-			<script type="text/x-stylemark" data-language="css">.example-margin {
-  margin: 10px 0;
+			<script type="text/x-stylemark" data-language="css">.color-example {
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  border-radius: 100%; 
+  margin: 14px; 
+  box-shadow: var(--hdd-shadow-strong); 
+}
+.color-text-first {
+  display: inline-block; 
+  height: 50px; 
+  width: 100px; 
+  margin: 15.7px; 
+  text-align: center;
+}
+.color-text {
+  display: inline-block; 
+  height: 50px; 
+  width: 50px; 
+  margin: 15.7px; 
+  text-align: center;
 }
 body > div:first-of-type {
   padding: 20px;
@@ -119,10 +187,10 @@ body > div:first-of-type {
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-notification-dot-notification', []);
+						module = angular.module('stylemark-dark-theme-dark-theme-colors', []);
 					}
 
-					module.controller('stylemark-notification-dot-notification-' + index, function($scope) {
+					module.controller('stylemark-dark-theme-dark-theme-colors-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

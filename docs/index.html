@@ -54,6 +54,7 @@
 							<optgroup label="Colors">
 									<option value="colors">Colors</option>
 									<option value="colors-preview">Colors preview</option>
+									<option value="dark-theme">Dark Theme</option>
 									<option value="shadows">Shadows</option>
 							</optgroup>
 							<optgroup label="Utilities">
@@ -208,6 +209,10 @@
 }
 .hdd-grid {
   margin-bottom: var(--hdd-spacing-3);
+}
+body &gt; div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
 }">Copy</button>
 		<pre class="mb-0"><code class="lang-">.grid-item-1 {
   grid-column: 1 / 3;
@@ -229,6 +234,10 @@
 }
 .hdd-grid {
   margin-bottom: var(--hdd-spacing-3);
+}
+body &gt; div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
 }</code></pre>
 	</div>
 </div></div>
@@ -963,33 +972,33 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="  &lt;div class=&quot;feedback-container&quot;&gt;
-    &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
-    &lt;p class=&quot;feedback-container_message&quot;&gt;
-      This is just for info! Usage of icons should be kept to an absolute minimum. Long messages are also supported, the text will wrap to a new line. However, long feedbacks are not recommended.
-    &lt;/p&gt;
-    &lt;button class=&quot;feedback-container_close-button&quot;&gt;
-      &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;feedback-container is-success&quot;&gt;
-    &lt;p class=&quot;feedback-container_message&quot;&gt;
-      Something was a success!
-    &lt;/p&gt;
-    &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;feedback-container&quot;&gt;
+  &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    This is just for info! Usage of icons should be kept to an absolute minimum. Long messages are also supported, the text will wrap to a new line. However, long feedbacks are not recommended.
+  &lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
     &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;feedback-container is-warn&quot;&gt;
-    &lt;p class=&quot;feedback-container_message&quot;&gt;
-      There is something you might want to check out.
-    &lt;/p&gt;
-    &lt;button class=&quot;feedback-container_close-button&quot;&gt;
-      &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;div class=&quot;feedback-container is-success&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    Something was a success!
+  &lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+  &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-warn&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    There is something you might want to check out.
+  &lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+    &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
 
 &lt;div class=&quot;feedback-container is-error&quot;&gt;
   &lt;p class=&quot;feedback-container_message&quot;&gt;
@@ -999,33 +1008,33 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
     &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
   &lt;/button&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">  &lt;div class=&quot;feedback-container&quot;&gt;
-    &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
-    &lt;p class=&quot;feedback-container_message&quot;&gt;
-      This is just for info! Usage of icons should be kept to an absolute minimum. Long messages are also supported, the text will wrap to a new line. However, long feedbacks are not recommended.
-    &lt;/p&gt;
-    &lt;button class=&quot;feedback-container_close-button&quot;&gt;
-      &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;feedback-container is-success&quot;&gt;
-    &lt;p class=&quot;feedback-container_message&quot;&gt;
-      Something was a success!
-    &lt;/p&gt;
-    &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;feedback-container&quot;&gt;
+  &lt;i class=&quot;fal fa-info-circle feedback-container_icon&quot;&gt;&lt;/i&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    This is just for info! Usage of icons should be kept to an absolute minimum. Long messages are also supported, the text will wrap to a new line. However, long feedbacks are not recommended.
+  &lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
     &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
 
-  &lt;div class=&quot;feedback-container is-warn&quot;&gt;
-    &lt;p class=&quot;feedback-container_message&quot;&gt;
-      There is something you might want to check out.
-    &lt;/p&gt;
-    &lt;button class=&quot;feedback-container_close-button&quot;&gt;
-      &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+&lt;div class=&quot;feedback-container is-success&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    Something was a success!
+  &lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+  &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;feedback-container is-warn&quot;&gt;
+  &lt;p class=&quot;feedback-container_message&quot;&gt;
+    There is something you might want to check out.
+  &lt;/p&gt;
+  &lt;button class=&quot;feedback-container_close-button&quot;&gt;
+    &lt;i class=&quot;fal fa-times-circle&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
 
 &lt;div class=&quot;feedback-container is-error&quot;&gt;
   &lt;p class=&quot;feedback-container_message&quot;&gt;
@@ -1154,8 +1163,7 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="
-&lt;header class=&quot;hdd-header&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;header class=&quot;hdd-header&quot;&gt;
   &lt;a class=&quot;hdd-header_logo&quot; href=&quot;#&quot;&gt;
     &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
   &lt;/a&gt;
@@ -1170,8 +1178,7 @@ Badges contain numeric values and indicate a number. Multiple colors can be used
     &lt;button class=&quot;hdd-button has-icon is-transparent&quot;&gt;&lt;i class=&quot;fal fa-sign-out&quot;&gt;&lt;/i&gt;Sign out&lt;/button&gt;
   &lt;/div&gt;
 &lt;/header&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">
-&lt;header class=&quot;hdd-header&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;header class=&quot;hdd-header&quot;&gt;
   &lt;a class=&quot;hdd-header_logo&quot; href=&quot;#&quot;&gt;
     &lt;img src=&quot;styleguide/lib/logo.svg&quot; alt=&quot;Hafslund logo&quot;&gt;
   &lt;/a&gt;
@@ -1707,10 +1714,20 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".example-container-to-force-scroll {
   height: 200px; 
   overflow: auto;
+  background: var(--hdd-color-dynamic-background-primary);
+}
+body &gt; div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
 }">Copy</button>
 		<pre class="mb-0"><code class="lang-">.example-container-to-force-scroll {
   height: 200px; 
   overflow: auto;
+  background: var(--hdd-color-dynamic-background-primary);
+}
+body &gt; div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
 }</code></pre>
 	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-table</code>:</strong></p>
@@ -1853,101 +1870,79 @@ menu.addEventListener(&#39;click&#39;, function(e) {
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="
-&lt;div class=&quot;example-container&quot;&gt;
-
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-container&quot;&gt;
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover Right
     &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip &lt;/span&gt;
   &lt;/span&gt;
-
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover Left
     &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left tooltip&lt;/span&gt;
   &lt;/span&gt;
-
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover bottom
     &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom tooltip&lt;/span&gt;
   &lt;/span&gt;
-
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover on top
     &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Top tooltip&lt;/span&gt;
   &lt;/span&gt;
-
 &lt;/div&gt;
 
 &lt;div class=&quot;example-container&quot;&gt;
-
   &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
     Hover Right
     &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip&lt;/span&gt;
   &lt;/span&gt;
-
   &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
     Hover Left
     &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left tooltip&lt;/span&gt;
   &lt;/span&gt;
-
   &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
     Hover bottom
     &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom tooltip&lt;/span&gt;
   &lt;/span&gt;
-
   &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
     Hover on top
     &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Top tooltip&lt;/span&gt;
   &lt;/span&gt;
-
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">
-&lt;div class=&quot;example-container&quot;&gt;
-
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-container&quot;&gt;
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover Right
     &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip &lt;/span&gt;
   &lt;/span&gt;
-
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover Left
     &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left tooltip&lt;/span&gt;
   &lt;/span&gt;
-
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover bottom
     &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom tooltip&lt;/span&gt;
   &lt;/span&gt;
-
   &lt;span class=&quot;hdd-tooltip&quot;&gt;
     Hover on top
     &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Top tooltip&lt;/span&gt;
   &lt;/span&gt;
-
 &lt;/div&gt;
 
 &lt;div class=&quot;example-container&quot;&gt;
-
   &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
     Hover Right
     &lt;span class=&quot;hdd-tooltip_content is-right&quot;&gt;Right tooltip&lt;/span&gt;
   &lt;/span&gt;
-
   &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
     Hover Left
     &lt;span class=&quot;hdd-tooltip_content is-left&quot;&gt;Left tooltip&lt;/span&gt;
   &lt;/span&gt;
-
   &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
     Hover bottom
     &lt;span class=&quot;hdd-tooltip_content is-bottom&quot;&gt;Bottom tooltip&lt;/span&gt;
   &lt;/span&gt;
-
   &lt;span class=&quot;hdd-tooltip is-light&quot;&gt;
     Hover on top
     &lt;span class=&quot;hdd-tooltip_content is-top&quot;&gt;Top tooltip&lt;/span&gt;
   &lt;/span&gt;
-
 &lt;/div&gt;</code></pre>
 	</div>
 </div><div id="mutations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#mutations" class="icon-link i-section__link -heading"></a>Mutations</h2></div><p><strong><code>hdd-tooltip</code>:</strong></p>
@@ -2904,8 +2899,7 @@ An textarea should not be used if there no need for a longer text.</p>
     &lt;input placeholder=&quot;Placeholder text&quot; value=&quot;Kari Nordmann&quot; /&gt;
     &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-">Copy</button>
+&lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">
 &lt;div class=&quot;hdd-form_field&quot;&gt;
   &lt;label class=&quot;hdd-form_field_label&quot; for=&quot;title&quot;&gt;Normal search field&lt;/label&gt;
@@ -2923,8 +2917,7 @@ An textarea should not be used if there no need for a longer text.</p>
     &lt;input placeholder=&quot;Placeholder text&quot; value=&quot;Kari Nordmann&quot; /&gt;
     &lt;i class=&quot;fal fa-times&quot; aria-label=&quot;Clear text&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+&lt;/div&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -3215,13 +3208,13 @@ An textarea should not be used if there no need for a longer text.</p>
 <h3>Grayscale</h3><p>The grayscale should be used in addition to the primary colors of non-printable items. The darkest gray is text color and should be used on all titles, paragraphs, and content. If text appears on a dark surface, contrast requirements must be maintained and white text must be used (#FFFFFF).</p>
 <ul>
 <li><code>--hdd-color-black</code> <code>--hdd-color-contrast-black</code></li>
-<li><code>--hdd-color-font-color</code> <code>--hdd-color-contrast-font-color</code></li>
-<li><code>--hdd-color-grey-dark</code> <code>--hdd-color-contrast-grey-dark</code></li>
-<li><code>--hdd-color-grey-medium</code> <code>--hdd-color-contrast-grey-medium</code></li>
+<li><code>--hdd-color-grey-dark3</code> <code>--hdd-color-contrast-grey-dark3</code></li>
+<li><code>--hdd-color-grey-dark2</code> <code>--hdd-color-contrast-grey-dark2</code></li>
+<li><code>--hdd-color-grey-dark1</code> <code>--hdd-color-contrast-grey-dark1</code></li>
 <li><code>--hdd-color-grey</code> <code>--hdd-color-contrast-grey</code></li>
-<li><code>--hdd-color-grey-border</code> <code>--hdd-color-contrast-grey-border</code></li>
-<li><code>--hdd-color-grey-light</code> <code>--hdd-color-contrast-grey-light</code> </li>
-<li><code>--hdd-color-grey-background</code> <code>--hdd-color-contrast-grey-background</code> </li>
+<li><code>--hdd-color-grey-light1</code> <code>--hdd-color-contrast-grey-light1</code></li>
+<li><code>--hdd-color-grey-light2</code> <code>--hdd-color-contrast-grey-light2</code> </li>
+<li><code>--hdd-color-grey-light3</code> <code>--hdd-color-contrast-grey-light3</code> </li>
 <li><code>--hdd-color-white</code> <code>--hdd-color-contrast-white</code> </li>
 </ul>
 <div class="i-example">
@@ -3255,90 +3248,90 @@ An textarea should not be used if there no need for a longer text.</p>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-container&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-font-color)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-grey-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-grey-medium)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-dark3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-dark2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-dark1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-grey)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-grey-border)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-grey-light)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-grey-background)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-light1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-light2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-light3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class=&quot;example-container-2&quot;&gt;
   &lt;span class=&quot;color-text&quot;&gt;black&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;font-color&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;grey-dark&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;grey-medium&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-dark3&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-dark2&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-dark1&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;grey&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;grey-border&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;grey-light&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;grey-background&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-light1&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-light2&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-light3&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;white&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class=&quot;example-container-3&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-contrast-font-color)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-medium)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-dark3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-dark2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-dark1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-grey)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-border)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-light)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-background)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-light1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-light2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-light3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class=&quot;example-container-4&quot;&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-black&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;contrast-font-color&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-dark&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-medium&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-font-dark3&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-dark2&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-dark1&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-grey&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-border&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-light&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-background&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-light1&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-light2&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-light3&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-white&lt;/span&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-container&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-font-color)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-grey-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-grey-medium)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-dark3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-dark2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-dark1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-grey)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-grey-border)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-grey-light)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-grey-background)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-light1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-light2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-grey-light3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class=&quot;example-container-2&quot;&gt;
   &lt;span class=&quot;color-text&quot;&gt;black&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;font-color&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;grey-dark&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;grey-medium&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-dark3&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-dark2&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-dark1&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;grey&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;grey-border&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;grey-light&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;grey-background&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-light1&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-light2&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;grey-light3&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;white&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class=&quot;example-container-3&quot;&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-contrast-font-color)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-dark)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-medium)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-dark3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-dark2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-dark1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-grey)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-border)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-light)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
-  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-background)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-light1)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-light2)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-contrast-grey-light3)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
   &lt;span style=&quot;background: var(--hdd-color-contrast-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 &lt;div class=&quot;example-container-4&quot;&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-black&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;contrast-font-color&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-dark&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-medium&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-font-dark3&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-dark2&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-dark1&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-grey&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-border&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-light&lt;/span&gt;
-  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-background&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-light1&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-light2&lt;/span&gt;
+  &lt;span class=&quot;color-text&quot;&gt;contrast-grey-light3&lt;/span&gt;
   &lt;span class=&quot;color-text&quot;&gt;contrast-white&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 	</div>
@@ -3542,6 +3535,121 @@ An textarea should not be used if there no need for a longer text.</p>
 </div></div>
 </div>
 
+						<div id="dark-theme" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Dark Theme</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">dark-theme.md</span>
+	</span>
+	<div class="theme-content-element-description"><h5>⚠️ Experimental, not available outside hdd yet!</h5><p>The dark-theme colors are right now in experimental mode, meaning there will be changes to these colors. </p>
+<p>Every color can be used directly by using the css-variable for a color: <code>var(--hdd-color-dynamic-$name)</code>. For example for primary: <code>color: var(--hdd-color-dynamic-primary)</code>.</p>
+<div id="using-the-dark-mode-css-variables" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#using-the-dark-mode-css-variables" class="icon-link i-section__link -heading"></a>Using the dark-mode CSS-variables</h2></div><p>By using the &#39;dynamic&#39;-colors the color will switch between a dark-mode color and a light-mode color depending on the theme chosen on your computer. If you don´t want to use dark-mode use the regular colors, without the &#39;dynamic&#39;-name. The css-variables can be accessed anywhere when importing hdd into your application. The dark-pallet does noe support contrast-colors yet. A color can be selected by it&#39;s color name or label.</p>
+<ul>
+<li><code>var(--hdd-color-dynamic-$name)</code></li>
+</ul>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> scss</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".hdd-element {
+  background: var(--hdd-color-primary); // using the primary color, blue
+  color: var(--hdd-color-contrast-primary); // using the contrast color of primary 
+}">Copy</button>
+		<pre class="mb-0"><code class="lang-">.hdd-element {
+  background: var(--hdd-color-primary); // using the primary color, blue
+  color: var(--hdd-color-contrast-primary); // using the contrast color of primary 
+}</code></pre>
+	</div>
+</div><div id="light-vs-dark-colors" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#light-vs-dark-colors" class="icon-link i-section__link -heading"></a>Light vs Dark Colors</h2></div><p>Almost every dark-mode-color has changes to some extent. The light colors have become dark and vice versa, while most of the distinct colors, like the signal-colors, have become clearer to contrast the other colors.</p>
+<ul>
+<li><code>--hdd-color-black</code> -&gt; <code>--hdd-color-dynamic-black</code></li>
+<li><code>--hdd-color-white</code> -&gt; <code>--hdd-color-dynamic-white</code></li>
+<li><code>--hdd-color-blue</code> -&gt; <code>--hdd-color-dynamic-blue</code></li>
+<li><code>--hdd-color-signal-green</code> -&gt; <code>--hdd-color-dynamic-signal-green</code></li>
+<li><code>--hdd-color-signal-yellow</code> -&gt; <code>--hdd-color-dynamic-signal-yellow</code></li>
+<li><code>--hdd-color-signal-red</code> -&gt; <code>--hdd-color-dynamic-signal-red</code></li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="dark-theme-dark-theme-colors.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="dark-theme-dark-theme-colors.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-black)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-white)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-blue)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-signal-green)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-signal-yellow)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;span style=&quot;background: var(--hdd-color-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+  &lt;span style=&quot;background: var(--hdd-color-dynamic-signal-red)&quot; class=&quot;color-example&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="shadows" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Shadows</h1>
 	<span class="theme-content-element-source">
@@ -3605,16 +3713,12 @@ An textarea should not be used if there no need for a longer text.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;example-container&quot;&gt;
-  &lt;span class=&quot;hdd-shadow-light color-example&quot;&gt;&lt;/span&gt;
-  &lt;span class=&quot;hdd-shadow-medium color-example&quot;&gt;&lt;/span&gt;
-  &lt;span class=&quot;hdd-shadow-strong color-example&quot;&gt;&lt;/span&gt;
-&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;example-container&quot;&gt;
-  &lt;span class=&quot;hdd-shadow-light color-example&quot;&gt;&lt;/span&gt;
-  &lt;span class=&quot;hdd-shadow-medium color-example&quot;&gt;&lt;/span&gt;
-  &lt;span class=&quot;hdd-shadow-strong color-example&quot;&gt;&lt;/span&gt;
-&lt;/div&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;hdd-shadow-light color-example&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;hdd-shadow-medium color-example&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;hdd-shadow-strong color-example&quot;&gt;&lt;/span&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;hdd-shadow-light color-example&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;hdd-shadow-medium color-example&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;hdd-shadow-strong color-example&quot;&gt;&lt;/span&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -3737,14 +3841,12 @@ In the internal design system SVG files from Streamline light must be used.
 &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt; Info Icon&lt;/button&gt;
 &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-user&quot;&gt;&lt;/i&gt; User Icon&lt;/button&gt;
 &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-bars&quot;&gt;&lt;/i&gt; Menubar Icon&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt; Search Icon&lt;/button&gt;
-">Copy</button>
+&lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt; Search Icon&lt;/button&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;!--Here some icons are illustrated with the &quot;Action button&quot;, if there is no need for text, use the &quot;Icon button&quot;.--&gt;
 &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-info-circle&quot;&gt;&lt;/i&gt; Info Icon&lt;/button&gt;
 &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-user&quot;&gt;&lt;/i&gt; User Icon&lt;/button&gt;
 &lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-bars&quot;&gt;&lt;/i&gt; Menubar Icon&lt;/button&gt;
-&lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt; Search Icon&lt;/button&gt;
-</code></pre>
+&lt;button class=&quot;hdd-button has-icon-left&quot;&gt;&lt;i class=&quot;fal fa-search&quot;&gt;&lt;/i&gt; Search Icon&lt;/button&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -3891,7 +3993,7 @@ In the internal design system SVG files from Streamline light must be used.
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;!--NB! Style tags are only applied here to illustrate the use of spacing variables. --&gt;
-&lt;div style=&quot;padding: var(--hdd-spacing-3); background: var(--hdd-color-white); border-radius: 5px;&quot;&gt;
+&lt;div style=&quot;padding: var(--hdd-spacing-3); background: var(--hdd-color-dynamic-background-secondary); border-radius: 5px;&quot;&gt;
     &lt;h1 style=&quot;margin-bottom: var(--hdd-spacing-3);&quot;&gt;
         Gjennomfør handling for ticket #8
     &lt;/h1&gt;
@@ -3914,7 +4016,7 @@ In the internal design system SVG files from Streamline light must be used.
     &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;!--NB! Style tags are only applied here to illustrate the use of spacing variables. --&gt;
-&lt;div style=&quot;padding: var(--hdd-spacing-3); background: var(--hdd-color-white); border-radius: 5px;&quot;&gt;
+&lt;div style=&quot;padding: var(--hdd-spacing-3); background: var(--hdd-color-dynamic-background-secondary); border-radius: 5px;&quot;&gt;
     &lt;h1 style=&quot;margin-bottom: var(--hdd-spacing-3);&quot;&gt;
         Gjennomfør handling for ticket #8
     &lt;/h1&gt;
@@ -3936,6 +4038,19 @@ In the internal design system SVG files from Streamline light must be used.
         &lt;button class=&quot;hdd-button&quot;&gt;Gjennomfør handling&lt;/button&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+	</div>
+</div>
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> css</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="body &gt; div:first-of-type {
+    padding: 20px;
+    background: var(--hdd-color-dynamic-background-primary);
+}">Copy</button>
+		<pre class="mb-0"><code class="lang-">body &gt; div:first-of-type {
+    padding: 20px;
+    background: var(--hdd-color-dynamic-background-primary);
+}</code></pre>
 	</div>
 </div></div>
 </div>
@@ -4251,7 +4366,7 @@ In the internal design system SVG files from Streamline light must be used.
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Colors  Colors preview  Shadows "
+							data-filter-value=" Colors  Colors preview  Dark Theme  Shadows "
 						>
 							<a href="#category-colors" class="i-sidebar-list-item">
 								<b>Colors</b>
@@ -4272,6 +4387,13 @@ In the internal design system SVG files from Streamline light must be used.
 									data-filter-value="Colors preview"
 								>
 									<span>Colors preview</span>
+								</a>
+								<a
+									href="#dark-theme"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Dark Theme"
+								>
+									<span>Dark Theme</span>
 								</a>
 								<a
 									href="#shadows"

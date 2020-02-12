@@ -24,4 +24,8 @@ The `hdd-notification-dot` class adds a small red dot with a white border to the
 .example-margin {
   margin: 10px 0;
 }
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
+}
 ```

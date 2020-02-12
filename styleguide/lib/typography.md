@@ -28,3 +28,10 @@ Roboto is default font for all text. These tags are automatically styled: h1, h2
 <p>abcdefghijklmnopqrstuvwxyzæøå</p>
 <p>0123456789</p>
 ```
+
+```roboto.css hidden
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
+}
+```

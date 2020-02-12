@@ -129,6 +129,17 @@ A table can consist out of data, buttons and icons. A table row can also have a 
 .example-container-to-force-scroll {
   height: 200px; 
   overflow: auto;
+  background: var(--hdd-color-dynamic-background-primary);
+}
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
+}
+```
+```table.css hidden
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 

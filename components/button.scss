@@ -18,12 +18,12 @@ $button-font-size: 1rem;
 %transparent-properties {
   border: none;
   background: transparent;
-  color: var(--hdd-color-font-color);
+  color: var(--hdd-color-dynamic-font-color);
 
   // Changes button-text on hover/active/focus
   &:not([disabled]) {
     &:focus {
-      color: var(--hdd-color-primary);
+      color: var(--hdd-color-dynamic-primary);
       outline: none;
       background: transparent;
     }
@@ -31,7 +31,7 @@ $button-font-size: 1rem;
     &:active,
     &:hover {
       background: transparent;
-      color: var(--hdd-color-primary);
+      color: var(--hdd-color-dynamic-primary);
       outline: none;
       box-shadow: none;
       border: none;
@@ -68,7 +68,7 @@ $button-font-size: 1rem;
     padding: $button-padding;
     font-size: $button-font-size;
     letter-spacing: 0.5px;
-    background: var(--hdd-color-primary);
+    background: var(--hdd-color-dynamic-primary);
     color: var(--hdd-color-white);
     min-width: 90px;
     position: relative;
@@ -96,10 +96,10 @@ $button-font-size: 1rem;
   }
 
   &.is-secondary {
-    border: $button-border-width solid var(--hdd-color-primary);
+    border: $button-border-width solid var(--hdd-color-dynamic-primary);
     padding: calculate-padding($button-border-width);
     background: transparent;
-    color: var(--hdd-color-primary);
+    color: var(--hdd-color-dynamic-primary);
 
     @extend %secondary-disabled;
 
@@ -107,7 +107,7 @@ $button-font-size: 1rem;
     &:not([disabled]) {
       &:hover {
         box-shadow: var(--hdd-shadow-medium);
-        border: $button-border-width + $extra-border-hover solid var(--hdd-color-primary); // 
+        border: $button-border-width + $extra-border-hover solid var(--hdd-color-dynamic-primary); 
         padding: calculate-padding($button-border-width + $extra-border-hover);
       }
 
@@ -119,7 +119,7 @@ $button-font-size: 1rem;
 
     // Changes spinner-color on hover/active/focus
     &.is-loading::after {
-      color: var(--hdd-color-primary) !important;
+      color: var(--hdd-color-dynamic-primary) !important;
     }
     
     &:active {
@@ -193,8 +193,8 @@ $button-font-size: 1rem;
 
   // Buttons with icons only
   &-icon {
-    border: $button-border-width solid var(--hdd-color-primary);
-    color: var(--hdd-color-primary);
+    border: $button-border-width solid var(--hdd-color-dynamic-primary);
+    color: var(--hdd-color-dynamic-primary);
     border-radius: $button-radius;
     background: transparent;
     height: $icon-button-height-with-border; 
@@ -216,7 +216,7 @@ $button-font-size: 1rem;
       
       &:hover {
         box-shadow: var(--hdd-shadow-medium);
-        border: $button-border-width + $extra-border-hover solid var(--hdd-color-primary); 
+        border: $button-border-width + $extra-border-hover solid var(--hdd-color-dynamic-primary); 
       }
     }
 

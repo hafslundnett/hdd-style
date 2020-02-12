@@ -54,4 +54,8 @@ You should use grid-column and grid-row to position your elements on the grid. R
 .hdd-grid {
   margin-bottom: var(--hdd-spacing-3);
 }
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
+}
 ```

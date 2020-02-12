@@ -49,3 +49,16 @@ This is the user menu to be shown when clicking on your image in the header. Thi
   </div>
 </div>
 ```
+
+```user-menu.css hidden {
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
+}
+```
+```user-menu-no-img.css hidden
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
+}
+```

@@ -32,6 +32,7 @@
 @each $label, $map in $all-colors {
   $color: color($label);
   $contrast: map-get($map, contrast);
+  $dark-theme: map-get($map, dark-theme);
 
   $alt-labels: map-get($map, alt-labels);
   $labels: ($label);
@@ -46,6 +47,11 @@
     :root {
       --hdd-color-#{$label}: #{$color};
       --hdd-color-contrast-#{$label}: #{$contrast};
+      --hdd-color-dynamic-#{$label}: #{$color};
+      // Dark-theme standard colors
+      @include is-dark-theme() {
+        --hdd-color-dynamic-#{$label}: #{$dark-theme};
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 $scroll-bar-width: 11px;
 
 @mixin linear-gradient($angle, $gradient1, $gradient2) {
-  background-color: $gradient2;
+  background: $gradient2;
   /* Fallback Color */
   background-image: -webkit-gradient(linear, $angle, from($gradient1), to($gradient2));
   /* Saf4+, Chrome */

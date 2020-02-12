@@ -63,6 +63,13 @@ An textarea should not be used if there no need for a longer text.
 </div>
 ```
 
+```input-fields.css hidden
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
+}
+```
+
 ## Mutations
 **`hdd-form_input`:**
 

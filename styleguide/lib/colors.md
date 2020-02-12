@@ -57,58 +57,58 @@ Support colors are all colors which are not considered primary colors. These col
 The grayscale should be used in addition to the primary colors of non-printable items. The darkest gray is text color and should be used on all titles, paragraphs, and content. If text appears on a dark surface, contrast requirements must be maintained and white text must be used (#FFFFFF).
 
 - `--hdd-color-black` `--hdd-color-contrast-black`
-- `--hdd-color-font-color` `--hdd-color-contrast-font-color`
-- `--hdd-color-grey-dark` `--hdd-color-contrast-grey-dark`
-- `--hdd-color-grey-medium` `--hdd-color-contrast-grey-medium`
+- `--hdd-color-grey-dark3` `--hdd-color-contrast-grey-dark3`
+- `--hdd-color-grey-dark2` `--hdd-color-contrast-grey-dark2`
+- `--hdd-color-grey-dark1` `--hdd-color-contrast-grey-dark1`
 - `--hdd-color-grey` `--hdd-color-contrast-grey`
-- `--hdd-color-grey-border` `--hdd-color-contrast-grey-border`
-- `--hdd-color-grey-light` `--hdd-color-contrast-grey-light` 
-- `--hdd-color-grey-background` `--hdd-color-contrast-grey-background` 
+- `--hdd-color-grey-light1` `--hdd-color-contrast-grey-light1`
+- `--hdd-color-grey-light2` `--hdd-color-contrast-grey-light2` 
+- `--hdd-color-grey-light3` `--hdd-color-contrast-grey-light3` 
 - `--hdd-color-white` `--hdd-color-contrast-white` 
 
 ```grey-colors.html
 <div class="example-container">
   <span style="background: var(--hdd-color-black)" class="color-example"></span>
-  <span style="background: var(--hdd-color-font-color)" class="color-example"></span>
-  <span style="background: var(--hdd-color-grey-dark)" class="color-example"></span>
-  <span style="background: var(--hdd-color-grey-medium)" class="color-example"></span>
+  <span style="background: var(--hdd-color-grey-dark3)" class="color-example"></span>
+  <span style="background: var(--hdd-color-grey-dark2)" class="color-example"></span>
+  <span style="background: var(--hdd-color-grey-dark1)" class="color-example"></span>
   <span style="background: var(--hdd-color-grey)" class="color-example"></span>
-  <span style="background: var(--hdd-color-grey-border)" class="color-example"></span>
-  <span style="background: var(--hdd-color-grey-light)" class="color-example"></span>
-  <span style="background: var(--hdd-color-grey-background)" class="color-example"></span>
+  <span style="background: var(--hdd-color-grey-light1)" class="color-example"></span>
+  <span style="background: var(--hdd-color-grey-light2)" class="color-example"></span>
+  <span style="background: var(--hdd-color-grey-light3)" class="color-example"></span>
   <span style="background: var(--hdd-color-white)" class="color-example"></span>
 </div>
 <div class="example-container-2">
   <span class="color-text">black</span>
-  <span class="color-text">font-color</span>
-  <span class="color-text">grey-dark</span>
-  <span class="color-text">grey-medium</span>
+  <span class="color-text">grey-dark3</span>
+  <span class="color-text">grey-dark2</span>
+  <span class="color-text">grey-dark1</span>
   <span class="color-text">grey</span>
-  <span class="color-text">grey-border</span>
-  <span class="color-text">grey-light</span>
-  <span class="color-text">grey-background</span>
+  <span class="color-text">grey-light1</span>
+  <span class="color-text">grey-light2</span>
+  <span class="color-text">grey-light3</span>
   <span class="color-text">white</span>
 </div>
 <div class="example-container-3">
   <span style="background: var(--hdd-color-contrast-black)" class="color-example"></span>
-  <span style="background: var(--hdd-color-contrast-font-color)" class="color-example"></span>
-  <span style="background: var(--hdd-color-contrast-grey-dark)" class="color-example"></span>
-  <span style="background: var(--hdd-color-contrast-grey-medium)" class="color-example"></span>
+  <span style="background: var(--hdd-color-contrast-grey-dark3)" class="color-example"></span>
+  <span style="background: var(--hdd-color-contrast-grey-dark2)" class="color-example"></span>
+  <span style="background: var(--hdd-color-contrast-grey-dark1)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-grey)" class="color-example"></span>
-  <span style="background: var(--hdd-color-contrast-grey-border)" class="color-example"></span>
-  <span style="background: var(--hdd-color-contrast-grey-light)" class="color-example"></span>
-  <span style="background: var(--hdd-color-contrast-grey-background)" class="color-example"></span>
+  <span style="background: var(--hdd-color-contrast-grey-light1)" class="color-example"></span>
+  <span style="background: var(--hdd-color-contrast-grey-light2)" class="color-example"></span>
+  <span style="background: var(--hdd-color-contrast-grey-light3)" class="color-example"></span>
   <span style="background: var(--hdd-color-contrast-white)" class="color-example"></span>
 </div>
 <div class="example-container-4">
   <span class="color-text">contrast-black</span>
-  <span class="color-text">contrast-font-color</span>
-  <span class="color-text">contrast-grey-dark</span>
-  <span class="color-text">contrast-grey-medium</span>
+  <span class="color-text">contrast-font-dark3</span>
+  <span class="color-text">contrast-grey-dark2</span>
+  <span class="color-text">contrast-grey-dark1</span>
   <span class="color-text">contrast-grey</span>
-  <span class="color-text">contrast-grey-border</span>
-  <span class="color-text">contrast-grey-light</span>
-  <span class="color-text">contrast-grey-background</span>
+  <span class="color-text">contrast-grey-light1</span>
+  <span class="color-text">contrast-grey-light2</span>
+  <span class="color-text">contrast-grey-light3</span>
   <span class="color-text">contrast-white</span>
 </div>
 ```
@@ -248,6 +248,11 @@ These colors are chosen to be used for infographics. If necessary, these colors 
   margin: 15.7px; 
   text-align: center;
 }
+.example-container, .example-container-2, .example-container-3, .example-container-4 {
+  margin: -20px;
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
+}
 ```
 ```grey-colors.css  hidden
 .example-container {
@@ -281,6 +286,11 @@ These colors are chosen to be used for infographics. If necessary, these colors 
   width: 50px; 
   margin: 15.7px; 
   text-align: center;
+}
+.example-container, .example-container-2, .example-container-3, .example-container-4 {
+  margin: -20px;
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 ```signal-colors.css  hidden
@@ -317,6 +327,11 @@ These colors are chosen to be used for infographics. If necessary, these colors 
   margin: 15.7px; 
   text-align: center;
 }
+.example-container, .example-container-2, .example-container-3, .example-container-4 {
+  margin: -20px;
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
+}
 ```
 ```data-colors.css  hidden
 .example-container {
@@ -351,5 +366,10 @@ These colors are chosen to be used for infographics. If necessary, these colors 
   width: 50px; 
   margin: 15.7px; 
   text-align: center;
+}
+.example-container, .example-container-2, .example-container-3, .example-container-4 {
+  margin: -20px;
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```

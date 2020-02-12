@@ -12,8 +12,8 @@
   }
 
   &.slider {
-    background-color: var(--hdd-color-white);
-    border: 1px solid var(--hdd-color-blue);
+    background: var(--hdd-color-dynamic-background-secondary);
+    border: 1px solid var(--hdd-color-dynamic-primary);
     border-radius: 2rem;
     position: absolute;
     transition: 0.1s;
@@ -25,17 +25,17 @@
     width: 0.75rem;
     top: 0.1rem;
     left: 0.1rem;
-    background-color: var(--hdd-color-blue);
+    background: var(--hdd-color-dynamic-primary);
     transition: 0.1s;
     border-radius: 50%;
   }
 
   input:checked + .slider {
-    background-color: var(--hdd-color-blue);
+    background: var(--hdd-color-dynamic-primary);
   }
 
   input:checked + .slider:before {
-    background-color: var(--hdd-color-white);
+    background: var(--hdd-color-dynamic-background-secondary);
     @include transform(translateX(0.95rem));
   }
 }

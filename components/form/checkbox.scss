@@ -1,6 +1,6 @@
 $form-checkbox-mark-size: 1rem;
 $form-checkbox-mark-border-radius: $border-radius;
-$form-checkbox-mark-border: 1px solid var(--hdd-color-primary);
+$form-checkbox-mark-border: 1px solid var(--hdd-color-dynamic-primary);
 
 .hdd-form_checkbox {
   // Variable containing '&' to jump to current parent inside a child class.
@@ -17,7 +17,7 @@ $form-checkbox-mark-border: 1px solid var(--hdd-color-primary);
   // We have to seperate the checkbox marked styling because of the checked state
   %checkbox-mark {
     position: relative;
-    background-color: var(--hdd-color-primary);
+    background: var(--hdd-color-dynamic-primary);
     &::before {
       @extend .fal, .fa-check, :before;
       
@@ -71,7 +71,7 @@ $form-checkbox-mark-border: 1px solid var(--hdd-color-primary);
     transition: background 0.3s $transition-cubic;
     border: $form-checkbox-mark-border;
     border-radius: $form-checkbox-mark-border-radius;
-    background: var(--hdd-color-white);
+    background: var(--hdd-color-dynamic-background-secondary);
   }
 
   &_label {

@@ -21,3 +21,10 @@ Tags should not be used alone.
   <span class="hdd-tags_item">707057500051628391<i class="fal fa-times-circle"></i></span>
 </div>
 ```
+
+```tags.css hidden
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
+}
+```

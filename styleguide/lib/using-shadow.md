@@ -28,11 +28,9 @@ Setting the shadow attribute directly on elements are also possible with the fol
 - `hdd-shadow-strong`
 
 ```shadow-colors.html
-<div class="example-container">
-  <span class="hdd-shadow-light color-example"></span>
-  <span class="hdd-shadow-medium color-example"></span>
-  <span class="hdd-shadow-strong color-example"></span>
-</div>
+<span class="hdd-shadow-light color-example"></span>
+<span class="hdd-shadow-medium color-example"></span>
+<span class="hdd-shadow-strong color-example"></span>
 ```
 
 ```shadow-colors.css  hidden
@@ -45,6 +43,9 @@ Setting the shadow attribute directly on elements are also possible with the fol
 }
 .example-container {
   padding: 15px; 
-  background: white;
+}
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```

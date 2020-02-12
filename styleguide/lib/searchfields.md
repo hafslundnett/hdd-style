@@ -31,5 +31,11 @@ It is important to set the user context for the search with the correct placehol
     <i class="fal fa-times" aria-label="Clear text"></i>
   </div>
 </div>
+```
 
+```search-fields.css hidden
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
+}
 ```

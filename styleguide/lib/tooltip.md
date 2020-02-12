@@ -18,53 +18,42 @@ Tooltips should not contain necessary and critical information needed by the use
 `hdd-tooltip`
 
 ```tooltip.html
-
 <div class="example-container">
-
   <span class="hdd-tooltip">
     Hover Right
     <span class="hdd-tooltip_content is-right">Right tooltip </span>
   </span>
-   
   <span class="hdd-tooltip">
     Hover Left
     <span class="hdd-tooltip_content is-left">Left tooltip</span>
   </span>
-   
   <span class="hdd-tooltip">
     Hover bottom
     <span class="hdd-tooltip_content is-bottom">Bottom tooltip</span>
   </span>
-
   <span class="hdd-tooltip">
     Hover on top
     <span class="hdd-tooltip_content is-top">Top tooltip</span>
   </span>
-
 </div>
 
 <div class="example-container">
-
   <span class="hdd-tooltip is-light">
     Hover Right
     <span class="hdd-tooltip_content is-right">Right tooltip</span>
   </span>
-   
   <span class="hdd-tooltip is-light">
     Hover Left
     <span class="hdd-tooltip_content is-left">Left tooltip</span>
   </span>
-   
   <span class="hdd-tooltip is-light">
     Hover bottom
     <span class="hdd-tooltip_content is-bottom">Bottom tooltip</span>
   </span>
-
   <span class="hdd-tooltip is-light">
     Hover on top
     <span class="hdd-tooltip_content is-top">Top tooltip</span>
   </span>
-
 </div>
 ```
 ```tooltip.css  hidden
@@ -72,6 +61,10 @@ Tooltips should not contain necessary and critical information needed by the use
   display:flex; 
   justify-content:space-between;
   margin:30px
+}
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 

@@ -67,6 +67,10 @@ Spatial system that follows multiplication of 0.5rem (1rem = 16px). This provide
 	border-radius: 100%; 
 	background: var(--hdd-color-grey-medium); 
 }
+body > div:first-of-type {
+    padding: 20px;
+    background: var(--hdd-color-dynamic-background-primary);
+}
 ```
 
 ## Spacing in practice
@@ -74,7 +78,7 @@ Standard spacing should be used when possible to standardized the separation bet
 
 ```spacing-realistic.html
 <!--NB! Style tags are only applied here to illustrate the use of spacing variables. -->
-<div style="padding: var(--hdd-spacing-3); background: var(--hdd-color-white); border-radius: 5px;">
+<div style="padding: var(--hdd-spacing-3); background: var(--hdd-color-dynamic-background-secondary); border-radius: 5px;">
 	<h1 style="margin-bottom: var(--hdd-spacing-3);">
 		Gjennomfør handling for ticket #8
 	</h1>
@@ -96,4 +100,11 @@ Standard spacing should be used when possible to standardized the separation bet
 		<button class="hdd-button">Gjennomfør handling</button>
 	</div>
 </div>
+```
+
+```spacing-realistic.css
+body > div:first-of-type {
+	padding: 20px;
+	background: var(--hdd-color-dynamic-background-primary);
+}
 ```

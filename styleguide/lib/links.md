@@ -15,6 +15,14 @@ Links are for prompting a user action that will affect another part.
 <a href="https://hafslundnett.no" class="hdd-link no-hover">Disabled hover state</a><br>
 ```
 
+
+```links.css hidden
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
+}
+```
+
 ## Mutations
 **`hdd-link`:**
 

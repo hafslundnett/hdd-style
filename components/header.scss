@@ -10,7 +10,7 @@ $header-img-size: 40px;
   padding: 0 var(--hdd-spacing-2);
   box-sizing: border-box;
 
-  background: var(--hdd-color-white);
+  background: var(--hdd-color-dynamic-background-secondary);
   box-shadow: var(--hdd-shadow-medium);
   z-index: $header-z-index;
 
@@ -43,12 +43,12 @@ $header-img-size: 40px;
       margin-right: var(--hdd-spacing-1);
       border-radius: 100%;
 
-      background: var(--hdd-color-grey-light);
+      background: var(--hdd-color-dynamic-grey-light1);
       background-position: center;
     }
 
     &_icon-no-image {
-      background-color: var(--hdd-color-blue);
+      background: var(--hdd-color-blue);
       width: $header-img-size;
       height: $header-img-size;
       margin-right: var(--hdd-spacing-1);
@@ -58,14 +58,13 @@ $header-img-size: 40px;
       align-items: center;
       justify-content: center;
 
-      color: var(--hdd-color-white);
+      color: var(--hdd-color-contrast-blue);
       text-transform: uppercase;
     }
 
     &_name {
       font-size: 1rem;
       letter-spacing: 0.5px;
-      color: var(--hdd-color-black);
 
       // give space for next if exist
       &:not(:last-child) {

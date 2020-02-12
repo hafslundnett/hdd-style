@@ -79,20 +79,36 @@ The buttons are all the same size.
 .hdd-button {
   margin: 4px; 
 }
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
+}
 ```
 ```secondary-button.css  hidden
 .hdd-button {
   margin: 4px;
+}
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 ```with-icon-button.css  hidden
 .hdd-button {
   margin: 4px;
 }
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
+}
 ```
 ```icon-button.css  hidden
 .hdd-button-icon {
   margin: 4px;
+}
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 

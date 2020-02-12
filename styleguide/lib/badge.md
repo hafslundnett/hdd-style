@@ -27,3 +27,10 @@ Badges should not be used alone. Do not display information status in a badge an
 <span class="hdd-badge is-data-navy">12 156</span>
 <span class="hdd-badge is-black">9 214</span>
 ```
+
+```badge.css  hidden
+body > div:first-of-type {
+    padding: 20px;
+    background: var(--hdd-color-dynamic-background-primary);
+}
+```

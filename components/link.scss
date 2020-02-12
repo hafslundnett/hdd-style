@@ -1,9 +1,15 @@
 .hdd-link {
+  --hdd-color-link-color: var(--hdd-color-blue-dark);
+
+  @include is-dark-theme() {
+    --hdd-color-link-color: var(--hdd-color-blue-light2);
+  }
+
   // .is-p is font-properties, defined in typography
   @extend .is-p;
 
   text-decoration: none;
-  color: var(--hdd-color-blue);
+  color: var(--hdd-color-link-color);
   box-sizing: border-box;
 
   &:hover:not(.no-hover),
@@ -14,7 +20,7 @@
   }
   &:active:not(.no-active),
   &.is-active {
-    color: var(--hdd-color-blue-dark);
+    color: var(--hdd-color-dynamic-primary-dark);
     text-decoration: underline;
   }
 }

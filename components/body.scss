@@ -1,14 +1,14 @@
 body {
-  background-color: #f3f4f6;
+  background: var(--hdd-color-dynamic-grey-background);
 }
 
 *::selection {
-  background: var(--hdd-color-blue-light1);
+  background: var(--hdd-color-dynamic-marker-color);
   color: var(--hdd-color-white);
 }
 
 *:focus {
-  outline-color: var(--hdd-color-blue-light1);
+  outline-color: var(--hdd-color-dynamic-outline-line);
 }
 
 @include custom-scroll();

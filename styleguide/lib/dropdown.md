@@ -34,6 +34,10 @@ Dropdown should be used if the user wants a recommended selection out of all the
 .example-fill {
   margin: 20px;
 }
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
+}
 ```
 
 ## Dropdown aligned top
@@ -54,7 +58,7 @@ Only use `is-aligned-top` when there are enough room from the top and not enough
 </div>
 <div class="hdd-form_input hdd-dropdown">
   <input value="Jer">
- 
+
   <div class="hdd-dropdown_content is-active is-aligned-top">
     <div class="hdd-dropdown_content_item is-active"><b>Jer</b>oen</div>
     <div class="hdd-dropdown_content_item">Stian</div>
@@ -66,6 +70,10 @@ Only use `is-aligned-top` when there are enough room from the top and not enough
 ```dropdown-top.css  hidden
 .example-fill {
   margin: 20px;
+}
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 

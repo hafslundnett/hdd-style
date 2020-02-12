@@ -31,7 +31,7 @@ $feedback-message-gap: 10px;
   }
 
   &.is-info {
-    background-color: var(--hdd-color-blue-light3);
+    background: var(--hdd-color-blue-light3);
 
     #{$this}_icon, #{$this}_message, #{$this}_close-button {
       color: var(--hdd-color-contrast-blue-light3);
@@ -39,7 +39,7 @@ $feedback-message-gap: 10px;
   }
 
   &.is-warn {
-    background-color: var(--hdd-color-warn);
+    background: var(--hdd-color-warn);
 
     #{$this}_icon, #{$this}_message, #{$this}_close-button {
       color: var(--hdd-color-contrast-warn);
@@ -47,7 +47,7 @@ $feedback-message-gap: 10px;
   }
 
   &.is-error {
-    background-color: var(--hdd-color-danger);
+    background: var(--hdd-color-danger);
 
     #{$this}_icon, #{$this}_message, #{$this}_close-button {
       color: var(--hdd-color-contrast-danger);

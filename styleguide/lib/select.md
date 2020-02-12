@@ -55,6 +55,13 @@ A select component lets a user choose between a set of options.
 </div>
 ```
 
+```select.css hidden
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
+}
+```
+
 ## Mutations
 **`hdd-form-select`:**
 

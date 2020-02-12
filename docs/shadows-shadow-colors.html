@@ -12,7 +12,10 @@
 }
 .example-container {
   padding: 15px; 
-  background: white;
+}
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
 }
 		</style>
 
@@ -64,18 +67,14 @@
 	</head>
 
 	<body>					<div style="padding: 20px;">
-    <div class="example-container">
-  <span class="hdd-shadow-light color-example"></span>
-  <span class="hdd-shadow-medium color-example"></span>
-  <span class="hdd-shadow-strong color-example"></span>
-</div>
+    <span class="hdd-shadow-light color-example"></span>
+<span class="hdd-shadow-medium color-example"></span>
+<span class="hdd-shadow-strong color-example"></span>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="example-container">
-  <span class="hdd-shadow-light color-example"></span>
-  <span class="hdd-shadow-medium color-example"></span>
-  <span class="hdd-shadow-strong color-example"></span>
-</div></script>
+			<script type="text/x-stylemark" data-language="html"><span class="hdd-shadow-light color-example"></span>
+<span class="hdd-shadow-medium color-example"></span>
+<span class="hdd-shadow-strong color-example"></span></script>
 			<script type="text/x-stylemark" data-language="css">.color-example {
   display: inline-block; 
   height: 50px; 
@@ -85,7 +84,10 @@
 }
 .example-container {
   padding: 15px; 
-  background: white;
+}
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
 }</script>
 
 		<!--

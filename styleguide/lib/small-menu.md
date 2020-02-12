@@ -26,6 +26,15 @@ Clicking the icon toggles the is-active state of the small menu.
 div {
   width: 20px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+} 
+body > div:first-of-type {
+  padding: 20px;
+  height: 230px;
+  min-width: 100%;
+  background: var(--hdd-color-dynamic-background-primary);
 }
 ```
 

@@ -3,6 +3,14 @@ $menu-width: 250px;
 $separator-line-size: 70%;
 
 .hdd-user-menu {
+  // When the user menu is opened the background is darker so to match this this color also need to be darker
+  --user-menu-background: var(--hdd-color-background-secondary);
+
+  @include is-dark-theme() {
+    --hdd-color-grey-dark4: #333333;
+    --user-menu-background: var(--hdd-color-grey-dark4);
+  }
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +19,7 @@ $separator-line-size: 70%;
   height: auto;
   width: $menu-width;
   border-radius: $border-radius;
-  background: var(--hdd-color-white);
+  background: var(--user-menu-background);
   box-shadow: var(--hdd-shadow-strong);
   padding: var(--hdd-spacing-3);
   box-sizing: border-box;
@@ -22,13 +30,13 @@ $separator-line-size: 70%;
     margin: var(--hdd-spacing-1) 0;
     border-radius: 100%;
 
-    background: var(--hdd-color-grey-light);
+    background: var(--hdd-color-dynamic-grey-light1);
     background-position: center;
   }
 
   &_initials {
     margin: var(--hdd-spacing-1) 0;
-    background-color: var(--hdd-color-blue);
+    background: var(--hdd-color-blue);
     width: $header-img-size;
     height: $header-img-size;
     border-radius: 100%;
@@ -37,7 +45,7 @@ $separator-line-size: 70%;
     align-items: center;
     justify-content: center;
 
-    color: var(--hdd-color-white);
+    color: var(--hdd-color-contrast-blue);
     text-transform: uppercase;
     font-size: 2rem;
   }
@@ -46,7 +54,6 @@ $separator-line-size: 70%;
     margin: var(--hdd-spacing-1) 0;
     font-size: 1.25rem;
     letter-spacing: 0.15px;
-    color: var(--hdd-color-black);
     text-align: center;
   }
 
@@ -56,7 +63,6 @@ $separator-line-size: 70%;
     letter-spacing: 0.15px;
     font-size: 1rem;
     text-align: center;
-    color: var(--hdd-color-black);
   }
 
   &_menu-element {
@@ -77,7 +83,7 @@ $separator-line-size: 70%;
       top: 0;
       width: $separator-line-size;
       left: (100% - $separator-line-size) / 2;
-      border-top: 1px solid var(--hdd-color-grey-border);
+      border-top: 1px solid var(--hdd-color-dynamic-grey-border);
     }
   }
 }

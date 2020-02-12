@@ -25,6 +25,13 @@ A radiobutton component lets a user select only one of a limited number of choic
 </form>
 ```
 
+```radiobutton.css hidden
+body > div:first-of-type {
+  padding: 20px;
+  background: var(--hdd-color-dynamic-background-primary);
+}
+```
+
 ## Mutations
 **`hdd-form_radiobutton`:**
 
