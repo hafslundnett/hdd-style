@@ -9,7 +9,7 @@ Can affect the look of all elements with scroll.
 ##### How to fix!
 Should not require any fix.
 
-* The scrollbar has become a bit thinner than the old one on Windows and a bit wider than the old one on Mac. 
+* The scrollbar has become a bit thinner than the old one on Windows and about the same size as on a Mac. The scrollbar will also take up space all the time on Mac, not just when scrolling. 
 
 
 # Update [8.0.0]
