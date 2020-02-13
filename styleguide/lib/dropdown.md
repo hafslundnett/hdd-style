@@ -12,17 +12,18 @@ Dropdown should be used if the user wants a recommended selection out of all the
 `hdd-form_input`.`hdd-dropdown`
 
 ```dropdown.html
-<div class="hdd-form_input hdd-dropdown">
-  <input value="Jer">
+<div class="hdd-form_input hdd-dropdown is-focus">
+    <i class="fal fa-search hdd-form_input_icon"></i>
+    <input value="Jer" />
+    <i class="fal fa-times" aria-label="Clear text"></i>
 
   <div class="hdd-dropdown_content is-active">
     <div class="hdd-dropdown_content_item is-active"><b>Jer</b>oen</div>
     <div class="hdd-dropdown_content_item">Stian</div>
-    <div class="hdd-dropdown_content_item no-hover">Erik</div>
+    <div class="hdd-dropdown_content_item">Erik</div>
   </div>
 </div>
 <div class="example-fill">
-  <p>Some content behind</p>
   <p>Some content behind</p>
   <p>Some content behind</p>
   <p>Some content behind</p>
@@ -50,16 +51,17 @@ Only use `is-aligned-top` when there are enough room from the top and not enough
   <p>Some content behind</p>
   <p>Some content behind</p>
   <p>Some content behind</p>
-  <p>Some content behind</p>
 </div>
-<div class="hdd-form_input hdd-dropdown">
-  <input value="Jer">
+<div class="hdd-form_input hdd-dropdown is-focus">
+    <i class="fal fa-search hdd-form_input_icon"></i>
+    <input value="Jer" />
+    <i class="fal fa-times" aria-label="Clear text"></i>
  
   <div class="hdd-dropdown_content is-active is-aligned-top">
     <div class="hdd-dropdown_content_item is-active"><b>Jer</b>oen</div>
     <div class="hdd-dropdown_content_item">Stian</div>
     <div class="hdd-dropdown_content_item">Rune</div>
-    <div class="hdd-dropdown_content_item no-hover">Erik</div>
+    <div class="hdd-dropdown_content_item">Erik</div>
   </div>
 </div>
 ```
