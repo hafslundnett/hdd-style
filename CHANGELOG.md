@@ -1,3 +1,15 @@
+# Update [10.0.0]
+In this update the dropdown has recieved new style, max-height and is now scrollable
+
+## Breaking changes
+
+### The dropdown has new style and max height
+##### What can break! 
+All dropdown items now have a max-height 
+##### How to fix!
+Should not require any fix.
+All content inside the dropdown is scrollable
+
 # Update [9.0.0]
 In this update the default scrollbar is customized to look similar on both Windows and Mac. The new scrollbar will now be visible by default on all scrollable elements, having the same behavior on Mac as on Windows.
 
