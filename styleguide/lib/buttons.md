@@ -39,12 +39,17 @@ The secondary button should never be used alone on a page.
 ## Buttons with icon
 `hdd-button`
 
-The buttons are all the same size.
+The buttons are all the same size. 
+###### NB! The danger buttons should only be used for deleting/removing purposes.
 
 ```with-icon-button.html
 <div>
   <button class="hdd-button has-icon"><i class="fal fa-cog"></i>Icon button</button>
   <button class="hdd-button has-icon" disabled><i class="fal fa-cog"></i>Icon button</button>
+</div>
+<div style="margin-top:8px;">
+  <button class="hdd-button has-icon is-danger"><i class="fal fa-trash-alt"></i>Slett button</button>
+  <button class="hdd-button has-icon is-danger" disabled><i class="fal fa-trash-alt"></i>Slett button</button>
 </div>
 <div style="margin-top:8px;">
   <button class="hdd-button has-icon is-secondary"><i class="fal fa-cog"></i>Icon button</button>
@@ -59,11 +64,16 @@ The buttons are all the same size.
 ## Icon only buttons
 `hdd-button-icon`
 
+###### NB! The danger buttons should only be used for deleting/removing purposes.
 
 ```icon-button.html
 <div>
   <button class="hdd-button-icon"><i class="fal fa-plus-circle"></i></button>
   <button class="hdd-button-icon" disabled><i class="fal fa-plus-circle"></i></button>
+</div>
+<div style="margin-top:8px;">
+  <button class="hdd-button-icon is-danger"><i class="fal fa-trash-alt"></i></button>
+  <button class="hdd-button-icon is-danger" disabled><i class="fal fa-trash-alt"></i></button>
 </div>
 <div style="margin-top:8px;">
   <button class="hdd-button-icon is-transparent"><i class="fal fa-cog"></i></button>
@@ -104,6 +114,7 @@ The buttons are all the same size.
 | `is-primary` | Sets the color of the given button to the primary color |
 | `is-secondary` | Sets the color of the given button to the secondary color |
 | `is-loading` | Sets the given button to it's loading state |
+| `is-danger` | A red button to be used for delete / removing actions, should be used together with the fa-trash-alt icon |
 | `has-icon` | Adds padding to the right of icon in a button with text |
 
 **`hdd-button-icon`:**
@@ -112,4 +123,5 @@ The buttons are all the same size.
 | :--- | :--- |
 | `is-transparent` | Sets background and border to transparent |
 | `is-no-padding` | Removes all padding from icon-button, should only used together with is-transparent |
+| `is-danger` | A red button to be used for delete / removing actions, should be used together with the fa-trash-alt icon |
 
