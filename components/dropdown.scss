@@ -25,12 +25,10 @@ $dropdown-item-padding: 0.625rem 0.75rem;
     border-radius: $border-radius;
     background: var(--hdd-color-white);
 
-    // Alignes the dropdown on top of the search field. 
     &.is-aligned-top {
       top: initial;
-      // 18px is the overlap that was between the input field and the dropdown element. 
-      // + 1 px from margin-top on content element.
-      bottom: calc(var(--hdd-spacing-2) + 2px);
+      bottom: 100%;
+      margin-bottom: 0;
     }
 
     &.is-aligned-bottom {
